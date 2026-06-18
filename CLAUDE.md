@@ -3,7 +3,8 @@
 A local, **fake-money** "bake-off": several trading approaches each manage a $100 paper book over the
 same market, so we can see which works **before** risking real money on Robinhood. Competitors are 3
 rule strategies + a deep-research **analyst** + a **mirofish swarm** of 150 cheap-LLM voters. A
-single-file dashboard renders the results with full click-through provenance.
+single-file `dashboard.html` and a **Next.js web app** (`web/`, deployable to Vercel) render the
+results with full click-through provenance and live prices.
 
 ## Golden rules
 - **Paper money only. Never place a real Robinhood order.** `bot/broker.py: RobinhoodBroker` is an
@@ -11,8 +12,9 @@ single-file dashboard renders the results with full click-through provenance.
 - **Going live requires ALL of:** a competitor clears a graduation bar (survived a drawdown, tolerable
   max DD, enough decisions to not be luck) **+** the user funds the Agentic account (••••) **+**
   explicit user go-ahead to wire `RobinhoodBroker`. Never do this unprompted.
-- The **Agentic cash account ••••** (`config.AGENTIC_ACCOUNT`) is the only account that accepts
-  agent orders — it is cash, no options, and currently **unfunded ($0)**.
+- The **Agentic cash account ••••** is the only account that accepts agent orders — cash, no
+  options, currently **unfunded ($0)**. Its number is read from `AGENTIC_ACCOUNT` in the gitignored
+  `.env` (`config.AGENTIC_ACCOUNT` defaults to empty) — never hard-code it in source.
 
 ## Run it
 - Say **"run the agents"** / `/run-agents` → follows `.claude/skills/run-agents/SKILL.md`
@@ -25,7 +27,7 @@ single-file dashboard renders the results with full click-through provenance.
 - Manual:
   - `python3 run_agents.py` — agents tick: runs the swarm live (~$0.20) + rebalances both agent books.
   - `python3 tick.py` — advance the rule strategies' forward test by one session.
-  - `python3 tools/build_dashboard.py` — regenerate `dashboard.html` from `state/` (no API calls).
+  - `python3 tools/build_dashboard.py` — regenerate `dashboard.html` **and** `web/public/state.json` from `state/` (no API calls).
   - `python3 run.py` — backtest only (prints the leaderboard).
 
 ## Layout
@@ -41,6 +43,9 @@ single-file dashboard renders the results with full click-through provenance.
 - `run.py` (backtest CLI), `tick.py` (rule-strategy forward tick), `run_agents.py` (agents tick).
 - `tools/build_dashboard.py` — renders `dashboard.html` from `state/`. `tools/ingest_rh.py` — RH historicals → `data/snapshot.json`.
 - `dashboard/template.html` → `dashboard.html` (generated, single-file, no build step).
+- `web/` — a **Next.js** (App Router) app for Vercel: live-price dashboard reading `web/public/state.json`
+  + an `/api/quotes` Finnhub serverless route (key from `FINNHUB_API_KEY`). `build_dashboard.py` publishes
+  `web/public/state.json`; the GitHub repo is `jayclim/InvestBot`. See `web/README.md`.
 - `state/` — `paper_state.json` (algos fwd), `agent_state.json` (agents fwd), `swarm.json`, `analyst.json`, `live_snapshot.json` (gitignored).
 - `data/snapshot.json` — daily OHLCV the bots read.
 

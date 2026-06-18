@@ -1,55 +1,70 @@
-# Robinhood paper-trading bake-off
+# InvestBot
 
-A harness for testing several "high-variance but rule-based" strategies against each
-other with **fake money**, before risking a real dollar. Each strategy trades its own
-virtual $100 over the same universe, so the result is an apples-to-apples leaderboard.
+A local, **fake-money** trading bake-off. Several approaches each manage their own virtual
+**$100** over the same ~100-name market, so you get an apples-to-apples leaderboard of what
+actually works — **before** risking a real dollar on Robinhood.
 
-Stdlib-only Python — no installs needed.
+> **Paper money only.** `bot/broker.py: RobinhoodBroker` is an intentional stub; nothing here
+> places a real order. Going live is gated — see [Going live](#going-live-later-gated).
 
-## Design
+## The competitors
 
-The strategy never knows whether its orders hit a simulator or a real account. That
-decoupling is what lets us test now and go live later with the same code.
+- **3 rule strategies** (`bot/strategy.py`): `momentum_breakout`, `mean_reversion`, `blended_momo_rsi`.
+- **A research analyst** — runs Anthropic's *Claude for Financial Services* equity-research
+  methodology (screen → comps → catalysts → thesis → portfolio) and rebalances a $100 book toward
+  target weights.
+- **A "mirofish" swarm** — 150 cheap LLM voters (via OpenRouter), each a unique
+  `persona × risk × horizon × quirk` profile, holding an independent-voter election over the watchlist.
 
-```
-strategy  ->  Signal  ->  engine  ->  Broker
-                                       |- PaperBroker     (simulated fills, used now)
-                                       |- RobinhoodBroker (wraps MCP place_equity_order, later)
-```
-
-- `bot/strategy.py` — the competitors: `momentum_breakout`, `mean_reversion`, `blended_momo_rsi`
-- `bot/engine.py` — walk-forward replay, no lookahead, hard stops + circuit breaker
-- `bot/portfolio.py` — cash / positions / realized trades / equity curve
-- `bot/config.py` — universe, risk limits, signal params (edit me)
+Each trades the same market on its own; the dashboard ranks them with full click-through provenance.
 
 ## Run it
 
+This project is **agent-driven** — a Claude Code agent fetches market data (the `robinhood-trading`
+MCP), runs the analyst + swarm, and advances the books. The easy button:
+
+> say **“run the agents”** — the `run-agents` skill: refresh data → analyst report → swarm → advance books → rebuild dashboard.
+
+Manual pieces (stdlib-only Python, except `httpx` for the swarm):
+
 ```bash
-python run.py                 # uses data/snapshot.json
-python run.py data/snap2.json # or point at another snapshot
+python3 run.py                    # backtest only — prints the leaderboard
+python3 tick.py                   # advance the rule strategies one session
+python3 run_agents.py             # run the swarm + rebalance the AI agents' books (needs OPENROUTER_API_KEY)
+python3 tools/build_dashboard.py  # regenerate dashboard.html + web/public/state.json (no API calls)
 ```
 
-## Getting data (the honest part)
+## The dashboard
 
-A standalone process can't reach the `robinhood-trading` MCP tools — those are wired
-to the Claude agent. So data arrives **agent-driven**:
+Two front-ends, same data:
 
-1. The agent calls `get_equity_historicals` for the universe and saves the raw JSON.
-2. `python tools/ingest_rh.py <raw_file.json> [...]` converts it to `data/snapshot.json`.
-3. `python run.py` replays it.
+- **`dashboard.html`** — a single generated file; open it directly.
+- **`web/`** — a **Next.js** app (deployable to Vercel) that fetches the bake-off state and
+  **live-polls real prices** (`/api/quotes`, Finnhub). See [`web/README.md`](web/README.md).
 
-For a live forward test, repeat daily: append the new day's bar, step the engine once.
+Standings, curves, and the decision trail are the **live forward books** (every competitor from
+$100, same method). A Dec–Jun walk-forward backtest is kept as per-strategy reference, not the board.
 
-## Risk controls (the "not gambling" part)
+## Risk controls (the “not gambling” part)
 
 - Hard stop per position (`STOP_LOSS_PCT`, default 15%)
-- Max open positions (`MAX_POSITIONS`, default 3)
+- Max open positions (`MAX_POSITIONS`, default 3) + a per-name cap for the agents (`AGENT_MAX_WEIGHT`)
 - Equity circuit breaker (`CIRCUIT_BREAKER_EQUITY`, default $60) halts new buys
 - Simulated slippage on every fill so paper results aren't flattering
 
-## Going live (later)
+## Going live (later, gated)
 
-Only after a strategy clears a graduation bar (survived a drawdown, enough trades,
-tolerable max DD) do we implement `RobinhoodBroker` against the **Agentic** cash
-account `••••` — the only one that accepts agent orders. Note: that account has
-**no options** enabled, so this harness is equities/ETFs only unless options are added.
+Only after a competitor clears a graduation bar (survived a drawdown, enough decisions, tolerable
+max DD) **and** the Agentic cash account (`••••`) is funded do we wire `RobinhoodBroker`. That
+account is cash, **no options**, so this harness is equities/ETFs only. The account number is read
+from `AGENTIC_ACCOUNT` in a gitignored `.env` — never stored in source.
+
+## Configuration & secrets
+
+- Knobs live in `bot/config.py` (universe, risk limits, signal params).
+- Secrets go in a **gitignored `.env`**: `OPENROUTER_API_KEY` (swarm) and `AGENTIC_ACCOUNT` (go-live).
+  The web app reads `FINNHUB_API_KEY` from `web/.env.local` (local) or a Vercel env var (deployed).
+
+## More
+
+Architecture, conventions, and the agent workflow are in **[`CLAUDE.md`](CLAUDE.md)**.
