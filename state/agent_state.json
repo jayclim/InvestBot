@@ -1,0 +1,151 @@
+{
+"last_date": "2026-06-17",
+"portfolios": {
+"deep_research_analyst": {
+"cash": 61.7103371502193,
+"halted": false,
+"positions": [
+{
+"symbol": "NVDA",
+"qty": 0.08755449570338983,
+"avg_price": 207.513705,
+"entry_date": "2026-06-16"
+},
+{
+"symbol": "JPM",
+"qty": 0.06009231747966331,
+"avg_price": 331.30557,
+"entry_date": "2026-06-17"
+}
+],
+"trades": [
+{
+"date": "2026-06-16",
+"symbol": "NVDA",
+"side": "buy",
+"qty": 0.15902564122210627,
+"price": 207.513705,
+"value": 33.0,
+"pnl": 0.0,
+"reason": "analyst: buy 33%"
+},
+{
+"date": "2026-06-17",
+"symbol": "NVDA",
+"side": "sell",
+"qty": 0.07147114551871644,
+"price": 204.54767500000003,
+"value": 14.61925664544012,
+"pnl": -0.21198556174287575,
+"reason": "analyst: trim"
+},
+{
+"date": "2026-06-17",
+"symbol": "JPM",
+"side": "buy",
+"qty": 0.06009231747966331,
+"price": 331.30557,
+"value": 19.908919495220815,
+"pnl": 0.0,
+"reason": "analyst: buy 20%"
+}
+],
+"equity_curve": [
+[
+"2026-06-16",
+99.98
+],
+[
+"2026-06-17",
+99.53
+]
+]
+},
+"mirofish_swarm": {
+"cash": 36.499766564424206,
+"halted": false,
+"positions": [
+{
+"symbol": "MRNA",
+"qty": 0.19354621360031543,
+"avg_price": 61.83089999999999,
+"entry_date": "2026-06-17"
+},
+{
+"symbol": "AMD",
+"qty": 0.024506739385975,
+"avg_price": 512.73624,
+"entry_date": "2026-06-17"
+},
+{
+"symbol": "ARM",
+"qty": 0.07242966746025832,
+"avg_price": 396.53817,
+"entry_date": "2026-06-17"
+}
+],
+"trades": [
+{
+"date": "2026-06-16",
+"symbol": "SOXL",
+"side": "buy",
+"qty": 0.22007344951377525,
+"price": 272.63624999999996,
+"value": 60.0,
+"pnl": 0.0,
+"reason": "swarm: buy 60%"
+},
+{
+"date": "2026-06-17",
+"symbol": "SOXL",
+"side": "sell",
+"qty": 0.22007344951377525,
+"price": 226.076905,
+"value": 49.753524338748065,
+"pnl": -10.246475661251933,
+"reason": "swarm: exit"
+},
+{
+"date": "2026-06-17",
+"symbol": "MRNA",
+"side": "buy",
+"qty": 0.19354621360031543,
+"price": 61.83089999999999,
+"value": 11.967136578499742,
+"pnl": 0.0,
+"reason": "swarm: buy 13%"
+},
+{
+"date": "2026-06-17",
+"symbol": "AMD",
+"side": "buy",
+"qty": 0.024506739385975,
+"price": 512.73624,
+"value": 12.56549340742473,
+"pnl": 0.0,
+"reason": "swarm: buy 14%"
+},
+{
+"date": "2026-06-17",
+"symbol": "ARM",
+"side": "buy",
+"qty": 0.07242966746025832,
+"price": 396.53817,
+"value": 28.721127788399382,
+"pnl": 0.0,
+"reason": "swarm: buy 32%"
+}
+],
+"equity_curve": [
+[
+"2026-06-16",
+99.97
+],
+[
+"2026-06-17",
+89.73
+]
+]
+}
+}
+}

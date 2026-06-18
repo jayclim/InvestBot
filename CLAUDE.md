@@ -1,0 +1,64 @@
+# Robinhood paper-trading bake-off
+
+A local, **fake-money** "bake-off": several trading approaches each manage a $100 paper book over the
+same market, so we can see which works **before** risking real money on Robinhood. Competitors are 3
+rule strategies + a deep-research **analyst** + a **mirofish swarm** of 150 cheap-LLM voters. A
+single-file dashboard renders the results with full click-through provenance.
+
+## Golden rules
+- **Paper money only. Never place a real Robinhood order.** `bot/broker.py: RobinhoodBroker` is an
+  intentional stub. `run_agents.py` / `tick.py` / `build_dashboard.py` only touch paper state.
+- **Going live requires ALL of:** a competitor clears a graduation bar (survived a drawdown, tolerable
+  max DD, enough decisions to not be luck) **+** the user funds the Agentic account (••••) **+**
+  explicit user go-ahead to wire `RobinhoodBroker`. Never do this unprompted.
+- The **Agentic cash account ••••** (`config.AGENTIC_ACCOUNT`) is the only account that accepts
+  agent orders — it is cash, no options, and currently **unfunded ($0)**.
+
+## Run it
+- Say **"run the agents"** / `/run-agents` → follows `.claude/skills/run-agents/SKILL.md`
+  (refresh data → write analyst report → `run_agents.py` → `tick.py` → rebuild dashboard).
+- The analyst step uses the **`financial-analyst`** skill — Anthropic's Claude for Financial Services
+  *equity-research* methodology (screen → sector → comps → catalysts → thesis → portfolio) → `state/analyst.json`.
+  Official plugins (optional, user-installed): `claude plugin marketplace add anthropics/financial-services`
+  then `claude plugin install equity-research@claude-for-financial-services`. No paid-vendor MCP connectors
+  here, so the data layer stays Robinhood + web_search.
+- Manual:
+  - `python3 run_agents.py` — agents tick: runs the swarm live (~$0.20) + rebalances both agent books.
+  - `python3 tick.py` — advance the rule strategies' forward test by one session.
+  - `python3 tools/build_dashboard.py` — regenerate `dashboard.html` from `state/` (no API calls).
+  - `python3 run.py` — backtest only (prints the leaderboard).
+
+## Layout
+- `bot/` — stdlib-only package:
+  - `config.py` — ~100-name `UNIVERSE`, risk knobs (`SLIPPAGE_BPS`, `STOP_LOSS_PCT`, …), `AGENT_*`, `AGENTIC_ACCOUNT`.
+  - `models.py`, `indicators.py`, `portfolio.py`, `broker.py` — primitives (`PaperBroker`, stub `RobinhoodBroker`).
+  - `strategy.py` — 3 rule strategies: `momentum_breakout`, `mean_reversion`, `blended_momo_rsi`.
+  - `engine.py` — walk-forward replay + `step_day` (decide on prior close, fill next open, slippage/stops).
+  - `metrics.py` — performance summary. `state.py` — algo forward-test persistence.
+  - `paper.py` — the AI agents' $100 paper books + multi-name `rebalance` toward target weights.
+  - `swarm.py` — the mirofish swarm via **OpenRouter**: 150 fish, each a UNIQUE
+    persona×risk×horizon×quirk profile, independent-voter election. Needs `OPENROUTER_API_KEY`.
+- `run.py` (backtest CLI), `tick.py` (rule-strategy forward tick), `run_agents.py` (agents tick).
+- `tools/build_dashboard.py` — renders `dashboard.html` from `state/`. `tools/ingest_rh.py` — RH historicals → `data/snapshot.json`.
+- `dashboard/template.html` → `dashboard.html` (generated, single-file, no build step).
+- `state/` — `paper_state.json` (algos fwd), `agent_state.json` (agents fwd), `swarm.json`, `analyst.json`, `live_snapshot.json` (gitignored).
+- `data/snapshot.json` — daily OHLCV the bots read.
+
+## Data & cost
+- Market data is **agent-driven** via the `robinhood-trading` MCP. `get_equity_historicals` caps at
+  10 symbols/call → fetch the 100-name universe in **10 chunks** → `python3 tools/ingest_rh.py <files…>`.
+  The MCP token expires mid-session; reconnect with `/mcp`.
+- The **analyst** runs on the Claude Code plan (web_search + Robinhood data). The **swarm** runs on
+  **OpenRouter** (key in `.env`, gitignored), ~**$0.20/run** for 150 fish.
+
+## Conventions
+- Stdlib-only except `httpx` (swarm) — see `requirements.txt`.
+- The dashboard is one generated file with embedded JSON; every figure traces to a source (see its
+  "Methods & sources" section and the ⓘ explainers).
+- **Standings / curves / decision trail = the LIVE forward books** (all competitors from $100, same
+  method). The Dec–Jun walk-forward backtest is **reference only**, shown inside each rule strategy's
+  row detail — not the live board.
+
+## More context
+Design rationale, decisions, and history are in the project auto-memory:
+`~/.claude/projects/-Users-jaydenl-Dev-Stocks-robinhood/memory/trading-bot-project.md`.

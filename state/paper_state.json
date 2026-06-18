@@ -1,0 +1,159 @@
+{
+"last_date": "2026-06-17",
+"portfolios": {
+"momentum_breakout": {
+"cash": 0.43935473804840086,
+"halted": false,
+"positions": [
+{
+"symbol": "RBLX",
+"qty": 0.6814619553249215,
+"avg_price": 48.914445,
+"entry_date": "2026-06-17"
+},
+{
+"symbol": "AXP",
+"qty": 0.09699639645926805,
+"avg_price": 341.56069499999995,
+"entry_date": "2026-06-17"
+},
+{
+"symbol": "MRNA",
+"qty": 0.5885183247460977,
+"avg_price": 56.238105,
+"entry_date": "2026-06-17"
+}
+],
+"trades": [
+{
+"date": "2026-06-17",
+"symbol": "RBLX",
+"side": "buy",
+"qty": 0.6814619553249215,
+"price": 48.914445,
+"value": 33.33333333333333,
+"pnl": 0.0,
+"reason": "breakout > 20d high on volume"
+},
+{
+"date": "2026-06-17",
+"symbol": "AXP",
+"side": "buy",
+"qty": 0.09699639645926805,
+"price": 341.56069499999995,
+"value": 33.13015658712313,
+"pnl": 0.0,
+"reason": "breakout > 20d high on volume"
+},
+{
+"date": "2026-06-17",
+"symbol": "MRNA",
+"side": "buy",
+"qty": 0.5885183247460977,
+"price": 56.238105,
+"value": 33.09715534149514,
+"pnl": 0.0,
+"reason": "breakout > 20d high on volume"
+}
+],
+"equity_curve": [
+[
+"2026-06-17",
+102.56474315229912
+]
+]
+},
+"mean_reversion": {
+"cash": 66.66666666666667,
+"halted": false,
+"positions": [
+{
+"symbol": "NFLX",
+"qty": 0.42658994873028705,
+"avg_price": 78.13904999999998,
+"entry_date": "2026-06-17"
+}
+],
+"trades": [
+{
+"date": "2026-06-17",
+"symbol": "NFLX",
+"side": "buy",
+"qty": 0.42658994873028705,
+"price": 78.13904999999998,
+"value": 33.33333333333333,
+"pnl": 0.0,
+"reason": "RSI 29 < 30 oversold"
+}
+],
+"equity_curve": [
+[
+"2026-06-17",
+99.49702912094956
+]
+]
+},
+"blended_momo_rsi": {
+"cash": 0.43935473804840086,
+"halted": false,
+"positions": [
+{
+"symbol": "RBLX",
+"qty": 0.6814619553249215,
+"avg_price": 48.914445,
+"entry_date": "2026-06-17"
+},
+{
+"symbol": "AXP",
+"qty": 0.09699639645926805,
+"avg_price": 341.56069499999995,
+"entry_date": "2026-06-17"
+},
+{
+"symbol": "MRNA",
+"qty": 0.5885183247460977,
+"avg_price": 56.238105,
+"entry_date": "2026-06-17"
+}
+],
+"trades": [
+{
+"date": "2026-06-17",
+"symbol": "RBLX",
+"side": "buy",
+"qty": 0.6814619553249215,
+"price": 48.914445,
+"value": 33.33333333333333,
+"pnl": 0.0,
+"reason": "breakout, RSI 59 not overbought"
+},
+{
+"date": "2026-06-17",
+"symbol": "AXP",
+"side": "buy",
+"qty": 0.09699639645926805,
+"price": 341.56069499999995,
+"value": 33.13015658712313,
+"pnl": 0.0,
+"reason": "breakout, RSI 69 not overbought"
+},
+{
+"date": "2026-06-17",
+"symbol": "MRNA",
+"side": "buy",
+"qty": 0.5885183247460977,
+"price": 56.238105,
+"value": 33.09715534149514,
+"pnl": 0.0,
+"reason": "breakout, RSI 65 not overbought"
+}
+],
+"equity_curve": [
+[
+"2026-06-17",
+102.56474315229912
+]
+]
+}
+}
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-06-18",
+  "as_of": "2026-06-18 (intraday; daily bars through 2026-06-17 close)",
+  "pick": "NVDA",
+  "action": "buy",
+  "sizing": "diversified starter, large cash buffer",
+  "confidence": 0.55,
+  "targets": {"NVDA": 0.22, "MU": 0.18, "GE": 0.12},
+  "framework": "Claude for Financial Services — equity-research methodology (/screen → /sector → /comps → /catalysts → /thesis → portfolio). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
+  "regime": {
+    "label": "Hawkish Fed, momentum melt-up in semis",
+    "note": "The Fed held but signaled a possible 2026 hike (~half the FOMC) as the Middle-East inflation impulse lingers, even with the US–Iran ceasefire pulling oil back. Higher-for-longer pressures the richest long-duration names hardest — which argues against chasing 400–500× semis and toward reasonable-multiple quality plus a real cash buffer.",
+    "source": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-17-2026"
+  },
+  "thesis": "The screen is dominated by semis at fresh 52-week highs — ARM (+88% over 20d) trades at a 495× P/E, MRVL at 99×, AMD at 168×. The financial-services lens declines to chase those: at a possible-hike turn, that's where the air is thinnest. Instead the book anchors on NVDA, the valuation anomaly of the group — 31× P/E, ~26% below its high despite +85% YoY data-center growth — i.e. the quality name on sale while the crowd pays up elsewhere. It adds MU (49× P/E) as the cheapest expression of the memory super-cycle, and GE Aerospace (44×, dividend) as a non-tech momentum sleeve that also hedges the hawkish/geopolitical regime. ARM and MRNA (no earnings) are deliberately screened out on valuation/quality. ~48% cash reflects a stretched tape into a hawkish Fed.",
+  "evidence": [
+    {"point": "ARM 495× P/E at a fresh 52-wk high — screened out on valuation", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
+    {"point": "NVDA 31× P/E, ~26% below 52-wk high — cheapest quality in the group", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
+    {"point": "MU 49× P/E, +49% 20d — cheapest expression of the memory super-cycle", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
+    {"point": "GE Aerospace 44× P/E + dividend — non-tech momentum & macro hedge", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
+    {"point": "Fed signaled a possible 2026 hike — headwind for the richest multiples", "source": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-17-2026"}
+  ],
+  "risks": [
+    "Momentum keeps ripping: by refusing ARM/MRVL at the highs, this book underperforms if the melt-up continues.",
+    "MU is memory-cyclical — pricing rolls over fast when the cycle turns.",
+    "A ~48% cash weight drags badly if the ceasefire fuels a broad melt-up."
+  ],
+  "data_examined": [
+    {"label": "Screen: 20d/5d momentum + vs-20d-SMA across the 100-name universe", "source": "data/snapshot.json"},
+    {"label": "Comps: P/E, P/B, market cap, 52-wk range on the finalists", "source": "Robinhood get_equity_fundamentals"},
+    {"label": "Regime: Fed path, oil/gold reaction to the Iran ceasefire", "source": "web_search"}
+  ],
+  "generated_by": "Claude for Financial Services (equity-research plugin methodology) via Claude Code, 2026-06-18",
+  "note": "Daily bars run through the 2026-06-17 close; fundamentals are live 2026-06-18. The competitor books advance on the next completed session — this report sets the analyst's next-tick targets."
+}

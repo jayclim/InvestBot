@@ -1,0 +1,48 @@
+# ── Secrets — never commit ───────────────────────────────────────────
+.env
+.env.*
+!.env.example
+web/.env
+web/.env.*
+!web/.env.example
+
+# ── Python ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ── Node / Next.js (web/) ────────────────────────────────────────────
+node_modules/
+web/node_modules/
+web/.next/
+web/out/
+web/build/
+*.tsbuildinfo
+
+# ── Vercel ───────────────────────────────────────────────────────────
+.vercel/
+web/.vercel/
+
+# ── Generated / regenerated artifacts (rebuilt by the tick) ──────────
+dashboard.html
+data/snapshot.json
+data/raw/
+
+# ── Local-only runtime state (masked account info) ───────────────────
+state/live_snapshot.json
+
+# ── OS / editor cruft ────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/

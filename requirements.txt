@@ -1,0 +1,3 @@
+# Core harness (run.py, tick.py, build_dashboard.py) is stdlib-only.
+# Only the live swarm needs a dependency:
+httpx>=0.27   ; for bot/swarm.py (OpenRouter calls)
