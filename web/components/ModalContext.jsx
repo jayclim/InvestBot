@@ -1,16 +1,38 @@
 "use client";
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect, useRef, useCallback } from "react";
+import StockModal from "./StockModal";
 
 const Ctx = createContext(null);
 
-export function ModalProvider({ children }) {
+export function ModalProvider({ children, data }) {
   const [node, setNode] = useState(null);
+  const dataRef = useRef(data);
+  dataRef.current = data;
+  const histRef = useRef(null);
+
   useEffect(() => {
     const onKey = (e) => { if (e.key === "Escape") setNode(null); };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
   }, []);
-  return <Ctx.Provider value={{ open: setNode, close: () => setNode(null), node }}>{children}</Ctx.Provider>;
+
+  // Open the per-stock drill-down. Price history is a separate ~315 KB file fetched once,
+  // then cached for the rest of the session.
+  const openStock = useCallback(async (symbol) => {
+    let h = histRef.current;
+    if (!h) {
+      try { h = await fetch("/history.json", { cache: "force-cache" }).then((r) => r.json()); }
+      catch (_e) { h = {}; }
+      histRef.current = h;
+    }
+    setNode(<StockModal symbol={symbol} data={dataRef.current} history={h} />);
+  }, []);
+
+  return (
+    <Ctx.Provider value={{ open: setNode, close: () => setNode(null), openStock, node }}>
+      {children}
+    </Ctx.Provider>
+  );
 }
 
 export const useModal = () => useContext(Ctx);

@@ -3,8 +3,8 @@
 A local, **fake-money** "bake-off": several trading approaches each manage a $100 paper book over the
 same market, so we can see which works **before** risking real money on Robinhood. Competitors are 3
 rule strategies + a deep-research **analyst** + a **mirofish swarm** of 150 cheap-LLM voters. A
-single-file `dashboard.html` and a **Next.js web app** (`web/`, deployable to Vercel) render the
-results with full click-through provenance and live prices.
+**Next.js web app** (`web/`, deployable to Vercel) renders the results with full click-through
+provenance, per-stock charts (price history + buy/sell markers + news), and live prices.
 
 ## Golden rules
 - **Paper money only. Never place a real Robinhood order.** `bot/broker.py: RobinhoodBroker` is an
@@ -27,7 +27,7 @@ results with full click-through provenance and live prices.
 - Manual:
   - `python3 run_agents.py` — agents tick: runs the swarm live (~$0.20) + rebalances both agent books.
   - `python3 tick.py` — advance the rule strategies' forward test by one session.
-  - `python3 tools/build_dashboard.py` — regenerate `dashboard.html` **and** `web/public/state.json` from `state/` (no API calls).
+  - `python3 tools/build_dashboard.py` — publish `web/public/state.json` **and** `web/public/history.json` from `state/` (no API calls).
   - `python3 run.py` — backtest only (prints the leaderboard).
 
 ## Layout
@@ -41,11 +41,11 @@ results with full click-through provenance and live prices.
   - `swarm.py` — the mirofish swarm via **OpenRouter**: 150 fish, each a UNIQUE
     persona×risk×horizon×quirk profile, independent-voter election. Needs `OPENROUTER_API_KEY`.
 - `run.py` (backtest CLI), `tick.py` (rule-strategy forward tick), `run_agents.py` (agents tick).
-- `tools/build_dashboard.py` — renders `dashboard.html` from `state/`. `tools/ingest_rh.py` — RH historicals → `data/snapshot.json`.
-- `dashboard/template.html` → `dashboard.html` (generated, single-file, no build step).
-- `web/` — a **Next.js** (App Router) app for Vercel: live-price dashboard reading `web/public/state.json`
-  + an `/api/quotes` Finnhub serverless route (key from `FINNHUB_API_KEY`). `build_dashboard.py` publishes
-  `web/public/state.json`; the GitHub repo is `jayclim/InvestBot`. See `web/README.md`.
+- `tools/build_dashboard.py` — publishes `web/public/state.json` + `history.json` from `state/`. `tools/ingest_rh.py` — RH historicals → `data/snapshot.json`.
+- `web/` — a **Next.js** (App Router) app for Vercel: dashboard reading `web/public/state.json`, with
+  `/api/quotes` (live prices) + `/api/news` (headlines) Finnhub serverless routes (key from `FINNHUB_API_KEY`),
+  and click-any-ticker drill-down charts (`StockModal`, reading `web/public/history.json`). `build_dashboard.py`
+  publishes `state.json` + `history.json`; the GitHub repo is `jayclim/InvestBot`. See `web/README.md`.
 - `state/` — `paper_state.json` (algos fwd), `agent_state.json` (agents fwd), `swarm.json`, `analyst.json`, `live_snapshot.json` (gitignored).
 - `data/snapshot.json` — daily OHLCV the bots read.
 

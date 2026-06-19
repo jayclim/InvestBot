@@ -8,7 +8,7 @@ export default function EquityCurves({ data }) {
   const [hover, setHover] = useState(null);
   const W = 960, H = 400, L = 58, R = 18, T = 18, B = 34;
   const start = data.starting_cash;
-  const series = data.competitors.filter((c) => c.equity_curve && c.equity_curve.length > 1);
+  const series = data.competitors.filter((c) => c.equity_curve && c.equity_curve.length >= 2);
 
   let body;
   if (!series.length) {
@@ -16,7 +16,7 @@ export default function EquityCurves({ data }) {
       <div className="card pad chartwrap">
         <svg className="chart" viewBox={`0 0 ${W} ${H}`}>
           <text x="20" y="40" fontFamily="JetBrains Mono" fontSize="12" fill="var(--muted)">
-            Curves appear once competitors have 2+ ticks.
+            Curves appear after the first tick.
           </text>
         </svg>
       </div>
@@ -120,7 +120,7 @@ export default function EquityCurves({ data }) {
         <span className="n">02</span>
         <h2>Equity curves</h2>
         <InfoButton title="Equity curves">
-          Each line is a competitor&apos;s live forward account value, plotted as cumulative return from the $100 start. Hover to read every competitor&apos;s value on a session. (Lines appear once a competitor has 2+ ticks.)
+          Each line is a competitor&apos;s live forward account value, plotted as cumulative return. All five share one axis that starts from the common $100 origin, so they&apos;re directly comparable. Hover to read every competitor&apos;s value on a session.
         </InfoButton>
         <span className="hint">hover for values · $100 start</span>
       </div>

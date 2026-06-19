@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
 import { pct, cls } from "../lib/format";
-import { InfoButton } from "./ModalContext";
+import { InfoButton, useModal } from "./ModalContext";
 
 function quoteSymbols(data) {
   const s = new Set();
@@ -18,6 +18,7 @@ function heldBy(data, sym) {
 }
 
 export default function LivePrices({ data }) {
+  const { openStock } = useModal();
   const symbols = useMemo(() => quoteSymbols(data), [data]);
   const [quotes, setQuotes] = useState({});
   const [asOf, setAsOf] = useState("connecting…");
@@ -58,7 +59,14 @@ export default function LivePrices({ data }) {
             const q = quotes[s];
             const up = (q?.pct || 0) >= 0;
             return (
-              <div key={s} className={"pcard " + (q ? (up ? "up" : "down") : "")}>
+              <div
+                key={s}
+                className={"pcard clk " + (q ? (up ? "up" : "down") : "")}
+                onClick={() => openStock(s)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openStock(s); } }}
+              >
                 <div className="sym">{s}<span className="by">{heldBy(data, s)}</span></div>
                 <div className={"px" + (q ? "" : " pmute")}>{q ? "$" + q.price.toFixed(2) : "…"}</div>
                 <div className={"chg " + (q ? cls(q.pct) : "")}>

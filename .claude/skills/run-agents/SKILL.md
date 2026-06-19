@@ -46,15 +46,14 @@ python3 tick.py
 ```
 Steps the momentum / mean-reversion / blended forward test on any new daily bar.
 
-## 5. Rebuild the dashboard + publish to the web app
+## 5. Publish the web app state
 ```
-python3 tools/build_dashboard.py   # writes dashboard.html AND web/state.json
-open dashboard.html
+python3 tools/build_dashboard.py   # writes web/public/state.json + history.json
 ```
-If the Vercel site is set up, also publish the new state so the hosted site updates:
-`git add web/public/state.json && git commit -m "tick: <date>" && git push` (Vercel auto-deploys on push).
+To view locally: `cd web && npm run dev` → http://localhost:3000.
+If the Vercel site is set up, publish the new state so the hosted site updates:
+`git add web/public/state.json web/public/history.json && git commit -m "tick: <date>" && git push` (Vercel auto-deploys on push).
 The site's live-price panel updates on its own via `/api/quotes`; only the bake-off state needs a push.
-(The web app is Next.js under `web/`; `tools/build_dashboard.py` writes `web/public/state.json`.)
 
 ## 6. Report back
 Summarize: what each agent bought/sold and why, the new standings, and any disagreement

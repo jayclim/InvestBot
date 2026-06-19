@@ -4,7 +4,7 @@ import { useModal, InfoButton } from "./ModalContext";
 
 export default function Swarm({ data }) {
   const s = data.swarm;
-  const { open } = useModal();
+  const { open, openStock } = useModal();
   if (!s) return null;
 
   const np = new Set(s.fish.map((f) => f.persona).filter(Boolean)).size;
@@ -54,7 +54,11 @@ export default function Swarm({ data }) {
                   />
                 ))}
               </div>
-              <div className="lab">{sym}</div>
+              <div
+                className={"lab" + (sym !== "CASH" ? " clk" : "")}
+                onClick={sym !== "CASH" ? () => openStock(sym) : undefined}
+                title={sym !== "CASH" ? `Open ${sym} chart` : undefined}
+              >{sym}</div>
               <div className="cnt">{n}</div>
             </div>
           ))}

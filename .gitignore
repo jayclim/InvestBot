@@ -32,7 +32,6 @@ web/build/
 web/.vercel/
 
 # ── Generated / regenerated artifacts (rebuilt by the tick) ──────────
-dashboard.html
 data/snapshot.json
 data/raw/
 

@@ -1,6 +1,10 @@
-"""Build the single-file dashboard from saved state (pure rendering — no API calls).
+"""Publish the dashboard's data from saved state for the Next.js web app (no API calls).
 
     python tools/build_dashboard.py
+
+Writes web/public/state.json (the bake-off board) and web/public/history.json (daily close
+history per symbol, for the click-through stock charts). The single-file dashboard.html twin
+has been retired — web/ is the one canonical front-end.
 
 Standings / curves / decision trail are the LIVE FORWARD paper books — every competitor
 (rule strategies from state/paper_state.json, AI agents from state/agent_state.json) trades
@@ -31,8 +35,6 @@ from bot.paper import load_agents
 from run import load_snapshot
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TEMPLATE = os.path.join(ROOT, "dashboard", "template.html")
-OUT = os.path.join(ROOT, "dashboard.html")
 STRATEGIES = [MomentumBreakout, MeanReversion, Blended]
 
 RULES = {
@@ -123,6 +125,41 @@ def mock_swarm(date, universe):
             "note": "Mock swarm — run `python run_agents.py` (with an OpenRouter key) for a live vote."}
 
 
+def normalize_curves(competitors, all_dates, starting_cash):
+    """Presentation-only: put every competitor on ONE shared date axis that begins at a
+    $100 inception (the trading day before the first forward session), forward-filling any
+    gaps. This lets all competitors plot together from a common origin even when one has a
+    single tick. It does NOT touch return / max_dd / win_rate — those were already summarized
+    from the true portfolio record before this runs."""
+    union = sorted({d for c in competitors for d, _ in c["equity_curve"]})
+    if not union:
+        return
+    try:
+        i0 = all_dates.index(union[0])
+        inception = all_dates[i0 - 1] if i0 > 0 else union[0]
+    except ValueError:
+        inception = union[0]
+    axis = ([inception] + union) if inception != union[0] else union
+    for c in competitors:
+        have = {d: v for d, v in c["equity_curve"]}
+        out, last = [], starting_cash
+        for d in axis:
+            if d in have:
+                last = have[d]
+            out.append([d, round(last, 2)])
+        c["equity_curve"] = out
+
+
+def write_history(snap):
+    """Publish daily close history per symbol for the click-through stock charts — the bots'
+    own snapshot data, so buy/sell markers line up exactly with what they traded on."""
+    hist = {s: [[b.date, round(b.close, 2)] for b in bars] for s, bars in snap.items() if bars}
+    path = os.path.join(ROOT, "web", "public", "history.json")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    json.dump(hist, open(path, "w"))
+    return len(hist)
+
+
 def load_live():
     path = os.path.join(ROOT, "state", "live_snapshot.json")
     if os.path.exists(path):
@@ -161,6 +198,9 @@ def main():
               "end": fwd_dates[-1] if fwd_dates else dates[-1],
               "sessions": len(fwd_dates)}
 
+    # Put every competitor on one shared $100-origin axis so all curves plot together.
+    normalize_curves(competitors, dates, cfg.STARTING_CASH)
+
     data = {
         "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
         "starting_cash": cfg.STARTING_CASH,
@@ -187,18 +227,14 @@ def main():
         },
     }
 
-    with open(TEMPLATE) as f:
-        html = f.read()
-    html = html.replace("__DASHBOARD_DATA__", json.dumps(data))
-    with open(OUT, "w") as f:
-        f.write(html)
-    # publish the same data for the Next.js web app (served from web/public/state.json)
-    web_state = os.path.join(ROOT, "web", "public", "state.json")
-    os.makedirs(os.path.dirname(web_state), exist_ok=True)
-    json.dump(data, open(web_state, "w"))
+    # Publish data for the Next.js web app (web/ is the one canonical front-end).
+    web_pub = os.path.join(ROOT, "web", "public")
+    os.makedirs(web_pub, exist_ok=True)
+    json.dump(data, open(os.path.join(web_pub, "state.json"), "w"))
+    n_hist = write_history(snap)
     a = "real" if not data["analyst"].get("is_mock") else "mock"
     sw = "live" if not data["swarm"].get("is_mock") else "mock"
-    print(f"wrote {OUT}  ({len(html)//1024} KB) · forward sessions={period['sessions']} · analyst={a} · swarm={sw} · competitors={len(competitors)}")
+    print(f"wrote web/public/state.json + history.json ({n_hist} symbols) · forward sessions={period['sessions']} · analyst={a} · swarm={sw} · competitors={len(competitors)}")
 
 
 if __name__ == "__main__":

@@ -23,7 +23,7 @@ Each trades the same market on its own; the dashboard ranks them with full click
 This project is **agent-driven** — a Claude Code agent fetches market data (the `robinhood-trading`
 MCP), runs the analyst + swarm, and advances the books. The easy button:
 
-> say **“run the agents”** — the `run-agents` skill: refresh data → analyst report → swarm → advance books → rebuild dashboard.
+> say **“run the agents”** — the `run-agents` skill: refresh data → analyst report → swarm → advance books → publish web state.
 
 Manual pieces (stdlib-only Python, except `httpx` for the swarm):
 
@@ -31,16 +31,16 @@ Manual pieces (stdlib-only Python, except `httpx` for the swarm):
 python3 run.py                    # backtest only — prints the leaderboard
 python3 tick.py                   # advance the rule strategies one session
 python3 run_agents.py             # run the swarm + rebalance the AI agents' books (needs OPENROUTER_API_KEY)
-python3 tools/build_dashboard.py  # regenerate dashboard.html + web/public/state.json (no API calls)
+python3 tools/build_dashboard.py  # publish web/public/state.json + history.json (no API calls)
 ```
 
 ## The dashboard
 
-Two front-ends, same data:
-
-- **`dashboard.html`** — a single generated file; open it directly.
-- **`web/`** — a **Next.js** app (deployable to Vercel) that fetches the bake-off state and
-  **live-polls real prices** (`/api/quotes`, Finnhub). See [`web/README.md`](web/README.md).
+The **`web/`** app is the dashboard — a **Next.js** app (deployable to Vercel) that fetches the
+bake-off state (`web/public/state.json`), **live-polls real prices** (`/api/quotes`, Finnhub), pulls
+**headlines** (`/api/news`), and lets you **click any ticker** for its price chart with each method's
+buy/sell markers. See [`web/README.md`](web/README.md). (`build_dashboard.py` also publishes
+`web/public/history.json` for those charts.)
 
 Standings, curves, and the decision trail are the **live forward books** (every competitor from
 $100, same method). A Dec–Jun walk-forward backtest is kept as per-strategy reference, not the board.

@@ -33,7 +33,7 @@ export default function Page() {
 
   const live = data.live || {};
   return (
-    <ModalProvider>
+    <ModalProvider data={data}>
       <div className={"livebar " + (live.active ? "live-on" : "live-off")}>
         <div className="lw">
           <span><span className="dot" />{live.active ? "Live trading — on" : "Live trading — off · paper only"}</span>
