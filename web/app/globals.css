@@ -159,6 +159,13 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:v
 .stockpx{display:flex;flex-direction:column;align-items:flex-end;line-height:1.25}
 .stockpx .px{font-size:1.25rem}
 .stockchart{margin-top:6px}
+.rangebar{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0 4px}
+.rbtn{appearance:none;font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.04em;padding:4px 10px;border:1px solid var(--line);
+  background:var(--surface);color:var(--muted);border-radius:2px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.rbtn:hover{border-color:var(--signal);color:var(--signal)}
+.rbtn.on{background:var(--signal);color:#fff;border-color:var(--signal)}
+.rdiv{width:1px;align-self:stretch;background:var(--line);margin:0 4px}
+.extsw{width:12px;height:12px;border-radius:2px;background:var(--ink);opacity:.12}
 .mklegend{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:8px;font-size:.78rem;color:var(--muted)}
 .mklegend span{display:inline-flex;align-items:center;gap:6px}
 .mk{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent}

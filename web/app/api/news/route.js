@@ -3,14 +3,21 @@
 // FINNHUB_API_KEY is a Vercel env var, never sent to the client. CDN-cached 10 min.
 // Degrades gracefully: missing key or upstream error -> empty list (the modal still renders).
 
+import { clientIp, rateLimit, validSymbol, tooMany, badRequest } from "../../../lib/ratelimit";
+
 export const dynamic = "force-dynamic";
+export const maxDuration = 10;
 
 const ymd = (d) => d.toISOString().slice(0, 10);
 
 export async function GET(request) {
+  const rl = rateLimit("news:" + clientIp(request), 30, 60000);
+  if (!rl.ok) return tooMany(rl.retryAfter);
+
   const { searchParams } = new URL(request.url);
   const symbol = String(searchParams.get("symbol") || "").trim().toUpperCase();
   if (!symbol) return Response.json({ news: [], asOf: Date.now() });
+  if (!validSymbol(symbol)) return badRequest("invalid symbol");
 
   const key = process.env.FINNHUB_API_KEY;
   if (!key) return Response.json({ news: [], asOf: Date.now(), error: "FINNHUB_API_KEY not set" });
@@ -22,7 +29,7 @@ export async function GET(request) {
   try {
     const r = await fetch(
       `https://finnhub.io/api/v1/company-news?symbol=${encodeURIComponent(symbol)}&from=${ymd(from)}&to=${ymd(to)}&token=${key}`,
-      { cache: "no-store" }
+      { cache: "no-store", signal: AbortSignal.timeout(5000) }
     );
     if (r.ok) {
       const j = await r.json();
