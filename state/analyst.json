@@ -1,35 +1,37 @@
 {
-  "date": "2026-06-18",
-  "as_of": "2026-06-18 (intraday; daily bars through 2026-06-17 close)",
-  "pick": "NVDA",
+  "date": "2026-06-20",
+  "as_of": "2026-06-20 (weekend; daily bars through 2026-06-18 close, markets closed Fri 6/19 Juneteenth)",
+  "pick": "MU",
   "action": "buy",
-  "sizing": "diversified starter, large cash buffer",
-  "confidence": 0.55,
-  "targets": {"NVDA": 0.22, "MU": 0.18, "GE": 0.12},
+  "sizing": "4 reasonable-multiple names, ~36% cash buffer into MU's 6/24 print and a hawkish new-chair Fed",
+  "confidence": 0.56,
+  "targets": {"MU": 0.20, "NVDA": 0.18, "QCOM": 0.14, "GE": 0.12},
   "framework": "Claude for Financial Services — equity-research methodology (/screen → /sector → /comps → /catalysts → /thesis → portfolio). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
   "regime": {
-    "label": "Hawkish Fed, momentum melt-up in semis",
-    "note": "The Fed held but signaled a possible 2026 hike (~half the FOMC) as the Middle-East inflation impulse lingers, even with the US–Iran ceasefire pulling oil back. Higher-for-longer pressures the richest long-duration names hardest — which argues against chasing 400–500× semis and toward reasonable-multiple quality plus a real cash buffer.",
-    "source": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-17-2026"
+    "label": "Hawkish new-chair Fed vs. a volatile AI-semis melt-up",
+    "note": "Kevin Warsh's first FOMC meeting landed hawkish — 9 of 18 officials now pencil in 2026 hikes — and triggered a 'Fed selloff', after a -4% chip-led Nasdaq day on June 4 (worst since Apr-2025). The tape recovered into a fresh semis melt-up (Nasdaq ~26.5k, S&P ~7.5k), but with the whole complex at/near 52-wk highs into a hawkish higher-for-longer signal, the thin air is in the richest long-duration multiples. Favor reasonable-multiple leadership + a real cash buffer over chasing 100–500x parabolas.",
+    "source": "https://www.schwab.com/learn/story/stock-market-update-open"
   },
-  "thesis": "The screen is dominated by semis at fresh 52-week highs — ARM (+88% over 20d) trades at a 495× P/E, MRVL at 99×, AMD at 168×. The financial-services lens declines to chase those: at a possible-hike turn, that's where the air is thinnest. Instead the book anchors on NVDA, the valuation anomaly of the group — 31× P/E, ~26% below its high despite +85% YoY data-center growth — i.e. the quality name on sale while the crowd pays up elsewhere. It adds MU (49× P/E) as the cheapest expression of the memory super-cycle, and GE Aerospace (44×, dividend) as a non-tech momentum sleeve that also hedges the hawkish/geopolitical regime. ARM and MRNA (no earnings) are deliberately screened out on valuation/quality. ~48% cash reflects a stretched tape into a hawkish Fed.",
+  "thesis": "The screen is one trade: a memory/AI-infrastructure semis melt-up. MU (+62% 1mo, +388% 6mo), ARM (+97% 1mo), MRVL (+76% 1mo) and AMD lead; mega-cap software (MSFT -9%, PLTR -17% 3mo) and China lag. The financial-services lens leans INTO the super-cycle but only through reasonable multiples and refuses the parabolas: ARM at 519x P/E and MRVL at 106x (on a 251M-share blow-off day, 3x its average) are exactly where a hawkish-chair, higher-for-longer turn does the most damage. The book's anchor pick is MU (54x P/E) — the leadership of the memory super-cycle, with HBM reportedly sold out and records guided, reporting 6/24; it is sized for a binary print, not bet on. NVDA is the valuation anomaly — 32x P/E, the cheapest of the AI semis and ~11% below its high while the rest of the complex went vertical, an asymmetric laggard. QCOM (24.6x, 1.6% yield, only mid-range vs its high) is the value-plus-momentum sleeve. GE Aerospace (44x, vol ~2%/day, clean uptrend) is the non-semi diversifier that cuts the book's chip beta. ~36% cash respects a stretched tape at the highs into a hawkish Fed and a binary MU catalyst.",
   "evidence": [
-    {"point": "ARM 495× P/E at a fresh 52-wk high — screened out on valuation", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
-    {"point": "NVDA 31× P/E, ~26% below 52-wk high — cheapest quality in the group", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
-    {"point": "MU 49× P/E, +49% 20d — cheapest expression of the memory super-cycle", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
-    {"point": "GE Aerospace 44× P/E + dividend — non-tech momentum & macro hedge", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
-    {"point": "Fed signaled a possible 2026 hike — headwind for the richest multiples", "source": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-17-2026"}
+    {"point": "MU 54x P/E, 52-wk range $103→$1,149 (last $1,134, at the high); HBM sold out, records guided, reports 6/24", "source": "https://www.techtimes.com/articles/318228/20260611/micron-earnings-preview-june-24-tests-whether-hbm-supercycle-real-cresting.htm"},
+    {"point": "ARM 519x P/E / MRVL 106x on 251M-share volume (3x avg) — parabolic, screened out on valuation/blow-off risk", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
+    {"point": "NVDA 32x P/E, ~11% below its 52-wk high and -4.5% on the month while peers melted up — cheapest AI-semi, asymmetric laggard", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
+    {"point": "QCOM 24.6x P/E, 1.6% dividend, range-position ~75% (not overextended) — value + momentum", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
+    {"point": "GE Aerospace 44x P/E, 20d realized vol ~2%/day, fresh high — non-semi diversifier and regime hedge", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
+    {"point": "Warsh-Fed first meeting hawkish (9/18 see 2026 hikes), 'Fed selloff' then recovery; markets closed Fri 6/19 Juneteenth", "source": "https://www.schwab.com/learn/story/stock-market-update-open"}
   ],
   "risks": [
-    "Momentum keeps ripping: by refusing ARM/MRVL at the highs, this book underperforms if the melt-up continues.",
-    "MU is memory-cyclical — pricing rolls over fast when the cycle turns.",
-    "A ~48% cash weight drags badly if the ceasefire fuels a broad melt-up."
+    "MU's 6/24 print is binary — a soft HBM/guidance read can gap the whole memory complex down; the position is sized for that, but it still dominates near-term P&L.",
+    "Momentum keeps ripping: by refusing ARM/MRVL at the highs, the book underperforms if the parabola extends.",
+    "A hawkish higher-for-longer turn that actually bites would hit even the 'reasonable' 30–50x multiples here, not just the 500x names.",
+    "~36% cash drags if the melt-up broadens; the trade-off is deliberate into the catalyst."
   ],
   "data_examined": [
-    {"label": "Screen: 20d/5d momentum + vs-20d-SMA across the 100-name universe", "source": "data/snapshot.json"},
-    {"label": "Comps: P/E, P/B, market cap, 52-wk range on the finalists", "source": "Robinhood get_equity_fundamentals"},
-    {"label": "Regime: Fed path, oil/gold reaction to the Iran ceasefire", "source": "web_search"}
+    {"label": "Screen: 5d/21d/63d/126d momentum, 20d vol, range-position across the 100-name universe", "source": "data/snapshot.json (bars through 2026-06-18)"},
+    {"label": "Comps: P/E, P/B, market cap, 52-wk range, dividend on MU/ARM/MRVL/AMD/NVDA/QCOM/GE/HOOD", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
+    {"label": "Regime: Warsh-Fed first-meeting reaction, semis volatility, June-24 MU catalyst", "source": "web_search (Schwab, CNBC, TechTimes)"}
   ],
-  "generated_by": "Claude for Financial Services (equity-research plugin methodology) via Claude Code, 2026-06-18",
-  "note": "Daily bars run through the 2026-06-17 close; fundamentals are live 2026-06-18. The competitor books advance on the next completed session — this report sets the analyst's next-tick targets."
+  "generated_by": "Claude for Financial Services (equity-research plugin methodology) via Claude Code, 2026-06-20",
+  "note": "Daily bars run through the 2026-06-18 close (6/19 was the Juneteenth holiday; the historicals endpoint had no 6/19 bar at fetch time). Fundamentals are live as of 2026-06-18. This report sets the analyst's next-tick targets; the competitor books advance on the next completed session."
 }
