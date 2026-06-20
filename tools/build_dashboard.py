@@ -49,14 +49,19 @@ AGENT_RULES = {
 KIND = {"deep_research_analyst": "analyst", "mirofish_swarm": "swarm"}
 
 
-def pf_to_competitor(name, pf, kind, rules, backtest=None):
+def pf_to_competitor(name, pf, kind, rules, backtest=None, marks=None):
     m = summarize(pf, cfg.STARTING_CASH)
+    marks = marks or {}
     c = {
         "name": name, "kind": kind,
         "final": round(m["final"], 2), "return": round(m["return"], 4),
         "max_dd": round(m["max_dd"], 4), "trades": m["trades"],
         "win_rate": round(m["win_rate"], 4), "cash": round(pf.cash, 2), "rules": rules,
-        "holdings": [{"symbol": s, "qty": round(p.qty, 4), "avg_price": round(p.avg_price, 2)}
+        # `last` = the per-tick mark price (latest snapshot close). The web app re-marks
+        # holdings to live quotes and falls back to `last` so a closed market / missing
+        # quote reproduces `final` exactly (cash + Σ qty·last == final).
+        "holdings": [{"symbol": s, "qty": round(p.qty, 4), "avg_price": round(p.avg_price, 2),
+                      "last": round(marks.get(s, p.avg_price), 2)}
                      for s, p in pf.positions.items()],
         "equity_curve": [[d, round(v, 2)] for d, v in pf.equity_curve],
         "trade_log": [{"date": t.date, "side": t.side, "symbol": t.symbol, "qty": round(t.qty, 4),
@@ -171,6 +176,7 @@ def load_live():
 def main():
     snap = load_snapshot(os.path.join(ROOT, "data", "snapshot.json"))
     dates = sorted({b.date for bars in snap.values() for b in bars})
+    marks = {s: bars[-1].close for s, bars in snap.items() if bars}  # latest close per symbol
 
     # Backtest reference (context only, shown in each strategy's detail)
     bt = run_replay(snap, STRATEGIES)
@@ -180,14 +186,14 @@ def main():
     # LIVE forward books — the board
     strat_names = [c.name for c in STRATEGIES]
     alg_pfs = load_forward_algos(strat_names)
-    competitors = [pf_to_competitor(n, alg_pfs[n], "algo", RULES.get(n, ""), backtest_ref.get(n)) for n in strat_names]
+    competitors = [pf_to_competitor(n, alg_pfs[n], "algo", RULES.get(n, ""), backtest_ref.get(n), marks) for n in strat_names]
 
     _, agent_pfs = load_agents(cfg.AGENT_NAMES)
     active_agents, roster_preview = {}, []
     for n in cfg.AGENT_NAMES:
         pf = agent_pfs[n]
         if pf.equity_curve or pf.trades:
-            competitors.append(pf_to_competitor(n, pf, KIND[n], AGENT_RULES[n]))
+            competitors.append(pf_to_competitor(n, pf, KIND[n], AGENT_RULES[n], marks=marks))
             active_agents[n] = pf
         else:
             roster_preview.append({"name": n, "kind": KIND[n], "status": "not yet run — `python run_agents.py` to start its paper book"})

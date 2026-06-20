@@ -2,13 +2,23 @@
 import { useRef, useState } from "react";
 import { money, pct, cls, RCOL } from "../lib/format";
 import { InfoButton } from "./ModalContext";
+import { useLiveQuotes, liveMark } from "./LiveQuotes";
 
 export default function EquityCurves({ data }) {
   const svgRef = useRef(null);
   const [hover, setHover] = useState(null);
+  const { quotes, live } = useLiveQuotes();
   const W = 960, H = 400, L = 58, R = 18, T = 18, B = 34;
   const start = data.starting_cash;
-  const series = data.competitors.filter((c) => c.equity_curve && c.equity_curve.length >= 2);
+  // Append a live-marked point to each curve so the lines extend to the current value.
+  // All curves share one axis, so appending one point to every series keeps them aligned.
+  const series = data.competitors
+    .filter((c) => c.equity_curve && c.equity_curve.length >= 2)
+    .map((c) => {
+      const mk = liveMark(c, quotes, start);
+      const curve = live ? [...c.equity_curve, ["live", Math.round(mk.equity * 100) / 100]] : c.equity_curve;
+      return { ...c, equity_curve: curve, _ret: live ? mk.ret : c.return };
+    });
 
   let body;
   if (!series.length) {
@@ -107,7 +117,7 @@ export default function EquityCurves({ data }) {
         )}
         <div className="legend">
           {series.map((c, i) => (
-            <span key={i}><i className="swatch" style={{ background: RCOL[i % RCOL.length] }} />{c.name} <b className={"mono " + cls(c.return)}>{pct(c.return)}</b></span>
+            <span key={i}><i className="swatch" style={{ background: RCOL[i % RCOL.length] }} />{c.name} <b className={"mono " + cls(c._ret)}>{pct(c._ret)}</b></span>
           ))}
         </div>
       </div>
@@ -120,9 +130,9 @@ export default function EquityCurves({ data }) {
         <span className="n">02</span>
         <h2>Equity curves</h2>
         <InfoButton title="Equity curves">
-          Each line is a competitor&apos;s live forward account value, plotted as cumulative return. All five share one axis that starts from the common $100 origin, so they&apos;re directly comparable. Hover to read every competitor&apos;s value on a session.
+          Each line is a competitor&apos;s live forward account value, plotted as cumulative return. All five share one axis that starts from the common $100 origin, so they&apos;re directly comparable. The final point is re-marked to live quotes every 15s (labelled <span className="mono">live</span>); with the market closed it sits at the last tick&apos;s close. Hover to read every competitor&apos;s value on a session.
         </InfoButton>
-        <span className="hint">hover for values · $100 start</span>
+        <span className="hint">{live ? "live tip" : "hover for values"} · $100 start</span>
       </div>
       {body}
     </section>

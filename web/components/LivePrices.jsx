@@ -1,15 +1,9 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { pct, cls } from "../lib/format";
 import { InfoButton, useModal } from "./ModalContext";
+import { useLiveQuotes, feedSymbols } from "./LiveQuotes";
 
-function quoteSymbols(data) {
-  const s = new Set();
-  (data.competitors || []).forEach((c) => (c.holdings || []).forEach((h) => s.add(h.symbol)));
-  if (data.analyst?.targets) Object.keys(data.analyst.targets).forEach((x) => s.add(x));
-  if (data.swarm?.ballots) data.swarm.ballots.slice(0, 6).forEach(([sym]) => { if (sym !== "CASH") s.add(sym); });
-  return [...s].slice(0, 28);
-}
 function heldBy(data, sym) {
   const who = (data.competitors || [])
     .filter((c) => (c.holdings || []).some((h) => h.symbol === sym))
@@ -19,29 +13,8 @@ function heldBy(data, sym) {
 
 export default function LivePrices({ data }) {
   const { openStock } = useModal();
-  const symbols = useMemo(() => quoteSymbols(data), [data]);
-  const [quotes, setQuotes] = useState({});
-  const [asOf, setAsOf] = useState("connecting…");
-
-  useEffect(() => {
-    if (!symbols.length) { setAsOf(""); return; }
-    let alive = true;
-    async function poll() {
-      try {
-        const r = await fetch("/api/quotes?symbols=" + symbols.join(","), { cache: "no-store" });
-        const j = await r.json();
-        if (!alive) return;
-        setQuotes(j.quotes || {});
-        const n = Object.keys(j.quotes || {}).length;
-        setAsOf(n ? `${n} symbols · updated ${new Date(j.asOf).toLocaleTimeString()}` : "no quotes (check FINNHUB_API_KEY)");
-      } catch (_e) {
-        if (alive) setAsOf("live feed unavailable — run `next dev` or deploy to Vercel");
-      }
-    }
-    poll();
-    const id = setInterval(poll, 15000);
-    return () => { alive = false; clearInterval(id); };
-  }, [symbols]);
+  const { quotes, asOf } = useLiveQuotes();
+  const symbols = useMemo(() => feedSymbols(data), [data]);
 
   return (
     <section>

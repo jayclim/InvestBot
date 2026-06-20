@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { ModalProvider, Modal } from "../components/ModalContext";
+import { LiveQuotesProvider } from "../components/LiveQuotes";
 import LivePrices from "../components/LivePrices";
 import Leaderboard from "../components/Leaderboard";
 import EquityCurves from "../components/EquityCurves";
@@ -34,6 +35,7 @@ export default function Page() {
   const live = data.live || {};
   return (
     <ModalProvider data={data}>
+      <LiveQuotesProvider data={data}>
       <div className={"livebar " + (live.active ? "live-on" : "live-off")}>
         <div className="lw">
           <span><span className="dot" />{live.active ? "Live trading — on" : "Live trading — off · paper only"}</span>
@@ -74,6 +76,7 @@ export default function Page() {
       </div>
 
       <Modal />
+      </LiveQuotesProvider>
     </ModalProvider>
   );
 }
