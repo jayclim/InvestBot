@@ -118,6 +118,6 @@ if __name__ == "__main__":  # ponytail: self-check for the stop-loss / circuit-b
     assert "MSFT" in pf.positions
 
     # per-agent risk: configured override vs global fallback for an unknown name
-    assert risk_for("mirofish_swarm") == (0.15, cfg.CIRCUIT_BREAKER_EQUITY)
+    assert risk_for("llm_voters") == (0.15, cfg.CIRCUIT_BREAKER_EQUITY)
     assert risk_for("nope") == (cfg.STOP_LOSS_PCT, cfg.CIRCUIT_BREAKER_EQUITY)
     print("ok")

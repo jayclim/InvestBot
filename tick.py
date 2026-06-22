@@ -22,8 +22,7 @@ from run import load_snapshot
 REGISTRY = {c.name: c for c in (MomentumBreakout, MeanReversion, Blended)}
 
 
-def main():
-    path = sys.argv[1] if len(sys.argv) > 1 else "data/snapshot.json"
+def main(path="data/snapshot.json"):
     snap = load_snapshot(path)
     all_dates, by_sym_date = index_snapshot(snap)
     seed_last = all_dates[-1]
@@ -61,4 +60,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1] if len(sys.argv) > 1 else "data/snapshot.json")

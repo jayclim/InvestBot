@@ -158,7 +158,7 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:v
 /* stock drill-down modal */
 .stockhd{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:2px}
 .stockhd h3{margin:0}
-.stockpx{display:flex;flex-direction:column;align-items:flex-end;line-height:1.25}
+.stockpx{display:flex;flex-direction:column;align-items:flex-start;line-height:1.25}
 .stockpx .px{font-size:1.25rem}
 .stockchart{margin-top:6px}
 .rangebar{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0 4px}
@@ -192,7 +192,8 @@ footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:v
   .fish{width:11px;height:11px} .fcol{min-width:46px} .fcol .stack{width:46px}
   .modal{padding:14px 8px} .modal-card{padding:18px 15px;max-height:92vh}
   .modal-card h3{font-size:1.15rem}
-  table.tl th,table.tl td{padding:5px 5px;font-size:.78rem}
+  table.tl th,table.tl td{padding:5px 5px;font-size:.78rem;white-space:nowrap}
+  table.tl{display:block;overflow-x:auto}  /* scroll wide tables instead of overflowing the modal */
 }
 
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

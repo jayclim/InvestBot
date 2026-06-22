@@ -35,18 +35,44 @@ follows the same workflow manually. Data layer: Robinhood fundamentals/historica
 ```
 python3 run_agents.py
 ```
-This runs the swarm live (~150 OpenRouter calls, ~$0.20 — mention the cost), writes
-`state/swarm.json`, reads `state/analyst.json`, and rebalances each agent's $100 paper
-book toward its targets at the latest prices (it can buy several names and sell several).
-State accrues in `state/agent_state.json`.
+One step-selectable runner now drives the whole mechanical tick. The default runs, in order:
+`swarm` → `mirofish` → `analyst` → `rules` → `dashboard`. It writes `state/swarm.json` and
+`state/mirofish.json`, reads `state/analyst.json`, rebalances each agent's $100 paper book toward
+its targets, advances the rule strategies, and publishes the web state. State accrues in
+`state/agent_state.json` / `paper_state.json`.
 
-## 4. Advance the rule strategies
+**Competitors:** `llm_voters` (independent voters, ~$0.07-0.20), `mirofish_real` (real-MiroFish
+social-sim swarm — persona agents with memory interacting over rounds; **costs more**), and
+`deep_research_analyst` (from step 2).
+
+**Always estimate cost first and tell the user** (the real-MiroFish step is the expensive one):
+```
+python3 run_agents.py --estimate --mirofish-tier <cheap|default|qwen>
+```
+Tiers: `cheap` (30×6, ~$0.10-0.25), `default` (44×10, ~$0.20-0.70), `qwen` (44×10 Qwen-plus,
+~$0.70-2.00). Pass the tier when you run: `python3 run_agents.py --mirofish-tier qwen`.
+
+**Shaping the tick (do exactly what the user asks):**
+- Skip a step: `python3 run_agents.py --skip mirofish` (e.g. user says "run without the real MiroFish").
+- One step only: `python3 run_agents.py --only swarm`.
+- Explicit order, repeats allowed: `python3 run_agents.py --steps swarm,swarm,dashboard` (running a
+  rebalance step twice the same day re-trades and appends a second equity point — only if asked).
+- Steps: `swarm`, `mirofish`, `analyst`, `rules`, `dashboard`.
+
+When `--steps`/`--only`/`--skip` already include `rules` and `dashboard`, you do NOT also need
+steps 4 and 5 below — they're folded into the runner. Run them standalone only if you skipped them.
+
+**MiroFish world-events seed (optional):** if you want the real-MiroFish swarm to reason about news,
+write recent headlines/signals to `state/news_seed.txt` before running; the swarm prepends it to its
+briefing. Absent = it runs on price action only.
+
+## 4. Advance the rule strategies (standalone — skip if `rules` ran in step 3)
 ```
 python3 tick.py
 ```
 Steps the momentum / mean-reversion / blended forward test on any new daily bar.
 
-## 5. Publish the web app state
+## 5. Publish the web app state (standalone — skip if `dashboard` ran in step 3)
 ```
 python3 tools/build_dashboard.py   # writes web/public/state.json + history.json
 ```
@@ -61,7 +87,9 @@ between the analyst, the swarm, and the rule strategies.
 
 ## Guardrails & going live
 - **Paper only.** Do not implement or call real-order placement in this flow.
-- **Cost:** the swarm costs ~$0.20 per run on OpenRouter (the analyst runs on the Claude Code plan).
+- **Cost:** the swarm is ~$0.07-0.20/run on OpenRouter; the real-MiroFish swarm is the expensive
+  one (~$0.10-2.00/run depending on tier) — **always `--estimate` and tell the user before running it**,
+  or `--skip mirofish` to leave it out. The analyst runs on the Claude Code plan.
 - **Graduation bar before real money:** a competitor should survive a drawdown, keep max
   drawdown tolerable, and make enough decisions to not be luck — *and* the user must fund
   account •••• — before wiring `RobinhoodBroker`. Surface this; don't go live on your own.

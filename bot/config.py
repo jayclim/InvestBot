@@ -49,7 +49,7 @@ SMA_PERIOD = 20
 WARMUP = 22                               # bars of history required before trading
 
 # --- Agent paper accounts (analyst + swarm trade fake money before going live) ---
-AGENT_NAMES = ["deep_research_analyst", "mirofish_swarm"]
+AGENT_NAMES = ["deep_research_analyst", "llm_voters", "mirofish_real"]
 AGENT_MAX_WEIGHT = 0.6   # cap any single name in an agent's paper book (risk control)
 
 # Per-agent risk controls — harness-enforced, the agent never overrides these mid-trade.
@@ -59,7 +59,8 @@ AGENT_MAX_WEIGHT = 0.6   # cap any single name in an agent's paper book (risk co
 # paper.risk_for.
 AGENT_RISK = {
     "deep_research_analyst": {"stop_pct": 0.20, "breaker_equity": CIRCUIT_BREAKER_EQUITY},  # deep-research: more room
-    "mirofish_swarm":        {"stop_pct": 0.15, "breaker_equity": CIRCUIT_BREAKER_EQUITY},  # short-horizon: cut faster
+    "llm_voters":        {"stop_pct": 0.15, "breaker_equity": CIRCUIT_BREAKER_EQUITY},  # short-horizon: cut faster
+    "mirofish_real":         {"stop_pct": 0.15, "breaker_equity": CIRCUIT_BREAKER_EQUITY},  # social-sim swarm
 }
 
 # --- Go-live (NOT used during paper testing) ---

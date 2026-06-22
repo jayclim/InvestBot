@@ -43,9 +43,11 @@ provenance, per-stock charts (price history + buy/sell markers + news), and live
 - `run.py` (backtest CLI), `tick.py` (rule-strategy forward tick), `run_agents.py` (agents tick).
 - `tools/build_dashboard.py` — publishes `web/public/state.json` + `history.json` from `state/`. `tools/ingest_rh.py` — RH historicals → `data/snapshot.json`.
 - `web/` — a **Next.js** (App Router) app for Vercel: dashboard reading `web/public/state.json`, with
-  `/api/quotes` (live prices) + `/api/news` (headlines) Finnhub serverless routes (key from `FINNHUB_API_KEY`),
-  and click-any-ticker drill-down charts (`StockModal`, reading `web/public/history.json`). `build_dashboard.py`
-  publishes `state.json` + `history.json`; the GitHub repo is `jayclim/InvestBot`. See `web/README.md`.
+  `/api/quotes` (live prices) + `/api/news` (headlines) + `/api/intraday` (pre/after-hours candles, Yahoo)
+  serverless routes (Finnhub key from `FINNHUB_API_KEY`), click-any-ticker drill-down charts (`StockModal`,
+  reading `web/public/history.json`), a per-competitor holdings table, and a **Stock pool** section listing
+  the universe with full company names (`web/lib/names.js`). `build_dashboard.py` publishes `state.json` +
+  `history.json`; the GitHub repo is `jayclim/InvestBot`. See `web/README.md`.
 - `state/` — `paper_state.json` (algos fwd), `agent_state.json` (agents fwd), `swarm.json`, `analyst.json`, `live_snapshot.json` (gitignored).
 - `data/snapshot.json` — daily OHLCV the bots read.
 
@@ -60,8 +62,12 @@ provenance, per-stock charts (price history + buy/sell markers + news), and live
 - **Never add Claude / yourself as a contributor or co-author.** Commit as jayclim with **no**
   `Co-Authored-By` trailer, and don't credit AI anywhere — commits, PRs, README, `package.json`, or this file.
 - Stdlib-only except `httpx` (swarm) — see `requirements.txt`.
-- The dashboard is one generated file with embedded JSON; every figure traces to a source (see its
-  "Methods & sources" section and the ⓘ explainers).
+- The dashboard is the `web/` app reading `web/public/state.json`; every figure traces to a source (see
+  its "Methods & sources" section and the ⓘ explainers).
+- **Display scale:** the real paper books are $100 (in `state/`), but the web shows every dollar/share
+  figure scaled to a **$10,000 notional** for readability. The scale is applied once in
+  `build_dashboard.py` (`DISPLAY_SCALE`); per-share prices and percentages stay unscaled. Change that one
+  constant to re-scale the whole site.
 - **Standings / curves / decision trail = the LIVE forward books** (all competitors from $100, same
   method). The Dec–Jun walk-forward backtest is **reference only**, shown inside each rule strategy's
   row detail — not the live board.

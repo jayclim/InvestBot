@@ -39,11 +39,14 @@ python3 tools/build_dashboard.py  # publish web/public/state.json + history.json
 The **`web/`** app is the dashboard — a **Next.js** app (deployable to Vercel) that fetches the
 bake-off state (`web/public/state.json`), **live-polls real prices** (`/api/quotes`, Finnhub), pulls
 **headlines** (`/api/news`), and lets you **click any ticker** for its price chart with each method's
-buy/sell markers. See [`web/README.md`](web/README.md). (`build_dashboard.py` also publishes
-`web/public/history.json` for those charts.)
+buy/sell markers. Each competitor has a holdings table, and a **Stock pool** section lists the
+universe with full company names. See [`web/README.md`](web/README.md). (`build_dashboard.py` also
+publishes `web/public/history.json` for those charts.)
 
 Standings, curves, and the decision trail are the **live forward books** (every competitor from
-$100, same method). A Dec–Jun walk-forward backtest is kept as per-strategy reference, not the board.
+$100, same method). Dollar/share figures are shown scaled to a **$10,000 notional** for readability —
+the real books are $100; scaling is applied once in `build_dashboard.py` (per-share prices and % stay
+real). A Dec–Jun walk-forward backtest is kept as per-strategy reference, not the board.
 
 ## Risk controls (the “not gambling” part)
 
