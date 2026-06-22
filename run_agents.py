@@ -51,9 +51,13 @@ def _rebalance(name, targets, ctx, label):
 
 
 def step_swarm(ctx):
-    from bot.swarm import run_swarm
+    from bot.swarm import run_swarm, refresh_news, load_news
+    news_path = os.path.join(ROOT, "state", "news.json")
+    n = refresh_news(cfg.UNIVERSE, news_path)  # all names, once/calendar-day, throttled + cached
+    items = n.get("items", {})
+    print(f"  news: {sum(len(v) for v in items.values())} headlines across {len(items)} names (cached {n.get('date')})")
     print("swarm: ~150 OpenRouter calls (~$0.07-0.20)…")
-    sw = run_swarm(ctx["snap"], cfg.UNIVERSE)
+    sw = run_swarm(ctx["snap"], cfg.UNIVERSE, load_news(news_path))
     json.dump(sw, open(os.path.join(ROOT, "state", "swarm.json"), "w"))
     print(f"  swarm: {sw['call']} ({int(sw['confidence']*100)}%), {sw['total_fish']} fish")
     _rebalance("llm_voters", paper.swarm_targets(sw), ctx, "swarm")

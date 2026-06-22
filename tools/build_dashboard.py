@@ -250,9 +250,16 @@ def main():
     os.makedirs(web_pub, exist_ok=True)
     json.dump(data, open(os.path.join(web_pub, "state.json"), "w"))
     n_hist = write_history(snap)
+    # Publish the cached daily headlines (with links) as a free static asset for the site.
+    news = os.path.join(ROOT, "state", "news.json")
+    n_news = 0
+    if os.path.exists(news):
+        nd = json.load(open(news))
+        n_news = len(nd.get("items", {}))
+        json.dump(nd, open(os.path.join(web_pub, "news.json"), "w"))
     a = "real" if not data["analyst"].get("is_mock") else "mock"
     sw = "live" if not data["swarm"].get("is_mock") else "mock"
-    print(f"wrote web/public/state.json + history.json ({n_hist} symbols) · forward sessions={period['sessions']} · analyst={a} · swarm={sw} · competitors={len(competitors)}")
+    print(f"wrote web/public/state.json + history.json ({n_hist} symbols) · news={n_news} names · forward sessions={period['sessions']} · analyst={a} · swarm={sw} · competitors={len(competitors)}")
 
 
 if __name__ == "__main__":
