@@ -1,37 +1,37 @@
 {
-  "date": "2026-06-20",
-  "as_of": "2026-06-20 (weekend; daily bars through 2026-06-18 close, markets closed Fri 6/19 Juneteenth)",
+  "date": "2026-06-21",
+  "as_of": "2026-06-21 (Sunday; daily bars through 2026-06-18 close — Fri 6/19 was the Juneteenth market holiday)",
   "pick": "MU",
   "action": "buy",
-  "sizing": "4 reasonable-multiple names, ~36% cash buffer into MU's 6/24 print and a hawkish new-chair Fed",
-  "confidence": 0.56,
-  "targets": {"MU": 0.20, "NVDA": 0.18, "QCOM": 0.14, "GE": 0.12},
+  "sizing": "One-week-upside mandate: 4 momentum/catalyst names, only ~15% cash, semis-led around MU's 6/24 print",
+  "confidence": 0.62,
+  "targets": {"MU": 0.30, "ARM": 0.20, "HOOD": 0.20, "SOXL": 0.15},
   "framework": "Claude for Financial Services — equity-research methodology (/screen → /sector → /comps → /catalysts → /thesis → portfolio). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
   "regime": {
-    "label": "Hawkish new-chair Fed vs. a volatile AI-semis melt-up",
-    "note": "Kevin Warsh's first FOMC meeting landed hawkish — 9 of 18 officials now pencil in 2026 hikes — and triggered a 'Fed selloff', after a -4% chip-led Nasdaq day on June 4 (worst since Apr-2025). The tape recovered into a fresh semis melt-up (Nasdaq ~26.5k, S&P ~7.5k), but with the whole complex at/near 52-wk highs into a hawkish higher-for-longer signal, the thin air is in the richest long-duration multiples. Favor reasonable-multiple leadership + a real cash buffer over chasing 100–500x parabolas.",
-    "source": "https://www.schwab.com/learn/story/stock-market-update-open"
+    "label": "Hawkish-pause Fed, but a tech-led tape into a marquee semis catalyst week",
+    "note": "New Chair Kevin Warsh's first FOMC was a hawkish pause — held 3.5–3.75% and removed the 2026 cut from the dots, with half of officials now penciling a hike — yet last week was tech-led (Nasdaq +2.4%) and the weekly forecast is 'moderately bullish' with bumpier tech action. The defining one-week event is Micron's 6/24 print, which sets the tone for the whole memory/AI-semis complex; the macro swing factor is the midweek PCE inflation read (the Fed's preferred gauge). This tick's explicit mandate is one-week upside, so the book leans into momentum leadership and keeps only a light cash hedge for the PCE/Fed tail.",
+    "source": "https://www.schwab.com/learn/story/weekly-traders-outlook"
   },
-  "thesis": "The screen is one trade: a memory/AI-infrastructure semis melt-up. MU (+62% 1mo, +388% 6mo), ARM (+97% 1mo), MRVL (+76% 1mo) and AMD lead; mega-cap software (MSFT -9%, PLTR -17% 3mo) and China lag. The financial-services lens leans INTO the super-cycle but only through reasonable multiples and refuses the parabolas: ARM at 519x P/E and MRVL at 106x (on a 251M-share blow-off day, 3x its average) are exactly where a hawkish-chair, higher-for-longer turn does the most damage. The book's anchor pick is MU (54x P/E) — the leadership of the memory super-cycle, with HBM reportedly sold out and records guided, reporting 6/24; it is sized for a binary print, not bet on. NVDA is the valuation anomaly — 32x P/E, the cheapest of the AI semis and ~11% below its high while the rest of the complex went vertical, an asymmetric laggard. QCOM (24.6x, 1.6% yield, only mid-range vs its high) is the value-plus-momentum sleeve. GE Aerospace (44x, vol ~2%/day, clean uptrend) is the non-semi diversifier that cuts the book's chip beta. ~36% cash respects a stretched tape at the highs into a hawkish Fed and a binary MU catalyst.",
+  "thesis": "Mandate this tick: what rises THIS week (Mon 6/22–Fri 6/26). The screen says one thing — semis lead and everything else lags. The week's center of gravity is Micron, which reports fiscal Q3 after the close on Wednesday 6/24 (consensus ~$35B revenue, +276% YoY, ~$20 EPS) amid a sold-out-HBM memory super-cycle; MU is already a momentum leader (+14% 5d, +55% 20d) at a fresh 52-wk high, and a strong print is the most likely single catalyst to lift the whole sleeve into week-end. The book is built around that: MU is the anchor (30%, sized for a binary print, not a coin-flip); ARM (20%) is the strongest momentum in the complex (+28% 5d, +71% 20d, fresh high) and the highest-beta IP name to a good MU read; SOXL (20%→15%) is the 3x-semis expression that amplifies a leadership week, consistent with the high-variance mandate. HOOD (20%) is the deliberate non-semi diversifier — fintech/crypto beta, +43% 20d, yet still ~30% below its Oct high (room to run) and with no binary event this week. Unlike last tick's 'refuse the parabolas' stance, the one-week-upside focus accepts ARM's rich multiple and SOXL's leverage as the price of momentum; the trade-off is a thinner ~15% cash hedge for the midweek PCE print.",
   "evidence": [
-    {"point": "MU 54x P/E, 52-wk range $103→$1,149 (last $1,134, at the high); HBM sold out, records guided, reports 6/24", "source": "https://www.techtimes.com/articles/318228/20260611/micron-earnings-preview-june-24-tests-whether-hbm-supercycle-real-cresting.htm"},
-    {"point": "ARM 519x P/E / MRVL 106x on 251M-share volume (3x avg) — parabolic, screened out on valuation/blow-off risk", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
-    {"point": "NVDA 32x P/E, ~11% below its 52-wk high and -4.5% on the month while peers melted up — cheapest AI-semi, asymmetric laggard", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
-    {"point": "QCOM 24.6x P/E, 1.6% dividend, range-position ~75% (not overextended) — value + momentum", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
-    {"point": "GE Aerospace 44x P/E, 20d realized vol ~2%/day, fresh high — non-semi diversifier and regime hedge", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
-    {"point": "Warsh-Fed first meeting hawkish (9/18 see 2026 hikes), 'Fed selloff' then recovery; markets closed Fri 6/19 Juneteenth", "source": "https://www.schwab.com/learn/story/stock-market-update-open"}
+    {"point": "Micron reports fiscal Q3 after close Wed 6/24; consensus ~$35B revenue (+276% YoY), ~$20 EPS, memory/HBM super-cycle — the marquee single-name catalyst of the week", "source": "https://www.stocktitan.net/news/MU/micron-technology-to-report-fiscal-third-quarter-results-on-june-24-22gcrbths4gp.html"},
+    {"point": "MU 53.5x trailing P/E but at a fresh 52-wk high ($103→$1,149 in 10 months, last $1,134); record guide collapses the forward multiple — priced for perfection into the print", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
+    {"point": "ARM +28% 5d / +71% 20d at a fresh 52-wk high — strongest momentum in the semis complex and high-beta to a good MU read (rich at 519x P/E, the key risk)", "source": "data/snapshot.json + Robinhood get_equity_fundamentals (2026-06-18)"},
+    {"point": "HOOD +43% 20d, PE 52, still ~30% below its Oct-2025 high ($154) — momentum with room and no binary event this week; non-semi diversifier", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
+    {"point": "Fed (Warsh) hawkish pause — held 3.5–3.75%, removed 2026 cut; week is 'moderately bullish' but midweek PCE is the macro swing factor", "source": "https://www.schwab.com/learn/story/weekly-traders-outlook"},
+    {"point": "Earnings week 6/22–6/26: MU (6/24) the standout; Nike reports 6/30 (just after) — little else in-universe carries a this-week catalyst", "source": "https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks"}
   ],
   "risks": [
-    "MU's 6/24 print is binary — a soft HBM/guidance read can gap the whole memory complex down; the position is sized for that, but it still dominates near-term P&L.",
-    "Momentum keeps ripping: by refusing ARM/MRVL at the highs, the book underperforms if the parabola extends.",
-    "A hawkish higher-for-longer turn that actually bites would hit even the 'reasonable' 30–50x multiples here, not just the 500x names.",
-    "~36% cash drags if the melt-up broadens; the trade-off is deliberate into the catalyst."
+    "MU's 6/24 after-close print is binary and the move lands 6/25 — a soft HBM/guidance read can gap the whole memory complex (MU+ARM+SOXL = 65% of the book) down together; the semi concentration is the bet and the risk.",
+    "Everything in this book is at or near a 52-wk high; a hot midweek PCE / hawkish higher-for-longer reaction does the most damage to exactly these extended, long-duration names.",
+    "Leaning into ARM (519x P/E) and 3x SOXL is the opposite of last tick's stance — if the parabola breaks rather than extends, the lighter ~15% cash hedge cushions less.",
+    "SOXL is a 3x leveraged ETF — path-dependent decay punishes a choppy, sideways week even if semis finish flat."
   ],
   "data_examined": [
-    {"label": "Screen: 5d/21d/63d/126d momentum, 20d vol, range-position across the 100-name universe", "source": "data/snapshot.json (bars through 2026-06-18)"},
-    {"label": "Comps: P/E, P/B, market cap, 52-wk range, dividend on MU/ARM/MRVL/AMD/NVDA/QCOM/GE/HOOD", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
-    {"label": "Regime: Warsh-Fed first-meeting reaction, semis volatility, June-24 MU catalyst", "source": "web_search (Schwab, CNBC, TechTimes)"}
+    {"label": "Screen: 5d/10d/21d/63d/126d momentum, vol-surge, 20d-SMA distance, 6-mo range-position across the 100-name universe", "source": "data/snapshot.json (bars through 2026-06-18)"},
+    {"label": "Comps: P/E, P/B, market cap, 52-wk range, avg volume on MU/ARM/HOOD/AMD/NVDA/MRVL", "source": "Robinhood get_equity_fundamentals (2026-06-18)"},
+    {"label": "Regime + catalysts: hawkish-pause Fed, midweek PCE, MU 6/24 earnings, week-of-6/22 earnings calendar", "source": "web_search (Schwab weekly outlook, StockTitan, Kiplinger)"}
   ],
-  "generated_by": "Claude for Financial Services (equity-research plugin methodology) via Claude Code, 2026-06-20",
-  "note": "Daily bars run through the 2026-06-18 close (6/19 was the Juneteenth holiday; the historicals endpoint had no 6/19 bar at fetch time). Fundamentals are live as of 2026-06-18. This report sets the analyst's next-tick targets; the competitor books advance on the next completed session."
+  "generated_by": "Claude for Financial Services (equity-research plugin methodology) via Claude Code, 2026-06-21 — one-week-upside focus",
+  "note": "Daily bars run through the 2026-06-18 close (6/19 Juneteenth holiday; weekend 6/20–6/21). Fundamentals live as of 2026-06-18. This tick's mandate is explicitly one-week upside, so the book is more momentum/catalyst-tilted and lower-cash than a balanced allocation. Sets the analyst's next-tick targets; the competitor books advance on the next completed session."
 }
