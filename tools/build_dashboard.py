@@ -218,6 +218,7 @@ def main():
     data = {
         "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
         "starting_cash": round(cfg.STARTING_CASH * DISPLAY_SCALE, 2),
+        "universe": list(cfg.UNIVERSE),
         "period": period,
         "backtest_span": f"{dates[0]}–{dates[-1]}",
         "competitors": competitors,

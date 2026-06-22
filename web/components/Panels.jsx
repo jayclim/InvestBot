@@ -139,6 +139,37 @@ export function LiveAccount({ data }) {
   );
 }
 
+export function Universe({ data }) {
+  const { openStock } = useModal();
+  const u = data.universe || [];
+  if (!u.length) return null;
+  return (
+    <section>
+      <div className="eyebrow">
+        <span className="n">··</span><h2>Stock pool</h2>
+        <InfoButton title="Stock pool">
+          The {u.length}-name universe every competitor screens and trades from — high-beta single stocks plus leveraged/inverse ETFs (defined in <span className="mono">bot/config.py</span>). Click any ticker for its chart, buy/sell markers, and news.
+        </InfoButton>
+        <span className="hint">{u.length} symbols · click any</span>
+      </div>
+      <div className="card pad">
+        <div className="pool">
+          {u.map((s) => (
+            <span
+              key={s}
+              className="chip clk"
+              role="button"
+              tabIndex={0}
+              onClick={() => openStock(s)}
+              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openStock(s); } }}
+            >{s}</span>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function Methods({ data }) {
   const m = data.methodology;
   return (

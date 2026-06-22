@@ -6,7 +6,7 @@ import LivePrices from "../components/LivePrices";
 import Leaderboard from "../components/Leaderboard";
 import EquityCurves from "../components/EquityCurves";
 import Swarm from "../components/Swarm";
-import { Analyst, DecisionTrail, LiveAccount, Methods } from "../components/Panels";
+import { Analyst, DecisionTrail, LiveAccount, Methods, Universe } from "../components/Panels";
 
 export default function Page() {
   const [data, setData] = useState(null);
@@ -68,6 +68,7 @@ export default function Page() {
 
         <LiveAccount data={data} />
         <Methods data={data} />
+        <Universe data={data} />
 
         <footer>
           <div>Bake-off state regenerated each tick by <span className="mono">tools/build_dashboard.py</span>; live prices via <span className="mono">/api/quotes</span> (Finnhub).</div>
