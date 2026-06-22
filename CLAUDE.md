@@ -57,6 +57,8 @@ provenance, per-stock charts (price history + buy/sell markers + news), and live
   **OpenRouter** (key in `.env`, gitignored), ~**$0.20/run** for 150 fish.
 
 ## Conventions
+- **Never add Claude / yourself as a contributor or co-author.** Commit as jayclim with **no**
+  `Co-Authored-By` trailer, and don't credit AI anywhere — commits, PRs, README, `package.json`, or this file.
 - Stdlib-only except `httpx` (swarm) — see `requirements.txt`.
 - The dashboard is one generated file with embedded JSON; every figure traces to a source (see its
   "Methods & sources" section and the ⓘ explainers).
