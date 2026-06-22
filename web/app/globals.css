@@ -116,7 +116,7 @@ details{margin-top:14px} summary{cursor:pointer;font-family:"JetBrains Mono",mon
 .conf{height:8px;background:var(--line);border-radius:4px;overflow:hidden;margin:10px 0}
 .conf>i{display:block;height:100%;background:var(--signal)}
 .chip{display:inline-block;font-size:.74rem;background:var(--signal-soft);color:var(--signal);padding:3px 9px;border-radius:2px;font-family:"JetBrains Mono",monospace}
-.pool{display:flex;flex-wrap:wrap;gap:7px}
+.pool{display:grid;grid-template-columns:repeat(auto-fill,minmax(196px,1fr));gap:7px}
 .chip.clk{cursor:pointer} .chip.clk:hover{background:var(--signal);color:#fff}
 .ev{list-style:none;padding:0;margin:10px 0 0}
 .ev li{padding:8px 0;border-top:1px solid var(--line-2);font-size:.9rem;display:flex;justify-content:space-between;gap:12px}

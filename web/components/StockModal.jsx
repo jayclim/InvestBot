@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { money, pct, cls } from "../lib/format";
+import { named } from "../lib/names";
 
 // Intraday ranges hit Yahoo (5-min bars incl. pre/after-hours); daily ranges use the
 // committed snapshot. "trades" frames the chart around the symbol's first paper trade.
@@ -214,7 +215,7 @@ export default function StockModal({ symbol, data, history }) {
     <>
       <div className="modal-eyebrow">Stock · {intraday ? (range === "1d" ? "intraday" : "5-day intraday") : (view.length ? `${view[0][0]} → ${view[view.length - 1][0]}` : "snapshot")}</div>
       <div className="stockhd">
-        <h3>{symbol}</h3>
+        <h3>{named(symbol)}</h3>
         {quote ? (
           <div className="stockpx">
             <span className="mono px">{money(quote.price)}</span>

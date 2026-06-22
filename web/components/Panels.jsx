@@ -1,6 +1,7 @@
 "use client";
 import { money, pct, cls } from "../lib/format";
 import { useModal, InfoButton } from "./ModalContext";
+import { named } from "../lib/names";
 
 export function Analyst({ data }) {
   const a = data.analyst;
@@ -162,7 +163,7 @@ export function Universe({ data }) {
               tabIndex={0}
               onClick={() => openStock(s)}
               onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openStock(s); } }}
-            >{s}</span>
+            >{named(s)}</span>
           ))}
         </div>
       </div>
