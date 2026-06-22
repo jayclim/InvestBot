@@ -25,6 +25,11 @@ export default function Leaderboard({ data }) {
   const { open } = useModal();
   const { quotes, live } = useLiveQuotes();
   const m = data.methodology;
+  // Holdings/cash in the detail are shown scaled to a round notional so a $100 book reads in
+  // whole shares and dollars; per-share prices and % stay real. ponytail: display-only, the
+  // real book is data.starting_cash ($100) — nothing here touches state or the ranking.
+  const NOTIONAL = 10000;
+  const scale = data.starting_cash ? NOTIONAL / data.starting_cash : 1;
   // Re-mark every book to live prices, then rank by live equity. Falls back to the stored
   // per-tick mark when a market's closed, so the order matches the published board offline.
   const ranked = data.competitors
@@ -33,20 +38,42 @@ export default function Leaderboard({ data }) {
 
   function algoModal(c) {
     const tl = (c.trade_log || []).slice(-14).reverse();
-    const hold = c.holdings.length ? c.holdings.map((h) => `${h.symbol} ${h.qty}@${money(h.avg_price)}`).join(", ") : "flat";
+    const px = (h) => { const q = quotes[h.symbol]; return q && q.price > 0 ? q.price : (h.last != null ? h.last : h.avg_price); };
     const mk = c._m || liveMark(c, quotes, data.starting_cash);
     open(
       <>
         <div className="modal-eyebrow">{c.kind}</div>
         <h3>{c.name}</h3>
         <div className="kv">
-          <span className="k">Equity {mk.priced ? "(live)" : "(last tick)"}</span><span className="v">{money(mk.equity)}</span>
+          <span className="k">Equity {mk.priced ? "(live)" : "(last tick)"}</span><span className="v">{money(mk.equity * scale)}</span>
           <span className="k">Return</span><span className={"v " + cls(mk.ret)}>{pct(mk.ret)}</span>
-          <span className="k">At last tick</span><span className="v">{money(c.final)} · {pct(c.return)}</span>
+          <span className="k">At last tick</span><span className="v">{money(c.final * scale)} · {pct(c.return)}</span>
           <span className="k">Max drawdown</span><span className={"v " + cls(c.max_dd)}>{pct(c.max_dd)}</span>
           <span className="k">Trades / win rate</span><span className="v">{c.trades} · {(c.win_rate * 100).toFixed(0)}%</span>
-          <span className="k">Cash / holdings</span><span className="v">{money(c.cash)} · {hold}</span>
+          <span className="k">Cash</span><span className="v">{money(c.cash * scale)}</span>
         </div>
+        {c.holdings.length > 0 ? (
+          <table className="tl hold">
+            <thead><tr><th>holding</th><th>shares</th><th>bought</th><th>now</th><th>value</th><th>gain / loss</th></tr></thead>
+            <tbody>
+              {c.holdings.map((h, i) => {
+                const now = px(h), shares = h.qty * scale, value = shares * now;
+                const pnl = shares * (now - h.avg_price), r = h.avg_price ? now / h.avg_price - 1 : 0;
+                return (
+                  <tr key={i}>
+                    <td>{h.symbol}</td>
+                    <td className="mono">{shares.toFixed(2)}</td>
+                    <td className="mono">{money(h.avg_price)}</td>
+                    <td className="mono">{money(now)}</td>
+                    <td className="mono">{money(value)}</td>
+                    <td className={"mono " + cls(pnl)}>{(pnl >= 0 ? "+$" : "−$") + Math.abs(pnl).toFixed(2)} ({pct(r)})</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        ) : <p className="note">Flat — all cash.</p>}
+        <p className="note">Holdings &amp; cash scaled to a ${NOTIONAL.toLocaleString()} book so a $100 paper account reads in whole shares and dollars; per-share prices and % are the real fills. The live board tracks the actual ${data.starting_cash} book.</p>
         <p className="note"><b>Rule:</b> {c.rules}</p>
         <p className="note">Equity / return re-mark holdings to live quotes every 15s; max DD, trades and win rate are the realized per-tick record. Filled at next open + {m.slippage_bps} bps slippage, −{Math.round(m.stop_loss_pct * 100)}% stop, max {m.max_positions} positions.</p>
         {c.backtest && (
@@ -62,7 +89,7 @@ export default function Leaderboard({ data }) {
                   <td className="mono" style={{ color: t.side === "buy" ? "var(--up)" : "var(--down)" }}>{t.side}</td>
                   <td>{t.symbol}</td>
                   <td className="mono">{money(t.price)}</td>
-                  <td className={"mono " + (t.pnl ? cls(t.pnl) : "")}>{t.pnl ? (t.pnl >= 0 ? "+" : "") + t.pnl.toFixed(2) : "—"}</td>
+                  <td className={"mono " + (t.pnl ? cls(t.pnl) : "")}>{t.pnl ? (t.pnl >= 0 ? "+$" : "−$") + Math.abs(t.pnl * scale).toFixed(2) : "—"}</td>
                 </tr>
               ))}
             </tbody>
