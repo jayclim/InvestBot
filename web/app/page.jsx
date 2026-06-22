@@ -46,7 +46,7 @@ export default function Page() {
       <div className="wrap">
         <header className="hd">
           <div className="kicker">Paper-trading lab · walk-forward</div>
-          <h1>Every competitor starts with <em>$100</em>.</h1>
+          <h1>Every competitor starts with <em>{"$" + data.starting_cash.toLocaleString()}</em>.</h1>
           <p className="sub">Three rule-based strategies, a research analyst, and a voting swarm — each trading the same market on its own. Live prices update on their own; the bake-off advances one tick a day.</p>
           <div className="meta">
             Live forward test · <b>{data.period.start}</b> → <b>{data.period.end}</b> · {data.period.sessions} session{data.period.sessions === 1 ? "" : "s"}

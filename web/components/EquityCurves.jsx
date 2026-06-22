@@ -130,9 +130,9 @@ export default function EquityCurves({ data }) {
         <span className="n">02</span>
         <h2>Equity curves</h2>
         <InfoButton title="Equity curves">
-          Each line is a competitor&apos;s live forward account value, plotted as cumulative return. All five share one axis that starts from the common $100 origin, so they&apos;re directly comparable. The final point is re-marked to live quotes every 15s (labelled <span className="mono">live</span>); with the market closed it sits at the last tick&apos;s close. Hover to read every competitor&apos;s value on a session.
+          Each line is a competitor&apos;s live forward account value, plotted as cumulative return. All five share one axis that starts from the common {"$" + start.toLocaleString()} origin, so they&apos;re directly comparable. The final point is re-marked to live quotes every 15s (labelled <span className="mono">live</span>); with the market closed it sits at the last tick&apos;s close. Hover to read every competitor&apos;s value on a session.
         </InfoButton>
-        <span className="hint">{live ? "live tip" : "hover for values"} · $100 start</span>
+        <span className="hint">{live ? "live tip" : "hover for values"} · {"$" + start.toLocaleString()} start</span>
       </div>
       {body}
     </section>

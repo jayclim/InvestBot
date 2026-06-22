@@ -37,6 +37,11 @@ from run import load_snapshot
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STRATEGIES = [MomentumBreakout, MeanReversion, Blended]
 
+# The real paper books are $100. The web shows them scaled to a round notional so holdings
+# read in whole shares and dollars; per-share prices and percentages are untouched. The
+# scaling is applied ONCE here, so every component renders one consistent scale. Display-only.
+DISPLAY_SCALE = 100
+
 RULES = {
     "momentum_breakout": "Buy a 20-day-high breakout confirmed by above-average volume; exit when price closes below its 20-day SMA. Few big winners, many small losers.",
     "mean_reversion": "Buy when RSI(14) < 30 (oversold); sell when RSI(14) > 70 (overbought). Trades less, wins more often, smaller edge.",
@@ -52,20 +57,22 @@ KIND = {"deep_research_analyst": "analyst", "mirofish_swarm": "swarm"}
 def pf_to_competitor(name, pf, kind, rules, backtest=None, marks=None):
     m = summarize(pf, cfg.STARTING_CASH)
     marks = marks or {}
+    S = DISPLAY_SCALE
     c = {
         "name": name, "kind": kind,
-        "final": round(m["final"], 2), "return": round(m["return"], 4),
+        "final": round(m["final"] * S, 2), "return": round(m["return"], 4),
         "max_dd": round(m["max_dd"], 4), "trades": m["trades"],
-        "win_rate": round(m["win_rate"], 4), "cash": round(pf.cash, 2), "rules": rules,
-        # `last` = the per-tick mark price (latest snapshot close). The web app re-marks
-        # holdings to live quotes and falls back to `last` so a closed market / missing
-        # quote reproduces `final` exactly (cash + Σ qty·last == final).
-        "holdings": [{"symbol": s, "qty": round(p.qty, 4), "avg_price": round(p.avg_price, 2),
+        "win_rate": round(m["win_rate"], 4), "cash": round(pf.cash * S, 2), "rules": rules,
+        # Account-size fields (final, cash, qty, equity_curve, trade pnl) are scaled by
+        # DISPLAY_SCALE; per-share prices (avg_price, last, trade price) are not. `last` = the
+        # per-tick mark (latest snapshot close); the web re-marks qty·price live and falls back
+        # to `last`, so cash + Σ qty·last == final at any scale.
+        "holdings": [{"symbol": s, "qty": round(p.qty * S, 4), "avg_price": round(p.avg_price, 2),
                       "last": round(marks.get(s, p.avg_price), 2)}
                      for s, p in pf.positions.items()],
-        "equity_curve": [[d, round(v, 2)] for d, v in pf.equity_curve],
-        "trade_log": [{"date": t.date, "side": t.side, "symbol": t.symbol, "qty": round(t.qty, 4),
-                       "price": round(t.price, 2), "reason": t.reason, "pnl": round(t.pnl, 2)} for t in pf.trades],
+        "equity_curve": [[d, round(v * S, 2)] for d, v in pf.equity_curve],
+        "trade_log": [{"date": t.date, "side": t.side, "symbol": t.symbol, "qty": round(t.qty * S, 4),
+                       "price": round(t.price, 2), "reason": t.reason, "pnl": round(t.pnl * S, 2)} for t in pf.trades],
     }
     if backtest:
         c["backtest"] = backtest
@@ -87,7 +94,7 @@ def build_decisions(*pf_dicts):
         for name, pf in d.items():
             for t in pf.trades:
                 feed.append({"date": t.date, "agent": name, "symbol": t.symbol, "action": t.side,
-                             "price": round(t.price, 2), "reason": t.reason, "pnl": round(t.pnl, 2)})
+                             "price": round(t.price, 2), "reason": t.reason, "pnl": round(t.pnl * DISPLAY_SCALE, 2)})
     feed.sort(key=lambda x: x["date"], reverse=True)
     return feed[:28]
 
@@ -204,12 +211,13 @@ def main():
               "end": fwd_dates[-1] if fwd_dates else dates[-1],
               "sessions": len(fwd_dates)}
 
-    # Put every competitor on one shared $100-origin axis so all curves plot together.
-    normalize_curves(competitors, dates, cfg.STARTING_CASH)
+    # Put every competitor on one shared origin axis so all curves plot together (scaled, to
+    # match the already-scaled equity curves above).
+    normalize_curves(competitors, dates, cfg.STARTING_CASH * DISPLAY_SCALE)
 
     data = {
         "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
-        "starting_cash": cfg.STARTING_CASH,
+        "starting_cash": round(cfg.STARTING_CASH * DISPLAY_SCALE, 2),
         "period": period,
         "backtest_span": f"{dates[0]}–{dates[-1]}",
         "competitors": competitors,
@@ -220,7 +228,7 @@ def main():
         "roster_preview": roster_preview,
         "methodology": {
             "slippage_bps": cfg.SLIPPAGE_BPS, "stop_loss_pct": cfg.STOP_LOSS_PCT,
-            "circuit_breaker": cfg.CIRCUIT_BREAKER_EQUITY, "max_positions": cfg.MAX_POSITIONS,
+            "circuit_breaker": round(cfg.CIRCUIT_BREAKER_EQUITY * DISPLAY_SCALE, 2), "max_positions": cfg.MAX_POSITIONS,
             "position_size_pct": round(cfg.POSITION_SIZE_PCT, 3),
             "rules": {**RULES, **AGENT_RULES},
             "sources": [
@@ -229,6 +237,7 @@ def main():
                 {"name": "Research analyst", "detail": "Agent-driven on the Claude Code plan: web_search + Robinhood data → one report (state/analyst.json) with target weights per tick. Sources link from each evidence row."},
                 {"name": "Swarm vote", "detail": "Independent-voter election: 150 unique-profile cheap models (DeepSeek/Gemini/Llama/Haiku via OpenRouter) each read one shared briefing and return a single ballot; tallied in bot/swarm.py. No interaction between fish."},
                 {"name": "Live account", "detail": "Robinhood MCP, Agentic cash account ••••, via get_portfolio / get_equity_positions / get_equity_orders."},
+                {"name": "Display scale", "detail": "The real paper books are $" + format(int(cfg.STARTING_CASH), ",") + " each; every dollar and share figure on this site is shown ×" + str(DISPLAY_SCALE) + " (a $" + format(int(cfg.STARTING_CASH * DISPLAY_SCALE), ",") + " book) so holdings read in whole shares and dollars. Per-share prices and percentages are unscaled."},
             ],
         },
     }

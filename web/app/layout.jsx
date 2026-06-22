@@ -2,7 +2,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Paper-trading bake-off",
-  description: "A fake-money bake-off: rule strategies, an AI analyst, and a voting swarm each trade $100.",
+  description: "A fake-money bake-off: rule strategies, an AI analyst, and a voting swarm each trade an identical paper book.",
 };
 
 export default function RootLayout({ children }) {
