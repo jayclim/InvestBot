@@ -30,6 +30,17 @@ Per Anthropic, these agents draft research for human review — they **do not ma
 recommendations or execute trades**. Forming the portfolio (target weights) is THIS project's
 layer, clearly labelled as such. Never place real orders.
 
+## Step 0 — read your memory (carry the book forward, don't start cold)
+You manage a live paper book across ticks. Before researching, read your own history:
+```
+python3 tools/analyst_memory.py
+```
+It prints your current holdings marked vs your entry, recent realized P&L, and last tick's
+thesis/targets/risks. Also read the existing `state/analyst.json` (last run's full reasoning)
+before you overwrite it. Use this: **keep conviction where the thesis still holds, cut or resize
+where it broke**, and in the new report's `thesis` state what changed since last tick. This is a
+thesis *update*, not a cold re-pick.
+
 ## Methodology (equity-research workflow → portfolio)
 Operate over `cfg.UNIVERSE` (the ~100-name list). Produce a concentrated book.
 1. **Screen / idea-source (`/screen`)** — narrow the universe to a handful of candidates using

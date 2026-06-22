@@ -52,6 +52,16 @@ WARMUP = 22                               # bars of history required before trad
 AGENT_NAMES = ["deep_research_analyst", "mirofish_swarm"]
 AGENT_MAX_WEIGHT = 0.6   # cap any single name in an agent's paper book (risk control)
 
+# Per-agent risk controls — harness-enforced, the agent never overrides these mid-trade.
+#   stop_pct:       hard per-position stop fraction, or None to disable (e.g. a mean-reversion book).
+#   breaker_equity: halt NEW buys below this equity, or None to disable.
+# Missing agents/keys fall back to the globals above (STOP_LOSS_PCT / CIRCUIT_BREAKER_EQUITY); see
+# paper.risk_for.
+AGENT_RISK = {
+    "deep_research_analyst": {"stop_pct": 0.20, "breaker_equity": CIRCUIT_BREAKER_EQUITY},  # deep-research: more room
+    "mirofish_swarm":        {"stop_pct": 0.15, "breaker_equity": CIRCUIT_BREAKER_EQUITY},  # short-horizon: cut faster
+}
+
 # --- Go-live (NOT used during paper testing) ---
 # Only the agentic-allowed cash account accepts agent orders (no options). Keep the real
 # account number OUT of source control: set AGENTIC_ACCOUNT in .env (gitignored).

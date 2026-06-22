@@ -50,9 +50,11 @@ def main():
     # 3) Rebalance each agent's fake-money book
     _, pfs = paper.load_agents(cfg.AGENT_NAMES)
     if analyst:
-        paper.rebalance(pfs["deep_research_analyst"], paper.analyst_targets(analyst), prices, today, "analyst")
+        paper.rebalance(pfs["deep_research_analyst"], paper.analyst_targets(analyst), prices, today,
+                        "analyst", *paper.risk_for("deep_research_analyst"))
     if swarm:
-        paper.rebalance(pfs["mirofish_swarm"], paper.swarm_targets(swarm), prices, today, "swarm")
+        paper.rebalance(pfs["mirofish_swarm"], paper.swarm_targets(swarm), prices, today,
+                        "swarm", *paper.risk_for("mirofish_swarm"))
     paper.save_agents(today, pfs)
 
     print(f"\nAgent paper books @ {today}:")
