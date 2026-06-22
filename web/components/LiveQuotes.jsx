@@ -8,6 +8,7 @@ const Ctx = createContext({ quotes: {}, asOf: "", live: false });
 // Everything the bots hold or are voting on — bounded to the route's fan-out cap (30).
 export function feedSymbols(data) {
   const s = new Set();
+  if (data.benchmark?.symbol) s.add(data.benchmark.symbol); // S&P proxy — live-marks the benchmark line
   (data.competitors || []).forEach((c) => (c.holdings || []).forEach((h) => s.add(h.symbol)));
   if (data.analyst?.targets) Object.keys(data.analyst.targets).forEach((x) => s.add(x));
   if (data.swarm?.ballots) data.swarm.ballots.slice(0, 6).forEach(([sym]) => { if (sym !== "CASH") s.add(sym); });
@@ -27,8 +28,11 @@ export function LiveQuotesProvider({ data, children }) {
         const r = await fetch("/api/quotes?symbols=" + symbols.join(","), { cache: "no-store" });
         const j = await r.json();
         if (!alive) return;
-        setQuotes(j.quotes || {});
-        const n = Object.keys(j.quotes || {}).length;
+        const fresh = j.quotes || {};
+        // Merge over last-known: a symbol Finnhub drops this cycle keeps its prior price instead
+        // of blanking to "…". That intermittent partial response is what made tiles flicker.
+        setQuotes((prev) => ({ ...prev, ...fresh }));
+        const n = Object.keys(fresh).length;
         setAsOf(n ? `${n} symbols · updated ${new Date(j.asOf).toLocaleTimeString()}` : "no quotes (check FINNHUB_API_KEY)");
       } catch (_e) {
         if (alive) setAsOf("live feed unavailable — run `next dev` or deploy to Vercel");

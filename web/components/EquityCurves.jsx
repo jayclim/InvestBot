@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
-import { money, pct, cls, RCOL } from "../lib/format";
+import { money, pct, cls, methodColor, BENCH_COLOR } from "../lib/format";
 import { InfoButton } from "./ModalContext";
 import { useLiveQuotes, liveMark } from "./LiveQuotes";
 
@@ -20,6 +20,17 @@ export default function EquityCurves({ data }) {
       return { ...c, equity_curve: curve, _ret: live ? mk.ret : c.return };
     });
 
+  // S&P 500 benchmark — a separate dashed line (not a competitor) so it overlays the field.
+  let bench = null;
+  const bd = data.benchmark;
+  if (bd && bd.equity_curve && bd.equity_curve.length >= 2) {
+    const q = quotes[bd.symbol];
+    const lastClose = bd.equity_curve[bd.equity_curve.length - 1][1];
+    const liveVal = live ? (q && q.price > 0 ? Math.round((start * q.price / bd.base) * 100) / 100 : lastClose) : null;
+    const curve = live ? [...bd.equity_curve, ["live", liveVal]] : bd.equity_curve;
+    bench = { ...bd, equity_curve: curve, _ret: curve[curve.length - 1][1] / start - 1 };
+  }
+
   let body;
   if (!series.length) {
     body = (
@@ -33,7 +44,8 @@ export default function EquityCurves({ data }) {
     );
   } else {
     let maxN = 0, minR = 0, maxR = 0;
-    series.forEach((c) => {
+    const scan = bench ? [...series, bench] : series;
+    scan.forEach((c) => {
       maxN = Math.max(maxN, c.equity_curve.length);
       c.equity_curve.forEach((p) => { const r = p[1] / start - 1; minR = Math.min(minR, r); maxR = Math.max(maxR, r); });
     });
@@ -81,15 +93,25 @@ export default function EquityCurves({ data }) {
           <text x={W - R} y={H - 12} textAnchor="end" fontFamily="JetBrains Mono" fontSize="10" fill="var(--muted)">{dts[dts.length - 1][0]}</text>
           {series.map((c, i) => {
             const pts = c.equity_curve.map((p, j) => x(j).toFixed(1) + "," + y(p[1] / start - 1).toFixed(1)).join(" ");
-            return <polyline key={i} points={pts} fill="none" stroke={RCOL[i % RCOL.length]} strokeWidth="2" strokeLinejoin="round" />;
+            return <polyline key={i} points={pts} fill="none" stroke={methodColor(c.name, data.competitors)} strokeWidth="2" strokeLinejoin="round" />;
           })}
+          {bench && (
+            <polyline
+              points={bench.equity_curve.map((p, j) => x(j).toFixed(1) + "," + y(p[1] / start - 1).toFixed(1)).join(" ")}
+              fill="none" stroke={BENCH_COLOR} strokeWidth="2.25" strokeDasharray="7 4" strokeLinejoin="round"
+            />
+          )}
           {hover && (
             <>
               <line x1={x(hover.idx)} y1={T} x2={x(hover.idx)} y2={H - B} stroke="var(--ink)" strokeOpacity="0.3" />
               {series.map((c, i) => {
                 const p = c.equity_curve[Math.min(hover.idx, c.equity_curve.length - 1)];
-                return <circle key={i} cx={x(hover.idx)} cy={y(p[1] / start - 1)} r="3.5" fill={RCOL[i % RCOL.length]} />;
+                return <circle key={i} cx={x(hover.idx)} cy={y(p[1] / start - 1)} r="3.5" fill={methodColor(c.name, data.competitors)} />;
               })}
+              {bench && (() => {
+                const p = bench.equity_curve[Math.min(hover.idx, bench.equity_curve.length - 1)];
+                return <circle cx={x(hover.idx)} cy={y(p[1] / start - 1)} r="3.5" fill={BENCH_COLOR} />;
+              })()}
             </>
           )}
         </svg>
@@ -108,17 +130,33 @@ export default function EquityCurves({ data }) {
               const r = p[1] / start - 1;
               return (
                 <div className="rt-r" key={i}>
-                  <span style={{ color: RCOL[i % RCOL.length] }}>{c.name.split("_")[0]}</span>
+                  <span style={{ color: methodColor(c.name, data.competitors) }}>{c.name.split("_")[0]}</span>
                   <span>{money(p[1])} {pct(r)}</span>
                 </div>
               );
             })}
+            {bench && (() => {
+              const p = bench.equity_curve[Math.min(hover.idx, bench.equity_curve.length - 1)];
+              const r = p[1] / start - 1;
+              return (
+                <div className="rt-r">
+                  <span style={{ color: BENCH_COLOR }}>S&amp;P 500</span>
+                  <span>{money(p[1])} {pct(r)}</span>
+                </div>
+              );
+            })()}
           </div>
         )}
         <div className="legend">
           {series.map((c, i) => (
-            <span key={i}><i className="swatch" style={{ background: RCOL[i % RCOL.length] }} />{c.name} <b className={"mono " + cls(c._ret)}>{pct(c._ret)}</b></span>
+            <span key={i}><i className="swatch" style={{ background: methodColor(c.name, data.competitors) }} />{c.name} <b className={"mono " + cls(c._ret)}>{pct(c._ret)}</b></span>
           ))}
+          {bench && (
+            <span>
+              <i className="swatch" style={{ background: `repeating-linear-gradient(90deg, ${BENCH_COLOR} 0 5px, transparent 5px 9px)` }} />
+              <b style={{ color: BENCH_COLOR }}>S&amp;P 500</b> <span className="note" style={{ margin: 0 }}>benchmark</span> <b className={"mono " + cls(bench._ret)}>{pct(bench._ret)}</b>
+            </span>
+          )}
         </div>
       </div>
     );

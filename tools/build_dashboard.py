@@ -163,6 +163,26 @@ def normalize_curves(competitors, all_dates, starting_cash):
         c["equity_curve"] = out
 
 
+def build_benchmark(axis_dates, starting_cash):
+    """S&P 500 (SPY) rebased to the same origin/axis as the competitor curves, so it overlays
+    as a benchmark. Reads data/benchmark.json (SPY daily closes, kept fresh on data refresh).
+    None if the file is missing or has no SPY close on the first axis date."""
+    path = os.path.join(ROOT, "data", "benchmark.json")
+    if not axis_dates or not os.path.exists(path):
+        return None
+    spy = json.load(open(path)).get("SPY", {})
+    base = next((spy[d] for d in axis_dates if d in spy), None)
+    if not base:
+        return None
+    curve, last = [], starting_cash
+    for d in axis_dates:
+        if d in spy:
+            last = round(starting_cash * spy[d] / base, 2)
+        curve.append([d, last])
+    return {"name": "S&P 500", "symbol": "SPY", "base": base,
+            "last": spy.get(axis_dates[-1]), "equity_curve": curve}
+
+
 def write_history(snap):
     """Publish daily close history per symbol for the click-through stock charts — the bots'
     own snapshot data, so buy/sell markers line up exactly with what they traded on."""
@@ -215,6 +235,8 @@ def main():
     # Put every competitor on one shared origin axis so all curves plot together (scaled, to
     # match the already-scaled equity curves above).
     normalize_curves(competitors, dates, cfg.STARTING_CASH * DISPLAY_SCALE)
+    axis = [d for d, _ in competitors[0]["equity_curve"]] if competitors else []
+    benchmark = build_benchmark(axis, cfg.STARTING_CASH * DISPLAY_SCALE)
 
     data = {
         "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
@@ -223,6 +245,7 @@ def main():
         "period": period,
         "backtest_span": f"{dates[0]}–{dates[-1]}",
         "competitors": competitors,
+        "benchmark": benchmark,
         "decisions": build_decisions(alg_pfs, active_agents),
         "analyst": load_analyst(dates[-1]),
         "swarm": load_swarm(dates[-1]),

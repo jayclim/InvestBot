@@ -119,11 +119,18 @@ details{margin-top:14px} summary{cursor:pointer;font-family:"JetBrains Mono",mon
 .pool{display:grid;grid-template-columns:repeat(auto-fill,minmax(196px,1fr));gap:7px}
 .chip.clk{cursor:pointer} .chip.clk:hover{background:var(--signal);color:#fff}
 .ev{list-style:none;padding:0;margin:10px 0 0}
-.ev li{padding:8px 0;border-top:1px solid var(--line-2);font-size:.9rem;display:flex;justify-content:space-between;gap:12px}
-.ev li span:last-child{color:var(--muted);font-family:"JetBrains Mono",monospace;font-size:.72rem;white-space:nowrap}
+/* point on its own row, source attribution stacked below — long sources no longer squeeze the text into a one-word column */
+.ev li{padding:8px 0;border-top:1px solid var(--line-2);font-size:.9rem;display:flex;flex-direction:column;align-items:flex-start;gap:3px}
+.ev li span:last-child{color:var(--muted);font-family:"JetBrains Mono",monospace;font-size:.72rem}
 .risks{margin:8px 0 0;padding-left:18px;font-size:.86rem;color:var(--muted)} .risks li{margin:4px 0}
 .note{font-size:.82rem;color:var(--muted);margin-top:8px}
 
+.trail-filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.tf{display:inline-flex;align-items:center;gap:6px;font-family:"JetBrains Mono",monospace;font-size:.72rem;padding:3px 9px;border:1px solid var(--line);border-radius:2px;background:transparent;color:var(--muted);cursor:pointer}
+.tf:hover{border-color:var(--ink)}
+.tf.on{background:var(--ink);color:#fff;border-color:var(--ink);font-weight:600}
+.tf-dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex:none}
+.tf-n{opacity:.6}
 .feed{display:flex;flex-direction:column}
 .dec{display:grid;grid-template-columns:78px 1fr 18px;gap:12px;padding:12px 0;border-bottom:1px solid var(--line-2);cursor:pointer;align-items:center}
 .dec:hover{color:var(--signal)} .dec:last-child{border-bottom:none}

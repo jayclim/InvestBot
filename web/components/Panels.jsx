@@ -1,5 +1,6 @@
 "use client";
-import { money, pct, cls } from "../lib/format";
+import { useState } from "react";
+import { money, pct, cls, methodColor } from "../lib/format";
 import { useModal, InfoButton } from "./ModalContext";
 import { named } from "../lib/names";
 
@@ -55,43 +56,74 @@ export function Analyst({ data }) {
 export function DecisionTrail({ data }) {
   const { open } = useModal();
   const m = data.methodology;
+  const [filter, setFilter] = useState("all");
+  const methods = [...new Set(data.decisions.map((d) => d.agent))];
+  const colorOf = (agent) => methodColor(agent, data.competitors);
+  const shown = filter === "all" ? data.decisions : data.decisions.filter((d) => d.agent === filter);
   return (
     <div>
       <div className="eyebrow">
         <span className="n">05</span><h2>Decision trail</h2>
         <InfoButton title="Decision trail">
-          Every buy/sell across the live forward books, newest first, with the rule or reason behind it. Click a row for the full record.
+          Every buy/sell across the live forward books, newest first, with the rule or reason behind it. Each row is colour-coded by method; use the chips to filter to one. Click a row for the full record.
         </InfoButton>
         <span className="hint">most recent · click for detail</span>
       </div>
       <div className="card pad">
+        {methods.length > 1 && (
+          <div className="trail-filters">
+            <button className={"tf" + (filter === "all" ? " on" : "")} onClick={() => setFilter("all")}>
+              all <span className="tf-n">{data.decisions.length}</span>
+            </button>
+            {methods.map((mth) => {
+              const col = colorOf(mth);
+              const n = data.decisions.filter((d) => d.agent === mth).length;
+              const on = filter === mth;
+              return (
+                <button
+                  key={mth}
+                  className={"tf" + (on ? " on" : "")}
+                  style={on ? { background: col, borderColor: col, color: "#fff" } : { borderColor: col, color: col }}
+                  onClick={() => setFilter(on ? "all" : mth)}
+                >
+                  <i className="tf-dot" style={{ background: on ? "#fff" : col }} />{mth} <span className="tf-n">{n}</span>
+                </button>
+              );
+            })}
+          </div>
+        )}
         <div className="feed">
-          {!data.decisions.length && <p className="pending">No decisions yet — fills in as ticks run.</p>}
-          {data.decisions.map((d, i) => (
-            <div
-              key={i}
-              className="dec"
-              onClick={() => open(
-                <>
-                  <div className="modal-eyebrow">{d.date} · {d.agent}</div>
-                  <h3 style={{ color: d.action === "buy" ? "var(--up)" : "var(--down)" }}>{d.action.toUpperCase()} {d.symbol}</h3>
-                  <div className="kv">
-                    <span className="k">Fill price</span><span className="v">{money(d.price)}</span>
-                    <span className="k">Realized P&amp;L</span><span className={"v " + (d.pnl ? cls(d.pnl) : "")}>{d.pnl ? (d.pnl >= 0 ? "+" : "") + d.pnl.toFixed(2) : "—"}</span>
-                  </div>
-                  <p><b>Why:</b> {d.reason}</p>
-                  <p className="note">Decided on the prior close, filled at the next open + {m.slippage_bps} bps slippage.</p>
-                </>
-              )}
-            >
-              <div className="when">{d.date}</div>
-              <div>
-                <span className="act" style={{ color: d.action === "buy" ? "var(--up)" : "var(--down)" }}>{d.action}</span> <b>{d.symbol}</b> <span className="who">{d.agent}</span>
-                <div className="why">{d.reason}{d.pnl ? <> <span className={"mono " + cls(d.pnl)}>({d.pnl >= 0 ? "+" : ""}{d.pnl.toFixed(2)})</span></> : ""}</div>
+          {!shown.length && <p className="pending">No decisions {filter === "all" ? "yet — fills in as ticks run." : "for this method yet."}</p>}
+          {shown.map((d, i) => {
+            const col = colorOf(d.agent);
+            return (
+              <div
+                key={i}
+                className="dec"
+                style={{ borderLeft: "3px solid " + col, paddingLeft: "11px" }}
+                onClick={() => open(
+                  <>
+                    <div className="modal-eyebrow">{d.date} · {d.agent}</div>
+                    <h3 style={{ color: d.action === "buy" ? "var(--up)" : "var(--down)" }}>{d.action.toUpperCase()} {d.symbol}</h3>
+                    <div className="kv">
+                      <span className="k">Method</span><span className="v" style={{ color: col }}>{d.agent}</span>
+                      <span className="k">Fill price</span><span className="v">{money(d.price)}</span>
+                      <span className="k">Realized P&amp;L</span><span className={"v " + (d.pnl ? cls(d.pnl) : "")}>{d.pnl ? (d.pnl >= 0 ? "+" : "") + d.pnl.toFixed(2) : "—"}</span>
+                    </div>
+                    <p><b>Why:</b> {d.reason}</p>
+                    <p className="note">Decided on the prior close, filled at the next open + {m.slippage_bps} bps slippage.</p>
+                  </>
+                )}
+              >
+                <div className="when">{d.date}</div>
+                <div>
+                  <span className="act" style={{ color: d.action === "buy" ? "var(--up)" : "var(--down)" }}>{d.action}</span> <b>{d.symbol}</b> <span className="who" style={{ color: col }}>{d.agent}</span>
+                  <div className="why">{d.reason}{d.pnl ? <> <span className={"mono " + cls(d.pnl)}>({d.pnl >= 0 ? "+" : ""}{d.pnl.toFixed(2)})</span></> : ""}</div>
+                </div>
+                <span className="chev">›</span>
               </div>
-              <span className="chev">›</span>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
