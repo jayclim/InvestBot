@@ -1,6 +1,7 @@
 """Analyst memory: print the analyst's book carried forward from last tick — current holdings
-marked vs entry, recent realized P&L, and last run's thesis/targets/risks. The financial-analyst
-skill reads this before writing the new report so it UPDATES a thesis instead of starting cold.
+marked vs entry, the last 5 realized trades, last run's thesis gist + targets, and the prior
+tick's reflection (the distilled what-worked/what-I'm-changing). The financial-analyst skill reads
+this before writing the new report so it UPDATES a thesis instead of starting cold.
 
     python3 tools/analyst_memory.py
 
@@ -8,6 +9,7 @@ Read-only. Touches no money and writes nothing.
 """
 import json
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -52,9 +54,24 @@ def brief():
     ap = os.path.join(ROOT, "state", "analyst.json")
     if os.path.exists(ap):
         prior = json.load(open(ap))
-        out.append(f"\nLast thesis ({prior.get('date', '?')}): {prior.get('thesis', '-')}")
+        # ponytail: feed the gist (first 2 sentences) of last thesis, not the whole essay — the
+        # distilled "what worked / what I'm changing" lives in the reflection below.
+        thesis = prior.get("thesis", "-") or "-"
+        gist = " ".join(re.split(r"(?<=[.?!])\s+", thesis)[:2])
+        out.append(f"\nLast thesis gist ({prior.get('date', '?')}): {gist}")
         out.append(f"Last targets: {prior.get('targets', {})}")
-        if prior.get("risks"):
+        ref = prior.get("reflection") or {}
+        if ref:
+            out.append("\nYour reflection on last tick (carry the lessons forward):")
+            if ref.get("looking_back"):
+                out.append(f"  {ref['looking_back']}")
+            for w in ref.get("worked", []):
+                out.append(f"  + nailed: {w}")
+            for miss in ref.get("missed", []):
+                out.append(f"  - missed: {miss}")
+            if ref.get("adjustment"):
+                out.append(f"  => adjusting: {ref['adjustment']}")
+        elif prior.get("risks"):
             out.append("Risks you flagged: " + "; ".join(prior["risks"]))
 
     out.append("\nUpdate the thesis: keep conviction where it still holds, cut or resize where it "

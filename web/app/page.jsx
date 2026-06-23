@@ -59,12 +59,8 @@ export default function Page() {
         <EquityCurves data={data} />
         <Swarm data={data} />
 
-        <section>
-          <div className="grid2">
-            <Analyst data={data} />
-            <DecisionTrail data={data} />
-          </div>
-        </section>
+        <Analyst data={data} />
+        <DecisionTrail data={data} />
 
         <LiveAccount data={data} />
         <Methods data={data} />

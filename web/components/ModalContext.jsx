@@ -58,6 +58,6 @@ export function InfoButton({ title, children }) {
       className="i"
       aria-label={`About ${title}`}
       onClick={() => open(<><div className="modal-eyebrow">Where this comes from</div><h3>{title}</h3><p>{children}</p></>)}
-    />
+    >?</button>
   );
 }

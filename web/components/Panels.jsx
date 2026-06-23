@@ -8,8 +8,13 @@ export function Analyst({ data }) {
   const a = data.analyst;
   if (!a) return null;
   const reg = a.regime || {};
+  const ref = a.reflection;
+  const col = methodColor("deep_research_analyst", data.competitors);
+  // The analyst's own fills, newest batch first — the trades behind this tick's thesis.
+  const aTrades = (data.decisions || []).filter((d) => d.agent === "deep_research_analyst");
+  const tickTrades = aTrades.length ? aTrades.filter((d) => d.date === aTrades[0].date) : [];
   return (
-    <div>
+    <section>
       <div className="eyebrow">
         <span className="n">04</span><h2>Research analyst</h2>
         <InfoButton title="Research analyst">
@@ -31,6 +36,22 @@ export function Analyst({ data }) {
           <p className="note"><b>Regime — {reg.label}:</b> {reg.note} {reg.source && <a href={reg.source}>source ↗</a>}</p>
         )}
         <p style={{ fontSize: ".93rem" }}>{a.thesis}</p>
+        {tickTrades.length > 0 && (
+          <>
+            <p className="note" style={{ marginTop: "12px" }}><b>Trades placed</b> <span className="mono" style={{ fontWeight: 400 }}>· {tickTrades[0].date}</span></p>
+            <ul className="atrades">
+              {tickTrades.map((t, i) => (
+                <li key={i} style={{ borderLeft: "3px solid " + col }}>
+                  <span className="aact" style={{ color: t.action === "buy" ? "var(--up)" : "var(--down)" }}>{t.action}</span>
+                  <b>{t.symbol}</b>
+                  <span className="mono apx">{money(t.price)}</span>
+                  <span className="areason">{t.reason.replace(/^analyst:\s*/, "")}</span>
+                  {t.pnl ? <span className={"mono " + cls(t.pnl)}>{(t.pnl >= 0 ? "+" : "") + t.pnl.toFixed(2)}</span> : <span />}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
         {a.evidence?.length > 0 && (
           <ul className="ev">
             {a.evidence.map((e, i) => (
@@ -44,12 +65,31 @@ export function Analyst({ data }) {
             <ul className="risks">{a.risks.map((r, i) => <li key={i}>{r}</li>)}</ul>
           </>
         )}
+        {ref && (
+          <div className="lookback">
+            <p className="note" style={{ marginTop: "14px" }}><b>Looking back</b>{ref.as_of ? <span className="mono" style={{ fontWeight: 400 }}> · on {ref.as_of}</span> : ""}</p>
+            {ref.looking_back && <p style={{ fontSize: ".9rem", margin: "4px 0 8px" }}>{ref.looking_back}</p>}
+            {(ref.worked?.length > 0 || ref.missed?.length > 0) && (
+              <div className="lb-cols">
+                {ref.worked?.length > 0 && (
+                  <div><div className="lb-h" style={{ color: "var(--up)" }}>Nailed</div>
+                    <ul>{ref.worked.map((x, i) => <li key={i}>{x}</li>)}</ul></div>
+                )}
+                {ref.missed?.length > 0 && (
+                  <div><div className="lb-h" style={{ color: "var(--down)" }}>Overlooked</div>
+                    <ul>{ref.missed.map((x, i) => <li key={i}>{x}</li>)}</ul></div>
+                )}
+              </div>
+            )}
+            {ref.adjustment && <p className="note" style={{ marginTop: "8px" }}><b>Adjusting this tick:</b> {ref.adjustment}</p>}
+          </div>
+        )}
         {a.data_examined?.length > 0 && (
           <p className="note">Examined: {a.data_examined.map((d) => d.label).join(" · ")}</p>
         )}
         <p className="note">{a.generated_by || ""}</p>
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -61,7 +101,7 @@ export function DecisionTrail({ data }) {
   const colorOf = (agent) => methodColor(agent, data.competitors);
   const shown = filter === "all" ? data.decisions : data.decisions.filter((d) => d.agent === filter);
   return (
-    <div>
+    <section>
       <div className="eyebrow">
         <span className="n">05</span><h2>Decision trail</h2>
         <InfoButton title="Decision trail">
@@ -126,7 +166,7 @@ export function DecisionTrail({ data }) {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

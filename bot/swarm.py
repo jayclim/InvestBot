@@ -23,8 +23,9 @@ from bot.indicators import sma
 
 # (openrouter_slug, display_name, how_many_fish). Heterogeneous on purpose.
 FISH_MODELS = [
-    ("deepseek/deepseek-chat",          "DeepSeek V3.2",          60),
-    ("google/gemini-2.5-flash-lite",    "Gemini 2.5 Flash-Lite",  60),
+    ("deepseek/deepseek-chat",          "DeepSeek V3.2",          50),
+    ("google/gemini-2.5-flash-lite",    "Gemini 2.5 Flash-Lite",  50),
+    ("qwen/qwen-plus",                  "Qwen Plus",              20),
     ("meta-llama/llama-4-scout",        "Llama 4 Scout",          20),
     ("anthropic/claude-haiku-4.5",      "Haiku 4.5",              10),
 ]

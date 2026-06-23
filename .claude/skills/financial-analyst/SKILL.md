@@ -35,11 +35,13 @@ You manage a live paper book across ticks. Before researching, read your own his
 ```
 python3 tools/analyst_memory.py
 ```
-It prints your current holdings marked vs your entry, recent realized P&L, and last tick's
-thesis/targets/risks. Also read the existing `state/analyst.json` (last run's full reasoning)
-before you overwrite it. Use this: **keep conviction where the thesis still holds, cut or resize
-where it broke**, and in the new report's `thesis` state what changed since last tick. This is a
-thesis *update*, not a cold re-pick.
+It prints your current holdings marked vs your entry, your last 5 realized trades, last tick's
+thesis gist + targets, and your prior `reflection` (the distilled what-worked / what-I'm-changing).
+That's recent history + summarized reasoning by design — not the whole trade log or every past
+thesis verbatim. If you need the full prior write-up, read `state/analyst.json` directly before you
+overwrite it. Use this: **keep conviction where the thesis still holds, cut or resize where it
+broke**, and in the new report's `thesis` state what changed since last tick. This is a thesis
+*update*, not a cold re-pick.
 
 ## Methodology (equity-research workflow → portfolio)
 Operate over `cfg.UNIVERSE` (the ~100-name list). Produce a concentrated book.
@@ -59,12 +61,31 @@ Operate over `cfg.UNIVERSE` (the ~100-name list). Produce a concentrated book.
 Same schema as before, plus a `framework` field marking the methodology. Required keys:
 `date`, `as_of`, `pick` (top conviction), `action`, `sizing`, `confidence` (0–1),
 `regime{label,note,source}`, `thesis`, `evidence[{point,source}]`, `risks[]`,
-`data_examined[{label,source}]`, **`targets` = {SYMBOL: weight}**, `generated_by`, and:
+`data_examined[{label,source}]`, **`targets` = {SYMBOL: weight}**, `generated_by`,
+**`reflection`** (see below), and:
 ```
 "framework": "Claude for Financial Services — equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors)."
 ```
 Keep every evidence `source` a real link or a named data source. The dashboard renders `framework`
 on the analyst card as provenance.
+
+### `reflection` — grade the prior tick before you re-pick (the learning loop)
+You have memory, so use it. From `python3 tools/analyst_memory.py` (last thesis, targets, risks, and
+the realized P&L of every closed trade), write an honest retrospective on the PRIOR tick — what the
+trades actually did, what the thesis got right, and what it missed. Ground every claim in a real
+number or trade; don't invent outcomes. This block drives the new picks: keep conviction where the
+read was correct, cut/resize where it broke. Schema:
+```
+"reflection": {
+  "as_of": "<the prior tick's date you're grading>",
+  "looking_back": "<2-4 sentences: what you held/traded last tick and what the realized P&L did>",
+  "worked":  ["<a call the data vindicated - name the trade/number>", ...],
+  "missed":  ["<what went wrong or was overlooked - a risk that bit, a name you under/over-sized>", ...],
+  "adjustment": "<the one concrete change you're making THIS tick because of the above>"
+}
+```
+First tick (no prior book): set `looking_back` to "First tick - no prior trades to grade yet." and
+leave the lists empty. The dashboard renders this as the analyst's "Looking back" block.
 
 ## After writing
 Return to the tick flow (`run_agents.py` reads `state/analyst.json` for the analyst's targets).
