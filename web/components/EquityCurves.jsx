@@ -150,7 +150,7 @@ export default function EquityCurves({ data }) {
           </div>
         )}
         <div className="legend">
-          {series.map((c, i) => (
+          {[...series].sort((a, b) => b._ret - a._ret).map((c, i) => (
             <span key={i}><i className="swatch" style={{ background: methodColor(c.name, data.competitors) }} />{c.name} <b className={"mono " + cls(c._ret)}>{pct(c._ret)}</b></span>
           ))}
           {bench && (
