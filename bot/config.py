@@ -30,6 +30,12 @@ UNIVERSE = [
     "TQQQ", "SQQQ", "SOXL", "SOXS", "SPXL", "TNA", "FAS", "ERX", "LABU", "NUGT", "BOIL", "UVXY", "GLD",
 ]
 
+# Benchmarks: fetched into the snapshot alongside the universe (so they stay fresh through the
+# normal data pipeline) but NEVER traded — they only draw a reference line on the equity chart.
+BENCHMARK_SYMBOL = "SPY"                  # S&P 500 proxy on the equity-curves chart
+BENCHMARKS = {BENCHMARK_SYMBOL}
+FETCH_SYMBOLS = UNIVERSE + [BENCHMARK_SYMBOL]  # the full pull list for a data refresh
+
 STARTING_CASH = 100.0
 
 # --- Risk controls (the "not gambling" part) ---

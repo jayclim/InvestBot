@@ -163,14 +163,14 @@ def normalize_curves(competitors, all_dates, starting_cash):
         c["equity_curve"] = out
 
 
-def build_benchmark(axis_dates, starting_cash):
+def build_benchmark(snap, axis_dates, starting_cash):
     """S&P 500 (SPY) rebased to the same origin/axis as the competitor curves, so it overlays
-    as a benchmark. Reads data/benchmark.json (SPY daily closes, kept fresh on data refresh).
-    None if the file is missing or has no SPY close on the first axis date."""
-    path = os.path.join(ROOT, "data", "benchmark.json")
-    if not axis_dates or not os.path.exists(path):
+    as a benchmark. SPY rides in the snapshot like any symbol (fetched on data refresh, never
+    traded — see cfg.BENCHMARKS). None if SPY isn't in the snapshot yet."""
+    bars = snap.get(cfg.BENCHMARK_SYMBOL)
+    if not axis_dates or not bars:
         return None
-    spy = json.load(open(path)).get("SPY", {})
+    spy = {b.date: b.close for b in bars}
     base = next((spy[d] for d in axis_dates if d in spy), None)
     if not base:
         return None
@@ -179,7 +179,7 @@ def build_benchmark(axis_dates, starting_cash):
         if d in spy:
             last = round(starting_cash * spy[d] / base, 2)
         curve.append([d, last])
-    return {"name": "S&P 500", "symbol": "SPY", "base": base,
+    return {"name": "S&P 500", "symbol": cfg.BENCHMARK_SYMBOL, "base": base,
             "last": spy.get(axis_dates[-1]), "equity_curve": curve}
 
 
@@ -236,7 +236,7 @@ def main():
     # match the already-scaled equity curves above).
     normalize_curves(competitors, dates, cfg.STARTING_CASH * DISPLAY_SCALE)
     axis = [d for d, _ in competitors[0]["equity_curve"]] if competitors else []
-    benchmark = build_benchmark(axis, cfg.STARTING_CASH * DISPLAY_SCALE)
+    benchmark = build_benchmark(snap, axis, cfg.STARTING_CASH * DISPLAY_SCALE)
 
     data = {
         "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),

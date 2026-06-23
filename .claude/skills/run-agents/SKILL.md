@@ -17,10 +17,13 @@ Run these steps in order. Tell the user what each agent bought/sold and why at t
 - For fresh prices: the Robinhood MCP is connected (`/mcp`). If it isn't, skip step 1 and use the existing snapshot — say so.
 
 ## 1. Refresh market data (preferred, needs Robinhood MCP)
-Fetch daily bars for the whole universe and rebuild the snapshot. `cfg.UNIVERSE` is ~100 names and `get_equity_historicals` caps at 10 symbols per call, so:
+Fetch daily bars for the whole pull list and rebuild the snapshot. Fetch `cfg.FETCH_SYMBOLS`
+(the ~100-name `UNIVERSE` **plus** `cfg.BENCHMARK_SYMBOL` = SPY); `get_equity_historicals` caps at
+10 symbols per call, so:
 - Call `get_equity_historicals` in chunks of ≤10 symbols (`interval: day`, ~6 months). Each call overflows to a file — collect every file path.
 - `python3 tools/ingest_rh.py <file1> <file2> …` (pass ALL chunk files) → rebuilds `data/snapshot.json`.
-If the MCP is down, skip this and note the snapshot is stale.
+SPY rides in the snapshot like any symbol but is **never traded** (`cfg.BENCHMARKS`) — it only draws
+the S&P 500 reference line on the equity chart. If the MCP is down, skip this and note the snapshot is stale.
 
 ## 2. Produce the analyst report (agent-driven — via the financial-analyst skill)
 Run the **`financial-analyst`** skill (`.claude/skills/financial-analyst/SKILL.md`). It applies the

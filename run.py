@@ -32,7 +32,7 @@ def load_snapshot(path):
 def main():
     path = sys.argv[1] if len(sys.argv) > 1 else "data/snapshot.json"
     snap = load_snapshot(path)
-    syms = list(snap.keys())
+    syms = [s for s in snap.keys() if s not in cfg.BENCHMARKS]  # benchmarks ride along but aren't traded
     dates = sorted({b.date for bars in snap.values() for b in bars})
 
     results = run_replay(snap, STRATEGIES)

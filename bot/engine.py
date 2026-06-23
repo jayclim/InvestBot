@@ -51,7 +51,7 @@ def step_day(pf, strat, snapshot, by_sym_date, all_dates, di, broker):
     if di >= 1:
         decision_date = all_dates[di - 1]
         for s in snapshot:
-            if s in exited:
+            if s in exited or s in cfg.BENCHMARKS:  # benchmarks (e.g. SPY) ride along for the chart, never traded
                 continue
             hist = [b for b in snapshot[s] if b.date <= decision_date]
             if len(hist) < cfg.WARMUP:
