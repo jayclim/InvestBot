@@ -39,7 +39,7 @@ FETCH_SYMBOLS = UNIVERSE + [BENCHMARK_SYMBOL]  # the full pull list for a data r
 STARTING_CASH = 100.0
 
 # --- Risk controls (the "not gambling" part) ---
-MAX_POSITIONS = 3
+MAX_POSITIONS = 5
 POSITION_SIZE_PCT = 1.0 / MAX_POSITIONS  # target fraction of equity per new position
 STOP_LOSS_PCT = 0.15                      # hard per-position stop
 CIRCUIT_BREAKER_EQUITY = 60.0             # halt NEW buys below this equity
