@@ -29,6 +29,13 @@ the S&P 500 reference line on the equity chart. This MUST run before any agent/a
 if the MCP is down, reconnect with `/mcp` and refresh before continuing; never run a real tick on stale
 bars. (`run_agents.py` refreshes the news cache itself at the start of every run.)
 
+**If the settled daily bar lags (running in the evening, before settlement):** the `day` historicals
+and the official close can keep reading the *prior* session for a few hours after the 4pm ET close.
+To tick on the session that just closed, pull `interval: minute` for that date (it overflows to files),
+aggregate each name's bars into one daily bar (open=first, high=max, low=min, close=last, volume=sum),
+and append it to `data/snapshot.json`. Caveat: intraday volume undercounts the consolidated total
+(auction/off-exchange prints excluded) — the next normal `day` refresh overwrites it with the settled bar.
+
 ## 2. Produce the analyst report (agent-driven — via the financial-analyst skill)
 Run the **`financial-analyst`** skill (`.claude/skills/financial-analyst/SKILL.md`). It applies the
 Claude for Financial Services **equity-research** methodology (screen → sector → comps → catalysts →

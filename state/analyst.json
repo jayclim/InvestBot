@@ -1,6 +1,6 @@
 {
  "date": "2026-06-23",
- "as_of": "2026-06-23 — daily bars settled through the 6/22 close; live 6/23 tape (semis slammed) and MU's 6/24-pm print in view. Universe screened in randomized order to avoid position bias.",
+ "as_of": "2026-06-23 — daily bars now through the 6/23 close (semis slammed: MU -13%, SOXL -23%); MU's 6/24-pm print is the next session's binary event. Universe screened in randomized order to avoid position bias.",
  "pick": "HOOD",
  "action": "hold",
  "sizing": "De-risk into the 6/24 MU print: exit the highest-beta semis (ARM + 3x SOXL), halve MU, keep HOOD as the non-semi anchor, add a small uncorrelated MRNA flier, and raise cash to ~55% ahead of the print + Thursday PCE.",
@@ -54,7 +54,7 @@
   "Cut-too-early risk: if MU beats and guides HBM/2027 supply up, the complex rips and we left upside on the table by exiting ARM/SOXL and halving MU — the price of refusing a binary anchor.",
   "Cash drag: ~55% cash underperforms badly if the 6/23 selloff was the shakeout and the tape V-bounces through the print; the hedge only pays if the print or PCE disappoints.",
   "MRNA has no earnings (negative P/E) and is a momentum flier — the 10% can round-trip fast if the move was a one-day spike; it is sized small for exactly that reason.",
-  "Execution timing: the paper book fills at the 6/22 settled closes, so the de-risk trades print before the 6/23 drop reaches the book; the decision stands on the 6/22-known setup (binary print, priced-for-perfection, 65% correlated, thin cash), not on the 6/23 tape, which is confirmation."
+  "The de-risk fills at 6/23 closes — into the semis drop, not ahead of it — so the book takes the same 6/23 hit the rule strategies and swarm do on the way out; the bet is that cutting the correlated binary exposure beats riding it through the 6/24 print regardless of exit timing."
  ],
  "data_examined": [
   {
@@ -75,7 +75,7 @@
   }
  ],
  "generated_by": "Claude for Financial Services (equity-research plugin methodology) via Claude Code, 2026-06-23 — de-risk-into-catalyst; universe screened in randomized order to remove position bias",
- "note": "Daily bars settled through the 2026-06-22 close; the agent book fills this tick's rebalance at those 6/22 closes (MU ~$1211, ARM ~$407, SOXL ~$300, HOOD ~$105). This is a de-risking tick: invested weight drops from ~85% to ~45% (MU 15% + HOOD 20% + MRNA 10%), with ~55% cash held as dry powder into the 6/24 MU print and 6/25 PCE. Sets the analyst's next-tick targets; the competitor book advances on the next completed session.",
+ "note": "Daily bars now through the 2026-06-23 close; the de-risk fills at 6/23 closes (MU ~$1051, ARM ~$366, SOXL ~$231, HOOD ~$103) — the same session the call was made, so no look-ahead. This is a de-risking tick: invested weight drops from ~85% to ~45% (MU 15% + HOOD 20% + MRNA 10%), with ~55% cash held as dry powder into the 6/24 MU print and 6/25 PCE.",
  "reflection": {
   "as_of": "2026-06-22",
   "looking_back": "Last tick I rebuilt the book around semis momentum into the 6/24 MU print — MU, ARM, SOXL, HOOD entered 6/18. Graded on settled data through 6/22 it was actually working: MU +6.8% and SOXL +7.6% from entry, partly offset by ARM -7.3% and HOOD -2.3%, leaving the book ~flat-to-slightly-up (equity ~$100.91, +0.9% all-time). The bet looked fine right up until the catalyst — which is exactly the trap a binary setup sets.",
