@@ -120,7 +120,9 @@ export default function EquityCurves({ data }) {
             className="rtt"
             style={{
               opacity: 1,
-              left: (hover.cx > hover.cw - 170 ? hover.cx - 166 : hover.cx + 14) + "px",
+              // flip to the cursor's left when the tooltip (≈220px, see .rtt width) would
+              // overflow the chart's right edge; clamp so it never leaves the container.
+              left: (hover.cx + 16 + 220 > hover.cw ? Math.max(4, hover.cx - 16 - 220) : hover.cx + 16) + "px",
               top: hover.cy + 10 + "px",
             }}
           >
