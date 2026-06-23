@@ -131,11 +131,21 @@ details{margin-top:14px} summary{cursor:pointer;font-family:"JetBrains Mono",mon
 
 /* analyst: the fills behind this tick's thesis */
 .atrades{list-style:none;padding:0;margin:7px 0 0}
-.atrades li{display:flex;flex-wrap:wrap;align-items:baseline;gap:9px;padding:7px 0 7px 9px;border-bottom:1px solid var(--line-2);font-size:.88rem}
+.atrades li{padding:7px 0 7px 9px;border-bottom:1px solid var(--line-2)}
 .atrades li:last-child{border-bottom:none}
+.atrades .atrade-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:9px;font-size:.88rem}
 .atrades .aact{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:.72rem;text-transform:uppercase}
 .atrades .apx{color:var(--muted);font-size:.8rem}
 .atrades .areason{color:var(--muted);font-size:.83rem;flex:1 1 120px}
+/* per-trade reasoning: a clear pill+chevron dropdown when long, an inline line when short */
+.awhy{margin:6px 0 1px}
+.awhy summary{display:inline-flex;align-items:center;gap:6px;cursor:pointer;list-style:none;font-family:"JetBrains Mono",monospace;font-size:.72rem;color:var(--signal);background:var(--signal-soft);border:1px solid var(--line-2);border-radius:6px;padding:3px 9px;user-select:none}
+.awhy summary::-webkit-details-marker{display:none}
+.awhy summary:hover{color:var(--ink)}
+.awhy .chev{transition:transform .15s ease;font-size:.7rem;display:inline-block}
+.awhy[open] .chev{transform:rotate(90deg)}
+.awhy p{margin:8px 0 2px;font-size:.9rem;line-height:1.55}
+.awhy-line{margin:5px 0 1px;font-size:.86rem;color:var(--ink);line-height:1.5}
 /* analyst: retrospective on the prior tick */
 .lookback{margin-top:8px;border-top:1px solid var(--line-2);padding-top:6px}
 .lb-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}

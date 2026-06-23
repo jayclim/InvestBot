@@ -44,9 +44,20 @@ broke**, and in the new report's `thesis` state what changed since last tick. Th
 *update*, not a cold re-pick.
 
 ## Methodology (equity-research workflow → portfolio)
-Operate over `cfg.UNIVERSE` (the ~100-name list). Produce a concentrated book.
-1. **Screen / idea-source (`/screen`)** — narrow the universe to a handful of candidates using
-   momentum, relative strength, and valuation from `data/snapshot.json` + Robinhood fundamentals.
+Operate over `cfg.UNIVERSE` (the ~100-name list). **Run this deeply** — it is the bake-off's
+deep-research competitor, so screen the WHOLE universe (not a glance), pull real Robinhood
+fundamentals on every finalist, and back each pick with a current catalyst from `web_search`.
+Produce a concentrated book.
+
+**Anti-bias — randomize the order first.** Order bias is real: screened in config order, the same
+names lead every tick. Shuffle the universe before you look and screen in that order, so position
+never decides conviction:
+```
+python3 -c "import random,json;from bot import config as c;u=list(c.UNIVERSE);random.shuffle(u);print(json.dumps(u))"
+```
+1. **Screen / idea-source (`/screen`)** — over the shuffled universe, narrow to a handful of
+   candidates using momentum, relative strength, and valuation from `data/snapshot.json` +
+   Robinhood fundamentals.
 2. **Sector & macro (`/sector`)** — read the current regime (Fed path, rates, energy, key sector news)
    via `web_search`; decide which sleeves to favor/avoid.
 3. **Fundamentals & comps (`/comps`)** — for the finalists, pull Robinhood fundamentals (P/E, growth,
@@ -61,7 +72,11 @@ Operate over `cfg.UNIVERSE` (the ~100-name list). Produce a concentrated book.
 Same schema as before, plus a `framework` field marking the methodology. Required keys:
 `date`, `as_of`, `pick` (top conviction), `action`, `sizing`, `confidence` (0–1),
 `regime{label,note,source}`, `thesis`, `evidence[{point,source}]`, `risks[]`,
-`data_examined[{label,source}]`, **`targets` = {SYMBOL: weight}**, `generated_by`,
+`data_examined[{label,source}]`, **`targets` = {SYMBOL: weight}**,
+**`rationale` = {SYMBOL: "<why THIS name and this weight>"}** — one entry per name in `targets`.
+The dashboard renders each trade with its own reasoning: a one-liner shows inline under the trade,
+a fuller deep-dive paragraph collapses into an expandable dropdown. Write as much as each name
+warrants (a short note for an obvious add, a paragraph for the anchor) — `generated_by`,
 **`reflection`** (see below), and:
 ```
 "framework": "Claude for Financial Services — equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors)."

@@ -40,15 +40,29 @@ export function Analyst({ data }) {
           <>
             <p className="note" style={{ marginTop: "12px" }}><b>Trades placed</b> <span className="mono" style={{ fontWeight: 400 }}>· {tickTrades[0].date}</span></p>
             <ul className="atrades">
-              {tickTrades.map((t, i) => (
-                <li key={i} style={{ borderLeft: "3px solid " + col }}>
-                  <span className="aact" style={{ color: t.action === "buy" ? "var(--up)" : "var(--down)" }}>{t.action}</span>
-                  <b>{t.symbol}</b>
-                  <span className="mono apx">{money(t.price)}</span>
-                  <span className="areason">{t.reason.replace(/^analyst:\s*/, "")}</span>
-                  {t.pnl ? <span className={"mono " + cls(t.pnl)}>{(t.pnl >= 0 ? "+" : "") + t.pnl.toFixed(2)}</span> : <span />}
-                </li>
-              ))}
+              {tickTrades.map((t, i) => {
+                const why = a.rationale?.[t.symbol];
+                const long = why && why.length > 140;
+                return (
+                  <li key={i} style={{ borderLeft: "3px solid " + col }}>
+                    <div className="atrade-row">
+                      <span className="aact" style={{ color: t.action === "buy" ? "var(--up)" : "var(--down)" }}>{t.action}</span>
+                      <b>{t.symbol}</b>
+                      <span className="mono apx">{money(t.price)}</span>
+                      <span className="areason">{t.reason.replace(/^analyst:\s*/, "")}</span>
+                      {t.pnl ? <span className={"mono " + cls(t.pnl)}>{(t.pnl >= 0 ? "+" : "") + t.pnl.toFixed(2)}</span> : <span />}
+                    </div>
+                    {why && (long ? (
+                      <details className="awhy">
+                        <summary><span className="chev">▸</span> Why {t.symbol}?</summary>
+                        <p>{why}</p>
+                      </details>
+                    ) : (
+                      <p className="awhy-line">{why}</p>
+                    ))}
+                  </li>
+                );
+              })}
             </ul>
           </>
         )}

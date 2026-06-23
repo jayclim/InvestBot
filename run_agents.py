@@ -19,6 +19,7 @@ money on OpenRouter; everything else is local. The analyst REPORT is produced se
 financial-analyst skill — this runner only rebalances toward the targets it already wrote.
 """
 import argparse
+import datetime as _dt
 import json
 import os
 import sys
@@ -50,12 +51,18 @@ def _rebalance(name, targets, ctx, label):
     paper.save_agents(ctx["today"], pfs)
 
 
-def step_swarm(ctx):
-    from bot.swarm import run_swarm, refresh_news, load_news
-    news_path = os.path.join(ROOT, "state", "news.json")
-    n = refresh_news(cfg.UNIVERSE, news_path)  # all names, once/calendar-day, throttled + cached
+def _refresh_news():
+    """Pull fresh headlines BEFORE any agent/algo runs (date-cached: one throttled sweep per
+    calendar day, instant reuse after). Enriches the swarm briefing and the site."""
+    from bot.swarm import refresh_news
+    n = refresh_news(cfg.UNIVERSE, os.path.join(ROOT, "state", "news.json"))
     items = n.get("items", {})
-    print(f"  news: {sum(len(v) for v in items.values())} headlines across {len(items)} names (cached {n.get('date')})")
+    print(f"news: {sum(len(v) for v in items.values())} headlines across {len(items)} names (cached {n.get('date')})")
+
+
+def step_swarm(ctx):
+    from bot.swarm import run_swarm, load_news
+    news_path = os.path.join(ROOT, "state", "news.json")
     print("swarm: ~150 OpenRouter calls (~$0.07-0.20)…")
     sw = run_swarm(ctx["snap"], cfg.UNIVERSE, load_news(news_path))
     json.dump(sw, open(os.path.join(ROOT, "state", "swarm.json"), "w"))
@@ -142,6 +149,11 @@ def main():
     ctx = {"snap": snap, "today": today, "prices": latest_prices(snap), "mirofish_tier": args.mirofish_tier}
 
     print(f"tick @ {today} — steps: {', '.join(steps)}")
+    age = (_dt.date.today() - _dt.date.fromisoformat(today)).days
+    if age > 4:  # ponytail: 4d covers a Fri→Mon + holiday; wider gap = the MCP refresh got skipped
+        print(f"⚠ snapshot last bar {today} is {age}d old — refresh market data (Robinhood MCP) before a real tick.")
+    if any(s != "dashboard" for s in steps):  # fresh news before any agent/algo (not a publish-only run)
+        _refresh_news()
     for s in steps:
         try:
             STEPS[s](ctx)

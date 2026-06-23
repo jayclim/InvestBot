@@ -14,16 +14,20 @@ Run these steps in order. Tell the user what each agent bought/sold and why at t
 ## 0. Preconditions
 - `data/snapshot.json` exists (the price history the agents read).
 - For a live swarm: `OPENROUTER_API_KEY` is in `.env`. Without it the swarm falls back to a mock.
-- For fresh prices: the Robinhood MCP is connected (`/mcp`). If it isn't, skip step 1 and use the existing snapshot — say so.
+- **Fresh data every tick is REQUIRED.** Connect the Robinhood MCP (`/mcp`) before running — stock
+  bars come from the MCP (step 1) and news refreshes automatically in `run_agents.py`. Don't run a
+  real tick on a stale snapshot: the books won't advance and no new trades fill.
 
-## 1. Refresh market data (preferred, needs Robinhood MCP)
+## 1. Refresh market data (REQUIRED — first, before any agent or algo, every tick)
 Fetch daily bars for the whole pull list and rebuild the snapshot. Fetch `cfg.FETCH_SYMBOLS`
 (the ~100-name `UNIVERSE` **plus** `cfg.BENCHMARK_SYMBOL` = SPY); `get_equity_historicals` caps at
 10 symbols per call, so:
 - Call `get_equity_historicals` in chunks of ≤10 symbols (`interval: day`, ~6 months). Each call overflows to a file — collect every file path.
 - `python3 tools/ingest_rh.py <file1> <file2> …` (pass ALL chunk files) → rebuilds `data/snapshot.json`.
 SPY rides in the snapshot like any symbol but is **never traded** (`cfg.BENCHMARKS`) — it only draws
-the S&P 500 reference line on the equity chart. If the MCP is down, skip this and note the snapshot is stale.
+the S&P 500 reference line on the equity chart. This MUST run before any agent/algo step every tick —
+if the MCP is down, reconnect with `/mcp` and refresh before continuing; never run a real tick on stale
+bars. (`run_agents.py` refreshes the news cache itself at the start of every run.)
 
 ## 2. Produce the analyst report (agent-driven — via the financial-analyst skill)
 Run the **`financial-analyst`** skill (`.claude/skills/financial-analyst/SKILL.md`). It applies the
