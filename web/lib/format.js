@@ -3,7 +3,8 @@ export const pct = (v) => (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "%";
 export const cls = (v) => (v >= 0 ? "pos" : "neg");
 
 export const RCOL = ["#2C44CE", "#C77F1A", "#7A3FC2", "#147A52", "#BE4527", "#0E8F9E"];
-export const BENCH_COLOR = "#111827"; // S&P 500 benchmark — neutral graphite, drawn dashed
+export const BENCH_COLOR = "#111827"; // S&P 500 benchmark — neutral graphite, drawn dashed (on the light chart/legend)
+export const BENCH_INK = "#9CA3AF";   // ...and a light grey for the dark hover tooltip, where graphite is invisible
 
 // A competitor/agent's colour = its slot in the standings order, so the equity-curve line,
 // the legend, and the decision-trail rows all use one identity per method.

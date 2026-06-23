@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
-import { money, pct, cls, methodColor, BENCH_COLOR } from "../lib/format";
+import { money, pct, cls, methodColor, BENCH_COLOR, BENCH_INK } from "../lib/format";
 import { InfoButton } from "./ModalContext";
 import { useLiveQuotes, liveMark } from "./LiveQuotes";
 
@@ -140,7 +140,7 @@ export default function EquityCurves({ data }) {
               const r = p[1] / start - 1;
               return (
                 <div className="rt-r">
-                  <span style={{ color: BENCH_COLOR }}>S&amp;P 500</span>
+                  <span style={{ color: BENCH_INK }}>S&amp;P 500</span>
                   <span>{money(p[1])} {pct(r)}</span>
                 </div>
               );

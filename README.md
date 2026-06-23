@@ -13,10 +13,15 @@ actually works — **before** risking a real dollar on Robinhood.
 - **A research analyst** — runs Anthropic's *Claude for Financial Services* equity-research
   methodology (screen → comps → catalysts → thesis → portfolio) and rebalances a $100 book toward
   target weights.
-- **A "mirofish" swarm** — 150 cheap LLM voters (via OpenRouter), each a unique
-  `persona × risk × horizon × quirk` profile, holding an independent-voter election over the watchlist.
+- **`llm_voters`** — 150 cheap LLM voters (via OpenRouter), each a unique
+  `persona × risk × horizon × quirk` profile. Each voter sees its own random ~20-name slice of the
+  universe (with a recent headline per stock) and casts one ballot — an independent-voter election
+  where the slices keep the votes from herding.
+- **A real-MiroFish swarm** — persona agents with memory that interact over rounds (social simulation),
+  the opposite of the independent vote.
 
-Each trades the same market on its own; the dashboard ranks them with full click-through provenance.
+Each trades the same market on its own; the dashboard ranks them with full click-through provenance,
+and the equity chart overlays the **S&P 500** (SPY) as a benchmark line.
 
 ## Run it
 
@@ -39,9 +44,11 @@ python3 tools/build_dashboard.py  # publish web/public/state.json + history.json
 The **`web/`** app is the dashboard — a **Next.js** app (deployable to Vercel) that fetches the
 bake-off state (`web/public/state.json`), **live-polls real prices** (`/api/quotes`, Finnhub), pulls
 **headlines** (`/api/news`), and lets you **click any ticker** for its price chart with each method's
-buy/sell markers. Each competitor has a holdings table, and a **Stock pool** section lists the
-universe with full company names. See [`web/README.md`](web/README.md). (`build_dashboard.py` also
-publishes `web/public/history.json` for those charts.)
+buy/sell markers. The **equity curves** overlay the S&P 500 as a dashed benchmark; the **decision
+trail** is colour-coded by method with per-method filtering. Each competitor has a holdings table,
+and a **Stock pool** section lists the universe with full company names. See
+[`web/README.md`](web/README.md). (`build_dashboard.py` also publishes `web/public/history.json`
+for those charts and `web/public/news.json`, the daily headline cache.)
 
 Standings, curves, and the decision trail are the **live forward books** (every competitor from
 $100, same method). Dollar/share figures are shown scaled to a **$10,000 notional** for readability —
