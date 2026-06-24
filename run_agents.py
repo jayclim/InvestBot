@@ -79,7 +79,7 @@ def step_mirofish(ctx):
     json.dump(mf, open(os.path.join(ROOT, "state", "mirofish.json"), "w"))
     conv = " -> ".join(f"{c['top']}({int(c['share']*100)}%)" for c in mf["convergence"])
     print(f"  mirofish: {mf['call']} ({int(mf['confidence']*100)}%) after {mf['rounds']} rounds | {conv}")
-    _rebalance("mirofish_real", paper.swarm_targets(mf), ctx, "mirofish")
+    _rebalance("mirofish_real", paper.mirofish_targets(mf), ctx, "mirofish")
 
 
 def step_analyst(ctx):

@@ -57,6 +57,7 @@ WARMUP = 22                               # bars of history required before trad
 # --- Agent paper accounts (analyst + swarm trade fake money before going live) ---
 AGENT_NAMES = ["deep_research_analyst", "llm_voters", "mirofish_real"]
 AGENT_MAX_WEIGHT = 0.6   # cap any single name in an agent's paper book (risk control)
+MIROFISH_MAX_NAMES = 5   # MiroFish holds its top-N rank-weighted consensus names (was a hard 3-name cap)
 
 # Per-agent risk controls — harness-enforced, the agent never overrides these mid-trade.
 #   stop_pct:       hard per-position stop fraction, or None to disable (e.g. a mean-reversion book).

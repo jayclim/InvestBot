@@ -50,7 +50,7 @@ RULES = {
 AGENT_RULES = {
     "deep_research_analyst": "Holds the analyst's target weights; rebalanced each tick from a fresh research report (web + Robinhood data).",
     "llm_voters": "Allocates across the swarm's top vote-getters (weight ∝ vote share, capped at " + str(int(cfg.AGENT_MAX_WEIGHT*100)) + "%); rebalanced each tick.",
-    "mirofish_real": "Real-MiroFish: persona agents with memory interact over rounds; consensus picks (weight ∝ vote share) rebalanced each tick.",
+    "mirofish_real": "Real-MiroFish: persona agents with memory interact over rounds, each ranking its best ideas; the panel's rank-weighted consensus (top " + str(cfg.MIROFISH_MAX_NAMES) + " names, weight ∝ Borda points) rebalanced each tick.",
 }
 KIND = {"deep_research_analyst": "analyst", "llm_voters": "swarm", "mirofish_real": "mirofish"}
 
@@ -281,7 +281,7 @@ def main():
                 {"name": "Backtest reference", "detail": "A separate Dec–Jun walk-forward backtest (" + dates[0] + "–" + dates[-1] + ", in-sample, mostly-bull) is shown inside each rule strategy's detail for context only — it is NOT the live board."},
                 {"name": "Research analyst", "detail": "Agent-driven on the Claude Code plan: web_search + Robinhood data → one report (state/analyst.json) with target weights per tick. Sources link from each evidence row."},
                 {"name": "Swarm vote", "detail": "Independent-voter election: 150 unique-profile cheap models (DeepSeek/Gemini/Llama/Haiku via OpenRouter) each read one shared briefing and return a single ballot; tallied in bot/swarm.py. No interaction between fish."},
-                {"name": "Real-MiroFish swarm", "detail": "Social-simulation swarm (bot/mirofish.py): persona agents with memory interact over multiple rounds — each re-votes seeing its own prior view and its neighbours' latest — so a consensus forms via peer influence (the opposite of the independent swarm). Tiered cost (cheap/default/qwen); seeded from the briefing + optional world-events news."},
+                {"name": "Real-MiroFish swarm", "detail": "Social-simulation swarm (bot/mirofish.py): persona agents with memory interact over multiple rounds — each re-ranks its best ideas seeing its own prior view and its neighbours' latest — so a consensus forms via peer influence (the opposite of the independent swarm). The panel's rank-weighted (Borda) consensus becomes a multi-name book (top " + str(cfg.MIROFISH_MAX_NAMES) + " names, weight ∝ points). Tiered cost (cheap/default/qwen); seeded from the briefing + optional world-events news."},
                 {"name": "Live account", "detail": "Robinhood MCP, Agentic cash account ••••, via get_portfolio / get_equity_positions / get_equity_orders."},
                 {"name": "Display scale", "detail": "The real paper books are $" + format(int(cfg.STARTING_CASH), ",") + " each; every dollar and share figure on this site is shown ×" + str(DISPLAY_SCALE) + " (a $" + format(int(cfg.STARTING_CASH * DISPLAY_SCALE), ",") + " book) so holdings read in whole shares and dollars. Per-share prices and percentages are unscaled."},
             ],

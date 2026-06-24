@@ -94,6 +94,18 @@ def swarm_targets(swarm):
     return {s: n / total for s, n in cand}
 
 
+def mirofish_targets(mf, max_names=None, floor=0.05):
+    """Allocate across MiroFish's rank-weighted consensus: weight ∝ each name's share of total
+    Borda points, keep names clearing `floor`, up to `max_names` (cfg.MIROFISH_MAX_NAMES). The
+    dropped tail + any CASH conviction stays in cash — so a low-conviction panel deploys less."""
+    if max_names is None:
+        max_names = cfg.MIROFISH_MAX_NAMES
+    ballots = [(s, p) for s, p in mf["ballots"] if s != "CASH"]
+    total = sum(p for _, p in ballots) or 1
+    cand = sorted((c for c in ballots if c[1] / total >= floor), key=lambda x: x[1], reverse=True)
+    return {s: p / total for s, p in cand[:max_names]}
+
+
 def analyst_targets(analyst):
     return analyst.get("targets", {})
 
@@ -120,4 +132,12 @@ if __name__ == "__main__":  # ponytail: self-check for the stop-loss / circuit-b
     # per-agent risk: configured override vs global fallback for an unknown name
     assert risk_for("llm_voters") == (0.15, cfg.CIRCUIT_BREAKER_EQUITY)
     assert risk_for("nope") == (cfg.STOP_LOSS_PCT, cfg.CIRCUIT_BREAKER_EQUITY)
+
+    # mirofish_targets: weight ∝ points share, drop CASH + sub-floor tail, cap at max_names
+    mf = {"ballots": [["NVDA", 6], ["MU", 2], ["AMD", 1], ["CASH", 0]]}   # total points = 9
+    tg = mirofish_targets(mf, max_names=2)
+    assert set(tg) == {"NVDA", "MU"} and abs(sum(tg.values()) - 8 / 9) < 1e-9  # AMD cut by the cap
+    assert mirofish_targets({"ballots": [["X", 1], ["Y", 19]]}, floor=0.05) == {"X": 0.05, "Y": 0.95}  # X exactly at floor stays
+    assert mirofish_targets({"ballots": [["X", 1], ["Y", 24]]}, floor=0.05) == {"Y": 0.96}             # X (4%) below floor dropped
+    assert mirofish_targets({"ballots": [["CASH", 0]]}) == {}                  # all-cash panel -> no targets
     print("ok")
