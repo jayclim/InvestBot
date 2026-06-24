@@ -22,6 +22,8 @@ provenance, per-stock charts (price history + buy/sell markers + news), and live
   (refresh data → write analyst report → `run_agents.py` → `tick.py` → rebuild dashboard).
 - The analyst step uses the **`financial-analyst`** skill — Anthropic's Claude for Financial Services
   *equity-research* methodology (screen → sector → comps → catalysts → thesis → portfolio) → `state/analyst.json`.
+  It screens the universe in **randomized order** (anti-bias) and writes a per-name **`rationale`** map; the site
+  renders each analyst trade with its own reasoning (short = inline, long = an expandable dropdown).
   Official plugins (optional, user-installed): `claude plugin marketplace add anthropics/financial-services`
   then `claude plugin install equity-research@claude-for-financial-services`. No paid-vendor MCP connectors
   here, so the data layer stays Robinhood + web_search.
@@ -40,7 +42,8 @@ provenance, per-stock charts (price history + buy/sell markers + news), and live
   - `engine.py` — walk-forward replay + `step_day` (decide on prior close, fill next open, slippage/stops).
   - `metrics.py` — performance summary. `state.py` — algo forward-test persistence.
   - `paper.py` — the AI agents' $100 paper books + multi-name `rebalance` toward target weights.
-  - `swarm.py` — `llm_voters` via **OpenRouter**: 150 fish, each a UNIQUE persona×risk×horizon×quirk
+  - `swarm.py` — `llm_voters` via **OpenRouter**: 150 fish across a heterogeneous model mix (`FISH_MODELS`:
+    DeepSeek / Gemini / Qwen / Llama / Haiku), each a UNIQUE persona×risk×horizon×quirk
     profile. Each fish sees its OWN random ~20-name slice of the universe (`VOTER_SLICE`) with a random
     recent headline per stock, so votes don't herd. Independent-voter election. Needs `OPENROUTER_API_KEY`.
     Headlines come from a daily Finnhub cache: `refresh_news()` sweeps every name once per calendar day
@@ -57,9 +60,14 @@ provenance, per-stock charts (price history + buy/sell markers + news), and live
 - `data/snapshot.json` — daily OHLCV the bots read (includes SPY for the benchmark; `cfg.BENCHMARKS` keeps it untraded).
 
 ## Data & cost
-- Market data is **agent-driven** via the `robinhood-trading` MCP. `get_equity_historicals` caps at
-  10 symbols/call → fetch `cfg.FETCH_SYMBOLS` (universe + SPY) in **~11 chunks** → `python3 tools/ingest_rh.py <files…>`.
-  SPY rides in the snapshot like any symbol but is never traded (benchmark only). The MCP token expires mid-session; reconnect with `/mcp`.
+- Market data is **agent-driven** via the `robinhood-trading` MCP. **Refresh before every tick** —
+  `get_equity_historicals` caps at 10 symbols/call → fetch `cfg.FETCH_SYMBOLS` (universe + SPY) in **~11 chunks**
+  (`interval: day`) → `python3 tools/ingest_rh.py <files…>`. SPY rides in the snapshot like any symbol but is
+  never traded (benchmark only). The MCP token expires mid-session; reconnect with `/mcp`.
+- **Every competitor ticks on the same, latest session** so the deep-research analyst (which reads live
+  web_search + Robinhood data) is never *ahead* of the book it trades — that lookahead is the cheat to avoid.
+  If the settled `day` bar lags (evening, pre-settlement), pull `interval: minute` for that date and aggregate
+  to one OHLCV bar (see the run-agents skill) rather than ticking on a stale snapshot.
 - The **analyst** runs on the Claude Code plan (web_search + Robinhood data). The **swarm** runs on
   **OpenRouter** (key in `.env`, gitignored), ~**$0.20/run** for 150 fish.
 
