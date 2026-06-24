@@ -9,7 +9,10 @@ export const BENCH_INK = "#9CA3AF";   // ...and a light grey for the dark hover 
 // A competitor/agent's colour = its slot in the standings order, so the equity-curve line,
 // the legend, and the decision-trail rows all use one identity per method.
 export const methodColor = (name, competitors) => {
-  const i = (competitors || []).findIndex((c) => c.name === name);
+  if (name === "S&P 500") return BENCH_COLOR; // the market baseline — graphite, drawn dashed
+  // rank among the real competitors only, so S&P 500's slot never shifts the others' colours
+  const others = (competitors || []).filter((c) => c.name !== "S&P 500");
+  const i = others.findIndex((c) => c.name === name);
   return RCOL[(i < 0 ? 0 : i) % RCOL.length];
 };
 export const MODELC = {

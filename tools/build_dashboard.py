@@ -163,10 +163,11 @@ def normalize_curves(competitors, all_dates, starting_cash):
         c["equity_curve"] = out
 
 
-def build_benchmark(snap, axis_dates, starting_cash):
-    """S&P 500 (SPY) rebased to the same origin/axis as the competitor curves, so it overlays
-    as a benchmark. SPY rides in the snapshot like any symbol (fetched on data refresh, never
-    traded — see cfg.BENCHMARKS). None if SPY isn't in the snapshot yet."""
+def spy_competitor(snap, axis_dates, start):
+    """Buy-and-hold S&P 500 (SPY) as a competitor: the whole book goes into SPY on the first
+    forward session and is held — the market baseline, ranked alongside the strategies. A pure
+    function of the SPY series (SPY is never traded by the engine — see cfg.BENCHMARKS), rebased
+    to the same shared origin/axis as the other competitor curves. None if SPY isn't in the snapshot."""
     bars = snap.get(cfg.BENCHMARK_SYMBOL)
     if not axis_dates or not bars:
         return None
@@ -174,13 +175,28 @@ def build_benchmark(snap, axis_dates, starting_cash):
     base = next((spy[d] for d in axis_dates if d in spy), None)
     if not base:
         return None
-    curve, last = [], starting_cash
+    curve, last = [], start
     for d in axis_dates:
         if d in spy:
-            last = round(starting_cash * spy[d] / base, 2)
+            last = round(start * spy[d] / base, 2)
         curve.append([d, last])
-    return {"name": "S&P 500", "symbol": cfg.BENCHMARK_SYMBOL, "base": base,
-            "last": spy.get(axis_dates[-1]), "equity_curve": curve}
+    final, peak, mdd = curve[-1][1], curve[0][1], 0.0
+    for _, v in curve:
+        peak = max(peak, v)
+        mdd = min(mdd, v / peak - 1)
+    qty, last_close = start / base, spy.get(axis_dates[-1], base)
+    return {
+        "name": "S&P 500", "kind": "index",
+        "final": round(final, 2), "return": round(final / start - 1, 4),
+        "max_dd": round(mdd, 4), "trades": 1, "win_rate": 0.0, "cash": 0.0,
+        "rules": "Buys SPY with the whole book on the first forward session and holds — the market baseline.",
+        "holdings": [{"symbol": cfg.BENCHMARK_SYMBOL, "qty": round(qty, 4),
+                      "avg_price": round(base, 2), "last": round(last_close, 2)}],
+        "equity_curve": curve,
+        "trade_log": [{"date": axis_dates[0], "side": "buy", "symbol": cfg.BENCHMARK_SYMBOL,
+                       "qty": round(qty, 4), "price": round(base, 2), "value": round(start, 2),
+                       "pnl": 0.0, "reason": "buy & hold: all-in on day one"}],
+    }
 
 
 def write_history(snap):
@@ -236,7 +252,11 @@ def main():
     # match the already-scaled equity curves above).
     normalize_curves(competitors, dates, cfg.STARTING_CASH * DISPLAY_SCALE)
     axis = [d for d, _ in competitors[0]["equity_curve"]] if competitors else []
-    benchmark = build_benchmark(snap, axis, cfg.STARTING_CASH * DISPLAY_SCALE)
+    spy = spy_competitor(snap, axis, cfg.STARTING_CASH * DISPLAY_SCALE)
+    if spy:
+        competitors.append(spy)
+        competitors.sort(key=lambda c: c["final"], reverse=True)
+    benchmark = None  # S&P 500 is now a competitor (buy & hold), not a separate dashed overlay
 
     data = {
         "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),

@@ -93,7 +93,8 @@ export default function EquityCurves({ data }) {
           <text x={W - R} y={H - 12} textAnchor="end" fontFamily="JetBrains Mono" fontSize="10" fill="var(--muted)">{dts[dts.length - 1][0]}</text>
           {series.map((c, i) => {
             const pts = c.equity_curve.map((p, j) => x(j).toFixed(1) + "," + y(p[1] / start - 1).toFixed(1)).join(" ");
-            return <polyline key={i} points={pts} fill="none" stroke={methodColor(c.name, data.competitors)} strokeWidth="2" strokeLinejoin="round" />;
+            const idx = c.name === "S&P 500";  // market baseline — dashed, like the old benchmark line
+            return <polyline key={i} points={pts} fill="none" stroke={methodColor(c.name, data.competitors)} strokeWidth={idx ? 2.25 : 2} strokeDasharray={idx ? "7 4" : undefined} strokeLinejoin="round" />;
           })}
           {bench && (
             <polyline

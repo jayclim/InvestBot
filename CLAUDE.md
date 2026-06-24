@@ -3,7 +3,8 @@
 A local, **fake-money** "bake-off": several trading approaches each manage a $100 paper book over the
 same market, so we can see which works **before** risking real money on Robinhood. Competitors are 3
 rule strategies + a deep-research **analyst** + `llm_voters` (150 cheap-LLM independent voters) + a
-real-MiroFish social-sim swarm. The equity chart also overlays the **S&P 500** (SPY) as a benchmark.
+real-MiroFish social-sim swarm + a buy-and-hold **S&P 500** (SPY all-in on day one — the market baseline,
+synthesized in `build_dashboard.py`; the engine still never trades SPY).
 A **Next.js web app** (`web/`, deployable to Vercel) renders the results with full click-through
 provenance, per-stock charts (price history + buy/sell markers + news), and live prices.
 
