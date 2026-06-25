@@ -9,19 +9,19 @@ actually works — **before** risking a real dollar on Robinhood.
 
 ## The competitors
 
-- **3 rule strategies** (`bot/strategy.py`): `momentum_breakout`, `mean_reversion`, `blended_momo_rsi`.
-- **A research analyst** — runs Anthropic's *Claude for Financial Services* equity-research
-  methodology (screen → comps → catalysts → thesis → portfolio) and rebalances a $100 book toward
-  target weights.
-- **`llm_voters`** — 150 cheap LLM voters (via OpenRouter), each a unique
-  `persona × risk × horizon × quirk` profile. Each voter sees its own random ~20-name slice of the
-  universe (with a recent headline per stock) and casts one ballot — an independent-voter election
-  where the slices keep the votes from herding.
-- **A real-MiroFish swarm** — persona agents with memory that interact over rounds (social simulation),
-  the opposite of the independent vote.
+Every competitor starts from **$100** and trades the same ~100-name market; the dashboard ranks them
+with full click-through provenance, and the equity chart overlays the **S&P 500** as a benchmark.
 
-Each trades the same market on its own; the dashboard ranks them with full click-through provenance,
-and the equity chart overlays the **S&P 500** (SPY) as a benchmark line.
+| Competitor | Type | How it works | Cost |
+|---|---|---|---|
+| `momentum_breakout` | rule strategy | Buys a 20-day-high breakout confirmed by above-average volume; exits on a close below the 20-day SMA. A few big winners, many small losers. | free |
+| `mean_reversion` | rule strategy | Buys oversold (RSI(14) < 30), sells overbought (RSI > 70). Trades less, wins more often, smaller edge. | free |
+| `blended_momo_rsi` | rule strategy | Momentum breakout, but skips entries already overbought (RSI ≥ 70) and exits on a trend break or RSI > 75 — avoids chasing extended moves. | free |
+| **Research analyst** | deep research | Runs Anthropic's *Claude for Financial Services* equity-research methodology each tick (screen → sector → comps → catalysts → thesis → portfolio) → target weights with a per-name rationale; grades its prior tick against the S&P 500 and adjusts. | Claude Code plan |
+| `llm_voters` | LLM swarm | 150 cheap LLMs (via OpenRouter), each a unique `persona × risk × horizon × quirk` profile voting on its own random ~20-name slice — an independent-voter election whose slices keep votes from herding. | ~$0.20/run |
+| `mirofish_real` | social swarm | Persona agents *with memory* that interact over rounds (a social simulation — the opposite of the independent vote); the book follows their rank-weighted consensus. | OpenRouter (more) |
+| `congress_mirror` | politician mirror | Ranks members of Congress by the excess return of their disclosed trades (a free GitHub mirror of public STOCK Act filings), then buys what the top performers disclosed purchasing — on the **disclosure date**, which by law lags their actual trade by up to ~45 days. | free |
+| **S&P 500** | benchmark | SPY bought all-in on day one and held — the market baseline. Drawn on the chart but never traded by the engine. | free |
 
 ## Run it
 
@@ -58,7 +58,7 @@ real). A Dec–Jun walk-forward backtest is kept as per-strategy reference, not 
 ## Risk controls (the “not gambling” part)
 
 - Hard stop per position (`STOP_LOSS_PCT`, default 15%)
-- Max open positions (`MAX_POSITIONS`, default 3) + a per-name cap for the agents (`AGENT_MAX_WEIGHT`)
+- Max open positions (`MAX_POSITIONS`, default 5) + a per-name cap for the agents (`AGENT_MAX_WEIGHT`)
 - Equity circuit breaker (`CIRCUIT_BREAKER_EQUITY`, default $60) halts new buys
 - Simulated slippage on every fill so paper results aren't flattering
 

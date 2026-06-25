@@ -55,9 +55,19 @@ SMA_PERIOD = 20
 WARMUP = 22                               # bars of history required before trading
 
 # --- Agent paper accounts (analyst + swarm trade fake money before going live) ---
-AGENT_NAMES = ["deep_research_analyst", "llm_voters", "mirofish_real"]
+AGENT_NAMES = ["deep_research_analyst", "llm_voters", "mirofish_real", "congress_mirror"]
 AGENT_MAX_WEIGHT = 0.6   # cap any single name in an agent's paper book (risk control)
 MIROFISH_MAX_NAMES = 5   # MiroFish holds its top-N rank-weighted consensus names (was a hard 3-name cap)
+
+# --- Congress-mirror competitor (follows the most successful politician investors) ---
+# Data: kadoa-org/congress-trading-monitor, a free daily GitHub mirror of public STOCK Act
+# disclosures (no API key, no Cloudflare). We rank by the mirror's own per-filer excess return,
+# then mirror the top filers' disclosed PURCHASES — on the DISCLOSURE date, never backfilled to the
+# (up-to-45-days-earlier) transaction date, which would be look-ahead. See tools/refresh_congress.py.
+CONGRESS_TOP_FILERS = 10        # follow the N best-performing members of Congress (by weighted excess)
+CONGRESS_MIN_SCORED_BUYS = 10   # ignore filers with too few graded buys (luck filter)
+CONGRESS_LOOKBACK_DAYS = 120    # mirror a name while a followed filer's disclosure is this fresh
+CONGRESS_MAX_NAMES = 6          # hold at most this many mirrored names
 
 # Per-agent risk controls — harness-enforced, the agent never overrides these mid-trade.
 #   stop_pct:       hard per-position stop fraction, or None to disable (e.g. a mean-reversion book).
@@ -68,6 +78,9 @@ AGENT_RISK = {
     "deep_research_analyst": {"stop_pct": 0.20, "breaker_equity": CIRCUIT_BREAKER_EQUITY},  # deep-research: more room
     "llm_voters":        {"stop_pct": 0.15, "breaker_equity": CIRCUIT_BREAKER_EQUITY},  # short-horizon: cut faster
     "mirofish_real":         {"stop_pct": 0.15, "breaker_equity": CIRCUIT_BREAKER_EQUITY},  # social-sim swarm
+    # ponytail: a 15% stop is a risk overlay on the raw mirror — it can exit a name a politician
+    # still holds. Set stop_pct=None for a pure follow-the-disclosures book.
+    "congress_mirror":       {"stop_pct": 0.15, "breaker_equity": CIRCUIT_BREAKER_EQUITY},  # politician mirror
 }
 
 # --- Go-live (NOT used during paper testing) ---

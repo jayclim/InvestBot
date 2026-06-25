@@ -1,12 +1,26 @@
 # Robinhood paper-trading bake-off
 
 A local, **fake-money** "bake-off": several trading approaches each manage a $100 paper book over the
-same market, so we can see which works **before** risking real money on Robinhood. Competitors are 3
-rule strategies + a deep-research **analyst** + `llm_voters` (150 cheap-LLM independent voters) + a
-real-MiroFish social-sim swarm + a buy-and-hold **S&P 500** (SPY all-in on day one — the market baseline,
-synthesized in `build_dashboard.py`; the engine still never trades SPY).
+same market, so we can see which works **before** risking real money on Robinhood. The competitor
+roster is the table below.
 A **Next.js web app** (`web/`, deployable to Vercel) renders the results with full click-through
 provenance, per-stock charts (price history + buy/sell markers + news), and live prices.
+
+## Competitors
+All start from $100 on the same latest session. The AI methods share `paper.rebalance` toward target
+weights with per-agent stops + a circuit breaker (`cfg.AGENT_RISK`); the rule strategies use the
+engine's walk-forward stops; SPY is buy-and-hold (never traded by the engine).
+
+| Competitor | `kind` | How it works | Cost / data |
+|---|---|---|---|
+| `momentum_breakout` | algo | Buy a 20-day-high breakout confirmed by above-average volume; exit on a close below the 20-day SMA. Few big winners, many small losers. | free (snapshot OHLCV) |
+| `mean_reversion` | algo | Buy when RSI(14) < 30 (oversold); sell when RSI(14) > 70 (overbought). Trades less, wins more often, smaller edge. | free |
+| `blended_momo_rsi` | algo | Momentum breakout but skip entries already overbought (RSI ≥ 70); exit on trend break or RSI > 75. Avoids chasing extended moves. | free |
+| `deep_research_analyst` | analyst | Claude-for-Financial-Services equity-research each tick (screen → sector → comps → catalysts → thesis → portfolio) → target weights + per-name rationale; reflects on the prior tick and grades alpha vs SPY. | Claude Code plan usage (web_search + RH) |
+| `llm_voters` | swarm | 150 unique-profile cheap LLMs each cast an independent ballot over their own ~20-name slice; allocate across the top vote-getters (weight ∝ vote share, capped). | ~$0.20/run (OpenRouter) |
+| `mirofish_real` | mirofish | Persona agents with memory interact over rounds, each ranking its ideas; rebalance toward the panel's rank-weighted (Borda) consensus — top `MIROFISH_MAX_NAMES`. | OpenRouter, costs more (tiered) |
+| `congress_mirror` | congress | Ranks members of Congress by disclosed-trade excess return (free GitHub STOCK Act mirror), buys what the top filers disclosed purchasing in-universe, weighted by consensus; trades on the **disclosure date** (~weeks after their fill). | free (GitHub feed) |
+| S&P 500 | benchmark | SPY all-in day one, buy-and-hold — the market baseline. Synthesized in `build_dashboard.py`; the engine never trades SPY. | free (snapshot) |
 
 ## Golden rules
 - **Paper money only. Never place a real Robinhood order.** `bot/broker.py: RobinhoodBroker` is an
@@ -29,7 +43,8 @@ provenance, per-stock charts (price history + buy/sell markers + news), and live
   then `claude plugin install equity-research@claude-for-financial-services`. No paid-vendor MCP connectors
   here, so the data layer stays Robinhood + web_search.
 - Manual:
-  - `python3 run_agents.py` — agents tick: runs the swarm live (~$0.20) + rebalances both agent books.
+  - `python3 run_agents.py` — agents tick: runs the swarm live (~$0.20), pulls the congress feed (free),
+    and rebalances every agent book (analyst, swarm, MiroFish, congress-mirror).
   - `python3 tick.py` — advance the rule strategies' forward test by one session.
   - `python3 tools/build_dashboard.py` — publish `web/public/state.json`, `history.json` **and** `news.json` from `state/` (no API calls).
   - `python3 run.py` — backtest only (prints the leaderboard).
@@ -42,7 +57,8 @@ provenance, per-stock charts (price history + buy/sell markers + news), and live
   - `strategy.py` — 3 rule strategies: `momentum_breakout`, `mean_reversion`, `blended_momo_rsi`.
   - `engine.py` — walk-forward replay + `step_day` (decide on prior close, fill next open, slippage/stops).
   - `metrics.py` — performance summary. `state.py` — algo forward-test persistence.
-  - `paper.py` — the AI agents' $100 paper books + multi-name `rebalance` toward target weights.
+  - `paper.py` — the AI agents' $100 paper books + multi-name `rebalance` toward target weights
+    (`swarm_targets` / `mirofish_targets` / `analyst_targets` / `congress_targets`).
   - `swarm.py` — `llm_voters` via **OpenRouter**: 150 fish across a heterogeneous model mix (`FISH_MODELS`:
     DeepSeek / Gemini / Qwen / Llama / Haiku), each a UNIQUE persona×risk×horizon×quirk
     profile. Each fish sees its OWN random ~20-name slice of the universe (`VOTER_SLICE`) with a random
@@ -51,13 +67,14 @@ provenance, per-stock charts (price history + buy/sell markers + news), and live
     (throttled under the free 60/min) → `state/news.json` → published to `web/public/news.json`.
 - `run.py` (backtest CLI), `tick.py` (rule-strategy forward tick), `run_agents.py` (agents tick).
 - `tools/build_dashboard.py` — publishes `web/public/state.json` + `history.json` from `state/`. `tools/ingest_rh.py` — RH historicals → `data/snapshot.json`.
+  `tools/refresh_congress.py` — pulls the `congress_mirror`'s data from a free daily GitHub mirror of STOCK Act disclosures (`kadoa-org/congress-trading-monitor`) → `state/congress.json`. `tools/analyst_memory.py` — the analyst's carry-forward brief (holdings, realized P&L, alpha vs SPY + Sharpe, prior reflection).
 - `web/` — a **Next.js** (App Router) app for Vercel: dashboard reading `web/public/state.json`, with
   `/api/quotes` (live prices) + `/api/news` (headlines) + `/api/intraday` (pre/after-hours candles, Yahoo)
   serverless routes (Finnhub key from `FINNHUB_API_KEY`), click-any-ticker drill-down charts (`StockModal`,
   reading `web/public/history.json`), a per-competitor holdings table, and a **Stock pool** section listing
   the universe with full company names (`web/lib/names.js`). `build_dashboard.py` publishes `state.json` +
   `history.json`; the GitHub repo is `jayclim/InvestBot`. See `web/README.md`.
-- `state/` — `paper_state.json` (algos fwd), `agent_state.json` (agents fwd), `swarm.json`, `mirofish.json`, `analyst.json`, `news.json` (daily headline cache), `live_snapshot.json` (gitignored).
+- `state/` — `paper_state.json` (algos fwd), `agent_state.json` (agents fwd), `swarm.json`, `mirofish.json`, `analyst.json`, `congress.json` (daily congress-trade cache), `news.json` (daily headline cache), `live_snapshot.json` (gitignored).
 - `data/snapshot.json` — daily OHLCV the bots read (includes SPY for the benchmark; `cfg.BENCHMARKS` keeps it untraded).
 
 ## Data & cost
@@ -71,6 +88,10 @@ provenance, per-stock charts (price history + buy/sell markers + news), and live
   to one OHLCV bar (see the run-agents skill) rather than ticking on a stale snapshot.
 - The **analyst** runs on the Claude Code plan (web_search + Robinhood data). The **swarm** runs on
   **OpenRouter** (key in `.env`, gitignored), ~**$0.20/run** for 150 fish.
+- The **congress_mirror** is **free**: `tools/refresh_congress.py` pulls a public GitHub JSON mirror
+  (no API key, no Cloudflare), date-cached one pull/day, and falls back to its cache if the feed is down.
+  It trades only on the **disclosure date** (filings lag the actual trade by up to ~45 days) — never the
+  earlier transaction date, which would be the same lookahead cheat the analyst rule above bans.
 
 ## Conventions
 - **Never add Claude / yourself as a contributor or co-author.** Commit as jayclim with **no**

@@ -11,6 +11,7 @@ Steps:
   swarm      — independent-voter swarm (bot/swarm.py) -> rebalance llm_voters book
   mirofish   — real-MiroFish social-sim swarm (bot/mirofish.py, tiered) -> rebalance mirofish_real book
   analyst    — read state/analyst.json (written by the financial-analyst skill) -> rebalance analyst book
+  congress   — mirror the most successful members of Congress (tools/refresh_congress.py) -> rebalance congress book
   rules      — advance the rule strategies' forward test (tick.py)
   dashboard  — publish web/public/state.json + history.json (tools/build_dashboard.py)
 
@@ -92,6 +93,17 @@ def step_analyst(ctx):
     print(f"  analyst: rebalanced toward {analyst.get('targets', {})}")
 
 
+def step_congress(ctx):
+    from tools.refresh_congress import refresh_congress
+    c = refresh_congress(today=ctx["today"])
+    if c.get("error"):
+        print(f"  congress: feed unavailable, no cache ({c['error']}) — book left as-is")
+    tg = paper.congress_targets(c, ctx["today"])
+    shown = ", ".join(f"{s}({int(w*100)}%)" for s, w in sorted(tg.items(), key=lambda kv: -kv[1])) or "flat"
+    print(f"  congress: following {len(c.get('leaders', []))} top filers -> {shown}")
+    _rebalance("congress_mirror", tg, ctx, "congress")
+
+
 def step_rules(ctx):
     import tick
     tick.main()
@@ -103,9 +115,9 @@ def step_dashboard(ctx):
 
 
 STEPS = {"swarm": step_swarm, "mirofish": step_mirofish, "analyst": step_analyst,
-         "rules": step_rules, "dashboard": step_dashboard}
-DEFAULT_STEPS = ["swarm", "mirofish", "analyst", "rules", "dashboard"]
-NETWORK_STEPS = {"swarm", "mirofish"}   # cost money; skip (don't abort) if they fail
+         "congress": step_congress, "rules": step_rules, "dashboard": step_dashboard}
+DEFAULT_STEPS = ["swarm", "mirofish", "analyst", "congress", "rules", "dashboard"]
+NETWORK_STEPS = {"swarm", "mirofish", "congress"}  # external (cost money or a live feed); skip (don't abort) on failure
 
 
 def resolve_steps(args):

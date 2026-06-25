@@ -5,6 +5,7 @@ multiple names — we rebalance the book toward a set of target weights at curre
 prices, with slippage. State persists in state/agent_state.json so the forward
 track record accrues across runs. No real money touches this.
 """
+import datetime as _dt
 import json
 import os
 
@@ -110,6 +111,27 @@ def analyst_targets(analyst):
     return analyst.get("targets", {})
 
 
+def congress_targets(cache, today, lookback_days=None, max_names=None):
+    """Mirror the most-successful politicians: weight ∝ how many of the followed top filers
+    DISCLOSED a buy of each name within the lookback window (consensus = conviction). Only filings
+    disclosed on/before `today` count — never the earlier transaction date (that'd be look-ahead).
+    Normalized over all qualifying names, so a thin/spread-out mirror leaves the tail in cash."""
+    if lookback_days is None:
+        lookback_days = cfg.CONGRESS_LOOKBACK_DAYS
+    if max_names is None:
+        max_names = cfg.CONGRESS_MAX_NAMES
+    cutoff = (_dt.date.fromisoformat(today) - _dt.timedelta(days=lookback_days)).isoformat()
+    counts = {}
+    for t in cache.get("trades", []):
+        fd = t.get("filing_date")
+        if fd and cutoff <= fd <= today:
+            counts.setdefault(t["ticker"], set()).add(t.get("filer_id"))
+    scores = {s: len(f) for s, f in counts.items()}
+    total = sum(scores.values()) or 1
+    top = sorted(scores.items(), key=lambda kv: kv[1], reverse=True)[:max_names]
+    return {s: n / total for s, n in top}
+
+
 if __name__ == "__main__":  # ponytail: self-check for the stop-loss / circuit-breaker branches
     # stop fires: held name down 20% (> 15%) is sold and not re-bought this tick
     pf = Portfolio(100.0, "t"); pf.buy("AAPL", 100.0, 50.0, "d0", "seed")
@@ -140,4 +162,17 @@ if __name__ == "__main__":  # ponytail: self-check for the stop-loss / circuit-b
     assert mirofish_targets({"ballots": [["X", 1], ["Y", 19]]}, floor=0.05) == {"X": 0.05, "Y": 0.95}  # X exactly at floor stays
     assert mirofish_targets({"ballots": [["X", 1], ["Y", 24]]}, floor=0.05) == {"Y": 0.96}             # X (4%) below floor dropped
     assert mirofish_targets({"ballots": [["CASH", 0]]}) == {}                  # all-cash panel -> no targets
+
+    # congress_targets: weight ∝ distinct followed filers buying a name, within the disclosure window
+    cache = {"trades": [
+        {"ticker": "NVDA", "filer_id": "a", "filing_date": "2026-06-20"},
+        {"ticker": "NVDA", "filer_id": "b", "filing_date": "2026-06-21"},  # 2 filers -> NVDA heavier
+        {"ticker": "MU",   "filer_id": "a", "filing_date": "2026-06-19"},
+        {"ticker": "NVDA", "filer_id": "a", "filing_date": "2026-06-20"},  # dup filer -> not double-counted
+        {"ticker": "OLD",  "filer_id": "c", "filing_date": "2026-01-01"},  # outside lookback -> dropped
+        {"ticker": "AHEAD", "filer_id": "d", "filing_date": "2026-12-31"},  # disclosed after `today` -> dropped
+    ]}
+    tg = congress_targets(cache, today="2026-06-25", lookback_days=30, max_names=5)
+    assert tg == {"NVDA": 2 / 3, "MU": 1 / 3}, tg
+    assert congress_targets({"trades": []}, today="2026-06-25") == {}  # empty mirror -> all cash
     print("ok")

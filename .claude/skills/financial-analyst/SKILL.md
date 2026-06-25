@@ -67,6 +67,9 @@ python3 -c "import random,json;from bot import config as c;u=list(c.UNIVERSE);ra
 6. **Portfolio construction (the bridge)** — translate into **target weights** (fractions of equity;
    the remainder is cash). Respect risk: keep a sensible cash buffer in a hostile regime, cap any single
    name (≤ `cfg.AGENT_MAX_WEIGHT`), and prefer 2–5 names. Multiple positions are expected.
+   **Make `confidence` load-bearing:** it must track how much you actually deploy — low confidence ⇒
+   bigger cash buffer and fewer/smaller names; high conviction ⇒ lean in. Never write a `confidence`
+   that contradicts your sizing (e.g. 0.8 confidence with 60% cash is incoherent).
 
 ## Write `state/analyst.json`
 Same schema as before, plus a `framework` field marking the methodology. Required keys:
@@ -84,12 +87,23 @@ warrants (a short note for an obvious add, a paragraph for the anchor) — `gene
 Keep every evidence `source` a real link or a named data source. The dashboard renders `framework`
 on the analyst card as provenance.
 
+**Quote-first grounding (anti-hallucination — your data layer is web_search + RH, the part most
+prone to a confident wrong number).** Every `evidence.point` must carry the *verbatim* figure or
+quote it rests on (the actual P/E, the headline's exact number and date), not a paraphrase you
+believe — with its `source`. In each `rationale`, tag claims `[DATA]` (pulled from RH / snapshot /
+web) vs `[ASSUMED]` (your judgment) so assumptions are visible, not smuggled in as fact. **Final
+self-check before you write the file:** (a) if you can't cite a real source for a claim, cut it;
+(b) weights sum to ≤ 1 (rest is cash); (c) every `targets` name has a `rationale` entry, ≥1 sourced
+`evidence`, and a named catalyst.
+
 ### `reflection` — grade the prior tick before you re-pick (the learning loop)
-You have memory, so use it. From `python3 tools/analyst_memory.py` (last thesis, targets, risks, and
-the realized P&L of every closed trade), write an honest retrospective on the PRIOR tick — what the
-trades actually did, what the thesis got right, and what it missed. Ground every claim in a real
-number or trade; don't invent outcomes. This block drives the new picks: keep conviction where the
-read was correct, cut/resize where it broke. Schema:
+You have memory, so use it. From `python3 tools/analyst_memory.py` (last thesis, targets, risks, the
+realized P&L of every closed trade, **and your book vs SPY — alpha all-time/last-tick + an annualized
+Sharpe**), write an honest retrospective on the PRIOR tick — what the trades actually did, what the
+thesis got right, and what it missed. Ground every claim in a real number or trade; don't invent
+outcomes. **Grade alpha, not raw P&L:** a green book in a tape SPY rose more is a *miss* — beating
+cash isn't the bar, beating the benchmark is. Cite the alpha and Sharpe; keep conviction where you
+beat SPY, cut/resize where you trailed it. This block drives the new picks. Schema:
 ```
 "reflection": {
   "as_of": "<the prior tick's date you're grading>",

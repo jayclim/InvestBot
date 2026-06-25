@@ -51,8 +51,10 @@ AGENT_RULES = {
     "deep_research_analyst": "Holds the analyst's target weights; rebalanced each tick from a fresh research report (web + Robinhood data).",
     "llm_voters": "Allocates across the swarm's top vote-getters (weight ∝ vote share, capped at " + str(int(cfg.AGENT_MAX_WEIGHT*100)) + "%); rebalanced each tick.",
     "mirofish_real": "Real-MiroFish: persona agents with memory interact over rounds, each ranking its best ideas; the panel's rank-weighted consensus (top " + str(cfg.MIROFISH_MAX_NAMES) + " names, weight ∝ Borda points) rebalanced each tick.",
+    "congress_mirror": "Mirrors the most successful members of Congress: ranks filers by disclosed-trade excess return (kadoa STOCK Act mirror), then buys the names the top " + str(cfg.CONGRESS_TOP_FILERS) + " disclosed purchasing within " + str(cfg.CONGRESS_LOOKBACK_DAYS) + " days, weighted by how many bought each. Traded on the disclosure date — weeks after their actual fill.",
 }
-KIND = {"deep_research_analyst": "analyst", "llm_voters": "swarm", "mirofish_real": "mirofish"}
+KIND = {"deep_research_analyst": "analyst", "llm_voters": "swarm", "mirofish_real": "mirofish",
+        "congress_mirror": "congress"}
 
 
 def pf_to_competitor(name, pf, kind, rules, backtest=None, marks=None):

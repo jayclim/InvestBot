@@ -50,14 +50,16 @@ follows the same workflow manually. Data layer: Robinhood fundamentals/historica
 python3 run_agents.py
 ```
 One step-selectable runner now drives the whole mechanical tick. The default runs, in order:
-`swarm` → `mirofish` → `analyst` → `rules` → `dashboard`. It writes `state/swarm.json` and
-`state/mirofish.json`, reads `state/analyst.json`, rebalances each agent's $100 paper book toward
-its targets, advances the rule strategies, and publishes the web state. State accrues in
-`state/agent_state.json` / `paper_state.json`.
+`swarm` → `mirofish` → `analyst` → `congress` → `rules` → `dashboard`. It writes `state/swarm.json`,
+`state/mirofish.json` and `state/congress.json`, reads `state/analyst.json`, rebalances each agent's
+$100 paper book toward its targets, advances the rule strategies, and publishes the web state. State
+accrues in `state/agent_state.json` / `paper_state.json`.
 
 **Competitors:** `llm_voters` (independent voters, ~$0.07-0.20), `mirofish_real` (real-MiroFish
-social-sim swarm — persona agents with memory interacting over rounds; **costs more**), and
-`deep_research_analyst` (from step 2).
+social-sim swarm — persona agents with memory interacting over rounds; **costs more**),
+`deep_research_analyst` (from step 2), and `congress_mirror` (mirrors the most successful members of
+Congress from a free GitHub STOCK Act feed — **free**, trades on the disclosure date; see
+`tools/refresh_congress.py`).
 
 **Always estimate cost first and tell the user** (the real-MiroFish step is the expensive one):
 ```
@@ -71,7 +73,7 @@ Tiers: `cheap` (30×6, ~$0.10-0.25), `default` (44×10, ~$0.20-0.70), `qwen` (44
 - One step only: `python3 run_agents.py --only swarm`.
 - Explicit order, repeats allowed: `python3 run_agents.py --steps swarm,swarm,dashboard` (running a
   rebalance step twice the same day re-trades and appends a second equity point — only if asked).
-- Steps: `swarm`, `mirofish`, `analyst`, `rules`, `dashboard`.
+- Steps: `swarm`, `mirofish`, `analyst`, `congress`, `rules`, `dashboard`.
 
 When `--steps`/`--only`/`--skip` already include `rules` and `dashboard`, you do NOT also need
 steps 4 and 5 below — they're folded into the runner. Run them standalone only if you skipped them.
