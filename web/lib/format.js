@@ -2,7 +2,7 @@ export const money = (v) => "$" + Number(v).toLocaleString("en-US", { minimumFra
 export const pct = (v) => (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "%";
 export const cls = (v) => (v >= 0 ? "pos" : "neg");
 
-export const RCOL = ["#2C44CE", "#C77F1A", "#7A3FC2", "#147A52", "#BE4527", "#0E8F9E"];
+export const RCOL = ["#2C44CE", "#C77F1A", "#7A3FC2", "#147A52", "#BE4527", "#0E8F9E", "#B5179E"]; // 7 distinct hues — one per real competitor, no wrap-around collision
 export const BENCH_COLOR = "#6B7280"; // S&P 500 benchmark — neutral mid-grey, drawn dashed; lighter than --ink so it doesn't blend into the zero-axis/labels
 export const BENCH_INK = "#9CA3AF";   // ...and a lighter grey for the dark hover tooltip, where mid-grey is faint
 

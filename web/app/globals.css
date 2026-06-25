@@ -70,6 +70,8 @@ section{margin-top:44px}
 .tag.analyst{background:rgba(154,123,34,.14);color:#8a6c1a}
 .tag.swarm{background:rgba(63,142,138,.16);color:#2c6a66}
 .tag.index{background:rgba(17,24,39,.10);color:#374151}
+.tag.congress{background:rgba(122,63,194,.15);color:#5e2ca0}
+.tag.mirofish{background:rgba(181,23,158,.13);color:#9d167f}
 .num{font-family:"JetBrains Mono",monospace;text-align:right;font-variant-numeric:tabular-nums}
 .spark{height:30px;width:116px}
 .pending{color:var(--muted);font-style:italic;font-size:.86rem}
