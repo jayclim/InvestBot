@@ -1,0 +1,4641 @@
+{
+"date": "2026-06-25",
+"asof": "2026-06-25T15:36:40",
+"source": "kadoa-org/congress-trading-monitor (public-domain STOCK Act filings)",
+"leaders": [
+{
+"id": "house_rogerw_marshall",
+"name": "Roger W. Marshall",
+"party": "R",
+"chamber": "house",
+"scored_buys": 44,
+"weighted_excess": 805.0082949395107
+},
+{
+"id": "house_thomasj_rooney",
+"name": "Thomas J. Rooney",
+"party": "R",
+"chamber": "house",
+"scored_buys": 139,
+"weighted_excess": 586.8140204204891
+},
+{
+"id": "senate_sheldon_whitehouse",
+"name": "Sheldon Whitehouse",
+"party": "D",
+"chamber": "senate",
+"scored_buys": 407,
+"weighted_excess": 473.9886559262839
+},
+{
+"id": "house_barbarajhonorable_comstock",
+"name": "Barbara J Comstock",
+"party": "R",
+"chamber": "house",
+"scored_buys": 31,
+"weighted_excess": 253.86290542535698
+},
+{
+"id": "senate_ronl_wyden",
+"name": "Ron L Wyden",
+"party": "D",
+"chamber": "senate",
+"scored_buys": 170,
+"weighted_excess": 245.2176672050376
+},
+{
+"id": "house_rubn_hinojosa",
+"name": "Rub\u00e9n Hinojosa",
+"party": "D",
+"chamber": "house",
+"scored_buys": 23,
+"weighted_excess": 181.60848408877862
+},
+{
+"id": "house_thomas_suozzi",
+"name": "Thomas Suozzi",
+"party": "D",
+"chamber": "house",
+"scored_buys": 272,
+"weighted_excess": 155.897586262794
+},
+{
+"id": "senate_johnf_reed",
+"name": "John F Reed",
+"party": "D",
+"chamber": "senate",
+"scored_buys": 58,
+"weighted_excess": 120.41243862202062
+},
+{
+"id": "house_austin_scott",
+"name": "Austin Scott",
+"party": "R",
+"chamber": "house",
+"scored_buys": 40,
+"weighted_excess": 109.47695179011703
+},
+{
+"id": "house_nancy_pelosi",
+"name": "Nancy Pelosi",
+"party": "D",
+"chamber": "house",
+"scored_buys": 105,
+"weighted_excess": 94.33172811709532
+}
+],
+"trades": [
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "MSFT",
+"filing_date": "2020-10-13",
+"transaction_date": "2020-09-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "INTC",
+"filing_date": "2020-10-13",
+"transaction_date": "2020-09-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "GILD",
+"filing_date": "2020-06-03",
+"transaction_date": "2020-05-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "GILD",
+"filing_date": "2020-06-03",
+"transaction_date": "2020-05-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "DIS",
+"filing_date": "2020-06-03",
+"transaction_date": "2020-05-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "AMD",
+"filing_date": "2020-06-03",
+"transaction_date": "2020-05-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "BABA",
+"filing_date": "2020-06-03",
+"transaction_date": "2020-05-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "GILD",
+"filing_date": "2020-06-03",
+"transaction_date": "2020-05-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "BABA",
+"filing_date": "2020-01-09",
+"transaction_date": "2019-12-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "AAPL",
+"filing_date": "2020-01-09",
+"transaction_date": "2019-12-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "AAPL",
+"filing_date": "2020-01-09",
+"transaction_date": "2019-12-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "AMZN",
+"filing_date": "2019-12-11",
+"transaction_date": "2019-11-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "MU",
+"filing_date": "2019-12-11",
+"transaction_date": "2019-11-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "NFLX",
+"filing_date": "2019-12-11",
+"transaction_date": "2019-10-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "TSLA",
+"filing_date": "2018-12-06",
+"transaction_date": "2018-11-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "BABA",
+"filing_date": "2018-10-01",
+"transaction_date": "2018-08-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "MSFT",
+"filing_date": "2018-09-05",
+"transaction_date": "2018-08-22",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "AAPL",
+"filing_date": "2018-09-05",
+"transaction_date": "2018-08-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "MSFT",
+"filing_date": "2018-09-05",
+"transaction_date": "2018-08-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "AMZN",
+"filing_date": "2018-08-10",
+"transaction_date": "2018-08-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "TSLA",
+"filing_date": "2018-08-10",
+"transaction_date": "2018-07-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "NVDA",
+"filing_date": "2018-08-10",
+"transaction_date": "2017-11-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "TSLA",
+"filing_date": "2018-08-10",
+"transaction_date": "2017-11-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "AMD",
+"filing_date": "2018-08-06",
+"transaction_date": "2017-10-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "TSLA",
+"filing_date": "2018-08-06",
+"transaction_date": "2017-10-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "CMG",
+"filing_date": "2018-08-06",
+"transaction_date": "2017-08-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "NFLX",
+"filing_date": "2018-08-10",
+"transaction_date": "2017-08-22",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "NVDA",
+"filing_date": "2018-08-10",
+"transaction_date": "2017-03-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "CMG",
+"filing_date": "2018-08-06",
+"transaction_date": "2017-02-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "NFLX",
+"filing_date": "2018-08-10",
+"transaction_date": "2017-02-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rogerw_marshall",
+"filer": "Roger W. Marshall",
+"ticker": "TSLA",
+"filing_date": "2018-08-10",
+"transaction_date": "2017-01-03",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "BABA",
+"filing_date": "2018-10-13",
+"transaction_date": "2018-09-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "MSFT",
+"filing_date": "2018-02-15",
+"transaction_date": "2018-01-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "ADBE",
+"filing_date": "2017-02-15",
+"transaction_date": "2017-01-24",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "AVGO",
+"filing_date": "2017-01-24",
+"transaction_date": "2016-12-23",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "META",
+"filing_date": "2017-01-24",
+"transaction_date": "2016-12-23",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "AAPL",
+"filing_date": "2017-01-24",
+"transaction_date": "2016-12-21",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "HD",
+"filing_date": "2017-01-24",
+"transaction_date": "2016-12-21",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "SLB",
+"filing_date": "2017-01-24",
+"transaction_date": "2016-12-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "MA",
+"filing_date": "2017-01-24",
+"transaction_date": "2016-12-20",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "AMZN",
+"filing_date": "2017-01-24",
+"transaction_date": "2016-12-13",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "GILD",
+"filing_date": "2017-01-24",
+"transaction_date": "2016-12-12",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "MSFT",
+"filing_date": "2017-01-24",
+"transaction_date": "2016-12-12",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "NKE",
+"filing_date": "2017-01-24",
+"transaction_date": "2016-12-12",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "AMZN",
+"filing_date": "2017-01-16",
+"transaction_date": "2016-11-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "AMZN",
+"filing_date": "2017-01-16",
+"transaction_date": "2016-07-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "MSFT",
+"filing_date": "2017-01-16",
+"transaction_date": "2016-03-10",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "GILD",
+"filing_date": "2017-01-16",
+"transaction_date": "2016-02-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "MSFT",
+"filing_date": "2017-01-16",
+"transaction_date": "2016-02-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "TXN",
+"filing_date": "2017-01-16",
+"transaction_date": "2016-02-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "GOOGL",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "GOOGL",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "AMZN",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "AXP",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "AAPL",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "GILD",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "HD",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "MA",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "MSFT",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "NKE",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "SLB",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "TXN",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "UNH",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "DIS",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "GOOGL",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-10-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "AAPL",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-10-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "GILD",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-10-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "HD",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-10-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "MA",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-10-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "NKE",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-10-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "TXN",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-10-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "DIS",
+"filing_date": "2017-01-16",
+"transaction_date": "2015-10-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomasj_rooney",
+"filer": "Thomas J. Rooney",
+"ticker": "HD",
+"filing_date": "2017-01-16",
+"transaction_date": "2014-12-17",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "LLY",
+"filing_date": "2024-11-07",
+"transaction_date": "2024-10-30",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GS",
+"filing_date": "2024-07-16",
+"transaction_date": "2024-06-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "HD",
+"filing_date": "2024-07-16",
+"transaction_date": "2024-06-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "MSFT",
+"filing_date": "2024-07-16",
+"transaction_date": "2024-06-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "SNOW",
+"filing_date": "2024-01-18",
+"transaction_date": "2023-12-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "LLY",
+"filing_date": "2024-01-18",
+"transaction_date": "2023-12-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "TSLA",
+"filing_date": "2023-10-17",
+"transaction_date": "2023-09-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "LLY",
+"filing_date": "2023-10-17",
+"transaction_date": "2023-09-20",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "TGT",
+"filing_date": "2022-03-16",
+"transaction_date": "2022-01-28",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "TSLA",
+"filing_date": "2022-03-16",
+"transaction_date": "2022-01-28",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2019-06-11",
+"transaction_date": "2019-05-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "INTC",
+"filing_date": "2019-05-08",
+"transaction_date": "2019-04-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "MCD",
+"filing_date": "2019-05-08",
+"transaction_date": "2019-04-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "INTC",
+"filing_date": "2019-05-08",
+"transaction_date": "2019-04-18",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMZN",
+"filing_date": "2019-01-10",
+"transaction_date": "2018-12-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2019-01-10",
+"transaction_date": "2018-12-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "TSLA",
+"filing_date": "2019-01-10",
+"transaction_date": "2018-12-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "TSLA",
+"filing_date": "2019-01-10",
+"transaction_date": "2018-12-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2018-11-15",
+"transaction_date": "2018-10-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "F",
+"filing_date": "2018-10-22",
+"transaction_date": "2018-09-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GS",
+"filing_date": "2018-09-07",
+"transaction_date": "2018-08-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "BABA",
+"filing_date": "2018-09-07",
+"transaction_date": "2018-08-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "WMT",
+"filing_date": "2018-09-07",
+"transaction_date": "2018-08-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "WMT",
+"filing_date": "2018-09-07",
+"transaction_date": "2018-08-28",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "WMT",
+"filing_date": "2018-07-13",
+"transaction_date": "2018-06-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "PYPL",
+"filing_date": "2018-07-13",
+"transaction_date": "2018-06-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GS",
+"filing_date": "2018-07-13",
+"transaction_date": "2018-06-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "BA",
+"filing_date": "2018-07-13",
+"transaction_date": "2018-06-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "BABA",
+"filing_date": "2018-07-13",
+"transaction_date": "2018-06-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "F",
+"filing_date": "2018-06-07",
+"transaction_date": "2018-05-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMZN",
+"filing_date": "2018-06-07",
+"transaction_date": "2018-05-07",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "HD",
+"filing_date": "2018-06-07",
+"transaction_date": "2018-05-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "MCD",
+"filing_date": "2018-06-07",
+"transaction_date": "2018-05-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "TSLA",
+"filing_date": "2018-06-07",
+"transaction_date": "2018-05-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2018-03-07",
+"transaction_date": "2018-02-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "WMT",
+"filing_date": "2018-02-13",
+"transaction_date": "2018-01-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2017-12-11",
+"transaction_date": "2017-11-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "TSLA",
+"filing_date": "2017-12-11",
+"transaction_date": "2017-11-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "WMT",
+"filing_date": "2017-12-11",
+"transaction_date": "2017-11-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "TSLA",
+"filing_date": "2017-09-12",
+"transaction_date": "2017-08-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "TSLA",
+"filing_date": "2017-09-12",
+"transaction_date": "2017-08-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "WMT",
+"filing_date": "2017-09-12",
+"transaction_date": "2017-08-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GS",
+"filing_date": "2017-08-18",
+"transaction_date": "2017-07-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "SBUX",
+"filing_date": "2017-08-18",
+"transaction_date": "2017-07-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "TSLA",
+"filing_date": "2017-08-18",
+"transaction_date": "2017-07-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "F",
+"filing_date": "2017-06-08",
+"transaction_date": "2017-05-30",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "F",
+"filing_date": "2017-06-08",
+"transaction_date": "2017-05-30",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GS",
+"filing_date": "2017-06-08",
+"transaction_date": "2017-05-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMGN",
+"filing_date": "2017-06-08",
+"transaction_date": "2017-05-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "BAC",
+"filing_date": "2017-06-08",
+"transaction_date": "2017-05-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "REGN",
+"filing_date": "2017-06-08",
+"transaction_date": "2017-05-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "MA",
+"filing_date": "2017-06-08",
+"transaction_date": "2017-05-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "QCOM",
+"filing_date": "2017-05-10",
+"transaction_date": "2017-04-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "QCOM",
+"filing_date": "2017-05-10",
+"transaction_date": "2017-04-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMGN",
+"filing_date": "2017-05-10",
+"transaction_date": "2017-04-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2017-03-15",
+"transaction_date": "2017-02-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "PFE",
+"filing_date": "2017-03-15",
+"transaction_date": "2017-02-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "BA",
+"filing_date": "2017-02-14",
+"transaction_date": "2017-01-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2017-02-14",
+"transaction_date": "2017-01-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GS",
+"filing_date": "2017-01-11",
+"transaction_date": "2016-12-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GS",
+"filing_date": "2017-01-11",
+"transaction_date": "2016-12-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2016-12-12",
+"transaction_date": "2016-11-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "DIS",
+"filing_date": "2016-12-12",
+"transaction_date": "2016-11-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2016-12-12",
+"transaction_date": "2016-11-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMGN",
+"filing_date": "2016-12-12",
+"transaction_date": "2016-11-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2016-12-12",
+"transaction_date": "2016-11-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2016-12-12",
+"transaction_date": "2016-11-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GOOGL",
+"filing_date": "2016-12-12",
+"transaction_date": "2016-11-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "BA",
+"filing_date": "2016-12-12",
+"transaction_date": "2016-11-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "DIS",
+"filing_date": "2016-12-12",
+"transaction_date": "2016-11-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "SBUX",
+"filing_date": "2016-12-12",
+"transaction_date": "2016-11-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "DIS",
+"filing_date": "2016-11-07",
+"transaction_date": "2016-10-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2016-11-07",
+"transaction_date": "2016-10-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "MA",
+"filing_date": "2016-11-07",
+"transaction_date": "2016-10-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "BA",
+"filing_date": "2016-10-07",
+"transaction_date": "2016-09-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "DIS",
+"filing_date": "2016-10-07",
+"transaction_date": "2016-09-22",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "REGN",
+"filing_date": "2016-10-07",
+"transaction_date": "2016-09-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "REGN",
+"filing_date": "2016-09-09",
+"transaction_date": "2016-09-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "SBUX",
+"filing_date": "2016-09-09",
+"transaction_date": "2016-08-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2016-08-22",
+"transaction_date": "2016-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2016-08-22",
+"transaction_date": "2016-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "SBUX",
+"filing_date": "2016-06-16",
+"transaction_date": "2016-06-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMGN",
+"filing_date": "2016-06-16",
+"transaction_date": "2016-05-24",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "REGN",
+"filing_date": "2016-06-16",
+"transaction_date": "2016-05-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2016-06-16",
+"transaction_date": "2016-05-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NFLX",
+"filing_date": "2016-06-16",
+"transaction_date": "2016-05-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2016-06-16",
+"transaction_date": "2016-05-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GE",
+"filing_date": "2017-08-10",
+"transaction_date": "2016-05-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GE",
+"filing_date": "2016-05-23",
+"transaction_date": "2016-05-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2017-08-10",
+"transaction_date": "2016-04-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2016-05-23",
+"transaction_date": "2016-04-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2017-08-10",
+"transaction_date": "2016-04-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "DIS",
+"filing_date": "2017-08-10",
+"transaction_date": "2016-04-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2016-05-23",
+"transaction_date": "2016-04-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "DIS",
+"filing_date": "2016-05-23",
+"transaction_date": "2016-04-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMZN",
+"filing_date": "2017-08-10",
+"transaction_date": "2016-04-12",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GOOGL",
+"filing_date": "2017-08-10",
+"transaction_date": "2016-04-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMGN",
+"filing_date": "2017-08-10",
+"transaction_date": "2016-04-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMZN",
+"filing_date": "2016-05-23",
+"transaction_date": "2016-04-12",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GOOGL",
+"filing_date": "2016-05-23",
+"transaction_date": "2016-04-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMGN",
+"filing_date": "2016-05-23",
+"transaction_date": "2016-04-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "BAC",
+"filing_date": "2016-02-23",
+"transaction_date": "2016-02-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2016-02-23",
+"transaction_date": "2016-02-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2016-02-23",
+"transaction_date": "2016-01-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "LMT",
+"filing_date": "2016-08-11",
+"transaction_date": "2016-01-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "MSFT",
+"filing_date": "2016-08-11",
+"transaction_date": "2016-01-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2016-08-11",
+"transaction_date": "2016-01-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "LMT",
+"filing_date": "2016-01-20",
+"transaction_date": "2016-01-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "MSFT",
+"filing_date": "2016-01-20",
+"transaction_date": "2016-01-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2016-01-20",
+"transaction_date": "2016-01-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NFLX",
+"filing_date": "2016-08-11",
+"transaction_date": "2016-01-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2016-08-11",
+"transaction_date": "2016-01-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2016-08-11",
+"transaction_date": "2016-01-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "WMT",
+"filing_date": "2016-08-11",
+"transaction_date": "2016-01-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2016-01-20",
+"transaction_date": "2016-01-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NVDA",
+"filing_date": "2016-01-20",
+"transaction_date": "2016-01-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "WMT",
+"filing_date": "2016-01-20",
+"transaction_date": "2016-01-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NFLX",
+"filing_date": "2016-01-20",
+"transaction_date": "2016-01-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "WMT",
+"filing_date": "2016-06-16",
+"transaction_date": "2015-11-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GE",
+"filing_date": "2016-08-11",
+"transaction_date": "2015-08-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GE",
+"filing_date": "2015-09-01",
+"transaction_date": "2015-08-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NFLX",
+"filing_date": "2016-08-11",
+"transaction_date": "2015-07-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NFLX",
+"filing_date": "2015-09-01",
+"transaction_date": "2015-07-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMGN",
+"filing_date": "2015-08-12",
+"transaction_date": "2015-05-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "BAC",
+"filing_date": "2015-08-12",
+"transaction_date": "2015-05-27",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMGN",
+"filing_date": "2015-06-03",
+"transaction_date": "2015-05-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "BAC",
+"filing_date": "2015-06-03",
+"transaction_date": "2015-05-27",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NFLX",
+"filing_date": "2015-08-12",
+"transaction_date": "2015-05-07",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NFLX",
+"filing_date": "2015-06-03",
+"transaction_date": "2015-05-07",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2015-04-23",
+"transaction_date": "2015-04-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "NFLX",
+"filing_date": "2015-04-23",
+"transaction_date": "2015-04-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2015-04-23",
+"transaction_date": "2015-04-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMGN",
+"filing_date": "2015-03-17",
+"transaction_date": "2015-03-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2016-09-08",
+"transaction_date": "2015-01-23",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2016-08-11",
+"transaction_date": "2015-01-23",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GILD",
+"filing_date": "2015-02-03",
+"transaction_date": "2015-01-23",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "ORCL",
+"filing_date": "2015-01-05",
+"transaction_date": "2014-12-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMGN",
+"filing_date": "2015-01-05",
+"transaction_date": "2014-12-18",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "BABA",
+"filing_date": "2015-08-12",
+"transaction_date": "2014-11-10",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "BABA",
+"filing_date": "2014-11-18",
+"transaction_date": "2014-11-10",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "SBUX",
+"filing_date": "2015-08-12",
+"transaction_date": "2014-10-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "SBUX",
+"filing_date": "2014-10-28",
+"transaction_date": "2014-10-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "SBUX",
+"filing_date": "2015-08-12",
+"transaction_date": "2014-10-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "SBUX",
+"filing_date": "2014-10-28",
+"transaction_date": "2014-10-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AXP",
+"filing_date": "2014-08-26",
+"transaction_date": "2014-07-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "AMGN",
+"filing_date": "2014-07-17",
+"transaction_date": "2014-07-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "ORCL",
+"filing_date": "2014-06-12",
+"transaction_date": "2014-05-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GOOGL",
+"filing_date": "2015-08-12",
+"transaction_date": "2014-04-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2015-08-12",
+"transaction_date": "2014-04-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "GOOGL",
+"filing_date": "2014-05-15",
+"transaction_date": "2014-04-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2014-05-15",
+"transaction_date": "2014-04-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "V",
+"filing_date": "2014-04-28",
+"transaction_date": "2014-04-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "SLB",
+"filing_date": "2014-04-28",
+"transaction_date": "2014-03-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2015-09-03",
+"transaction_date": "2014-03-13",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2015-08-13",
+"transaction_date": "2014-03-13",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "ORCL",
+"filing_date": "2015-09-03",
+"transaction_date": "2014-02-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2015-09-03",
+"transaction_date": "2014-02-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "V",
+"filing_date": "2015-09-03",
+"transaction_date": "2014-02-19",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "ORCL",
+"filing_date": "2015-08-13",
+"transaction_date": "2014-02-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2015-08-13",
+"transaction_date": "2014-02-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "V",
+"filing_date": "2015-08-13",
+"transaction_date": "2014-02-19",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "ORCL",
+"filing_date": "2015-08-13",
+"transaction_date": "2014-02-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2015-08-13",
+"transaction_date": "2014-02-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "V",
+"filing_date": "2015-08-13",
+"transaction_date": "2014-02-19",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "ORCL",
+"filing_date": "2015-08-12",
+"transaction_date": "2014-02-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2015-08-12",
+"transaction_date": "2014-02-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "V",
+"filing_date": "2015-08-12",
+"transaction_date": "2014-02-19",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "ORCL",
+"filing_date": "2014-03-26",
+"transaction_date": "2014-02-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "JPM",
+"filing_date": "2014-03-26",
+"transaction_date": "2014-02-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "V",
+"filing_date": "2014-03-26",
+"transaction_date": "2014-02-19",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_sheldon_whitehouse",
+"filer": "Sheldon Whitehouse",
+"ticker": "V",
+"filing_date": "2014-02-27",
+"transaction_date": "2014-02-10",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "META",
+"filing_date": "2019-01-01",
+"transaction_date": "2018-12-26",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "AMZN",
+"filing_date": "2018-09-12",
+"transaction_date": "2018-09-07",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "AAPL",
+"filing_date": "2018-08-06",
+"transaction_date": "2018-08-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "INTC",
+"filing_date": "2018-08-06",
+"transaction_date": "2018-08-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "AMZN",
+"filing_date": "2018-07-26",
+"transaction_date": "2018-07-26",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "MU",
+"filing_date": "2018-06-25",
+"transaction_date": "2018-06-25",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "MA",
+"filing_date": "2018-06-11",
+"transaction_date": "2018-06-07",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "MSFT",
+"filing_date": "2018-06-11",
+"transaction_date": "2018-06-05",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "MSFT",
+"filing_date": "2018-04-19",
+"transaction_date": "2018-02-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "NFLX",
+"filing_date": "2018-01-27",
+"transaction_date": "2018-01-23",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "AAPL",
+"filing_date": "2018-01-03",
+"transaction_date": "2017-12-26",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "PYPL",
+"filing_date": "2018-01-03",
+"transaction_date": "2017-12-26",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "AAPL",
+"filing_date": "2017-12-19",
+"transaction_date": "2017-12-18",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "BA",
+"filing_date": "2017-12-19",
+"transaction_date": "2017-12-18",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "AAPL",
+"filing_date": "2017-10-13",
+"transaction_date": "2017-10-12",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "MSFT",
+"filing_date": "2017-10-13",
+"transaction_date": "2017-10-12",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "NFLX",
+"filing_date": "2017-10-13",
+"transaction_date": "2017-10-12",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "AAPL",
+"filing_date": "2017-02-18",
+"transaction_date": "2017-02-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "AAPL",
+"filing_date": "2017-02-18",
+"transaction_date": "2017-02-15",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "AAPL",
+"filing_date": "2017-02-18",
+"transaction_date": "2017-02-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_barbarajhonorable_comstock",
+"filer": "Barbara J Comstock",
+"ticker": "AAPL",
+"filing_date": "2016-12-28",
+"transaction_date": "2016-12-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "LLY",
+"filing_date": "2025-02-21",
+"transaction_date": "2025-01-22",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AAPL",
+"filing_date": "2022-03-23",
+"transaction_date": "2022-02-24",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AVGO",
+"filing_date": "2021-04-02",
+"transaction_date": "2021-03-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AAPL",
+"filing_date": "2021-02-18",
+"transaction_date": "2021-01-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "DIS",
+"filing_date": "2021-02-18",
+"transaction_date": "2021-01-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AAPL",
+"filing_date": "2021-02-18",
+"transaction_date": "2021-01-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NVDA",
+"filing_date": "2020-11-16",
+"transaction_date": "2020-10-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AAPL",
+"filing_date": "2020-09-24",
+"transaction_date": "2020-09-02",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AMZN",
+"filing_date": "2020-09-24",
+"transaction_date": "2020-09-01",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AAPL",
+"filing_date": "2020-09-24",
+"transaction_date": "2020-08-27",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "UPS",
+"filing_date": "2020-09-24",
+"transaction_date": "2020-08-25",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NVDA",
+"filing_date": "2020-08-29",
+"transaction_date": "2020-08-21",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "UPS",
+"filing_date": "2020-08-29",
+"transaction_date": "2020-08-21",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NFLX",
+"filing_date": "2020-08-29",
+"transaction_date": "2020-08-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "UPS",
+"filing_date": "2020-08-29",
+"transaction_date": "2020-08-19",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NVDA",
+"filing_date": "2020-08-29",
+"transaction_date": "2020-08-19",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "UPS",
+"filing_date": "2020-08-29",
+"transaction_date": "2020-08-17",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "UPS",
+"filing_date": "2020-08-29",
+"transaction_date": "2020-08-14",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "F",
+"filing_date": "2020-08-29",
+"transaction_date": "2020-08-11",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AAPL",
+"filing_date": "2020-08-29",
+"transaction_date": "2020-08-07",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "DIS",
+"filing_date": "2020-08-29",
+"transaction_date": "2020-08-04",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "MSFT",
+"filing_date": "2020-08-29",
+"transaction_date": "2020-07-31",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NVDA",
+"filing_date": "2020-08-29",
+"transaction_date": "2020-07-30",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NVDA",
+"filing_date": "2020-07-31",
+"transaction_date": "2020-07-27",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "MSFT",
+"filing_date": "2020-07-31",
+"transaction_date": "2020-07-23",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AAPL",
+"filing_date": "2020-07-31",
+"transaction_date": "2020-07-20",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AAPL",
+"filing_date": "2020-07-31",
+"transaction_date": "2020-07-15",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AAPL",
+"filing_date": "2020-07-31",
+"transaction_date": "2020-07-13",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "COST",
+"filing_date": "2020-07-31",
+"transaction_date": "2020-07-13",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "F",
+"filing_date": "2020-07-31",
+"transaction_date": "2020-07-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AMZN",
+"filing_date": "2020-07-31",
+"transaction_date": "2020-07-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AAPL",
+"filing_date": "2020-07-31",
+"transaction_date": "2020-07-06",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "MSFT",
+"filing_date": "2020-07-31",
+"transaction_date": "2020-07-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NVDA",
+"filing_date": "2020-07-31",
+"transaction_date": "2020-07-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AMZN",
+"filing_date": "2020-07-31",
+"transaction_date": "2020-07-02",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AMZN",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-30",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AAPL",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-26",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AMZN",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-26",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "MSFT",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-26",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NFLX",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-26",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NVDA",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-26",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AAPL",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-24",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "COST",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-24",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "DIS",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-24",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "MSFT",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-24",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NVDA",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-24",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "PYPL",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-24",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AAPL",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-23",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AVGO",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-23",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "MSFT",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-23",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "INTC",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-17",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "MSFT",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-17",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NVDA",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-12",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "DIS",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-12",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "DIS",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "CAT",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-05",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AMZN",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-05",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "PYPL",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-04",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AVGO",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-04",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NFLX",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-03",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AMZN",
+"filing_date": "2020-07-02",
+"transaction_date": "2020-06-02",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NVDA",
+"filing_date": "2020-06-04",
+"transaction_date": "2020-05-26",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NVDA",
+"filing_date": "2020-06-01",
+"transaction_date": "2020-05-26",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "PYPL",
+"filing_date": "2020-06-04",
+"transaction_date": "2020-05-20",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "PYPL",
+"filing_date": "2020-06-01",
+"transaction_date": "2020-05-20",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "UBER",
+"filing_date": "2020-06-04",
+"transaction_date": "2020-05-08",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "UBER",
+"filing_date": "2020-06-01",
+"transaction_date": "2020-05-08",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "MCD",
+"filing_date": "2020-06-04",
+"transaction_date": "2020-05-05",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "MCD",
+"filing_date": "2020-06-01",
+"transaction_date": "2020-05-05",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AMZN",
+"filing_date": "2020-06-04",
+"transaction_date": "2020-05-01",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AMZN",
+"filing_date": "2020-06-01",
+"transaction_date": "2020-05-01",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AMZN",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-05-01",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "PYPL",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-23",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "CRWD",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-21",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "NVDA",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-21",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "DIS",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-17",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "F",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-17",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "SBUX",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-17",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AMZN",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-17",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "UPS",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-08",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "SBUX",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AVGO",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "XOM",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "V",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "CAT",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "AMZN",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-06",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "senate_ronl_wyden",
+"filer": "Ron L Wyden",
+"ticker": "DIS",
+"filing_date": "2020-05-05",
+"transaction_date": "2020-04-06",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "GOOGL",
+"filing_date": "2017-01-29",
+"transaction_date": "2016-12-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "CVX",
+"filing_date": "2017-01-29",
+"transaction_date": "2016-12-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "CVX",
+"filing_date": "2017-01-29",
+"transaction_date": "2016-12-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "LLY",
+"filing_date": "2017-01-29",
+"transaction_date": "2016-12-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "JPM",
+"filing_date": "2017-01-29",
+"transaction_date": "2016-12-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "GOOGL",
+"filing_date": "2015-08-31",
+"transaction_date": "2015-08-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "GOOGL",
+"filing_date": "2015-08-31",
+"transaction_date": "2015-08-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "GOOGL",
+"filing_date": "2015-08-31",
+"transaction_date": "2015-08-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "GOOGL",
+"filing_date": "2015-08-31",
+"transaction_date": "2015-08-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "NFLX",
+"filing_date": "2015-08-31",
+"transaction_date": "2015-08-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "NFLX",
+"filing_date": "2015-08-31",
+"transaction_date": "2015-08-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "AMZN",
+"filing_date": "2014-02-04",
+"transaction_date": "2014-01-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "BAC",
+"filing_date": "2014-02-04",
+"transaction_date": "2014-01-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NVDA",
+"filing_date": "2024-11-12",
+"transaction_date": "2024-10-24",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "GS",
+"filing_date": "2022-05-20",
+"transaction_date": "2022-05-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AMD",
+"filing_date": "2022-05-20",
+"transaction_date": "2022-03-04",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "BA",
+"filing_date": "2022-05-20",
+"transaction_date": "2022-03-04",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NVDA",
+"filing_date": "2022-05-20",
+"transaction_date": "2022-03-04",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "MSFT",
+"filing_date": "2021-12-01",
+"transaction_date": "2021-11-24",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "MS",
+"filing_date": "2021-12-01",
+"transaction_date": "2021-11-24",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "PYPL",
+"filing_date": "2021-11-18",
+"transaction_date": "2021-11-04",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "SLB",
+"filing_date": "2021-11-18",
+"transaction_date": "2021-11-04",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AAPL",
+"filing_date": "2021-11-05",
+"transaction_date": "2021-10-19",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AMD",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-07-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AMD",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-06-30",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "RBLX",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-06-21",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "TSM",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-06-11",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "MRVL",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-06-09",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AAPL",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-06-03",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "F",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-06-03",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "GE",
+"filing_date": "2022-03-03",
+"transaction_date": "2021-06-01",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "MRVL",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-05-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "PYPL",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-03-11",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "LLY",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-03-03",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "QCOM",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-03-03",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "PYPL",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-03-02",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "TSLA",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-03-02",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "MRVL",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-03-01",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "UBER",
+"filing_date": "2021-09-23",
+"transaction_date": "2021-01-13",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "MRVL",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-12-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "MRVL",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-11-19",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NIO",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-10-05",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NIO",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-09-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "DVN",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-08-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "DVN",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-07-30",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "JPM",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-03-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "MSFT",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-03-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NVDA",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-03-20",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AAPL",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-03-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AMD",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-03-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NVDA",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-03-03",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AAPL",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-03-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "BA",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-03-02",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NVDA",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-03-02",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "V",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-03-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NVDA",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-02-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "V",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-01-29",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "MCD",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-01-28",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AXP",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-01-09",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "BA",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-01-09",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "MSFT",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-01-09",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "V",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-01-09",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "GE",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-01-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "F",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-01-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "JPM",
+"filing_date": "2022-12-19",
+"transaction_date": "2020-01-01",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "JPM",
+"filing_date": "2021-09-23",
+"transaction_date": "2020-01-01",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NVDA",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-11-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "DIS",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-11-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AXP",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "COP",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "BA",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-08-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NVDA",
+"filing_date": "2022-12-19",
+"transaction_date": "2019-07-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NVDA",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-07-29",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "CRWD",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-07-26",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "CRWD",
+"filing_date": "2022-12-19",
+"transaction_date": "2019-07-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AAPL",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-07-08",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NVDA",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-07-08",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NVDA",
+"filing_date": "2022-12-19",
+"transaction_date": "2019-06-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "BA",
+"filing_date": "2022-12-19",
+"transaction_date": "2019-05-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AAPL",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-05-13",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "BA",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-05-13",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "BA",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-05-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "DE",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-05-13",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "CAT",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-05-08",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "REGN",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-05-02",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "MU",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-03-29",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "CAT",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-03-05",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "TXN",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-03-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "CAT",
+"filing_date": "2022-03-03",
+"transaction_date": "2019-01-29",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AAPL",
+"filing_date": "2022-12-19",
+"transaction_date": "2019-01-29",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AMD",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-01-29",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "INTC",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-01-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "NVDA",
+"filing_date": "2021-09-23",
+"transaction_date": "2019-01-14",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AMD",
+"filing_date": "2022-12-19",
+"transaction_date": "2019-01-08",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AAPL",
+"filing_date": "2022-03-03",
+"transaction_date": "2018-12-19",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "REGN",
+"filing_date": "2021-09-23",
+"transaction_date": "2018-11-05",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AAPL",
+"filing_date": "2022-03-03",
+"transaction_date": "2018-11-04",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "WMT",
+"filing_date": "2021-09-23",
+"transaction_date": "2018-11-04",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AAPL",
+"filing_date": "2021-09-23",
+"transaction_date": "2018-11-01",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "WMT",
+"filing_date": "2022-12-19",
+"transaction_date": "2018-10-02",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "CAT",
+"filing_date": "2022-03-03",
+"transaction_date": "2018-10-01",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "BA",
+"filing_date": "2021-09-23",
+"transaction_date": "2018-10-01",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "XOM",
+"filing_date": "2021-09-23",
+"transaction_date": "2018-07-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AAPL",
+"filing_date": "2022-12-19",
+"transaction_date": "2018-05-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "BA",
+"filing_date": "2022-03-03",
+"transaction_date": "2018-04-17",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "WMT",
+"filing_date": "2022-12-19",
+"transaction_date": "2018-03-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "CAT",
+"filing_date": "2022-03-03",
+"transaction_date": "2017-12-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "AMD",
+"filing_date": "2021-09-23",
+"transaction_date": "2017-12-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "TGT",
+"filing_date": "2021-09-23",
+"transaction_date": "2017-09-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "CAT",
+"filing_date": "2021-09-23",
+"transaction_date": "2017-08-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "COP",
+"filing_date": "2021-09-23",
+"transaction_date": "2017-08-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "COST",
+"filing_date": "2021-09-23",
+"transaction_date": "2017-08-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "LLY",
+"filing_date": "2021-09-23",
+"transaction_date": "2017-08-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "XOM",
+"filing_date": "2021-09-23",
+"transaction_date": "2017-08-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "INTC",
+"filing_date": "2021-09-23",
+"transaction_date": "2017-08-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "JPM",
+"filing_date": "2021-09-23",
+"transaction_date": "2017-08-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "MSFT",
+"filing_date": "2021-09-23",
+"transaction_date": "2017-08-17",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "PFE",
+"filing_date": "2021-09-23",
+"transaction_date": "2017-08-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_thomas_suozzi",
+"filer": "Thomas Suozzi",
+"ticker": "TXN",
+"filing_date": "2021-09-23",
+"transaction_date": "2017-08-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_johnf_reed",
+"filer": "John F Reed",
+"ticker": "INTC",
+"filing_date": "2016-12-15",
+"transaction_date": "2016-12-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_johnf_reed",
+"filer": "John F Reed",
+"ticker": "ISRG",
+"filing_date": "2016-11-28",
+"transaction_date": "2016-11-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_johnf_reed",
+"filer": "John F Reed",
+"ticker": "ISRG",
+"filing_date": "2016-11-28",
+"transaction_date": "2016-11-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_johnf_reed",
+"filer": "John F Reed",
+"ticker": "MSFT",
+"filing_date": "2015-05-06",
+"transaction_date": "2015-04-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_johnf_reed",
+"filer": "John F Reed",
+"ticker": "AMGN",
+"filing_date": "2015-03-02",
+"transaction_date": "2015-02-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_johnf_reed",
+"filer": "John F Reed",
+"ticker": "MSFT",
+"filing_date": "2014-04-09",
+"transaction_date": "2014-03-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_johnf_reed",
+"filer": "John F Reed",
+"ticker": "AAPL",
+"filing_date": "2014-04-09",
+"transaction_date": "2014-03-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_austin_scott",
+"filer": "Austin Scott",
+"ticker": "F",
+"filing_date": "2020-12-30",
+"transaction_date": "2020-12-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_austin_scott",
+"filer": "Austin Scott",
+"ticker": "GE",
+"filing_date": "2020-12-30",
+"transaction_date": "2020-12-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_austin_scott",
+"filer": "Austin Scott",
+"ticker": "GE",
+"filing_date": "2020-09-20",
+"transaction_date": "2020-08-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_austin_scott",
+"filer": "Austin Scott",
+"ticker": "MSFT",
+"filing_date": "2014-08-29",
+"transaction_date": "2013-09-15",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_austin_scott",
+"filer": "Austin Scott",
+"ticker": "MSFT",
+"filing_date": "2014-08-29",
+"transaction_date": "2013-07-19",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "INTC",
+"filing_date": "2026-06-23",
+"transaction_date": "2026-05-29",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "UBER",
+"filing_date": "2026-06-23",
+"transaction_date": "2026-05-29",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "GOOGL",
+"filing_date": "2026-01-23",
+"transaction_date": "2026-01-16",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AMZN",
+"filing_date": "2026-01-23",
+"transaction_date": "2026-01-16",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NVDA",
+"filing_date": "2026-01-23",
+"transaction_date": "2026-01-16",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "GOOGL",
+"filing_date": "2026-01-23",
+"transaction_date": "2025-12-30",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AMZN",
+"filing_date": "2026-01-23",
+"transaction_date": "2025-12-30",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2026-01-23",
+"transaction_date": "2025-12-30",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NVDA",
+"filing_date": "2026-01-23",
+"transaction_date": "2025-12-30",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AVGO",
+"filing_date": "2025-07-09",
+"transaction_date": "2025-06-20",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "GOOGL",
+"filing_date": "2025-01-17",
+"transaction_date": "2025-01-14",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AMZN",
+"filing_date": "2025-01-17",
+"transaction_date": "2025-01-14",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NVDA",
+"filing_date": "2025-01-17",
+"transaction_date": "2025-01-14",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NVDA",
+"filing_date": "2025-01-17",
+"transaction_date": "2024-12-20",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NVDA",
+"filing_date": "2024-07-30",
+"transaction_date": "2024-07-26",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NVDA",
+"filing_date": "2024-07-02",
+"transaction_date": "2024-06-26",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AVGO",
+"filing_date": "2024-07-02",
+"transaction_date": "2024-06-24",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NVDA",
+"filing_date": "2023-12-21",
+"transaction_date": "2023-11-22",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2023-06-22",
+"transaction_date": "2023-06-15",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "MSFT",
+"filing_date": "2023-06-22",
+"transaction_date": "2023-06-15",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2023-04-06",
+"transaction_date": "2023-03-17",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NVDA",
+"filing_date": "2022-07-14",
+"transaction_date": "2022-06-17",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2022-06-03",
+"transaction_date": "2022-05-24",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "MSFT",
+"filing_date": "2022-06-03",
+"transaction_date": "2022-05-24",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "MSFT",
+"filing_date": "2022-06-03",
+"transaction_date": "2022-05-24",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2022-06-03",
+"transaction_date": "2022-05-13",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "TSLA",
+"filing_date": "2022-03-21",
+"transaction_date": "2022-03-17",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AXP",
+"filing_date": "2022-02-28",
+"transaction_date": "2022-01-21",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2022-02-28",
+"transaction_date": "2022-01-21",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "PYPL",
+"filing_date": "2022-02-28",
+"transaction_date": "2022-01-21",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "DIS",
+"filing_date": "2022-02-28",
+"transaction_date": "2022-01-21",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AXP",
+"filing_date": "2022-03-04",
+"transaction_date": "2022-01-21",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2022-03-04",
+"transaction_date": "2022-01-21",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "PYPL",
+"filing_date": "2022-03-04",
+"transaction_date": "2022-01-21",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "DIS",
+"filing_date": "2022-03-04",
+"transaction_date": "2022-01-21",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "MU",
+"filing_date": "2021-12-29",
+"transaction_date": "2021-12-21",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "RBLX",
+"filing_date": "2021-12-29",
+"transaction_date": "2021-12-20",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "CRM",
+"filing_date": "2021-12-29",
+"transaction_date": "2021-12-20",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "CRM",
+"filing_date": "2021-12-29",
+"transaction_date": "2021-12-20",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "GOOGL",
+"filing_date": "2021-12-29",
+"transaction_date": "2021-12-17",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "DIS",
+"filing_date": "2021-12-29",
+"transaction_date": "2021-12-17",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NVDA",
+"filing_date": "2021-08-20",
+"transaction_date": "2021-07-23",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NVDA",
+"filing_date": "2021-08-20",
+"transaction_date": "2021-07-23",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "GOOGL",
+"filing_date": "2021-07-02",
+"transaction_date": "2021-06-18",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NVDA",
+"filing_date": "2021-07-02",
+"transaction_date": "2021-06-03",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AMZN",
+"filing_date": "2021-07-02",
+"transaction_date": "2021-05-21",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2021-07-02",
+"transaction_date": "2021-05-21",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "MSFT",
+"filing_date": "2021-04-09",
+"transaction_date": "2021-03-19",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2021-01-21",
+"transaction_date": "2020-12-22",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "TSLA",
+"filing_date": "2021-01-21",
+"transaction_date": "2020-12-22",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "DIS",
+"filing_date": "2021-01-21",
+"transaction_date": "2020-12-22",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "CRWD",
+"filing_date": "2020-10-04",
+"transaction_date": "2020-09-03",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AXP",
+"filing_date": "2020-07-20",
+"transaction_date": "2020-06-24",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "PYPL",
+"filing_date": "2020-07-20",
+"transaction_date": "2020-06-24",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NFLX",
+"filing_date": "2020-07-20",
+"transaction_date": "2020-06-18",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "CRM",
+"filing_date": "2020-07-20",
+"transaction_date": "2020-06-18",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "PYPL",
+"filing_date": "2020-07-20",
+"transaction_date": "2020-06-12",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "MSFT",
+"filing_date": "2020-04-01",
+"transaction_date": "2020-02-28",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "GOOGL",
+"filing_date": "2020-04-01",
+"transaction_date": "2020-02-27",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "MSFT",
+"filing_date": "2020-04-01",
+"transaction_date": "2020-02-21",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "MSFT",
+"filing_date": "2020-04-01",
+"transaction_date": "2020-02-20",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AMZN",
+"filing_date": "2020-02-11",
+"transaction_date": "2020-01-16",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AMZN",
+"filing_date": "2020-02-11",
+"transaction_date": "2020-01-16",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "META",
+"filing_date": "2020-02-11",
+"transaction_date": "2020-01-16",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AMZN",
+"filing_date": "2019-08-13",
+"transaction_date": "2019-07-22",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NFLX",
+"filing_date": "2019-08-13",
+"transaction_date": "2019-07-22",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "NFLX",
+"filing_date": "2019-08-13",
+"transaction_date": "2019-07-05",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "CRM",
+"filing_date": "2019-07-11",
+"transaction_date": "2019-06-18",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "CRM",
+"filing_date": "2019-07-11",
+"transaction_date": "2019-06-14",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AMZN",
+"filing_date": "2018-11-08",
+"transaction_date": "2018-10-12",
+"amount_label": "$1,000,001 - $5,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "META",
+"filing_date": "2018-11-08",
+"transaction_date": "2018-10-09",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2018-10-25",
+"transaction_date": "2018-09-20",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2018-10-25",
+"transaction_date": "2018-09-11",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AMZN",
+"filing_date": "2018-09-06",
+"transaction_date": "2018-07-27",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "META",
+"filing_date": "2018-09-06",
+"transaction_date": "2018-07-27",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2017-07-20",
+"transaction_date": "2017-06-15",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2017-02-14",
+"transaction_date": "2017-01-20",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2017-02-14",
+"transaction_date": "2017-01-19",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2016-05-24",
+"transaction_date": "2016-05-17",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "DIS",
+"filing_date": "2016-02-17",
+"transaction_date": "2016-01-15",
+"amount_label": "$500,001 - $1,000,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AAPL",
+"filing_date": "2016-02-17",
+"transaction_date": "2016-01-13",
+"amount_label": "$250,001 - $500,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "DIS",
+"filing_date": "2015-07-07",
+"transaction_date": "2014-12-10",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "V",
+"filing_date": "2015-01-12",
+"transaction_date": "2014-12-10",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "DIS",
+"filing_date": "2015-07-07",
+"transaction_date": "2014-11-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "DIS",
+"filing_date": "2014-12-17",
+"transaction_date": "2014-11-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_nancy_pelosi",
+"filer": "Nancy Pelosi",
+"ticker": "AVGO",
+"filing_date": "2014-11-05",
+"transaction_date": "2014-10-24",
+"amount_label": "$100,001 - $250,000"
+}
+]
+}
