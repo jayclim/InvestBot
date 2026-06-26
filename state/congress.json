@@ -1,6 +1,6 @@
 {
-"date": "2026-06-25",
-"asof": "2026-06-25T15:36:40",
+"date": "2026-06-26",
+"asof": "2026-06-26T14:57:22",
 "source": "kadoa-org/congress-trading-monitor (public-domain STOCK Act filings)",
 "leaders": [
 {
@@ -9,7 +9,7 @@
 "party": "R",
 "chamber": "house",
 "scored_buys": 44,
-"weighted_excess": 805.0082949395107
+"weighted_excess": 806.5898565583115
 },
 {
 "id": "house_thomasj_rooney",
@@ -17,7 +17,7 @@
 "party": "R",
 "chamber": "house",
 "scored_buys": 139,
-"weighted_excess": 586.8140204204891
+"weighted_excess": 576.5047247210105
 },
 {
 "id": "senate_sheldon_whitehouse",
@@ -25,7 +25,7 @@
 "party": "D",
 "chamber": "senate",
 "scored_buys": 407,
-"weighted_excess": 473.9886559262839
+"weighted_excess": 472.0354126253405
 },
 {
 "id": "house_barbarajhonorable_comstock",
@@ -33,7 +33,7 @@
 "party": "R",
 "chamber": "house",
 "scored_buys": 31,
-"weighted_excess": 253.86290542535698
+"weighted_excess": 267.3130456599119
 },
 {
 "id": "senate_ronl_wyden",
@@ -41,7 +41,7 @@
 "party": "D",
 "chamber": "senate",
 "scored_buys": 170,
-"weighted_excess": 245.2176672050376
+"weighted_excess": 243.68482036160242
 },
 {
 "id": "house_rubn_hinojosa",
@@ -49,7 +49,7 @@
 "party": "D",
 "chamber": "house",
 "scored_buys": 23,
-"weighted_excess": 181.60848408877862
+"weighted_excess": 179.55943249159617
 },
 {
 "id": "house_thomas_suozzi",
@@ -57,7 +57,7 @@
 "party": "D",
 "chamber": "house",
 "scored_buys": 272,
-"weighted_excess": 155.897586262794
+"weighted_excess": 158.24205622836263
 },
 {
 "id": "senate_johnf_reed",
@@ -65,7 +65,7 @@
 "party": "D",
 "chamber": "senate",
 "scored_buys": 58,
-"weighted_excess": 120.41243862202062
+"weighted_excess": 121.9080817850226
 },
 {
 "id": "house_austin_scott",
@@ -73,7 +73,7 @@
 "party": "R",
 "chamber": "house",
 "scored_buys": 40,
-"weighted_excess": 109.47695179011703
+"weighted_excess": 97.58120991491487
 },
 {
 "id": "house_nancy_pelosi",
@@ -81,7 +81,7 @@
 "party": "D",
 "chamber": "house",
 "scored_buys": 105,
-"weighted_excess": 94.33172811709532
+"weighted_excess": 89.07261793128615
 }
 ],
 "trades": [
