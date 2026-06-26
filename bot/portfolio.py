@@ -15,6 +15,15 @@ class Portfolio:
         held = sum(p.qty * prices.get(p.symbol, p.avg_price) for p in self.positions.values())
         return self.cash + held
 
+    def mark(self, date, prices):
+        """Append-or-replace today's equity point (dedupe by date), so re-running a session or a
+        queue-only run (book unchanged) never doubles the curve."""
+        eq = round(self.equity(prices), 2)
+        if self.equity_curve and self.equity_curve[-1][0] == date:
+            self.equity_curve[-1] = (date, eq)
+        else:
+            self.equity_curve.append((date, eq))
+
     def buy(self, symbol, price, dollars, date, reason):
         if price <= 0 or dollars <= 0 or dollars > self.cash + 1e-9:
             return None

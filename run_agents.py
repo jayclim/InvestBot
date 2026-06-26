@@ -29,6 +29,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from bot import config as cfg
 from bot import paper
+from bot.broker import PaperBroker
 from bot.mirofish import TIERS as MIROFISH_TIERS
 from run import load_snapshot
 
@@ -39,6 +40,12 @@ def latest_prices(snap):
     return {s: bars[-1].close for s, bars in snap.items() if bars}
 
 
+def _order_desc(o):
+    amt = f"${o['dollars']:.2f}" if o.get("dollars") else f"{(o.get('qty') or 0):.3f}sh"
+    kind = f"@{o['limit']} lim" if o.get("kind") == "limit" and o.get("limit") is not None else "MOO"
+    return f"{o['side']} {o['symbol']} {amt} {kind}"
+
+
 def _read_seed():
     """Optional world-events seed for MiroFish — recent headlines/signals. Populate
     state/news_seed.txt (the run-agents skill can write it); absent = price-action only."""
@@ -46,10 +53,28 @@ def _read_seed():
     return open(p).read() if os.path.exists(p) else None
 
 
-def _rebalance(name, targets, ctx, label):
-    _, pfs = paper.load_agents(cfg.AGENT_NAMES)
-    paper.rebalance(pfs[name], targets, ctx["prices"], ctx["today"], label, *paper.risk_for(name))
-    paper.save_agents(ctx["today"], pfs)
+def _decide(name, targets, ctx, label, limits=None):
+    """Settle this agent's queued orders at any newly-available open, then plan the move toward
+    `targets` and either fill it instantly (in RTH) or queue it for the next open. A re-decide
+    supersedes any still-resting orders — that's how 'cancel/adjust as news comes' falls out."""
+    _, pfs, pending = paper.load_agents(cfg.AGENT_NAMES)
+    pf, broker = pfs[name], PaperBroker(cfg.SLIPPAGE_BPS)
+    stop, breaker = paper.risk_for(name)
+    filled, _resting = paper.settle_pending(pf, pending.get(name, []), ctx["snap"], broker)
+    orders = paper.plan_orders(pf, targets, ctx["prices"], label, stop, breaker, limits)
+    if ctx["instant"]:
+        paper.execute_orders(pf, orders, ctx["prices"], ctx["today"], broker)
+        pending[name] = []
+        verb = f"filled {len(orders)} order(s) instantly (RTH)"
+    else:
+        for o in orders:
+            o["placed_session"] = ctx["today"]
+        pending[name] = orders
+        verb = f"queued {len(orders)} order(s) for next open"
+    pf.mark(ctx["today"], ctx["prices"])
+    paper.save_agents(ctx["today"], pfs, pending)
+    settled = f", settled {len(filled)} from a prior open" if filled else ""
+    print(f"    {label}: {verb}{settled}")
 
 
 def _refresh_news():
@@ -68,7 +93,7 @@ def step_swarm(ctx):
     sw = run_swarm(ctx["snap"], cfg.UNIVERSE, load_news(news_path))
     json.dump(sw, open(os.path.join(ROOT, "state", "swarm.json"), "w"))
     print(f"  swarm: {sw['call']} ({int(sw['confidence']*100)}%), {sw['total_fish']} fish")
-    _rebalance("llm_voters", paper.swarm_targets(sw), ctx, "swarm")
+    _decide("llm_voters", paper.swarm_targets(sw), ctx, "swarm")
 
 
 def step_mirofish(ctx):
@@ -80,7 +105,7 @@ def step_mirofish(ctx):
     json.dump(mf, open(os.path.join(ROOT, "state", "mirofish.json"), "w"))
     conv = " -> ".join(f"{c['top']}({int(c['share']*100)}%)" for c in mf["convergence"])
     print(f"  mirofish: {mf['call']} ({int(mf['confidence']*100)}%) after {mf['rounds']} rounds | {conv}")
-    _rebalance("mirofish_real", paper.mirofish_targets(mf), ctx, "mirofish")
+    _decide("mirofish_real", paper.mirofish_targets(mf), ctx, "mirofish")
 
 
 def step_analyst(ctx):
@@ -89,8 +114,8 @@ def step_analyst(ctx):
         print("analyst: no state/analyst.json yet — run the financial-analyst skill first; skipping.")
         return
     analyst = json.load(open(ap))
-    _rebalance("deep_research_analyst", paper.analyst_targets(analyst), ctx, "analyst")
-    print(f"  analyst: rebalanced toward {analyst.get('targets', {})}")
+    print(f"  analyst: targets {analyst.get('targets', {})}")
+    _decide("deep_research_analyst", paper.analyst_targets(analyst), ctx, "analyst", analyst.get("limits"))
 
 
 def step_congress(ctx):
@@ -101,7 +126,7 @@ def step_congress(ctx):
     tg = paper.congress_targets(c, ctx["today"])
     shown = ", ".join(f"{s}({int(w*100)}%)" for s, w in sorted(tg.items(), key=lambda kv: -kv[1])) or "flat"
     print(f"  congress: following {len(c.get('leaders', []))} top filers -> {shown}")
-    _rebalance("congress_mirror", tg, ctx, "congress")
+    _decide("congress_mirror", tg, ctx, "congress")
 
 
 def step_rules(ctx):
@@ -144,6 +169,9 @@ def main():
     ap.add_argument("--mirofish-tier", default="cheap", choices=list(MIROFISH_TIERS), dest="mirofish_tier",
                     help="real-MiroFish cost/fidelity tier (default: cheap)")
     ap.add_argument("--estimate", action="store_true", help="print projected network cost and exit")
+    ap.add_argument("--fill-mode", default="auto", choices=["auto", "instant", "queue"], dest="fill_mode",
+                    help="auto (default): fill instantly during market hours, else queue orders for the "
+                         "next session's open; instant/queue force one path regardless of the clock")
     args = ap.parse_args()
 
     if args.estimate:
@@ -158,9 +186,14 @@ def main():
     steps = resolve_steps(args)
     snap = load_snapshot(os.path.join(ROOT, "data", "snapshot.json"))
     today = sorted({b.date for bars in snap.values() for b in bars})[-1]
-    ctx = {"snap": snap, "today": today, "prices": latest_prices(snap), "mirofish_tier": args.mirofish_tier}
+    rth = paper.is_rth()
+    instant = {"auto": rth, "instant": True, "queue": False}[args.fill_mode]
+    ctx = {"snap": snap, "today": today, "prices": latest_prices(snap),
+           "mirofish_tier": args.mirofish_tier, "rth": rth, "instant": instant}
 
     print(f"tick @ {today} — steps: {', '.join(steps)}")
+    flow = "fill instantly" if instant else "queue for the next open"
+    print(f"clock: {'RTH' if rth else 'outside RTH'} (ET) · fill-mode={args.fill_mode} → orders {flow}")
     age = (_dt.date.today() - _dt.date.fromisoformat(today)).days
     if age > 4:  # ponytail: 4d covers a Fri→Mon + holiday; wider gap = the MCP refresh got skipped
         print(f"⚠ snapshot last bar {today} is {age}d old — refresh market data (Robinhood MCP) before a real tick.")
@@ -176,11 +209,14 @@ def main():
                 raise
 
     print(f"\nAgent paper books @ {today}:")
-    _, pfs = paper.load_agents(cfg.AGENT_NAMES)
+    _, pfs, pending = paper.load_agents(cfg.AGENT_NAMES)
     for n in cfg.AGENT_NAMES:
         pf = pfs[n]
         held = ", ".join(f"{s} {p.qty:.3f}@{p.avg_price:.2f}" for s, p in pf.positions.items()) or "flat"
         print(f"  {n:22s} equity ${pf.equity(ctx['prices']):7.2f} · cash ${pf.cash:6.2f} · {held}")
+        q = pending.get(n) or []
+        if q:
+            print(f"  {'':22s}   ↳ {len(q)} open order(s) for next open: {', '.join(_order_desc(o) for o in q)}")
 
 
 if __name__ == "__main__":

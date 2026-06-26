@@ -71,12 +71,24 @@ python3 -c "import random,json;from bot import config as c;u=list(c.UNIVERSE);ra
    bigger cash buffer and fewer/smaller names; high conviction ⇒ lean in. Never write a `confidence`
    that contradicts your sizing (e.g. 0.8 confidence with 60% cash is incoherent).
 
+**Cadence & execution (how your targets actually fill).** Ticks run ~once a day, usually **after market
+close**, and sometimes on weekends — so each tick ≈ one trading session. Calibrate catalyst horizons in
+**tick-days** (an earnings date "in 3 weeks" is ~15 ticks out) and read daily P&L/Sharpe as noisy: grade
+on **alpha vs SPY over the trend**, not a single session. Your targets are not filled at the close you
+decide on — outside market hours the runner **queues** the orders and fills them at the **next session's
+open** (so there is no same-bar look-ahead). On a **weekend / no-new-session run** nothing has moved:
+don't manufacture a fresh "what happened today" reflection or churn the book — hold targets steady unless
+genuine weekend news changes the thesis. Optionally attach price protection with a `limits: {SYMBOL:
+price}` map (below); absent ⇒ every queued order is market-on-open.
+
 ## Write `state/analyst.json`
 Same schema as before, plus a `framework` field marking the methodology. Required keys:
 `date`, `as_of`, `pick` (top conviction), `action`, `sizing`, `confidence` (0–1),
 `regime{label,note,source}`, `thesis`, `evidence[{point,source}]`, `risks[]`,
 `data_examined[{label,source}]`, **`targets` = {SYMBOL: weight}**,
 **`rationale` = {SYMBOL: "<why THIS name and this weight>"}** — one entry per name in `targets`.
+Optional **`limits` = {SYMBOL: price}** — turns that name's queued order into a limit (buy fills only
+if the next session trades down to it, sell only up to it); omit a name ⇒ it fills market-on-open.
 The dashboard renders each trade with its own reasoning: a one-liner shows inline under the trade,
 a fuller deep-dive paragraph collapses into an expandable dropdown. Write as much as each name
 warrants (a short note for an obvious add, a paragraph for the anchor) — `generated_by`,

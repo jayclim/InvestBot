@@ -71,12 +71,25 @@ Tiers: `cheap` (30×6, ~$0.10-0.25), `default` (44×10, ~$0.20-0.70), `qwen` (44
 **Shaping the tick (do exactly what the user asks):**
 - Skip a step: `python3 run_agents.py --skip mirofish` (e.g. user says "run without the real MiroFish").
 - One step only: `python3 run_agents.py --only swarm`.
-- Explicit order, repeats allowed: `python3 run_agents.py --steps swarm,swarm,dashboard` (running a
-  rebalance step twice the same day re-trades and appends a second equity point — only if asked).
+- Explicit order, repeats allowed: `python3 run_agents.py --steps swarm,swarm,dashboard`.
 - Steps: `swarm`, `mirofish`, `analyst`, `congress`, `rules`, `dashboard`.
 
 When `--steps`/`--only`/`--skip` already include `rules` and `dashboard`, you do NOT also need
 steps 4 and 5 below — they're folded into the runner. Run them standalone only if you skipped them.
+
+**Order model — real-world execution (the AI agent books).** Each agent step is **settle → decide**:
+first fill any orders queued on a prior run at the next available session's **open** (market-on-open,
+or a limit only once the session trades through it), then plan the move toward this tick's targets and
+either fill it **instantly** (if run during market hours) or **queue** it for the next open. `--fill-mode`
+controls this: `auto` (default — RTH check on the ET wall clock: Mon–Fri 9:30–16:00 fills instantly,
+everything else queues), or force `instant` / `queue`. Re-running supersedes an agent's still-resting
+orders (that's how cancel/adjust-as-news-comes works), and equity points dedupe by date, so a
+queue-only weekend run settles nothing and adds no phantom point. Queued orders show in the run summary
+and publish to the dashboard (`open_orders`). The analyst can attach price-protection via an optional
+`limits: {SYMBOL: price}` map in `state/analyst.json` (absent ⇒ all market-on-open). The rule
+strategies already fill next-open via the engine; SPY/You are unaffected.
+*Caveat:* `run_agents.py` is offline (no MCP), so an `instant` RTH fill uses the latest snapshot close,
+not a live quote — refresh the snapshot first if you need a true intraday price.
 
 **MiroFish world-events seed (optional):** if you want the real-MiroFish swarm to reason about news,
 write recent headlines/signals to `state/news_seed.txt` before running; the swarm prepends it to its

@@ -57,7 +57,7 @@ KIND = {"deep_research_analyst": "analyst", "llm_voters": "swarm", "mirofish_rea
         "congress_mirror": "congress"}
 
 
-def pf_to_competitor(name, pf, kind, rules, backtest=None, marks=None):
+def pf_to_competitor(name, pf, kind, rules, backtest=None, marks=None, open_orders=None):
     m = summarize(pf, cfg.STARTING_CASH)
     marks = marks or {}
     S = DISPLAY_SCALE
@@ -79,6 +79,12 @@ def pf_to_competitor(name, pf, kind, rules, backtest=None, marks=None):
     }
     if backtest:
         c["backtest"] = backtest
+    if open_orders:
+        # Queued orders awaiting the next session's open (dollar/qty scaled to display notional).
+        c["open_orders"] = [{"symbol": o["symbol"], "side": o["side"], "kind": o["kind"],
+                             "limit": o.get("limit"), "placed_session": o.get("placed_session"),
+                             "dollars": round(o["dollars"] * S, 2) if o.get("dollars") else None,
+                             "qty": round(o["qty"] * S, 4) if o.get("qty") else None} for o in open_orders]
     return c
 
 
@@ -269,12 +275,13 @@ def main():
     alg_pfs = load_forward_algos(strat_names)
     competitors = [pf_to_competitor(n, alg_pfs[n], "algo", RULES.get(n, ""), backtest_ref.get(n), marks) for n in strat_names]
 
-    _, agent_pfs = load_agents(cfg.AGENT_NAMES)
+    _, agent_pfs, agent_pending = load_agents(cfg.AGENT_NAMES)
     active_agents, roster_preview = {}, []
     for n in cfg.AGENT_NAMES:
         pf = agent_pfs[n]
         if pf.equity_curve or pf.trades:
-            competitors.append(pf_to_competitor(n, pf, KIND[n], AGENT_RULES[n], marks=marks))
+            competitors.append(pf_to_competitor(n, pf, KIND[n], AGENT_RULES[n], marks=marks,
+                                                open_orders=agent_pending.get(n)))
             active_agents[n] = pf
         else:
             roster_preview.append({"name": n, "kind": KIND[n], "status": "not yet run — `python run_agents.py` to start its paper book"})

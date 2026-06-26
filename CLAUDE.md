@@ -58,8 +58,13 @@ engine's walk-forward stops; SPY is buy-and-hold (never traded by the engine).
   - `strategy.py` — 3 rule strategies: `momentum_breakout`, `mean_reversion`, `blended_momo_rsi`.
   - `engine.py` — walk-forward replay + `step_day` (decide on prior close, fill next open, slippage/stops).
   - `metrics.py` — performance summary. `state.py` — algo forward-test persistence.
-  - `paper.py` — the AI agents' $100 paper books + multi-name `rebalance` toward target weights
-    (`swarm_targets` / `mirofish_targets` / `analyst_targets` / `congress_targets`).
+  - `paper.py` — the AI agents' $100 paper books + multi-name rebalance toward target weights
+    (`swarm_targets` / `mirofish_targets` / `analyst_targets` / `congress_targets`). Real-world order
+    lifecycle: `plan_orders` → `execute_orders` (instant, in market hours) **or** queue → `settle_pending`
+    (fill at the next session's open: market-on-open, or a limit on a price cross). `is_rth` (ET wall
+    clock) picks instant vs queue; `run_agents.py --fill-mode {auto,instant,queue}` overrides it. Queued
+    orders persist in `state/agent_state.json` (`pending`) and publish to the dashboard (`open_orders`);
+    re-running supersedes resting orders; `Portfolio.mark` dedupes equity points by date.
   - `swarm.py` — `llm_voters` via **OpenRouter**: 150 fish across a heterogeneous model mix (`FISH_MODELS`:
     DeepSeek / Gemini / Qwen / Llama / Haiku), each a UNIQUE persona×risk×horizon×quirk
     profile. Each fish sees its OWN random ~20-name slice of the universe (`VOTER_SLICE`) with a random
