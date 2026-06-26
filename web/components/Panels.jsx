@@ -114,6 +114,13 @@ export function DecisionTrail({ data }) {
   const methods = [...new Set(data.decisions.map((d) => d.agent))];
   const colorOf = (agent) => methodColor(agent, data.competitors);
   const shown = filter === "all" ? data.decisions : data.decisions.filter((d) => d.agent === filter);
+  // Bucket into days (decisions arrive newest-first); coalesces by date even if interleaved.
+  const byDay = [];
+  const dayIdx = {};
+  shown.forEach((d) => {
+    if (dayIdx[d.date] === undefined) { dayIdx[d.date] = byDay.length; byDay.push([d.date, []]); }
+    byDay[dayIdx[d.date]][1].push(d);
+  });
   return (
     <section>
       <div className="eyebrow">
@@ -148,9 +155,15 @@ export function DecisionTrail({ data }) {
         )}
         <div className="feed">
           {!shown.length && <p className="pending">No decisions {filter === "all" ? "yet — fills in as ticks run." : "for this method yet."}</p>}
-          {shown.map((d, i) => {
-            const col = colorOf(d.agent);
-            return (
+          {byDay.map(([day, rows], di) => (
+            <details key={day} className="day" open={di === 0}>
+              <summary className="day-sum">
+                <span className="day-date">{day}</span>
+                <span className="day-n">{rows.length} {rows.length === 1 ? "trade" : "trades"}</span>
+              </summary>
+              {rows.map((d, i) => {
+                const col = colorOf(d.agent);
+                return (
               <div
                 key={i}
                 className="dec"
@@ -176,8 +189,10 @@ export function DecisionTrail({ data }) {
                 </div>
                 <span className="chev">›</span>
               </div>
-            );
-          })}
+                );
+              })}
+            </details>
+          ))}
         </div>
       </div>
     </section>

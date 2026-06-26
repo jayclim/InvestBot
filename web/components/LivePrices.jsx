@@ -30,20 +30,22 @@ export default function LivePrices({ data }) {
         <div className="pricegrid">
           {symbols.map((s) => {
             const q = quotes[s];
+            const live = q && !q.stale;            // a real Finnhub quote vs the prior-close seed
             const up = (q?.pct || 0) >= 0;
             return (
               <div
                 key={s}
-                className={"pcard clk " + (q ? (up ? "up" : "down") : "")}
+                className={"pcard clk " + (live ? (up ? "up" : "down") : "")}
                 onClick={() => openStock(s)}
                 role="button"
                 tabIndex={0}
                 onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openStock(s); } }}
               >
                 <div className="sym">{s}<span className="by">{heldBy(data, s)}</span></div>
-                <div className={"px" + (q ? "" : " pmute")}>{q ? "$" + q.price.toFixed(2) : "…"}</div>
-                <div className={"chg " + (q ? cls(q.pct) : "")}>
-                  {q ? `${pct((q.pct || 0) / 100)} (${q.change >= 0 ? "+" : ""}${(q.change || 0).toFixed(2)})` : ""}
+                <div className={"px" + (live ? "" : " pmute")}>{q ? "$" + q.price.toFixed(2) : "…"}</div>
+                <div className={"chg " + (live ? cls(q.pct) : "")}>
+                  {live ? `${pct((q.pct || 0) / 100)} (${q.change >= 0 ? "+" : ""}${(q.change || 0).toFixed(2)})`
+                        : q ? "prev close" : ""}
                 </div>
               </div>
             );

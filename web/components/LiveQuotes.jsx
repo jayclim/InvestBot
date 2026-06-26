@@ -15,9 +15,21 @@ export function feedSymbols(data) {
   return [...s].slice(0, 30);
 }
 
+// Prior-close seed so tiles paint a (greyed) price immediately instead of "…" while the first
+// Finnhub poll is in flight. `last` is the unscaled per-tick mark already in state.json.
+function seedFromMarks(data) {
+  const m = {};
+  (data.competitors || []).forEach((c) =>
+    (c.holdings || []).forEach((h) => {
+      if (h.last != null && m[h.symbol] == null) m[h.symbol] = { price: h.last, stale: true };
+    })
+  );
+  return m;
+}
+
 export function LiveQuotesProvider({ data, children }) {
   const symbols = useMemo(() => feedSymbols(data), [data]);
-  const [quotes, setQuotes] = useState({});
+  const [quotes, setQuotes] = useState(() => seedFromMarks(data));
   const [asOf, setAsOf] = useState("connecting…");
 
   useEffect(() => {
@@ -39,7 +51,9 @@ export function LiveQuotesProvider({ data, children }) {
       }
     }
     poll();
-    const id = setInterval(poll, 15000);
+    // 30s keeps us under Finnhub free's 60 calls/min (one call per symbol × ~22 symbols);
+    // 15s overran it, so each cycle only a rotating subset survived and tiles showed "…".
+    const id = setInterval(poll, 30000);
     return () => { alive = false; clearInterval(id); };
   }, [symbols]);
 

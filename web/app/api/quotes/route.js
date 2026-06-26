@@ -44,6 +44,6 @@ export async function GET(request) {
 
   return Response.json(
     { quotes, asOf: Date.now() },
-    { headers: { "Cache-Control": "s-maxage=15, stale-while-revalidate=30" } }
+    { headers: { "Cache-Control": "s-maxage=30, stale-while-revalidate=30" } }
   );
 }
