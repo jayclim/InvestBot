@@ -21,6 +21,7 @@ engine's walk-forward stops; SPY is buy-and-hold (never traded by the engine).
 | `mirofish_real` | mirofish | Persona agents with memory interact over rounds, each ranking its ideas; rebalance toward the panel's rank-weighted (Borda) consensus — top `MIROFISH_MAX_NAMES`. | OpenRouter, costs more (tiered) |
 | `congress_mirror` | congress | Ranks members of Congress by disclosed-trade excess return (free GitHub STOCK Act mirror), buys what the top filers disclosed purchasing in-universe, weighted by consensus; trades on the **disclosure date** (~weeks after their fill). | free (GitHub feed) |
 | S&P 500 | benchmark | SPY all-in day one, buy-and-hold — the market baseline. Synthesized in `build_dashboard.py`; the engine never trades SPY. | free (snapshot) |
+| `You` | me | The user's **real** Robinhood account (Individual), rebased to the shared origin so it's comparable. **Performance only**: a non-clickable line with NO holdings/trade_log published — only the normalized curve + return/max-DD + a trade *count*. Real $ stays in gitignored `state/me.json`. | free (RH MCP) |
 
 ## Golden rules
 - **Paper money only. Never place a real Robinhood order.** `bot/broker.py: RobinhoodBroker` is an
@@ -68,13 +69,14 @@ engine's walk-forward stops; SPY is buy-and-hold (never traded by the engine).
 - `run.py` (backtest CLI), `tick.py` (rule-strategy forward tick), `run_agents.py` (agents tick).
 - `tools/build_dashboard.py` — publishes `web/public/state.json` + `history.json` from `state/`. `tools/ingest_rh.py` — RH historicals → `data/snapshot.json`.
   `tools/refresh_congress.py` — pulls the `congress_mirror`'s data from a free daily GitHub mirror of STOCK Act disclosures (`kadoa-org/congress-trading-monitor`) → `state/congress.json`. `tools/analyst_memory.py` — the analyst's carry-forward brief (holdings, realized P&L, alpha vs SPY + Sharpe, prior reflection).
+  `tools/record_me.py` — appends the user's real account equity + filled-trade count to the gitignored `state/me.json` (agent pulls them from the RH MCP each tick); `build_dashboard.py` rebases that into the non-clickable `You` competitor, publishing only the normalized curve + return/max-DD + trade count — never the holdings or trades.
 - `web/` — a **Next.js** (App Router) app for Vercel: dashboard reading `web/public/state.json`, with
   `/api/quotes` (live prices) + `/api/news` (headlines) + `/api/intraday` (pre/after-hours candles, Yahoo)
   serverless routes (Finnhub key from `FINNHUB_API_KEY`), click-any-ticker drill-down charts (`StockModal`,
   reading `web/public/history.json`), a per-competitor holdings table, and a **Stock pool** section listing
   the universe with full company names (`web/lib/names.js`). `build_dashboard.py` publishes `state.json` +
   `history.json`; the GitHub repo is `jayclim/InvestBot`. See `web/README.md`.
-- `state/` — `paper_state.json` (algos fwd), `agent_state.json` (agents fwd), `swarm.json`, `mirofish.json`, `analyst.json`, `congress.json` (daily congress-trade cache), `news.json` (daily headline cache), `live_snapshot.json` (gitignored).
+- `state/` — `paper_state.json` (algos fwd), `agent_state.json` (agents fwd), `swarm.json`, `mirofish.json`, `analyst.json`, `congress.json` (daily congress-trade cache), `news.json` (daily headline cache), `live_snapshot.json` (gitignored), `me.json` (gitignored — your real equity + trade count for the `You` line).
 - `data/snapshot.json` — daily OHLCV the bots read (includes SPY for the benchmark; `cfg.BENCHMARKS` keeps it untraded).
 
 ## Data & cost

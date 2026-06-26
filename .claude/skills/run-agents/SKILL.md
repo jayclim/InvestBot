@@ -89,14 +89,19 @@ python3 tick.py
 Steps the momentum / mean-reversion / blended forward test on any new daily bar.
 
 ## 4b. Record your real portfolio (the "You" line)
-Append today's real account value so the personal benchmark accrues a point this tick:
+Append today's real account value (and refresh the trade count) so the personal benchmark accrues
+a point this tick:
 1. `get_accounts` → `get_portfolio` for your **individual** real-trading account (the funded one —
    *not* the Agentic •••• cash account, which is the bots' book).
-2. `python3 tools/record_me.py <session-date> <portfolio_value>` (same date as the tick).
+2. `get_equity_orders` for that same account; paginate all pages and **count the `filled` orders** —
+   that's the cumulative trade count.
+3. `python3 tools/record_me.py <session-date> <portfolio_value> <trade_count>` (same date as the tick).
 
-Only the rebased, normalized curve is published (`build_dashboard.me_competitor`); the real dollar
-value stays in the gitignored `state/me.json`. Skip if the MCP is down — the line just holds its
-last point until the next tick.
+Only the rebased/normalized curve, return/max-DD, and the trade **count** are published
+(`build_dashboard.me_competitor`); the real dollar value and the actual trades (symbols, dates,
+sizes, prices) stay local in the gitignored `state/me.json` and are **never committed**. The "You"
+row is deliberately non-clickable — no holdings or trade log. Skip this whole step if the MCP is
+down — the line just holds its last point and last count until the next tick.
 
 ## 5. Publish the web app state (standalone — skip if `dashboard` ran in step 3)
 ```

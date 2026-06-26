@@ -210,7 +210,8 @@ def me_competitor(axis, start):
     path = os.path.join(ROOT, "state", "me.json")
     if not axis or not os.path.exists(path):
         return None
-    eq = {d: v for d, v in json.load(open(path)).get("equity", [])}
+    raw = json.load(open(path))
+    eq = {d: v for d, v in raw.get("equity", [])}
     base = next((eq[d] for d in axis if d in eq), None)
     if not base:
         return None
@@ -226,7 +227,7 @@ def me_competitor(axis, start):
     return {
         "name": "You", "kind": "me",
         "final": round(final, 2), "return": round(final / start - 1, 4),
-        "max_dd": round(mdd, 4), "trades": 0, "win_rate": 0.0,
+        "max_dd": round(mdd, 4), "trades": int(raw.get("trades", 0)), "win_rate": 0.0,
         # liveMark computes equity = cash + Σqty·price; with no holdings, equity == cash == the
         # rebased (normalized) value, so the row never re-marks to real $ and never drifts.
         "cash": round(final, 2),
