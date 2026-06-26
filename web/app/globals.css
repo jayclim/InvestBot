@@ -72,6 +72,7 @@ section{margin-top:44px}
 .tag.index{background:rgba(17,24,39,.10);color:#374151}
 .tag.congress{background:rgba(122,63,194,.15);color:#5e2ca0}
 .tag.mirofish{background:rgba(181,23,158,.13);color:#9d167f}
+.tag.me{background:rgba(224,161,0,.16);color:#a87900}
 .num{font-family:"JetBrains Mono",monospace;text-align:right;font-variant-numeric:tabular-nums}
 .spark{height:30px;width:116px}
 .pending{color:var(--muted);font-style:italic;font-size:.86rem}

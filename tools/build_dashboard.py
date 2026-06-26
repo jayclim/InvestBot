@@ -201,6 +201,40 @@ def spy_competitor(snap, axis_dates, start):
     }
 
 
+def me_competitor(axis, start):
+    """Your REAL Robinhood portfolio as a performance-only competitor: total account equity
+    per tick (state/me.json, gitignored — real $ never leaves this machine), rebased to the
+    shared origin like SPY so it's directly comparable. Emits NO holdings and NO trade_log, so
+    which names / how much / when you traded is never published — only the normalized curve and
+    return ship to git. Returns None until at least one recorded equity point lands on the axis."""
+    path = os.path.join(ROOT, "state", "me.json")
+    if not axis or not os.path.exists(path):
+        return None
+    eq = {d: v for d, v in json.load(open(path)).get("equity", [])}
+    base = next((eq[d] for d in axis if d in eq), None)
+    if not base:
+        return None
+    curve, last = [], start
+    for d in axis:
+        if d in eq:
+            last = round(start * eq[d] / base, 2)
+        curve.append([d, last])
+    final, peak, mdd = curve[-1][1], curve[0][1], 0.0
+    for _, v in curve:
+        peak = max(peak, v)
+        mdd = min(mdd, v / peak - 1)
+    return {
+        "name": "You", "kind": "me",
+        "final": round(final, 2), "return": round(final / start - 1, 4),
+        "max_dd": round(mdd, 4), "trades": 0, "win_rate": 0.0,
+        # liveMark computes equity = cash + Σqty·price; with no holdings, equity == cash == the
+        # rebased (normalized) value, so the row never re-marks to real $ and never drifts.
+        "cash": round(final, 2),
+        "rules": "Your real Robinhood account, rebased to the shared origin so it's comparable. Performance only — holdings and trades are deliberately not published.",
+        "holdings": [], "equity_curve": curve, "trade_log": [], "clickable": False,
+    }
+
+
 def write_history(snap):
     """Publish daily close history per symbol for the click-through stock charts — the bots'
     own snapshot data, so buy/sell markers line up exactly with what they traded on."""
@@ -257,6 +291,10 @@ def main():
     spy = spy_competitor(snap, axis, cfg.STARTING_CASH * DISPLAY_SCALE)
     if spy:
         competitors.append(spy)
+    me = me_competitor(axis, cfg.STARTING_CASH * DISPLAY_SCALE)
+    if me:
+        competitors.append(me)
+    if spy or me:
         competitors.sort(key=lambda c: c["final"], reverse=True)
     benchmark = None  # S&P 500 is now a competitor (buy & hold), not a separate dashed overlay
 

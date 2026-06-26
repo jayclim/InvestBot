@@ -115,8 +115,12 @@ export default function Leaderboard({ data }) {
           <span className="num c-dd">max&nbsp;DD</span><span className="num c-tr">trades</span>
           <span className="c-spark">curve</span>
         </div>
-        {ranked.map((c, i) => (
-          <div key={c.name} className={"row clk" + (i === 0 ? " lead-1" : "")} onClick={() => algoModal(c)}>
+        {ranked.map((c, i) => {
+          const clickable = c.clickable !== false;  // "You" is performance-only — no drill-down
+          return (
+          <div key={c.name} className={"row" + (clickable ? " clk" : "") + (i === 0 ? " lead-1" : "")}
+               onClick={clickable ? () => algoModal(c) : undefined}
+               title={clickable ? undefined : "Performance only — holdings and trades are not shown"}>
             <span className="rank">{String(i + 1).padStart(2, "0")}</span>
             <span className="name">{c.name}<span className={"tag " + c.kind}>{c.kind}</span></span>
             <span className="num">{money(c._m.equity)}</span>
@@ -125,7 +129,8 @@ export default function Leaderboard({ data }) {
             <span className="num c-tr">{c.trades}</span>
             <span className="c-spark"><Sparkline curve={c.equity_curve} start={data.starting_cash} liveValue={c._m.priced ? c._m.equity : null} /></span>
           </div>
-        ))}
+          );
+        })}
         {(data.roster_preview || []).map((p) => (
           <div key={p.name} className="row">
             <span className="rank">··</span>
