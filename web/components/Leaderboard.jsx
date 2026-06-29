@@ -70,6 +70,28 @@ export default function Leaderboard({ data }) {
             </tbody>
           </table>
         ) : <p className="note">Flat — all cash.</p>}
+        {(c.open_orders || []).length > 0 && (
+          <div className="queued" style={{ marginTop: "12px" }}>
+            <div className="queued-head">
+              <span>◷ Queued — fill at next open</span>
+              <span className="qn">{c.open_orders.length} resting</span>
+            </div>
+            {c.open_orders.map((o, i) => {
+              const buy = o.side === "buy";
+              return (
+                <div key={i} className="qorder" style={{ borderLeft: "3px dashed " + (buy ? "var(--up)" : "var(--down)") }}>
+                  <div className="qmain">
+                    <span className="qside" style={{ color: buy ? "var(--up)" : "var(--down)" }}>{o.side}</span>
+                    <b>{o.symbol}</b>
+                    <span className="qbadge">{o.kind === "limit" && o.limit != null ? "LIMIT " + money(o.limit) : "MOO"}</span>
+                  </div>
+                  <span className="qsize">{buy ? money(o.dollars) : (o.qty != null ? o.qty.toFixed(2) + " sh" : "—")}</span>
+                </div>
+              );
+            })}
+            <p className="note qnote">Decided this tick, not yet filled — resting as market-on-open orders for the next session. Re-running supersedes them. Intentions, not trades.</p>
+          </div>
+        )}
         <p className="note"><b>Rule:</b> {c.rules}</p>
         <p className="note">Equity / return re-mark holdings to live quotes every 30s; max DD, trades and win rate are the realized per-tick record. Filled at next open + {m.slippage_bps} bps slippage, −{Math.round(m.stop_loss_pct * 100)}% stop, max {m.max_positions} positions.</p>
         {c.backtest && (
