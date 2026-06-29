@@ -110,6 +110,13 @@ a point this tick:
    that's the cumulative trade count.
 3. `python3 tools/record_me.py <session-date> <portfolio_value> <trade_count>` (same date as the tick).
 
+**Deposits/withdrawals — keep it fair vs the always-invested algos.** If you moved external cash
+in or out since the last tick (e.g. transferred $500 to your Roth), pass the NET flow so it isn't
+counted as P&L: `… <trade_count> --flow -500` (deposit positive, withdrawal negative). The published
+curve is **time-weighted** (`build_dashboard.twr_index`) and strips flows, so only investment return
+shows. Cash interest is real return — leave it IN (don't pass it as a flow). Ask the user for the
+exact transfer amount if a transfer happened; omit `--flow` when none did.
+
 Only the rebased/normalized curve, return/max-DD, and the trade **count** are published
 (`build_dashboard.me_competitor`); the real dollar value and the actual trades (symbols, dates,
 sizes, prices) stay local in the gitignored `state/me.json` and are **never committed**. The "You"

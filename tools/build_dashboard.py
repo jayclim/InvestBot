@@ -207,24 +207,42 @@ def spy_competitor(snap, axis_dates, start):
     }
 
 
+def twr_index(equity, flows):
+    """Time-weighted growth index from [[date, value], …] + {date: net external flow}.
+    Strips deposits/withdrawals (deposit +, withdrawal −) so transfers in/out never read as
+    P&L — only investment return compounds. Flow is assumed to land at period end (the standard
+    daily-TWR simplification). Index starts at 1.0 on the first recorded point."""
+    idx, prev, cum = {}, None, 1.0
+    for d, v in equity:
+        f = float(flows.get(d, 0.0))
+        if prev:  # skip first point (prev is None) and any zero basis
+            cum *= (float(v) - f) / prev
+        idx[d] = cum
+        prev = float(v)
+    return idx
+
+
 def me_competitor(axis, start):
     """Your REAL Robinhood portfolio as a performance-only competitor: total account equity
     per tick (state/me.json, gitignored — real $ never leaves this machine), rebased to the
-    shared origin like SPY so it's directly comparable. Emits NO holdings and NO trade_log, so
-    which names / how much / when you traded is never published — only the normalized curve and
-    return ship to git. Returns None until at least one recorded equity point lands on the axis."""
+    shared origin like SPY so it's directly comparable. External cash flows (deposits/withdrawals,
+    state/me.json `flows`) are stripped via a time-weighted index, so transferring money in or out
+    never looks like P&L — only investment return is compared, fair against the always-fully-invested
+    algos. Emits NO holdings and NO trade_log, so which names / how much / when you traded is never
+    published — only the normalized curve and return ship to git. Returns None until at least one
+    recorded equity point lands on the axis."""
     path = os.path.join(ROOT, "state", "me.json")
     if not axis or not os.path.exists(path):
         return None
     raw = json.load(open(path))
-    eq = {d: v for d, v in raw.get("equity", [])}
-    base = next((eq[d] for d in axis if d in eq), None)
+    idx = twr_index(sorted(raw.get("equity", [])), raw.get("flows", {}))
+    base = next((idx[d] for d in axis if d in idx), None)
     if not base:
         return None
     curve, last = [], start
     for d in axis:
-        if d in eq:
-            last = round(start * eq[d] / base, 2)
+        if d in idx:
+            last = round(start * idx[d] / base, 2)
         curve.append([d, last])
     final, peak, mdd = curve[-1][1], curve[0][1], 0.0
     for _, v in curve:
@@ -354,4 +372,10 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if "--selfcheck" in sys.argv:
+        # withdrew 500 in the last period: raw value 1020→600 (−41%) but flow-stripped TWR = +10%.
+        idx = twr_index([["a", 1000], ["b", 1020], ["c", 600]], {"c": -500})
+        assert abs(idx["c"] - 1.1) < 1e-9, idx
+        print("twr ok", idx)
+    else:
+        main()
