@@ -1397,5 +1397,134 @@
 ]
 ]
 }
+},
+"pending": {
+"llm_voters": [
+{
+"symbol": "UNH",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.01132867605134255,
+"reason": "swarm: exit",
+"placed_session": "2026-06-26"
+},
+{
+"symbol": "DE",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 4.84401792888487,
+"qty": null,
+"reason": "swarm: buy 5%",
+"placed_session": "2026-06-26"
+},
+{
+"symbol": "VRTX",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 6.055022411106087,
+"qty": null,
+"reason": "swarm: buy 7%",
+"placed_session": "2026-06-26"
+},
+{
+"symbol": "LABU",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 1.211443825486854,
+"qty": null,
+"reason": "swarm: buy 9%",
+"placed_session": "2026-06-26"
+}
+],
+"mirofish_real": [
+{
+"symbol": "JPM",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.020319530808422245,
+"reason": "mirofish: exit",
+"placed_session": "2026-06-26"
+},
+{
+"symbol": "BABA",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.07810973634254478,
+"reason": "mirofish: exit",
+"placed_session": "2026-06-26"
+},
+{
+"symbol": "MU",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 6.87980950277114,
+"qty": null,
+"reason": "mirofish: buy 8%",
+"placed_session": "2026-06-26"
+},
+{
+"symbol": "SNOW",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 8.943752353602482,
+"qty": null,
+"reason": "mirofish: buy 10%",
+"placed_session": "2026-06-26"
+},
+{
+"symbol": "LABU",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.03227237191943319,
+"reason": "mirofish: trim",
+"placed_session": "2026-06-26"
+},
+{
+"symbol": "DDOG",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 3.547815227611064,
+"qty": null,
+"reason": "mirofish: buy 13%",
+"placed_session": "2026-06-26"
+},
+{
+"symbol": "ORCL",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.01355883271102883,
+"reason": "mirofish: trim",
+"placed_session": "2026-06-26"
+}
+],
+"deep_research_analyst": [],
+"congress_mirror": [
+{
+"symbol": "INTC",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 1.5116830611243488,
+"qty": null,
+"reason": "congress: buy 50%",
+"placed_session": "2026-06-26"
+}
+]
 }
 }
