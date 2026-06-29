@@ -74,6 +74,8 @@ section{margin-top:44px}
 .tag.mirofish{background:rgba(181,23,158,.13);color:#9d167f}
 .tag.me{background:rgba(224,161,0,.16);color:#a87900}
 .num{font-family:"JetBrains Mono",monospace;text-align:right;font-variant-numeric:tabular-nums}
+.c-day{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;line-height:1.16}
+.c-day .d-sub{font-size:.72rem;opacity:.7}
 .spark{height:30px;width:116px}
 .pending{color:var(--muted);font-style:italic;font-size:.86rem}
 .chev{color:var(--muted);font-size:.8rem}

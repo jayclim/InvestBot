@@ -21,13 +21,14 @@ function Sparkline({ curve, start, liveValue }) {
   );
 }
 
-// Return on the most recent tick = last completed session's move (last two curve points).
-// Null when there aren't two points yet. Stays on the last close even while the board live-marks.
+// Move on the most recent tick = last completed session's change (last two curve points),
+// as both a dollar amount (display-scaled) and a percent. Null when there aren't two points
+// yet. Stays on the last close even while the board live-marks.
 function lastTickRet(c) {
   const cv = c.equity_curve;
   if (!cv || cv.length < 2) return null;
   const a = cv[cv.length - 2][1], b = cv[cv.length - 1][1];
-  return a ? b / a - 1 : null;
+  return a ? { amt: b - a, ret: b / a - 1 } : null;
 }
 
 export default function Leaderboard({ data }) {
@@ -155,7 +156,12 @@ export default function Leaderboard({ data }) {
             <span className="rank">{String(i + 1).padStart(2, "0")}</span>
             <span className="name">{c.name}<span className={"tag " + c.kind}>{c.kind}</span></span>
             <span className="num">{money(c._m.equity)}</span>
-            <span className={"num c-day " + (c._lt == null ? "" : cls(c._lt))}>{c._lt == null ? "—" : pct(c._lt)}</span>
+            <span className={"num c-day " + (c._lt == null ? "" : cls(c._lt.ret))}>
+              {c._lt == null ? "—" : <>
+                <span>{(c._lt.amt >= 0 ? "+" : "−") + money(Math.abs(c._lt.amt))}</span>
+                <span className="d-sub">{pct(c._lt.ret)}</span>
+              </>}
+            </span>
             <span className={"num " + cls(c._m.ret)}>{pct(c._m.ret)}</span>
             <span className="num c-tr">{c.trades}</span>
             <span className="c-spark"><Sparkline curve={c.equity_curve} start={data.starting_cash} liveValue={c._m.priced ? c._m.equity : null} /></span>
