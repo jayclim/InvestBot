@@ -114,6 +114,9 @@ export function DecisionTrail({ data }) {
   const methods = [...new Set(data.decisions.map((d) => d.agent))];
   const colorOf = (agent) => methodColor(agent, data.competitors);
   const shown = filter === "all" ? data.decisions : data.decisions.filter((d) => d.agent === filter);
+  // Orders placed this tick but not yet filled — resting as market-on-open for the next session.
+  const queued = data.competitors.flatMap((c) => (c.open_orders || []).map((o) => ({ ...o, agent: c.name })));
+  const qShown = filter === "all" ? queued : queued.filter((o) => o.agent === filter);
   // Bucket into days (decisions arrive newest-first); coalesces by date even if interleaved.
   const byDay = [];
   const dayIdx = {};
@@ -154,7 +157,31 @@ export function DecisionTrail({ data }) {
           </div>
         )}
         <div className="feed">
-          {!shown.length && <p className="pending">No decisions {filter === "all" ? "yet — fills in as ticks run." : "for this method yet."}</p>}
+          {qShown.length > 0 && (
+            <div className="queued">
+              <div className="queued-head">
+                <span>◷ Queued — fill at next open</span>
+                <span className="qn">{qShown.length} resting</span>
+              </div>
+              {qShown.map((o, i) => {
+                const col = colorOf(o.agent);
+                const buy = o.side === "buy";
+                return (
+                  <div key={i} className="qorder" style={{ borderLeft: "3px dashed " + col }}>
+                    <div className="qmain">
+                      <span className="qside" style={{ color: buy ? "var(--up)" : "var(--down)" }}>{o.side}</span>
+                      <b>{o.symbol}</b>
+                      <span className="qbadge">{o.kind === "limit" && o.limit != null ? "LIMIT " + money(o.limit) : "MOO"}</span>
+                      <span className="qwho" style={{ color: col }}>{o.agent}</span>
+                    </div>
+                    <span className="qsize">{buy ? money(o.dollars) : (o.qty != null ? o.qty.toFixed(2) + " sh" : "—")}</span>
+                  </div>
+                );
+              })}
+              <p className="note qnote">Decided this tick, not yet filled — resting as market-on-open orders. The next tick fills them at the open (re-running supersedes them). These are intentions, not trades.</p>
+            </div>
+          )}
+          {!shown.length && <p className="pending">No filled decisions {filter === "all" ? "yet — fills in as ticks run." : "for this method yet."}</p>}
           {byDay.map(([day, rows], di) => (
             <details key={day} className="day" open={di === 0}>
               <summary className="day-sum">
@@ -280,7 +307,7 @@ export function Methods({ data }) {
       <div className="card pad">
         <ul className="src">
           {m.sources.map((s, i) => <li key={i}><b>{s.name}.</b> {s.detail}</li>)}
-          <li><b>Live prices.</b> Finnhub via the <span className="mono">/api/quotes</span> serverless function, polled every 15s, CDN-cached 15s. A public feed — separate from the Robinhood account.</li>
+          <li><b>Live prices.</b> Finnhub via the <span className="mono">/api/quotes</span> serverless function, polled every 30s, CDN-cached 30s. A public feed — separate from the Robinhood account.</li>
         </ul>
       </div>
     </section>

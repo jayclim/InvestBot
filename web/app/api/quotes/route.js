@@ -1,6 +1,6 @@
 // Serverless route: live quotes from Finnhub.
 // GET /api/quotes?symbols=NVDA,AMD  ->  { quotes: { NVDA: {price,change,pct,prevClose,t} }, asOf }
-// FINNHUB_API_KEY is a Vercel env var, never sent to the client. CDN-cached 15s.
+// FINNHUB_API_KEY is a Vercel env var, never sent to the client. CDN-cached 30s.
 
 import { clientIp, rateLimit, validSymbol, tooMany } from "../../../lib/ratelimit";
 

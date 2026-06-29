@@ -71,7 +71,7 @@ export default function Leaderboard({ data }) {
           </table>
         ) : <p className="note">Flat — all cash.</p>}
         <p className="note"><b>Rule:</b> {c.rules}</p>
-        <p className="note">Equity / return re-mark holdings to live quotes every 15s; max DD, trades and win rate are the realized per-tick record. Filled at next open + {m.slippage_bps} bps slippage, −{Math.round(m.stop_loss_pct * 100)}% stop, max {m.max_positions} positions.</p>
+        <p className="note">Equity / return re-mark holdings to live quotes every 30s; max DD, trades and win rate are the realized per-tick record. Filled at next open + {m.slippage_bps} bps slippage, −{Math.round(m.stop_loss_pct * 100)}% stop, max {m.max_positions} positions.</p>
         {c.backtest && (
           <p className="note"><b>Backtest reference ({c.backtest.span}):</b> {pct(c.backtest.return)} over {c.backtest.sessions} sessions — context only, not the live board.</p>
         )}
@@ -101,7 +101,7 @@ export default function Leaderboard({ data }) {
         <span className="n">01</span>
         <h2>Standings</h2>
         <InfoButton title="Standings">
-          The live forward paper test: every competitor trades a {book} book the same way, advanced one trading day per tick, with {m.slippage_bps} bps slippage, a −{Math.round(m.stop_loss_pct * 100)}% stop, and fills at the next open. Equity, return and the ranking re-mark each book to live quotes every 15s; with the market closed they fall back to the last tick&apos;s close. Each rule strategy&apos;s detail also shows a separate Dec–Jun backtest for context.
+          The live forward paper test: every competitor trades a {book} book the same way, advanced one trading day per tick, with {m.slippage_bps} bps slippage, a −{Math.round(m.stop_loss_pct * 100)}% stop, and fills at the next open. Equity, return and the ranking re-mark each book to live quotes every 30s; with the market closed they fall back to the last tick&apos;s close. Each rule strategy&apos;s detail also shows a separate Dec–Jun backtest for context.
         </InfoButton>
         <span className="hint">{live ? "live-marked" : "last tick"} · {book} each</span>
       </div>
