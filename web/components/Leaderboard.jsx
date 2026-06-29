@@ -21,6 +21,15 @@ function Sparkline({ curve, start, liveValue }) {
   );
 }
 
+// Return on the most recent tick = last completed session's move (last two curve points).
+// Null when there aren't two points yet. Stays on the last close even while the board live-marks.
+function lastTickRet(c) {
+  const cv = c.equity_curve;
+  if (!cv || cv.length < 2) return null;
+  const a = cv[cv.length - 2][1], b = cv[cv.length - 1][1];
+  return a ? b / a - 1 : null;
+}
+
 export default function Leaderboard({ data }) {
   const { open } = useModal();
   const { quotes, live } = useLiveQuotes();
@@ -30,7 +39,7 @@ export default function Leaderboard({ data }) {
   // Re-mark every book to live prices, then rank by live equity. Falls back to the stored
   // per-tick mark when a market's closed, so the order matches the published board offline.
   const ranked = data.competitors
-    .map((c) => ({ ...c, _m: liveMark(c, quotes, data.starting_cash) }))
+    .map((c) => ({ ...c, _m: liveMark(c, quotes, data.starting_cash), _lt: lastTickRet(c) }))
     .sort((a, b) => b._m.equity - a._m.equity);
 
   function algoModal(c) {
@@ -133,8 +142,8 @@ export default function Leaderboard({ data }) {
       <div className="lead">
         <div className="row head">
           <span>#</span><span>competitor</span>
-          <span className="num">equity</span><span className="num">return</span>
-          <span className="num c-dd">max&nbsp;DD</span><span className="num c-tr">trades</span>
+          <span className="num">equity</span><span className="num c-day">last&nbsp;tick</span><span className="num">return</span>
+          <span className="num c-tr">trades</span>
           <span className="c-spark">curve</span>
         </div>
         {ranked.map((c, i) => {
@@ -146,8 +155,8 @@ export default function Leaderboard({ data }) {
             <span className="rank">{String(i + 1).padStart(2, "0")}</span>
             <span className="name">{c.name}<span className={"tag " + c.kind}>{c.kind}</span></span>
             <span className="num">{money(c._m.equity)}</span>
+            <span className={"num c-day " + (c._lt == null ? "" : cls(c._lt))}>{c._lt == null ? "—" : pct(c._lt)}</span>
             <span className={"num " + cls(c._m.ret)}>{pct(c._m.ret)}</span>
-            <span className={"num c-dd " + cls(c.max_dd)}>{pct(c.max_dd)}</span>
             <span className="num c-tr">{c.trades}</span>
             <span className="c-spark"><Sparkline curve={c.equity_curve} start={data.starting_cash} liveValue={c._m.priced ? c._m.equity : null} /></span>
           </div>
