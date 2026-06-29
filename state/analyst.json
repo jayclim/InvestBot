@@ -1,65 +1,62 @@
 {
-  "date": "2026-06-26",
-  "as_of": "2026-06-26",
+  "date": "2026-06-29",
+  "as_of": "2026-06-29",
   "generated_by": "Claude (Opus) — financial-analyst skill",
   "framework": "Claude for Financial Services — equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
-  "pick": "UNH",
-  "action": "initiate",
-  "sizing": "12% — new defensive-momentum anchor, funded by cutting CAT and trimming MU to lower book beta",
+  "pick": "MU",
+  "action": "Cut the bleeding defensive hedge (UNH), trim the most-extended winners (GE, BAC at RSI 80), rotate into the semis sleeve that leads a de-escalation tape (MU up, add TSM) plus a healthcare-growth diversifier (LLY); hold ~47% cash as the real ballast into the mid-July earnings cluster.",
+  "sizing": "6 names, 53% deployed / 47% cash. Semis MU 0.11 + TSM 0.08; value-financials BAC 0.10 + JPM 0.10; aerospace GE 0.07 (trimmed); healthcare-growth LLY 0.07. Max single name 0.11 (cap 0.60). Cash is the hedge, not a defensive stock.",
   "confidence": 0.55,
   "regime": {
-    "label": "Hawkish Fed, sticky inflation, near-ATH tape",
-    "note": "Fed held 3.50–3.75% on 6/17 with a 1–2 hike dot plot and a RAISED inflation outlook (3.6% headline / 3.3% core); 10yr 4.48%, S&P near all-time highs (~7,420), Iran conflict keeps energy/oil an inflation risk. Favors cheap quality cyclicals with pricing power + defensives that carry their own momentum; penalizes long-duration growth at a 4.48% 10yr.",
+    "label": "Hawkish Fed, but an energy/inflation-relief risk-on rotation",
+    "note": "The inflation spike that drove the hawkish Fed was energy-led (Iran war). With US-Iran peace talks set to resume 6/30, that energy/inflation pressure is easing at the margin, sparking a tech/growth/semis risk-on rotation out of defensives. But the Fed is still on hold at 3.50-3.75% with a dot plot that flipped to a HIKE and 17/18 officials seeing upside inflation risk - this is a geopolitical relief rally, not a confirmed dovish pivot. Stay balanced, don't chase high-beta junk, keep dry powder.",
     "source": "https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html"
   },
-  "thesis": "What changed since 6/25: the hawkish/inflation regime is now confirmed (Fed held 3.50–3.75% with a 1–2 hike dot plot and a raised 3.6% headline inflation outlook; 10yr 4.48%; S&P near all-time highs; Iran energy risk), so I keep the cyclical-value/quality tilt. But 6/26 exposed the flaw in last tick's book: it was too concentrated in high-beta cyclicals that all fall together — on a −0.57% SPY day, MU −7.5%, CAT −5.6% and JPM −2.1% erased the prior day's MU-earnings alpha with no defensive ballast. So this tick I de-risk while staying regime-aligned: keep the cheap quality anchors (BAC PE 14, JPM PE 16, GE aerospace), trim the volatile winner (MU, banking more of the earnings spike), CUT the priciest rolling-over laggard (CAT, PE 53, −5.6% off its 52-wk high), and INITIATE a defensive-momentum diversifier — UNH, at a fresh 52-wk high on a red day, Optum margin recovery, Q2 catalyst ahead. ~46% cash because the tape sits near all-time highs into a hawkish Fed: asymmetric downside.",
+  "thesis": "What changed since 6/26: the regime is inflecting. Last tick I read the hawkish/inflation regime as durable and tilted the book to defensive-cyclical quality (BAC/GE/JPM/MU) plus a UNH defensive hedge. On 6/29 the tape repudiated the defensive half: a +1.6% SPY day (S&P +1.18% to 7,440; Nasdaq +2.07%; Dow above 52,000 first time) led by tech/Mag7/high-beta (RBLX +14%, TSLA +8.6%), with volatility and inverse ETFs collapsing - because the Iran war energy shock that drove the Fed's inflation upgrade is now de-escalating (Trump: US-Iran peace talks resume Tuesday). My defensive ballast bled INTO the rally: UNH -1.85% on an up day. So I cut UNH - a managed-care name at a 52-wk-high PE 32 that isn't acting as ballast and carries 7/16 earnings risk - and bank gains in the two most-extended winners (GE and BAC are both RSI 80, GE at PE 45 and a fresh all-time high). I rotate that capital toward the cleanest expression of an energy-relief / risk-on tape - semis - adding TSM (foundry monopoly, PE 36) alongside a bumped MU (memory/HBM-AI momentum, r20 +18%), and add LLY (secular GLP-1 grower at a fresh 52-wk high, a non-cyclical growth driver that is NOT a dead defensive). I keep the cheap quality financials (BAC, JPM at PE 14-16) into their 7/14 earnings. Crucially I hold ~47% cash: with the rally resting on a fragile 'talks set to resume' headline and a still-hawkish Fed, cash - not a bleeding defensive stock - is my downside hedge, and it's dry powder for the mid-July earnings cluster. This lowers book beta and diversifies drivers (semis / financials / aerospace / healthcare), directly fixing last tick's flaw: one-sided cyclicals that all fell together.",
   "evidence": [
-    {"point": "Fed held the funds rate at 3.50–3.75% on 6/17; median dots call for 1–2 hikes in 2026; inflation outlook RAISED to 3.6% headline / 3.3% core (was 2.7% in March); May CPI ran 4.2% headline / 2.9% core.", "source": "https://www.cnbc.com/2026/06/17/fed-interest-rate-decision-june-2026.html"},
-    {"point": "10-year Treasury yield 4.48%; S&P 500 ~7,420 near a new all-time high (6/17 close); Iran conflict keeps oil/energy an active inflation input.", "source": "https://www.ishares.com/us/insights/fed-outlook-2026-interest-rate-forecast"},
-    {"point": "UNH printed a fresh 52-wk high of 427.89 on 6/26 (RH: high_52_weeks 427.89, date 2026-06-26), +2.8% on a −0.57% SPY day, +28% YTD; Wall Street Moderate Buy, Bernstein PT $492 / Leerink $462, citing Optum margin recovery.", "source": "https://www.fool.com/investing/2026/06/26/unitedhealth-is-near-its-52-week-high-wall-street/"},
-    {"point": "BAC trades at PE 14.44, P/B 1.51, 1.89% yield, last 57.81 vs a 52-wk high of 59.195 (6/25) — the cheapest, highest-quality name in the book.", "source": "Robinhood get_equity_fundamentals (BAC, 2026-06-26)"},
-    {"point": "JPM PE 16.05, last 328.08 vs 52-wk high 343.45 (6/25); GE PE 45.77 at a 52-wk high of 379.67 (6/25), Aerospace & Defense quality compounder.", "source": "Robinhood get_equity_fundamentals (JPM, GE, 2026-06-26)"},
-    {"point": "MU reversed hard on 6/26: open 1139.5 → intraday high 1198.71 → close 1122.99 (−7.46%), giving back much of the earnings gap; still +21.6% over 20 sessions, PE 27.47.", "source": "data/snapshot.json + Robinhood get_equity_fundamentals (MU, 2026-06-26)"},
-    {"point": "CAT is the priciest holding at PE 52.59, P/B 26.1, and fell −5.6% on 6/26 off its 6/25 52-wk high of 1057.07 — rich and rolling over near-term.", "source": "Robinhood get_equity_fundamentals (CAT, 2026-06-26)"},
-    {"point": "MRNA (exited 6/25) ripped +12.7% on 6/26 on a 9-0 FDA adcomm vote for its mFLUSIVA flu vaccine (PDUFA 2026-08-05) and a Science Day pipeline reset — but remains an unprofitable biotech (negative P/E) I won't chase after a ~40% run off the lows.", "source": "https://stockstotrade.com/news/moderna-inc-mrna-news-2026_06_26-2/"}
+    {"point": "06-29 was a broad risk-on rally: 'The S&P 500 gained 1.18% and closed at 7,440.43, while the Nasdaq Composite rose 2.07% to 25,820.14. The Dow Jones Industrial Average closed above 52,000 for the first time.' Snapshot SPY 728.99->740.88 (+1.6%).", "source": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-29-2026"},
+    {"point": "Rally driver = Iran de-escalation easing the energy/inflation shock: 'easing tensions between the US and Iran over the weekend, with President Trump saying peace talks with Iran are set to resume on Tuesday.'", "source": "https://www.bloomberg.com/news/articles/2026-06-28/us-futures-climb-on-reports-peace-talks-to-resume-markets-wrap"},
+    {"point": "Fed remains hawkish: held at 3.50-3.75%, 'The grid erased an earlier indication for one cut this year and pushed any reductions into 2027 and 2028'; PCE raised to 3.6% from 2.7%, core to 3.3%; '17 of 18 officials judged the risks to inflation to be tilted to the upside.'", "source": "https://www.stocktitan.net/articles/fed-rate-decision-june-17-2026"},
+    {"point": "UNH bled into the rally (defensive thesis broken): UNH -1.85% on a +1.6% tape; PE 32.32; 52-wk high 427.93 set 6/26 - i.e. selling off straight from the high. Q2 report 2026-07-16.", "source": "Robinhood get_equity_fundamentals 2026-06-29"},
+    {"point": "GE and BAC are the most-extended winners to trim: both RSI ~80; GE PE 45.48 at a fresh 52-wk high (379.67 on 6/25); BAC PE 14.36 also at a 52-wk high (59.195 on 6/25).", "source": "Robinhood get_equity_fundamentals 2026-06-29 + snapshot RSI"},
+    {"point": "Semis lead the rotation: MU PE 25.63, 20-day return +17.9%, RSI 60 (room to run, not overbought); TSM PE 35.93, 52-wk position 92%, foundry to the whole AI complex.", "source": "Robinhood get_equity_fundamentals 2026-06-29 + snapshot"},
+    {"point": "LLY printed a fresh 52-wk high today: high_52_weeks 1238.00 dated 2026-06-29, 5-day return +11.5% - secular GLP-1 growth, a non-cyclical driver distinct from semis/banks.", "source": "Robinhood get_equity_fundamentals 2026-06-29"},
+    {"point": "Mid-July earnings cluster is the next catalyst: BAC & JPM report 2026-07-14 (est EPS 1.10 / 5.48), ASML 7/15, GE & TSM 7/16 (est 1.85 / 3.77). ~11-13 ticks out.", "source": "Robinhood get_earnings_calendar 2026-06-29"}
   ],
   "risks": [
-    "Concentrated quality-cyclical book is still high-beta to the downside — 6/26 proved a single red day can wipe a day's alpha (MU −7.5%, CAT −5.6%). UNH lowers but does not eliminate this.",
-    "BAC/JPM/GE sit near 52-wk highs; a credit-cycle or rates shock, or a dovish Fed surprise that unwinds the value-over-growth tilt, hits the whole sleeve at once.",
-    "UNH carries managed-care headline/regulatory risk and a binary Q2 earnings catalyst; chasing a fresh 52-wk high can mean buying near-term top.",
-    "MU memory/AI-capex is volatile; a memory-price or hyperscaler-capex wobble would extend today's reversal."
+    "The rally rests on a fragile headline - peace talks are only 'set to resume,' not concluded. If Iran talks collapse, energy re-spikes, the inflation/hawkish trade snaps back and risk-on reverses; my 47% cash is the hedge but the semis adds (MU/TSM) would lead the drop.",
+    "Two semis names (MU + TSM = 18%) can fall together - the same 'high-beta cyclicals correlate' failure that hurt last tick; sized modestly and split memory vs foundry to mitigate, but it remains a concentrated factor.",
+    "Fed is still hawkish (dot plot flipped to a hike, 17/18 see upside inflation risk). A hot inflation print or hawkish Fedspeak would pressure the rich, high-multiple names (GE PE 45, TSM PE 36, LLY PE 43).",
+    "Cutting UNH right before its 7/16 earnings forfeits any beat; accepted because it's a defensive that isn't defending and sits at a 52-wk-high valuation.",
+    "Buys fill at the 6/30 open after a sharp up day - gap-up risk means I may chase MU/TSM/LLY a bit higher than the 6/29 close (orders are market-on-open)."
   ],
   "data_examined": [
-    {"label": "Whole-universe momentum/relative-strength screen (1d/5d/20d return, 52-wk proximity, RS vs SPY) over shuffled UNIVERSE", "source": "data/snapshot.json (through 2026-06-26)"},
-    {"label": "Robinhood fundamentals on 8 finalists (PE, P/B, 52-wk range, yield, sector): GE, BAC, JPM, CAT, MU, UNH, DE, VRTX", "source": "Robinhood get_equity_fundamentals (2026-06-26)"},
-    {"label": "Macro regime read (Fed 6/17 decision, dot plot, inflation outlook, 10yr, Iran energy)", "source": "web_search — CNBC, iShares, Federal Reserve"},
-    {"label": "Catalyst checks: MRNA spike (FDA flu adcomm/Science Day), UNH 52-wk high (Optum margins, Q2)", "source": "web_search — StocksToTrade, Motley Fool"}
+    {"label": "06-29 daily bars for all 101 names (built from RH minute aggregation; day feed still lagged at 06-26)", "source": "Robinhood get_equity_historicals (minute) -> data/snapshot.json"},
+    {"label": "Quant screen over the shuffled universe: 1/5/20-day returns, 52-wk position, RSI(14), 20/50-SMA, volume ratio", "source": "data/snapshot.json"},
+    {"label": "Fundamentals (PE, P/B, div, 52-wk range, market cap) for MU/BAC/GE/JPM/UNH/ASML/TSM/LLY/AMD/DE", "source": "Robinhood get_equity_fundamentals 2026-06-29"},
+    {"label": "Earnings calendar 2026-06-29..07-20 (high-market-cap)", "source": "Robinhood get_earnings_calendar"},
+    {"label": "Macro: 06-29 rally drivers + June FOMC outcome/dot plot", "source": "web_search (TheStreet, Bloomberg, CNBC, StockTitan)"}
   ],
-  "targets": {
-    "BAC": 0.13,
-    "GE": 0.13,
-    "UNH": 0.12,
-    "MU": 0.08,
-    "JPM": 0.08
-  },
+  "targets": {"MU": 0.11, "BAC": 0.10, "JPM": 0.10, "TSM": 0.08, "GE": 0.07, "LLY": 0.07},
   "rationale": {
-    "BAC": "Anchor of the book — the cheapest, highest-quality name I own. [DATA] PE 14.44, P/B 1.51, 1.89% yield, last 57.81 just below a fresh 52-wk high of 59.195 (6/25); held up on the 6/26 red day (−0.7%). [ASSUMED] A hawkish Fed / higher-for-longer rates is a tailwind for net interest income at a well-capitalized money-center bank, and a 14x multiple gives downside support the rest of the book lacks. Sized 0.13.",
-    "GE": "Quality aerospace/defense compounder at a 52-wk high. [DATA] At a 52-wk high of 379.67 (6/25), +14.9% over 20 sessions, only −0.8% on the 6/26 red day; PE 45.77, Aerospace & Defense. [ASSUMED] Commercial-aero services + defense budgets are a durable, less rate-sensitive cyclical with pricing power that fits the inflation regime; the rich multiple is the cost of best-in-class momentum, so I keep it at anchor weight (0.13) rather than adding.",
-    "UNH": "New initiation — the defensive-momentum diversifier this book was missing. [DATA] Fresh 52-wk high of 427.89 on 6/26 (+2.8% on a −0.57% SPY day), +28% YTD, PE 31.4; Wall Street Moderate Buy with Bernstein $492 / Leerink $462 targets on Optum margin recovery; Q2 earnings is the next catalyst. [ASSUMED] Managed-care demand is non-cyclical, so UNH lowers book beta while still carrying its own uptrend — exactly the ballast that was absent on 6/26. Sized 0.12, funded by cutting CAT.",
-    "MU": "Trim, don't abandon. [DATA] Reversed −7.46% on 6/26 (open 1139.5 → high 1198.71 → close 1122.99) after the blowout print, but still +21.6% over 20 sessions; PE 27.47. [ASSUMED] The AI-memory/HBM thesis is intact, but the 6/26 intraday reversal shows how violent the two-way risk is, so I bank more of the spike and cut the position from 0.10 to 0.08 to keep it a satellite, not a core.",
-    "JPM": "Cheap quality bank, kept as a smaller second financial. [DATA] PE 16.05, last 328.08 vs 52-wk high 343.45 (6/25); −2.1% on 6/26. [ASSUMED] Same higher-for-longer NII tailwind as BAC, but I keep it smaller (0.08) than BAC to avoid doubling the same major-bank factor; trimmed slightly from 0.10 to make room for UNH."
+    "MU": "Bumped 0.08->0.11, the book's top conviction. [DATA] Memory/HBM-AI momentum leader: 20-day return +17.9%, RSI 60 (room before overbought), PE 25.63 - the cheapest of the AI-semis on earnings, already past its 6/18 earnings gap. [ASSUMED] Semis are the cleanest expression of an energy-relief / risk-on rotation, and MU's memory cycle is a distinct sub-driver from foundry. Risk: high-beta, reversed hard once already (the 6/26 -7.5% intraday).",
+    "BAC": "Trimmed 0.13->0.10. [DATA] The book's value anchor and cheapest name: PE 14.36, P/B 1.50, 1.9% yield, Q2 earnings 2026-07-14 (est EPS 1.10). [ASSUMED] Trimming because it's now RSI ~80 at a 52-wk high (59.195) - bank some of the run, keep the core into earnings. Lowest-beta way to stay long quality.",
+    "JPM": "Held ~0.08->0.10. [DATA] Quality financial, PE 15.76, P/B 2.56, 1.8% yield, RSI 65 - the least-extended of my financials (52-wk pos 89% vs BAC/GE at the high). Q2 earnings 2026-07-14 (est EPS 5.48). [ASSUMED] Best-in-class bank; keep full size into the 7/14 catalyst since it has more room than BAC.",
+    "TSM": "New initiation 0.08. [DATA] Foundry monopoly to the entire AI/semis complex, PE 35.93 - cheaper than ASML (PE 60) or AMD (PE 171); 52-wk position 92%; Q2 earnings 2026-07-16 (est EPS 3.77). [ASSUMED] Adds semis breadth (foundry vs MU's memory) to ride the de-escalation/risk-on rotation without chasing the high-beta junk (RBLX/TSLA/MSTR) that ripped today.",
+    "GE": "Trimmed hard 0.13->0.07. [DATA] Aerospace quality, but the most-extended/richest name held: RSI ~80, PE 45.48, at a fresh 52-wk high (379.67). Q2 earnings 2026-07-16 (est EPS 1.85). [ASSUMED] Bank most of the gain - it's run too far too fast - but keep a core because the commercial-aero services franchise is structurally strong and reports into the cluster.",
+    "LLY": "New initiation 0.07. [DATA] Secular GLP-1 grower printing a fresh 52-wk high today (1238.00, dated 6/29), 5-day return +11.5%, PE 43.49. [ASSUMED] A non-cyclical growth diversifier with its own momentum - distinct from semis and banks, and the right kind of healthcare to own here (growth, not the bleeding managed-care defensive UNH I'm cutting). Earnings are early-Aug, so no near-term event risk."
   },
   "reflection": {
-    "as_of": "2026-06-25",
-    "looking_back": "Last tick I rotated fully into cyclical value — GE 0.14, CAT 0.12, BAC 0.12, MU 0.10, JPM 0.10, ~42% cash — and on 6/25 it beat SPY by +2.1 pts (book +2.1% vs a flat SPY) on the MU earnings gap. But held into 6/26 that same concentrated book gave most of it back: MU −7.5% (reversed intraday from 1198 to a 1123 close), CAT −5.6%, JPM −2.1% on a −0.57% SPY day. All-time the book is still −8.8% and −6.5 pts behind SPY.",
+    "as_of": "2026-06-26",
+    "looking_back": "Last tick I de-risked the cyclical book: cut CAT, trimmed MU/JPM/GE, and initiated a UNH defensive hedge, holding BAC 0.13 / GE 0.13 / UNH 0.12 / MU 0.08 / JPM 0.08 with ~46% cash. The book gave up alpha on 6/29: it finished roughly flat-to-up small on the day while SPY ran +1.6%. All-time the book is -10.3% and -7.6 pts behind SPY; last tick -1.8% vs SPY -0.6% (alpha -1.3 pts).",
     "worked": [
-      "GE and BAC, the quality anchors, held up on the 6/26 red day (GE −0.8%, BAC −0.7%) and sit ~0.97 of fresh 52-wk highs — validating the quality-cyclical tilt.",
-      "BAC at PE 14.4 is doing its job as the cheapest, lowest-beta name in the book; value gave downside support the high-multiple names didn't."
+      "The de-risking instinct was directionally right - cutting CAT and trimming MU banked gains before further chop; BAC and GE as quality anchors are both at 52-wk highs (RSI 80) and carried the book.",
+      "Keeping a MU core paid: +17.9% over 20 days and +2.0% on 6/29, validating not panic-selling on the 6/26 -7.5% scare."
     ],
     "missed": [
-      "The book was too high-beta and one-sided: every cyclical sold off together on 6/26 (MU/CAT/JPM), so one down day erased the MU alpha — there was no defensive ballast.",
-      "Cut MRNA one day too early — it ripped +12.7% on 6/26 on the FDA flu adcomm (9-0) and Science Day, though it stays an unprofitable biotech I wouldn't re-chase after a ~40% run."
+      "The UNH defensive hedge was the wrong instrument: it fell -1.85% on a +1.6% up day - a defensive that doesn't defend - because I mis-read the regime as durably hawkish right as the Iran energy shock began to de-escalate.",
+      "The book was positioned defensive into a risk-on inflection: ~46% cash plus a defensive/value tilt meant I barely participated in a +1.6% SPY day led by tech/semis - the alpha leak was being cautious in the wrong direction."
     ],
-    "adjustment": "Add a defensive sleeve with its own momentum (initiate UNH, a fresh 52-wk high on a red day) and cut the priciest rolling-over cyclical (CAT, PE 52.6, −5.6% today); keep the cheap quality anchors (BAC, GE, JPM), trim MU to bank more of the spike — lowering book beta while staying regime-aligned."
+    "adjustment": "Re-read the regime off the energy/inflation driver, not the stale 'hawkish forever' frame: rotate the defensive sleeve (cut UNH) into the semis that lead a de-escalation tape (add TSM, bump MU) and a healthcare-growth name (LLY), and make CASH - not a bleeding defensive stock - the explicit downside hedge."
   }
 }

@@ -1,6 +1,6 @@
 {
-"date": "2026-06-26",
-"asof": "2026-06-26T14:57:22",
+"date": "2026-06-29",
+"asof": "2026-06-29T15:14:49",
 "source": "kadoa-org/congress-trading-monitor (public-domain STOCK Act filings)",
 "leaders": [
 {
@@ -9,7 +9,7 @@
 "party": "R",
 "chamber": "house",
 "scored_buys": 44,
-"weighted_excess": 806.5898565583115
+"weighted_excess": 813.6911353921816
 },
 {
 "id": "house_thomasj_rooney",
@@ -17,7 +17,7 @@
 "party": "R",
 "chamber": "house",
 "scored_buys": 139,
-"weighted_excess": 576.5047247210105
+"weighted_excess": 552.3458843672456
 },
 {
 "id": "senate_sheldon_whitehouse",
@@ -25,7 +25,7 @@
 "party": "D",
 "chamber": "senate",
 "scored_buys": 407,
-"weighted_excess": 472.0354126253405
+"weighted_excess": 475.47022382634515
 },
 {
 "id": "house_barbarajhonorable_comstock",
@@ -33,7 +33,7 @@
 "party": "R",
 "chamber": "house",
 "scored_buys": 31,
-"weighted_excess": 267.3130456599119
+"weighted_excess": 259.6261168326581
 },
 {
 "id": "senate_ronl_wyden",
@@ -41,7 +41,7 @@
 "party": "D",
 "chamber": "senate",
 "scored_buys": 170,
-"weighted_excess": 243.68482036160242
+"weighted_excess": 240.11625111441424
 },
 {
 "id": "house_rubn_hinojosa",
@@ -49,7 +49,7 @@
 "party": "D",
 "chamber": "house",
 "scored_buys": 23,
-"weighted_excess": 179.55943249159617
+"weighted_excess": 196.77260694837815
 },
 {
 "id": "house_thomas_suozzi",
@@ -57,7 +57,7 @@
 "party": "D",
 "chamber": "house",
 "scored_buys": 272,
-"weighted_excess": 158.24205622836263
+"weighted_excess": 154.38365711243546
 },
 {
 "id": "senate_johnf_reed",
@@ -65,15 +65,15 @@
 "party": "D",
 "chamber": "senate",
 "scored_buys": 58,
-"weighted_excess": 121.9080817850226
+"weighted_excess": 117.05644195133743
 },
 {
-"id": "house_austin_scott",
-"name": "Austin Scott",
-"party": "R",
+"id": "house_jamesr_langevin",
+"name": "James R. Langevin",
+"party": "D",
 "chamber": "house",
-"scored_buys": 40,
-"weighted_excess": 97.58120991491487
+"scored_buys": 181,
+"weighted_excess": 92.74430941073349
 },
 {
 "id": "house_nancy_pelosi",
@@ -81,7 +81,7 @@
 "party": "D",
 "chamber": "house",
 "scored_buys": 105,
-"weighted_excess": 89.07261793128615
+"weighted_excess": 91.86400233366427
 }
 ],
 "trades": [
@@ -3910,44 +3910,580 @@
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_austin_scott",
-"filer": "Austin Scott",
-"ticker": "F",
-"filing_date": "2020-12-30",
-"transaction_date": "2020-12-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_austin_scott",
-"filer": "Austin Scott",
-"ticker": "GE",
-"filing_date": "2020-12-30",
-"transaction_date": "2020-12-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_austin_scott",
-"filer": "Austin Scott",
-"ticker": "GE",
-"filing_date": "2020-09-20",
-"transaction_date": "2020-08-24",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_austin_scott",
-"filer": "Austin Scott",
-"ticker": "MSFT",
-"filing_date": "2014-08-29",
-"transaction_date": "2013-09-15",
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "ABNB",
+"filing_date": "2022-12-07",
+"transaction_date": "2022-11-07",
 "amount_label": "$15,001 - $50,000"
 },
 {
-"filer_id": "house_austin_scott",
-"filer": "Austin Scott",
-"ticker": "MSFT",
-"filing_date": "2014-08-29",
-"transaction_date": "2013-07-19",
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "ABNB",
+"filing_date": "2022-11-08",
+"transaction_date": "2022-10-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "ABNB",
+"filing_date": "2022-11-08",
+"transaction_date": "2022-10-27",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "META",
+"filing_date": "2022-07-11",
+"transaction_date": "2022-06-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "ABNB",
+"filing_date": "2022-07-11",
+"transaction_date": "2022-06-10",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "META",
+"filing_date": "2022-07-11",
+"transaction_date": "2022-06-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "ABNB",
+"filing_date": "2022-07-11",
+"transaction_date": "2022-06-09",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "ABNB",
+"filing_date": "2022-06-07",
+"transaction_date": "2022-05-11",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "NFLX",
+"filing_date": "2022-04-12",
+"transaction_date": "2022-03-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "GOOGL",
+"filing_date": "2022-03-04",
+"transaction_date": "2022-02-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "NFLX",
+"filing_date": "2022-03-04",
+"transaction_date": "2022-02-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "PYPL",
+"filing_date": "2022-03-04",
+"transaction_date": "2022-02-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "RIVN",
+"filing_date": "2022-02-08",
+"transaction_date": "2022-01-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2022-02-08",
+"transaction_date": "2022-01-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "PYPL",
+"filing_date": "2022-02-08",
+"transaction_date": "2022-01-05",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "NFLX",
+"filing_date": "2021-08-14",
+"transaction_date": "2021-07-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "AAPL",
+"filing_date": "2021-04-09",
+"transaction_date": "2021-03-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "AAPL",
+"filing_date": "2021-04-09",
+"transaction_date": "2021-03-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2021-04-09",
+"transaction_date": "2021-03-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "PYPL",
+"filing_date": "2021-02-17",
+"transaction_date": "2021-01-28",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "AAPL",
+"filing_date": "2021-02-17",
+"transaction_date": "2021-01-15",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "PYPL",
+"filing_date": "2020-11-17",
+"transaction_date": "2020-11-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "AAPL",
+"filing_date": "2020-11-17",
+"transaction_date": "2020-10-30",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "PYPL",
+"filing_date": "2020-11-17",
+"transaction_date": "2020-10-30",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "PYPL",
+"filing_date": "2020-11-17",
+"transaction_date": "2020-10-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "META",
+"filing_date": "2020-06-03",
+"transaction_date": "2020-05-22",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "CRWD",
+"filing_date": "2020-01-31",
+"transaction_date": "2020-01-24",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2020-10-30",
+"transaction_date": "2020-01-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2020-01-31",
+"transaction_date": "2020-01-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "CRWD",
+"filing_date": "2019-12-23",
+"transaction_date": "2019-12-11",
 "amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "META",
+"filing_date": "2019-12-02",
+"transaction_date": "2019-11-20",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "CRWD",
+"filing_date": "2019-10-21",
+"transaction_date": "2019-10-18",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "NFLX",
+"filing_date": "2019-10-21",
+"transaction_date": "2019-10-09",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2019-10-09",
+"transaction_date": "2019-09-27",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "NFLX",
+"filing_date": "2019-10-09",
+"transaction_date": "2019-09-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "NFLX",
+"filing_date": "2019-09-26",
+"transaction_date": "2019-09-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "ORCL",
+"filing_date": "2019-09-26",
+"transaction_date": "2019-09-10",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "AMZN",
+"filing_date": "2019-09-26",
+"transaction_date": "2019-09-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "TSLA",
+"filing_date": "2019-08-07",
+"transaction_date": "2019-07-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "META",
+"filing_date": "2019-08-13",
+"transaction_date": "2019-07-12",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "AMZN",
+"filing_date": "2019-09-05",
+"transaction_date": "2019-07-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "NVDA",
+"filing_date": "2019-09-05",
+"transaction_date": "2019-07-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "ORCL",
+"filing_date": "2019-09-05",
+"transaction_date": "2019-07-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "META",
+"filing_date": "2019-05-10",
+"transaction_date": "2019-05-08",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "TSLA",
+"filing_date": "2019-04-29",
+"transaction_date": "2019-04-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "TSLA",
+"filing_date": "2019-03-29",
+"transaction_date": "2019-03-22",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "TSLA",
+"filing_date": "2019-03-29",
+"transaction_date": "2019-03-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "TSLA",
+"filing_date": "2019-03-29",
+"transaction_date": "2019-03-15",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2019-03-29",
+"transaction_date": "2019-03-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2019-03-29",
+"transaction_date": "2019-03-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2019-03-05",
+"transaction_date": "2019-02-25",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2019-03-29",
+"transaction_date": "2018-12-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2019-03-29",
+"transaction_date": "2018-12-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2019-03-29",
+"transaction_date": "2018-12-17",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2019-03-29",
+"transaction_date": "2018-12-06",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2019-03-29",
+"transaction_date": "2018-11-09",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2019-03-29",
+"transaction_date": "2018-11-01",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2019-03-29",
+"transaction_date": "2018-10-29",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "NFLX",
+"filing_date": "2018-11-01",
+"transaction_date": "2018-10-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "NFLX",
+"filing_date": "2019-03-29",
+"transaction_date": "2018-10-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "TSLA",
+"filing_date": "2019-03-29",
+"transaction_date": "2018-10-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "TSLA",
+"filing_date": "2018-10-26",
+"transaction_date": "2018-10-09",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "TSLA",
+"filing_date": "2018-10-16",
+"transaction_date": "2018-10-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "TSLA",
+"filing_date": "2018-10-16",
+"transaction_date": "2018-10-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "TSLA",
+"filing_date": "2018-10-16",
+"transaction_date": "2018-10-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "TSLA",
+"filing_date": "2018-10-16",
+"transaction_date": "2018-10-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "TSLA",
+"filing_date": "2018-10-16",
+"transaction_date": "2018-09-28",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "NFLX",
+"filing_date": "2018-08-17",
+"transaction_date": "2018-07-19",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2018-05-09",
+"transaction_date": "2018-04-25",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2018-04-04",
+"transaction_date": "2018-03-27",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2015-10-30",
+"transaction_date": "2015-10-14",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_jamesr_langevin",
+"filer": "James R. Langevin",
+"ticker": "BABA",
+"filing_date": "2016-05-11",
+"transaction_date": "2015-08-11",
+"amount_label": "$1,001 - $15,000"
 },
 {
 "filer_id": "house_nancy_pelosi",
