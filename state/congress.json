@@ -1,6 +1,6 @@
 {
-"date": "2026-06-29",
-"asof": "2026-06-29T15:14:49",
+"date": "2026-06-30",
+"asof": "2026-06-30T15:21:23",
 "source": "kadoa-org/congress-trading-monitor (public-domain STOCK Act filings)",
 "leaders": [
 {
@@ -9,7 +9,7 @@
 "party": "R",
 "chamber": "house",
 "scored_buys": 44,
-"weighted_excess": 813.6911353921816
+"weighted_excess": 862.0486925728756
 },
 {
 "id": "house_thomasj_rooney",
@@ -17,7 +17,7 @@
 "party": "R",
 "chamber": "house",
 "scored_buys": 139,
-"weighted_excess": 552.3458843672456
+"weighted_excess": 581.0089648921117
 },
 {
 "id": "senate_sheldon_whitehouse",
@@ -25,7 +25,7 @@
 "party": "D",
 "chamber": "senate",
 "scored_buys": 407,
-"weighted_excess": 475.47022382634515
+"weighted_excess": 488.6868513616128
 },
 {
 "id": "house_barbarajhonorable_comstock",
@@ -33,7 +33,7 @@
 "party": "R",
 "chamber": "house",
 "scored_buys": 31,
-"weighted_excess": 259.6261168326581
+"weighted_excess": 270.27961006351546
 },
 {
 "id": "senate_ronl_wyden",
@@ -41,7 +41,7 @@
 "party": "D",
 "chamber": "senate",
 "scored_buys": 170,
-"weighted_excess": 240.11625111441424
+"weighted_excess": 246.89733443949322
 },
 {
 "id": "house_rubn_hinojosa",
@@ -49,7 +49,7 @@
 "party": "D",
 "chamber": "house",
 "scored_buys": 23,
-"weighted_excess": 196.77260694837815
+"weighted_excess": 193.06226933441943
 },
 {
 "id": "house_thomas_suozzi",
@@ -57,7 +57,7 @@
 "party": "D",
 "chamber": "house",
 "scored_buys": 272,
-"weighted_excess": 154.38365711243546
+"weighted_excess": 163.05091488954088
 },
 {
 "id": "senate_johnf_reed",
@@ -65,7 +65,7 @@
 "party": "D",
 "chamber": "senate",
 "scored_buys": 58,
-"weighted_excess": 117.05644195133743
+"weighted_excess": 126.05633842376582
 },
 {
 "id": "house_jamesr_langevin",
@@ -73,15 +73,15 @@
 "party": "D",
 "chamber": "house",
 "scored_buys": 181,
-"weighted_excess": 92.74430941073349
+"weighted_excess": 102.2447408142826
 },
 {
-"id": "house_nancy_pelosi",
-"name": "Nancy Pelosi",
-"party": "D",
+"id": "house_austin_scott",
+"name": "Austin Scott",
+"party": "R",
 "chamber": "house",
-"scored_buys": 105,
-"weighted_excess": 91.86400233366427
+"scored_buys": 40,
+"weighted_excess": 101.62905032805169
 }
 ],
 "trades": [
@@ -4486,692 +4486,44 @@
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "INTC",
-"filing_date": "2026-06-23",
-"transaction_date": "2026-05-29",
-"amount_label": "$1,000,001 - $5,000,000"
+"filer_id": "house_austin_scott",
+"filer": "Austin Scott",
+"ticker": "F",
+"filing_date": "2020-12-30",
+"transaction_date": "2020-12-23",
+"amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "UBER",
-"filing_date": "2026-06-23",
-"transaction_date": "2026-05-29",
-"amount_label": "$500,001 - $1,000,000"
+"filer_id": "house_austin_scott",
+"filer": "Austin Scott",
+"ticker": "GE",
+"filing_date": "2020-12-30",
+"transaction_date": "2020-12-23",
+"amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "GOOGL",
-"filing_date": "2026-01-23",
-"transaction_date": "2026-01-16",
-"amount_label": "$500,001 - $1,000,000"
+"filer_id": "house_austin_scott",
+"filer": "Austin Scott",
+"ticker": "GE",
+"filing_date": "2020-09-20",
+"transaction_date": "2020-08-24",
+"amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AMZN",
-"filing_date": "2026-01-23",
-"transaction_date": "2026-01-16",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NVDA",
-"filing_date": "2026-01-23",
-"transaction_date": "2026-01-16",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "GOOGL",
-"filing_date": "2026-01-23",
-"transaction_date": "2025-12-30",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AMZN",
-"filing_date": "2026-01-23",
-"transaction_date": "2025-12-30",
-"amount_label": "$100,001 - $250,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2026-01-23",
-"transaction_date": "2025-12-30",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NVDA",
-"filing_date": "2026-01-23",
-"transaction_date": "2025-12-30",
-"amount_label": "$100,001 - $250,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AVGO",
-"filing_date": "2025-07-09",
-"transaction_date": "2025-06-20",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "GOOGL",
-"filing_date": "2025-01-17",
-"transaction_date": "2025-01-14",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AMZN",
-"filing_date": "2025-01-17",
-"transaction_date": "2025-01-14",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NVDA",
-"filing_date": "2025-01-17",
-"transaction_date": "2025-01-14",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NVDA",
-"filing_date": "2025-01-17",
-"transaction_date": "2024-12-20",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NVDA",
-"filing_date": "2024-07-30",
-"transaction_date": "2024-07-26",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NVDA",
-"filing_date": "2024-07-02",
-"transaction_date": "2024-06-26",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AVGO",
-"filing_date": "2024-07-02",
-"transaction_date": "2024-06-24",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NVDA",
-"filing_date": "2023-12-21",
-"transaction_date": "2023-11-22",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2023-06-22",
-"transaction_date": "2023-06-15",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
+"filer_id": "house_austin_scott",
+"filer": "Austin Scott",
 "ticker": "MSFT",
-"filing_date": "2023-06-22",
-"transaction_date": "2023-06-15",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2023-04-06",
-"transaction_date": "2023-03-17",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NVDA",
-"filing_date": "2022-07-14",
-"transaction_date": "2022-06-17",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2022-06-03",
-"transaction_date": "2022-05-24",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "MSFT",
-"filing_date": "2022-06-03",
-"transaction_date": "2022-05-24",
-"amount_label": "$50,001 - $100,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "MSFT",
-"filing_date": "2022-06-03",
-"transaction_date": "2022-05-24",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2022-06-03",
-"transaction_date": "2022-05-13",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "TSLA",
-"filing_date": "2022-03-21",
-"transaction_date": "2022-03-17",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AXP",
-"filing_date": "2022-02-28",
-"transaction_date": "2022-01-21",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2022-02-28",
-"transaction_date": "2022-01-21",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "PYPL",
-"filing_date": "2022-02-28",
-"transaction_date": "2022-01-21",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "DIS",
-"filing_date": "2022-02-28",
-"transaction_date": "2022-01-21",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AXP",
-"filing_date": "2022-03-04",
-"transaction_date": "2022-01-21",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2022-03-04",
-"transaction_date": "2022-01-21",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "PYPL",
-"filing_date": "2022-03-04",
-"transaction_date": "2022-01-21",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "DIS",
-"filing_date": "2022-03-04",
-"transaction_date": "2022-01-21",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "MU",
-"filing_date": "2021-12-29",
-"transaction_date": "2021-12-21",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "RBLX",
-"filing_date": "2021-12-29",
-"transaction_date": "2021-12-20",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "CRM",
-"filing_date": "2021-12-29",
-"transaction_date": "2021-12-20",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "CRM",
-"filing_date": "2021-12-29",
-"transaction_date": "2021-12-20",
-"amount_label": "$100,001 - $250,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "GOOGL",
-"filing_date": "2021-12-29",
-"transaction_date": "2021-12-17",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "DIS",
-"filing_date": "2021-12-29",
-"transaction_date": "2021-12-17",
-"amount_label": "$100,001 - $250,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NVDA",
-"filing_date": "2021-08-20",
-"transaction_date": "2021-07-23",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NVDA",
-"filing_date": "2021-08-20",
-"transaction_date": "2021-07-23",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "GOOGL",
-"filing_date": "2021-07-02",
-"transaction_date": "2021-06-18",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NVDA",
-"filing_date": "2021-07-02",
-"transaction_date": "2021-06-03",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AMZN",
-"filing_date": "2021-07-02",
-"transaction_date": "2021-05-21",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2021-07-02",
-"transaction_date": "2021-05-21",
-"amount_label": "$100,001 - $250,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "MSFT",
-"filing_date": "2021-04-09",
-"transaction_date": "2021-03-19",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2021-01-21",
-"transaction_date": "2020-12-22",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "TSLA",
-"filing_date": "2021-01-21",
-"transaction_date": "2020-12-22",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "DIS",
-"filing_date": "2021-01-21",
-"transaction_date": "2020-12-22",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "CRWD",
-"filing_date": "2020-10-04",
-"transaction_date": "2020-09-03",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AXP",
-"filing_date": "2020-07-20",
-"transaction_date": "2020-06-24",
-"amount_label": "$100,001 - $250,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "PYPL",
-"filing_date": "2020-07-20",
-"transaction_date": "2020-06-24",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NFLX",
-"filing_date": "2020-07-20",
-"transaction_date": "2020-06-18",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "CRM",
-"filing_date": "2020-07-20",
-"transaction_date": "2020-06-18",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "PYPL",
-"filing_date": "2020-07-20",
-"transaction_date": "2020-06-12",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "MSFT",
-"filing_date": "2020-04-01",
-"transaction_date": "2020-02-28",
-"amount_label": "$100,001 - $250,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "GOOGL",
-"filing_date": "2020-04-01",
-"transaction_date": "2020-02-27",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "MSFT",
-"filing_date": "2020-04-01",
-"transaction_date": "2020-02-21",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "MSFT",
-"filing_date": "2020-04-01",
-"transaction_date": "2020-02-20",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AMZN",
-"filing_date": "2020-02-11",
-"transaction_date": "2020-01-16",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AMZN",
-"filing_date": "2020-02-11",
-"transaction_date": "2020-01-16",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "META",
-"filing_date": "2020-02-11",
-"transaction_date": "2020-01-16",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AMZN",
-"filing_date": "2019-08-13",
-"transaction_date": "2019-07-22",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NFLX",
-"filing_date": "2019-08-13",
-"transaction_date": "2019-07-22",
-"amount_label": "$100,001 - $250,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "NFLX",
-"filing_date": "2019-08-13",
-"transaction_date": "2019-07-05",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "CRM",
-"filing_date": "2019-07-11",
-"transaction_date": "2019-06-18",
-"amount_label": "$100,001 - $250,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "CRM",
-"filing_date": "2019-07-11",
-"transaction_date": "2019-06-14",
-"amount_label": "$50,001 - $100,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AMZN",
-"filing_date": "2018-11-08",
-"transaction_date": "2018-10-12",
-"amount_label": "$1,000,001 - $5,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "META",
-"filing_date": "2018-11-08",
-"transaction_date": "2018-10-09",
-"amount_label": "$100,001 - $250,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2018-10-25",
-"transaction_date": "2018-09-20",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2018-10-25",
-"transaction_date": "2018-09-11",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AMZN",
-"filing_date": "2018-09-06",
-"transaction_date": "2018-07-27",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "META",
-"filing_date": "2018-09-06",
-"transaction_date": "2018-07-27",
-"amount_label": "$50,001 - $100,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2017-07-20",
-"transaction_date": "2017-06-15",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2017-02-14",
-"transaction_date": "2017-01-20",
+"filing_date": "2014-08-29",
+"transaction_date": "2013-09-15",
 "amount_label": "$15,001 - $50,000"
 },
 {
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2017-02-14",
-"transaction_date": "2017-01-19",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2016-05-24",
-"transaction_date": "2016-05-17",
-"amount_label": "$100,001 - $250,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "DIS",
-"filing_date": "2016-02-17",
-"transaction_date": "2016-01-15",
-"amount_label": "$500,001 - $1,000,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AAPL",
-"filing_date": "2016-02-17",
-"transaction_date": "2016-01-13",
-"amount_label": "$250,001 - $500,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "DIS",
-"filing_date": "2015-07-07",
-"transaction_date": "2014-12-10",
-"amount_label": "$50,001 - $100,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "V",
-"filing_date": "2015-01-12",
-"transaction_date": "2014-12-10",
-"amount_label": "$50,001 - $100,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "DIS",
-"filing_date": "2015-07-07",
-"transaction_date": "2014-11-28",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "DIS",
-"filing_date": "2014-12-17",
-"transaction_date": "2014-11-28",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_nancy_pelosi",
-"filer": "Nancy Pelosi",
-"ticker": "AVGO",
-"filing_date": "2014-11-05",
-"transaction_date": "2014-10-24",
-"amount_label": "$100,001 - $250,000"
+"filer_id": "house_austin_scott",
+"filer": "Austin Scott",
+"ticker": "MSFT",
+"filing_date": "2014-08-29",
+"transaction_date": "2013-07-19",
+"amount_label": "$15,001 - $50,000"
 }
 ]
 }
