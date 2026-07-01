@@ -26,6 +26,10 @@ function Sparkline({ curve, start, liveValue }) {
 // so far and market-closed shows the last completed session's move — mirroring the equity chart's
 // live/day split. Null until there are two points. `m` is the competitor's liveMark.
 function dayChange(c, m) {
+  // The "You" line publishes no holdings, so the frontend can't live-price it — its only number
+  // would be a stale last-tick move, which misreads as "today." Leave it blank; the live-markable
+  // competitors still show a real today gain/loss.
+  if (c.kind === "me") return null;
   const cv = c.equity_curve;
   if (!cv || cv.length < 2) return null;
   const todayET = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
