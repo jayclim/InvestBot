@@ -64,8 +64,7 @@ MIROFISH_MAX_NAMES = 5   # MiroFish holds its top-N rank-weighted consensus name
 # disclosures (no API key, no Cloudflare). We rank by the mirror's own per-filer excess return,
 # then mirror the top filers' disclosed PURCHASES — on the DISCLOSURE date, never backfilled to the
 # (up-to-45-days-earlier) transaction date, which would be look-ahead. See tools/refresh_congress.py.
-CONGRESS_TOP_FILERS = 10        # follow the N best-performing members of Congress (by weighted excess)
-CONGRESS_MIN_SCORED_BUYS = 10   # ignore filers with too few graded buys (luck filter)
+CONGRESS_MIN_SCORED_BUYS = 10   # follow every congress filer clearing this graded-buy floor (luck filter); no perf ranking
 CONGRESS_LOOKBACK_DAYS = 120    # mirror a name while a followed filer's disclosure is this fresh
 CONGRESS_MAX_NAMES = 6          # hold at most this many mirrored names
 
@@ -86,4 +85,17 @@ AGENT_RISK = {
 # --- Go-live (NOT used during paper testing) ---
 # Only the agentic-allowed cash account accepts agent orders (no options). Keep the real
 # account number OUT of source control: set AGENTIC_ACCOUNT in .env (gitignored).
-AGENTIC_ACCOUNT = os.environ.get("AGENTIC_ACCOUNT", "")
+def _env(name, default=""):  # os.environ first, then .env (no dotenv dependency)
+    v = os.environ.get(name)
+    if v:
+        return v.strip()
+    env = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env")
+    if os.path.exists(env):
+        for line in open(env):
+            line = line.strip()
+            if line.startswith(name + "="):
+                return line.split("=", 1)[1].strip().strip('"').strip("'")
+    return default
+
+
+AGENTIC_ACCOUNT = _env("AGENTIC_ACCOUNT")

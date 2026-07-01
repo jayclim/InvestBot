@@ -1,9 +1,11 @@
 """Pull congressional trades from a free, daily-updated GitHub mirror — no API key, no Cloudflare.
 
 kadoa-org/congress-trading-monitor parses public STOCK Act disclosures (House Clerk + Senate eFD)
-and commits them as static JSON, refreshed daily by GitHub Actions. We read its own per-filer
-performance ranking (returns.json) to pick the MOST SUCCESSFUL members of Congress, then collect
-those filers' disclosed PURCHASES into state/congress.json. The congress_mirror competitor
+and commits them as static JSON, refreshed daily by GitHub Actions. We follow EVERY congress filer
+with a real track record (returns.json, `scored_buys` floor) and collect their disclosed PURCHASES
+into state/congress.json — no performance ranking, so which names get bought is decided by consensus
+(how many distinct members disclosed each) rather than a fragile top-N filer cut that whipsaws the
+whole book when one member crosses the boundary. The congress_mirror competitor
 (bot.paper.congress_targets) trades on the DISCLOSURE date only — never backfilled to the
 (up-to-45-days-earlier) transaction date, which would be the look-ahead cheat.
 
@@ -35,24 +37,24 @@ def _is_buy(t):
     return str(t.get("transaction_type", "")).lower().startswith("purchase")
 
 
-def refresh_congress(path=PATH, today=None, top=None, min_buys=None):
+def refresh_congress(path=PATH, today=None, min_buys=None):
     """Date-cached: one network pull per calendar day, instant reuse after. Returns the cache dict
-    {date, leaders, trades}. On any network error, falls back to the existing cache (or an empty
-    stub with `error`) so a tick never aborts on the feed being down."""
+    {date, followed, leaders, trades}. We follow EVERY congress filer clearing a minimal track-record
+    floor (scored_buys >= min_buys) — no performance ranking — and collect their in-universe disclosed
+    buys; congress_targets then weights names by how many distinct members bought each. On any network
+    error, falls back to the existing cache (or an empty stub with `error`) so a tick never aborts."""
     today = today or _dt.date.today().isoformat()
-    top = top or cfg.CONGRESS_TOP_FILERS
     min_buys = min_buys or cfg.CONGRESS_MIN_SCORED_BUYS
     if os.path.exists(path):
         cached = json.load(open(path))
         if cached.get("date") == today and cached.get("trades") is not None:
             return cached
     try:
-        ranked = [f for f in _get("returns.json")
+        filers = [f for f in _get("returns.json")
                   if f.get("branch") == "congress" and (f.get("scored_buys") or 0) >= min_buys]
-        ranked.sort(key=lambda f: f.get("weighted_excess") or f.get("avg_excess") or 0, reverse=True)
-        leaders = ranked[:top]
         trades = []
-        for f in leaders:
+        contrib = {}  # in-universe disclosed buys per filer name (display only)
+        for f in filers:
             try:
                 fj = _get(f"filer/{f['id']}.json")
             except Exception:
@@ -63,11 +65,17 @@ def refresh_congress(path=PATH, today=None, top=None, min_buys=None):
                                    "ticker": t["ticker"], "filing_date": t["filing_date"],
                                    "transaction_date": t.get("transaction_date"),
                                    "amount_label": t.get("amount_range_label")})
+                    name = f.get("full_name")
+                    contrib[name] = contrib.get(name, 0) + 1
+        # leaders = the members actually disclosing in-universe buys, most-active first (display only)
+        active = sorted((f for f in filers if contrib.get(f.get("full_name"))),
+                        key=lambda f: contrib[f.get("full_name")], reverse=True)
         out = {"date": today, "asof": _dt.datetime.now().isoformat(timespec="seconds"),
                "source": "kadoa-org/congress-trading-monitor (public-domain STOCK Act filings)",
+               "followed": len(filers),
                "leaders": [{"id": f["id"], "name": f.get("full_name"), "party": f.get("party"),
                             "chamber": f.get("chamber"), "scored_buys": f.get("scored_buys"),
-                            "weighted_excess": f.get("weighted_excess")} for f in leaders],
+                            "in_universe_buys": contrib[f.get("full_name")]} for f in active],
                "trades": trades}
         os.makedirs(os.path.dirname(path), exist_ok=True)
         json.dump(out, open(path, "w"), indent=0)
@@ -75,7 +83,7 @@ def refresh_congress(path=PATH, today=None, top=None, min_buys=None):
     except Exception as e:
         if os.path.exists(path):
             return json.load(open(path))
-        return {"date": today, "leaders": [], "trades": [], "error": str(e)}
+        return {"date": today, "followed": 0, "leaders": [], "trades": [], "error": str(e)}
 
 
 def load_congress(path=PATH):
@@ -87,7 +95,8 @@ if __name__ == "__main__":
     if c.get("error"):
         print(f"congress: fetch failed ({c['error']}) and no cache to fall back on")
     print(f"congress: {len(c.get('trades', []))} in-universe disclosed buys from "
-          f"{len(c.get('leaders', []))} top filers (cached {c.get('date')})")
-    for L in c.get("leaders", []):
+          f"{len(c.get('leaders', []))} active members (following {c.get('followed', 0)} filers, "
+          f"cached {c.get('date')})")
+    for L in c.get("leaders", [])[:15]:
         print(f"  {(L.get('name') or '?'):26s} {(L.get('party') or '?')}/{(L.get('chamber') or '?'):6s} "
-              f"buys={L.get('scored_buys')}  wexcess={L.get('weighted_excess')}")
+              f"in-universe buys={L.get('in_universe_buys')}")

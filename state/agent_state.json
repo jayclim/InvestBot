@@ -1959,6 +1959,66 @@
 "qty": 0.656822282540564,
 "reason": "congress: exit",
 "placed_session": "2026-06-30"
+},
+{
+"symbol": "ADBE",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 3.369716679225959,
+"qty": null,
+"reason": "congress: buy 3%",
+"placed_session": "2026-06-30"
+},
+{
+"symbol": "TSM",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 3.369716679225959,
+"qty": null,
+"reason": "congress: buy 3%",
+"placed_session": "2026-06-30"
+},
+{
+"symbol": "GOOGL",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 4.212145849032449,
+"qty": null,
+"reason": "congress: buy 4%",
+"placed_session": "2026-06-30"
+},
+{
+"symbol": "HD",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 4.212145849032449,
+"qty": null,
+"reason": "congress: buy 4%",
+"placed_session": "2026-06-30"
+},
+{
+"symbol": "UNH",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 5.054575018838939,
+"qty": null,
+"reason": "congress: buy 5%",
+"placed_session": "2026-06-30"
+},
+{
+"symbol": "MSFT",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 6.739433358451918,
+"qty": null,
+"reason": "congress: buy 7%",
+"placed_session": "2026-06-30"
 }
 ]
 }

@@ -125,7 +125,7 @@ def step_congress(ctx):
         print(f"  congress: feed unavailable, no cache ({c['error']}) — book left as-is")
     tg = paper.congress_targets(c, ctx["today"])
     shown = ", ".join(f"{s}({int(w*100)}%)" for s, w in sorted(tg.items(), key=lambda kv: -kv[1])) or "flat"
-    print(f"  congress: following {len(c.get('leaders', []))} top filers -> {shown}")
+    print(f"  congress: {len(c.get('leaders', []))} active members / {c.get('followed', 0)} filers -> {shown}")
     _decide("congress_mirror", tg, ctx, "congress")
 
 
