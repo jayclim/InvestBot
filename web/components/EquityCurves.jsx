@@ -128,16 +128,18 @@ export default function EquityCurves({ data }) {
             }}
           >
             <div className="rt-d">{(series[0].equity_curve[Math.min(hover.idx, series[0].equity_curve.length - 1)] || ["", 0])[0]}</div>
-            {series.map((c, i) => {
-              const p = c.equity_curve[Math.min(hover.idx, c.equity_curve.length - 1)];
-              const r = p[1] / start - 1;
-              return (
-                <div className="rt-r" key={i}>
-                  <span style={{ color: methodColor(c.name, data.competitors) }}>{c.name.split("_")[0]}</span>
-                  <span>{money(p[1])} {pct(r)}</span>
-                </div>
-              );
-            })}
+            {[...series]
+              .map((c) => ({ c, p: c.equity_curve[Math.min(hover.idx, c.equity_curve.length - 1)] }))
+              .sort((a, b) => b.p[1] - a.p[1])  // rank by THIS day's value, not the current standings
+              .map(({ c, p }) => {
+                const r = p[1] / start - 1;
+                return (
+                  <div className="rt-r" key={c.name}>
+                    <span style={{ color: methodColor(c.name, data.competitors) }}>{c.name.split("_")[0]}</span>
+                    <span>{money(p[1])} {pct(r)}</span>
+                  </div>
+                );
+              })}
             {bench && (() => {
               const p = bench.equity_curve[Math.min(hover.idx, bench.equity_curve.length - 1)];
               const r = p[1] / start - 1;
