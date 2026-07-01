@@ -1,0 +1,6 @@
+{
+  "_comment": "Capital allocation for the REAL Robinhood Agentic book (run-robin). Weights are the fraction of the account managed by each algorithm/agent; they need not sum to 1 (the remainder stays cash). Only names with weight > 0 are run. Edit here or ask Claude to change it.",
+  "alloc": {
+    "momentum_breakout": 1.0
+  }
+}

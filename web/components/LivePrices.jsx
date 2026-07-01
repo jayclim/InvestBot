@@ -22,7 +22,7 @@ export default function LivePrices({ data }) {
         <span className="n live-n">●</span>
         <h2>Live prices</h2>
         <InfoButton title="Live prices">
-          Real-time-ish quotes from Finnhub via the <span className="mono">/api/quotes</span> serverless function, polled every 30 seconds. Shows everything the bots hold or are voting on. A public market feed — separate from your Robinhood account.
+          Near-real-time quotes from Finnhub via the <span className="mono">/api/quotes</span> serverless function, polled every 30 seconds. Shows everything the bots hold or are voting on. A public market feed — separate from your Robinhood account.
         </InfoButton>
         <span className="hint">{asOf}</span>
       </div>

@@ -22,6 +22,7 @@ with full click-through provenance, and the equity chart overlays the **S&P 500*
 | `mirofish_real` | social swarm | Persona agents *with memory* that interact over rounds (a social simulation — the opposite of the independent vote); the book follows their rank-weighted consensus. | OpenRouter (more) |
 | `congress_mirror` | politician mirror | Ranks members of Congress by the excess return of their disclosed trades (a free GitHub mirror of public STOCK Act filings), then buys what the top performers disclosed purchasing — on the **disclosure date**, which by law lags their actual trade by up to ~45 days. | free |
 | **S&P 500** | benchmark | SPY bought all-in on day one and held — the market baseline. Drawn on the chart but never traded by the engine. | free |
+| **You** | real account | The user's **real** Robinhood portfolio, rebased to the shared origin so it's comparable. Deposits/withdrawals are stripped via a time-weighted return, so transfers in/out aren't read as P&L. **Performance only** — a non-clickable line publishing the normalized curve + return/max-DD + a trade *count*, never the holdings or trades. Real $ stays in a gitignored file. | free |
 
 ## Run it
 
@@ -45,8 +46,10 @@ The **`web/`** app is the dashboard — a **Next.js** app (deployable to Vercel)
 bake-off state (`web/public/state.json`), **live-polls real prices** (`/api/quotes`, Finnhub), pulls
 **headlines** (`/api/news`), and lets you **click any ticker** for its price chart with each method's
 buy/sell markers. The **equity curves** overlay the S&P 500 as a dashed benchmark; the **decision
-trail** is colour-coded by method with per-method filtering. Each competitor has a holdings table,
-and a **Stock pool** section lists the universe with full company names. See
+trail** is colour-coded by method with per-method filtering. Orders placed outside market hours
+**queue** and fill at the next open — those resting orders show in the decision trail and each
+competitor's popup until they fill. Each competitor has a holdings table, and a **Stock pool**
+section lists the universe with full company names. See
 [`web/README.md`](web/README.md). (`build_dashboard.py` also publishes `web/public/history.json`
 for those charts and `web/public/news.json`, the daily headline cache.)
 

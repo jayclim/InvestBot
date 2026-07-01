@@ -73,6 +73,8 @@ section{margin-top:44px}
 .tag.congress{background:rgba(122,63,194,.15);color:#5e2ca0}
 .tag.mirofish{background:rgba(181,23,158,.13);color:#9d167f}
 .tag.me{background:rgba(224,161,0,.16);color:#a87900}
+.tag.live{background:rgba(0,166,97,.15);color:#00794a}
+.livenote{background:rgba(0,166,97,.08);border-left:3px solid #00A661;padding:8px 11px;border-radius:3px;margin:10px 0}
 .num{font-family:"JetBrains Mono",monospace;text-align:right;font-variant-numeric:tabular-nums}
 .c-day{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;line-height:1.16}
 .c-day .d-sub{font-size:.72rem;opacity:.7}

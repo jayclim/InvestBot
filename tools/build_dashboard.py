@@ -51,7 +51,7 @@ AGENT_RULES = {
     "deep_research_analyst": "Holds the analyst's target weights; rebalanced each tick from a fresh research report (web + Robinhood data).",
     "llm_voters": "Allocates across the swarm's top vote-getters (weight ∝ vote share, capped at " + str(int(cfg.AGENT_MAX_WEIGHT*100)) + "%); rebalanced each tick.",
     "mirofish_real": "Real-MiroFish: persona agents with memory interact over rounds, each ranking its best ideas; the panel's rank-weighted consensus (top " + str(cfg.MIROFISH_MAX_NAMES) + " names, weight ∝ Borda points) rebalanced each tick.",
-    "congress_mirror": "Mirrors the most successful members of Congress: ranks filers by disclosed-trade excess return (kadoa STOCK Act mirror), then buys the names the top " + str(cfg.CONGRESS_TOP_FILERS) + " disclosed purchasing within " + str(cfg.CONGRESS_LOOKBACK_DAYS) + " days, weighted by how many bought each. Traded on the disclosure date — weeks after their actual fill.",
+    "congress_mirror": "Mirrors members of Congress from the kadoa STOCK Act disclosure mirror: follows every filer with a real track record and buys the in-universe names they disclosed purchasing within " + str(cfg.CONGRESS_LOOKBACK_DAYS) + " days, weighting each name by how many distinct members bought it (consensus = conviction). Traded on the disclosure date — weeks after their actual fill.",
 }
 KIND = {"deep_research_analyst": "analyst", "llm_voters": "swarm", "mirofish_real": "mirofish",
         "congress_mirror": "congress"}
@@ -260,6 +260,49 @@ def me_competitor(axis, start):
     }
 
 
+def robin_competitor(axis, start, marks):
+    """The REAL Robinhood Agentic book executing the funded algorithms (state/robin.json),
+    rebased to the shared origin and scaled like the paper competitors. Unlike `You` (the
+    private individual account), this IS the bots' own book, so holdings ARE published — but
+    real $ amounts are scaled to the display notional, never the raw account value. A `note`
+    flags the popup that this is real money. None until at least one run-robin has recorded a
+    point on the axis."""
+    path = os.path.join(ROOT, "state", "robin.json")
+    if not axis or not os.path.exists(path):
+        return None
+    raw = json.load(open(path))
+    eq = sorted(raw.get("equity", []))
+    base = eq[0][1] if eq else 0
+    if not base:
+        return None
+    eqm = {d: v for d, v in eq}
+    curve, last = [], start
+    for d in axis:
+        if d in eqm:
+            last = round(start * eqm[d] / base, 2)
+        curve.append([d, last])
+    final, peak, mdd = curve[-1][1], curve[0][1], 0.0
+    for _, v in curve:
+        peak = max(peak, v)
+        mdd = min(mdd, v / peak - 1)
+    ratio = start / base  # real-$ → display notional; == DISPLAY_SCALE when the account is $100
+    alloc = {a: w for a, w in raw.get("alloc", {}).items() if w}
+    alloc_str = ", ".join(f"{int(w * 100)}% {a}" for a, w in alloc.items()) or "—"
+    return {
+        "name": "Robinhood", "kind": "live",
+        "final": round(final, 2), "return": round(final / start - 1, 4),
+        "max_dd": round(mdd, 4), "trades": int(raw.get("trades", 0)), "win_rate": 0.0,
+        "cash": round(raw.get("cash", 0) * ratio, 2),
+        "rules": f"Real Robinhood Agentic cash account (••••) running the funded algorithms ({alloc_str}) live: each run-robin reruns their signals on the latest bar and trades the real account — buy fresh breakouts, exit on the strategy's sell rule.",
+        "holdings": [{"symbol": h["symbol"], "qty": round(h["qty"] * ratio, 4),
+                      "avg_price": round(h.get("avg_price", 0), 2),
+                      "last": round(marks.get(h["symbol"], h.get("avg_price", 0)), 2)}
+                     for h in raw.get("holdings", [])],
+        "equity_curve": curve, "trade_log": [],
+        "note": f"Real money — the actual Robinhood Agentic account (••••), not paper. Dollar/share figures are scaled ×{round(ratio)} to the ${int(start):,} display notional like the rest of the board (the live account is ~${int(base)}). Allocation: {alloc_str}. Change it in state/robin_alloc.json or just ask.",
+    }
+
+
 def write_history(snap):
     """Publish daily close history per symbol for the click-through stock charts — the bots'
     own snapshot data, so buy/sell markers line up exactly with what they traded on."""
@@ -320,7 +363,10 @@ def main():
     me = me_competitor(axis, cfg.STARTING_CASH * DISPLAY_SCALE)
     if me:
         competitors.append(me)
-    if spy or me:
+    robin = robin_competitor(axis, cfg.STARTING_CASH * DISPLAY_SCALE, marks)
+    if robin:
+        competitors.append(robin)
+    if spy or me or robin:
         competitors.sort(key=lambda c: c["final"], reverse=True)
     benchmark = None  # S&P 500 is now a competitor (buy & hold), not a separate dashed overlay
 

@@ -21,21 +21,33 @@ engine's walk-forward stops; SPY is buy-and-hold (never traded by the engine).
 | `mirofish_real` | mirofish | Persona agents with memory interact over rounds, each ranking its ideas; rebalance toward the panel's rank-weighted (Borda) consensus — top `MIROFISH_MAX_NAMES`. | OpenRouter, costs more (tiered) |
 | `congress_mirror` | congress | Ranks members of Congress by disclosed-trade excess return (free GitHub STOCK Act mirror), buys what the top filers disclosed purchasing in-universe, weighted by consensus; trades on the **disclosure date** (~weeks after their fill). | free (GitHub feed) |
 | S&P 500 | benchmark | SPY all-in day one, buy-and-hold — the market baseline. Synthesized in `build_dashboard.py`; the engine never trades SPY. | free (snapshot) |
-| `You` | me | The user's **real** Robinhood account (Individual), rebased to the shared origin so it's comparable. **Performance only**: a non-clickable line with NO holdings/trade_log published — only the normalized curve + return/max-DD + a trade *count*. Real $ stays in gitignored `state/me.json`. | free (RH MCP) |
+| `Robinhood` | live | The **real** Agentic cash account (••••) running the *funded* algorithms via `run-robin` — each run reruns their signals FRESH on the live account (buy fresh breakouts, exit on the sell rule), with a per-order confirm gate. Real money (~$100); holdings ARE published (it's the bots' own book), scaled to the display notional. Allocation in `state/robin_alloc.json` (now 100% `momentum_breakout`). | real RH orders (Agentic ••••) |
+| `You` | me | The user's **real** Robinhood account (Individual), rebased to the shared origin so it's comparable. External cash flows (deposits/withdrawals) are stripped via a **time-weighted return** so transfers in/out aren't read as P&L — fair against the always-fully-invested algos. **Performance only**: a non-clickable line with NO holdings/trade_log published — only the normalized curve + return/max-DD + a trade *count*. Real $ stays in gitignored `state/me.json`. | free (RH MCP) |
 
 ## Golden rules
-- **Paper money only. Never place a real Robinhood order.** `bot/broker.py: RobinhoodBroker` is an
-  intentional stub. `run_agents.py` / `tick.py` / `build_dashboard.py` only touch paper state.
-- **Going live requires ALL of:** a competitor clears a graduation bar (survived a drawdown, tolerable
-  max DD, enough decisions to not be luck) **+** the user funds the Agentic account (••••) **+**
-  explicit user go-ahead to wire `RobinhoodBroker`. Never do this unprompted.
-- The **Agentic cash account ••••** is the only account that accepts agent orders — cash, no
-  options, currently **unfunded ($0)**. Its number is read from `AGENTIC_ACCOUNT` in the gitignored
-  `.env` (`config.AGENTIC_ACCOUNT` defaults to empty) — never hard-code it in source.
+- **Paper by default. The ONLY real-money path is the `run-robin` skill** — it executes the *funded*
+  algorithms (`state/robin_alloc.json`) on the Agentic account via the MCP, with a mandatory
+  **per-order `review_equity_order` → show the user → explicit confirm → `place_equity_order`** gate.
+  Never place a real order outside that confirmed flow. `bot/broker.py: RobinhoodBroker` stays a stub
+  (run-robin uses the MCP directly, not the Python broker); `run_agents.py` / `tick.py` /
+  `build_dashboard.py` only ever touch paper state.
+- **Real orders go to the Agentic cash account •••• ONLY** — cash, no options, **funded (~$100, the
+  user funded it 2026-06-29)**. Number read from `AGENTIC_ACCOUNT` in the gitignored `.env`
+  (`config.AGENTIC_ACCOUNT` defaults to empty) — never hard-code it; if empty, run-robin stops.
+- **The per-order confirmation gate is the standing safeguard while live.** The user authorized
+  run-robin before any strategy cleared a formal graduation bar (survived a drawdown, tolerable max DD,
+  enough decisions to not be luck) — so keep every order confirmed. Removing the gate, auto-running
+  run-robin unattended, or scaling capital up still needs the graduation bar **+** explicit go-ahead.
+  Never weaken the gate or place orders unprompted.
 
 ## Run it
 - Say **"run the agents"** / `/run-agents` → follows `.claude/skills/run-agents/SKILL.md`
-  (refresh data → write analyst report → `run_agents.py` → `tick.py` → rebuild dashboard).
+  (refresh data → write analyst report → `run_agents.py` → `tick.py` → rebuild dashboard). All paper.
+- Say **"run robin"** / `/run-robin` → follows `.claude/skills/run-robin/SKILL.md`: **REAL money** —
+  rebalances the Agentic account toward the blended target weights of the *funded* algos
+  (`state/robin_alloc.json`, currently 100% `momentum_breakout`), reviewing + confirming every order
+  first. Only funded algos run. If run together with run-agents the same session, reuse run-agents'
+  snapshot/analyst/swarm outputs (don't recompute) to save cost. Publishes the `Robinhood` competitor.
 - The analyst step uses the **`financial-analyst`** skill — Anthropic's Claude for Financial Services
   *equity-research* methodology (screen → sector → comps → catalysts → thesis → portfolio) → `state/analyst.json`.
   It screens the universe in **randomized order** (anti-bias) and writes a per-name **`rationale`** map; the site
@@ -74,14 +86,16 @@ engine's walk-forward stops; SPY is buy-and-hold (never traded by the engine).
 - `run.py` (backtest CLI), `tick.py` (rule-strategy forward tick), `run_agents.py` (agents tick).
 - `tools/build_dashboard.py` — publishes `web/public/state.json` + `history.json` from `state/`. `tools/ingest_rh.py` — RH historicals → `data/snapshot.json`.
   `tools/refresh_congress.py` — pulls the `congress_mirror`'s data from a free daily GitHub mirror of STOCK Act disclosures (`kadoa-org/congress-trading-monitor`) → `state/congress.json`. `tools/analyst_memory.py` — the analyst's carry-forward brief (holdings, realized P&L, alpha vs SPY + Sharpe, prior reflection).
-  `tools/record_me.py` — appends the user's real account equity + filled-trade count to the gitignored `state/me.json` (agent pulls them from the RH MCP each tick); `build_dashboard.py` rebases that into the non-clickable `You` competitor, publishing only the normalized curve + return/max-DD + trade count — never the holdings or trades.
+  `tools/robin_plan.py` — reruns the *funded* rule strategies (`state/robin_alloc.json`) FRESH against the real Agentic account's current positions → the orders to place (buy fresh breakouts, exit on the sell rule); a fresh-start flat account often gets zero orders. No orders placed here — the `run-robin` skill reviews + confirms each.
+  `tools/record_robin.py` — appends the real Agentic book (equity, cash, holdings, trade count) to `state/robin.json` after a `run-robin` execution; `build_dashboard.robin_competitor` rebases + scales it into the `Robinhood` competitor (holdings published, real $ never).
+  `tools/record_me.py` — appends the user's real account equity + filled-trade count to the gitignored `state/me.json` (agent pulls them from the RH MCP each tick); pass `--flow NET` on any session you moved money in/out (deposit +, withdrawal −) and it's stored in `me.json`'s `flows` map. `build_dashboard.py` rebases that into the non-clickable `You` competitor via a time-weighted index (`twr_index`, flow-stripped so transfers aren't P&L; cash interest stays in as real return), publishing only the normalized curve + return/max-DD + trade count — never the holdings or trades.
 - `web/` — a **Next.js** (App Router) app for Vercel: dashboard reading `web/public/state.json`, with
   `/api/quotes` (live prices) + `/api/news` (headlines) + `/api/intraday` (pre/after-hours candles, Yahoo)
   serverless routes (Finnhub key from `FINNHUB_API_KEY`), click-any-ticker drill-down charts (`StockModal`,
   reading `web/public/history.json`), a per-competitor holdings table, and a **Stock pool** section listing
   the universe with full company names (`web/lib/names.js`). `build_dashboard.py` publishes `state.json` +
   `history.json`; the GitHub repo is `jayclim/InvestBot`. See `web/README.md`.
-- `state/` — `paper_state.json` (algos fwd), `agent_state.json` (agents fwd), `swarm.json`, `mirofish.json`, `analyst.json`, `congress.json` (daily congress-trade cache), `news.json` (daily headline cache), `live_snapshot.json` (gitignored), `me.json` (gitignored — your real equity + trade count for the `You` line).
+- `state/` — `paper_state.json` (algos fwd), `agent_state.json` (agents fwd), `swarm.json`, `mirofish.json`, `analyst.json`, `congress.json` (daily congress-trade cache), `news.json` (daily headline cache), `live_snapshot.json` (gitignored), `me.json` (gitignored — your real equity + trade count + external-flow map for the `You` line), `robin_alloc.json` (capital allocation across funded algos for the real Agentic book — edit to change), `robin.json` (the real Agentic book the `Robinhood` competitor reads — written by `record_robin.py`).
 - `data/snapshot.json` — daily OHLCV the bots read (includes SPY for the benchmark; `cfg.BENCHMARKS` keeps it untraded).
 
 ## Data & cost

@@ -29,7 +29,7 @@ export default function Page() {
     );
   }
   if (!data) {
-    return <div className="wrap"><p className="pmute" style={{ marginTop: "40px" }}>Loading the bake-off…</p></div>;
+    return <div className="wrap"><p className="pmute" style={{ marginTop: "40px" }}>Loading…</p></div>;
   }
 
   const live = data.live || {};
@@ -47,7 +47,7 @@ export default function Page() {
         <header className="hd">
           <div className="kicker">Paper-trading lab · walk-forward</div>
           <h1>Every competitor starts with <em>{"$" + data.starting_cash.toLocaleString()}</em>.</h1>
-          <p className="sub">Three rule-based strategies, a research analyst, and a voting swarm — each trading the same market on its own. Live prices update on their own; the bake-off advances one tick a day.</p>
+          <p className="sub">Three rule-based strategies, a research analyst, and a voting swarm, each trading the same market independently. Prices update live; the board advances one trading day per tick.</p>
           <div className="meta">
             Live forward test · <b>{data.period.start}</b> → <b>{data.period.end}</b> · {data.period.sessions} session{data.period.sessions === 1 ? "" : "s"}
             {data.backtest_span ? ` · backtest ref ${data.backtest_span}` : ""} · generated {data.generated_at}
@@ -68,7 +68,7 @@ export default function Page() {
 
         <footer>
           <div>Bake-off state regenerated each tick by <span className="mono">tools/build_dashboard.py</span>; live prices via <span className="mono">/api/quotes</span> (Finnhub).</div>
-          <div className="note">Standings are the live forward paper test (young — grows one session per tick), all on fake money. No real orders are placed.</div>
+          <div className="note">Standings are the live forward paper test, extended by one session each tick, all on fake money. No real orders are placed.</div>
         </footer>
       </div>
 

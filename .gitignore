@@ -38,6 +38,7 @@ data/raw/
 # ── Local-only runtime state (masked account info) ───────────────────
 state/live_snapshot.json
 state/me.json
+state/robin.json
 
 # ── OS / editor cruft ────────────────────────────────────────────────
 .DS_Store

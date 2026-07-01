@@ -86,11 +86,11 @@ export function Analyst({ data }) {
             {(ref.worked?.length > 0 || ref.missed?.length > 0) && (
               <div className="lb-cols">
                 {ref.worked?.length > 0 && (
-                  <div><div className="lb-h" style={{ color: "var(--up)" }}>Nailed</div>
+                  <div><div className="lb-h" style={{ color: "var(--up)" }}>Worked</div>
                     <ul>{ref.worked.map((x, i) => <li key={i}>{x}</li>)}</ul></div>
                 )}
                 {ref.missed?.length > 0 && (
-                  <div><div className="lb-h" style={{ color: "var(--down)" }}>Overlooked</div>
+                  <div><div className="lb-h" style={{ color: "var(--down)" }}>Missed</div>
                     <ul>{ref.missed.map((x, i) => <li key={i}>{x}</li>)}</ul></div>
                 )}
               </div>
@@ -260,7 +260,7 @@ export function LiveAccount({ data }) {
         ) : (
           <>
             <p className="pending">{L.note || "Not connected."}</p>
-            <p className="note">This panel is the headline once you trade real money — which strategy/agent placed each order, the thesis, and expected-vs-actual fill.</p>
+            <p className="note">This panel becomes the focus once you trade real money: which strategy/agent placed each order, the thesis, and expected-vs-actual fill.</p>
           </>
         )}
       </div>

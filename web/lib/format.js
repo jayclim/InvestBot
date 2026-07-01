@@ -6,14 +6,16 @@ export const RCOL = ["#2C44CE", "#C77F1A", "#7A3FC2", "#147A52", "#BE4527", "#0E
 export const BENCH_COLOR = "#6B7280"; // S&P 500 benchmark — neutral mid-grey, drawn dashed; lighter than --ink so it doesn't blend into the zero-axis/labels
 export const BENCH_INK = "#9CA3AF";   // ...and a lighter grey for the dark hover tooltip, where mid-grey is faint
 export const ME_COLOR = "#E0A100";    // your real portfolio — gold, its own identity, never collides with the method hues
+export const ROBIN_COLOR = "#00A661"; // the REAL Robinhood Agentic book — green, its own identity (real money executing the funded algos)
 
 // A competitor/agent's colour = its slot in the standings order, so the equity-curve line,
 // the legend, and the decision-trail rows all use one identity per method.
 export const methodColor = (name, competitors) => {
   if (name === "S&P 500") return BENCH_COLOR; // the market baseline — graphite, drawn dashed
   if (name === "You") return ME_COLOR;        // your real portfolio — gold
+  if (name === "Robinhood") return ROBIN_COLOR; // the real Agentic book — green
   // rank among the real competitors only, so the baselines' slots never shift the others' colours
-  const others = (competitors || []).filter((c) => c.name !== "S&P 500" && c.name !== "You");
+  const others = (competitors || []).filter((c) => !["S&P 500", "You", "Robinhood"].includes(c.name));
   const i = others.findIndex((c) => c.name === name);
   return RCOL[(i < 0 ? 0 : i) % RCOL.length];
 };
