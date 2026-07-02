@@ -260,7 +260,7 @@ def me_competitor(axis, start):
     }
 
 
-def robin_competitor(axis, start, marks):
+def robin_competitor(axis, start, marks, mark_date=""):
     """The REAL Robinhood Agentic book executing the funded algorithms (state/robin.json),
     rebased to the shared origin and scaled like the paper competitors. Unlike `You` (the
     private individual account), this IS the bots' own book, so holdings ARE published — but
@@ -294,9 +294,15 @@ def robin_competitor(axis, start, marks):
         "max_dd": round(mdd, 4), "trades": int(raw.get("trades", 0)), "win_rate": 0.0,
         "cash": round(raw.get("cash", 0) * ratio, 2),
         "rules": f"Real Robinhood Agentic cash account (••••) running the funded algorithms ({alloc_str}) live: each run-robin reruns their signals on the latest bar and trades the real account — buy fresh breakouts, exit on the strategy's sell rule.",
+        # A holding filled AFTER the snapshot's last bar must not mark to that older close
+        # (it would price the position before it existed); until a newer bar or a live quote
+        # arrives, its honest mark is the fill price itself.
         "holdings": [{"symbol": h["symbol"], "qty": round(h["qty"] * ratio, 4),
                       "avg_price": round(h.get("avg_price", 0), 2),
-                      "last": round(marks.get(h["symbol"], h.get("avg_price", 0)), 2)}
+                      "filled_at": h.get("filled_at"),
+                      "last": round(h.get("avg_price", 0)
+                                    if h.get("filled_at", "")[:10] > mark_date
+                                    else marks.get(h["symbol"], h.get("avg_price", 0)), 2)}
                      for h in raw.get("holdings", [])],
         "equity_curve": curve, "trade_log": [],
         "note": f"Real money — the actual Robinhood Agentic account (••••), not paper. Dollar/share figures are scaled ×{round(ratio)} to the ${int(start):,} display notional like the rest of the board (the live account is ~${int(base)}). Allocation: {alloc_str}. Change it in state/robin_alloc.json or just ask.",
@@ -363,7 +369,7 @@ def main():
     me = me_competitor(axis, cfg.STARTING_CASH * DISPLAY_SCALE)
     if me:
         competitors.append(me)
-    robin = robin_competitor(axis, cfg.STARTING_CASH * DISPLAY_SCALE, marks)
+    robin = robin_competitor(axis, cfg.STARTING_CASH * DISPLAY_SCALE, marks, dates[-1])
     if robin:
         competitors.append(robin)
     if spy or me or robin:

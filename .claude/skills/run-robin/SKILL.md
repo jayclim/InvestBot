@@ -79,7 +79,11 @@ After the fills (or with no change, if nothing traded), pull the account again a
 ```bash
 python3 tools/record_robin.py <session-date> <equity> <cash> [trade_count] --holdings '<json>'
 ```
-`<json>` = the live positions as `[{"symbol":..,"qty":..,"avg_price":..}]`; `trade_count` = cumulative
+`<json>` = the live positions as `[{"symbol":..,"qty":..,"avg_price":..,"filled_at":..}]` —
+`filled_at` = the fill's `last_transaction_at` (UTC) from the order result, REQUIRED on every
+holding you (re)record: without it the dashboard may mark an intraday fill to an older daily
+close, showing a phantom gain/loss (carry the original `filled_at` forward for unchanged
+holdings); `trade_count` = cumulative
 filled Agentic orders (`get_equity_orders` for that account, `placed_agent: agentic`, count `filled`).
 First record sets the book's origin (the funded amount). `state/robin.json` is committed (the bots'
 book is public — real $ and holdings); the site renders it scaled to the display notional like every

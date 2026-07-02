@@ -19,17 +19,20 @@
     {
       "symbol": "MA",
       "qty": 0.037359,
-      "avg_price": 535.35
+      "avg_price": 535.35,
+      "filled_at": "2026-07-02T16:51:06Z"
     },
     {
       "symbol": "RBLX",
       "qty": 0.368936,
-      "avg_price": 54.21
+      "avg_price": 54.21,
+      "filled_at": "2026-07-02T16:58:49Z"
     },
     {
       "symbol": "V",
       "qty": 0.05571,
-      "avg_price": 359.0
+      "avg_price": 359.0,
+      "filled_at": "2026-07-02T16:58:57Z"
     }
   ],
   "updated": "2026-07-02",

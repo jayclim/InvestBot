@@ -80,7 +80,7 @@ export default function Leaderboard({ data }) {
                   <tr key={i}>
                     <td>{h.symbol}</td>
                     <td className="mono">{shares.toFixed(2)}</td>
-                    <td className="mono">{money(h.avg_price)}</td>
+                    <td className="mono">{money(h.avg_price)}{h.filled_at && <div className="pmute" style={{ fontSize: "11px" }}>{new Date(h.filled_at).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZone: "America/New_York" })} ET</div>}</td>
                     <td className="mono">{money(now)}</td>
                     <td className="mono">{money(value)}</td>
                     <td className={"mono " + cls(pnl)}>{(pnl >= 0 ? "+$" : "−$") + Math.abs(pnl).toFixed(2)} ({pct(r)})</td>

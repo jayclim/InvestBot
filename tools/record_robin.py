@@ -6,7 +6,10 @@ Dedupes equity by date; cash/holdings/trades overwrite (latest snapshot of the b
     python3 tools/record_robin.py <YYYY-MM-DD> <equity> <cash> [trade_count] [--holdings JSON]
     python3 tools/record_robin.py --selfcheck
 
---holdings is a JSON list: '[{"symbol":"NVDA","qty":0.51,"avg_price":193.06}]'. The first
+--holdings is a JSON list: '[{"symbol":"NVDA","qty":0.51,"avg_price":193.06,"filled_at":
+"2026-07-02T16:51:06Z"}]' — filled_at (UTC, from the order's last_transaction_at) is REQUIRED
+for correct marks: the dashboard refuses to price a holding off a daily close older than its
+fill (an intraday buy marked to yesterday's close reads as a phantom gain/loss). The first
 recorded equity is the book's origin (the funded amount); build_dashboard rebases the curve to
 the shared display origin like every other competitor. Unlike me.json (the private individual
 account), this IS the bots' own book, so state/robin.json is committed — real $, holdings and
