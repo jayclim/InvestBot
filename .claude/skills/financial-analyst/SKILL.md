@@ -71,6 +71,16 @@ python3 -c "import random,json;from bot import config as c;u=list(c.UNIVERSE);ra
    bigger cash buffer and fewer/smaller names; high conviction ⇒ lean in. Never write a `confidence`
    that contradicts your sizing (e.g. 0.8 confidence with 60% cash is incoherent).
 
+**Edge = anticipation, not confirmation.** The rule bots already trade the numbers — momentum and
+RSI screens are table stakes, and buying a move *after* the tape confirms it is the pattern that has
+cost this book (the screen ranks yesterday's winners; you fill at tomorrow's open). Your
+differentiator is research: prefer positions that are explicit bets on a **dated upcoming event**
+you expect to resolve differently from what's priced in — positioned *before* the crowd, not after.
+For every anchor position the thesis must name: the event, its date (in tick-days), what consensus
+expects, what you expect instead, and why the market isn't positioned for it. A screen hit with no
+forward event is the rule bots' trade, not yours; use the screen to find *where to look*, not *what
+to buy*.
+
 **Cadence & execution (how your targets actually fill).** Ticks run ~once a day, usually **after market
 close**, and sometimes on weekends — so each tick ≈ one trading session. Calibrate catalyst horizons in
 **tick-days** (an earnings date "in 3 weeks" is ~15 ticks out) and read daily P&L/Sharpe as noisy: grade
@@ -78,8 +88,14 @@ on **alpha vs SPY over the trend**, not a single session. Your targets are not f
 decide on — outside market hours the runner **queues** the orders and fills them at the **next session's
 open** (so there is no same-bar look-ahead). On a **weekend / no-new-session run** nothing has moved:
 don't manufacture a fresh "what happened today" reflection or churn the book — hold targets steady unless
-genuine weekend news changes the thesis. Optionally attach price protection with a `limits: {SYMBOL:
-price}` map (below); absent ⇒ every queued order is market-on-open.
+genuine weekend news changes the thesis. **Default every queued BUY to a limit ~1% above the close
+you decided on** (the `limits: {SYMBOL: price}` map, below): you either fill near the price your
+thesis actually priced, or you skip the chase — an unfilled resting order is simply superseded next
+tick if the thesis still holds. Know what the tool can and can't do: a buy limit stops you paying up
+for an overnight gap-up, but it can NOT protect against a gap-down (it just fills cheaper at the
+open) — the only protection against buying a rout is the anticipation discipline above (don't enter
+names whose move already happened). Exits stay market-on-open: never let a limit trap you in a
+broken position.
 
 ## Write `state/analyst.json`
 Same schema as before, plus a `framework` field marking the methodology. Required keys:
