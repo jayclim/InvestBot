@@ -9,8 +9,8 @@ Dedupes equity by date; cash/holdings/trades overwrite (latest snapshot of the b
 --holdings is a JSON list: '[{"symbol":"NVDA","qty":0.51,"avg_price":193.06}]'. The first
 recorded equity is the book's origin (the funded amount); build_dashboard rebases the curve to
 the shared display origin like every other competitor. Unlike me.json (the private individual
-account), this IS the bots' own book, so holdings ARE published — real $ amounts are scaled to
-the display notional, never the raw account value.
+account), this IS the bots' own book, so state/robin.json is committed — real $, holdings and
+trades are public; the site just renders them scaled to the display notional.
 """
 import json
 import os

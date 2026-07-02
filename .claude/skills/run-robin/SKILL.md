@@ -81,8 +81,9 @@ python3 tools/record_robin.py <session-date> <equity> <cash> [trade_count] --hol
 ```
 `<json>` = the live positions as `[{"symbol":..,"qty":..,"avg_price":..}]`; `trade_count` = cumulative
 filled Agentic orders (`get_equity_orders` for that account, `placed_agent: agentic`, count `filled`).
-First record sets the book's origin (the funded amount). Real $ stays in `state/robin.json`; only the
-scaled curve/holdings publish.
+First record sets the book's origin (the funded amount). `state/robin.json` is committed (the bots'
+book is public — real $ and holdings); the site renders it scaled to the display notional like every
+other competitor.
 
 ## 7. Rebuild the dashboard
 ```bash
