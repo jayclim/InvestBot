@@ -55,6 +55,17 @@ export default function Leaderboard({ data }) {
   function algoModal(c) {
     const tl = (c.trade_log || []).slice(-14).reverse();
     const px = (h) => { const q = quotes[h.symbol]; return q && q.price > 0 ? q.price : (h.last != null ? h.last : h.avg_price); };
+    // Per-stock today gain/loss off the live quote's prevClose. Shares bought today move from
+    // their fill price, not yesterday's close (Robinhood-style). Null without a real quote.
+    const todayET = new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
+    const dayPnl = (h) => {
+      const q = quotes[h.symbol];
+      if (!(q && q.price > 0 && q.prevClose > 0)) return null;
+      const boughtToday = h.filled_at &&
+        new Date(h.filled_at).toLocaleDateString("en-CA", { timeZone: "America/New_York" }) === todayET;
+      const base = boughtToday ? h.avg_price : q.prevClose;
+      return base > 0 ? { amt: h.qty * (q.price - base), ret: q.price / base - 1 } : null;
+    };
     const mk = c._m || liveMark(c, quotes, data.starting_cash);
     open(
       <>
@@ -71,11 +82,12 @@ export default function Leaderboard({ data }) {
         </div>
         {c.holdings.length > 0 ? (
           <table className="tl hold">
-            <thead><tr><th>holding</th><th>shares</th><th>bought</th><th>now</th><th>value</th><th>gain / loss</th></tr></thead>
+            <thead><tr><th>holding</th><th>shares</th><th>bought</th><th>now</th><th>value</th><th>{live ? "today" : "last day"}</th><th>gain / loss</th></tr></thead>
             <tbody>
               {c.holdings.map((h, i) => {
                 const now = px(h), shares = h.qty, value = shares * now;
                 const pnl = shares * (now - h.avg_price), r = h.avg_price ? now / h.avg_price - 1 : 0;
+                const d = dayPnl(h);
                 return (
                   <tr key={i}>
                     <td>{h.symbol}</td>
@@ -83,6 +95,7 @@ export default function Leaderboard({ data }) {
                     <td className="mono">{money(h.avg_price)}{h.filled_at && <div className="pmute" style={{ fontSize: "11px" }}>{new Date(h.filled_at).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZone: "America/New_York" })} ET</div>}</td>
                     <td className="mono">{money(now)}</td>
                     <td className="mono">{money(value)}</td>
+                    <td className={"mono " + (d ? cls(d.amt) : "")}>{d ? <>{(d.amt >= 0 ? "+$" : "−$") + Math.abs(d.amt).toFixed(2)}<div className="pmute" style={{ fontSize: "11px" }}>{pct(d.ret)}</div></> : "—"}</td>
                     <td className={"mono " + cls(pnl)}>{(pnl >= 0 ? "+$" : "−$") + Math.abs(pnl).toFixed(2)} ({pct(r)})</td>
                   </tr>
                 );
