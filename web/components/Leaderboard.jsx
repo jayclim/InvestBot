@@ -94,22 +94,26 @@ export default function Leaderboard({ data }) {
           <div className="queued" style={{ marginTop: "12px" }}>
             <div className="queued-head">
               <span>◷ Queued — fill at next open</span>
-              <span className="qn">{c.open_orders.length} resting</span>
+              <span className="qn">{(mk.fills?.size)
+                ? `${mk.fills.size} filled live · ${c.open_orders.length - mk.fills.size} resting`
+                : `${c.open_orders.length} resting`}</span>
             </div>
             {c.open_orders.map((o, i) => {
               const buy = o.side === "buy";
+              const simmed = mk.fills?.has(i);
               return (
-                <div key={i} className="qorder" style={{ borderLeft: "3px dashed " + (buy ? "var(--up)" : "var(--down)") }}>
+                <div key={i} className="qorder" style={{ borderLeft: "3px " + (simmed ? "solid" : "dashed") + " " + (buy ? "var(--up)" : "var(--down)") }}>
                   <div className="qmain">
                     <span className="qside" style={{ color: buy ? "var(--up)" : "var(--down)" }}>{o.side}</span>
                     <b>{o.symbol}</b>
                     <span className="qbadge">{o.kind === "limit" && o.limit != null ? "LIMIT " + money(o.limit) : "MOO"}</span>
+                    {simmed && <span className="qbadge">filled @ open</span>}
                   </div>
                   <span className="qsize">{buy ? money(o.dollars) : (o.qty != null ? o.qty.toFixed(2) + " sh" : "—")}</span>
                 </div>
               );
             })}
-            <p className="note qnote">Decided this tick, not yet filled — resting as market-on-open orders for the next session. Re-running supersedes them. Intentions, not trades.</p>
+            <p className="note qnote">Decided last tick as market-on-open orders. Ones marked <b>filled @ open</b> have seen a session open since — the live equity above already counts them at the day&apos;s open price; the next tick records them officially. The rest are resting (re-running supersedes them).</p>
           </div>
         )}
         <p className="note"><b>Rule:</b> {c.rules}</p>

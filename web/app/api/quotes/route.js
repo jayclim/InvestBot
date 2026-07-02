@@ -34,7 +34,9 @@ export async function GET(request) {
         if (!r.ok) return;
         const j = await r.json();
         if (j && typeof j.c === "number" && j.c > 0) {
-          quotes[sym] = { price: j.c, change: j.d, pct: j.dp, prevClose: j.pc, t: j.t };
+          // o/h/l are the latest session's bar — the client simulates queued-order fills with them.
+          quotes[sym] = { price: j.c, change: j.d, pct: j.dp, prevClose: j.pc,
+                          open: j.o, high: j.h, low: j.l, t: j.t };
         }
       } catch (_e) {
         /* skip symbol */

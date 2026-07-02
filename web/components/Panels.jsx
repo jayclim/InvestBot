@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { money, pct, cls, methodColor } from "../lib/format";
 import { useModal, InfoButton } from "./ModalContext";
+import { useLiveQuotes, simFillPrice } from "./LiveQuotes";
 import { named } from "../lib/names";
 
 export function Analyst({ data }) {
@@ -109,6 +110,7 @@ export function Analyst({ data }) {
 
 export function DecisionTrail({ data }) {
   const { open } = useModal();
+  const { quotes } = useLiveQuotes();
   const m = data.methodology;
   const [filter, setFilter] = useState("all");
   const methods = [...new Set(data.decisions.map((d) => d.agent))];
@@ -157,30 +159,35 @@ export function DecisionTrail({ data }) {
           </div>
         )}
         <div className="feed">
-          {qShown.length > 0 && (
+          {qShown.length > 0 && (() => {
+            const nFilled = qShown.filter((o) => simFillPrice(o, quotes[o.symbol]) != null).length;
+            return (
             <div className="queued">
               <div className="queued-head">
                 <span>◷ Queued — fill at next open</span>
-                <span className="qn">{qShown.length} resting</span>
+                <span className="qn">{nFilled ? `${nFilled} filled live · ${qShown.length - nFilled} resting` : `${qShown.length} resting`}</span>
               </div>
               {qShown.map((o, i) => {
                 const col = colorOf(o.agent);
                 const buy = o.side === "buy";
+                const fillPx = simFillPrice(o, quotes[o.symbol]);
                 return (
-                  <div key={i} className="qorder" style={{ borderLeft: "3px dashed " + col }}>
+                  <div key={i} className="qorder" style={{ borderLeft: "3px " + (fillPx != null ? "solid" : "dashed") + " " + col }}>
                     <div className="qmain">
                       <span className="qside" style={{ color: buy ? "var(--up)" : "var(--down)" }}>{o.side}</span>
                       <b>{o.symbol}</b>
                       <span className="qbadge">{o.kind === "limit" && o.limit != null ? "LIMIT " + money(o.limit) : "MOO"}</span>
+                      {fillPx != null && <span className="qbadge">filled @ {money(fillPx)}</span>}
                       <span className="qwho" style={{ color: col }}>{o.agent}</span>
                     </div>
                     <span className="qsize">{buy ? money(o.dollars) : (o.qty != null ? o.qty.toFixed(2) + " sh" : "—")}</span>
                   </div>
                 );
               })}
-              <p className="note qnote">Decided this tick, not yet filled — resting as market-on-open orders. The next tick fills them at the open (re-running supersedes them). These are intentions, not trades.</p>
+              <p className="note qnote">Decided last tick as market-on-open orders. Ones marked <b>filled</b> have seen a session open since — the standings already count them at the open price; the next tick records them officially. The rest are resting (re-running supersedes them). Intentions, not trades.</p>
             </div>
-          )}
+            );
+          })()}
           {!shown.length && <p className="pending">No filled decisions {filter === "all" ? "yet — fills in as ticks run." : "for this method yet."}</p>}
           {byDay.map(([day, rows], di) => (
             <details key={day} className="day" open={di === 0}>
