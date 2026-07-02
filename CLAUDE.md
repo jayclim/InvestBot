@@ -85,6 +85,7 @@ engine's walk-forward stops; SPY is buy-and-hold (never traded by the engine).
     (throttled under the free 60/min) → `state/news.json` → published to `web/public/news.json`.
 - `run.py` (backtest CLI), `tick.py` (rule-strategy forward tick), `run_agents.py` (agents tick).
 - `tools/build_dashboard.py` — publishes `web/public/state.json` + `history.json` from `state/`. `tools/ingest_rh.py` — RH historicals → `data/snapshot.json`.
+  `tools/aggregate_intraday.py` — evening ticks: minute bars (+ fundamentals for consolidated volume) → the just-closed session's daily bar in the snapshot.
   `tools/refresh_congress.py` — pulls the `congress_mirror`'s data from a free daily GitHub mirror of STOCK Act disclosures (`kadoa-org/congress-trading-monitor`) → `state/congress.json`. `tools/analyst_memory.py` — the analyst's carry-forward brief (holdings, realized P&L, alpha vs SPY + Sharpe, prior reflection).
   `tools/robin_plan.py` — reruns the *funded* rule strategies (`state/robin_alloc.json`) FRESH against the real Agentic account's current positions → the orders to place (buy fresh breakouts, exit on the sell rule); a fresh-start flat account often gets zero orders. No orders placed here — the `run-robin` skill reviews + confirms each.
   `tools/record_robin.py` — appends the real Agentic book (equity, cash, holdings, trade count) to `state/robin.json` after a `run-robin` execution; `build_dashboard.robin_competitor` rebases + scales it into the `Robinhood` competitor (holdings published, real $ never).

@@ -31,10 +31,17 @@ bars. (`run_agents.py` refreshes the news cache itself at the start of every run
 
 **If the settled daily bar lags (running in the evening, before settlement):** the `day` historicals
 and the official close can keep reading the *prior* session for a few hours after the 4pm ET close.
-To tick on the session that just closed, pull `interval: minute` for that date (it overflows to files),
-aggregate each name's bars into one daily bar (open=first, high=max, low=min, close=last, volume=sum),
-and append it to `data/snapshot.json`. Caveat: intraday volume undercounts the consolidated total
-(auction/off-exchange prints excluded) — the next normal `day` refresh overwrites it with the settled bar.
+To tick on the session that just closed:
+- Pull `interval: minute` for that date (13:30–20:00 UTC) for all of `cfg.FETCH_SYMBOLS`, ≤10 symbols
+  per call — each call overflows to a file; collect the paths.
+- Pull `get_equity_fundamentals` for the same symbols (≤10/call, ~11 chunks) — its session `volume`
+  is the consolidated total. Do NOT skip this: summed minute volume undercounts by 30–70%
+  (auction/off-exchange prints excluded), which silently suppresses the volume-confirmed breakout
+  entries in `momentum_breakout`/`blended_momo_rsi`.
+- `python3 tools/aggregate_intraday.py <date> <minute files…> --fundamentals <fundamentals files…>`
+  — aggregates each name into one daily bar (volume from fundamentals; falls back to the minute sum
+  with a warning) and appends/replaces it in `data/snapshot.json`.
+The next normal `day` refresh overwrites the bar with the settled one.
 
 ## 2. Produce the analyst report (agent-driven — via the financial-analyst skill)
 Run the **`financial-analyst`** skill (`.claude/skills/financial-analyst/SKILL.md`). It applies the
