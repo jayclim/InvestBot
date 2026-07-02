@@ -1,45 +1,39 @@
 {
-"last_date": "2026-06-30",
+"last_date": "2026-07-01",
 "portfolios": {
 "deep_research_analyst": {
-"cash": 42.24014259514101,
+"cash": 34.18921253415765,
 "halted": false,
 "positions": [
 {
 "symbol": "MU",
-"qty": 0.008615817160803882,
-"avg_price": 1137.3456422179834,
+"qty": 0.012731159563561507,
+"avg_price": 1119.6332969393727,
 "entry_date": "2026-06-18"
 },
 {
 "symbol": "BAC",
-"qty": 0.15498266972792263,
+"qty": 0.1261583546724127,
 "avg_price": 57.85890240562849,
 "entry_date": "2026-06-24"
 },
 {
-"symbol": "GE",
-"qty": 0.016808286460587518,
-"avg_price": 365.80280999999997,
-"entry_date": "2026-06-24"
-},
-{
-"symbol": "JPM",
-"qty": 0.027216420995901172,
-"avg_price": 334.25054825810236,
-"entry_date": "2026-06-25"
-},
-{
 "symbol": "LLY",
-"qty": 0.0051232714042943155,
-"avg_price": 1225.53246,
+"qty": 0.007456944594868748,
+"avg_price": 1222.6769015635807,
 "entry_date": "2026-06-30"
 },
 {
 "symbol": "TSM",
-"qty": 0.015741950928164758,
-"avg_price": 455.8328025,
+"qty": 0.02464234527419779,
+"avg_price": 460.1926533266287,
 "entry_date": "2026-06-30"
+},
+{
+"symbol": "MRVL",
+"qty": 0.04767409653645876,
+"avg_price": 282.62124,
+"entry_date": "2026-07-01"
 }
 ],
 "trades": [
@@ -462,6 +456,76 @@
 "value": 2.5608776739885446,
 "pnl": 0.0,
 "reason": "analyst: buy 11%"
+},
+{
+"date": "2026-07-01",
+"symbol": "GE",
+"side": "sell",
+"qty": 0.016808286460587518,
+"price": 374.942435,
+"value": 6.302139853710216,
+"pnl": 0.1536214351423476,
+"reason": "analyst: exit"
+},
+{
+"date": "2026-07-01",
+"symbol": "JPM",
+"side": "sell",
+"qty": 0.027216420995901172,
+"price": 328.2008175,
+"value": 8.932451620278929,
+"pnl": -0.16465201922436531,
+"reason": "analyst: exit"
+},
+{
+"date": "2026-07-01",
+"symbol": "BAC",
+"side": "sell",
+"qty": 0.028824315055509912,
+"price": 57.121425,
+"value": 1.6464859506196803,
+"pnl": -0.02125728108615565,
+"reason": "analyst: trim"
+},
+{
+"date": "2026-07-01",
+"symbol": "LLY",
+"side": "buy",
+"qty": 0.0023336731905744326,
+"price": 1216.4079,
+"value": 2.838698505032945,
+"pnl": 0.0,
+"reason": "analyst: buy 10%"
+},
+{
+"date": "2026-07-01",
+"symbol": "TSM",
+"side": "buy",
+"qty": 0.008900394346033031,
+"price": 467.903835,
+"value": 4.1645286475211725,
+"pnl": 0.0,
+"reason": "analyst: buy 13%"
+},
+{
+"date": "2026-07-01",
+"symbol": "MRVL",
+"side": "buy",
+"qty": 0.04767409653645876,
+"price": 282.62124,
+"value": 13.473712279013679,
+"pnl": 0.0,
+"reason": "analyst: buy 15%"
+},
+{
+"date": "2026-07-01",
+"symbol": "MU",
+"side": "buy",
+"qty": 0.004115342402757625,
+"price": 1082.551005,
+"value": 4.455068054024382,
+"pnl": 0.0,
+"reason": "analyst: buy 16%"
 }
 ],
 "equity_curve": [
@@ -516,11 +580,15 @@
 [
 "2026-06-30",
 89.82
+],
+[
+"2026-07-01",
+87.51
 ]
 ]
 },
 "llm_voters": {
-"cash": 68.80422811576636,
+"cash": 73.88373837571659,
 "halted": false,
 "positions": [
 {
@@ -530,16 +598,16 @@
 "entry_date": "2026-06-30"
 },
 {
-"symbol": "RBLX",
-"qty": 0.13496106829640445,
-"avg_price": 54.5522625,
+"symbol": "MRNA",
+"qty": 0.07858780955313951,
+"avg_price": 69.86991749999999,
 "entry_date": "2026-06-30"
 },
 {
-"symbol": "MRNA",
-"qty": 0.13171676539094748,
-"avg_price": 69.86991749999999,
-"entry_date": "2026-06-30"
+"symbol": "LABU",
+"qty": 0.021069303231697648,
+"avg_price": 290.15000249999997,
+"entry_date": "2026-07-01"
 }
 ],
 "trades": [
@@ -1072,6 +1140,36 @@
 "value": 9.203039531232355,
 "pnl": 0.0,
 "reason": "swarm: buy 10%"
+},
+{
+"date": "2026-07-01",
+"symbol": "RBLX",
+"side": "sell",
+"qty": 0.13496106829640445,
+"price": 55.422275000000006,
+"value": 7.47984944141711,
+"pnl": 0.11741781643122673,
+"reason": "swarm: exit"
+},
+{
+"date": "2026-07-01",
+"symbol": "MRNA",
+"side": "sell",
+"qty": 0.05312895583780797,
+"price": 69.88504,
+"value": 3.7129192038834433,
+"pnl": 0.0008034426346582145,
+"reason": "swarm: trim"
+},
+{
+"date": "2026-07-01",
+"symbol": "LABU",
+"side": "buy",
+"qty": 0.021069303231697648,
+"price": 290.15000249999997,
+"value": 6.11325838535033,
+"pnl": 0.0,
+"reason": "swarm: buy 7%"
 }
 ],
 "equity_curve": [
@@ -1130,42 +1228,46 @@
 [
 "2026-06-30",
 91.7
+],
+[
+"2026-07-01",
+91.84
 ]
 ]
 },
 "mirofish_real": {
-"cash": 26.410277225597095,
+"cash": 27.82588622270143,
 "halted": false,
 "positions": [
 {
 "symbol": "ORCL",
-"qty": 0.07074186026541032,
-"avg_price": 167.97697140353742,
+"qty": 0.1059858875742798,
+"avg_price": 160.29322512897897,
 "entry_date": "2026-06-22"
 },
 {
 "symbol": "DDOG",
-"qty": 0.030839683336751463,
-"avg_price": 241.52758885666512,
+"qty": 0.04025006995691657,
+"avg_price": 247.8393418924496,
 "entry_date": "2026-06-26"
 },
 {
 "symbol": "TSLA",
-"qty": 0.012010353570366927,
-"avg_price": 406.203,
-"entry_date": "2026-06-30"
-},
-{
-"symbol": "CRWD",
-"qty": 0.01990097629981759,
-"avg_price": 735.437535,
+"qty": 0.03341403204707935,
+"avg_price": 416.1174114969721,
 "entry_date": "2026-06-30"
 },
 {
 "symbol": "RBLX",
-"qty": 0.43437720753349074,
+"qty": 0.2975363737291542,
 "avg_price": 54.5522625,
 "entry_date": "2026-06-30"
+},
+{
+"symbol": "AMD",
+"qty": 0.008831263974610508,
+"avg_price": 557.75874,
+"entry_date": "2026-07-01"
 }
 ],
 "trades": [
@@ -1648,6 +1750,66 @@
 "value": 23.696259449383962,
 "pnl": 0.0,
 "reason": "mirofish: buy 27%"
+},
+{
+"date": "2026-07-01",
+"symbol": "CRWD",
+"side": "sell",
+"qty": 0.01990097629981759,
+"price": 774.6125000000001,
+"value": 15.415545004042455,
+"pnl": 0.7796200500111845,
+"reason": "mirofish: exit"
+},
+{
+"date": "2026-07-01",
+"symbol": "AMD",
+"side": "buy",
+"qty": 0.008831263974610508,
+"price": 557.75874,
+"value": 4.925714667086148,
+"pnl": 0.0,
+"reason": "mirofish: buy 6%"
+},
+{
+"date": "2026-07-01",
+"symbol": "DDOG",
+"side": "buy",
+"qty": 0.009410386620165112,
+"price": 268.52419499999996,
+"value": 2.526916491818607,
+"pnl": 0.0,
+"reason": "mirofish: buy 12%"
+},
+{
+"date": "2026-07-01",
+"symbol": "TSLA",
+"side": "buy",
+"qty": 0.021403678476712425,
+"price": 421.680735,
+"value": 9.025518871763776,
+"pnl": 0.0,
+"reason": "mirofish: buy 16%"
+},
+{
+"date": "2026-07-01",
+"symbol": "ORCL",
+"side": "buy",
+"qty": 0.03524402730886948,
+"price": 144.870399,
+"value": 5.105816298602818,
+"pnl": 0.0,
+"reason": "mirofish: buy 17%"
+},
+{
+"date": "2026-07-01",
+"symbol": "RBLX",
+"side": "sell",
+"qty": 0.1368408338043365,
+"price": 55.422275000000006,
+"value": 7.584030322333235,
+"pnl": 0.11905323592019648,
+"reason": "mirofish: trim"
 }
 ],
 "equity_curve": [
@@ -1686,24 +1848,52 @@
 [
 "2026-06-30",
 88.66
+],
+[
+"2026-07-01",
+89.83
 ]
 ]
 },
 "congress_mirror": {
-"cash": 0.0,
+"cash": 73.64501194782872,
 "halted": false,
 "positions": [
 {
-"symbol": "INTC",
-"qty": 0.391186198943263,
-"avg_price": 131.68072697931638,
-"entry_date": "2026-06-24"
+"symbol": "ADBE",
+"qty": 0.016053539861270314,
+"avg_price": 209.9049,
+"entry_date": "2026-07-01"
 },
 {
-"symbol": "UBER",
-"qty": 0.656822282540564,
-"avg_price": 73.88692499999999,
-"entry_date": "2026-06-24"
+"symbol": "TSM",
+"qty": 0.0072017291314271,
+"avg_price": 467.903835,
+"entry_date": "2026-07-01"
+},
+{
+"symbol": "GOOGL",
+"qty": 0.011743816643750566,
+"avg_price": 358.669245,
+"entry_date": "2026-07-01"
+},
+{
+"symbol": "HD",
+"qty": 0.011883371425477421,
+"avg_price": 354.45714,
+"entry_date": "2026-07-01"
+},
+{
+"symbol": "UNH",
+"qty": 0.012091593155683183,
+"avg_price": 418.02390749999995,
+"entry_date": "2026-07-01"
+},
+{
+"symbol": "MSFT",
+"qty": 0.01768367459253655,
+"avg_price": 381.11046,
+"entry_date": "2026-07-01"
 }
 ],
 "trades": [
@@ -1746,6 +1936,86 @@
 "value": 1.5116830611243488,
 "pnl": 0.0,
 "reason": "congress: buy 50%"
+},
+{
+"date": "2026-07-01",
+"symbol": "INTC",
+"side": "sell",
+"qty": 0.391186198943263,
+"price": 134.9325,
+"value": 52.78373178891184,
+"pnl": 1.2720487277874815,
+"reason": "congress: exit"
+},
+{
+"date": "2026-07-01",
+"symbol": "UBER",
+"side": "sell",
+"qty": 0.656822282540564,
+"price": 72.80358000000001,
+"value": 47.81901359272456,
+"pnl": -0.7115651356788941,
+"reason": "congress: exit"
+},
+{
+"date": "2026-07-01",
+"symbol": "ADBE",
+"side": "buy",
+"qty": 0.016053539861270314,
+"price": 209.9049,
+"value": 3.369716679225959,
+"pnl": 0.0,
+"reason": "congress: buy 3%"
+},
+{
+"date": "2026-07-01",
+"symbol": "TSM",
+"side": "buy",
+"qty": 0.0072017291314271,
+"price": 467.903835,
+"value": 3.369716679225959,
+"pnl": 0.0,
+"reason": "congress: buy 3%"
+},
+{
+"date": "2026-07-01",
+"symbol": "GOOGL",
+"side": "buy",
+"qty": 0.011743816643750566,
+"price": 358.669245,
+"value": 4.212145849032449,
+"pnl": 0.0,
+"reason": "congress: buy 4%"
+},
+{
+"date": "2026-07-01",
+"symbol": "HD",
+"side": "buy",
+"qty": 0.011883371425477421,
+"price": 354.45714,
+"value": 4.212145849032449,
+"pnl": 0.0,
+"reason": "congress: buy 4%"
+},
+{
+"date": "2026-07-01",
+"symbol": "UNH",
+"side": "buy",
+"qty": 0.012091593155683183,
+"price": 418.02390749999995,
+"value": 5.054575018838939,
+"pnl": 0.0,
+"reason": "congress: buy 5%"
+},
+{
+"date": "2026-07-01",
+"symbol": "MSFT",
+"side": "buy",
+"qty": 0.01768367459253655,
+"price": 381.11046,
+"value": 6.739433358451917,
+"pnl": 0.0,
+"reason": "congress: buy 7%"
 }
 ],
 "equity_curve": [
@@ -1768,6 +2038,10 @@
 [
 "2026-06-30",
 101.93
+],
+[
+"2026-07-01",
+100.59
 ]
 ]
 }
@@ -1775,250 +2049,170 @@
 "pending": {
 "llm_voters": [
 {
-"symbol": "RBLX",
+"symbol": "LCID",
 "side": "sell",
 "kind": "moo",
 "limit": null,
 "dollars": null,
-"qty": 0.13496106829640445,
+"qty": 0.950743184607423,
 "reason": "swarm: exit",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "MRNA",
-"side": "sell",
-"kind": "moo",
-"limit": null,
-"dollars": null,
-"qty": 0.05312895583780797,
-"reason": "swarm: trim",
-"placed_session": "2026-06-30"
+"placed_session": "2026-07-01"
 },
 {
 "symbol": "LABU",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.021069303231697648,
+"reason": "swarm: exit",
+"placed_session": "2026-07-01"
+},
+{
+"symbol": "HOOD",
 "side": "buy",
 "kind": "moo",
 "limit": null,
-"dollars": 6.11325838535033,
+"dollars": 5.510408053726394,
+"qty": null,
+"reason": "swarm: buy 6%",
+"placed_session": "2026-07-01"
+},
+{
+"symbol": "MRNA",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 1.038898740365151,
 "qty": null,
 "reason": "swarm: buy 7%",
-"placed_session": "2026-06-30"
+"placed_session": "2026-07-01"
 }
 ],
 "mirofish_real": [
 {
-"symbol": "CRWD",
+"symbol": "DDOG",
 "side": "sell",
 "kind": "moo",
 "limit": null,
 "dollars": null,
-"qty": 0.01990097629981759,
+"qty": 0.04025006995691657,
 "reason": "mirofish: exit",
-"placed_session": "2026-06-30"
+"placed_session": "2026-07-01"
 },
 {
 "symbol": "AMD",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 4.925714667086148,
-"qty": null,
-"reason": "mirofish: buy 6%",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "DDOG",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 2.526916491818607,
-"qty": null,
-"reason": "mirofish: buy 12%",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "TSLA",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 9.025518871763776,
-"qty": null,
-"reason": "mirofish: buy 16%",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "ORCL",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 5.105816298602818,
-"qty": null,
-"reason": "mirofish: buy 17%",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "RBLX",
 "side": "sell",
 "kind": "moo",
 "limit": null,
 "dollars": null,
-"qty": 0.1368408338043365,
+"qty": 0.008831263974610508,
+"reason": "mirofish: exit",
+"placed_session": "2026-07-01"
+},
+{
+"symbol": "AVGO",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 7.96910946810035,
+"qty": null,
+"reason": "mirofish: buy 9%",
+"placed_session": "2026-07-01"
+},
+{
+"symbol": "ORCL",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.0501521948095071,
 "reason": "mirofish: trim",
-"placed_session": "2026-06-30"
+"placed_session": "2026-07-01"
+},
+{
+"symbol": "CRWD",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 14.489289942000635,
+"qty": null,
+"reason": "mirofish: buy 16%",
+"placed_session": "2026-07-01"
 }
 ],
 "deep_research_analyst": [
 {
-"symbol": "GE",
-"side": "sell",
-"kind": "moo",
-"limit": null,
-"dollars": null,
-"qty": 0.016808286460587518,
-"reason": "analyst: exit",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "JPM",
-"side": "sell",
-"kind": "moo",
-"limit": null,
-"dollars": null,
-"qty": 0.027216420995901172,
-"reason": "analyst: exit",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "BAC",
-"side": "sell",
-"kind": "moo",
-"limit": null,
-"dollars": null,
-"qty": 0.028824315055509912,
-"reason": "analyst: trim",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "LLY",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 2.838698505032945,
-"qty": null,
-"reason": "analyst: buy 10%",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "TSM",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 4.1645286475211725,
-"qty": null,
-"reason": "analyst: buy 13%",
-"placed_session": "2026-06-30"
-},
-{
 "symbol": "MRVL",
-"side": "buy",
+"side": "sell",
 "kind": "moo",
 "limit": null,
-"dollars": 13.473712279013679,
-"qty": null,
-"reason": "analyst: buy 15%",
-"placed_session": "2026-06-30"
+"dollars": null,
+"qty": 0.04767409653645876,
+"reason": "analyst: exit",
+"placed_session": "2026-07-01"
 },
 {
 "symbol": "MU",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.005955685134766875,
+"reason": "analyst: trim",
+"placed_session": "2026-07-01"
+},
+{
+"symbol": "V",
 "side": "buy",
 "kind": "moo",
 "limit": null,
-"dollars": 4.455068054024382,
+"dollars": 8.751287465661507,
 "qty": null,
-"reason": "analyst: buy 16%",
-"placed_session": "2026-06-30"
+"reason": "analyst: buy 10%",
+"placed_session": "2026-07-01"
+},
+{
+"symbol": "BAC",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 1.385531928112691,
+"qty": null,
+"reason": "analyst: buy 10%",
+"placed_session": "2026-07-01"
+},
+{
+"symbol": "TSM",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.00494798498645149,
+"reason": "analyst: trim",
+"placed_session": "2026-07-01"
 }
 ],
 "congress_mirror": [
 {
-"symbol": "INTC",
-"side": "sell",
-"kind": "moo",
-"limit": null,
-"dollars": null,
-"qty": 0.391186198943263,
-"reason": "congress: exit",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "UBER",
-"side": "sell",
-"kind": "moo",
-"limit": null,
-"dollars": null,
-"qty": 0.656822282540564,
-"reason": "congress: exit",
-"placed_session": "2026-06-30"
-},
-{
 "symbol": "ADBE",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.016053539861270314,
+"reason": "congress: exit",
+"placed_session": "2026-07-01"
+},
+{
+"symbol": "AMZN",
 "side": "buy",
 "kind": "moo",
 "limit": null,
-"dollars": 3.369716679225959,
+"dollars": 3.3531215829324896,
 "qty": null,
 "reason": "congress: buy 3%",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "TSM",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 3.369716679225959,
-"qty": null,
-"reason": "congress: buy 3%",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "GOOGL",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 4.212145849032449,
-"qty": null,
-"reason": "congress: buy 4%",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "HD",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 4.212145849032449,
-"qty": null,
-"reason": "congress: buy 4%",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "UNH",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 5.054575018838939,
-"qty": null,
-"reason": "congress: buy 5%",
-"placed_session": "2026-06-30"
-},
-{
-"symbol": "MSFT",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 6.739433358451918,
-"qty": null,
-"reason": "congress: buy 7%",
-"placed_session": "2026-06-30"
+"placed_session": "2026-07-01"
 }
 ]
 }
