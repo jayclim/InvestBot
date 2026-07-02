@@ -96,7 +96,7 @@ export default function Leaderboard({ data }) {
                     <td className="mono">{money(now)}</td>
                     <td className="mono">{money(value)}</td>
                     <td className={"mono " + (d ? cls(d.amt) : "")}>{d ? <>{(d.amt >= 0 ? "+$" : "−$") + Math.abs(d.amt).toFixed(2)}<div className="pmute" style={{ fontSize: "11px" }}>{pct(d.ret)}</div></> : "—"}</td>
-                    <td className={"mono " + cls(pnl)}>{(pnl >= 0 ? "+$" : "−$") + Math.abs(pnl).toFixed(2)} ({pct(r)})</td>
+                    <td className={"mono " + cls(pnl)}>{(pnl >= 0 ? "+$" : "−$") + Math.abs(pnl).toFixed(2)}<div className="pmute" style={{ fontSize: "11px" }}>{pct(r)}</div></td>
                   </tr>
                 );
               })}
