@@ -1,99 +1,115 @@
 {
-  "date": "2026-07-06",
-  "as_of": "2026-07-02",
+  "date": "2026-07-13",
+  "as_of": "2026-07-10",
   "generated_by": "Claude — financial-analyst skill",
   "framework": "Claude for Financial Services — equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
   "pick": "LLY",
-  "action": "hold the 7/02 rotation steady into Monday's open: exit MU before the 7/10 SKHY listing, trim extended V and TSM, add valuation-floor healthcare (REGN, GILD), upsize the two anchors (LLY into the live Medicare GLP-1 ramp, BAC into its 7/14 print)",
-  "sizing": "53% deployed across 6 names (LLY 12, BAC 12, TSM 8, V 8, REGN 8, GILD 5), 47% cash while the momentum unwind resolves",
+  "action": "catch-up tick after five missed sessions: the 7/02 rotation filled at the 7/06 open and mostly worked — now exit V entirely (stablecoin-derating thesis break), add ASML ahead of its 7/15 print (memory-capex anticipation) and a small CVX oil hedge, hold LLY/BAC/TSM/REGN/GILD through catalyst week",
+  "sizing": "58% deployed across 7 names (LLY 12, BAC 12, TSM 8, ASML 8, REGN 8, GILD 5, CVX 5), 42% cash into a CPI + bank-earnings week under a hawkish Fed",
   "confidence": 0.55,
   "regime": {
-    "label": "momentum unwind inside a value/defensive rotation — no-hike relief, but no cuts either",
-    "note": "No session has traded since 7/02 (July 4th holiday Friday + weekend), so the tape is unchanged: Dow at a record while the SOX corrected -6.7% on the week in a memory-led unwind. Week ahead is light — Fed June-meeting minutes Wednesday 7/8 and the Q2 earnings season opener (Delta, PepsiCo) are the scheduled catalysts; Schwab's trader outlook flags 'higher volatility' with a cautious tech stance. The two dated events this book is positioned around are unchanged and confirmed over the weekend: SK Hynix's ~$29B Nasdaq ADR debut 7/10 and BAC earnings 7/14.",
-    "source": "https://www.schwab.com/learn/story/weekly-traders-outlook; https://www.cnbc.com/2026/06/26/stock-market-next-week-outlook-for-june-29-july-3-2026.html"
+    "label": "narrow mega-cap leadership under a hawkish Warsh Fed — earnings season opens into CPI, with oil bid on resumed U.S.–Iran hostilities",
+    "note": "The missed week (7/6–7/10): S&P +1.23%, Nasdaq +1.74%, Russell 2000 -0.61% with 8 of 11 sectors down — only Energy and Technology gained; Fed June-meeting minutes read hawkish (Warsh 'focused on lowering inflation to 2%') and yields rose with oil. Samsung's record-but-below-AI-expectations print knocked semis mid-week (MU -4.7% that day), yet SK Hynix's $26.5B Nasdaq ADR debut popped +13% Friday. This week is the summer's densest catalyst cluster: CPI Tue 7/14 8:30am ET, JPM/GS/BAC/C/WFC all Tue, Warsh's first congressional testimony Tue, PPI + MS Wed, ASML pre-market Wed 7/15, retail sales + TSM Thu 7/16.",
+    "source": "https://www.finsyn.com/weekly-market-recap-july-10-2026/; https://www.cnbc.com/2026/07/10/stock-market-next-week-outlook-for-july-13-17-2026.html; https://www.troweprice.com/personal-investing/resources/insights/global-markets-weekly-update.html"
   },
-  "thesis": "What changed since 7/02: nothing traded (holiday Friday, weekend), so this is a hold-steady re-queue of the same book, not a re-pick — the weekend checks all came back thesis-intact. SK Hynix confirmed the Nasdaq ADR debut is still scheduled for 7/10 (17.79M new shares, ~$29B, ticker SKHY, subject to SEC approval), so the MU full exit BEFORE the listing stands — that was the one decision I graded myself down for halving last week, and I'm finishing it. LLY's Medicare GLP-1 Bridge went live 7/1 exactly as the anchor thesis required — $50/month with prior authorization, Lilly's own release estimating ~20M Medicare patients may qualify — and the stock hit a record on 7/2; the ramp is now a live tailwind, not a promise. BAC confirmed Q2 results for Tuesday 7/14 (consensus $1.10 EPS vs $0.89 y/y) — 6 tick-days out, the dated catalyst the 12% weight was sized for. TSM guided Q2 revenue $39.0–40.2B (~+32% y/y) with the print 7/16 — the foundry leg is a fundamentals bet distinct from the memory unwind, which is why it survived the semi cut at 8% while MU goes to zero. REGN and GILD are the unfilled 7/02 limit buys re-queued at the same prices: valuation-floor healthcare (REGN ~15x forward, GILD ~17x with yield) in a tape rotating toward exactly that. Orders queue for Monday's 9:30 open; buys keep their ~1%-above-close limits so a gap-up gets skipped, exits stay market-on-open.",
+  "thesis": "What changed since 7/06: everything queued finally traded. The rotation filled at the 7/06 open — MU exited ~1007 (vs 979.30 by Friday: right call even though SKHY's debut popped +13%, the listing bid SKHY itself, not Micron), V trimmed ~363 before the stablecoin-derating week took it to 348.97, REGN filled 657.96 and is already green, GILD limit-filled 132.55, LLY topped up ~1208, BAC ~59.14. Two decisions follow from the new tape. First, V goes to zero: the 'lowest-drama compounder' framing is dead — V is -19% from its record with Sell downgrades explicitly citing stablecoin disruption of the 2–3% fee model and DOJ/interchange overhang; a broken structural thesis doesn't deserve a 8% stub. Second, the SKHY debut is the tell for equipment: $26.5B raised — the largest U.S. share sale ever by a foreign company — earmarked for 'new factories and equipment', with the chairman telling CNBC 'demand is enormous'. That capex lands on the lithography monopoly. ASML reports pre-market Wednesday 7/15, ~10% off its high with consensus at EPS ~$7.98 (+75% y/y) but sentiment bruised by the Samsung scare and no bookings number to anchor on — I'm taking 8% into the print, limit-protected, expecting guidance commentary to reflect the memory-capex acceleration the market just watched get funded. BAC (12%) reports tomorrow pre-market (consensus $1.10 EPS vs $0.89 y/y): the position was sized for this print six ticks ago and holding through it IS the bet — a queued order can't fill before the 7/14 open anyway, so churning it now would be theater. TSM (8%) holds into Thursday's print (guided $39.0–40.2B, ~+32% y/y). LLY (12%) anchor intact: the Medicare GLP-1 Bridge is live and the stock set its 52-week high 7/07 (1249.45) before settling back — the ramp thesis is unhurt by a hawkish-Fed multiple squeeze. REGN/GILD (8/5%) stay as the valuation-floor healthcare sleeve. New 5% CVX: Energy was one of only two green sectors last week, oil is rising on resumed U.S.–Iran hostilities, and the book is otherwise long duration-sensitive healthcare into a hawkish CPI — a ~4%-yield oil major is the cheap hedge. Cash 42%: catalyst weeks reward having powder when prints miss.",
   "evidence": [
     {
-      "point": "SK Hynix ADR debut confirmed on track: 'SK Hynix plans to raise $29 billion via Nasdaq listing as soon as July 10' — board resolved 17.79M new shares (~KRW 45.45T ≈ $29.65B), ticker SKHY, 'tentative and subject to change' pending SEC approval",
-      "source": "https://www.cnbc.com/2026/06/24/sk-hynix-nasdaq-adr-listing-south-korea.html"
+      "point": "Missed-week tape: 'The S&P 500 gained +1.23%, and the Nasdaq Composite returned +1.74%, while the Russell 2000 small-cap index finished -0.61% lower'; 'only Energy and Technology posted meaningful gains, while eight of the eleven S&P 500 sectors declined'",
+      "source": "https://www.finsyn.com/weekly-market-recap-july-10-2026/"
     },
     {
-      "point": "LLY Medicare GLP-1 Bridge effective July 1, 2026: Foundayo (orforglipron) and Zepbound at '$50 per month with prior authorization', running through Dec 31 2027; Lilly estimates 'roughly 20 million Medicare patients may qualify'",
-      "source": "https://investor.lilly.com/news-releases/news-release-details/what-medicare-part-d-patients-need-know-about-accessing-foundayo"
+      "point": "Fed: 'the somewhat hawkish Fed minutes helped push yields higher across most maturities'; new Chair Kevin Warsh 'focused on lowering inflation to 2%'",
+      "source": "https://www.troweprice.com/personal-investing/resources/insights/global-markets-weekly-update.html"
     },
     {
-      "point": "BAC reports Q2 2026 on Tuesday July 14 (~6:45am ET, call 8:30am); consensus EPS '$1.10 per share, up from 89 cents per share in the year-ago period', revenue est '$30.26 billion'",
-      "source": "https://www.stocktitan.net/news/BAC/bank-of-america-to-report-second-quarter-2026-financial-results-and-3lujrw96uxvp.html"
+      "point": "SK Hynix debut: 'SK Hynix rose 13% in its first day of trading on Nasdaq, closing at $168.01'; ADRs 'priced at $149, raising $26.5 billion' — 'the largest U.S. share sale ever completed by a foreign company' — for expansion 'which includes investing in new factories and equipment'; chairman: 'demand is enormous'",
+      "source": "https://www.cnbc.com/2026/07/10/sk-hynix-skhy-stock-nasdaq.html"
     },
     {
-      "point": "TSM Q2 2026 earnings conference Thursday July 16; company guidance 'revenue of $39.0–$40.2 billion (approximately 10% sequential and 32% year-over-year growth at midpoint), gross margin of 65.5–67.5%'",
+      "point": "Semi wobble: Samsung 'reported record profit that beat estimates but fell short of the market's elevated AI expectations, triggering a semiconductor selloff'; 'Shares of Micron closed down 4.7%' and 'the VanEck Semiconductor ETF (SMH) fell more than 3%'",
+      "source": "https://www.troweprice.com/personal-investing/resources/insights/global-markets-weekly-update.html"
+    },
+    {
+      "point": "Catalyst week: 'JPMorgan Chase, Goldman Sachs, Bank of America, Citigroup and Wells Fargo report on Tuesday'; 'CPI data is scheduled for Tuesday, July 14 at 8:30 a.m. ET'; 'Federal Reserve Chairman Kevin Warsh is scheduled to deliver his first testimony on monetary policy before Congress starting on Tuesday'",
+      "source": "https://www.cnbc.com/2026/07/10/stock-market-next-week-outlook-for-july-13-17-2026.html"
+    },
+    {
+      "point": "ASML: 'slated to report second-quarter 2026 results before the market opens on July 15, 2026'; consensus 'net sales to land between €8.4 billion and €9.0 billion with gross margin of roughly 51% to 52% and earnings per share near $7.98, representing roughly 75% growth'; 'from Q1 2026, ASML stopped publishing quarterly bookings'",
+      "source": "https://www.ebc.com/forex/asml-q2-2026-earnings-preview; https://www.tradingview.com/news/zacks:66652c1c7094b:0-asml-q2-earnings-loom-buy-sell-or-hold-the-stock-ahead-of-results/"
+    },
+    {
+      "point": "V thesis break: 'Visa is down 19%, Mastercard 18% from record highs'; 'Visa and Mastercard were downgraded to Sell due to credible disruption risk from stablecoins threatening the 2-3% transaction fee model'; DOJ 'has accused both companies of using their dominant positions to maintain high merchant fees'",
+      "source": "https://finance.yahoo.com/markets/stocks/articles/visa-326-mastercard-493-buy-162139198.html; https://www.tradingkey.com/news/market-movers/262013401-market-movers-v-20260706"
+    },
+    {
+      "point": "BAC into the print: consensus '$1.10 per share, up from 89 cents per share in the year-ago period'; Robinhood fundamentals 7/13: P/E 14.81, P/B 1.54, 52-wk high 60.825 set 2026-07-07",
+      "source": "https://www.stocktitan.net/news/BAC/bank-of-america-to-report-second-quarter-2026-financial-results-and-3lujrw96uxvp.html; Robinhood get_equity_fundamentals 2026-07-13"
+    },
+    {
+      "point": "TSM guidance unchanged, print Thursday 7/16: 'revenue of $39.0–$40.2 billion (approximately 10% sequential and 32% year-over-year growth at midpoint), gross margin of 65.5–67.5%'",
       "source": "https://investor.tsmc.com/english/quarterly-results/2026/q2"
     },
     {
-      "point": "Week of 7/6 calendar: 'the primary economic release being the minutes from the Federal Reserve's June policy meeting scheduled for release on Wednesday' plus early Q2 reports from Delta Air Lines and PepsiCo",
-      "source": "https://www.tradingkey.com/tools/market-update/us-stock-market-this-week-20260706"
-    },
-    {
-      "point": "Last week's tape: 'chipmakers and artificial intelligence infrastructure providers faced a severe correction, with the PHLX Semiconductor Index dropping 6.7%' while the Dow set a record — the rotation this book is positioned for",
-      "source": "https://www.cnbc.com/2026/06/26/stock-market-next-week-outlook-for-june-29-july-3-2026.html"
-    },
-    {
-      "point": "7/02 settled closes (the prices this book's orders were sized against): MU 975.56, LLY 1213.91, BAC 58.73, TSM 434.16, V 362.13, REGN 654.27, GILD 131.27",
-      "source": "data/snapshot.json (Robinhood daily bars, settled 2026-07-02)"
+      "point": "Settled 7/10 closes the targets were sized against: ASML 1797.32, CVX 176.40, V 348.97, LLY 1188.58, BAC 59.67, TSM 434.11, REGN 664.52, GILD 129.83; Robinhood fundamentals: ASML P/E 59.88 (52-wk high 1999.96 on 6/30), CVX dividend yield 3.96%, GILD yield 2.48% at P/E 17.67, REGN P/E 16.19",
+      "source": "data/snapshot.json (Robinhood daily bars, settled 2026-07-10); Robinhood get_equity_fundamentals 2026-07-13"
     }
   ],
   "risks": [
-    "Rotation reverses: if semis bounce hard (an SKHY listing that prices strong could RALLY memory), exiting MU at ~975 vs my 1119.63 entry locks the -12.9% loss at the low",
-    "BAC earnings risk cuts both ways: the weak June payrolls that killed the hike also flag credit-cycle softening — a reserve-build headline on 7/14 could swamp a trading beat",
-    "LLY is extended after the record close; a Medicare Bridge ramp slower than the ~20M-eligible headline implies would deflate a rich multiple",
-    "TSM reports 7/16 into a bruised semi tape — even an in-line print can sell off when the group is de-risking",
-    "Fed minutes Wednesday could re-price the no-cuts path harsher than the dots implied; 47% cash cushions but doesn't immunize the book"
+    "Hot CPI Tuesday under a hawkish Warsh Fed re-prices the whole tape lower — 42% cash cushions but the healthcare sleeve is duration-sensitive",
+    "ASML is a P/E ~60 name reporting with no bookings disclosure: cautious guidance commentary (or a Samsung-style 'beat but not enough') can gap it down through any thesis — the 8% size and limit are the only protection, a buy limit cannot stop a post-fill drop",
+    "BAC reports before my next fill can trade: a reserve-build or NII-guide miss hits the existing 12% with no exit possible until the 7/14 open — this is accepted, sized-for risk",
+    "Oil retraces if U.S.–Iran de-escalates, taking the fresh CVX hedge down with it (CVX P/E 30.6 is not a valuation floor)",
+    "Exiting V near a 52-week-range low (348.97 vs 365.02 high set 7/06) sells weakness; if stablecoin fears deflate, the compounder rerates without me"
   ],
   "data_examined": [
-    {"label": "Robinhood daily OHLCV, 101 symbols through settled 2026-07-02", "source": "data/snapshot.json via get_equity_historicals"},
+    {"label": "Robinhood daily OHLCV, 101 symbols through settled 2026-07-10 (XOM history gap upstream — only 7 real bars)", "source": "data/snapshot.json via get_equity_historicals"},
     {"label": "Analyst memory brief (holdings, realized P&L, alpha vs SPY, prior reflection)", "source": "tools/analyst_memory.py"},
-    {"label": "SK Hynix Nasdaq ADR listing status", "source": "https://www.cnbc.com/2026/06/24/sk-hynix-nasdaq-adr-listing-south-korea.html"},
-    {"label": "LLY Medicare GLP-1 Bridge program details", "source": "https://investor.lilly.com/news-releases/news-release-details/what-medicare-part-d-patients-need-know-about-accessing-foundayo"},
-    {"label": "BAC Q2 earnings date + consensus", "source": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/07/60211382/"},
-    {"label": "TSMC Q2 guidance + earnings date", "source": "https://investor.tsmc.com/english/quarterly-results/2026/q2"},
-    {"label": "Week-of-7/6 macro calendar and volatility outlook", "source": "https://www.schwab.com/learn/story/weekly-traders-outlook"}
+    {"label": "Quant screen over the shuffled universe: 5/20/60-day momentum, RSI(14), distance from 20-day high", "source": "data/snapshot.json (computed)"},
+    {"label": "Robinhood fundamentals on 10 finalists (LLY BAC TSM V REGN GILD ASML CVX META GS)", "source": "get_equity_fundamentals 2026-07-13"},
+    {"label": "Week 7/6–7/10 market recap + sector breadth", "source": "https://www.finsyn.com/weekly-market-recap-july-10-2026/"},
+    {"label": "SK Hynix SKHY Nasdaq debut coverage", "source": "https://www.cnbc.com/2026/07/10/sk-hynix-skhy-stock-nasdaq.html"},
+    {"label": "Week-of-7/13 catalyst calendar (CPI, bank earnings, Warsh testimony)", "source": "https://www.cnbc.com/2026/07/10/stock-market-next-week-outlook-for-july-13-17-2026.html"},
+    {"label": "ASML Q2 preview + consensus", "source": "https://www.ebc.com/forex/asml-q2-2026-earnings-preview"},
+    {"label": "V/MA stablecoin-disruption derating coverage", "source": "https://finance.yahoo.com/markets/stocks/articles/visa-326-mastercard-493-buy-162139198.html"}
   ],
   "targets": {
     "LLY": 0.12,
     "BAC": 0.12,
     "TSM": 0.08,
-    "V": 0.08,
+    "ASML": 0.08,
     "REGN": 0.08,
-    "GILD": 0.05
+    "GILD": 0.05,
+    "CVX": 0.05
   },
   "limits": {
-    "LLY": 1223.5,
-    "BAC": 59.28,
-    "REGN": 660.8,
-    "GILD": 132.55
+    "ASML": 1815.0,
+    "CVX": 178.2
   },
   "rationale": {
-    "LLY": "Anchor long, 12%. The dated event already resolved in my favor: the Medicare GLP-1 Bridge went live 7/1 — $50/month, prior auth, Lilly estimating ~20M eligible seniors [DATA: investor.lilly.com] — and the stock hit a record on the news [DATA: 7/2 +3.1%, tradingkey]. Consensus still treats the ramp as gradual; I think the first covered-refill data surprises fast [ASSUMED]. Top-up buy re-queued with a 1223.5 limit (~1% over the 1213.91 close) so I don't chase a gap.",
-    "BAC": "Anchor long, 12%. Q2 print confirmed for Tuesday 7/14 (~6 tick-days): consensus $1.10 EPS vs $0.89 y/y on ~$30.3B revenue [DATA: stocktitan/Benzinga]. Rate-cut-less-but-no-hike is the friendliest NII backdrop banks have had all year [ASSUMED], and the name sits at a low-teens multiple while the rotation bids value [DATA: prior comp work, 7/02 report]. Top-up limit 59.28.",
-    "TSM": "Hold at 8% (trim re-queued). Foundry is the semi leg whose demand is contractual, not sentiment: company-guided Q2 revenue $39.0–40.2B, ~+32% y/y, GM 65.5–67.5%, print 7/16 [DATA: investor.tsmc.com]. It fell with the group but the memory-pricing threat driving the MU exit doesn't read across to foundry [ASSUMED]. Sized as a hold, not conviction — last week's lesson.",
-    "V": "Hold at 8% (trim re-queued). Entered 7/2 at 352.69, marked 362.13 (+2.7%) [DATA: analyst_memory]. Payments-network quality compounding with no dated event risk before earnings later in July; it's the book's lowest-drama sleeve [ASSUMED]. Trim keeps it from drifting above target after the pop.",
-    "REGN": "New 8%, unfilled 7/02 limit buy re-queued at 660.8. Valuation-floor healthcare: ~15x forward, still ~20% off its high [DATA: 7/02 comp work], August print as the dated catalyst, in a tape rotating into exactly this profile [DATA: SOX -6.7% week vs Dow record]. The limit means a gap through 660.8 skips the entry rather than chasing.",
-    "GILD": "New 5%, unfilled 7/02 limit buy re-queued at 132.55. Defensive cash-flow pharma at ~17x with a real yield [DATA: 7/02 comp work] — the small, boring ballast leg of the healthcare sleeve. Same discipline: limit or skip.",
-    "MU": "Exit to zero, market-on-open — finishing the decision I halved on 7/01. The threat is dated and confirmed: SKHY's ~$29B ADR debut 7/10 at a discount multiple attacks the US-accessibility premium MU trades on [DATA: CNBC 6/24, reconfirmed this weekend]. Four tick-days out; anticipation, not confirmation. No limit on the exit — a resting sell that traps me through the listing defeats the point."
+    "LLY": "Anchor, hold 12%. The Medicare GLP-1 Bridge is live ($50/mo, ~20M eligible [DATA: investor.lilly.com, prior tick]) and the stock printed its 52-week high 1249.45 on 7/07 [DATA: RH fundamentals] before the hawkish-minutes tape squeezed multiples. Nothing about the ramp changed; the pullback to 1188.58 is rate noise, not thesis damage [ASSUMED]. Q2 print is ~3 weeks out — the position rides the refill data into it.",
+    "BAC": "Anchor, hold 12% THROUGH tomorrow's pre-market print — this is the event the weight was sized for six ticks ago. Consensus $1.10 EPS vs $0.89 y/y [DATA: stocktitan]; P/E 14.81 near a 52-week high set 7/07 [DATA: RH fundamentals] with the whole big-bank cohort reporting the same morning. Mechanically my next fill is the 7/14 open, after the release — adding or trimming now is fake precision [DATA: settle_pending fills first session after placement]. Hold means hold.",
+    "TSM": "Hold 8% into Thursday's print. Company-guided $39.0–40.2B revenue, ~+32% y/y, GM 65.5–67.5% [DATA: investor.tsmc.com]. The Samsung scare was an expectations problem, not a demand problem — SKHY raising $26.5B for capacity is a demand datapoint [DATA: CNBC]. Foundry remains the contractual-demand semi leg [ASSUMED].",
+    "ASML": "New 8%, the tick's anticipation bet. Event: Q2 print pre-market Wednesday 7/15 (2 tick-days). Consensus: EPS ~$7.98, +75% y/y, sales €8.4–9.0B [DATA: EBC/Zacks]. What I expect instead: guidance commentary that confirms accelerating memory/HBM capex — SK Hynix just raised $26.5B explicitly for 'new factories and equipment' with 'demand is enormous' [DATA: CNBC], and that money buys lithography. Why the market isn't positioned: the stock sits ~10% off its 6/30 high of 1999.96 [DATA: RH fundamentals], RSI 43 [DATA: screen], sentiment bruised by Samsung and blinded by ASML no longer publishing bookings [DATA: EBC]. Limit 1815 (~1% over the 1797.32 close): fill near my price or skip the chase. P/E ~60 into a print is the named risk; 8% is the size that survives being wrong.",
+    "REGN": "Hold 8%. Filled 657.96 at the 7/06 open, marked 664.52 (+1.0%) [DATA: snapshot/settle sim]. The valuation-floor thesis (P/E 16.19 [DATA: RH fundamentals], ~19% off the January high) is doing its job in a narrow tape; August print is the dated catalyst.",
+    "GILD": "Hold 5%. The limit did its work (filled 132.55, not the 132.88 open) but the mark is 129.83 (-2.1%) [DATA: snapshot/settle sim]. Ballast leg: P/E 17.67, 2.48% yield [DATA: RH fundamentals]. Defensive pharma is what the 8-of-11-sectors-down breadth keeps bidding [DATA: finsyn]; patience, not conviction.",
+    "CVX": "New 5% oil-beta hedge. Energy was one of only two green sectors last week and oil is rising on resumed U.S.–Iran hostilities [DATA: finsyn/CNBC week-ahead], while this book is otherwise long rate-sensitive healthcare into Tuesday's CPI. A 3.96%-yield integrated major [DATA: RH fundamentals] is the boring way to own the tail. Limit 178.2. Not a valuation call — P/E 30.6 on depressed earnings [DATA: RH fundamentals]; if Iran de-escalates this comes back off.",
+    "V": "EXIT to zero, market-on-open. The compounder thesis broke structurally, not cyclically: -19% from the record high, Sell downgrades naming stablecoin disruption of the 2–3% fee model, DOJ merchant-fee case, London tribunal interchange ruling [DATA: Yahoo/247wallst/tradingkey]. The 7/06 trim at ~363 already beat today's 348.97 by 4% [DATA: snapshot] — finish the job rather than hold a stub of a derating. No limit on the exit."
   },
   "reflection": {
-    "as_of": "2026-07-02",
-    "looking_back": "The 7/02 tick queued the full rotation — MU exit, TSM/V trims, LLY/BAC top-ups, new REGN/GILD limit buys — but nothing has filled: Friday was the July 4th holiday and no session has traded since, so the book is unchanged at -12.7% all-time vs SPY -0.7% (alpha -12.0pts) with every order still resting for Monday's open [DATA: analyst_memory]. Per the no-new-session rule I'm grading the weekend's information, not inventing a session that didn't happen.",
+    "as_of": "2026-07-06",
+    "looking_back": "Five sessions settled at once in this catch-up. The 7/02-queued rotation filled at the 7/06 open: MU exited ~1007 vs a 1119.63 entry (realized ~-10%, the book's biggest scar), V trimmed ~363, TSM trimmed ~447.8, LLY topped up ~1208 (the 1223.5 limit held), BAC added ~59.14, REGN opened a position at 657.96, GILD limit-filled at 132.55. The book went into the week ~-12.7% all-time vs SPY -0.7% (alpha ~-12pts) [DATA: analyst_memory as of 7/02] and SPY added another +1.23% over the missed week [DATA: finsyn].",
     "worked": [
-      "The MU-exit thesis survived its weekend audit: SK Hynix reconfirmed the 7/10 Nasdaq debut (~$29B, SKHY) [DATA: CNBC], so exiting before the listing remains the right call and the queued order needs no adjustment",
-      "LLY's catalyst went from scheduled to live: the Medicare Bridge took effect 7/1 ($50/mo, ~20M eligible) and the stock closed 7/2 at a record [DATA: investor.lilly.com, tradingkey] — the anchor's thesis strengthened while the book slept",
-      "Queuing the buys as limits (~1% over close) cost nothing over the holiday and still protects Monday's open from a gap-up fill [DATA: pending orders in agent_state]"
+      "The MU exit beat holding: sold ~1007 at the 7/06 open, MU closed the week 979.30 (-2.8% avoided) — and the feared SKHY listing did NOT rally Micron even while SKHY itself popped +13% [DATA: snapshot, CNBC]",
+      "The V trim at ~363 front-ran the stablecoin-derating week to 348.97 (-3.9% avoided on the trimmed shares) [DATA: snapshot] — and surfaced the thesis break that now justifies the full exit",
+      "REGN's re-queued limit entry filled 657.96 and marked 664.52 (+1.0%) — the valuation-floor sleeve is the only green new money [DATA: snapshot]",
+      "Every buy carried a limit and none chased a gap: LLY filled 1208 under its 1223.5 limit, GILD filled at the 132.55 limit instead of the higher open [DATA: settle logic + snapshot]"
     ],
     "missed": [
-      "I wrote 'BAC earnings 7/15' in the 7/02 report; the confirmed date is Tuesday 7/14 [DATA: stocktitan] — one tick-day matters when the whole book is sized around dated events",
-      "The alpha hole (-12.0pts) is unchanged because nothing traded — the fix is still unproven until the rotation orders actually fill and the events resolve"
+      "SPY +1.23% on the week; a 47%-cash book structurally cannot close a -12pt alpha hole in an up-tape — cash discipline has quietly become cash drag",
+      "GILD is -2.1% since fill and LLY -1.6% — three of five carried holdings marked red into the week's close [DATA: snapshot]; hawkish minutes hit the defensive sleeve too, which the 7/06 regime read didn't price",
+      "The 7/06 report re-queued into 'a light week' — it wasn't: Samsung's print moved semis 3%+ and Fed minutes moved yields; a five-session gap between ticks left the book blind mid-week"
     ],
-    "adjustment": "No churn on a no-session run: re-queue the identical targets and limits rather than second-guessing resting orders, and carry the corrected BAC date (7/14) into position management — the earnings-week decision now comes one tick earlier."
+    "adjustment": "Deploy into dated events instead of hoarding optionality: this tick moves cash from 47% to 42% and points the new money at named prints (ASML 7/15, alongside held BAC 7/14 and TSM 7/16) rather than screen momentum — and it cuts the one holding whose thesis broke structurally (V) instead of averaging around it."
   }
 }
