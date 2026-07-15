@@ -1,0 +1,149 @@
+---
+name: financial-analyst
+description: Produce the bake-off's deep-research analyst report using Anthropic's Codex for Financial Services (equity-research) methodology, written to state/analyst.json with portfolio target weights. Use during a tick's analyst step, or when the user says "run the analyst" / "financial analyst".
+---
+
+# Financial-services analyst → state/analyst.json
+
+This is the bake-off's research analyst, run with the **Codex for Financial Services**
+equity-research methodology instead of ad-hoc research. It produces a research-grounded
+portfolio (target weights) for the analyst's $100 paper book.
+
+## Relationship to the official plugin
+The official agents live in the `anthropics/financial-services` marketplace and install via
+(user action, on any paid plan):
+```
+Codex plugin marketplace add anthropics/financial-services
+Codex plugin install equity-research@Codex-for-financial-services
+Codex plugin install financial-analysis@Codex-for-financial-services
+```
+- **If those plugins are installed**, use their skills directly: `/screen` (idea sourcing),
+  `/sector` (industry landscape), `/comps` (trading multiples), `/catalysts` (upcoming events),
+  `/thesis` (maintain/track theses). Lean on them for each step below.
+- **If not installed**, follow the same methodology manually (steps below) — the workflow is the value.
+- **Data caveat:** the official agents shine with paid-vendor MCP connectors (FactSet, S&P Capital IQ,
+  Morningstar, …). This project does NOT have those. Use **Robinhood fundamentals/historicals + web_search**
+  as the data layer. Say so in the report. Don't fabricate vendor data.
+
+## What the official agents will NOT do (the bridge)
+Per Anthropic, these agents draft research for human review — they **do not make investment
+recommendations or execute trades**. Forming the portfolio (target weights) is THIS project's
+layer, clearly labelled as such. Never place real orders.
+
+## Step 0 — read your memory (carry the book forward, don't start cold)
+You manage a live paper book across ticks. Before researching, read your own history:
+```
+python3 tools/analyst_memory.py
+```
+It prints your current holdings marked vs your entry, your last 5 realized trades, last tick's
+thesis gist + targets, and your prior `reflection` (the distilled what-worked / what-I'm-changing).
+That's recent history + summarized reasoning by design — not the whole trade log or every past
+thesis verbatim. If you need the full prior write-up, read `state/analyst.json` directly before you
+overwrite it. Use this: **keep conviction where the thesis still holds, cut or resize where it
+broke**, and in the new report's `thesis` state what changed since last tick. This is a thesis
+*update*, not a cold re-pick.
+
+## Methodology (equity-research workflow → portfolio)
+Operate over `cfg.UNIVERSE` (the ~100-name list). **Run this deeply** — it is the bake-off's
+deep-research competitor, so screen the WHOLE universe (not a glance), pull real Robinhood
+fundamentals on every finalist, and back each pick with a current catalyst from `web_search`.
+Produce a concentrated book.
+
+**Anti-bias — randomize the order first.** Order bias is real: screened in config order, the same
+names lead every tick. Shuffle the universe before you look and screen in that order, so position
+never decides conviction:
+```
+python3 -c "import random,json;from bot import config as c;u=list(c.UNIVERSE);random.shuffle(u);print(json.dumps(u))"
+```
+1. **Screen / idea-source (`/screen`)** — over the shuffled universe, narrow to a handful of
+   candidates using momentum, relative strength, and valuation from `data/snapshot.json` +
+   Robinhood fundamentals.
+2. **Sector & macro (`/sector`)** — read the current regime (Fed path, rates, energy, key sector news)
+   via `web_search`; decide which sleeves to favor/avoid.
+3. **Fundamentals & comps (`/comps`)** — for the finalists, pull Robinhood fundamentals (P/E, growth,
+   52-wk range, margins where available) and compare against peers. Note valuation vs. growth.
+4. **Catalysts (`/catalysts`)** — flag upcoming earnings/events that could move each finalist.
+5. **Thesis & risk (`/thesis`)** — write a one-paragraph thesis per pick and the risks that invalidate it.
+6. **Portfolio construction (the bridge)** — translate into **target weights** (fractions of equity;
+   the remainder is cash). Respect risk: keep a sensible cash buffer in a hostile regime, cap any single
+   name (≤ `cfg.AGENT_MAX_WEIGHT`), and prefer 2–5 names. Multiple positions are expected.
+   **Make `confidence` load-bearing:** it must track how much you actually deploy — low confidence ⇒
+   bigger cash buffer and fewer/smaller names; high conviction ⇒ lean in. Never write a `confidence`
+   that contradicts your sizing (e.g. 0.8 confidence with 60% cash is incoherent).
+
+**Edge = anticipation, not confirmation.** The rule bots already trade the numbers — momentum and
+RSI screens are table stakes, and buying a move *after* the tape confirms it is the pattern that has
+cost this book (the screen ranks yesterday's winners; you fill at tomorrow's open). Your
+differentiator is research: prefer positions that are explicit bets on a **dated upcoming event**
+you expect to resolve differently from what's priced in — positioned *before* the crowd, not after.
+For every anchor position the thesis must name: the event, its date (in tick-days), what consensus
+expects, what you expect instead, and why the market isn't positioned for it. A screen hit with no
+forward event is the rule bots' trade, not yours; use the screen to find *where to look*, not *what
+to buy*.
+
+**Cadence & execution (how your targets actually fill).** Ticks run ~once a day, usually **after market
+close**, and sometimes on weekends — so each tick ≈ one trading session. Calibrate catalyst horizons in
+**tick-days** (an earnings date "in 3 weeks" is ~15 ticks out) and read daily P&L/Sharpe as noisy: grade
+on **alpha vs SPY over the trend**, not a single session. Your targets are not filled at the close you
+decide on — outside market hours the runner **queues** the orders and fills them at the **next session's
+open** (so there is no same-bar look-ahead). On a **weekend / no-new-session run** nothing has moved:
+don't manufacture a fresh "what happened today" reflection or churn the book — hold targets steady unless
+genuine weekend news changes the thesis. **Default every queued BUY to a limit ~1% above the close
+you decided on** (the `limits: {SYMBOL: price}` map, below): you either fill near the price your
+thesis actually priced, or you skip the chase — an unfilled resting order is simply superseded next
+tick if the thesis still holds. Know what the tool can and can't do: a buy limit stops you paying up
+for an overnight gap-up, but it can NOT protect against a gap-down (it just fills cheaper at the
+open) — the only protection against buying a rout is the anticipation discipline above (don't enter
+names whose move already happened). Exits stay market-on-open: never let a limit trap you in a
+broken position.
+
+## Write `state/analyst.json`
+Same schema as before, plus a `framework` field marking the methodology. Required keys:
+`date`, `as_of`, `pick` (top conviction), `action`, `sizing`, `confidence` (0–1),
+`regime{label,note,source}`, `thesis`, `evidence[{point,source}]`, `risks[]`,
+`data_examined[{label,source}]`, **`targets` = {SYMBOL: weight}**,
+**`rationale` = {SYMBOL: "<why THIS name and this weight>"}** — one entry per name in `targets`.
+Optional **`limits` = {SYMBOL: price}** — turns that name's queued order into a limit (buy fills only
+if the next session trades down to it, sell only up to it); omit a name ⇒ it fills market-on-open.
+The dashboard renders each trade with its own reasoning: a one-liner shows inline under the trade,
+a fuller deep-dive paragraph collapses into an expandable dropdown. Write as much as each name
+warrants (a short note for an obvious add, a paragraph for the anchor) — `generated_by`,
+**`reflection`** (see below), and:
+```
+"framework": "Codex for Financial Services — equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors)."
+```
+Keep every evidence `source` a real link or a named data source. The dashboard renders `framework`
+on the analyst card as provenance.
+
+**Quote-first grounding (anti-hallucination — your data layer is web_search + RH, the part most
+prone to a confident wrong number).** Every `evidence.point` must carry the *verbatim* figure or
+quote it rests on (the actual P/E, the headline's exact number and date), not a paraphrase you
+believe — with its `source`. In each `rationale`, tag claims `[DATA]` (pulled from RH / snapshot /
+web) vs `[ASSUMED]` (your judgment) so assumptions are visible, not smuggled in as fact. **Final
+self-check before you write the file:** (a) if you can't cite a real source for a claim, cut it;
+(b) weights sum to ≤ 1 (rest is cash); (c) every `targets` name has a `rationale` entry, ≥1 sourced
+`evidence`, and a named catalyst.
+
+### `reflection` — grade the prior tick before you re-pick (the learning loop)
+You have memory, so use it. From `python3 tools/analyst_memory.py` (last thesis, targets, risks, the
+realized P&L of every closed trade, **and your book vs SPY — alpha all-time/last-tick + an annualized
+Sharpe**), write an honest retrospective on the PRIOR tick — what the trades actually did, what the
+thesis got right, and what it missed. Ground every claim in a real number or trade; don't invent
+outcomes. **Grade alpha, not raw P&L:** a green book in a tape SPY rose more is a *miss* — beating
+cash isn't the bar, beating the benchmark is. Cite the alpha and Sharpe; keep conviction where you
+beat SPY, cut/resize where you trailed it. This block drives the new picks. Schema:
+```
+"reflection": {
+  "as_of": "<the prior tick's date you're grading>",
+  "looking_back": "<2-4 sentences: what you held/traded last tick and what the realized P&L did>",
+  "worked":  ["<a call the data vindicated - name the trade/number>", ...],
+  "missed":  ["<what went wrong or was overlooked - a risk that bit, a name you under/over-sized>", ...],
+  "adjustment": "<the one concrete change you're making THIS tick because of the above>"
+}
+```
+First tick (no prior book): set `looking_back` to "First tick - no prior trades to grade yet." and
+leave the lists empty. The dashboard renders this as the analyst's "Looking back" block.
+
+## After writing
+Return to the tick flow (`run_agents.py` reads `state/analyst.json` for the analyst's targets).
+This skill only writes the report — it does not move money or place orders.
