@@ -115,6 +115,25 @@ warrants (a short note for an obvious add, a paragraph for the anchor) — `gene
 Keep every evidence `source` a real link or a named data source. The dashboard renders `framework`
 on the analyst card as provenance.
 
+### `charts` — optional exhibits (rendered as native SVG on the analyst card)
+You may attach up to 3 small charts; the dashboard draws them itself in the site's style, labelled
+**Exhibit A/B/C**, under the thesis. Chart only numbers you actually observed THIS tick (snapshot
+closes, RH fundamentals, sourced web figures) — never an invented or remembered series — and name
+where each came from in `source` (same bar as evidence). Schema:
+```
+"charts": [
+  {"type": "bars", "title": "Target weights this tick", "unit": "%", "source": "targets map",
+   "items": [{"label": "LLY", "value": 12}, {"label": "cash", "value": 42}]},
+  {"type": "line", "title": "LLY daily close into the 7/15 print", "unit": "$",
+   "source": "data/snapshot.json · Robinhood daily bars",
+   "points": [["2026-06-10", 771.2], ["2026-06-11", 780.0]]}
+]
+```
+`bars`: ≤12 items, values already in the chart's unit (percent as 0–100, not fractions; negatives
+allowed and drawn in red). `line`: 2–64 `[x-label, y]` points in chronological order. Good
+exhibits: the weight allocation, a finalist's price path into its catalyst, a comps metric across
+peers. Skip charts on a no-news tick — they are exhibits supporting the thesis, not decoration.
+
 **Quote-first grounding (anti-hallucination — your data layer is web_search + RH, the part most
 prone to a confident wrong number).** Every `evidence.point` must carry the *verbatim* figure or
 quote it rests on (the actual P/E, the headline's exact number and date), not a paraphrase you

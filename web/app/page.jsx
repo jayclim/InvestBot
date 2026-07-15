@@ -5,8 +5,26 @@ import { LiveQuotesProvider } from "../components/LiveQuotes";
 import LivePrices from "../components/LivePrices";
 import Leaderboard from "../components/Leaderboard";
 import EquityCurves from "../components/EquityCurves";
+import Graduation from "../components/Graduation";
 import Swarm from "../components/Swarm";
 import { Analyst, DecisionTrail, LiveAccount, Methods, Universe } from "../components/Panels";
+
+// A fine engraved band under the headline — three interleaved arcs, banknote-style.
+function Guilloche() {
+  const arc = (phase, amp) => {
+    let d = `M0 ${13 + phase}`;
+    for (let x = 0; x < 440; x += 40) d += ` Q ${x + 20} ${13 + phase - amp} ${x + 40} ${13 + phase}`;
+    return d;
+  };
+  return (
+    <svg className="guilloche" viewBox="0 0 440 26" preserveAspectRatio="none" aria-hidden="true">
+      <path d={arc(0, 10)} fill="none" stroke="currentColor" strokeWidth="0.7" />
+      <path d={arc(0, -10)} fill="none" stroke="currentColor" strokeWidth="0.7" />
+      <path d={arc(0, 5)} fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.6" />
+      <path d={arc(0, -5)} fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.6" />
+    </svg>
+  );
+}
 
 export default function Page() {
   const [data, setData] = useState(null);
@@ -39,6 +57,9 @@ export default function Page() {
       <div className={"livebar " + (live.active ? "live-on" : "live-off")}>
         <div className="lw">
           <span><span className="dot" />{live.active ? "Live trading — on" : "Live trading — off · paper only"}</span>
+          <nav className="lvnav">
+            <a href="#field">Field</a> · <a href="#standings">Standings</a> · <a href="#graduation">Graduation</a> · <a href="#analyst">Analyst</a> · <a href="#methods">Methods</a>
+          </nav>
           <span className="mono">Agentic acct ••••</span>
         </div>
       </div>
@@ -48,15 +69,17 @@ export default function Page() {
           <div className="kicker">Paper-trading lab · walk-forward</div>
           <h1>Every competitor starts with <em>{"$" + data.starting_cash.toLocaleString()}</em>.</h1>
           <p className="sub">Three rule-based strategies, a research analyst, and a voting swarm, each trading the same market independently. Prices update live; the board advances one trading day per tick.</p>
+          <Guilloche />
           <div className="meta">
-            Live forward test · <b>{data.period.start}</b> → <b>{data.period.end}</b> · {data.period.sessions} session{data.period.sessions === 1 ? "" : "s"}
+            Series <b>{data.period.start}</b> — <b>{data.period.end}</b> · {data.period.sessions} session{data.period.sessions === 1 ? "" : "s"}
             {data.backtest_span ? ` · backtest ref ${data.backtest_span}` : ""} · generated {data.generated_at}
           </div>
         </header>
 
-        <LivePrices data={data} />
-        <Leaderboard data={data} />
         <EquityCurves data={data} />
+        <Leaderboard data={data} />
+        <Graduation data={data} />
+        <LivePrices data={data} />
         <Swarm data={data} />
 
         <Analyst data={data} />

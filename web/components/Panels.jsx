@@ -5,6 +5,68 @@ import { useModal, InfoButton } from "./ModalContext";
 import { useLiveQuotes, simFillPrice } from "./LiveQuotes";
 import { named } from "../lib/names";
 
+// One analyst chart spec → an "Exhibit" figure, drawn natively so it matches the site.
+// Specs come from state/analyst.json `charts`: {type:"bars"|"line", title, unit, source, items|points}.
+function Exhibit({ ch, i }) {
+  const letter = String.fromCharCode(65 + i);
+  const fmt = (v) =>
+    ch.unit === "%" ? v.toFixed(Math.abs(v) >= 10 ? 0 : 1) + "%"
+    : ch.unit === "$" ? "$" + Number(v).toFixed(Math.abs(v) >= 100 ? 0 : 2)
+    : String(v);
+  let body = null;
+  if (ch.type === "bars" && ch.items?.length) {
+    const items = ch.items.slice(0, 12);
+    const mx = Math.max(...items.map((d) => Math.abs(d.value)), 1e-9);
+    const W = 420, rh = 22, lab = 92, val = 56, H = items.length * rh + 6;
+    body = (
+      <svg className="chart" viewBox={`0 0 ${W} ${H}`}>
+        {items.map((d, k) => {
+          const w = Math.max((Math.abs(d.value) / mx) * (W - lab - val - 10), 1);
+          const y0 = 3 + k * rh;
+          return (
+            <g key={k}>
+              <text x={lab - 8} y={y0 + 14.5} textAnchor="end" fontFamily="IBM Plex Mono" fontSize="11" fill="var(--ink)">{d.label}</text>
+              <rect x={lab} y={y0 + 4} width={w} height={13} fill={d.value < 0 ? "var(--down)" : "var(--signal)"} opacity="0.85" />
+              <text x={lab + w + 6} y={y0 + 14.5} fontFamily="IBM Plex Mono" fontSize="10.5" fill="var(--muted)">{fmt(d.value)}</text>
+            </g>
+          );
+        })}
+      </svg>
+    );
+  } else if (ch.type === "line" && ch.points?.length >= 2) {
+    const pts = ch.points.slice(0, 64);
+    const W = 420, H = 150, L = 8, R = 62, T = 10, B = 20;
+    const ys = pts.map((p) => p[1]);
+    let lo = Math.min(...ys), hi = Math.max(...ys);
+    const padY = (hi - lo) * 0.1 || 1; lo -= padY; hi += padY;
+    const x = (k) => L + (k / (pts.length - 1)) * (W - L - R);
+    const y = (v) => T + (1 - (v - lo) / (hi - lo)) * (H - T - B);
+    const last = pts[pts.length - 1];
+    body = (
+      <svg className="chart" viewBox={`0 0 ${W} ${H}`}>
+        {[lo + padY, hi - padY].map((v, k) => (
+          <g key={k}>
+            <line x1={L} y1={y(v)} x2={W - R} y2={y(v)} stroke="var(--line-2)" />
+            <text x={W - R + 7} y={y(v) + 3.5} fontFamily="IBM Plex Mono" fontSize="9.5" fill="var(--muted)">{fmt(v)}</text>
+          </g>
+        ))}
+        <polyline points={pts.map((p, k) => x(k).toFixed(1) + "," + y(p[1]).toFixed(1)).join(" ")} fill="none" stroke="var(--signal)" strokeWidth="1.8" strokeLinejoin="round" />
+        <circle cx={x(pts.length - 1)} cy={y(last[1])} r="2.6" fill="var(--signal)" />
+        <text x={x(pts.length - 1) + 7} y={y(last[1]) + 3.5} fontFamily="IBM Plex Mono" fontSize="10.5" fontWeight="600" fill="var(--signal)">{fmt(last[1])}</text>
+        <text x={L} y={H - 6} fontFamily="IBM Plex Mono" fontSize="9.5" fill="var(--muted)">{pts[0][0]}</text>
+        <text x={W - R} y={H - 6} textAnchor="end" fontFamily="IBM Plex Mono" fontSize="9.5" fill="var(--muted)">{last[0]}</text>
+      </svg>
+    );
+  }
+  if (!body) return null;
+  return (
+    <figure className="exh">
+      {body}
+      <figcaption className="exh-cap"><b>Exhibit {letter}</b> — {ch.title}{ch.source ? <span> · {ch.source}</span> : null}</figcaption>
+    </figure>
+  );
+}
+
 export function Analyst({ data }) {
   const a = data.analyst;
   if (!a) return null;
@@ -15,7 +77,7 @@ export function Analyst({ data }) {
   const aTrades = (data.decisions || []).filter((d) => d.agent === "deep_research_analyst");
   const tickTrades = aTrades.length ? aTrades.filter((d) => d.date === aTrades[0].date) : [];
   return (
-    <section>
+    <section id="analyst">
       <div className="eyebrow">
         <span className="n">04</span><h2>Research analyst</h2>
         <InfoButton title="Research analyst">
@@ -24,7 +86,9 @@ export function Analyst({ data }) {
       </div>
       <div className="card pad">
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <div className="pickline">{a.pick} <span className={a.action}>{a.action.toUpperCase()}</span></div>
+          {/* action is usually buy/hold/sell, but some ticks carry a whole thesis sentence —
+              drop those to quiet body type instead of shouting them in display caps */}
+          <div className={"pickline" + ((String(a.pick) + a.action).length > 48 ? " long" : "")}>{a.pick} <span className={a.action}>{a.action.length <= 6 ? a.action.toUpperCase() : a.action}</span></div>
           <span className={"badge " + (a.is_mock ? "mock" : "live")}>{a.is_mock ? "mock" : "agent-driven"}</span>
         </div>
         {a.sizing && <div style={{ margin: "6px 0" }}><span className="chip">{a.sizing}</span></div>}
@@ -37,6 +101,11 @@ export function Analyst({ data }) {
           <p className="note"><b>Regime — {reg.label}:</b> {reg.note} {reg.source && <a href={reg.source}>source ↗</a>}</p>
         )}
         <p style={{ fontSize: ".93rem" }}>{a.thesis}</p>
+        {(a.charts || []).length > 0 && (
+          <div className="exhibits">
+            {a.charts.slice(0, 3).map((ch, i) => <Exhibit key={i} ch={ch} i={i} />)}
+          </div>
+        )}
         {tickTrades.length > 0 && (
           <>
             <p className="note" style={{ marginTop: "12px" }}><b>Trades placed</b> <span className="mono" style={{ fontWeight: 400 }}>· {tickTrades[0].date}</span></p>
@@ -262,6 +331,25 @@ export function LiveAccount({ data }) {
                 )}
               </tbody>
             </table>
+            {(L.orders || []).length > 0 && (
+              <>
+                <p className="note" style={{ marginBottom: 0 }}><b>Agent-placed orders</b> (filled)</p>
+                <table className="tl">
+                  <thead><tr><th>date</th><th>side</th><th>sym</th><th>fill</th><th>size</th></tr></thead>
+                  <tbody>
+                    {L.orders.map((o, i) => (
+                      <tr key={i}>
+                        <td>{o.date}</td>
+                        <td className="mono" style={{ color: o.side === "buy" ? "var(--up)" : "var(--down)" }}>{o.side}</td>
+                        <td>{o.symbol}</td>
+                        <td className="mono">{money(o.avg_price)}</td>
+                        <td className="mono">{money(o.dollars)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </>
+            )}
             {L.note && <p className="note">{L.note}</p>}
           </>
         ) : (
@@ -309,7 +397,7 @@ export function Universe({ data }) {
 export function Methods({ data }) {
   const m = data.methodology;
   return (
-    <section>
+    <section id="methods">
       <div className="eyebrow"><span className="n">··</span><h2>Methods &amp; sources</h2></div>
       <div className="card pad">
         <ul className="src">

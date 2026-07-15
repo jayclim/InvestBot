@@ -21,6 +21,7 @@ import json
 import os
 import random
 import datetime
+import statistics
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -32,6 +33,7 @@ from bot.portfolio import Portfolio
 from bot.state import _pf_from_dict
 from bot.strategy import MomentumBreakout, MeanReversion, Blended
 from bot.paper import load_agents
+from bot.models import Bar
 from run import load_snapshot
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -55,6 +57,24 @@ AGENT_RULES = {
 }
 KIND = {"deep_research_analyst": "analyst", "llm_voters": "swarm", "mirofish_real": "mirofish",
         "congress_mirror": "congress"}
+
+# The project's standing rule (see CLAUDE.md "Golden rules"): no strategy earns real money at
+# scale until it clears an objective bar on the LIVE forward book — not a backtest, not a
+# feeling. These are the four gates; see graduation_report() for how they're checked.
+GRADUATION_BAR = {"sessions": 60, "decisions": 20, "max_dd": -0.20, "excess": 0.0}
+GRADUATION_CRITERIA = [
+    {"key": "sessions", "label": "≥60 sessions",
+     "detail": "About three months of forward trading — enough history that the record isn't a lucky week."},
+    {"key": "decisions", "label": "≥20 decisions",
+     "detail": "Enough trades that the outcome reflects the rule, not one or two flukes."},
+    {"key": "max_dd", "label": "max DD better than −20%",
+     "detail": "Never lost more than a fifth of the book from a peak — survivable risk."},
+    {"key": "excess", "label": "beating S&P 500",
+     "detail": "Positive excess return vs the buy-and-hold benchmark — otherwise SPY wins by doing nothing."},
+]
+# Only the paper strategies graduate to real money — not the index/me/live rows, which aren't
+# candidates for funding (SPY is the baseline, "You"/"Robinhood" are already-real accounts).
+GRADUATION_KINDS = {"algo", "analyst", "swarm", "mirofish", "congress"}
 
 
 def pf_to_competitor(name, pf, kind, rules, backtest=None, marks=None, open_orders=None):
@@ -309,6 +329,108 @@ def robin_competitor(axis, start, marks, mark_date=""):
     }
 
 
+def sharpe_ratio(curve):
+    """Annualized Sharpe from a (normalized) equity_curve's daily returns — the risk-adjusted
+    read that raw return/max_dd alone don't give: two competitors with the same return but very
+    different day-to-day volatility should not look the same on the board. None when there's too
+    little history to mean anything, or the curve is dead flat (zero variance, division undefined)."""
+    if len(curve) < 3:
+        return None
+    rets = [curve[i][1] / curve[i - 1][1] - 1 for i in range(1, len(curve)) if curve[i - 1][1]]
+    if len(rets) < 2:
+        return None
+    stdev = statistics.pstdev(rets)
+    if stdev == 0:
+        return None
+    return round(statistics.mean(rets) / stdev * (252 ** 0.5), 2)
+
+
+def add_risk_stats(competitors):
+    """Attach `sharpe` and `excess` (return minus S&P 500's) to every competitor in place —
+    the two questions the raw return/max_dd columns don't answer: risk-adjusted, and vs doing
+    nothing. Run last, once every competitor (including SPY/You/Robinhood) is on the shared axis."""
+    spy = next((c for c in competitors if c["name"] == "S&P 500"), None)
+    spy_return = spy["return"] if spy else None
+    for c in competitors:
+        c["sharpe"] = sharpe_ratio(c["equity_curve"])
+        if spy_return is None:
+            c["excess"] = None
+        elif c is spy:
+            c["excess"] = 0.0
+        else:
+            c["excess"] = round(c["return"] - spy_return, 4)
+
+
+def graduation_report(competitors, bar=GRADUATION_BAR):
+    """The standing rule from CLAUDE.md, made visible on the board: a strategy graduates to real
+    money only once its LIVE forward record clears all four gates — enough sessions and decisions
+    that the result isn't luck, a survivable drawdown, and it actually beats SPY. Index/me/live
+    rows aren't candidates (see GRADUATION_KINDS) so they're excluded, not just scored and hidden."""
+    rows = []
+    for c in competitors:
+        if c["kind"] not in GRADUATION_KINDS:
+            continue
+        sessions = len(c["equity_curve"]) - 1
+        decisions = c["trades"]
+        max_dd = c["max_dd"]
+        excess = c.get("excess")
+        checks = {
+            "sessions": sessions >= bar["sessions"],
+            "decisions": decisions >= bar["decisions"],
+            "max_dd": max_dd >= bar["max_dd"],
+            "excess": excess is not None and excess > bar["excess"],
+        }
+        rows.append({
+            "name": c["name"], "kind": c["kind"], "sessions": sessions, "decisions": decisions,
+            "max_dd": max_dd, "excess": excess, "sharpe": c.get("sharpe"),
+            "checks": checks, "passed": all(checks.values()),
+        })
+    return {"criteria": GRADUATION_CRITERIA, "rows": rows}
+
+
+def luck_band(snap, axis, start, n=200, k=5):
+    """A "monkey band": N seeded-random k-name equal-weight buy-and-hold portfolios from the same
+    universe, marked on the same axis — so the chart can show whether any competitor is actually
+    beating what picking names out of a hat produces, not just beating SPY. Deterministic (seeded)
+    so the band doesn't jitter between rebuilds. Each symbol's forward-filled close-per-axis-date
+    is computed once (not once per portfolio) — the only part of this that scales with the universe."""
+    if not axis:
+        return None
+    ratio_by_symbol = {}
+    for s in cfg.UNIVERSE:
+        bars = snap.get(s)
+        if not bars:
+            continue
+        bar_map = {b.date: b.close for b in bars}  # bars are date-sorted (load_snapshot)
+        sorted_dates = sorted(bar_map)
+        closes, j, last = [], 0, None
+        for d in axis:
+            while j < len(sorted_dates) and sorted_dates[j] <= d:
+                last = bar_map[sorted_dates[j]]
+                j += 1
+            closes.append(last)
+        if closes[0] is None:  # no close on or before axis[0] — not eligible
+            continue
+        base = closes[0]
+        ratio_by_symbol[s] = [c / base for c in closes]
+    eligible = list(ratio_by_symbol)
+    if len(eligible) < k:
+        return None
+    rng = random.Random(42)
+    values = [[] for _ in axis]  # per axis date: list of n portfolio values
+    for _ in range(n):
+        names = rng.sample(eligible, k)
+        for di in range(len(axis)):
+            avg_ratio = sum(ratio_by_symbol[s][di] for s in names) / k
+            values[di].append(start * avg_ratio)
+    band = []
+    for di, d in enumerate(axis):
+        vals = sorted(values[di])
+        p10, p50, p90 = vals[int(0.10 * n)], vals[int(0.50 * n)], vals[int(0.90 * n)]
+        band.append([d, round(p10, 2), round(p50, 2), round(p90, 2)])
+    return {"n": n, "names_per": k, "band": band}
+
+
 def write_history(snap):
     """Publish daily close history per symbol for the click-through stock charts — the bots'
     own snapshot data, so buy/sell markers line up exactly with what they traded on."""
@@ -376,6 +498,10 @@ def main():
         competitors.sort(key=lambda c: c["final"], reverse=True)
     benchmark = None  # S&P 500 is now a competitor (buy & hold), not a separate dashed overlay
 
+    add_risk_stats(competitors)
+    graduation = graduation_report(competitors)
+    luck = luck_band(snap, axis, cfg.STARTING_CASH * DISPLAY_SCALE)
+
     data = {
         "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
         "starting_cash": round(cfg.STARTING_CASH * DISPLAY_SCALE, 2),
@@ -384,6 +510,7 @@ def main():
         "backtest_span": f"{dates[0]}–{dates[-1]}",
         "competitors": competitors,
         "benchmark": benchmark,
+        "graduation": graduation,
         "decisions": build_decisions(alg_pfs, active_agents),
         "analyst": load_analyst(dates[-1]),
         "swarm": load_swarm(dates[-1]),
@@ -402,9 +529,13 @@ def main():
                 {"name": "Real-MiroFish swarm", "detail": "Social-simulation swarm (bot/mirofish.py): persona agents with memory interact over multiple rounds — each re-ranks its best ideas seeing its own prior view and its neighbours' latest — so a consensus forms via peer influence (the opposite of the independent swarm). The panel's rank-weighted (Borda) consensus becomes a multi-name book (top " + str(cfg.MIROFISH_MAX_NAMES) + " names, weight ∝ points). Tiered cost (cheap/default/qwen); seeded from the briefing + optional world-events news."},
                 {"name": "Live account", "detail": "Robinhood MCP, Agentic cash account ••••, via get_portfolio / get_equity_positions / get_equity_orders."},
                 {"name": "Display scale", "detail": "The real paper books are $" + format(int(cfg.STARTING_CASH), ",") + " each; every dollar and share figure on this site is shown ×" + str(DISPLAY_SCALE) + " (a $" + format(int(cfg.STARTING_CASH * DISPLAY_SCALE), ",") + " book) so holdings read in whole shares and dollars. Per-share prices and percentages are unscaled."},
+                {"name": "Luck baseline", "detail": "200 seeded random 5-name equal-weight buy-and-hold portfolios from the same universe, same sessions — the shaded band on the chart is their 10th–90th percentile. A strategy that never leaves the band hasn't shown anything luck can't."},
+                {"name": "Graduation bar", "detail": "The standing rule before any strategy earns real money at scale: ≥60 forward sessions, ≥20 decisions, max drawdown better than −20%, and positive excess return vs S&P 500. Tracked live on this board."},
             ],
         },
     }
+    if luck:
+        data["luck"] = luck
 
     # Publish data for the Next.js web app (web/ is the one canonical front-end).
     web_pub = os.path.join(ROOT, "web", "public")
@@ -429,5 +560,38 @@ if __name__ == "__main__":
         idx = twr_index([["a", 1000], ["b", 1020], ["c", 600]], {"c": -500})
         assert abs(idx["c"] - 1.1) < 1e-9, idx
         print("twr ok", idx)
+
+        # sharpe: up-then-down beats down-then-up in sign; dead-flat curve is undefined (None).
+        up = sharpe_ratio([["a", 100], ["b", 110], ["c", 105]])
+        down = sharpe_ratio([["a", 100], ["b", 90], ["c", 95]])
+        flat = sharpe_ratio([["a", 100], ["b", 100], ["c", 100]])
+        assert up is not None and up > 0, up
+        assert down is not None and down < 0, down
+        assert flat is None, flat
+        print("sharpe ok", up, down, flat)
+
+        # excess: competitor return minus S&P 500's; SPY's own excess is exactly 0.
+        c1 = {"name": "Test", "kind": "algo", "return": 0.20, "equity_curve": [["a", 100], ["b", 110], ["c", 121]]}
+        spy = {"name": "S&P 500", "kind": "index", "return": 0.05, "equity_curve": [["a", 100], ["b", 102], ["c", 105]]}
+        add_risk_stats([c1, spy])
+        assert c1["excess"] == 0.15, c1
+        assert spy["excess"] == 0.0, spy
+        print("excess ok", c1["excess"], spy["excess"])
+
+        # luck band: 5 real UNIVERSE symbols, toy closes over 3 sessions -> percentiles ordered.
+        toy_snap = {
+            "AAPL": [Bar("a", 0, 0, 0, 100, 0), Bar("b", 0, 0, 0, 110, 0), Bar("c", 0, 0, 0, 121, 0)],
+            "MSFT": [Bar("a", 0, 0, 0, 50, 0), Bar("b", 0, 0, 0, 45, 0), Bar("c", 0, 0, 0, 55, 0)],
+            "GOOGL": [Bar("a", 0, 0, 0, 200, 0), Bar("b", 0, 0, 0, 190, 0), Bar("c", 0, 0, 0, 210, 0)],
+            "AMZN": [Bar("a", 0, 0, 0, 80, 0), Bar("b", 0, 0, 0, 88, 0), Bar("c", 0, 0, 0, 84, 0)],
+            "META": [Bar("a", 0, 0, 0, 300, 0), Bar("b", 0, 0, 0, 330, 0), Bar("c", 0, 0, 0, 300, 0)],
+        }
+        lb = luck_band(toy_snap, ["a", "b", "c"], 1000.0, n=50, k=3)
+        assert lb is not None and len(lb["band"]) == 3, lb
+        for _, p10, p50, p90 in lb["band"]:
+            assert p10 <= p50 <= p90, lb["band"]
+        assert luck_band(toy_snap, [], 1000.0) is None
+        assert luck_band(toy_snap, ["a", "b", "c"], 1000.0, k=10) is None  # only 5 eligible < k
+        print("luck ok", lb["band"])
     else:
         main()

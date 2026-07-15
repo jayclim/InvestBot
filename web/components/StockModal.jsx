@@ -169,7 +169,7 @@ export default function StockModal({ symbol, data, history }) {
           {ticks.map((v, i) => (
             <g key={i}>
               <line x1={L} y1={y(v)} x2={W - R} y2={y(v)} stroke="var(--line-2)" />
-              <text x={L - 7} y={y(v) + 3.5} textAnchor="end" fontFamily="JetBrains Mono" fontSize="10" fill="var(--muted)">
+              <text x={L - 7} y={y(v) + 3.5} textAnchor="end" fontFamily="IBM Plex Mono" fontSize="10" fill="var(--muted)">
                 {v.toFixed(v < 10 ? 2 : 0)}
               </text>
             </g>
@@ -186,8 +186,8 @@ export default function StockModal({ symbol, data, history }) {
               <title>{`${m.who} · ${m.side} ${symbol} @ ${money(m.price)} · ${m.date}${m.reason ? " · " + m.reason : ""}`}</title>
             </polygon>
           ))}
-          <text x={L} y={H - 9} fontFamily="JetBrains Mono" fontSize="10" fill="var(--muted)">{fmtX(pts[0][0])}</text>
-          <text x={W - R} y={H - 9} textAnchor="end" fontFamily="JetBrains Mono" fontSize="10" fill="var(--muted)">{fmtX(pts[n - 1][0])}</text>
+          <text x={L} y={H - 9} fontFamily="IBM Plex Mono" fontSize="10" fill="var(--muted)">{fmtX(pts[0][0])}</text>
+          <text x={W - R} y={H - 9} textAnchor="end" fontFamily="IBM Plex Mono" fontSize="10" fill="var(--muted)">{fmtX(pts[n - 1][0])}</text>
           {hover != null && (
             <>
               <line x1={x(hover)} y1={T} x2={x(hover)} y2={H - B} stroke="var(--ink)" strokeOpacity="0.28" />

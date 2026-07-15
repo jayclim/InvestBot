@@ -77,6 +77,8 @@ export default function Leaderboard({ data }) {
           <span className="k">Return</span><span className={"v " + cls(mk.ret)}>{pct(mk.ret)}</span>
           <span className="k">At last close</span><span className="v">{money(c.final)} · {pct(c.return)}</span>
           <span className="k">Max drawdown</span><span className={"v " + cls(c.max_dd)}>{pct(c.max_dd)}</span>
+          <span className="k">vs S&amp;P 500</span><span className={"v " + (c.excess != null ? cls(c.excess) : "")}>{c.excess != null ? pct(c.excess) : "—"}</span>
+          <span className="k">Sharpe (ann.)</span><span className="v">{c.sharpe != null ? c.sharpe.toFixed(2) : "—"}</span>
           <span className="k">Trades / win rate</span><span className="v">{c.trades} · {(c.win_rate * 100).toFixed(0)}%</span>
           <span className="k">Cash</span><span className="v">{money(c.cash)}</span>
         </div>
@@ -155,12 +157,12 @@ export default function Leaderboard({ data }) {
   }
 
   return (
-    <section>
+    <section id="standings">
       <div className="eyebrow">
         <span className="n">01</span>
         <h2>Standings</h2>
         <InfoButton title="Standings">
-          The live forward paper test: every competitor trades a {book} book the same way, advanced one trading day per tick, with {m.slippage_bps} bps slippage, a −{Math.round(m.stop_loss_pct * 100)}% stop, and fills at the next open. Equity, return and the ranking re-mark each book to live quotes every 30s; with the market closed they fall back to the last session&apos;s close. The <b>today</b> column is each book&apos;s gain/loss since the last trading day — live intraday, or the last completed session when the market&apos;s closed. Each rule strategy&apos;s detail also shows a separate Dec–Jun backtest for context.
+          The live forward paper test: every competitor trades a {book} book the same way, advanced one trading day per tick, with {m.slippage_bps} bps slippage, a −{Math.round(m.stop_loss_pct * 100)}% stop, and fills at the next open. Equity, return and the ranking re-mark each book to live quotes every 30s; with the market closed they fall back to the last session&apos;s close. The <b>today</b> column is each book&apos;s gain/loss since the last trading day — live intraday, or the last completed session when the market&apos;s closed. The <b>vs SPY</b> column is each book&apos;s total return minus the S&amp;P 500&apos;s over the same window — positive means beating the index, negative means trailing it. Each rule strategy&apos;s detail also shows a separate Dec–Jun backtest for context.
         </InfoButton>
         <span className="hint">{live ? "live-marked" : "last close"} · {book} each</span>
       </div>
@@ -171,6 +173,7 @@ export default function Leaderboard({ data }) {
         <div className="row head">
           <span>#</span><span>competitor</span>
           <span className="num">equity</span><span className="num c-day">{live ? "today" : "last day"}</span><span className="num">return</span>
+          <span className="num c-ex">vs SPY</span>
           <span className="num c-tr">trades</span>
           <span className="c-spark">curve</span>
         </div>
@@ -190,6 +193,7 @@ export default function Leaderboard({ data }) {
               </>}
             </span>
             <span className={"num " + cls(c._m.ret)}>{pct(c._m.ret)}</span>
+            <span className={"num c-ex" + (c.excess != null ? " " + cls(c.excess) : "")}>{c.excess != null ? pct(c.excess) : "—"}</span>
             <span className="num c-tr">{c.trades}</span>
             <span className="c-spark"><Sparkline curve={c.equity_curve} start={data.starting_cash} liveValue={c._m.priced ? c._m.equity : null} /></span>
           </div>
