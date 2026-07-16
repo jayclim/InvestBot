@@ -29,6 +29,9 @@ def main(path="data/snapshot.json"):
 
     last_date, portfolios = load_state(list(REGISTRY), cfg.STARTING_CASH, seed_last)
     broker = PaperBroker(cfg.SLIPPAGE_BPS)
+    from bot.paper import rescale_splits
+    for pf in portfolios.values():
+        rescale_splits(pf, snap)  # split guard: restated bars must not book phantom P&L
 
     new_dates = [d for d in all_dates if d > last_date]
     for d in new_dates:

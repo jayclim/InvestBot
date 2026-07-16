@@ -60,6 +60,7 @@ def _decide(name, targets, ctx, label, limits=None):
     _, pfs, pending = paper.load_agents(cfg.AGENT_NAMES)
     pf, broker = pfs[name], PaperBroker(cfg.SLIPPAGE_BPS)
     stop, breaker = paper.risk_for(name)
+    paper.rescale_splits(pf, ctx["snap"], label)  # split guard BEFORE any fill/mark on restated bars
     filled, _resting = paper.settle_pending(pf, pending.get(name, []), ctx["snap"], broker)
     orders = paper.plan_orders(pf, targets, ctx["prices"], label, stop, breaker, limits)
     if ctx["instant"]:

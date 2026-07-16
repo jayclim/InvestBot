@@ -171,6 +171,32 @@ def settle_pending(pf, orders, snap, broker):
     return filled, unfilled
 
 
+def rescale_splits(pf, snap, label=""):
+    """Corporate-action guard: the RH feed restates a symbol's WHOLE price history when it splits
+    (bars are split-adjusted), but a held position keeps its as-filled qty/basis — marking or
+    exiting it against restated bars books phantom P&L (mirofish booked +$60 when SOXS
+    reverse-split 1:10 on 2026-07-15). If a position's basis is far off its entry-date bar and the
+    mismatch is a clean split ratio, rescale qty/basis in place (position value unchanged).
+    # ponytail: integer ratios only, keyed off the entry-date open; warns + leaves alone otherwise.
+    """
+    for pos in list(pf.positions.values()):
+        b = next((b for b in snap.get(pos.symbol, []) if b.date == pos.entry_date), None)
+        if b is None or pos.avg_price <= 0:
+            continue
+        r = b.open / pos.avg_price
+        if 0.67 < r < 1.5:               # averaging/slippage noise, not a split (splits are >=2:1)
+            continue
+        ratio = float(round(r)) if r > 1 else 1.0 / max(round(1.0 / r), 1)
+        if ratio == 1.0 or abs(r / ratio - 1) > 0.05:
+            print(f"    WARNING {label or pf.name}: {pos.symbol} basis {pos.avg_price:.4f} is "
+                  f"{r:.2f}x off its {pos.entry_date} bar with no clean split ratio — left as-is")
+            continue
+        pos.qty /= ratio
+        pos.avg_price *= ratio
+        print(f"    split guard {label or pf.name}: {pos.symbol} restated x{ratio:g} "
+              f"-> qty {pos.qty:.6f} @ {pos.avg_price:.4f}")
+
+
 def rebalance(pf, targets, prices, date, label, stop_pct=cfg.STOP_LOSS_PCT, breaker_equity=cfg.CIRCUIT_BREAKER_EQUITY):
     """Instant rebalance toward target weights at `prices` (plan -> execute -> mark). The in-hours
     fast path and the engine-parity helper the self-check below pins."""
@@ -298,6 +324,23 @@ if __name__ == "__main__":  # ponytail: self-check for the stop-loss / circuit-b
     # mark dedupes by date: two marks on one date keep ONE point (no weekend/rerun churn)
     pf = Portfolio(100.0, "t"); pf.mark("d1", {}); pf.mark("d1", {})
     assert pf.equity_curve == [("d1", 100.0)], pf.equity_curve
+
+    # split guard: 1:10 reverse split restates the entry bar x10 -> qty/10, basis x10, value unchanged
+    from bot.models import Position
+    pf = Portfolio(0.0, "t")
+    pf.positions["SOXS"] = Position("SOXS", 1.5, 4.11, "d1")
+    rescale_splits(pf, {"SOXS": [Bar("d1", 41.1, 41.8, 37.7, 40.0, 1)]})
+    p = pf.positions["SOXS"]
+    assert abs(p.qty - 0.15) < 1e-9 and abs(p.avg_price - 41.1) < 1e-9, (p.qty, p.avg_price)
+    # 4:1 forward split -> qty x4, basis /4
+    pf.positions["CRWD"] = Position("CRWD", 0.01, 735.44, "d1")
+    rescale_splits(pf, {"CRWD": [Bar("d1", 183.9, 191.3, 183.0, 187.0, 1)]})
+    p = pf.positions["CRWD"]
+    assert abs(p.qty - 0.04) < 1e-9 and abs(p.avg_price - 183.86) < 1e-9, (p.qty, p.avg_price)
+    # noise (averaged-up basis, no split) is untouched; missing entry bar is untouched
+    pf.positions["MU"] = Position("MU", 1.0, 994.05, "d1")
+    rescale_splits(pf, {"MU": [Bar("d1", 939.0, 999.0, 930.0, 990.0, 1)], "NOBAR": []})
+    assert pf.positions["MU"].qty == 1.0 and pf.positions["MU"].avg_price == 994.05
 
     # is_rth: Wed noon ET open; Sat and pre-market closed (2026-06-24 is a Wednesday)
     assert is_rth(_dt.datetime(2026, 6, 24, 12, 0, tzinfo=_ET))
