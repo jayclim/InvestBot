@@ -1,9 +1,30 @@
-Market briefing — pre-open Monday 2026-07-06 (last traded session: 2026-07-02; markets were CLOSED Fri 7/3 for July 4th and over the weekend, so prices are unchanged since Thursday's close):
+World events briefing — weekend of 2026-07-18/19 (last session: Friday 2026-07-17)
 
-- Where the tape left off (7/02): Dow closed at a RECORD ~52,900 (+1.14%) while semis corrected hard — the SOX fell ~6.7% on the week in a memory-led "Parabolic 7" unwind (MU -19.6% over 5 sessions, MRVL -9.9% on 7/2, SOXL -16.8%). SPY roughly flat (-0.13% on 7/02). Rotation winners: healthcare and financials — V, UNH, GE, CRWD, MRNA, VRTX printed 52-week highs; XBI +61% over 12 months; REGN +4.7% on 7/02.
-- Macro backdrop: June payrolls +57k vs +115k consensus killed the July-hike fear (2-yr yields fell), but the Fed's median dot still shows NO 2026 cuts (17/18 officials see inflation risk tilted up). No-hike relief, no-cut discipline.
-- Week ahead (light calendar — technicals and headlines will drive): Fed June-meeting MINUTES release Wednesday 7/8; Q2 earnings season opens with Delta and PepsiCo this week. Schwab's trader outlook calls for "higher volatility" with a cautious stance on tech.
-- SK Hynix reconfirmed over the weekend: the record ~$29B Nasdaq ADR listing (ticker SKHY, 17.79M new shares) is still scheduled to begin trading Friday 7/10, subject to SEC approval — SK Hynix trades ~6.6x forward earnings vs Micron >10x, directly pressuring MU's US-listing premium. Four sessions away.
-- Eli Lilly: the Medicare GLP-1 Bridge is now LIVE (effective 7/1) — $50/month with prior authorization for Zepbound and Foundayo (orforglipron) through end-2027; Lilly's release estimates ~20M Medicare patients may qualify. LLY closed 7/02 at a record (+3.1%).
-- Bank earnings dates confirmed: BAC reports Q2 on Tuesday 7/14 (consensus $1.10 EPS vs $0.89 y/y, ~$30.3B revenue); JPM 7/14, C/WFC/GS/MS the same week. TSMC's Q2 conference is Thursday 7/16 — company-guided revenue $39.0–40.2B (~+32% y/y at midpoint).
-- Today (Mon 7/6) is the first session after the long weekend: watch whether the semi unwind continues or bounces, and whether the value/defensive rotation (healthcare, financials) holds its bid into the Fed minutes.
+MARKET: Friday 7/17 the S&P 500 fell 1.0%, Nasdaq -1.5% (Nasdaq -2.9% for the week), Dow -407.
+Second straight session of a semiconductor rout: Chinese startup Moonshot AI unveiled a model it
+says narrows the gap with top US offerings, reviving fears that AI hyperscalers scale back
+infrastructure spending. SOXL sits -55% below its 20-day high; MRVL, ARM, MU, SMCI all down
+double digits on the week.
+
+EARNINGS — the tape is SELLING beats:
+- TSMC (7/16 pre-open): Q2 revenue $40.2B (consensus $39.3B), gross margin 67.7% above guide,
+  net income +77% y/y — stock FELL two straight sessions into the semi rout (419 -> 398).
+- Netflix (7/16 after close): beat EPS ($0.80 vs $0.79) and its own margin guide (33.4% vs 32.6%),
+  but guided another quarter of slowing sales; FCF $1.53B vs $2.72B expected. Stock -7.3% Friday
+  to a fresh 52-week low ($65.08).
+- ASML (7/15): beat and raised FY26 guide — sold intraday the same day.
+- Bank of America printed a fresh 52-week high ($62.115) Friday IN the -1% tape, 14x earnings.
+
+M&A: Stripe + Advent bid $60.50/share (~$53.4B, ~$50B committed financing) for PayPal.
+PayPal board meets as soon as MONDAY 7/20 to discuss. PYPL closed 56.56 — a 7% spread to the bid.
+Largest fintech takeover ever proposed if it happens.
+
+MACRO: Fed under new Chair Kevin Warsh is signaling possible rate HIKES this fall — inflation hit
+a three-year-high 4.2% in May. Oil is bid on renewed Middle East escalation: WTI ~$79.56,
+Brent ~$84.95. Refiners have ripped all year (VLO +83% YTD, MPC +86%). Energy was the only
+sleeve making new 20-day highs Friday (CVX, XOM, COP, FANG). Trump claimed China interfered in
+the 2020 election, putting the trade truce in question.
+
+WEEK AHEAD: Alphabet (GOOGL) and Tesla (TSLA) both report Wednesday 7/22 after the close
+(GOOGL consensus $2.90 EPS +25.5%, rev $116.9B). Also next week: IBM, TXN, INTC, T, GM, COF.
+PayPal board verdict could land Monday.

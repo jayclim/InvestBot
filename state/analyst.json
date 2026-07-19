@@ -1,307 +1,123 @@
 {
- "date": "2026-07-15",
- "as_of": "2026-07-14",
- "generated_by": "Claude \u2014 financial-analyst skill",
- "framework": "Claude for Financial Services \u2014 equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
- "pick": "NFLX",
- "action": "Post-catalyst rotation, midday 7/15 run (all orders queue for the 7/16 open): exit ASML (its print resolved and the market rejected the beat-and-raise intraday), trim BAC 12\u219210 and keep LLY at 6 (both post-catalyst), drop the unfilled CVX limit; recycle into NFLX (5%) ahead of its 7/16 after-close print and a GOOGL starter (5%) for 7/22; hold TSM through tomorrow's pre-open print, hold META/REGN, and hold PYPL as merger-arb after the $60.50 Stripe/Advent bid.",
- "sizing": "59% deployed across 8 names (BAC 10, META 10, REGN 10, TSM 8, LLY 6, PYPL 5, NFLX 5, GOOGL 5), 41% cash; every buy is limit-capped ~1% above the 7/14 close so nothing chases today's tape",
- "confidence": 0.6,
+ "date": "2026-07-19",
+ "as_of": "2026-07-17",
+ "generated_by": "Claude — financial-analyst skill",
+ "framework": "Claude for Financial Services — equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
+ "pick": "CVX",
+ "action": "Weekend run (all orders queue for the 7/20 open): rotate the sleeve to match a regime that is selling tech beats — exit TSM and NFLX (both beat the exact metrics the 7/15 thesis named, and both got sold anyway), recycle into energy (CVX 5→10, new XOM 6), nudge LLY 6→8, hold BAC/REGN/META, hold PYPL as merger-arb into Monday's board meeting, hold the GOOGL 5% starter into the 7/22 print.",
+ "sizing": "63% deployed across 8 names (BAC 10, REGN 10, CVX 10, META 8, LLY 8, PYPL 6, XOM 6, GOOGL 5), 37% cash; the three buys are limit-capped ~1% above the 7/17 close so nothing chases Monday's open, exits are market-on-open",
+ "confidence": 0.55,
  "regime": {
-  "label": "Disinflation relief \u2014 PPI joins the soft CPI, hike odds fading, banks sweeping beats; semis still the swing factor with TSM printing pre-open 7/16",
-  "note": "June PPI fell 0.3% vs consensus for no change (core +0.2% vs +0.3% expected), one day after the soft CPI \u2014 CME FedWatch July hike odds collapsed to 17% from 42%, though September still carries 63% odds of higher rates, so this is a hiking-scare regime cooling, not a cutting cycle. The bank sweep completed this morning: MS printed $3.46 vs $2.81 est after JPM's record and BAC's beat, and GS/BAC both set fresh 52-wk highs today. S&P +0.39%, Nasdaq +0.67% early 7/15. The unresolved leg is semis: ASML's beat-and-raise this morning was SOLD (opened +2.8% at 1826, faded to a 1735.65 low, red by midday) \u2014 TSM's pre-open print tomorrow now decides whether the AI-capex trade holds its bid.",
-  "source": "https://www.benzinga.com/markets/prediction-markets/26/07/60461322/sp500-july-15-open-up-or-down-polymarket-cpi-fed-rate-hike-inflation ; https://www.fxempire.com/forecasts/article/sp500-ppi-today-holds-the-key-after-soft-cpi-lifts-us-stocks-1610549 ; Robinhood earnings calendar 2026-07-15"
+  "label": "Hawkish-Fed, hot-oil, sell-the-beat tape — semis routed on a Chinese AI-model capex scare; energy is the only sleeve making new highs",
+  "note": "The disinflation-relief regime of 7/15 broke in 48 hours. Friday 7/17: S&P -1.0%, Nasdaq -1.5% (Nasdaq -2.9% on the week), a second straight session of semiconductor rout after Chinese startup Moonshot AI unveiled a model it says narrows the gap with top US offerings — reviving AI-capex-scale-back fears that sold even TSMC's blowout beat. The Fed under new Chair Kevin Warsh is signaling potential rate HIKES this fall with inflation at a three-year-high 4.2%, oil is bid on renewed Middle East escalation (WTI ~$79.56, Brent ~$84.95), and Trump's claim that China interfered in the 2020 election put the trade truce back in question. Three data points define the tape: ASML's raise sold on 7/15, TSM's beat sold on 7/16, NFLX's margin beat sold to a fresh 52-wk low on 7/17. This market is not paying for good tech news; it is paying for energy (CVX/XOM/COP/FANG all closed above their 20-day highs Friday) and rate-lever financials (BAC printed a fresh 52-wk high 62.115 Friday, in a -1% tape).",
+  "source": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html ; https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-17-2026 ; data/snapshot.json 2026-07-17 screen"
  },
- "thesis": "What changed since 7/14: two of the book's four dated events resolved. ASML beat and RAISED (Q2 \u20ac9.3B sales, \u20ac2.9B net income; FY26 guide up to \u20ac43\u201345B at 54\u201356% GM) \u2014 and the market sold it anyway: the stock opened +2.8% at 1826, faded to a 1735.65 low and sat red by midday at 59x earnings. When a raise gets rejected intraday, the event edge is spent \u2014 the position exits rather than repeat the LLY mistake of babying a resolved catalyst (the sale queues for the 7/16 open, so it still participates if TSM's print gaps semicap either way). Second, PYPL \u2014 entered 7/14 at the open as a 5% pre-earnings starter at 8.9x \u2014 caught a $60.50/share joint takeover bid from Stripe and Advent (~$53B, ~28% premium) this morning; at ~55.13 the stock sits ~9% below the bid, so the position converts from an earnings bet to a hold-for-the-spread merger-arb position: no add (deal-break risk is real, neither party has confirmed), but no sell into a live bid. The book's next three dated events: TSM prints pre-open tomorrow (guide $39\u201340.2B, consensus $39.3B +30% y/y; Citi expects a FY raise) \u2014 the existing 8% rides it; NFLX (new 5%) reports 7/16 AFTER the close, so a 7/16-open fill is positioned pre-event: the stock has shed 44% while the market rallied and sits on its $70.86 52-wk low at 23x forward earnings against a 12\u201314% revenue-growth guide and a FY26 FCF guide already raised to $12.5B \u2014 prediction markets put just 2.3% odds on the sub-30% operating margin the price is braced for, so an in-line 32\u201336% margin print re-rates a washed-out register; GOOGL (new 5%) reports 7/22 having gone sideways for 20 sessions (+0.0%) while META ran +16.6% \u2014 the cheapest-entry mega-cap print of the next two weeks at 27x, entered flat rather than hot. BAC trims 12\u219210 (its own catalyst resolved with the 7/14 beat; the financials regime \u2014 MS $3.46 vs $2.81 this morning, GS and BAC at fresh 52-wk highs \u2014 earns it a large seat, but not the book's largest post-event). LLY holds the reduced 6% seat into ~Aug 6 earnings; REGN (16x, the book's most reliable sleeve) adds to 10 ahead of its ~7/30 print; the unfilled CVX 178.2 limit is dropped \u2014 soft PPI weakens the inflation-hedge case that motivated it. Deployment lands at 59% (up from the settled ~48%): every name carries a dated event inside 16 ticks, and the 41% cash is the buffer for re-entry after tomorrow's two binary prints, not a regime hedge.",
+ "thesis": "What changed since 7/15: both of the book's binary prints resolved, both BEAT the exact metric the prior thesis named, and both positions lost money anyway — that is a regime verdict, not an underwriting miss, and the book now trades the regime. TSM printed Q2 revenue of $40.20B against the $39.3B consensus the thesis named, with gross margin 67.7% above the top of guidance and net income +77% y/y — and the stock fell from 419 to 398 in two sessions as the Moonshot AI capex scare routed the whole semi complex (SOXL -42% from its 20-day high). NFLX beat the named 32.6% operating-margin guide at 33.4% and beat EPS ($0.80 vs $0.79) — and fell 7.3% to a fresh 52-week low ($65.08) on the H2 revenue-deceleration guide and a $1.53B FCF quarter against $2.72B expected. Both exit at Monday's open: the underwriting discipline held (name a metric that prints, bet on it printing better), but a tape that sells beats leaves an event book with no way to get paid, and neither name has another dated catalyst inside ~15 ticks (TSM next prints October). The proceeds rotate to where the tape IS paying: energy. CVX doubles 5→10 and XOM starts at 6 — CVX/XOM/COP/FANG all closed Friday above their 20-day highs while the S&P fell 1%, WTI sits ~$79.56 on renewed Middle East escalation, the Warsh Fed's hawkish tilt (4.2% inflation, possible fall hikes) makes energy the natural inflation hedge, and both carry real yield support (CVX 3.80%, XOM 2.80%) with XOM's 7/31 print ~9 ticks out as the sleeve's next dated event; XOM's Friday volume ran 19.0M vs a 15.2M two-week average — the breakout is participated, not drifting. The event sleeve keeps its two live, non-earnings catalysts: PYPL (6) holds into Monday's board meeting on the $60.50 Stripe/Advent bid — at 56.56 the spread to the bid is +7.0%, the position is +21% from its 46.72 entry, and at 10.6x earnings the standalone floor limits deal-break damage; no add at RSI 81, no trim the session before the decision meeting. GOOGL (5) holds into Wednesday's print: consensus $2.90 (+25.5%) on $116.9B revenue, and unlike ASML/NFLX into their prints, GOOGL enters -15% off its May high at RSI 42 in the cheapest Mag-7 valuation band (27x) — the one earnings bet where the crowd is positioned OUT, which is the only kind this tape has paid (PYPL was bought before the bid, not after). BAC (10) holds — fresh 52-wk high Friday at 14.1x with the hawkish Fed as a NII tailwind; REGN (10) holds as the valuation-floor sleeve (+11.3% over 20 sessions at 16.5x); LLY nudges 6→8 (+6.0% over 20 sessions in a flat tape, ~Aug 6 print ~13 ticks out); META (8) holds into its ~7/29 print at 24.2x, the second-cheapest mega-cap. Deployment lands at 63%, confidence 0.55: the 37% cash is a deliberate regime buffer — a market selling beats with a Fed threatening hikes is not one to be fully invested in, and the cash re-enters after GOOGL's print and the PYPL board verdict resolve this week's two live events.",
  "evidence": [
   {
-   "point": "ASML Q2 (reported 7/15 pre-market): '\u20ac9.3 billion total net sales and \u20ac2.9 billion net income in Q2 2026'; 'expects 2026 total net sales to be between \u20ac43 billion and \u20ac45 billion, with a gross margin between 54% and 56%' \u2014 an increase to the outlook",
-   "source": "https://www.sec.gov/Archives/edgar/data/0000937966/000162828026048235/form6-kquarterlyfilings.htm ; https://www.ebc.com/forex/asml-q2-2026-earnings-preview"
+   "point": "TSM Q2 2026 (reported 7/16 pre-open): 'revenue was $40.20 billion, which increased 33.7% year-over-year'; 'net income and diluted EPS both increased 77.4%'; 'Gross margin came in at 67.7%, above the guided range of 65.5% to 67.5%' — vs the $39.3B consensus the 7/15 thesis named. Stock reaction: 'muted to negative', then 419.48 → 409.74 (7/16) → 398.37 (7/17) into the sector rout",
+   "source": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000451/a2q26e_withguidancexfinal.htm ; https://news.alphastreet.com/tsmc-tsm-q2-results-beat-again-but-higher-expectations-still-drive-the-trade/ ; data/snapshot.json"
   },
   {
-   "point": "ASML tape rejected the raise: opened 1826.13 (+2.8%), intraday low 1735.65, last 1766.72 vs prior close 1775.64 (red) as of 13:04 ET 7/15; P/E 59.15",
-   "source": "Robinhood get_equity_fundamentals + get_equity_quotes 2026-07-15"
+   "point": "NFLX Q2 2026 (reported 7/16 after close): 'revenue of $12.56 billion, up 13% year over year'; 'earnings of 80 cents per share, a penny ahead of the 79-cent consensus'; 'Operating margin was 33.4%, which exceeded the company's Q2 guidance' (the 32.6% guide the 7/15 thesis named) — but 'free cash flow fell 33% to $1.53 billion, well below the $2.72 billion expected' and 'Netflix sank 7.3% after forecasting another quarter of slowing sales', closing 68.95 with a fresh 52-wk low of 65.08 set 7/17",
+   "source": "https://qz.com/netflix-q2-2026-earnings-viewership-reports-071626 ; https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html ; Robinhood get_equity_fundamentals 2026-07-19"
   },
   {
-   "point": "June PPI: 'posted a seasonally adjusted 0.3% decline in June, beating consensus estimates that called for no change. Excluding food and energy, core PPI rose 0.2%, compared with expectations for a 0.3% increase'",
-   "source": "https://www.fxempire.com/forecasts/article/sp500-ppi-today-holds-the-key-after-soft-cpi-lifts-us-stocks-1610549"
+   "point": "Friday 7/17 tape: 'The S&P 500 lost 1%, the Nasdaq shed 1.5%, and the Dow Jones retreated 407 points'; 'semiconductors were hit especially hard after Chinese startup Moonshot AI unveiled a new model that it said narrows the gap with the top offerings in the U.S.'; 'the Nasdaq slid 2.9% for the week'",
+   "source": "https://finance.yahoo.com/markets/live/stock-market-today-friday-july-17-dow-sp-500-nasdaq-092345307.html"
   },
   {
-   "point": "Fed pricing after CPI/PPI: 'the probability of a July hike fell to 17% from 42% a day earlier'; 'September still carries 63% odds of higher rates' (CME FedWatch)",
-   "source": "https://www.benzinga.com/markets/prediction-markets/26/07/60461322/sp500-july-15-open-up-or-down-polymarket-cpi-fed-rate-hike-inflation"
+   "point": "PYPL bid status: Stripe/Advent 'offer of $60.50 a share, a 28% premium', deal 'valued at approximately $53.4 billion' with 'roughly $50 billion in committed bank financing'; 'PayPal's board will meet as soon as July 20 to discuss the offer'; PayPal 'working with Goldman, Evercore'. PYPL closed 56.56 (7/17) — a +7.0% spread to the bid; entry was 46.72 on 7/14",
+   "source": "https://techcrunch.com/2026/07/15/stripe-and-advent-reportedly-offered-to-buy-paypal-for-around-53-4b/ ; https://www.bloomberg.com/news/articles/2026-07-15/stripe-advent-offer-to-buy-paypal-for-53-billion-reuters-says ; https://www.axios.com/2026/07/15/paypal-bid-stripe-advent"
   },
   {
-   "point": "PYPL takeover bid: 'Stripe and private equity firm Advent International made a joint offer to acquire the company for over $53 billion' at '$60.50 per share\u2026 a premium of approximately 28%', 'backed by about $50 billion in committed bank financing'; no guarantee of a transaction and no comment from the parties. PYPL last 55.13 vs 47.37 prior close (+16.4%)",
-   "source": "https://finance.yahoo.com/markets/stocks/article/paypal-stock-soars-on-report-of-buyout-proposal-from-stripe-advent-131101969.html ; Robinhood get_equity_quotes 2026-07-15"
+   "point": "Macro regime: 'The Federal Reserve... has pivoted to a more hawkish stance under new Chair Kevin Warsh. The central bank is now signaling potential rate hikes this fall as inflation reached a three-year high of 4.2% in May'; oil bid on Middle East escalation — 'West Texas Intermediate futures rose 1.82% to $79.56 per barrel, with Brent futures up 1.98% to $84.95'",
+   "source": "https://intellectia.ai/blog/oil-prices-fed-policy-july-2026 ; https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-17-2026"
   },
   {
-   "point": "NFLX setup into the 7/16 after-close print: shares have 'shed 44.24% of its value while the broader market rallied' and sit just above the $70.86 52-wk low; 'trailing P/E of 24x and a forward P/E of 23x' vs a '12% to 14% revenue growth' guide and 'FY26 free cash flow of $12.5 billion, raised from $11 billion'; 'prediction markets assign just a 2.3% probability of margins printing below 30%' vs the 32.6% operating-margin guide",
-   "source": "https://247wallst.com/investing/2026/07/01/netflix-nearing-52-week-low-should-you-buy/ ; https://finance.yahoo.com/markets/stocks/articles/netflix-stock-trading-near-52-233600370.html"
+   "point": "GOOGL into 7/22 (after close): 'Analysts expect Alphabet to report Q2 earnings of $2.90 per share, up 25.5% year over year, on revenue of $116.9 billion (+21.3% YoY)'; stock closed 346.77 — 15.1% below its 408.61 52-wk high (5/18) at 27.0x earnings, RSI 42",
+   "source": "https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks ; Robinhood get_equity_fundamentals 2026-07-19 ; data/snapshot.json screen"
   },
   {
-   "point": "NFLX reports 2026-07-16 timing=pm (after close), EPS est $0.79; TSM reports 2026-07-16 timing=am (pre-open), EPS est $3.77; GOOGL reports 2026-07-22 pm, est $2.87; PYPL 7/28 am; V 7/28 pm",
-   "source": "Robinhood get_earnings_calendar 2026-07-15 (14-day window, high_market_cap)"
+   "point": "Energy breakout, Friday 7/17 closes vs prior 20-day highs: CVX 187.38 (+1.4% above), XOM 147.36 (+0.3%), FANG 195.54 (+0.9%), COP 114.71 (+0.8%) — the only universe sleeve above its 20-day highs in a -1% S&P session; XOM volume 19.03M vs 15.16M two-week average; CVX dividend yield 3.80% at 31.9x, XOM 2.80% at 24.6x",
+   "source": "data/snapshot.json 2026-07-17 screen ; Robinhood get_equity_fundamentals 2026-07-19"
   },
   {
-   "point": "TSM into 7/16: 'guidance calls for revenue of $39.0\u201340.2 billion and gross margin of 65.5%\u201367.5%'; consensus '$39.3 billion, up 30% YoY and 10% QoQ'; 'Citi analyst Laura Chen expecting a further upward revision' to the >30% FY26 growth forecast",
-   "source": "https://finance.yahoo.com/markets/stocks/articles/tsmc-q2-earnings-preview-why-190000466.html ; https://www.tradingkey.com/analysis/stocks/more/262031647-tsmc-q2-earnings-loom-ai-demand-margins-capex-focus-tradingkey"
+   "point": "BAC: fresh 52-wk high 62.115 set Friday 2026-07-17 (a -1% S&P session), closed 61.27 at 14.1x earnings, 1.56x book; RSI 70",
+   "source": "Robinhood get_equity_fundamentals 2026-07-19 ; data/snapshot.json screen"
   },
   {
-   "point": "Financials sweep: MS printed EPS $3.46 actual vs $2.81 estimate this morning (7/15 am); GS set a fresh 52-wk high of 1153.47 on 7/15; BAC set a fresh 52-wk high of 62.03 on 7/15 at 13.94x earnings, 1.57x book",
-   "source": "Robinhood get_earnings_calendar + get_equity_fundamentals 2026-07-15"
-  },
-  {
-   "point": "GOOGL into 7/22: 20-session return +0.0% vs META +16.6% (snapshot through 7/14); -12.0% below its 408.61 52-wk high (5/18); P/E 27.42",
-   "source": "data/snapshot.json screen 2026-07-15 ; Robinhood get_equity_fundamentals 2026-07-15"
-  },
-  {
-   "point": "REGN comps: P/E 15.99, P/B 2.19 \u2014 cheapest large-cap pharma seat in the book vs LLY at 41.49x; REGN +1.1% today while LLY faded another -0.6%",
-   "source": "Robinhood get_equity_fundamentals + get_equity_quotes 2026-07-15"
+   "point": "PYPL valuation floor: 10.64x trailing earnings at 56.56 (the bid at 60.50 ≈ 11.4x); REGN 16.5x, 2.27x book; META 24.2x; LLY 42.1x with the stock +6.0% over 20 sessions vs SPY +0.3%",
+   "source": "Robinhood get_equity_fundamentals 2026-07-19 ; data/snapshot.json screen"
   }
  ],
  "risks": [
-  "TSM prints pre-open 7/16 BEFORE any of this report's orders fill \u2014 a big miss gaps the held 8% down and likely drags META/GOOGL fills lower at the 7/16 open (the buy limits then fill into weakness; the anticipation discipline, not the limits, is the only protection).",
-  "NFLX is a binary after-close print: another margin shortfall 'could puncture the 52-week low' \u2014 the 5% sizing and the 74.27 limit cap the entry, not the outcome.",
-  "PYPL deal-break risk: neither Stripe/Advent nor PayPal has confirmed the reported proposal; on a formal denial the stock likely retraces most of +16.4% and the position rides it down to the pre-bid ~47 level where the original 7/28-earnings thesis has to stand on its own.",
-  "Sell-the-news regime: ASML's rejected raise shows beats are being sold \u2014 the same dynamic can hit TSM (held), and the September FedWatch odds (63% toward higher rates) mean one hot datapoint re-opens the hike scare.",
-  "Midday-run mechanics: all orders queue with placed_session bumped to 2026-07-15 and fill at the 7/16 open, one extra session of gap risk vs the usual evening cadence."
+  "PYPL board rejects the bid outright Monday with no raised offer — the stock gives back much of the +21% gain toward the ~47 pre-bid level; the 10.6x standalone multiple and the revealed strategic interest are the floor, but the mark-to-market hit lands the same session the book reports",
+  "GOOGL joins the sell-the-beat pattern 7/22 — ASML, TSM and NFLX all beat and sold; the position is sized at 5% precisely because the pattern has hit three for three, and a fourth instance exits the earnings-bet business for this regime entirely",
+  "Middle East de-escalates suddenly — the oil bid unwinds and the fresh 16% energy sleeve (CVX+XOM) gives back its breakout the way the July 6 Iran-de-escalation leg did; the 3.8%/2.8% yields cushion but don't prevent that",
+  "The Moonshot AI capex scare proves overdone and semis V-recover — the TSM exit at Monday's open realizes a -13% loss at the local low; accepted: the position had no dated catalyst until October to underwrite a recovery against",
+  "A hawkish-Fed hike surprise this fall compresses all equity multiples — the 37% cash buffer and the two sub-17x names (BAC, REGN) are the only real defense; deployment stays capped until the regime pays for more"
  ],
  "data_examined": [
-  {
-   "label": "Full-universe momentum/RSI/breakout screen, 101 names in randomized order (closes through 2026-07-14)",
-   "source": "data/snapshot.json"
-  },
-  {
-   "label": "Live quotes on 16 holdings/finalists, 13:04 ET 7/15",
-   "source": "Robinhood get_equity_quotes"
-  },
-  {
-   "label": "Fundamentals on 14 finalists (P/E, P/B, 52-wk range, volume)",
-   "source": "Robinhood get_equity_fundamentals"
-  },
-  {
-   "label": "Earnings calendar 7/15\u20137/28, high-market-cap filter",
-   "source": "Robinhood get_earnings_calendar"
-  },
-  {
-   "label": "ASML Q2 results, TSMC Q2 preview, June PPI + FedWatch, PYPL takeover bid, NFLX Q2 preview",
-   "source": "web_search 2026-07-15"
-  }
+  {"label": "data/snapshot.json — 101 symbols of daily OHLCV through 2026-07-17, refreshed this run via 11 chunked get_equity_historicals calls", "source": "Robinhood MCP get_equity_historicals 2026-07-19"},
+  {"label": "Full-universe screen in randomized order: 1d/5d/20d returns, 20d relative strength vs SPY, distance to 20d high, RSI(14)", "source": "data/snapshot.json + bot/indicators.py"},
+  {"label": "Robinhood fundamentals on the 10 finalists (CVX, XOM, GOOGL, META, BAC, LLY, REGN, PYPL, TSM, NFLX): P/E, P/B, 52-wk range/dates, volume vs averages, yields", "source": "Robinhood get_equity_fundamentals 2026-07-19"},
+  {"label": "web_search: Friday 7/17 tape recap, NFLX Q2 results, TSM Q2 results, PYPL bid status, week 7/20–24 earnings calendar, Fed/oil regime", "source": "Yahoo Finance, TheStreet, qz.com, Alphastreet, SEC 6-K, TechCrunch, Bloomberg, Axios, Kiplinger, intellectia.ai"},
+  {"label": "Prior book, realized P&L, alpha vs SPY and reflection", "source": "tools/analyst_memory.py 2026-07-19"}
  ],
  "targets": {
-  "BAC": 0.1,
-  "META": 0.1,
-  "REGN": 0.1,
-  "TSM": 0.08,
-  "LLY": 0.06,
-  "PYPL": 0.05,
-  "NFLX": 0.05,
+  "BAC": 0.10,
+  "REGN": 0.10,
+  "CVX": 0.10,
+  "META": 0.08,
+  "LLY": 0.08,
+  "PYPL": 0.06,
+  "XOM": 0.06,
   "GOOGL": 0.05
  },
  "limits": {
-  "NFLX": 74.27,
-  "GOOGL": 363.11,
-  "META": 667.65,
-  "REGN": 662.68
+  "CVX": 189.30,
+  "XOM": 148.85,
+  "LLY": 1190.00
  },
  "rationale": {
-  "BAC": "Trim 12\u219210, still a top seat. [DATA] Beat 7/14 ($1.21 vs $1.13 est) and set ANOTHER 52-wk high today (62.03) at 13.94x/1.57x book; MS's $3.46 vs $2.81 this morning completed a four-for-four bank sweep. [ASSUMED] The financials regime (soft inflation, fading hike odds, trading windfalls) is an active driver that outlives the print \u2014 but the position's own catalyst is resolved, so it gives up the book's largest-seat status rather than repeat the LLY hold-forever mistake.",
-  "META": "Hold 8 and bid to 10 \u2014 but only on a pullback. [DATA] Strongest clean mega-cap tape in the book (+16.6%/20d, +2.2% again today to 675), 24.0x earnings, reports 7/29 (10 ticks). [ASSUMED] The 667.65 limit (1% over the 7/14 close) deliberately refuses to chase a two-day rip: either the add fills on a dip toward the price the thesis was built at, or the existing 8% simply rides.",
-  "REGN": "Add 8\u219210. [DATA] P/E 15.99 / P/B 2.19, +1.1% today, the only carry that stayed green through the semi rout; earnings ~7/30. [ASSUMED] Two reflections running have named cheap-with-a-floor the book's most reliable sleeve \u2014 sizing follows the evidence; the 662.68 limit keeps the add honest.",
-  "TSM": "Hold 8 through tomorrow's pre-open print \u2014 this IS the bet. [DATA] Guide $39\u201340.2B / GM 65.5\u201367.5%, consensus $39.3B (+30% y/y), Citi expects a FY raise; entered 460.19, marked ~420 (-8.6%), so the rout has already de-risked the entry. [ASSUMED] No add before a binary print the book is already down on \u2014 the reflection's TSM lesson was about resizing risk, not doubling down.",
-  "LLY": "Hold the reduced 6% seat. [DATA] Faded again today (-0.6% to ~1145, 8% off the 7/7 high) at 41.5x; its July catalysts (Foundayo approval, Medicare bridge) are resolved. [ASSUMED] The ~Aug 6 print (~15 ticks) is the next dated driver \u2014 6% keeps GLP-1 exposure without letting a post-catalyst fade anchor the book.",
-  "PYPL": "Hold 5% as merger-arb. [DATA] Stripe + Advent reportedly bid $60.50/share (~$53B, ~28% premium, ~$50B committed financing); stock at 55.13 sits ~9% below the bid; the book's starter filled at the 7/14 open, pre-announcement, at 8.9x earnings. [ASSUMED] No add \u2014 the spread compensates deal-break risk, not new money; on a denial the position falls back to the original lowered-bar 7/28 earnings thesis.",
-  "NFLX": "New 5% \u2014 the tick's anchor anticipation bet, reports 7/16 AFTER the close (fill at the 7/16 open is pre-event). [DATA] -44% while the market rallied, sitting on the $70.86 low; 23x forward vs a 12\u201314% revenue-growth guide, FCF guide already raised to $12.5B; prediction markets price 2.3% odds of op margin <30% vs the 32.6% guide. [ASSUMED] Consensus is positioned for another shortfall (the price IS the bear case); an in-line 32\u201336% margin print re-rates it. Binary risk is the point \u2014 sized 5% with a 74.27 limit.",
-  "GOOGL": "New 5% starter for the 7/22 print (5 ticks). [DATA] Flat 20-session tape (+0.0%) while META ran +16.6%; -12% off the May high at 27.4x. [ASSUMED] The one mega-cap print of the next two weeks the market is NOT hot into \u2014 entering flat rather than chasing is the whole edge claimed here, so the 363.11 limit is strict; conviction is starter-sized until the 7/22 setup research deepens next tick."
- },
- "reflection": {
-  "as_of": "2026-07-14",
-  "looking_back": "The 7/14 report held six carries and queued five orders (GILD exit, LLY trim, META 8%, CVX 5% limit 178.2, PYPL 5%) that settle at the 7/14 open this run. The carried book marked $86.85 into 7/15 \u2014 book -0.4% on the tick vs SPY -0.8%, alpha +0.3pts (first positive tick-alpha in a week), though all-time remains -13.1% vs SPY -0.2% (alpha -13.0pts) with a -5.04 annualized Sharpe over 17 sessions [DATA: analyst_memory 7/15].",
-  "worked": [
-   "The PYPL anticipation bet worked beyond the thesis: queued 7/14 pre-open at ~8.9x into a lowered Q2 bar, it filled at the 7/14 open \u2014 and this morning Stripe/Advent reportedly bid $60.50/share, +28% over the 7/14 close [DATA: Yahoo Finance 7/15]. Positioned BEFORE the event, paid by a different event than the one underwritten \u2014 that is what the discipline is for.",
-   "BAC held through its beat and printed a second consecutive 52-wk high (62.03 today) [DATA: RH fundamentals 7/15] \u2014 the book's best carry at +4.1% vs entry.",
-   "Last tick's alpha turned positive (+0.3pts vs SPY) for the first time since 7/06 [DATA: analyst_memory] \u2014 the rotation toward dated events is at least no longer bleeding.",
-   "REGN stayed green again (+0.3% mark, +1.1% today) [DATA: analyst_memory, RH quotes] \u2014 the valuation-floor sleeve keeps earning its seat."
-  ],
-  "missed": [
-   "The ASML bet's premise partially evaporated before the print: the thesis banked on bookings commentary, and ASML no longer discloses bookings [DATA: EBC preview 7/15] \u2014 the beat-and-raise then got sold intraday (1826 open \u2192 1735 low, red by midday at 59x). The event bet cost ~nothing (-0.5% vs entry) but the underwriting was against a metric that didn't exist anymore; that's a research process miss, not bad luck.",
-   "TSM remains the book's worst mark (-8.6% vs 460.19 entry) going INTO its binary print [DATA: analyst_memory] \u2014 the 7/06 resize failure now has the whole position depending on one pre-open release.",
-   "Deployment: the settled book runs ~48% deployed against the 64% the 7/14 report promised, because CVX's 178.2 limit never crossed (7/14 low was above it) and ASML now exits [DATA: agent_state pending, this screen]. Under-deployment remains the named structural drag on closing a -13pt alpha hole."
-  ],
-  "adjustment": "Underwrite only to metrics that will actually print. Every thesis this tick names the specific number and its release time (NFLX 32.6% op-margin guide 7/16pm, TSM $39.3B consensus 7/16am, GOOGL $2.87 est 7/22pm) \u2014 no more bets on commentary a company may not give. Deployment moves 48\u219259% with every name dated inside 16 ticks."
+  "BAC": "Hold 10. [DATA] Fresh 52-wk high 62.115 printed Friday 7/17 — in a -1% S&P session — at 14.1x earnings and 1.56x book (RH fundamentals); +8.4% over 20 sessions vs SPY +0.3%. [ASSUMED] A Warsh Fed threatening hikes is a net-interest-income tailwind, making BAC the rare name whose regime exposure and momentum point the same way. RSI 70 says extended, so it holds rather than adds.",
+  "REGN": "Hold 10. [DATA] +11.3% over 20 sessions at 16.5x earnings and 2.27x book, closed within 0.5% of its 20-day high (screen + RH fundamentals). [ASSUMED] The valuation-floor sleeve keeps earning its seat in a multiple-compression regime — cheap, working, and uncorrelated to the AI-capex story that is wrecking the tape's growth wing.",
+  "CVX": "Add 5→10, limit 189.30 (~1% above the 187.38 close). [DATA] Closed 1.4% above its prior 20-day high Friday; WTI ~$79.56 on renewed Middle East escalation; 3.80% dividend yield; the CVX/XOM/COP/FANG group was the only universe sleeve above its 20-day highs in Friday's -1% tape. [ASSUMED] With 4.2% inflation and a Fed signaling hikes, energy is the regime's natural long — this is the tape paying somewhere, and the book goes where it pays. The 7/14 entry at 182.84 is +2.5%; doubling on the breakout rather than the dip is deliberate: in this sleeve the trend is the thesis.",
+  "META": "Hold 8. [DATA] 24.2x earnings — second-cheapest mega-cap after the routed GOOGL — still +13.8% over 20 sessions; reports ~7/29 (~7 ticks out). [ASSUMED] The hold-through-print decision gets made next tick with the GOOGL result in hand; if Wednesday shows even de-rated mega-cap beats getting sold, META's print exposure gets cut before 7/29.",
+  "LLY": "Nudge 6→8, limit 1190.00 (~1% above the 1179.11 close). [DATA] +6.0% over 20 sessions vs SPY +0.3%, recovered to -3.4% vs the 1220.75 entry; ~Aug 6 print is ~13 ticks out (prior calendar pull). [ASSUMED] GLP-1 duopoly demand is rate-insensitive and the relative strength through a hostile fortnight says the market agrees; 42x is the sleeve's one expensive multiple, which caps the add at 2 points.",
+  "PYPL": "Hold 6 — merger-arb, event tomorrow. [DATA] Board meets 'as soon as July 20' on the $60.50 Stripe/Advent bid ($53.4B, ~$50B committed financing); closed 56.56 = +7.0% spread to the bid, +21% on the 46.72 entry; 10.64x trailing earnings; RSI 81. [ASSUMED] Engagement is more likely than rejection — PayPal retained Goldman and Evercore rather than dismissing the approach — and the 10.6x floor bounds the downside asymmetry. No add into RSI 81, no trim the session before the decision: the position was built for exactly this event.",
+  "XOM": "New 6, limit 148.85 (~1% above the 147.36 close). [DATA] Closed above its 20-day high Friday on 19.0M shares vs a 15.16M two-week average — a participated breakout, not drift; 24.6x with a 2.80% yield; earnings ~7/31 (~9 ticks) is the sleeve's next dated event. [DATA] Note: RH's pre-7/01 XOM daily bars are still interpolated garbage upstream — this book's bars come from the repo's verified backfill merge, and the breakout signal is entirely post-7/01 data. [ASSUMED] Second name in the energy sleeve diversifies single-company risk while keeping the same regime exposure.",
+  "GOOGL": "Hold 5 into Wednesday's print. [DATA] Reports 7/22 after close; consensus $2.90 EPS (+25.5%) on $116.9B revenue (+21.3%); closed 346.77, -15.1% off the May high, 27.0x, RSI 42. [ASSUMED] The sell-the-beat pattern (ASML, TSM, NFLX) hit names the market was positioned IN; GOOGL enters de-rated and under-owned after four flat weeks — the only earnings setup left in the book where a beat can actually surprise positioning. Sized at 5% because the pattern is 3-for-3 against earnings bets; this is the test case, not a conviction swing."
  },
  "charts": [
-  {
-   "type": "bars",
-   "title": "Target weights this tick",
-   "unit": "%",
-   "source": "targets map",
+  {"type": "bars", "title": "Target weights this tick", "unit": "%", "source": "targets map",
    "items": [
-    {
-     "label": "BAC",
-     "value": 10
-    },
-    {
-     "label": "META",
-     "value": 10
-    },
-    {
-     "label": "REGN",
-     "value": 10
-    },
-    {
-     "label": "TSM",
-     "value": 8
-    },
-    {
-     "label": "LLY",
-     "value": 6
-    },
-    {
-     "label": "PYPL",
-     "value": 5
-    },
-    {
-     "label": "NFLX",
-     "value": 5
-    },
-    {
-     "label": "GOOGL",
-     "value": 5
-    },
-    {
-     "label": "cash",
-     "value": 41
-    }
-   ]
-  },
-  {
-   "type": "line",
-   "title": "NFLX daily close into the 7/16 after-close print",
-   "unit": "$",
-   "source": "data/snapshot.json \u00b7 Robinhood daily bars",
-   "points": [
-    [
-     "2026-06-15",
-     81.67
-    ],
-    [
-     "2026-06-16",
-     78.72
-    ],
-    [
-     "2026-06-17",
-     76.96
-    ],
-    [
-     "2026-06-18",
-     77.38
-    ],
-    [
-     "2026-06-22",
-     72.88
-    ],
-    [
-     "2026-06-23",
-     72.82
-    ],
-    [
-     "2026-06-24",
-     71.84
-    ],
-    [
-     "2026-06-25",
-     70.9
-    ],
-    [
-     "2026-06-26",
-     73.81
-    ],
-    [
-     "2026-06-29",
-     73.78
-    ],
-    [
-     "2026-06-30",
-     71.4
-    ],
-    [
-     "2026-07-01",
-     74.19
-    ],
-    [
-     "2026-07-02",
-     77.65
-    ],
-    [
-     "2026-07-06",
-     76.02
-    ],
-    [
-     "2026-07-07",
-     76.18
-    ],
-    [
-     "2026-07-08",
-     75.59
-    ],
-    [
-     "2026-07-09",
-     75.47
-    ],
-    [
-     "2026-07-10",
-     73.37
-    ],
-    [
-     "2026-07-13",
-     73.83
-    ],
-    [
-     "2026-07-14",
-     73.53
-    ]
-   ]
-  },
-  {
-   "type": "bars",
-   "title": "Trailing P/E across the book (comps)",
-   "unit": "x",
-   "source": "Robinhood get_equity_fundamentals 2026-07-15",
-   "items": [
-    {
-     "label": "PYPL",
-     "value": 8.9
-    },
-    {
-     "label": "BAC",
-     "value": 13.9
-    },
-    {
-     "label": "REGN",
-     "value": 16.0
-    },
-    {
-     "label": "NFLX",
-     "value": 23.8
-    },
-    {
-     "label": "META",
-     "value": 24.0
-    },
-    {
-     "label": "GOOGL",
-     "value": 27.4
-    },
-    {
-     "label": "TSM",
-     "value": 34.9
-    },
-    {
-     "label": "LLY",
-     "value": 41.5
-    }
-   ]
-  }
- ]
+    {"label": "BAC", "value": 10}, {"label": "REGN", "value": 10}, {"label": "CVX", "value": 10},
+    {"label": "META", "value": 8}, {"label": "LLY", "value": 8}, {"label": "PYPL", "value": 6},
+    {"label": "XOM", "value": 6}, {"label": "GOOGL", "value": 5}, {"label": "cash", "value": 37}
+   ]},
+  {"type": "line", "title": "TSM daily close — a $40.2B beat (7/16) sold into the semi rout", "unit": "$",
+   "source": "data/snapshot.json · Robinhood daily bars",
+   "points": [["2026-06-26", 432.35], ["2026-06-29", 455.1], ["2026-06-30", 477.57], ["2026-07-01", 444.23], ["2026-07-02", 434.16], ["2026-07-06", 451.79], ["2026-07-07", 432.57], ["2026-07-08", 436.98], ["2026-07-09", 436.96], ["2026-07-10", 434.11], ["2026-07-13", 421.58], ["2026-07-14", 420.39], ["2026-07-15", 419.48], ["2026-07-16", 409.74], ["2026-07-17", 398.37]]},
+  {"type": "line", "title": "PYPL daily close vs the $60.50 Stripe/Advent bid — board meets 7/20", "unit": "$",
+   "source": "data/snapshot.json · Robinhood daily bars",
+   "points": [["2026-06-26", 44.29], ["2026-06-29", 44.38], ["2026-06-30", 43.18], ["2026-07-01", 44.07], ["2026-07-02", 45.47], ["2026-07-06", 45.09], ["2026-07-07", 45.65], ["2026-07-08", 44.53], ["2026-07-09", 45.32], ["2026-07-10", 46.32], ["2026-07-13", 47.65], ["2026-07-14", 47.37], ["2026-07-15", 55.52], ["2026-07-16", 56.73], ["2026-07-17", 56.56]]}
+ ],
+ "reflection": {
+  "as_of": "2026-07-15",
+  "looking_back": "The 7/15 report queued four orders that filled at the 7/16 open — ASML out, NFLX in at 5%, GOOGL in at 5%, BAC trimmed 12→10 — around a book betting on two 7/16 binary prints (TSM pre-open, NFLX after close). Both prints BEAT the exact metrics the thesis named: TSM revenue $40.20B vs the $39.3B consensus cited, NFLX operating margin 33.4% vs the 32.6% guide cited. Neither paid: TSM fell 419→398 in two sessions as Moonshot AI's model routed the semi complex, and NFLX sank 7.3% to a fresh 52-wk low on the H2 deceleration guide and a $1.53B FCF print vs $2.72B expected — the new 5% position ate the full drop on day one. PYPL, the prior tick's win, held its gain (56.56, +21% on entry) with the board meeting set for Monday.",
+  "worked": [
+   "The underwriting discipline itself: both named metrics printed and printed BETTER — TSM $40.20B vs $39.3B consensus, NFLX 33.4% margin vs 32.6% guide. The research called the numbers right two-for-two; that part of the process is no longer the problem.",
+   "PYPL: positioned 7/14 pre-event at 46.72, still +21% with a +7.0% spread to the live $60.50 bid and the board decision now one session away — the anticipation-not-confirmation rule keeps being the book's only reliable alpha source.",
+   "BAC: a fresh 52-wk high (62.115) printed on Friday's -1% session at 14.1x — the post-beat hold call from 7/15 kept the book's best carry working.",
+   "REGN: +11.3% over 20 sessions at 16.5x, one of only a handful of universe names near its highs in the rout — the valuation-floor sleeve again."
+  ],
+  "missed": [
+   "The regime call, which is the one that cost money: three straight tech beats (ASML 7/15, TSM 7/16, NFLX 7/16) were SOLD, and the thesis kept underwriting single-name events in a tape that had stopped paying for them. The NFLX entry was the worst expression — filled at the 7/16 open into an after-close print, correct on the metric, -7.3% by Friday's close.",
+   "TSM: held 8% through the print per plan, the beat came, and the position still sits -13.4% vs the 460.19 entry because the sector narrative (Moonshot AI capex fears) overwhelmed the company result — sector beta was the actual bet, and the thesis never priced it.",
+   "Energy: the 7/15 report DROPPED the unfilled CVX limit add on the soft-PPI disinflation read — 48 hours before oil respiked and CVX/XOM broke to new 20-day highs. The book's own 7/14 CVX entry was the right idea; the 7/15 de-emphasis of it was regime-chasing in the wrong direction."
+  ],
+  "adjustment": "Trade the regime first, the event second: this tick rotates the two spent-event tech positions (TSM, NFLX — realized losses, no catalyst inside 15 ticks) into the sleeve the tape is actually paying (CVX to 10, new XOM 6), and keeps only event bets that are either non-earnings hard catalysts (PYPL board, Monday) or contrarian-positioned prints (GOOGL 7/22, de-rated, RSI 42, sized at 5% as the test of whether ANY earnings bet works in this tape). If GOOGL beats and gets sold too, the book stops playing earnings until the regime turns."
+ }
 }
