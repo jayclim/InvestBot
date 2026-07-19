@@ -180,16 +180,23 @@ def rescale_splits(pf, snap, label=""):
     # ponytail: integer ratios only, keyed off the entry-date open; warns + leaves alone otherwise.
     """
     for pos in list(pf.positions.values()):
-        b = next((b for b in snap.get(pos.symbol, []) if b.date == pos.entry_date), None)
-        if b is None or pos.avg_price <= 0:
+        bars = snap.get(pos.symbol, [])
+        i = next((k for k, b in enumerate(bars) if b.date == pos.entry_date), None)
+        if i is None or pos.avg_price <= 0:
             continue
-        r = b.open / pos.avg_price
+        r = bars[i].open / pos.avg_price
         if 0.67 < r < 1.5:               # averaging/slippage noise, not a split (splits are >=2:1)
             continue
         ratio = float(round(r)) if r > 1 else 1.0 / max(round(1.0 / r), 1)
         if ratio == 1.0 or abs(r / ratio - 1) > 0.05:
             print(f"    WARNING {label or pf.name}: {pos.symbol} basis {pos.avg_price:.4f} is "
                   f"{r:.2f}x off its {pos.entry_date} bar with no clean split ratio — left as-is")
+            continue
+        if i + 1 < len(bars) and not (0.5 < (bars[i + 1].open / pos.avg_price) / ratio < 2.0):
+            # a real restatement rescales the whole tail; one off-scale bar is a corrupt feed bar
+            # (RH re-served SOXS 2026-07-14 in pre-split scale between two post-split bars)
+            print(f"    WARNING {label or pf.name}: {pos.symbol} {pos.entry_date} bar is {r:.2f}x off "
+                  f"basis but the next bar isn't — corrupt bar, not a split; left as-is")
             continue
         pos.qty /= ratio
         pos.avg_price *= ratio
@@ -341,6 +348,11 @@ if __name__ == "__main__":  # ponytail: self-check for the stop-loss / circuit-b
     pf.positions["MU"] = Position("MU", 1.0, 994.05, "d1")
     rescale_splits(pf, {"MU": [Bar("d1", 939.0, 999.0, 930.0, 990.0, 1)], "NOBAR": []})
     assert pf.positions["MU"].qty == 1.0 and pf.positions["MU"].avg_price == 994.05
+    # one corrupt bar (entry bar 0.1x, next bar back in scale) is a bad feed bar, NOT a split
+    pf.positions["GLITCH"] = Position("GLITCH", 0.35, 39.72, "d1")
+    rescale_splits(pf, {"GLITCH": [Bar("d1", 3.97, 4.5, 3.97, 4.28, 1), Bar("d2", 41.2, 49.7, 41.2, 46.0, 1)]})
+    p = pf.positions["GLITCH"]
+    assert p.qty == 0.35 and p.avg_price == 39.72, (p.qty, p.avg_price)
 
     # is_rth: Wed noon ET open; Sat and pre-market closed (2026-06-24 is a Wednesday)
     assert is_rth(_dt.datetime(2026, 6, 24, 12, 0, tzinfo=_ET))

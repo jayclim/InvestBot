@@ -43,20 +43,23 @@ def ingest(paths):
 
 
 def merge_backfills(snap, data_dir="data"):
+    """Backfill bars are verified truth for their dates: they replace a fetched bar on a date
+    collision (RH re-serves corrupt bars — e.g. the SOXS 2026-07-14 bar in pre-reverse-split
+    scale) as well as filling dates whose bars were dropped (interpolated XOM)."""
     for path in sorted(glob.glob(os.path.join(data_dir, "*_backfill.json"))):
         sym = os.path.basename(path).replace("_backfill.json", "").upper()
         bars = json.load(open(path))
-        out = snap.setdefault(sym, [])
-        seen = {b["date"] for b in out}
-        added = 0
+        by_date = {b["date"]: b for b in snap.setdefault(sym, [])}
+        added = replaced = 0
         for b in bars:
-            if b["date"] not in seen:
-                out.append(b)
-                seen.add(b["date"])
+            if b["date"] not in by_date:
                 added += 1
-        out.sort(key=lambda x: x["date"])
-        if added > 0:
-            print(f"merged {path} into {sym}: +{added} bars")
+            elif by_date[b["date"]] != b:
+                replaced += 1
+            by_date[b["date"]] = b
+        snap[sym] = sorted(by_date.values(), key=lambda x: x["date"])
+        if added or replaced:
+            print(f"merged {path} into {sym}: +{added} bars, {replaced} replaced")
 
 
 def check_integrity(snap):
@@ -107,12 +110,13 @@ if __name__ == "__main__":
             backfill_path = os.path.join(tmpdir, "aapl_backfill.json")
             json.dump([
                 {"date": "2025-12-31", "open": 99, "high": 100, "low": 98, "close": 99.5, "volume": 900},
-                {"date": "2026-01-02", "open": 100.5, "high": 102, "low": 100, "close": 101.5, "volume": 1100},
+                {"date": "2026-01-02", "open": 100.5, "high": 102, "low": 100, "close": 200.0, "volume": 1100},
             ], open(backfill_path, "w"))
             merge_backfills(snap, tmpdir)
             assert len(snap["AAPL"]) == 4, f"expected 4 AAPL bars after merge, got {len(snap['AAPL'])}"
             assert snap["AAPL"][0]["date"] == "2025-12-31", "backfill bar not added"
             assert snap["AAPL"][1]["date"] == "2026-01-01", "order broken"
+            assert snap["AAPL"][2]["close"] == 200.0, "backfill bar did not replace the fetched bar"
         warnings = check_integrity(snap)
         assert len(warnings) >= 2, f"expected at least 2 warnings, got {len(warnings)}: {warnings}"
         assert any("SHORT" in w for w in warnings), "SHORT not flagged"
