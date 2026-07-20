@@ -1,30 +1,24 @@
-World events briefing — weekend of 2026-07-18/19 (last session: Friday 2026-07-17)
+World events briefing — Monday 2026-07-20 close (last session: 2026-07-20)
 
-MARKET: Friday 7/17 the S&P 500 fell 1.0%, Nasdaq -1.5% (Nasdaq -2.9% for the week), Dow -407.
-Second straight session of a semiconductor rout: Chinese startup Moonshot AI unveiled a model it
-says narrows the gap with top US offerings, reviving fears that AI hyperscalers scale back
-infrastructure spending. SOXL sits -55% below its 20-day high; MRVL, ARM, MU, SMCI all down
-double digits on the week.
+MARKET: S&P -0.19% to 7,443.28, Nasdaq roughly flat (-0.05%), Dow -307pts (-0.59%) on oil-driven
+risk-off. Semiconductors staged a modest technical bounce off last week's rout: SOX +1.5%, MU +2%,
+recovering a small piece of a sector still down >20% from its late-June record.
 
-EARNINGS — the tape is SELLING beats:
-- TSMC (7/16 pre-open): Q2 revenue $40.2B (consensus $39.3B), gross margin 67.7% above guide,
-  net income +77% y/y — stock FELL two straight sessions into the semi rout (419 -> 398).
-- Netflix (7/16 after close): beat EPS ($0.80 vs $0.79) and its own margin guide (33.4% vs 32.6%),
-  but guided another quarter of slowing sales; FCF $1.53B vs $2.72B expected. Stock -7.3% Friday
-  to a fresh 52-week low ($65.08).
-- ASML (7/15): beat and raised FY26 guide — sold intraday the same day.
-- Bank of America printed a fresh 52-week high ($62.115) Friday IN the -1% tape, 14x earnings.
+MACRO: The US completed a NINTH consecutive day of strikes on Iran overnight — tensions still
+escalating, not cooling, despite some diplomatic signals. Oil pushed further: WTI $83.23 (+0.9%),
+Brent $89.22 (+1.3%). Trump warned Iran would "pay many times over" for US service-member deaths.
+Energy (CVX, XOM) extended Friday's breakout on the continued oil bid.
 
-M&A: Stripe + Advent bid $60.50/share (~$53.4B, ~$50B committed financing) for PayPal.
-PayPal board meets as soon as MONDAY 7/20 to discuss. PYPL closed 56.56 — a 7% spread to the bid.
-Largest fintech takeover ever proposed if it happens.
+M&A: PayPal's board formally REJECTED the $60.50/share Stripe+Advent bid at a specially convened
+meeting today, calling it too low — Cantor Fitzgerald pegs fair value near $70, another estimate at
+$65.20. Framed as a negotiating stance (wants a higher price), not a walkaway; Stripe/Advent
+reportedly still engaged. PYPL stock barely moved on the news (56.56 -> 56.84). PayPal reports Q2
+earnings 7/28 — a second binary event now stacked close behind the M&A outcome.
 
-MACRO: Fed under new Chair Kevin Warsh is signaling possible rate HIKES this fall — inflation hit
-a three-year-high 4.2% in May. Oil is bid on renewed Middle East escalation: WTI ~$79.56,
-Brent ~$84.95. Refiners have ripped all year (VLO +83% YTD, MPC +86%). Energy was the only
-sleeve making new 20-day highs Friday (CVX, XOM, COP, FANG). Trump claimed China interfered in
-the 2020 election, putting the trade truce in question.
+NOTABLE MOVES: LLY fell 2.8% (1179 -> 1146) with no identified company-specific catalyst — no FDA,
+pricing, or competitor news found; reads as broad-tape/rotation noise after LLY's own recent run.
+TSM bounced ~1% with the semis relief rally. BAC pulled back 1.4% after Friday's fresh 52-wk high.
 
-WEEK AHEAD: Alphabet (GOOGL) and Tesla (TSLA) both report Wednesday 7/22 after the close
-(GOOGL consensus $2.90 EPS +25.5%, rev $116.9B). Also next week: IBM, TXN, INTC, T, GM, COF.
-PayPal board verdict could land Monday.
+WEEK AHEAD: Alphabet (GOOGL) and Tesla (TSLA) both report Wednesday 7/22 after the close (GOOGL
+consensus $2.90 EPS, $116.9B revenue). PayPal earnings 7/28. Also reporting this week: IBM, TXN,
+INTC, T, GM, COF.

@@ -1,6 +1,6 @@
 {
-"date": "2026-07-17",
-"asof": "2026-07-19T02:52:03",
+"date": "2026-07-20",
+"asof": "2026-07-20T16:23:04",
 "source": "kadoa-org/congress-trading-monitor (public-domain STOCK Act filings)",
 "followed": 125,
 "leaders": [
@@ -43599,6 +43599,38 @@
 "amount_label": "$1,001 - $15,000"
 },
 {
+"filer_id": "house_nealpatrickmdfacs_dunn",
+"filer": "Neal Patrick MD, Facs Dunn",
+"ticker": "MSTR",
+"filing_date": "2025-03-10",
+"transaction_date": "2024-12-24",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_nealpatrickmdfacs_dunn",
+"filer": "Neal Patrick MD, Facs Dunn",
+"ticker": "BAC",
+"filing_date": "2019-02-07",
+"transaction_date": "2019-01-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_nealpatrickmdfacs_dunn",
+"filer": "Neal Patrick MD, Facs Dunn",
+"ticker": "BAC",
+"filing_date": "2019-02-07",
+"transaction_date": "2019-01-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_nealpatrickmdfacs_dunn",
+"filer": "Neal Patrick MD, Facs Dunn",
+"ticker": "BAC",
+"filing_date": "2019-02-07",
+"transaction_date": "2019-01-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
 "filer_id": "house_john_rutherford",
 "filer": "John Rutherford",
 "ticker": "CVX",
@@ -43748,38 +43780,6 @@
 "ticker": "WMT",
 "filing_date": "2018-08-20",
 "transaction_date": "2017-07-17",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_nealpatrickmdfacs_dunn",
-"filer": "Neal Patrick MD, Facs Dunn",
-"ticker": "MSTR",
-"filing_date": "2025-03-10",
-"transaction_date": "2024-12-24",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_nealpatrickmdfacs_dunn",
-"filer": "Neal Patrick MD, Facs Dunn",
-"ticker": "BAC",
-"filing_date": "2019-02-07",
-"transaction_date": "2019-01-14",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_nealpatrickmdfacs_dunn",
-"filer": "Neal Patrick MD, Facs Dunn",
-"ticker": "BAC",
-"filing_date": "2019-02-07",
-"transaction_date": "2019-01-14",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_nealpatrickmdfacs_dunn",
-"filer": "Neal Patrick MD, Facs Dunn",
-"ticker": "BAC",
-"filing_date": "2019-02-07",
-"transaction_date": "2019-01-14",
 "amount_label": "$1,001 - $15,000"
 },
 {

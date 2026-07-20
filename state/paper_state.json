@@ -1,16 +1,10 @@
 {
-"last_date": "2026-07-17",
+"last_date": "2026-07-20",
 "portfolios": {
 "momentum_breakout": {
-"cash": 1.820140890727366,
+"cash": 5.011139369390619,
 "halted": false,
 "positions": [
-{
-"symbol": "RBLX",
-"qty": 0.42466364755362535,
-"avg_price": 48.914445,
-"entry_date": "2026-06-17"
-},
 {
 "symbol": "ABNB",
 "qty": 0.11771836032938882,
@@ -34,6 +28,12 @@
 "qty": 0.1627339243073769,
 "avg_price": 116.95845,
 "entry_date": "2026-07-17"
+},
+{
+"symbol": "LCID",
+"qty": 2.653268887567597,
+"avg_price": 7.073535,
+"entry_date": "2026-07-20"
 }
 ],
 "trades": [
@@ -216,6 +216,26 @@
 "value": 19.033107549408125,
 "pnl": 0.0,
 "reason": "breakout > 20d high on volume"
+},
+{
+"date": "2026-07-20",
+"symbol": "RBLX",
+"side": "sell",
+"qty": 0.42466364755362535,
+"price": 51.7091325,
+"value": 21.958988819283714,
+"pnl": 1.1868021875225232,
+"reason": "close < SMA trend break"
+},
+{
+"date": "2026-07-20",
+"symbol": "LCID",
+"side": "buy",
+"qty": 2.653268887567597,
+"price": 7.073535,
+"value": 18.76799034062046,
+"pnl": 0.0,
+"reason": "breakout > 20d high on volume"
 }
 ],
 "equity_curve": [
@@ -302,6 +322,10 @@
 [
 "2026-07-17",
 95.28946776709691
+],
+[
+"2026-07-20",
+93.91282373309934
 ]
 ]
 },
@@ -526,19 +550,17 @@
 [
 "2026-07-17",
 104.53682954093043
+],
+[
+"2026-07-20",
+104.6847688088208
 ]
 ]
 },
 "blended_momo_rsi": {
-"cash": 0.0,
+"cash": 2.6472080106164313,
 "halted": false,
 "positions": [
-{
-"symbol": "RBLX",
-"qty": 0.42466364755362535,
-"avg_price": 48.914445,
-"entry_date": "2026-06-17"
-},
 {
 "symbol": "ABNB",
 "qty": 0.11771836032938882,
@@ -562,6 +584,12 @@
 "qty": 0.16092294630238163,
 "avg_price": 116.95845,
 "entry_date": "2026-07-17"
+},
+{
+"symbol": "LCID",
+"qty": 2.730145649758895,
+"avg_price": 7.073535,
+"entry_date": "2026-07-20"
 }
 ],
 "trades": [
@@ -764,6 +792,26 @@
 "value": 18.821298368959788,
 "pnl": 0.0,
 "reason": "breakout, RSI 69 not overbought"
+},
+{
+"date": "2026-07-20",
+"symbol": "RBLX",
+"side": "sell",
+"qty": 0.42466364755362535,
+"price": 51.7091325,
+"value": 21.958988819283714,
+"pnl": 1.1868021875225232,
+"reason": "trend break / overbought"
+},
+{
+"date": "2026-07-20",
+"symbol": "LCID",
+"side": "buy",
+"qty": 2.730145649758895,
+"price": 7.073535,
+"value": 19.311780808667283,
+"pnl": 0.0,
+"reason": "breakout, RSI 63 not overbought"
 }
 ],
 "equity_curve": [
@@ -850,6 +898,10 @@
 [
 "2026-07-17",
 97.7884017538143
+],
+[
+"2026-07-20",
+96.63388749360703
 ]
 ]
 }
