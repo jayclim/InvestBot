@@ -27,10 +27,14 @@
     [
       "2026-07-20",
       98.25
+    ],
+    [
+      "2026-07-21",
+      98.1
     ]
   ],
-  "cash": 20.23,
-  "trades": 6,
+  "cash": 38.24,
+  "trades": 7,
   "holdings": [
     {
       "symbol": "MA",
@@ -49,15 +53,9 @@
       "qty": 0.030389,
       "avg_price": 662.41,
       "filled_at": "2026-07-13T19:07:55Z"
-    },
-    {
-      "symbol": "CMG",
-      "qty": 0.537021,
-      "avg_price": 36.87,
-      "filled_at": "2026-07-14T17:05:34Z"
     }
   ],
-  "updated": "2026-07-20",
+  "updated": "2026-07-21",
   "alloc": {
     "momentum_breakout": 1.0
   }
