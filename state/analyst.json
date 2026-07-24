@@ -1,101 +1,186 @@
 {
- "date": "2026-07-20",
- "as_of": "2026-07-20",
- "generated_by": "Claude — financial-analyst skill",
- "framework": "Claude for Financial Services — equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
- "pick": "PYPL",
- "action": "Hold everything at 7/19's targets — nothing today clears the bar for a rebalance. PayPal's board rejected the $60.50 Stripe/Advent bid as too low (wants $65-70) but framed it as a negotiating stance, not a walkaway; CVX/XOM extended their breakout as oil kept climbing on continued Iran strikes; the TSM/NFLX exits (queued 7/19) settle at today's open; GOOGL keeps drifting up into Wednesday's print; LLY dropped 2.8% on no identified company catalyst, in a broad-tape red session (Dow -307). None of that clears the bar for new action — reacting to one session of mostly-confirming, partly-noisy signals is the exact regime-chasing mistake flagged in the 7/19 reflection (dropping CVX on one soft-PPI day, only to reverse two days later).",
- "sizing": "63% deployed across 8 names (BAC 10, REGN 10, CVX 10, META 8, LLY 8, PYPL 6, XOM 6, GOOGL 5), 37% cash — unchanged from 7/19; today's queued CVX/XOM/LLY buys and TSM/NFLX/META-trim sells settle at today's open and land the book at these weights without a fresh order",
- "confidence": 0.55,
- "regime": {
-  "label": "Same regime as 7/19, one session further in: hawkish-Fed/hot-oil macro intact, semis staged a modest oversold bounce, PYPL's M&A story clarified without resolving",
-  "note": "Iran/US tensions are still escalating, not cooling — the US completed a ninth consecutive day of strikes overnight, and oil pushed further into the close (WTI $83.23, +0.9%; Brent $89.22, +1.3%) even as diplomatic signals flickered. The S&P fell a modest 0.19% to 7,443.28, Dow -307pts (-0.59%) on the oil-driven risk-off, Nasdaq roughly flat (-0.05%). Semiconductors staged a technical bounce off Friday's rout (SOX +1.5%, MU +2%) after ending last week down >20% from its June record — a relief bounce inside a still-broken chart, not a new signal; the book has no semis exposure to participate either way after Friday's TSM exit. PayPal's board formally rejected the $60.50/share bid as inadequate at a specially convened meeting, but framed it as pushing for a higher price rather than a final no — Cantor Fitzgerald pegs fair value near $70, a second analyst estimate lands at $65.20, and Stripe/Advent are reported still engaged. The stock barely moved on the news (56.56 → 56.84), which itself is informative: the market is pricing continued negotiation, not a dead deal.",
-  "source": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-20-2026 ; https://www.techtimes.com/articles/321005/20260720/paypal-board-rejects-53b-stripe-advent-offer-stablecoin-race-explains-why-next-move-matters.htm ; https://blockonomi.com/paypal-pypl-stock-board-rejects-stripes-60-50-per-share-takeover-proposal/"
- },
- "thesis": "What changed since 7/19, one session later: three developments, none of which move the target weights. First, PYPL: the board's rejection is the headline, but the substance is bullish for the arb, not bearish — a specially convened board meeting that comes back with 'too low, we want $65-70' (Cantor Fitzgerald's estimate) rather than a flat no signals the board sees standalone value above the bid and expects a raised offer, and the stock's muted reaction (+0.5% to 56.84) confirms the market reads it the same way. The position holds at 6% rather than adding, for two reasons: RSI was already elevated into the news, and PYPL now carries two overlapping binary events — the M&A outcome AND a 7/28 earnings print, roughly a week apart — which is exactly the kind of stacked-catalyst sizing the book should size DOWN into, not up. Second, energy: CVX (189.67, +1.2%) and XOM (148.40, +0.7%) both extended Friday's breakout as oil pushed further on a ninth straight day of Iran strikes — the regime call from 7/19 is playing out as read, and the queued limit buys (CVX $189.30, XOM $148.85) filled into the move rather than chasing it. No add today: 16% combined energy exposure is already a real sector bet: sizing up further on a SECOND green day is the same discipline error as sizing down on ONE soft-PPI day, just in the other direction. Third, the two names that moved against the book without a clean story: TSM bounced to 402.54 (+1.0%) as the semi complex staged a technical relief rally (SOX +1.5%) — the queued exit still settles today, because the underlying reasoning (sector-beta risk with no dated TSM catalyst until October) was never about a one-day read, and one green session in a stock that's still down double digits from its post-earnings high doesn't reverse that; chasing it back in on the bounce would be buying confirmation, the exact pattern this book keeps being punished for. LLY fell to 1146.40 (-2.8%) with no identified company-specific catalyst — no FDA news, no pricing news, no Novo Nordisk headline found — in a broad-tape red session (Dow -307). The GLP-1 duopoly thesis (Mounjaro +125% y/y, Zepbound +80% y/y per Q1) is unchanged, so this reads as tape noise or profit-taking after LLY's own +6% 20-session run, not a thesis break; the resting $1,190 limit buy filled favorably into the drop rather than at Friday's higher close. BAC (60.44, -1.4%) and REGN (672.34, -0.6%) both pulled back modestly off recent strength — ordinary give-back after BAC's fresh 52-wk high Friday, no news found for either. GOOGL (352.10, +1.5%) drifted further from its 346.77 entry into Wednesday's print — the contrarian-into-earnings setup is intact, if slightly less cheap than two sessions ago. META (645.86, roughly flat) holds unchanged. Net: every move today is either a continuation of an already-underwritten thesis (PYPL, CVX, XOM) or unexplained single-session noise (LLY, BAC, REGN) that doesn't rise to the level of a research signal — the disciplined move is to let the queued settlements land the book at 7/19's targets and hold, not manufacture a new decision to justify running the report.",
- "evidence": [
-  {
-   "point": "PayPal board: 'formally rejected the $60.50-per-share joint offer from Stripe and Advent International at a specially convened meeting on July 20, 2026, pushing for a higher price as the board expects negotiation rather than a final refusal'; 'Cantor Fitzgerald analysts peg fair value at $70 a share, while asset manager Davis Park Management has calculated its own estimate at $65.20'; 'Stripe and Advent continue as the most credible potential acquirers and maintain efforts to negotiate'; PayPal reports Q2 earnings 2026-07-28",
-   "source": "https://www.techtimes.com/articles/321005/20260720/paypal-board-rejects-53b-stripe-advent-offer-stablecoin-race-explains-why-next-move-matters.htm ; https://blockonomi.com/paypal-pypl-stock-board-rejects-stripes-60-50-per-share-takeover-proposal/"
+  "date": "2026-07-24",
+  "as_of": "2026-07-24 close (7/24 bar aggregated from Robinhood minute bars + consolidated session volume)",
+  "generated_by": "claude-opus-5 (deep_research_analyst tick 2026-07-24)",
+  "framework": "Claude for Financial Services — equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
+  "pick": "PYPL",
+  "action": "Raise PYPL 6%->14% as the anchor; cut META, REGN and GOOGL to zero; trim BAC 10%->5% (its catalyst fired today); cut the energy pair from 16.8% to an 8% hedge (XOM 4, CVX 4) and re-label it honestly; raise LLY to 10%. Hold 63% cash.",
+  "sizing": "37% deployed across 5 names (PYPL 14, LLY 10, BAC 5, XOM 4, CVX 4), 63% cash — the largest buffer this book has carried, deliberately, into an FOMC decision and four mega-cap prints inside five tick-days.",
+  "confidence": 0.42,
+
+  "regime": {
+    "label": "The capex tax — rising real yields meet an AI-spending de-rating",
+    "note": "The market has flipped from rewarding AI capex to punishing it, and the pattern is now five-for-five on our own bars. Alphabet beat on revenue ($119.8B, +24% y/y) and Cloud (+82% y/y) and still fell 7.13% on 7/23 after guiding FY26 capex to $195-205B from $180-190B. Intel beat on revenue ($16.1B) and EPS ($0.42) and still fell 7.90% on 7/24 after lifting capex from $18B to 'over $20 billion' with 2027 'significantly higher'. Tesla fell 14.52% on 7/23 posting its first negative free cash flow in two years (-$1.09B) on AI/robotics spend. Oracle fell 4.19% on 7/24 to a fresh 52-week low on OpenAI concentration risk after S&P cut it to BBB-. Meta already lost ~10% on its own capex raise earlier this cycle. At the same time the 10-year Treasury yield reached 4.71%, its highest since January 2025, rising a fourth straight session on surging oil and Middle East escalation — so long-duration tech is being de-rated by the discount rate and the spending line simultaneously. June CPI was genuinely soft (headline -0.4% m/m, 3.5% y/y; core 2.6% y/y) but the FOMC is on hold at 3.50-3.75% with the next decision 7/29. Positioning implication: own dated non-AI-capex catalysts, refuse to chase what has already repriced, and hold real cash.",
+    "source": "data/snapshot.json daily bars (all four single-name moves measured directly) ; https://mlq.ai/news/alphabet-raises-2026-capex-guidance-to-195-205b/ ; https://www.benzinga.com/markets/prediction-markets/26/07/60678955/intel-slides-despite-strong-quarter-as-street-weighs-20-billion-capex-plan ; https://www.federalreserve.gov/monetarypolicy/fomcminutes20260617.htm ; https://www.bls.gov/news.release/archives/cpi_07142026.htm"
   },
-  {
-   "point": "PYPL price action on the rejection: closed 56.56 (7/17) -> 56.84 (7/20), essentially flat (+0.5%) on the headline — session range 55.28-57.16",
-   "source": "data/snapshot.json 2026-07-20 (aggregated from Robinhood minute bars + session fundamentals — day-interval feed was still lagging Friday's close as of 7:11pm ET)"
+
+  "thesis": "What changed since last tick is that the vague 'beat-and-selloff' pattern this book has been trading around resolved into something specific and tradeable: it is not that beats are being sold, it is that capex raises are being sold. Alphabet, Intel, Tesla and Oracle all confirmed it inside 48 hours and the book owned none of the three worst. That sharpens the forward call rather than just describing the past. META reports 7/29 and is the most capex-exposed name in the book, having already guided FY26 capex to $125-145B and fallen ~10% on that guidance once; holding 7.4% into that print is a coin-flip with the tape's thumb on the down side, and a coin-flip is not an edge — so META goes to zero BEFORE the event, which is precisely the action the last two reflections identified and failed to take. REGN goes to zero into its 7/30 print on genuine deterioration that got worse since last tick: US Eylea fell to $941M, -10% y/y, its first sub-$1B quarter since 2018, and Citi has now downgraded it to Neutral with a $700 target from $900 — a full downgrade, not just the target trims logged last tick. GOOGL's event has fired and it is already being sold. The anchor becomes PYPL at 14%, the cleanest anticipation setup available anywhere in the universe: the stock closed at $56.15, which is 7.2% BELOW a $60.50 all-cash bid from Stripe/Advent that PayPal's board has already rejected as too low while signalling it wants nearer $70. A stock trading below a live, already-rejected cash offer means the market is pricing real odds the deal dies — that is an unresolved spread, categorically different from a stock that has simply run. A Q2 print lands 7/28, two tick-days out, that can force either leg. PayPal has no AI-capex line to be punished for and carries the cheapest multiple in the book at 10.6x. The honest correction this tick is energy. The book framed XOM/CVX as a bet on dated 7/31 earnings, but the real driver was a geopolitical oil spike — Brent ran from ~$76.80 on 7/10 to above $100 intraday on 7/24 on a Houthi naval blockade of Saudi Arabia and tanker attacks — and the 7/31 reports cover April-June, BEFORE that spike. XOM is +14.8% since 6/30 at RSI 84; CVX sits at RSI 92, the most overbought reading in the entire 100-name universe. The move has happened, the stated catalyst cannot validate it, and Brent already fell 3.9% on Friday to settle $96.78 on US-Iran peace-talk headlines. So energy is cut to an 8% pair held explicitly as an escalation hedge, not an earnings trade. BAC is trimmed to 5% on the same discipline that retired GOOGL — its catalyst fired today, a 14% dividend raise to $0.32 that carried it to a 52-week high, with nothing scheduled until 10/14. The residual 63% cash is a regime call, not indecision: this book's measurable edge over the last two sessions came almost entirely from what it did not own.",
+
+  "evidence": [
+    {
+      "point": "Alphabet raised FY2026 capex guidance to $195-205B from $180-190B after Q2 revenue of $119.8B (+24% y/y) and Google Cloud revenue of $24.8B (+82% y/y); GOOGL fell 7.13% the next session, 342.09 -> 317.69 on 2026-07-23, reported as its worst day in 14 months.",
+      "source": "https://mlq.ai/news/alphabet-raises-2026-capex-guidance-to-195-205b/ ; https://www.schaeffersresearch.com/content/news/2026/07/23/alphabet-stock-eyes-worst-day-in-14-months-on-capex-spending ; move measured in data/snapshot.json"
+    },
+    {
+      "point": "Intel beat with Q2 revenue $16.1B and adjusted EPS $0.42 but raised 2026 capex guidance from $18B to 'over $20 billion' and flagged 2027 capex 'significantly higher'; INTC closed -7.90% at 92.31 on 2026-07-24 on 180.7M shares against a 107.3M 30-day average.",
+      "source": "https://www.benzinga.com/markets/prediction-markets/26/07/60678955/intel-slides-despite-strong-quarter-as-street-weighs-20-billion-capex-plan ; close and volume from data/snapshot.json + Robinhood get_equity_fundamentals (market_date 2026-07-24)"
+    },
+    {
+      "point": "Tesla reported Q2 revenue $28.24B (+25.5% y/y) but non-GAAP EPS of $0.33 against $0.54 consensus, with negative free cash flow of -$1.09B — its first cash burn in two years — as it ramps AI/robotics spend; TSLA closed -14.52% on 2026-07-23.",
+      "source": "https://www.gurufocus.com/news/8977413/tesla-tsla-faces-major-selloff-after-earnings-report-misses-expectations ; move measured in data/snapshot.json"
+    },
+    {
+      "point": "Oracle closed 2026-07-24 at 115.01, -4.19%, a fresh 52-week low (Robinhood 52-week low field reads 114.75 dated 2026-07-24), on OpenAI concentration risk around its $300B five-year cloud commitment; S&P Global cut Oracle to BBB-, one notch above junk, citing a projected FY2027 free-cash-flow deficit.",
+      "source": "https://coincentral.com/oracle-orcl-stock-hits-52-week-low-is-this-the-buying-opportunity-of-2026/ ; close from data/snapshot.json ; 52-week low from Robinhood get_equity_fundamentals 2026-07-24"
+    },
+    {
+      "point": "PayPal closed 2026-07-24 at $56.15, which is 7.2% BELOW the $60.50/share all-cash bid from Stripe and Advent International (a ~$53B proposal reported 2026-07-15) that PayPal's board rejected as inadequate, with reporting the board is holding out for closer to $70/share and has retained Goldman Sachs and Evercore.",
+      "source": "https://www.bloomberg.com/news/articles/2026-07-15/stripe-advent-offer-to-buy-paypal-for-53-billion-reuters-says ; https://blockonomi.com/paypal-pypl-stock-board-rejects-stripes-60-50-per-share-takeover-proposal/ ; close from data/snapshot.json"
+    },
+    {
+      "point": "PayPal's Q2 2026 earnings call is confirmed for 2026-07-28 at 8:00 AM ET on the company's own IR events page; Zacks consensus is revenue ~$8.51B (+2.68% y/y) and EPS ~$1.28 (-8.57% y/y). PYPL carries a 10.64 trailing P/E, the lowest in the book.",
+      "source": "https://investor.pypl.com/news-and-events/events/event-details/2026/PayPals-Second-Quarter-2026-Earnings-Call/default.aspx ; https://www.tradingview.com/news/zacks:f6b095180094b:0-paypal-to-report-q2-earnings-what-should-investors-do/ ; P/E from Robinhood get_equity_fundamentals 2026-07-24"
+    },
+    {
+      "point": "Meta's Q2 2026 earnings are confirmed for after the close on 2026-07-29 with consensus EPS ~$7.23 and revenue ~$60.26B. Meta previously raised FY2026 capex guidance to $125-145B from $115-135B and the stock fell as much as 10% the following session despite beating on revenue and profit. META has fallen 7.87% over the last five sessions to 595.20.",
+      "source": "https://www.stocktitan.net/news/META/meta-to-announce-second-quarter-2026-sdasry9e3xzw.html ; https://finance.yahoo.com/sectors/technology/article/meta-stock-sinks-after-q1-earnings-as-company-raises-2026-ai-spending-forecast-to-125-billion-145-billion-160136308.html ; move from data/snapshot.json"
+    },
+    {
+      "point": "Regeneron's US Eylea franchise sales were $941M, down 10% y/y and down 13% sequentially — the first time since Q2 2018 the US franchise fell below $1B in a quarter. Citi has downgraded REGN to Neutral with a price target of $700, cut from $900; Cantor Fitzgerald cut to $750 from $785. Q2 earnings are confirmed for 2026-07-30 before market open.",
+      "source": "https://www.fiercepharma.com/pharma/regenerons-quarterly-sales-eylea-drop-below-1b-first-time-8-years ; https://ca.investing.com/news/stock-market-news/cantor-fitzgerald-lowers-regeneron-stock-price-target-on-eylea-concerns-93CH-4720600 ; https://www.stocktitan.net/news/REGN/regeneron-to-report-second-quarter-2026-financial-and-operating-4ca90iirsvdr.html"
+    },
+    {
+      "point": "Bank of America declared a quarterly dividend of $0.32/share on 2026-07-24, up $0.04 from the prior quarter, an increase of 14%, payable 2026-09-25 to holders of record 2026-09-04. Moynihan: 'The increase in our dividend reflects the strength of our earnings, the power of our franchise and our confidence in Bank of America's ability to drive long-term growth.' BAC closed +1.25% at 62.05; Robinhood's 52-week-high field reads 62.275 dated 2026-07-24. Next earnings 2026-10-14.",
+      "source": "https://www.prnewswire.com/news-releases/bank-of-america-increases-common-stock-dividend-14-to-0-32-per-share-302834056.html ; https://www.sec.gov/Archives/edgar/data/0000070858/000007085826000364/exhibit991.htm ; 52-week high from Robinhood get_equity_fundamentals 2026-07-24"
+    },
+    {
+      "point": "Brent crude ran from ~$76.80/bbl on 2026-07-10 to briefly above $100/bbl intraday on 2026-07-24, after Houthi forces declared a naval blockade on Saudi Arabia around 2026-07-20/21 and claimed missile/drone attacks on two Saudi tankers on 2026-07-22. Brent then fell 3.9% to settle $96.78 on Friday 2026-07-24 — its biggest one-day drop since late June — on reports of a possible path to resumed US-Iran talks; WTI settled $89.31, -3.1%.",
+      "source": "https://www.rigzone.com/news/wire/brent_pulls_back_from_100-24-jul-2026-184215-article/ ; https://www.aljazeera.com/news/2026/7/22/yemens-houthis-claim-attack-on-two-saudi-oil-tankers ; https://invezz.com/news/2026/07/24/oil-prices-fall-3-but-remain-on-track-for-biggest-weekly-gains-in-months/"
+    },
+    {
+      "point": "XOM closed 2026-07-24 at 156.93, up 14.8% from its 2026-06-30 close of 136.72 — the entire advance occurred in July, AFTER the April-June quarter that the 2026-07-31 earnings report covers. XOM's RSI(14) is 84.0; CVX's is 92.0, the most overbought reading in the 100-name universe this tick.",
+      "source": "data/snapshot.json daily bars ; RSI computed on the 2026-07-24 snapshot ; earnings date https://www.businesswire.com/news/home/20260721781131/en/ExxonMobil-to-Release-Second-Quarter-2026-Financial-Results"
+    },
+    {
+      "point": "Eli Lilly's Q2 2026 earnings are confirmed for 2026-08-05 with a 10:00 AM ET call. Orforglipron was approved 2026-04-01 as Foundayo, the only GLP-1 pill for weight loss with no food, water or time-of-day restriction, with Medicare Part D access at $50/month from 2026-07-01. Novo Nordisk sued Lilly on 2026-07-21 alleging misleading Zepbound/Mounjaro advertising. LLY's RSI(14) is 49.3 and it is +6.1% over 20 sessions — not extended.",
+      "source": "https://www.biospace.com/press-releases/lilly-confirms-date-and-conference-call-for-second-quarter-2026-financial-results-announcement ; https://www.prnewswire.com/news-releases/fda-approves-lillys-foundayo-orforglipron-the-only-glp-1-pill-for-weight-loss-that-can-be-taken-any-time-of-day-without-food-or-water-restrictions-302731485.html ; https://www.cnbc.com/2026/07/21/novo-nordisk-sues-eli-lilly-glp-1-ads.html ; RSI from data/snapshot.json"
+    },
+    {
+      "point": "The two biggest movers in the universe this tick had already fully repriced before this report could act: SLB rose 11.08% on 2026-07-24 on 2.34x average volume after Q2 adjusted EPS $0.55 vs $0.52 consensus and revenue $8.97B vs $8.68B; LMT gapped 10.54% on 2026-07-23 (514.36 -> 568.59) on Q2 EPS $7.94 vs ~$7.20 consensus, revenue $20.06B, a raised FY26 outlook of $79.75-81.75B and a record $230B backlog including a $35B THAAD contract. Neither is bought here — both are the rule bots' trade, not this book's.",
+      "source": "https://investorcenter.slb.com/news-releases/news-release-details/slb-announces-second-quarter-2026-results ; https://www.tradingkey.com/analysis/stocks/us-stocks/262052405-lockheed-martin-lmt-q2-2026-earnings-record-backlog-guidance-raised-tradingkey ; moves and volume ratio from data/snapshot.json"
+    },
+    {
+      "point": "The 10-year Treasury yield reached 4.71%, its highest since January 2025, rising a fourth straight session on surging oil prices and escalating geopolitical tensions. The FOMC held at 3.50-3.75% on June 16-17; the next decision is 2026-07-29. June CPI fell 0.4% m/m, with headline at 3.5% y/y and core at 2.6% y/y.",
+      "source": "https://tradingeconomics.com/united-states/government-bond-yield ; https://www.federalreserve.gov/monetarypolicy/fomcminutes20260617.htm ; https://www.bls.gov/news.release/archives/cpi_07142026.htm"
+    }
+  ],
+
+  "targets": {
+    "PYPL": 0.14,
+    "LLY": 0.10,
+    "BAC": 0.05,
+    "XOM": 0.04,
+    "CVX": 0.04
   },
-  {
-   "point": "Macro 7/20: 'The U.S. completed its ninth consecutive day of strikes on Iran overnight'; 'U.S. crude futures closed 0.9% higher at $83.23 a barrel, while international benchmark Brent settled up about 1.3% at $89.22'; S&P 500 'fell on Monday as oil prices advanced', closing -0.19% at 7,443.28; Dow -307.16pts (-0.59%) to 51,839.26",
-   "source": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-20-2026"
+
+  "rationale": {
+    "PYPL": "The anchor, raised from ~6% to 14%. [DATA] PayPal closed at $56.15 on 2026-07-24, which is 7.2% BELOW the $60.50/share all-cash bid Stripe and Advent tabled in a ~$53B proposal reported 2026-07-15 — a bid PayPal's board rejected as inadequate while signalling it wants closer to $70/share, retaining Goldman Sachs and Evercore. That gap is the entire trade. A stock trading meaningfully below a live, already-rejected cash offer means the market is pricing real odds the deal simply dies; that is an unresolved spread, which is categorically different from a stock that has merely run. [DATA] The Q2 print lands 2026-07-28 at 8:00 AM ET per the company's own IR page — two tick-days out — with Zacks consensus at ~$8.51B revenue and ~$1.28 EPS (-8.57% y/y). [ASSUMED] That print is the natural forcing event for either leg: a solid quarter strengthens the board's hand in holding out for more, a weak one hands the consortium leverage to come back. Either way the binary resolves closer, and I want the position on before it rather than after. [DATA] Critically for this regime, PayPal has no AI-capex line to be punished for and trades at a 10.64 trailing P/E, the cheapest multiple in the book. [ASSUMED] Risk acknowledged honestly: RSI(14) is 82.9 and the stock is +32.5% over 20 sessions, so the M&A leg has already partly repriced and this is not a clean untouched setup. It is sized at 14% rather than larger because a confirmed walk-away plausibly returns the stock toward the $47.37 it closed at on 2026-07-14, before the bid leaked — roughly 16% downside. [ASSUMED] Execution note: this order is deliberately left market-on-open rather than given the usual ~1% buy limit. With an unresolved bid, a weekend gap-up IS the thesis paying off rather than momentum to be chased, and a limit would leave the book sitting out the exact outcome it is positioning for. Even at $62 the spread to the board's own ~$70 framing remains intact.",
+
+    "LLY": "Raised from ~8% to 10% — the least-extended name in the book with a genuine dated catalyst. [DATA] Q2 earnings are confirmed for 2026-08-05 with a 10:00 AM ET call, roughly 8 tick-days out, which deliberately sequences AFTER the 7/28-7/31 cluster so the book is not staking everything on the same three days. [DATA] RSI(14) is 49.3 and LLY is +6.1% over 20 sessions — it has not run, which is the entire point in a tape where XOM and CVX sit at 84 and 92. [DATA] The product cycle is live: orforglipron was approved 2026-04-01 as Foundayo, the only GLP-1 pill for weight loss without food, water or time-of-day restrictions, with Medicare Part D access at $50/month starting 2026-07-01. [DATA] Novo Nordisk sued Lilly on 2026-07-21 over allegedly misleading Zepbound/Mounjaro advertising, and Lilly said on 7/22 it stands behind its ads. [ASSUMED] I read that suit as noise rather than thesis-breaking: it attacks advertising claims, not the drugs' approvals or economics, and litigation of this type rarely resolves inside a quarter. [ASSUMED] The structural case is that a pharma franchise launching an oral GLP-1 is uncorrelated to both the AI-capex de-rating and the oil premium — the two forces driving everything else on the board right now — which is exactly the diversification this book needs. [DATA] Capped at 10% because the 42.09 trailing P/E leaves no cushion for a guidance stumble.",
+
+    "BAC": "Trimmed hard, 10% to 5%, on precisely the discipline that retired GOOGL: the catalyst fired. [DATA] Bank of America declared a quarterly dividend of $0.32/share on 2026-07-24, up $0.04, a 14% increase payable 2026-09-25 — confirmed in the company release and the SEC 8-K, not a secondary report. [DATA] The stock closed +1.25% at 62.05 and Robinhood's 52-week-high field reads 62.275 dated 2026-07-24, meaning the high was set in this very session. [DATA] The underlying quarter was genuinely strong — net income $9.1B (+27% y/y), EPS $1.21 vs $1.12 consensus, revenue $31.6B (+15% y/y), NII ~$16B (+9% y/y) — and BAC passed the Fed's 2026 stress test released 2026-06-24. [DATA] But the next scheduled catalyst is Q3 earnings on 2026-10-14, roughly 55 tick-days away. [ASSUMED] A position with an excellent story, a same-session 52-week-high price and no forward event for two months is a momentum holding, not an anticipation holding, and this book's stated edge is the latter — the same reasoning that cut GOOGL after its print, applied consistently rather than only when the news is bad. [ASSUMED] Keeping 5% rather than zero because rising yields are a real tailwind to net interest income and this is the book's only financial.",
+
+    "XOM": "Cut from ~6.4% to 4% and explicitly re-labelled: this is a geopolitical hedge, not an earnings trade. [DATA] The correction that matters this tick — XOM closed 156.93, up 14.8% from its 136.72 close on 2026-06-30, meaning the entire move happened in July. The 2026-07-31 earnings report covers April-June, BEFORE the spike, so the catalyst this book was nominally holding for structurally cannot validate the current price. [DATA] The real driver was oil: Brent ran from ~$76.80 on 2026-07-10 to above $100 intraday on 2026-07-24 after Houthi forces declared a naval blockade on Saudi Arabia and claimed attacks on two Saudi tankers on 2026-07-22, with Trump saying on 7/23 the US would hold Iran responsible. [DATA] Brent then fell 3.9% Friday to settle $96.78, its biggest one-day drop since late June, on reports of a possible path to resumed US-Iran talks. [DATA] RSI(14) is 84.0. [ASSUMED] Adding into an 84 RSI on a risk premium that just showed its first crack would be chasing; going to zero into a live conflict with tankers under attack would leave the rest of the book naked to an oil shock. A 4% hold is the honest middle — I have no edge on whether Washington escalates, and I am sizing to that admission rather than dressing it up as a view.",
+
+    "CVX": "Cut from ~10.4% to 4%, same logic as XOM and rather more urgent. [DATA] CVX closed 194.72 with an RSI(14) of 92.0 — the single most overbought reading anywhere in the 100-name universe this tick — after rising in six of the last seven sessions. [DATA] Its Q2 report on 2026-07-31 covers the same pre-spike April-June quarter as Exxon's. [ASSUMED] I am deliberately declining to cite the widely-quoted consensus EPS figures for either major: the $5.79 quoted for CVX and $3.88 for XOM are implausible against trailing-twelve-month EPS of roughly $6.10 and $6.37, implied by Robinhood's P/E of 31.91 and 24.63 at Friday's closes — a single quarter cannot plausibly equal a full trailing year. I treat those consensus numbers as unreliable and build no thesis on them rather than repeating a figure I cannot reconcile. [ASSUMED] Held at 4% purely as the second leg of the escalation hedge. The pair is now 8% of the book, down from 16.8%, which correctly reflects that the oil trade has become a risk position rather than a conviction one."
   },
-  {
-   "point": "Semis technical bounce: 'Chipmakers tried to recover some of their steep losses from last week, with Micron Technology... climbing almost 2%'; 'an index of semiconductors up 1.5% after ending Friday down more than 20% from its late June closing record high'",
-   "source": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-20-2026"
+
+  "limits": {
+    "LLY": 1208.25
   },
-  {
-   "point": "CVX 185.93-190.34 range, closed 189.67 (+1.2% vs Friday's 187.38); XOM 146.25-149.09 range, closed 148.40 (+0.7% vs Friday's 147.36) — both cleared their queued limit buys (CVX $189.30, XOM $148.85) intraday",
-   "source": "data/snapshot.json 2026-07-20 aggregated bars"
-  },
-  {
-   "point": "TSM closed 402.54 (+1.0% vs Friday's 398.37) inside the semis bounce — still -12.5% vs the book's original 460.19 entry; the queued exit order settles at today's open regardless",
-   "source": "data/snapshot.json 2026-07-20 aggregated bars"
-  },
-  {
-   "point": "LLY closed 1146.40, session range 1144.61-1187.12, -2.8% vs Friday's 1179.11 close — confirmed against a live Robinhood quote (last_trade_price 1146.405 at 19:59:57Z, i.e. the 4:00pm ET close) after a web search initially surfaced a stale/cached price for the same session; no company-specific catalyst found in a targeted search (FDA, pricing, competitor news)",
-   "source": "data/snapshot.json 2026-07-20 aggregated bars ; Robinhood get_equity_quotes 2026-07-20 ; web_search (no matching 7/20 LLY-specific news found)"
+
+  "risks": [
+    "PYPL is 38% of deployed capital and carries a binary M&A outcome: if Stripe/Advent publicly walk away, the stock plausibly retraces toward the $47.37 close of 2026-07-14 before the bid leaked, roughly 16% down on the position. Whether a revised bid has actually been submitted is UNVERIFIED — no source confirmed one, and nothing in this thesis assumes it.",
+    "Cutting META to zero before its 2026-07-29 print is a directional bet against a company that could simply beat and hold capex flat, in which case the book forgoes a rebound in a name already 25% below its 52-week high of 796.25. The capex-punishment pattern is five observations over roughly a week, not a law.",
+    "63% cash is a heavy drag if the 2026-07-29 FOMC reads dovish and the four mega-cap prints (META and MSFT 7/29, AAPL and AMZN 7/30) clear the AI-capex fear rather than deepen it. This book is already -12.7% from inception and cash alone cannot repair that.",
+    "The energy cut is the mirror risk: if US military action against Iran escalates and Brent decisively takes out $100, an 8% energy weight badly underhedges the rest of the book. Friday's 3.9% Brent decline may be noise rather than the start of a fade — the brief was explicit that the premium is 'not yet a confirmed fade'.",
+    "LLY at a 42.09 trailing P/E has no valuation cushion; a guidance stumble on 2026-08-05 or an adverse turn in the Novo litigation would hit a position sized on the assumption that neither happens.",
+    "The BAC trim is being made at what is currently the best price the book has ever seen for the name (52-week high set this session). If the dividend raise starts a re-rating rather than capping one, the trim is early.",
+    "Data-layer risk: this report runs on web_search plus Robinhood fundamentals with no paid-vendor terminal. Several figures encountered this tick were mutually inconsistent across outlets — Alphabet's quoted EPS beat, XOM/CVX consensus EPS, Regeneron's Eylea reporting line, LMT's consensus — and were dropped rather than reconciled. The figures retained may still carry sourcing error."
+  ],
+
+  "data_examined": [
+    {"label": "Daily OHLCV for all 101 symbols through 2026-07-24; the 7/24 bar aggregated from Robinhood minute bars with consolidated session volume from get_equity_fundamentals", "source": "data/snapshot.json"},
+    {"label": "Robinhood fundamentals (P/E, P/B, market cap, 52-week range, dividend schedule, average volume) across the universe, market_date 2026-07-24", "source": "robinhood-trading MCP get_equity_fundamentals"},
+    {"label": "Momentum / RSI(14) / 20-day-breakout screen over the full universe in randomized order (anti-bias shuffle)", "source": "data/snapshot.json, computed this tick"},
+    {"label": "Prior tick's book, targets, realized trades and alpha vs SPY", "source": "tools/analyst_memory.py"},
+    {"label": "Q2 2026 earnings dates and consensus for PYPL, REGN, META, XOM, CVX, LLY, BA, AAPL, AMZN, MSFT, ARM", "source": "company IR pages, StockTitan, BusinessWire, Wall Street Horizon"},
+    {"label": "FOMC stance, June CPI release, 10-year Treasury yield", "source": "federalreserve.gov, bls.gov, tradingeconomics.com"},
+    {"label": "Brent/WTI levels and the Red Sea escalation timeline, 2026-07-10 to 2026-07-24", "source": "Rigzone, Al Jazeera, Invezz, CNBC"},
+    {"label": "SLB and LMT Q2 results (examined and deliberately not acted on — both events already fired)", "source": "SLB investor center, TradingKey"}
+  ],
+
+  "charts": [
+    {
+      "type": "bars",
+      "title": "Target weights this tick",
+      "unit": "%",
+      "source": "targets map",
+      "items": [
+        {"label": "cash", "value": 63},
+        {"label": "PYPL", "value": 14},
+        {"label": "LLY", "value": 10},
+        {"label": "BAC", "value": 5},
+        {"label": "XOM", "value": 4},
+        {"label": "CVX", "value": 4}
+      ]
+    },
+    {
+      "type": "bars",
+      "title": "The capex tax: session move after each AI-spend disclosure",
+      "unit": "%",
+      "source": "data/snapshot.json daily bars — GOOGL/TSLA 2026-07-23, INTC/ORCL 2026-07-24",
+      "items": [
+        {"label": "TSLA", "value": -14.5},
+        {"label": "INTC", "value": -7.9},
+        {"label": "GOOGL", "value": -7.1},
+        {"label": "ORCL", "value": -4.2}
+      ]
+    },
+    {
+      "type": "line",
+      "title": "PYPL close into the 7/28 print — bid leaked 7/15, rejected 7/20-21, still below $60.50",
+      "unit": "$",
+      "source": "data/snapshot.json · Robinhood daily bars",
+      "points": [
+        ["2026-07-13", 47.65],
+        ["2026-07-14", 47.37],
+        ["2026-07-15", 55.52],
+        ["2026-07-16", 56.73],
+        ["2026-07-17", 56.56],
+        ["2026-07-20", 56.82],
+        ["2026-07-21", 55.85],
+        ["2026-07-22", 55.51],
+        ["2026-07-23", 56.00],
+        ["2026-07-24", 56.15]
+      ]
+    }
+  ],
+
+  "reflection": {
+    "as_of": "2026-07-22",
+    "looking_back": "The 7/22 book carried eight names (BAC 10%, CVX 10%, META 8%, LLY 8%, PYPL 8%, XOM 8%, REGN 6%, GOOGL 2%) and queued cuts to GOOGL and REGN. Marked across the two sessions to 7/24 the book went $87.35 to $87.28, -0.07%, while SPY fell from 747.41 to 738.85, -1.15%. That is alpha of +1.08 points — the book's best relative result in several ticks — and it came almost entirely from what it did not own. Seven of the eight holdings finished green; META (-5.10%) and GOOGL (-6.52%) were the only drags, together costing -0.71 points.",
+    "worked": [
+      "Cutting GOOGL once its event fired was vindicated hard: GOOGL fell a further 6.52% across the two sessions (342.09 to 319.77), including -7.13% on 7/23 alone — its worst session in 14 months — after raising FY26 capex to $195-205B. The queued sell fills at the 7/23 open of 321.13.",
+      "Owning none of the AI-capex complex was the single largest contributor: INTC -7.90% (7/24), TSLA -14.52% (7/23) and ORCL -4.19% to a 52-week low (7/24) were the three worst large-cap wrecks of the window and the book held zero of them.",
+      "The energy sleeve did its job in a down tape: XOM +1.61% and CVX +0.90% across two sessions while SPY fell 1.15%.",
+      "BAC's flat hold was rewarded on 7/24 by a 14% dividend raise to $0.32 that carried it to a 52-week high of 62.275 — the fundamental confirmation the prior tick had argued for, arriving on schedule."
+    ],
+    "missed": [
+      "META was left at 7.4% and cost -0.40 points. The PRIOR reflection had already named META as 'AI-capex sympathy risk from GOOGL's reaction' and then held it anyway. The diagnosis was right and the trade did not follow — that is the expensive kind of miss, because the information was already in hand and cost real money.",
+      "The energy thesis was stated wrongly. It was framed as a bet on dated 7/31 earnings, but the actual driver was a geopolitical oil spike (Brent ~$76.80 on 7/10 to above $100 intraday on 7/24). That matters beyond bookkeeping: because the 7/31 reports cover April-June, before the spike, the stated catalyst could never have validated the position — which means the exit signal would have been missed too.",
+      "XOM and CVX were allowed to run to RSI 84 and 92 with no trim rule at all. A 16.8% combined weight in the two most overbought names in the universe was a sizing failure that only luck kept from hurting this tick."
+    ],
+    "adjustment": "Act on the diagnosis in the same tick it is made. META goes to zero BEFORE its 7/29 print rather than being flagged as a risk and held for a third consecutive tick. And stop calling the energy pair an earnings trade: the 7/31 prints cover a pre-spike quarter, so XOM/CVX are cut from 16.8% to an 8% escalation hedge, with the RSI 84 and 92 readings treated as a reason to trim rather than a detail to note in passing."
   }
- ],
- "risks": [
-  "PYPL: Stripe/Advent walk instead of raising the bid after the rejection — the stock gives back the M&A premium toward the ~47 pre-bid level; standalone 10-11x earnings and the board's own $65-70 fair-value framing are the floor, but a walkaway would hit the same week as the 7/28 earnings print, compounding the move",
-  "GOOGL joins the sell-the-beat pattern 7/22 (ASML, TSM, NFLX all beat and sold this cycle) — sized at 5% specifically because the pattern is 3-for-3 against earnings bets",
-  "The semis relief bounce (SOX +1.5% today) extends and the TSM exit proves premature by more than one session — accepted risk: the position had no dated catalyst to underwrite a recovery against until TSM's October print",
-  "LLY's unexplained -2.8% is actually the start of a real story not yet surfaced in search (a same-day news lag) — worth re-checking before the next tick rather than assuming pure noise",
-  "Middle East de-escalates suddenly (nine days of strikes raises rather than lowers this probability each day it doesn't happen) and the energy sleeve's breakout reverses; the 3.8%/2.8% dividend yields on CVX/XOM cushion but don't prevent that"
- ],
- "data_examined": [
-  {"label": "data/snapshot.json — 101 symbols, 2026-07-20 bar aggregated this run from Robinhood minute bars + session fundamentals (day-interval feed was still reading Friday 7/17 as of 7:11pm ET)", "source": "Robinhood MCP get_equity_historicals (minute) + get_equity_fundamentals 2026-07-20"},
-  {"label": "Robinhood live quote cross-check on LLY (resolved a stale web-search price discrepancy)", "source": "Robinhood get_equity_quotes 2026-07-20"},
-  {"label": "web_search: 7/20 market recap, PayPal board rejection details (2 sources), Iran/oil update, semis bounce, targeted LLY-specific news check (no results)", "source": "TheStreet, TechTimes, Blockonomi"},
-  {"label": "Prior book, realized P&L, alpha vs SPY and reflection", "source": "tools/analyst_memory.py 2026-07-20"}
- ],
- "targets": {
-  "BAC": 0.10,
-  "REGN": 0.10,
-  "CVX": 0.10,
-  "META": 0.08,
-  "LLY": 0.08,
-  "PYPL": 0.06,
-  "XOM": 0.06,
-  "GOOGL": 0.05
- },
- "rationale": {
-  "BAC": "Hold 10, unchanged. [DATA] Pulled back to 60.44 (-1.4%) after Friday's fresh 52-wk high (62.115) — no BAC-specific news found, reads as ordinary give-back. [ASSUMED] The rate-lever/NII thesis into a hawkish Fed is unaffected by a one-session pullback.",
-  "REGN": "Hold 10, unchanged. [DATA] 672.34 (-0.6%), still near its 20-day highs, 16.5x-ish valuation floor intact. [ASSUMED] No new information to act on.",
-  "CVX": "Hold 10, unchanged. [DATA] Closed 189.67 (+1.2%), cleared the queued $189.30 limit buy; oil up again on a ninth day of Iran strikes (WTI $83.23). [ASSUMED] The breakout continues to validate the regime call, but 16% combined energy exposure with XOM is already a full-sized sector bet — adding on a second green day is the same undisciplined reflex as cutting on one bad day, just inverted.",
-  "META": "Hold 8, unchanged. [DATA] 645.86, effectively flat (-0.02%). [ASSUMED] Still the second-cheapest mega-cap; the hold-through-~7/29-print decision waits on Wednesday's GOOGL result as originally planned.",
-  "LLY": "Hold 8, unchanged. [DATA] Closed 1146.40 (-2.8%) on no identified company catalyst, confirmed against a live quote after a stale web result briefly suggested otherwise; the resting $1,190 limit buy fills favorably into the drop. [ASSUMED] GLP-1 duopoly fundamentals (Mounjaro +125% y/y, Zepbound +80% y/y) are unchanged; treating an unexplained single-day drop as noise rather than a new signal, while flagging it for a re-check next tick in case the news lags.",
-  "PYPL": "Hold 6, unchanged — no add. [DATA] Board rejected the $60.50 bid as inadequate, publicly wants $65-70 (Cantor Fitzgerald: $70), framed as negotiation not refusal; stock barely moved (56.56->56.84). [ASSUMED] The rejection is incrementally bullish for the arb (signals board conviction the company is worth more) but stacks a second binary event (7/28 earnings) on top of the M&A outcome inside the same week — sizing stays flat rather than pressing a position that already carries two overlapping catalysts.",
-  "XOM": "Hold 6, unchanged. [DATA] Closed 148.40 (+0.7%), cleared the queued $148.85 limit buy; same oil/Iran tailwind as CVX. [ASSUMED] Second leg of the energy sleeve, same sizing discipline as CVX — hold, don't chase the second green day.",
-  "GOOGL": "Hold 5, unchanged. [DATA] Closed 352.10 (+1.5%), now further from the 346.77 entry ahead of Wednesday's after-close print (consensus $2.90 EPS, $116.9B revenue). [ASSUMED] Contrarian-into-earnings setup intact but slightly less cheap than two sessions ago; no reason to add before the print itself resolves the thesis."
- },
- "charts": [
-  {"type": "line", "title": "PYPL daily close through the board's rejection of the $60.50 bid (7/20)", "unit": "$",
-   "source": "data/snapshot.json · Robinhood daily bars",
-   "points": [["2026-07-02", 45.47], ["2026-07-06", 45.09], ["2026-07-07", 45.65], ["2026-07-08", 44.53], ["2026-07-09", 45.32], ["2026-07-10", 46.32], ["2026-07-13", 47.65], ["2026-07-14", 47.37], ["2026-07-15", 55.52], ["2026-07-16", 56.73], ["2026-07-17", 56.56], ["2026-07-20", 56.84]]},
-  {"type": "line", "title": "LLY daily close — unexplained -2.8% session on 7/20, no catalyst identified", "unit": "$",
-   "source": "data/snapshot.json · Robinhood daily bars",
-   "points": [["2026-07-02", 1213.91], ["2026-07-06", 1200.06], ["2026-07-07", 1235.56], ["2026-07-08", 1215.83], ["2026-07-09", 1216.95], ["2026-07-10", 1188.58], ["2026-07-13", 1181.87], ["2026-07-14", 1152.54], ["2026-07-15", 1156.63], ["2026-07-16", 1169.17], ["2026-07-17", 1179.11], ["2026-07-20", 1146.40]]}
- ],
- "reflection": {
-  "as_of": "2026-07-19",
-  "looking_back": "The 7/19 report queued six orders around exiting the two spent-event tech positions (TSM, NFLX) and rotating into the energy sleeve (CVX 5->10, new XOM 6), plus a small META trim and an LLY add via a $1,190 limit — all settling at today's (7/20) open. One session later: energy extended (CVX +1.2%, XOM +0.7%), PYPL's board news landed without breaking the arb thesis, and the two tech exits produced a mixed grade.",
-  "worked": [
-   "PYPL: the board's rejection of the $60.50 bid, read correctly as a negotiating stance rather than a break (Cantor Fitzgerald's $70 fair-value estimate and the stock's muted +0.5% reaction both confirm the market read it the same way) — the 7/19 hold call was right not to trim into the board meeting.",
-   "CVX/XOM rotation: both cleared their queued limit buys and extended the breakout as oil pushed further on continued Iran strikes — the 7/19 regime call (energy is where the tape is paying) held for a second straight session.",
-   "NFLX exit: no longer in the book to grade directly, but the thesis that drove the exit (H2 deceleration guide, no near-term catalyst) needed no defense today — nothing in the tape argued for re-entry."
-  ],
-  "missed": [
-   "TSM exit: settling today at a worse price than it would have been held — the semi complex staged a technical bounce (SOX +1.5%, TSM +1.0% to 402.54) the very next session. The underlying reasoning (no dated TSM catalyst until October, sector-beta risk the book can't underwrite) is still sound and one green day doesn't validate re-entry, but it's a real, measurable cost of the discipline, not a free option.",
-   "LLY: -2.8% with no company-specific catalyst found anywhere in a targeted search — a reminder that the book's process (name a dated event, underwrite to it) has a blind spot for pure sector-rotation/tape-risk moves that hit positions with no story attached. Worth a closer re-check next tick rather than defaulting to 'noise.'"
-  ],
-  "adjustment": "Hold every target exactly at 7/19's weights rather than react to one session of mostly-confirming, partly-unexplained moves. The specific discipline being enforced: don't chase CVX/XOM further after a second green day (mirrors, in reverse, the 7/15 mistake of dropping CVX after one soft-PPI day), and don't re-enter TSM off one bounce session without a dated catalyst. The only thing carried forward as an open action item is re-checking LLY's news flow next tick in case today's drop had a cause that hasn't surfaced yet."
- }
 }
