@@ -1,298 +1,162 @@
 {
-  "date": "2026-07-28",
-  "as_of": "2026-07-28 close (Robinhood daily bar, regular session)",
-  "generated_by": "claude-sonnet-5 (deep_research_analyst tick 2026-07-28)",
-  "framework": "Claude for Financial Services \u2014 equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
-  "pick": "PYPL",
-  "action": "Trim PYPL 14%->12% and BAC 5%->3% on RSI extension (78.9 / 70.7) after both catalysts partly fired; raise LLY 10%->11% and add VRTX at 5% as biotech-rotation diversifiers ahead of their 8/5 and 8/3 prints; cut the energy hedge XOM/CVX 4/4 -> 3/3 as the Brent premium keeps fading ($96.78 -> ~$85-89); hold META, REGN and GOOGL at zero through their own earnings/no-catalyst tests this week.",
-  "sizing": "37% deployed across 6 names (PYPL 12, LLY 11, VRTX 5, BAC 3, XOM 3, CVX 3), 63% cash \u2014 the same buffer size as last tick, reallocated within the deployed sleeve rather than grown or shrunk, heading into the most catalyst-dense stretch this book has faced (FOMC + 4 mega-cap prints + REGN + XOM/CVX inside 3 tick-days).",
-  "confidence": 0.4,
+  "date": "2026-07-30",
+  "as_of": "2026-07-30 close (Robinhood minute bars aggregated to the session bar; consolidated volume from RH fundamentals)",
+  "generated_by": "financial-analyst skill (Claude Code) — deep_research_analyst tick 2026-07-30",
+  "framework": "Claude for Financial Services — equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
+  "pick": "LLY",
+  "action": "Raise LLY to the anchor into its 8/5 print; open AMD ahead of 8/4 on a limit; hold the PYPL merger-arb; trim the XOM/CVX energy hedge into tomorrow's telegraphed Q2 beat.",
+  "sizing": "54% invested across 7 names, 46% cash. Anchor LLY 16%; PYPL 12%; AMD 10%; VRTX 8%; BAC 4%; XOM/CVX 2% each.",
+  "confidence": 0.55,
   "regime": {
-    "label": "The capex tax spreads to the suppliers \u2014 chip stocks crack on their own, biotech becomes the crowded safe harbor",
-    "note": "The pattern this book has traded for two ticks (AI-capex raises get sold) widened on 7/28: the semiconductor complex fell hard on its own bad news, not a capex announcement \u2014 MU -8.9%, ARM -8.1%, AMD -8.1%, MRVL -7.8%, INTC -5.8%, ASML -4.4%, QCOM -4.2% \u2014 after reports that Chinese memory maker CXMT is preparing an $8.55B IPO, that AI cloud provider CoreWeave is exploring hedges against falling memory prices, and that a Chinese state-backed firm has begun mass-producing chipmaking equipment (the ASML-specific driver). This is not a rates story: the 10-year Treasury eased a third straight session to 4.62% on 7/28 (from 4.71% on 7/24) as oil fell, which should help duration-sensitive growth stocks \u2014 so the chip selloff is AI-trade-specific skepticism, one link further down the supply chain from where this book was already positioned defensively. The same session, biotech/pharma caught a visible rotation bid: AMGN +4.4%, GILD +3.0%, VRTX +2.4%, REGN +4.2%, UNH +2.7% and LLY +2.0% all rallied together, consistent with reporting that the sector's trailing-12-month return (>56%) is running more than double the Nasdaq 100's (~29%) as capital treats it as uncorrelated to AI-disruption risk. Brent crude kept fading \u2014 roughly $85-89 on 7/28 versus $96.78 on 7/24 and the brief intraday spike above $100 \u2014 'after signs of an easing Middle East conflict took the geopolitical premium out of the market.' PayPal beat Q2 (EPS $1.38 vs $1.28 est, revenue $8.7B vs $8.48B est) and raised FY guidance to $5.38 EPS, popping 4.0%, with Stripe/Advent reportedly pushing to reach an M&A agreement before month-end. The week ahead is the densest catalyst stretch this book has faced: FOMC decision 7/29 2pm ET (79.5% priced for a hold, 19.4% for a hike, June dot plot hawkish), Microsoft and Meta report 7/29 after close, Apple and Amazon 7/30 after close, Regeneron 7/30, Exxon/Chevron 7/31.",
-    "source": "data/snapshot.json daily bars (all sector moves measured directly) ; https://www.cnbc.com/2026/07/28/sk-hynix-plunges-semiconductor-selloff-deepens-samsung-softbank.html ; https://www.fxleaders.com/news/2026/07/28/micron-mu-stock-dips-below-800-as-as-cxmt-threat-and-memory-oversupply-concerns-weigh-on-shares/ ; https://www.goldmansachs.com/insights/articles/biotech-stocks-are-projected-to-extend-rally-amid-innovation ; https://www.vantagemarkets.com/market-analysis/crude-oil-prices-today-brent-wti-july-28-2026/ ; https://www.tipranks.com/news/paypal-stock-pypl-soars-4-5-on-q2-earnings-beat-and-raised-full-year-outlook ; https://www.tradingkey.com/analysis/stocks/us-stocks/262054300-weekly-preview-fed-apple-microsoft-meta-amazon-earnings-reports-tradingkey ; https://cambridgecurrencies.com/next-federal-reserve-interest-rate-decision/"
+    "label": "Hawkish-hold Fed + AI capex bifurcation",
+    "note": "The 7/29 FOMC held at 3.50-3.75% but drew THREE dissents (Hammack, Kashkari, Logan) voting to RAISE by 25bp, citing inflation still above 2% partly on Middle East energy. The tape sold off hard on it (Dow -2.19%, its worst day since April 2025; Nasdaq closed >10% off its all-time high). Then on 7/30 the market rebounded (SPY +1.68% to 741.71) on a very specific signal: it stopped taxing AI capex uniformly and started discriminating between capex that shows a return and capex that does not. MSFT (+15.61% on 3.4x average volume) reported Azure +43% with annual Azure revenue over $100B and guided Q1 FY27 Azure to ~45% cc; META (-7.95%) reported EPS $6.18 against $7.14 consensus with FY26 capex raised to $135-145B and fell ~10% intraday. Same spending, opposite verdicts. Simultaneously Samsung warned the memory crunch could run into 2028, refuting the memory-oversupply story that de-rated semis for two weeks, and the complex ripped (MU +18.39%, AMD +12.98%, INTC +11.4%, TSM +7.6%, SOXL +25.0%).",
+    "source": "https://www.cnbc.com/2026/07/29/fed-meeting-today-live-updates.html ; https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-29-2026stock-market-today-july-29-2026 ; https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html ; https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html ; https://247wallst.com/investing/2026/07/30/memory-stocks-blast-off-micron-sk-hynix-sandisk-western-digital-and-seagate-all-rally-double-digits/ ; data/snapshot.json"
   },
-  "thesis": "What changed since last tick is that the AI-capex de-rating this book has been trading around for two ticks widened from spending announcements into the supply chain itself: on 7/28 the semiconductor complex cratered on its own \u2014 MU -8.9%, ARM -8.1%, AMD -8.1%, MRVL -7.8%, INTC -5.8%, ASML -4.4%, QCOM -4.2% \u2014 not because any of them raised capex, but on reports that Chinese memory maker CXMT is preparing an $8.55B IPO, that AI cloud provider CoreWeave is exploring hedges against falling memory prices, and (for ASML specifically) that a Chinese state-backed firm has begun mass-producing chipmaking equipment. This is notably not a rates story: the 10-year eased a third straight session to 4.62% on falling oil, which should help duration-sensitive growth names \u2014 so the selloff is genuine AI-trade-specific skepticism, one step further downstream from where the book was already positioned defensively. The same session, capital visibly rotated into biotech/pharma: AMGN, GILD, VRTX, REGN, UNH and LLY all rallied together, consistent with reporting that the sector's trailing-year return (>56%) is running more than double the Nasdaq 100's. This book already owned LLY for reasons unrelated to that rotation (the orforglipron franchise) and is adding a second, smaller biotech leg in VRTX (5%) ahead of its own 8/3 print, sized below LLY/PYPL specifically because the VRTX thesis leans more on the sector tailwind than a name-specific edge \u2014 flagged plainly as this tick's one rotation-following trade rather than an anticipation trade. PYPL delivered on both of its legs at once: a Q2 beat-and-raise (EPS $1.38 vs $1.28 est, revenue $8.7B vs $8.48B est, FY guidance raised to $5.38) that popped the stock 4.0% on top of the M&A spread, with Stripe/Advent reportedly pushing to close a deal before month-end \u2014 but RSI(14) at 78.9 after that pop is the most extended reading in the book, so it is trimmed 14% to 12% to lock part of the move without abandoning the position (and for the record, this is a short-window overbought signal, not a 52-week-high one: Robinhood's fundamentals show the real 52-week high is $79.50 from 2025-07-28, so the stock is still 26.6% below it \u2014 a correction to how the prior report's limited price window described this). BAC gets the same treatment at smaller scale \u2014 RSI 70.7, a fresh 52-week high set 7/27, no catalyst until October \u2014 cut 5% to 3%, applying the RSI-70 trim rule proactively rather than retroactively, which the prior reflection flagged as a gap between diagnosis and action. The energy pair is cut again, 4/4 to 3/3: the Brent premium that justified holding it as a hedge kept fading (down to roughly $85-89 from $96.78 four sessions ago) even as both names' RSI cooled from the most overbought readings in the universe back toward neutral \u2014 the hedge is doing its job and is sized down accordingly, not eliminated, because Middle East risk has cooled, not resolved. The harder admission is REGN and GOOGL: both were sold at the 7/27 open per last tick's decision, and both then ran hard against the exit \u2014 REGN +5.1% to 695.29 on a sector-rotation-plus-Telix-collaboration bounce two tick-days before its own 7/30 print, GOOGL +2.7% to 333.73 on recognition of Google Cloud's 82% growth. Neither gets bought back here: REGN's Eylea deterioration (US sales -10% y/y, first sub-$1B quarter since 2018, Citi cut to Neutral/$700) is a real fundamental read that a bounce doesn't resolve, and the print is 2 tick-days out; GOOGL has no scheduled catalyst before Q3 earnings and is still down 5.6% over 20 sessions despite the bounce \u2014 buying either now would be exactly the confirmation-chasing this book exists to avoid, even though not chasing has a visible cost already reflected in this tick's numbers. META stays at zero through its own 7/29 print, one tick-day out, where Citi models operating margin compressing to 33.8% from 43.0% on Q2 capex near $33.7B \u2014 the same pattern GOOGL/INTC/TSLA/ORCL already confirmed, now facing its real-time test. With FOMC on 7/29 (79.5% priced for a hold, a modest 19.4% priced for a hike, June's dot plot leaning hawkish), MSFT and META reporting 7/29 after close, AAPL and AMZN 7/30 after close, REGN 7/30, and XOM/CVX 7/31 \u2014 five dated events in the next three tick-days \u2014 the 63% cash buffer stays exactly the size it was last tick, reallocated only within the deployed 37%.",
+  "thesis": "What changed since last tick is that the 'AI capex tax' this book has been defensively positioned around for three ticks stopped being a single trade. On 7/29 Microsoft and Meta reported into the same macro — a Fed that held but drew three dissents to hike — and the market split them apart: MSFT +15.61% on Azure accelerating to 43% growth, crossing $100B in annual Azure revenue, and guiding to ~45% next quarter on lower-than-feared capex; META -7.95% on EPS of $6.18 versus $7.14 consensus with capex guided up to $135-145B and operating costs +55%. The market is no longer punishing AI spending — it is punishing AI spending that has not yet produced revenue. That is a much narrower short than the one this book was implicitly running, and it is why sitting in 63% cash cost real alpha again.\n\nI am not chasing the resolution. The names that repriced on 7/30 — MU +18.39%, AMD +12.98%, INTC +11.4%, SOXL +25.0% — moved on Samsung's memory-supply warning and the MSFT read-through, and buying those at tomorrow's open is precisely the mistake this book has logged twice. Instead I am concentrating into names with a DATED event inside the next five tick-days whose setup the 7/30 rotation actively worked against.\n\nThe anchor is LLY into its 8/5 am print (4 tick-days, consensus $8.84 EPS). The specific, observed fact I am trading is that LLY fell 4.52% on 7/30 (1210.02 -> 1155.27) on a session the index rose 1.68%, leaving it at RSI 46.9 and -3.1% over 20 sessions. That is a name going down on a day everything went up, four sessions before its own catalyst. The cross-section says why: healthcare was the funding source for the semis rip — AMGN +0.03%, VRTX -0.34%, ISRG -0.03% all sat out a +1.68% tape while MU, AMD and INTC ripped double digits. Layered on that flow, Goldman Sachs published a bearish forecast on 7/28 for oral obesity (orforglipron) sales. So the setup into the print is a rotation-driven markdown plus a sell-side estimate — neither of which is Lilly's own data. The event resolves on the injectable franchise, Mounjaro and Zepbound, which drove most of Q1's $19.8B revenue, against a bear case built on a pill that is not yet the revenue base.\n\nSecond, a starter in AMD ahead of 8/4 pm (3 tick-days, consensus $1.55), but only on a limit. The specific bear thesis that took AMD -10.3% over 20 days was memory/AI cost deflation — the CXMT IPO and CoreWeave hedging headlines I wrote up myself last tick. Samsung's 7/30 guidance that the memory crunch persists into 2028 refutes that thesis at the source, and MSFT's ~45% Azure guide is the demand read-through into AMD's data-center line, which was $5.8B in Q1 with Lisa Su having raised the annual data-center growth target from 60% to 80% and MI400 shipping in H2. The honest problem is that AMD already rose 12.98% on 7/30, so part of this is priced — which is exactly why the order is a limit at 490.18 (~1% over the close) rather than market. If it gaps away, I do not own it, and that is the correct outcome.\n\nThird, I am cutting the XOM/CVX energy sleeve from 3% each to 2% each INTO a print I expect to be good. Brent averaged $96.68 in Q2, up 23% quarter-over-quarter, and the sell side is calling the 7/31 results the best in roughly 15 quarters. That is the point: a strong Q2 is not information — the quarter's oil price has been public for a month, and both names are already +15.3% and +16.2% over 20 sessions. What is not priced is the forward, and spot Brent has fallen to roughly $85-89 since the Middle East premium faded, which pressures the Q3 guide and the buyback. This sleeve was explicitly labelled a fading geopolitical hedge last tick and its premise has now faded — but I am cutting to a 2% token rather than to zero, because last tick I swept REGN to zero the same session its bad news fully priced and it promptly ran 5.1% against me.\n\nPYPL stays at 12% and is the one place I am overriding my own RSI-70 trim rule. Its RSI of 74.7 is not a momentum chase — the board rejected Stripe/Advent's $60.50-per-share bid on 7/21 as inadequate while pushing toward roughly $70, and the 7/28 Q2 beat was the evidence the board needed to justify holding out. At 57.66 the stock trades below the bid it already rejected. Applying a momentum overbought rule to a live merger-arb would be the wrong tool.",
   "evidence": [
     {
-      "point": "PayPal Q2 2026 adjusted EPS was $1.38 versus a $1.28 Street estimate; revenue was $8.7B versus an $8.48B estimate, +5% y/y; PayPal raised full-year guidance to $5.38 EPS. Shares rose about 4.5% in early trading toward $58.63; the actual session close was 58.32, +4.01%, on 22.87M shares versus a 19.33M 30-day average.",
-      "source": "https://www.tipranks.com/news/paypal-stock-pypl-soars-4-5-on-q2-earnings-beat-and-raised-full-year-outlook ; close/volume from data/snapshot.json + Robinhood get_equity_fundamentals (market_date 2026-07-28)"
+      "point": "Fed held at 3.50-3.75% on 7/29 with three dissents to hike: 'three voting members of the FOMC — Beth M. Hammack, Neel Kashkari and Lorie K. Logan — dissented from the no-change policy and voted to raise the Fed's rate by a quarter of a percentage point.' The Dow 'closed 1,153.18 points lower, or 2.19%, at 51,594.14 for its worst decline since April 2025', and the Nasdaq ended 'more than 10% off its all-time high'.",
+      "source": "https://www.cnbc.com/2026/07/29/fed-meeting-today-live-updates.html ; https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-29-2026stock-market-today-july-29-2026"
     },
     {
-      "point": "Stripe and Advent International 'are pushing to reach an agreement before the end of July' after PayPal's board formally rejected their $60.50/share, $53.4B joint offer on 2026-07-20; PayPal is working with Goldman Sachs and Evercore on alternatives including a sale or breakup.",
-      "source": "https://www.bloomberg.com/news/articles/2026-07-15/stripe-advent-offer-to-buy-paypal-for-53-billion-reuters-says ; https://www.techtimes.com/articles/321005/20260720/paypal-board-rejects-53b-stripe-advent-offer-stablecoin-race-explains-why-next-move-matters.htm"
+      "point": "MSFT Q4 FY26: revenue '$90 billion, up 18% year-on-year, beating expectations of $81.43 billion'; Azure grew 43% versus ~40% expected; 'For the first time, Azure's annual revenue exceeded $100 billion'; guide 'Azure's constant-currency revenue growth to further rise to about 45% in the first quarter of fiscal 2027, higher than the market's prior forecast of about 41%.' Observed: MSFT closed 7/30 at 451.49, +15.61% on 3.4x its 20-day average volume.",
+      "source": "https://www.cnbc.com/2026/07/29/microsoft-msft-q4-earnings-report-2026.html ; https://www.bloomberg.com/news/articles/2026-07-29/microsoft-reports-quarterly-cloud-revenue-that-beat-estimates ; data/snapshot.json"
     },
     {
-      "point": "PYPL's RSI(14) is 78.9 (computed on data/snapshot.json), the most extended reading in this book. Robinhood fundamentals show PYPL's actual 52-week high is $79.50, dated 2025-07-28 \u2014 a year-old high, not a recent one \u2014 so the 58.32 close remains 26.6% below it despite the short-term overbought signal.",
-      "source": "RSI computed on data/snapshot.json ; 52-week high from Robinhood get_equity_fundamentals (market_date 2026-07-28)"
+      "point": "META Q2 2026: revenue $60.8B vs $60.2B consensus, but 'Q2 2026 earnings per share of $6.18, badly missing the $7.14 consensus estimate'; 'higher AI and legal expenses drove a 55% rise in operating costs'; FY26 capex guidance raised 'to $135-145 billion, up from the $125-145 billion range'. Shares 'dropped as much as 10.4%'. Observed: META closed 7/30 at 539.06, -7.95%, RSI(14) 32.1.",
+      "source": "https://www.cnbc.com/2026/07/29/meta-q2-earnings-report-2026.html ; https://www.tradingkey.com/analysis/stocks/us-stocks/262062391-meta-platforms-report-q2-2026-meta-advertising-dap-capital-expenditures-tradingkey ; data/snapshot.json"
     },
     {
-      "point": "Semiconductor stocks fell broadly on 2026-07-28: AMD fell more than 7% and Intel, Marvell and Qualcomm also slid, while Micron and SK Hynix tumbled more than 8%; South Korea's SK Hynix plunged more than 14% and Samsung fell over 13%. Measured directly on data/snapshot.json: MU -8.88%, ARM -8.11%, AMD -8.10%, MRVL -7.78%, INTC -5.81%, ASML -4.44%, QCOM -4.23%.",
-      "source": "https://www.cnbc.com/2026/07/28/sk-hynix-plunges-semiconductor-selloff-deepens-samsung-softbank.html ; moves computed on data/snapshot.json"
+      "point": "Semis reversed on a supply signal, not a demand one: 'Samsung warned of tightening memory supplies' and 'the memory crunch could last into 2028'; SanDisk +22%, Micron +15%, 'AMD shares are gaining 13% to $483.55, while Intel stock is up 13% to $92.67'. Observed 7/30 closes: MU +18.39% to 874.92, AMD +12.98% to 485.33, INTC +11.4% to 91.23, TSM +7.6% to 403.27, SOXL +25.0% to 115.01.",
+      "source": "https://247wallst.com/investing/2026/07/30/memory-stocks-blast-off-micron-sk-hynix-sandisk-western-digital-and-seagate-all-rally-double-digits/ ; https://www.cnbc.com/2026/07/30/chip-stock-rally-lam-research-micron-amd.html ; data/snapshot.json"
     },
     {
-      "point": "The proximate driver cited for Micron's slide is a report that Chinese memory maker CXMT is preparing an $8.55B IPO, plus reports that AI cloud provider CoreWeave is exploring financial hedges against a potential drop in memory costs; ASML's slide is tied to a separate report that a Chinese state-backed company has begun mass-producing chipmaking equipment.",
-      "source": "https://www.fxleaders.com/news/2026/07/28/micron-mu-stock-dips-below-800-as-as-cxmt-threat-and-memory-oversupply-concerns-weigh-on-shares/"
+      "point": "LLY went down on a day the market went up, four sessions before its own print: LLY 1210.02 -> 1155.27 (-4.52%) while SPY 729.46 -> 741.71 (+1.68%), leaving RSI(14) 46.9 and -3.1% over 20 sessions. The healthcare sleeve as a whole sat out the rally — AMGN +0.03%, VRTX -0.34%, ISRG -0.03%. Separately, 'On July 28, 2026, Goldman Sachs forecasted weak obesity pill sales from Eli Lilly.' Lilly's revenue base is the injectable: '$19.8 billion in revenue in the first quarter of 2026, with most of it traced back to tirzepatide, sold as Mounjaro for type 2 diabetes and Zepbound for obesity.'",
+      "source": "data/snapshot.json ; https://finance.yahoo.com/healthcare/articles/disturbing-trend-bad-news-eli-103000864.html ; https://www.fool.com/investing/2026/07/29/forget-weight-loss-drugs-heres-another-reason-to-b/"
     },
     {
-      "point": "The 10-year Treasury yield fell for a third consecutive session to 4.62% on 2026-07-28, its lowest in about a week, 'as lower oil prices continued to support demand for government bonds' \u2014 down from the 4.71% reading cited last tick on 2026-07-24.",
-      "source": "TradingEconomics / CNBC-sourced 10-year yield summary, 2026-07-28"
+      "point": "Dated catalysts inside the next 5 tick-days, from the Robinhood earnings calendar (all verified=true): XOM 7/31 am est EPS 3.78; CVX 7/31 am est 5.27; VRTX 8/3 pm est 4.63; AMD 8/4 pm est 1.55; LLY 8/5 am est 8.84.",
+      "source": "Robinhood MCP get_earnings_calendar, window 2026-07-31 +12d, high_market_cap filter"
     },
     {
-      "point": "The NYSE Arca Biotechnology Index and Nasdaq Biotechnology Index returned more than 56% over the trailing 12 months (as of 2026-07-07), versus the Nasdaq 100's roughly 29% \u2014 a rally Goldman Sachs research attributes partly to rotation as investors grow cautious on AI-driven disruption pressuring other pockets of the market. On 2026-07-28 alone: AMGN +4.42%, GILD +2.98%, VRTX +2.39%, REGN +4.21%, UNH +2.73%, LLY +2.00% (data/snapshot.json).",
-      "source": "https://www.goldmansachs.com/insights/articles/biotech-stocks-are-projected-to-extend-rally-amid-innovation ; session moves from data/snapshot.json"
+      "point": "AMD's data-center setup into 8/4: 'AMD's data center revenue hit $5.8 billion in Q1 2026'; total 'revenue reached $10.3 billion in Q1 2026, up 38 percent year-over-year'; 'annual revenue growth expectations of 60% initially revised higher to 80%'; MI400 'shipments are slated to begin in the second half of 2026', with S&P Global Market Intelligence projecting '$7.2 billion in revenue in its first year'.",
+      "source": "https://tech-insider.org/amd-stock-ai-data-center-2026/ ; https://www.fool.com/investing/2026/07/14/prediction-lisa-su-deliver-great-news-amd-on-aug-4/"
     },
     {
-      "point": "Vertex Pharmaceuticals will report Q2 2026 results on 2026-08-03 after market close (4:30pm ET call), with consensus of $4.74 EPS and $3.2285B revenue. VRTX closed 2026-07-28 at 490.43, +2.39%; trailing P/E is 28.81, no dividend (Robinhood fundamentals, market_date 2026-07-28). VRTX is also integrating its ~$10B all-cash acquisition of Crinetics Pharmaceuticals ($85/share), expected to close Q3 2026.",
-      "source": "https://news.vrtx.com/news-releases/news-release-details/vertex-announce-second-quarter-2026-financial-results-august-3rd ; https://www.marketbeat.com/earnings/reports/2026-8-3-vertex-pharmaceuticals-incorporated-stock/ ; fundamentals from Robinhood get_equity_fundamentals"
+      "point": "Energy Q2 is already public information: 'The global oil benchmark Brent averaged $96.68 per barrel, up 23% compared to the first quarter'; analysts are 'predicting best results in 15 quarters'; XOM 'estimates that higher liquids prices alone could have lifted earnings by about $3.5-$3.9 billion from the prior quarter'. Observed: XOM +15.3% and CVX +16.2% over the last 20 sessions on that known quarter, while spot Brent has since fallen to roughly $85-89.",
+      "source": "https://www.benzinga.com/trading-ideas/previews/26/07/60810684/chevron-exxonmobil-earnings-preview-higher-oil-prices-have-analysts-predicting-best-results-in-15-quarters ; https://news.alphastreet.com/exxon-mobil-xom-q2-2026-preview-eps-est-3-68-reports-july-31/ ; data/snapshot.json"
     },
     {
-      "point": "Regeneron closed 2026-07-28 at 695.29, +4.21% on the session (RSI 65.0, a fresh 20-day breakout), after being sold at the 7/27 open (661.77) per last tick's decision \u2014 a 5.1% move against the exit. Q2 earnings are confirmed for 2026-07-30 with consensus of $10.00 EPS (-22.4% y/y) and $3.84B revenue (+4.5% y/y). Trailing P/E is 16.54 (Robinhood fundamentals), well below LLY's 42.09 and VRTX's 28.81.",
-      "source": "session move from data/snapshot.json ; https://finance.yahoo.com/markets/stocks/articles/curious-regeneron-regn-q2-performance-131516790.html ; fundamentals from Robinhood get_equity_fundamentals"
-    },
-    {
-      "point": "Alphabet rebounded to 333.73 by 2026-07-28 close (+2.20% that session, +4.4% since the 319.74 close on 7/24 when last tick decided to exit), after climbing 2.6% on 7/27 as 'investors shift their attention to the underlying strength of the business, particularly Google Cloud, whose revenue surged 82% year over year.' GOOGL's residual position was sold at the 7/27 open (325.04) per last tick's order \u2014 a 2.7% move against that exit. GOOGL remains -5.63% over 20 sessions and has no scheduled catalyst before Q3 earnings.",
-      "source": "https://www.investing.com/news/stock-market-news/why-is-alphabet-stock-rebounding-today-93CH-4814648 ; moves computed on data/snapshot.json"
-    },
-    {
-      "point": "Meta reports Q2 2026 results on 2026-07-29 after market close, with consensus near $60.2B revenue and $7.13-7.23 EPS. Q2 capex is projected around $33.7B, more than double the $16.5B spent a year earlier; Citi expects operating margin to fall to 33.8% from 43.0% y/y despite ~27.7% revenue growth.",
-      "source": "https://www.moomoo.com/community/feed/meta-earnings-preview-can-the-ad-engine-outrun-ai-capex-116997981601798 ; https://tickeron.com/earnings/META/"
-    },
-    {
-      "point": "Microsoft and Meta report Q2/FY26-Q4 results 2026-07-29 after the close; Apple and Amazon report 2026-07-30 after the close \u2014 four mega-cap prints inside 48 hours. The FOMC decision lands 2026-07-29 at 2:00pm ET (press conference 2:30pm, Chair Kevin Warsh); FactSet consensus expects a hold at 3.50-3.75% (5th straight hold), with market-implied odds at 79.5% hold / 19.4% for a 25bp hike, and June's dot plot described as having 'turned hawkish.'",
-      "source": "https://www.tradingkey.com/analysis/stocks/us-stocks/262054300-weekly-preview-fed-apple-microsoft-meta-amazon-earnings-reports-tradingkey ; https://cambridgecurrencies.com/next-federal-reserve-interest-rate-decision/"
-    },
-    {
-      "point": "Brent crude fell to $86.58/bbl on 2026-07-28 (-1.54% on the day; other intraday readings ranged $84.99-$89.08), down from the $96.78 close cited last tick on 2026-07-24 and well off the brief intraday spike above $100 on 7/24, as 'signs of an easing Middle East conflict took the geopolitical premium out of the market.' XOM's RSI(14) cooled from 84.0 (7/24) to 62.1 (7/28); CVX's from 92.0 to 56.4.",
-      "source": "https://www.vantagemarkets.com/market-analysis/crude-oil-prices-today-brent-wti-july-28-2026/ ; RSI computed on data/snapshot.json"
+      "point": "PYPL is a live merger-arb, not a momentum position: 'PayPal's board rejected the $60.50-per-share offer as inadequate on July 21, 2026, but did not reject the idea of a sale'; the board, 'advised by Goldman Sachs and Evercore', is 'pushing for a higher price, closer to $70 per share'; Stripe and Advent bid '$60.50 per share — more than $53 billion'. Observed: PYPL closed 7/30 at 57.66, below the rejected bid, at RSI(14) 74.7.",
+      "source": "https://seekingalpha.com/news/4614753-paypal-board-views-53b-stripe-advent-takeover-bid-as-inadequate---reuters ; https://blockonomi.com/paypal-pypl-stock-board-rejects-stripes-60-50-per-share-takeover-proposal/ ; data/snapshot.json"
     }
   ],
-  "targets": {
-    "PYPL": 0.12,
-    "LLY": 0.11,
-    "VRTX": 0.05,
-    "BAC": 0.03,
-    "XOM": 0.03,
-    "CVX": 0.03
-  },
-  "rationale": {
-    "PYPL": "Anchor, trimmed from 14% to 12% after both legs of the thesis fired at once. [DATA] Q2 EPS came in at $1.38 vs a $1.28 consensus and revenue at $8.7B vs $8.48B consensus (+5% y/y), and PayPal raised full-year guidance to $5.38 EPS. [DATA] The stock closed 2026-07-28 at 58.32, +4.01% on the session, on 22.87M shares against a 19.33M 30-day average. [DATA] Stripe and Advent are reported to be pushing to reach an agreement before the end of July \u2014 the M&A leg this position was built on is now resolving within days, not weeks. [DATA] RSI(14) is 78.9, the most overbought reading among this book's holdings; note this is a short-window signal, not a 52-week-high read \u2014 Robinhood's fundamentals show the actual 52-week high is $79.50, set 2025-07-28, so the stock remains 26.6% below its real 52-week high even after this pop, correcting a framing gap in the prior report (whose price window only spanned ~7 months). [ASSUMED] The trim is about the RSI extension and locking part of a fast gain, not a change of view: with a live, near-term-resolving M&A spread still open (board reportedly wants ~$70, stock closed 58.32) and a beat-and-raise now also in hand, this remains the book's highest-conviction name \u2014 just not at a size that ignores a 79-reading after a one-day 4% pop. [DATA] Trailing P/E is 10.64, still the cheapest multiple in the book.",
-    "LLY": "Raised from 10% to 11%, riding a rotation that is now visibly broader than one stock. [DATA] LLY closed 2026-07-28 at 1221.49, +2.00% on the session, as AMGN (+4.42%), GILD (+2.98%), VRTX (+2.39%), REGN (+4.21%) and UNH (+2.73%) all rallied the same day \u2014 a pattern reported separately as capital rotating out of AI-capex-exposed tech into biotech/pharma, a sector whose trailing-12-month index return (>56%) is more than double the Nasdaq 100's (~29%). [DATA] RSI(14) is 61.4, still short of the 70+ readings now flagged as a trim signal elsewhere in this book. [DATA] Q2 earnings are confirmed for 2026-08-05, roughly 6 tick-days out, sequenced safely after this week's FOMC/mega-cap/REGN/energy cluster. [ASSUMED] The structural case is unchanged from last tick: an oral-GLP-1 franchise (Foundayo/orforglipron, Medicare Part D access live since 7/1) is uncorrelated to both the semiconductor/AI-capex de-rating and the oil trade, exactly the diversification this book needs into a week with five other dated events. [DATA] Capped below PYPL's size because the 42.09 trailing P/E (Robinhood fundamentals) leaves no valuation cushion for a guidance miss on 8/5.",
-    "VRTX": "New position, sized modestly at 5% \u2014 under half of PYPL and less than half of LLY \u2014 because the rationale leans on sector rotation rather than a name-specific edge on VRTX's own print. [DATA] VRTX closed 2026-07-28 at 490.43, +2.39%, inside the same biotech-rotation session described above. [DATA] Q2 earnings are confirmed for 2026-08-03 after the close, 4 tick-days out \u2014 the nearest dated catalyst of any name added this tick \u2014 with consensus of $4.74 EPS and $3.2285B revenue. [DATA] VRTX is mid-integrating a ~$10B all-cash acquisition of Crinetics Pharmaceuticals ($85/share), expected to close Q3 2026; the FDA also accepted VRTX's filing for povetacicept (IgA nephropathy) in June, though that decision (Nov 30) is too far out to be this tick's catalyst. [DATA] Trailing P/E is 28.81 (Robinhood fundamentals) \u2014 cheaper than LLY's 42.09, richer than REGN's 16.54, with no dividend to complicate the comparison. [ASSUMED] Risk is named plainly in the risks section below: this is the one position in the book added on a sector tailwind rather than a stock-specific dated-event thesis, and it is sized to reflect that.",
-    "BAC": "Trimmed further, 5% to 3%, applying the RSI-extension rule proactively rather than waiting for a bad session to justify it \u2014 precisely the gap the prior reflection flagged between diagnosis and action. [DATA] RSI(14) is 70.7 and Robinhood's fundamentals show a fresh 52-week high of 62.985 set 2026-07-27, one session after the 14% dividend raise that was this position's last catalyst. [DATA] The stock closed 62.62 on 7/28, essentially flat against that high. [DATA] No scheduled catalyst until Q3 earnings on 2026-10-14, roughly 55 tick-days out. [ASSUMED] Kept at 3% rather than zero because rising real yields (even as the 10-year eased to 4.62% on 7/28 from 4.71% on 7/24, still elevated on a multi-month view) remain a plausible net-interest-income tailwind, and BAC is the book's only financial \u2014 full diversification argues for a small residual, not none.",
-    "XOM": "Cut from 4% to 3%, continuing last tick's re-labeling of this pair as a fading hedge, not an earnings trade. [DATA] Brent crude fell to $86.58 on 2026-07-28 (intraday readings clustered $85-89), down sharply from the $96.78 close cited last tick and the brief intraday spike above $100 on 7/24, as easing Middle East conflict signals took the geopolitical premium out of the market. [DATA] XOM's RSI(14) cooled from 84.0 (7/24) to 62.1 (7/28) as the stock pulled back from 156.94 to 153.20. [DATA] Q2 earnings land 2026-07-31, one tick-day out, still covering the April-June quarter that predates the spike \u2014 the same structural mismatch flagged last tick, now compounded by the premium itself fading before the print even lands. [ASSUMED] Held at 3% rather than zero because Middle East risk has cooled, not resolved \u2014 a residual position is cheaper insurance than rebuilding one from scratch if it flares again.",
-    "CVX": "Cut from 4% to 3%, same logic as XOM. [DATA] RSI(14) fell from 92.0 (7/24, the single most overbought reading in the 100-name universe that tick) to 56.4 (7/28) as the stock pulled back from 194.79 to 187.72 (-3.6%). [DATA] Q2 earnings also land 2026-07-31, one tick-day out, covering the same pre-spike quarter as Exxon's. [DATA] Trailing P/E is 31.91 (Robinhood fundamentals), the richer multiple of the two majors. [ASSUMED] The pair is now 6% of the book, down from 8% last tick and 16.8% two ticks ago \u2014 a token hedge rather than a conviction position, consistent with an oil premium that has now faded for two consecutive sessions rather than reignited."
-  },
-  "limits": {
-    "LLY": 1233.7,
-    "VRTX": 495.33
-  },
   "risks": [
-    "PYPL is still 12% of the book on an unresolved M&A binary; talks are reportedly aiming to conclude before month-end, so a formal walk-away by Stripe/Advent this week could send the stock back toward pre-bid levels (roughly $47-50), a downside of 15-20% on the position even after this tick's fundamental beat.",
-    "Cutting REGN and the last of GOOGL right as both mean-reverted higher already cost the book (REGN +5.1%, GOOGL +2.7% since their 7/27 sell fills) \u2014 the same discipline that correctly caught GOOGL's post-earnings drop once does not repeat cleanly on a second sale of an already-repriced name.",
-    "Holding META, REGN and GOOGL at zero into (or just after) three separate binary events forgoes any upside if the capex-tax pattern breaks this week; five confirming data points is a real edge, not a law, and some of the margin-compression fear (per Citi's own published numbers) may already be well understood by the Street.",
-    "VRTX is a fresh 5% position added 4 tick-days before its own print on a sector-rotation rationale rather than a name-specific edge on that quarter's numbers \u2014 sized at half of PYPL/LLY specifically because of that gap, but still exposed to a VRTX-specific miss the rotation thesis says nothing about.",
-    "The energy cut to 3%/3% assumes Brent's de-escalation continues; a reversal (renewed Houthi attacks, direct US-Iran conflict) would spike oil again, and a 6% combined position is a thin hedge against that tail.",
-    "FOMC hawkish-surprise risk: if Wednesday's 2pm ET decision or press conference reads more hawkish than the 79.5%-hold consensus expects, risk assets broadly \u2014 including LLY, VRTX and PYPL \u2014 could reprice down together, and the 63% cash buffer earns close to nothing while waiting it out.",
-    "Data-layer risk: this report runs on web_search plus Robinhood fundamentals with no paid-vendor terminal. A figure encountered this tick citing '4.2%' inflation for the FOMC's dot-plot context does not reconcile with the 3.5% y/y June CPI headline used in the prior report and was deliberately not built into any thesis."
+    "Hawkish-hold risk is the dominant macro risk: three FOMC members voted to HIKE. If the next inflation print confirms them, a 54%-invested book with a 16% single-name anchor gets marked down across the board regardless of any individual catalyst.",
+    "LLY (anchor, 16%): if the 8/5 print misses $8.84 or management guides the injectable franchise down, the Goldman pill call stops being a sell-side opinion and becomes the read on the whole franchise. The position is already -4.5% from entry (1209.42 -> 1155.27); the 20% agent stop is the backstop, not the thesis.",
+    "AMD (10%): the +12.98% on 7/30 means the refutation of the memory-deflation bear case is partly priced already. If it gaps up further the limit at 490.18 simply does not fill — but if it fills and the 8/4 guide disappoints on MI400 timing, I have bought a 171x-P/E name one day after a 13% pop. That is the chase risk I am explicitly capping with size and the limit.",
+    "PYPL (12%): entirely dependent on the deal staying alive. Stripe/Advent are weighing options after the rejection. If they walk, the pre-bid level was roughly $47 (the $60.50 bid was a 28% premium), i.e. about -18% from the 57.66 close, and RSI 74.7 gives no cushion.",
+    "XOM/CVX at 2% each: I am cutting into a print the sell side expects to be the best in 15 quarters. If the Q3 guide holds up better than spot Brent implies, this trim is the REGN mistake repeated. Keeping a token rather than going flat is the deliberate hedge against exactly that.",
+    "Concentration and cash: 46% cash still drags in an up-tape, and this book's all-time alpha is -11.0 points largely because of that drag. If the 7/30 risk-on continues, being half in cash loses again — I have accepted that in exchange for not chasing a one-day semis reversal."
   ],
   "data_examined": [
-    {
-      "label": "Daily OHLCV for all 101 symbols through 2026-07-28",
-      "source": "data/snapshot.json"
-    },
-    {
-      "label": "Robinhood fundamentals (P/E, P/B, market cap, 52-week range, dividend schedule, average volume) for PYPL, LLY, BAC, XOM, CVX, VRTX, REGN, META, GOOGL, market_date 2026-07-28",
-      "source": "robinhood-trading MCP get_equity_fundamentals"
-    },
-    {
-      "label": "Momentum / RSI(14) / 20-day-breakout screen over the full universe in randomized order (anti-bias shuffle)",
-      "source": "data/snapshot.json, computed this tick"
-    },
-    {
-      "label": "Prior tick's book, targets, realized trades and alpha vs SPY",
-      "source": "tools/analyst_memory.py"
-    },
-    {
-      "label": "PayPal Q2 2026 results, guidance, and M&A bid status",
-      "source": "TipRanks, StockTitan, PR Newswire, Bloomberg, TechTimes"
-    },
-    {
-      "label": "Semiconductor sector selloff 2026-07-28 and its memory/China-competition drivers",
-      "source": "CNBC, FXLeaders, 24/7 Wall St."
-    },
-    {
-      "label": "Biotech/pharma sector rotation and index performance",
-      "source": "Goldman Sachs Insights"
-    },
-    {
-      "label": "VRTX Q2 2026 earnings date/consensus and Crinetics acquisition status",
-      "source": "Vertex IR (news.vrtx.com), MarketBeat, BioSpace"
-    },
-    {
-      "label": "REGN Q2 2026 earnings date/consensus",
-      "source": "Yahoo Finance / Zacks-sourced preview"
-    },
-    {
-      "label": "META Q2 2026 earnings preview and capex/margin estimates",
-      "source": "Moomoo, Tickeron, Benzinga"
-    },
-    {
-      "label": "FOMC 2026-07-29 decision preview and market-implied odds",
-      "source": "Cambridge Currencies, Kiplinger, FinancialJuice, TradingKey"
-    },
-    {
-      "label": "Brent/WTI crude levels 2026-07-28 and de-escalation narrative",
-      "source": "Vantage Markets, Investing.com"
-    },
-    {
-      "label": "10-year Treasury yield 2026-07-28",
-      "source": "TradingEconomics / CNBC-sourced summary"
-    }
+    {"label": "Full ~100-name universe screened in randomized order (1d/5d/20d/60d momentum, RSI(14), distance from 20-day high, distance from SMA20, volume ratio)", "source": "data/snapshot.json (Robinhood daily bars through 2026-07-30) + bot/indicators.py"},
+    {"label": "7/30 session bar built from Robinhood minute bars 13:30-20:00 UTC with consolidated session volume from RH fundamentals (the settled day bar still read 7/29)", "source": "Robinhood MCP get_equity_historicals interval=minute + get_equity_fundamentals; tools/aggregate_intraday.py"},
+    {"label": "Forward earnings calendar for the universe, 7/31 through 8/11 (27 verified events)", "source": "Robinhood MCP get_earnings_calendar (high_market_cap, verified=true rows)"},
+    {"label": "RH fundamentals for finalists — LLY P/E 43.05, 52wk 623.78-1249.45; AMD P/E 171.31, 52wk 149.22-584.73; VRTX P/E 28.30, 52wk 362.50-533.67; PYPL P/E 10.53, 52wk 38.46-79.215; BAC P/E 14.27, 52wk 44.75-62.985", "source": "Robinhood MCP get_equity_fundamentals, market_date 2026-07-30"},
+    {"label": "FOMC 7/29 decision and dissents; MSFT and META results; Samsung memory-supply warning; XOM/CVX Q2 previews; PayPal/Stripe bid status; Goldman note on LLY oral obesity sales", "source": "web_search — CNBC, Bloomberg, TheStreet, Benzinga, Seeking Alpha, 24/7 Wall St., Motley Fool (links in evidence)"},
+    {"label": "Prior tick's book, realized P&L, alpha vs SPY and annualized Sharpe", "source": "python3 tools/analyst_memory.py"}
   ],
+  "targets": {
+    "LLY": 0.16,
+    "PYPL": 0.12,
+    "AMD": 0.10,
+    "VRTX": 0.08,
+    "BAC": 0.04,
+    "XOM": 0.02,
+    "CVX": 0.02
+  },
+  "limits": {
+    "LLY": 1166.82,
+    "AMD": 490.18,
+    "VRTX": 486.51,
+    "BAC": 62.37
+  },
+  "rationale": {
+    "LLY": "Anchor, raised 11% -> 16% into the 8/5 am print (4 tick-days out, consensus $8.84 EPS [DATA: RH earnings calendar, verified=true]). The reason to press rather than just hold is the character of the decline: LLY fell 4.52% on 7/30 (1210.02 -> 1155.27) on a session SPY rose 1.68%, and now sits at RSI 46.9, -3.1% over 20 sessions [DATA: data/snapshot.json]. A name falling 4.5% into a +1.7% tape four sessions before its own catalyst is the setup I want. The cross-section says this was rotation, not company news: AMGN +0.03%, VRTX -0.34% and ISRG -0.03% all sat out the same rally while MU/AMD/INTC ripped double digits [DATA: snapshot] — healthcare was the funding source for the semis trade [ASSUMED: my read of the 7/30 cross-section, not a sourced flows figure]. The one piece of genuine news is a sell-side estimate, not company data: Goldman Sachs forecast weak oral obesity (orforglipron) sales on 7/28 [DATA: web_search]. But the 8/5 event resolves on the injectable franchise — Mounjaro and Zepbound drove most of Q1's $19.8B revenue [DATA: web_search] — while the bear case is built on a pill that is not yet the revenue base. Buy limit 1166.82 (~1% over the 7/30 close): I want this near the price the thesis priced, and I will not pay up for a healthcare bounce.",
+    "PYPL": "Held flat at 12%. This is the one name where I am deliberately NOT applying the RSI-70 trim rule I adopted last tick, and the distinction matters: RSI 74.7 [DATA: snapshot] on a merger-arb is not the same signal as RSI 74.7 on a momentum name. The board rejected Stripe/Advent's $60.50-per-share ($53B) bid on 7/21 as inadequate while pushing toward roughly $70, advised by Goldman Sachs and Evercore, and explicitly did not rule out a sale [DATA: Reuters via Seeking Alpha]. The 7/28 Q2 beat — EPS $1.38 vs $1.28, revenue $8.7B vs $8.48B, FY guide raised to $5.38 [DATA: verified last tick] — is the evidence the board needed to justify holding out. At the 57.66 close the stock trades below a bid it has already turned down [DATA: snapshot]. I am not adding, because the next move belongs to Stripe and I cannot put a date on it; I am not trimming, because that would be selling optionality using a rule designed for a different kind of position.",
+    "AMD": "New starter at 10% ahead of the 8/4 pm print (3 tick-days, consensus $1.55 EPS [DATA: RH earnings calendar, verified=true]). This is a thesis refutation, not a momentum entry. What took AMD -10.3% over 20 sessions was the memory/AI cost-deflation narrative I wrote up myself last tick — the CXMT IPO and CoreWeave hedging headlines. On 7/30 Samsung warned the memory crunch runs into 2028 [DATA: web_search], contradicting that narrative at its source, and MSFT guided Azure to ~45% cc growth [DATA: CNBC/Bloomberg], the demand read-through into AMD's data-center line ($5.8B in Q1; Lisa Su lifted the annual data-center growth target from 60% to 80%; MI400 ships H2 2026 with S&P Global projecting $7.2B first-year revenue) [DATA: web_search]. The honest caveat: AMD rose 12.98% on 7/30 [DATA: snapshot], so this is partly priced, and P/E is 171.31 [DATA: RH fundamentals] — there is no valuation support if the guide slips. That is why this is 10% rather than the anchor, and why it goes in on a limit at 490.18 (~1% over the close). If it gaps through, I do not own it and I have avoided the chase that has already cost this book twice.",
+    "VRTX": "Raised 5% -> 8% into the 8/3 pm print (2 tick-days, consensus $4.63 EPS [DATA: RH earnings calendar, verified=true]). VRTX is the quietest name in the book by design: RSI 51.1, -3.3% over 20 sessions, -0.34% on 7/30, P/E 28.30 against a 52-week range of 362.50-533.67 [DATA: snapshot + RH fundamentals]. It has neither run into the print nor been de-rated into it, so the event is genuinely two-sided rather than an already-priced move — the opposite of the XOM/CVX setup. I am adding modestly rather than aggressively because I have no differentiated view on the cystic-fibrosis franchise itself [ASSUMED]; the edge here is timing and positioning, not fundamental insight, and the size reflects that honestly. Buy limit 486.51.",
+    "BAC": "Raised 3% -> 4%, the smallest active decision in the book. The 7/29 FOMC drew three dissents voting to HIKE [DATA: CNBC], a materially more hawkish front end than was priced a week ago and straightforwardly supportive of bank net interest income [ASSUMED: standard NII sensitivity, not a modelled figure]. BAC sits at RSI 61.5, +5.8% over 20 sessions, P/E 14.27, with its 52-week high of 62.985 set 7/27 against the 61.75 close [DATA: snapshot + RH fundamentals]. What keeps this at 4% rather than a real position is that it has no dated catalyst — BAC does not report inside the window — so by this book's own new standard it is a macro lean, not an anticipation trade. Buy limit 62.37.",
+    "XOM": "Trimmed 3% -> 2% into tomorrow's 7/31 am print (consensus $3.78 on the RH calendar; $3.68 across 19 analysts on the street — citing both rather than the flattering one [DATA: RH earnings calendar; alphastreet]). I expect the print itself to be strong: Brent averaged $96.68 in Q2, up 23% q/q, XOM has guided that higher liquids prices alone add roughly $3.5-3.9B versus the prior quarter, and the sell side calls this the best energy quarter in about 15 [DATA: web_search]. That is exactly why I am cutting — a strong Q2 is not information. The quarter's oil price has been public for a month and XOM is already +15.3% over 20 sessions on it [DATA: snapshot]. The unpriced variable is the forward, and spot Brent has fallen to roughly $85-89 as the Middle East premium faded, pressuring both the Q3 guide and the buyback [DATA: web_search]. This sleeve was labelled a fading geopolitical hedge last tick and the premise has now faded. Trimming to a 2% token rather than zero is deliberate: last tick I swept REGN to zero the same session its bad news fully priced and it ran 5.1% against me. Market-on-open, no limit — I never let a limit trap an exit.",
+    "CVX": "Trimmed 3% -> 2%, same logic and same 7/31 am event as XOM (consensus $5.27 on the RH calendar; the Zacks mark is $5.81, revised up 1.8% in the past week — both cited [DATA: RH earnings calendar; Zacks via Yahoo]). CVX is +16.2% over 20 sessions at RSI 62.5 [DATA: snapshot], having already captured the high-realization quarter. The hedge premise — Middle East escalation keeping a geopolitical premium in crude — has faded with spot Brent, so the sleeve shrinks to a token. Market-on-open."
+  },
   "charts": [
     {
       "type": "bars",
-      "title": "Target weights this tick",
+      "title": "Target weights this tick (46% cash)",
       "unit": "%",
       "source": "targets map",
       "items": [
-        {
-          "label": "cash",
-          "value": 63
-        },
-        {
-          "label": "PYPL",
-          "value": 12
-        },
-        {
-          "label": "LLY",
-          "value": 11
-        },
-        {
-          "label": "VRTX",
-          "value": 5
-        },
-        {
-          "label": "BAC",
-          "value": 3
-        },
-        {
-          "label": "XOM",
-          "value": 3
-        },
-        {
-          "label": "CVX",
-          "value": 3
-        }
+        {"label": "cash", "value": 46},
+        {"label": "LLY", "value": 16},
+        {"label": "PYPL", "value": 12},
+        {"label": "AMD", "value": 10},
+        {"label": "VRTX", "value": 8},
+        {"label": "BAC", "value": 4},
+        {"label": "XOM", "value": 2},
+        {"label": "CVX", "value": 2}
       ]
     },
     {
       "type": "bars",
-      "title": "Semiconductor rout, 7/28 session \u2014 none of it owned",
+      "title": "7/30 session: the tape discriminated, it did not re-rate everything",
       "unit": "%",
-      "source": "data/snapshot.json daily bars \u2014 2026-07-28",
+      "source": "data/snapshot.json — 7/29 to 7/30 closes",
       "items": [
-        {
-          "label": "MU",
-          "value": -8.9
-        },
-        {
-          "label": "ARM",
-          "value": -8.1
-        },
-        {
-          "label": "AMD",
-          "value": -8.1
-        },
-        {
-          "label": "MRVL",
-          "value": -7.8
-        },
-        {
-          "label": "INTC",
-          "value": -5.8
-        },
-        {
-          "label": "ASML",
-          "value": -4.4
-        },
-        {
-          "label": "QCOM",
-          "value": -4.2
-        }
+        {"label": "SOXL", "value": 25.0},
+        {"label": "MU", "value": 18.4},
+        {"label": "MSFT", "value": 15.6},
+        {"label": "AMD", "value": 13.0},
+        {"label": "SPY", "value": 1.7},
+        {"label": "VRTX", "value": -0.3},
+        {"label": "LLY", "value": -4.5},
+        {"label": "META", "value": -8.0}
       ]
     },
     {
       "type": "line",
-      "title": "PYPL close: bid leak, rejection, beat-and-raise",
+      "title": "LLY daily close into the 8/5 print",
       "unit": "$",
-      "source": "data/snapshot.json \u00b7 Robinhood daily bars",
+      "source": "data/snapshot.json — Robinhood daily bars",
       "points": [
-        [
-          "2026-07-13",
-          47.65
-        ],
-        [
-          "2026-07-14",
-          47.37
-        ],
-        [
-          "2026-07-15",
-          55.52
-        ],
-        [
-          "2026-07-16",
-          56.73
-        ],
-        [
-          "2026-07-17",
-          56.56
-        ],
-        [
-          "2026-07-20",
-          56.82
-        ],
-        [
-          "2026-07-21",
-          55.85
-        ],
-        [
-          "2026-07-22",
-          55.51
-        ],
-        [
-          "2026-07-23",
-          56.0
-        ],
-        [
-          "2026-07-24",
-          56.15
-        ],
-        [
-          "2026-07-27",
-          56.07
-        ],
-        [
-          "2026-07-28",
-          58.32
-        ]
+        ["2026-07-16", 1169.17],
+        ["2026-07-17", 1179.11],
+        ["2026-07-20", 1146.9],
+        ["2026-07-21", 1175.41],
+        ["2026-07-22", 1163.01],
+        ["2026-07-23", 1185.87],
+        ["2026-07-24", 1196.03],
+        ["2026-07-27", 1197.53],
+        ["2026-07-28", 1220.66],
+        ["2026-07-29", 1210.02],
+        ["2026-07-30", 1155.27]
       ]
     }
   ],
   "reflection": {
-    "as_of": "2026-07-24",
-    "looking_back": "The 7/24 tick queued six changes to the prior 8-name book: cut META, REGN and GOOGL to zero, trim BAC 10%->5%, cut XOM/CVX from 16.8% to an 8% hedge, and raise PYPL 6%->14% and LLY roughly 8%->10%. All orders filled at the next session's open, 7/27 (a weekend intervened). Marking the resulting target book (PYPL 14, LLY 10, BAC 5, XOM 4, CVX 4, 63% cash) forward from observed closes \u2014 not yet the confirmed settlement record, since no tick has run between 7/24 and this one \u2014 gives an estimated book return of roughly +0.4% from 7/24 close to 7/28 close, against SPY's +0.25% (738.93 -> 740.76) over the same two sessions. That is a small positive alpha, but a much thinner edge than the +1.08-point result logged two ticks ago, and it is almost entirely a single-stock (PYPL) story rather than a broad one.",
+    "as_of": "2026-07-28",
+    "looking_back": "I went into this tick holding PYPL 12%, LLY 11%, VRTX 5%, BAC 3%, XOM 3% and CVX 3% — 37% invested, 63% cash — on the thesis that an 'AI capex tax' was broadening from spending announcements into the semiconductor supply chain. Over the sessions since, the book gained roughly 0.5% against SPY's 0.3%, about +0.2 points of alpha; all-time the book is -12.3% against SPY's -1.3%, alpha -11.0 points, annualized Sharpe -3.81 over 24 sessions. The honest grade: I won a rounding error on the tick and remain deeply behind on the trend, and the dominant cause is not stock selection — a two-thirds-cash book cannot make back 11 points against a benchmark that is roughly flat.",
     "worked": [
-      "PYPL, the prior tick's own stated anchor, delivered on both legs simultaneously: Q2 EPS of $1.38 beat the $1.28 estimate, revenue of $8.7B beat $8.48B, and FY guidance was raised to $5.38 EPS \u2014 the stock gained 4.0% on 7/28 (56.07 -> 58.32) on top of the shares added at the 7/27 open (56.36), roughly a +3.5% gain on the incremental position within two sessions.",
-      "The XOM/CVX re-labeling as a fading hedge rather than an earnings trade was vindicated on the facts, not just the framing: Brent kept falling, from the $96.78 close cited last tick to roughly $85-89 by 7/28, as easing Middle East conflict signals took the geopolitical premium out of the market. XOM's RSI cooled from 84.0 to 62.1 and CVX's from 92.0 to 56.4 \u2014 the overbought reading corrected exactly as flagged, without needing a hard stop.",
-      "LLY's addition ahead of its own 8/5 print caught a genuine, still-running biotech/pharma rotation: the position gained roughly 1.5% since the 7/27 fill, on a session (7/28) where AMGN, GILD, VRTX, REGN and UNH all rallied together as capital left semis for healthcare."
+      "The defensive read held for one more session: on 7/29 the Fed's three hawkish dissents took the Dow down 2.19%, its worst day since April 2025, and the Nasdaq to more than 10% off its high. Owning no semis through that day was correct.",
+      "Calling XOM/CVX a fading hedge rather than an energy thesis was vindicated again — both held up on 7/30 (+0.21% and +0.36%) with RSI cooling to 67.3 and 62.5 even as spot Brent fell to roughly $85-89 from the $96.78 cited two ticks ago.",
+      "Holding PYPL through the RSI-74.7 reading instead of mechanically trimming was right so far: the merger-arb floor from the rejected $60.50 bid held the stock at 57.66 while the tape whipsawed roughly 2% in both directions across 7/29-7/30."
     ],
     "missed": [
-      "REGN was cut to zero at the 7/27 open (661.77) on the Eylea deterioration + Citi downgrade thesis, and the stock then ran to 695.29 by 7/28 close \u2014 a 5.1% move against the exit, on a session where it was also flagged as a fresh 20-day breakout in the re-screened universe. The fundamental read (US Eylea -10% y/y, first sub-$1B quarter since 2018) may still be right into the 7/30 print, but selling the same tick a downgrade fully de-risks the price is a worse exit than waiting would have been.",
-      "GOOGL's residual position was also sold at the 7/27 open (325.04) \u2014 the second sell in two ticks \u2014 and the stock kept climbing to 333.73 by 7/28 close, a further 2.7% move against the exit. GOOGL is still down 5.6% over 20 sessions and carries no scheduled catalyst before Q3 earnings, so there was no fresh information driving the second sale; the position was closed on inertia from the capex-selloff thesis rather than a live reason to sell again.",
-      "The RSI-extension discipline adopted for energy last tick ('treat overbought as a reason to trim') was not applied to BAC or PYPL until this tick, even though BAC (RSI 70.7, a fresh 52-week high set 7/27) and PYPL (RSI 78.9 post-earnings) both crossed the same threshold within days \u2014 the lesson was applied to one sleeve and not carried across the whole book."
+      "The core call was wrong in shape. I wrote that the capex de-rating had 'widened from spending announcements into the supply chain itself' — then MSFT reported Azure +43% crossing $100B on lower-than-feared capex and rose 15.61%, Samsung warned memory tightness runs to 2028, and the entire complex I had avoided ripped (MU +18.39%, AMD +12.98%, INTC +11.4%, SOXL +25.0%). The de-rating did not widen; it split into winners and losers, and I owned neither side.",
+      "63% cash cost real money again. On 7/30 SPY rose 1.68% while this book's invested sleeve sat in exactly the sectors that lagged — LLY -4.52%, VRTX -0.34%. Being defensive is a position, and this tick it was the wrong one; the -11.0-point all-time alpha is mostly this, accumulated.",
+      "I let the whole book sit without a single dated catalyst inside a five-session window, even though XOM, CVX, VRTX, AMD and LLY all had verified earnings dates in the next four business days that one call to the earnings calendar would have surfaced. I was researching narrative and not scheduling events."
     ],
-    "adjustment": "Separate 'is the fundamental read still right' from 'is this the day to press the trade.' Going forward, once a name has already fully repriced on a confirmed negative catalyst and downside momentum visibly stalls (REGN's Eylea miss, GOOGL's capex selloff), cut size but do not sweep the residual to zero into an already-extended reversal without a fresh reason \u2014 the discipline that correctly caught GOOGL's post-earnings drop the first time does not automatically repeat on a second sale of the same name. This tick, that shows up as applying the RSI-70+ trim rule proactively to BAC and PYPL rather than waiting for a bad session to justify it, and as declining to chase GOOGL's bounce (no forward catalyst means it is not this book's trade) even though not chasing has a visible, already-realized cost."
+    "adjustment": "Stop building the book around a macro narrative and start building it around dated events. Concretely: every position except the BAC macro lean and the PYPL merger-arb now has a verified earnings date inside five tick-days (XOM/CVX 7/31, VRTX 8/3, AMD 8/4, LLY 8/5), I pulled that calendar from the Robinhood MCP BEFORE picking rather than after, and I raised deployment from 37% to 54% because a narrative I could not date was the thing keeping me in cash. The corollary discipline: I refuse to buy the 7/30 semis reversal at market — AMD goes in on a limit 1% over the close or not at all — because entering after the tape confirms is the mistake already logged twice in this block."
   }
 }
