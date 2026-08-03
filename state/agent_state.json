@@ -1,8 +1,8 @@
 {
-"last_date": "2026-07-31",
+"last_date": "2026-08-03",
 "portfolios": {
 "deep_research_analyst": {
-"cash": 41.007671425047135,
+"cash": 19.714336091921385,
 "halted": false,
 "positions": [
 {
@@ -13,26 +13,20 @@
 },
 {
 "symbol": "LLY",
-"qty": 0.012101360946368038,
+"qty": 0.010566168603579318,
 "avg_price": 1184.3233038289845,
 "entry_date": "2026-06-30"
 },
 {
 "symbol": "PYPL",
-"qty": 0.18042352065263212,
+"qty": 0.1515573843051422,
 "avg_price": 52.118287021062905,
 "entry_date": "2026-07-14"
 },
 {
-"symbol": "XOM",
-"qty": 0.011090870426679177,
-"avg_price": 148.67970007404355,
-"entry_date": "2026-07-20"
-},
-{
 "symbol": "CVX",
-"qty": 0.009047330321057154,
-"avg_price": 186.83337,
+"qty": 0.022160688133072863,
+"avg_price": 191.54893290547832,
 "entry_date": "2026-07-20"
 },
 {
@@ -42,10 +36,22 @@
 "entry_date": "2026-07-29"
 },
 {
-"symbol": "AMD",
-"qty": 0.01776167208964335,
-"avg_price": 490.42508999999995,
-"entry_date": "2026-07-31"
+"symbol": "FANG",
+"qty": 0.04360823641969177,
+"avg_price": 198.82936499999997,
+"entry_date": "2026-08-03"
+},
+{
+"symbol": "COP",
+"qty": 0.08814069422848662,
+"avg_price": 118.04669385,
+"entry_date": "2026-08-03"
+},
+{
+"symbol": "DVN",
+"qty": 0.2948377690072128,
+"avg_price": 44.112045,
+"entry_date": "2026-08-03"
 }
 ],
 "trades": [
@@ -1068,6 +1074,86 @@
 "value": 5.516843053511102,
 "pnl": 0.0,
 "reason": "analyst: buy 16%"
+},
+{
+"date": "2026-08-03",
+"symbol": "XOM",
+"side": "sell",
+"qty": 0.011090870426679177,
+"price": 153.3782725,
+"value": 1.7010985465653903,
+"pnl": 0.0521112579666507,
+"reason": "analyst: exit"
+},
+{
+"date": "2026-08-03",
+"symbol": "AMD",
+"side": "sell",
+"qty": 0.01776167208964335,
+"price": 461.55910500000005,
+"value": 8.198061472999266,
+"pnl": -0.512708160114562,
+"reason": "analyst: exit"
+},
+{
+"date": "2026-08-03",
+"symbol": "CVX",
+"side": "buy",
+"qty": 0.01311335781201571,
+"price": 194.8023525,
+"value": 2.5545129509549134,
+"pnl": 0.0,
+"reason": "analyst: buy 5%"
+},
+{
+"date": "2026-08-03",
+"symbol": "FANG",
+"side": "buy",
+"qty": 0.04360823641969177,
+"price": 198.82936499999997,
+"value": 8.670597956097186,
+"pnl": 0.0,
+"reason": "analyst: buy 10%"
+},
+{
+"date": "2026-08-03",
+"symbol": "PYPL",
+"side": "sell",
+"qty": 0.0288661363474899,
+"price": 58.098936,
+"value": 1.6770918082200894,
+"pnl": 0.1726382288724745,
+"reason": "analyst: trim"
+},
+{
+"date": "2026-08-03",
+"symbol": "COP",
+"side": "buy",
+"qty": 0.08814069422848662,
+"price": 118.04669385,
+"value": 10.404717547316622,
+"pnl": 0.0,
+"reason": "analyst: buy 12%"
+},
+{
+"date": "2026-08-03",
+"symbol": "LLY",
+"side": "sell",
+"qty": 0.0015351923427887211,
+"price": 1150.434495,
+"value": 1.7661382276040092,
+"pnl": -0.05202583982048791,
+"reason": "analyst: trim"
+},
+{
+"date": "2026-08-03",
+"symbol": "DVN",
+"side": "buy",
+"qty": 0.2948377690072128,
+"price": 44.112045,
+"value": 13.005896934145778,
+"pnl": 0.0,
+"reason": "analyst: buy 15%"
 }
 ],
 "equity_curve": [
@@ -1174,24 +1260,28 @@
 [
 "2026-07-31",
 86.71
+],
+[
+"2026-08-03",
+86.36
 ]
 ]
 },
 "llm_voters": {
-"cash": 78.89775879041483,
+"cash": 77.45183164774792,
 "halted": false,
 "positions": [
-{
-"symbol": "REGN",
-"qty": 0.006585905330426509,
-"avg_price": 726.5430899999999,
-"entry_date": "2026-07-31"
-},
 {
 "symbol": "LCID",
 "qty": 0.6658876020365423,
 "avg_price": 8.08404,
 "entry_date": "2026-07-31"
+},
+{
+"symbol": "JD",
+"qty": 0.19737141655129076,
+"avg_price": 33.006495,
+"entry_date": "2026-08-03"
 }
 ],
 "trades": [
@@ -2264,6 +2354,26 @@
 "value": 5.383062010367489,
 "pnl": 0.0,
 "reason": "swarm: buy 6%"
+},
+{
+"date": "2026-08-03",
+"symbol": "REGN",
+"side": "sell",
+"qty": 0.006585905330426509,
+"price": 769.615,
+"value": 5.068611530876198,
+"pnl": 0.2836675216606516,
+"reason": "swarm: exit"
+},
+{
+"date": "2026-08-03",
+"symbol": "JD",
+"side": "buy",
+"qty": 0.19737141655129076,
+"price": 33.006495,
+"value": 6.514538673543096,
+"pnl": 0.0,
+"reason": "swarm: buy 7%"
 }
 ],
 "equity_curve": [
@@ -2374,42 +2484,46 @@
 [
 "2026-07-31",
 88.83
+],
+[
+"2026-08-03",
+89.08
 ]
 ]
 },
 "mirofish_real": {
-"cash": 20.162434420095256,
+"cash": 7.304272309375051,
 "halted": false,
 "positions": [
 {
 "symbol": "XOM",
-"qty": 0.08157939860496029,
+"qty": 0.03437309196310443,
 "avg_price": 151.84898339422833,
 "entry_date": "2026-07-20"
 },
 {
 "symbol": "PYPL",
-"qty": 0.53896008071873,
-"avg_price": 57.29981776786182,
+"qty": 0.5562652765090477,
+"avg_price": 57.32648636378922,
 "entry_date": "2026-07-20"
 },
 {
 "symbol": "CVX",
-"qty": 0.051670849520720256,
-"avg_price": 191.4863501404956,
+"qty": 0.14443642267292303,
+"avg_price": 193.6160820582548,
 "entry_date": "2026-07-21"
-},
-{
-"symbol": "META",
-"qty": 0.011761469045944037,
-"avg_price": 543.8317799999999,
-"entry_date": "2026-07-31"
 },
 {
 "symbol": "SOXS",
 "qty": 0.13602264073645404,
 "avg_price": 47.0235,
 "entry_date": "2026-07-31"
+},
+{
+"symbol": "LLY",
+"qty": 0.00662807108925254,
+"avg_price": 1151.585505,
+"entry_date": "2026-08-03"
 }
 ],
 "trades": [
@@ -3732,6 +3846,56 @@
 "value": 1.8906574607266897,
 "pnl": 0.0,
 "reason": "mirofish: buy 15%"
+},
+{
+"date": "2026-08-03",
+"symbol": "META",
+"side": "sell",
+"qty": 0.011761469045944037,
+"price": 562.13879,
+"value": 6.611577978109435,
+"pnl": 0.21531733143878917,
+"reason": "mirofish: exit"
+},
+{
+"date": "2026-08-03",
+"symbol": "XOM",
+"side": "sell",
+"qty": 0.04720630664185586,
+"price": 153.3782725,
+"value": 7.240421763833128,
+"pnl": 0.07219209047110753,
+"reason": "mirofish: trim"
+},
+{
+"date": "2026-08-03",
+"symbol": "LLY",
+"side": "buy",
+"qty": 0.00662807108925254,
+"price": 1151.585505,
+"value": 7.632790592492787,
+"pnl": 0.0,
+"reason": "mirofish: buy 9%"
+},
+{
+"date": "2026-08-03",
+"symbol": "CVX",
+"side": "buy",
+"qty": 0.09276557315220277,
+"price": 194.8023525,
+"value": 18.07095188105994,
+"pnl": 0.0,
+"reason": "mirofish: buy 32%"
+},
+{
+"date": "2026-08-03",
+"symbol": "PYPL",
+"side": "buy",
+"qty": 0.017305195790317668,
+"price": 58.157064,
+"value": 1.006419379110035,
+"pnl": 0.0,
+"reason": "mirofish: buy 39%"
 }
 ],
 "equity_curve": [
@@ -3822,6 +3986,10 @@
 [
 "2026-07-31",
 87.78
+],
+[
+"2026-08-03",
+87.37
 ]
 ]
 },
@@ -4200,6 +4368,10 @@
 [
 "2026-07-31",
 100.44
+],
+[
+"2026-08-03",
+101.27
 ]
 ]
 }
@@ -4207,118 +4379,108 @@
 "pending": {
 "llm_voters": [
 {
-"symbol": "REGN",
+"symbol": "JD",
 "side": "sell",
 "kind": "moo",
 "limit": null,
 "dollars": null,
-"qty": 0.006585905330426509,
+"qty": 0.19737141655129076,
 "reason": "swarm: exit",
-"placed_session": "2026-07-31"
+"placed_session": "2026-08-03"
 },
 {
-"symbol": "JD",
+"symbol": "SNOW",
 "side": "buy",
 "kind": "moo",
 "limit": null,
-"dollars": 6.514538673543096,
+"dollars": 5.938582420721284,
 "qty": null,
 "reason": "swarm: buy 7%",
-"placed_session": "2026-07-31"
+"placed_session": "2026-08-03"
+},
+{
+"symbol": "LCID",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 2.0156115592350785,
+"qty": null,
+"reason": "swarm: buy 8%",
+"placed_session": "2026-08-03"
 }
 ],
 "mirofish_real": [
 {
-"symbol": "META",
+"symbol": "SOXS",
 "side": "sell",
 "kind": "moo",
 "limit": null,
 "dollars": null,
-"qty": 0.011761469045944037,
+"qty": 0.13602264073645404,
 "reason": "mirofish: exit",
-"placed_session": "2026-07-31"
+"placed_session": "2026-08-03"
 },
 {
-"symbol": "XOM",
-"side": "sell",
+"symbol": "MSFT",
+"side": "buy",
 "kind": "moo",
 "limit": null,
-"dollars": null,
-"qty": 0.04720630664185586,
-"reason": "mirofish: trim",
-"placed_session": "2026-07-31"
+"dollars": 4.972156081228982,
+"qty": null,
+"reason": "mirofish: buy 6%",
+"placed_session": "2026-08-03"
 },
 {
 "symbol": "LLY",
 "side": "buy",
 "kind": "moo",
 "limit": null,
-"dollars": 7.632790592492787,
+"dollars": 3.2228623248822466,
 "qty": null,
-"reason": "mirofish: buy 9%",
-"placed_session": "2026-07-31"
+"reason": "mirofish: buy 12%",
+"placed_session": "2026-08-03"
+},
+{
+"symbol": "XOM",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 6.035380276786904,
+"qty": null,
+"reason": "mirofish: buy 13%",
+"placed_session": "2026-08-03"
 },
 {
 "symbol": "CVX",
-"side": "buy",
+"side": "sell",
 "kind": "moo",
 "limit": null,
-"dollars": 18.07095188105994,
-"qty": null,
-"reason": "mirofish: buy 32%",
-"placed_session": "2026-07-31"
+"dollars": null,
+"qty": 0.05250858558588308,
+"reason": "mirofish: trim",
+"placed_session": "2026-08-03"
 },
 {
 "symbol": "PYPL",
-"side": "buy",
+"side": "sell",
 "kind": "moo",
 "limit": null,
-"dollars": 1.006419379110035,
-"qty": null,
-"reason": "mirofish: buy 39%",
-"placed_session": "2026-07-31"
+"dollars": null,
+"qty": 0.06521238220960736,
+"reason": "mirofish: trim",
+"placed_session": "2026-08-03"
 }
 ],
 "deep_research_analyst": [
 {
-"symbol": "XOM",
-"side": "sell",
-"kind": "moo",
-"limit": null,
-"dollars": null,
-"qty": 0.011090870426679177,
-"reason": "analyst: exit",
-"placed_session": "2026-07-31"
-},
-{
-"symbol": "AMD",
-"side": "sell",
-"kind": "moo",
-"limit": null,
-"dollars": null,
-"qty": 0.01776167208964335,
-"reason": "analyst: exit",
-"placed_session": "2026-07-31"
-},
-{
-"symbol": "CVX",
-"side": "buy",
-"kind": "limit",
-"limit": 198.8,
-"dollars": 2.5545129509549134,
-"qty": null,
-"reason": "analyst: buy 5%",
-"placed_session": "2026-07-31"
-},
-{
 "symbol": "FANG",
-"side": "buy",
+"side": "sell",
 "kind": "limit",
-"limit": 204.98,
-"dollars": 8.670597956097186,
-"qty": null,
-"reason": "analyst: buy 10%",
-"placed_session": "2026-07-31"
+"limit": 200.18,
+"dollars": null,
+"qty": 0.02622527260169867,
+"reason": "analyst: trim",
+"placed_session": "2026-08-03"
 },
 {
 "symbol": "PYPL",
@@ -4326,19 +4488,29 @@
 "kind": "moo",
 "limit": null,
 "dollars": null,
-"qty": 0.0288661363474899,
+"qty": 0.07692645621255301,
 "reason": "analyst: trim",
-"placed_session": "2026-07-31"
+"placed_session": "2026-08-03"
+},
+{
+"symbol": "VRTX",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.005300878604421769,
+"reason": "analyst: trim",
+"placed_session": "2026-08-03"
 },
 {
 "symbol": "COP",
-"side": "buy",
+"side": "sell",
 "kind": "limit",
-"limit": 121.68,
-"dollars": 10.404717547316622,
-"qty": null,
-"reason": "analyst: buy 12%",
-"placed_session": "2026-07-31"
+"limit": 119.85,
+"dollars": null,
+"qty": 0.030161985722637286,
+"reason": "analyst: trim",
+"placed_session": "2026-08-03"
 },
 {
 "symbol": "LLY",
@@ -4346,21 +4518,42 @@
 "kind": "moo",
 "limit": null,
 "dollars": null,
-"qty": 0.0015351923427887211,
+"qty": 0.004404293919319683,
 "reason": "analyst: trim",
-"placed_session": "2026-07-31"
+"placed_session": "2026-08-03"
 },
 {
 "symbol": "DVN",
-"side": "buy",
+"side": "sell",
 "kind": "limit",
-"limit": 45.58,
-"dollars": 13.005896934145778,
-"qty": null,
-"reason": "analyst: buy 15%",
-"placed_session": "2026-07-31"
+"limit": 44.84,
+"dollars": null,
+"qty": 0.10113381030194374,
+"reason": "analyst: trim",
+"placed_session": "2026-08-03"
 }
 ],
-"congress_mirror": []
+"congress_mirror": [
+{
+"symbol": "AXP",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.010730491216720555,
+"reason": "congress: exit",
+"placed_session": "2026-08-03"
+},
+{
+"symbol": "MU",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 2.7936525733831354,
+"qty": null,
+"reason": "congress: buy 3%",
+"placed_session": "2026-08-03"
+}
+]
 }
 }
