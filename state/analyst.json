@@ -1,78 +1,110 @@
 {
-  "date": "2026-08-03",
-  "as_of": "2026-08-03 ~3:30pm ET (RTH, mid-session — no settled 8/3 bar yet; decided off live quotes/fundamentals over the settled 7/31 close). The 8/1 weekend tick's queued E&P rotation (DVN/COP/FANG buys, CVX add, AMD/XOM exits) settled at today's open; this tick reacts to same-day news that broke AFTER that fill: Iran de-escalation cratering the war-risk premium in crude, and fresh negative LLY headlines.",
-  "generated_by": "deep_research_analyst (Claude) — tick 2026-08-03",
-  "framework": "Claude for Financial Services — equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
-  "pick": "DVN",
-  "action": "trim",
-  "sizing": "10% of equity — cut from the 15% target queued Saturday; still the anchor of a now-smaller (~21% vs 42%) E&P sleeve after today's crude-repricing shock",
-  "confidence": 0.4,
+  "date": "2026-08-31",
+  "as_of": "Decision based on split-adjusted Robinhood daily bars through the latest fully settled session, 2026-08-28; Robinhood fundamentals checked 2026-08-31. Orders are intended to queue for the next session open, not fill against an unavailable Friday close.",
+  "generated_by": "deep_research_analyst — catch-up tick 2026-08-31",
+  "framework": "Codex for Financial Services — equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
+  "pick": "VRTX",
+  "action": "increase",
+  "sizing": "20% target weight; largest position, with 40% cash retained across the book",
+  "confidence": 0.6,
   "regime": {
-    "label": "War-risk premium unwinds, broad market relief-rallies — a one-day regime break inside an earnings-heavy week",
-    "note": "Trump called off planned 'massive' strikes on Iran and said talks resume Monday to reopen the Strait of Hormuz; crude cracked on the news (Brent -5.69% intraday to $82.92 per one read, still $84.62/WTI $81.78 per another — both up sharply YTD but giving back the war premium fast) while the S&P 500 rallied +1.57% on the relief plus Amazon's cloud strength. OPEC+'s actual 8/2 decision was the routine, already-priced ~188k-190k bpd September step — the risk I flagged last tick did NOT bite; the much bigger, unflagged risk (geopolitical de-escalation) did. Iran itself denies talks are underway and Trump called Tehran 'duplicitous' hours later, so this could reverse as fast as it appeared. Separately, FANG and VRTX both report TONIGHT (8/3 after close), DVN tomorrow (8/4), AMD tomorrow (8/4), LLY Wednesday (8/5) — nearly the whole book has a binary event inside 48 hours.",
-    "source": "https://www.thestreet.com/markets/oil-stocks-fall-us-iran-pause-gas-prices-unchanged ; https://www.thestreet.com/stock-market-today/stock-market-today-aug-3-2026-dow-futures-climb-as-oil-slides-on-renewed-iran-talks"
+    "label": "Constructive tape, but event and rate risk argue against chasing",
+    "note": "SPY gained 3.0% over the latest 20 settled sessions while the September 15–16 FOMC meeting is 12 tick-days away. Momentum leadership is narrow and several screen leaders are stretched: CRM rose 39.1% in 20 sessions with RSI(14) 80.8, while MRNA rose 151.7%. The portfolio therefore keeps 40% cash and uses small, catalyst-linked positions rather than buying the highest raw momentum scores.",
+    "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
   },
-  "thesis": "What changed since Saturday: the 8/1 tick queued a 42%-of-book E&P rotation (DVN 15% / COP 12% / FANG 10%, CVX to 5%) explicitly built on three legs — a valuation gap vs XOM/CVX's Q2 prints, three dated upstream earnings catalysts inside four sessions, and a firming crude complex on Hormuz tanker-attack risk. That third leg broke today: Trump paused planned strikes on Iran and reopened talks, and Brent gave back roughly 9% of its recent run intraday as 'a hedge against war stops working the moment the war looks negotiable' (TheStreet). This is exactly the concentration risk I named last tick as 'the largest risk I am carrying' — I identified it in the abstract but sized the sleeve as if it wouldn't hit. It hit. The Saturday limits (DVN 45.58, COP 121.68, FANG 204.98, CVX 198.80) did their job in the crash: today's session opened well under every limit (DVN 44.09, COP 117.99, FANG 198.73, CVX 194.71 — Robinhood fundamentals), so the rotation bought into the morning low rather than chasing a gap-up, and DVN/COP have since partially recovered intraday (DVN 44.09->44.40 live, COP 117.99->118.67 live). That's the discipline working as designed. What it doesn't do is protect against being wrong about direction — and OPEC+ ratifying its routine step didn't validate the thesis so much as a much bigger, unmodeled catalyst (a negotiated Hormuz reopening) partially invalidated the physical-supply-risk leg. The valuation gap (DVN 12.5x vs COP 20.5x vs CVX 18.9x vs FANG's impaired 228.8x) and the earnings catalysts (DVN 8/4, COP 8/6, FANG tonight) are real and unaffected by today's headline, so I am not abandoning the sleeve — I am cutting it from 42% to about 21% and letting the reduced size carry the three prints, rather than a full-size bet resting on a premium that just proved reversible inside one session.\n\nSecond change: LLY (the standing 14% anchor into its own 8/5 print) drew two pieces of fresh, negative, dated news I did not have Saturday. Trump threatened a 250% tariff on imported pharmaceuticals and sent letters to 17 drugmakers demanding price cuts by September 29 — a real policy overhang independent of the print. And weekly Zepbound prescriptions are reported losing share to Novo Nordisk's Wegovy, a competitive data point, not sentiment. LLY is now 10.3% off a 52-week high set just July 7 — a real, recent pullback, not stale news. I'm cutting LLY from 14% to 8% for the print rather than holding full size into a name that picked up two new, unrelated headwinds two sessions before it reports.\n\nThird: FANG and VRTX both report TONIGHT, after this tick locks in and before I get another look. I'm sizing both at the smaller end (FANG 4%, VRTX 5%) specifically to avoid stacking full-size, same-night earnings risk on top of a day the rest of the book already took a real hit — not a view on either print. PYPL, still the one position with no dated catalyst, gets cut hardest (10%->5%) on my own standing discipline plus a fresh RSI(14) read of 80.8 off the settled 7/31 closes — the most overbought name I hold. Net: cash rises from 23% to roughly 51% of the book. That is a genuine risk-off move, not a rebalancing exercise — nearly every position in the book has live, dated, two-sided uncertainty resolving in the next 48 hours, and the premium that funded the largest bet just proved it can unwind in a single session.",
+  "thesis": "What changed since the 2026-08-03 tick: the prior energy sleeve's event window has passed, and the positions mostly recovered—COP +10.4%, DVN +7.3%, CVX +5.4%, while FANG remained -0.6% versus entry. That made the trade profitable name-by-name, but it did not repair the portfolio process: the book is still -13.6% versus SPY +1.0% all-time (alpha -14.6 points) with a -4.02 annualized Sharpe. The catch-up therefore harvests the energy sleeve instead of inventing a new reason to keep an expired catalyst trade. VRTX becomes the anchor because Q2 revenue grew 12% to $3.33 billion, guidance rose to $13.1-$13.2 billion, the Crinetics acquisition is expected to close in Q3, and povetacicept has a November 30 PDUFA date. NEM adds a different factor: Q2 free cash flow was $2.2 billion, AISC was $1,621/oz, the Nevada Gold Mines disputes were resolved August 10, and Red Chris is progressing toward a second-half final investment decision. CRM gets only 12% despite strong Q2 results because the move already happened; the position is explicitly for the September 1 product-adoption webinar and September 16 Investor Day, with a limit to avoid paying through another gap. BAC is the rate-sensitive sleeve into the September 15-16 FOMC and has a September 4 ex-dividend date. The portfolio exits PYPL because its prior merger-floor narrative is no longer a sourced forward thesis, and exits LLY/FANG/COP/DVN/CVX because their named earnings/geopolitical catalysts have passed.",
   "evidence": [
-    {"point": "Brent futures fell in the past 24 hours by 5.69% to $82.92/bbl, as of August 3, 2026", "source": "https://www.forbes.com/advisor/investing/oil-prices-today/"},
-    {"point": "The U.S.-Iran strikes pause triggered an ~9% oil crash, but Brent still sits at $84.62 and WTI at $81.78, both up over +39% year-to-date; tanker traffic through the Strait of Hormuz has seen little meaningful recovery despite the diplomatic tone shift", "source": "https://www.thestreet.com/markets/oil-stocks-fall-us-iran-pause-gas-prices-unchanged"},
-    {"point": "\"Energy stocks cracked on the pause on Iran strikes... A hedge against war stops working the moment the war looks negotiable\"", "source": "https://www.thestreet.com/markets/oil-stocks-fall-us-iran-pause-gas-prices-unchanged"},
-    {"point": "President Trump said new talks to wind down the Iran war start Monday afternoon after he held off on threatened strikes, to try to reopen the Strait of Hormuz; Iran said Monday it was NOT currently holding talks with the U.S., and Trump called Tehran 'extremely duplicitous' hours later", "source": "https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-kuwait-jordan-air-base/ ; https://www.nbcnews.com/world/iran/trump-iran-talks-attacks-canceled-hormuz-nuclear-rcna590535"},
-    {"point": "Seven OPEC+ countries met virtually 2026-08-02 and agreed to a ~188,000-190,000 bpd production increase for September — the expected, already-priced step, not a surprise", "source": "https://www.rigzone.com/news/opec_7_decide_to_boost_production_quota-03-aug-2026-184277-article/"},
-    {"point": "S&P 500 +1.57%, Dow +1.31%, Nasdaq +2.22% Monday as stocks rallied on the Iran de-escalation plus AMZN cloud strength (shares +4.7% premarket)", "source": "https://www.thestreet.com/stock-market-today/stock-market-today-aug-3-2026-dow-futures-climb-as-oil-slides-on-renewed-iran-talks"},
-    {"point": "Eli Lilly's stock dipped after Trump 'threatened to impose massive tariffs on pharmaceutical imports, floating the possibility of slapping a 250% duty on foreign-made drugs'; letters sent to 17 pharma companies demanding price cuts by September 29", "source": "https://finance.yahoo.com/news/eli-lilly-stock-drops-trump-191612533.html"},
-    {"point": "\"Eli Lilly shares fell 3.6% after disappointing weekly prescription numbers for its key weight-loss drugs... prescriptions for Lilly's injectable weight-loss drug Zepbound decreased while its competitor's drug Wegovy saw an increase\"; separately, olomorasib received FDA Breakthrough Therapy designation for advanced pancreatic cancer today", "source": "https://finviz.com/news/196451/why-eli-lilly-lly-stock-is-down-today"},
-    {"point": "FANG reports Q2 2026 today 2026-08-03 after close, consensus $6.08 EPS / $4.82B revenue (+31.1% YoY); VRTX reports today 2026-08-03 after close, consensus $4.74 EPS / $3.2285B revenue — both same-night as this tick", "source": "https://www.stocktitan.net/news/FANG/diamondback-energy-inc-schedules-second-quarter-2026-conference-call-zl8z7zo8io42.html ; https://investors.vrtx.com/news-releases/news-release-details/vertex-announce-second-quarter-2026-financial-results-august-3rd"},
-    {"point": "AMD reports Q2 2026 tomorrow 2026-08-04 after close; consensus revenue $11.30B (+47.1% YoY), EPS $1.61", "source": "https://www.tipranks.com/stocks/amd/earnings ; Zacks consensus via Yahoo Finance"},
-    {"point": "Live fundamentals pulled today: DVN P/E 12.52 / P/B 1.82 / yield 2.30%, off 52wk high (52.71, 3/30) by 15.8%; COP P/E 20.49 / P/B 2.27 / yield 2.74%; FANG P/E 228.83 (impaired trailing earnings) / P/B 1.57 / yield 2.04%; CVX P/E 18.87 / P/B 2.13 / yield 3.55% (down sharply from the 33.29x cited two ticks ago as Friday's beat rolled into trailing EPS); LLY P/E 41.35 / P/B 34.74, 10.3% off a 52wk high set 2026-07-07; PYPL P/E 10.81 / P/B 2.49, 27.2% off its true 52wk high (79.215, 2025-10-28); VRTX P/E 28.28, 11.6% off a 52wk high set 2026-07-07; BAC P/E 14.26 / P/B 1.60, only 1.0% off a 52wk high set six sessions ago (2026-07-27)", "source": "Robinhood get_equity_fundamentals, pulled 2026-08-03"},
-    {"point": "Today's session opens (where Saturday's limit buys settled): DVN 44.09 (limit was 45.58), COP 117.99 (limit 121.68), FANG 198.73 (limit 204.98), CVX 194.71 (limit 198.80) — all filled well under their limits because the complex gapped down, not up; live prices at 3:30pm ET show DVN 44.40 and COP 118.67 partially recovering off the open, while FANG 198.20 and CVX 193.09 are still soft", "source": "Robinhood get_equity_fundamentals (session open) + get_equity_quotes (live), 2026-08-03"},
-    {"point": "PYPL RSI(14) = 80.8 off settled 7/31 closes — the most overbought name I hold, up from 72.0 two ticks ago", "source": "data/snapshot.json — computed this tick from settled daily closes through 2026-07-31"}
+    {
+      "point": "Vertex reported Q2 2026 revenue of $3.33 billion, up 12%, raised full-year revenue guidance to $13.1-$13.2 billion, expects the Crinetics acquisition to close in Q3, and lists a November 30 povetacicept PDUFA date.",
+      "source": "https://investors.vrtx.com/news-releases/news-release-details/vertex-reports-second-quarter-2026-financial-results"
+    },
+    {
+      "point": "Robinhood fundamentals on 2026-08-31: VRTX P/E 31.514676, market cap $138.235 billion, and 52-week range $374.17-$555.69; settled 8/28 close $541.69.",
+      "source": "Robinhood get_equity_fundamentals + data/snapshot.json, pulled 2026-08-31"
+    },
+    {
+      "point": "Newmont reported Q2 free cash flow of $2.2 billion, 1.3 million attributable gold ounces, AISC of $1,621/oz, and reiterated 5.3 million ounce full-year production guidance.",
+      "source": "https://www.newmont.com/investors/news-release/news-details/2026/Newmont-Reports-Robust-Second-Quarter-2026-Results-Remains-on-Track-to-Achieve-Full-Year-Guidance/default.aspx"
+    },
+    {
+      "point": "Newmont and Barrick said their August 10 agreement resolves all outstanding Nevada Gold Mines disputes and contributes Fourmile, Fiberline, and Mike to the joint venture.",
+      "source": "https://www.newmont.com/investors/news-release/news-details/2026/Newmont-and-Barrick-Reach-Agreement-Regarding-Nevada-Gold-Mines-Joint-Venture/default.aspx"
+    },
+    {
+      "point": "Salesforce Q2 FY27: revenue $11.3 billion (+11%), cRPO $33.5 billion (+14% constant currency), non-GAAP EPS $5.90 (+103%), operating cash flow $1.3 billion (+71%), and free cash flow $1.1 billion (+81%).",
+      "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Delivers-Record-Second-Quarter-Fiscal-2027-Results/default.aspx"
+    },
+    {
+      "point": "Salesforce scheduled a Q2 FY27 Product Adoption & Momentum webinar for September 1 and Investor Day for September 16, 2026.",
+      "source": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Announces-Upcoming-Investor-Events/default.aspx"
+    },
+    {
+      "point": "The Federal Reserve's next scheduled FOMC meeting is September 15-16, 2026, with a Summary of Economic Projections.",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    },
+    {
+      "point": "Robinhood fundamentals on 2026-08-31: BAC P/E 14.342263, P/B 1.584070, 52-week range $46.115-$65.225, and September 4 ex-dividend date.",
+      "source": "Robinhood get_equity_fundamentals, pulled 2026-08-31"
+    },
+    {
+      "point": "Randomized full-universe screen through 2026-08-28: VRTX +13.5%/20d with RSI 61.4; NEM +36.6% with RSI 64.5; CRM +39.1% with RSI 80.8; BAC +0.6% with RSI 50.8; SPY +3.0%.",
+      "source": "data/snapshot.json, computed 2026-08-31"
+    }
   ],
   "risks": [
-    "Whipsaw: Iran denies active talks and Trump called Tehran 'duplicitous' the same day the de-escalation rallied stocks — if diplomacy stalls within days (nuclear program, sanctions relief, proxy support all still unresolved, and tanker traffic through Hormuz hasn't meaningfully recovered), crude could snap back and I will have cut the sleeve right before a rebound.",
-    "FANG (4%) and VRTX (5%) both report TONIGHT, after this tick locks in — zero chance to react before the print is in the tape; sizing is deliberately small but not zero.",
-    "DVN reports tomorrow (8/4) into a crude complex that just gave back roughly 9% of its recent run — Q3 guidance will be read against a lower forward price deck than the one priced when the position was built Friday.",
-    "LLY's tariff and Medicare-pricing overhang is policy risk that persists regardless of the 8/5 print; Zepbound losing script share to Wegovy is a fundamental competitive risk, not just a sentiment wobble, and I only cut the anchor to 8%, not out entirely.",
-    "Concentration is reduced, not eliminated: DVN+COP+FANG+CVX is still 21% of the book on the same crude-repricing factor that just moved 5-9% in a session.",
-    "Cash at ~51% is a real opportunity-cost bet — if the de-escalation holds and the tape keeps melting up, I underparticipate in a book that was already -13.3% all-time vs SPY -0.4% before today.",
-    "PYPL RSI 80.8 is a short-term overbought signal, not a catalyst-dated one — a reversal could hit on no news at all, same as the run-up did."
+    "VRTX's Crinetics close is only guided to Q3, not a guaranteed date, and the November 30 PDUFA is roughly 65 tick-days away.",
+    "NEM already rose 36.6% in 20 sessions; a stronger dollar, higher real yields, or execution issues at Cadia/Red Chris can reverse the move.",
+    "CRM is the clearest chase risk: RSI(14) is 80.8 after a 39.1% 20-session gain. The 12% cap and buy limit are deliberate.",
+    "BAC is a macro expression, not a company-specific earnings trade; the September FOMC can flatten rather than steepen the curve.",
+    "Forty percent cash limits drawdown but will continue to create opportunity-cost alpha drag if the broad rally accelerates."
   ],
   "data_examined": [
-    {"label": "Own book carried forward: current holdings (BAC, LLY, PYPL, XOM, CVX, VRTX, AMD — the Saturday rotation was still pending, not yet filled), realized P&L, alpha vs SPY -12.9pts all-time, prior reflection", "source": "python3 tools/analyst_memory.py"},
-    {"label": "Full 100-symbol universe screened in randomized order (20-session return, RSI-14, distance from within-snapshot high) off settled bars through 2026-07-31", "source": "data/snapshot.json"},
-    {"label": "Live intraday quotes for held/candidate names (DVN, COP, FANG, CVX, XOM, OXY, LLY, PYPL, VRTX, BAC, AMD, SPY), ~3:30pm ET, no settled 8/3 bar yet", "source": "Robinhood get_equity_quotes, 2026-08-03"},
-    {"label": "Live fundamentals (P/E, P/B, 52-wk range, yield, today's session open) for the 8 held names", "source": "Robinhood get_equity_fundamentals, 2026-08-03"},
-    {"label": "OPEC+ 8/2 meeting outcome, Iran/Hormuz de-escalation news and its market reaction, LLY tariff + Zepbound-share news, FANG/VRTX/AMD earnings previews, 8/3 market wrap", "source": "web_search — Rigzone, TheStreet, CBS News, NBC News, Yahoo Finance, Finviz, StockTitan, Vertex IR, TipRanks"}
+    {
+      "label": "Own paper book, holdings, realized trades, prior thesis, all-time alpha -14.6 points, last-tick alpha -1.8 points, Sharpe -4.02",
+      "source": "python3 tools/analyst_memory.py"
+    },
+    {
+      "label": "All 100 tradable symbols screened in randomized order using 20/60-session return, RSI(14), and volume versus 20-session average",
+      "source": "data/snapshot.json through 2026-08-28"
+    },
+    {
+      "label": "Fundamentals and valuation for MRNA, VRTX, CRM, PLTR, U, ABNB, NEM, PYPL, COP, DVN, and BAC",
+      "source": "Robinhood get_equity_fundamentals, 2026-08-31"
+    },
+    {
+      "label": "Current company catalysts and macro calendar",
+      "source": "Vertex, Newmont, Salesforce investor relations and Federal Reserve"
+    }
   ],
-  "targets": {"DVN": 0.10, "COP": 0.08, "LLY": 0.08, "PYPL": 0.05, "VRTX": 0.05, "CVX": 0.05, "FANG": 0.04, "BAC": 0.04},
-  "limits": {"DVN": 44.84, "COP": 119.85, "FANG": 200.18},
-  "rationale": {
-    "DVN": "Cut from 15% to 10% — still the anchor, and still the cheapest expression of the E&P re-rating thesis. [DATA] The Saturday-queued limit (45.58) filled into today's open at 44.09 as the whole crude complex gapped down on Iran de-escalation headlines — the limit did its job of not chasing, and the fill has since partially recovered to a live 44.40 (Robinhood fundamentals/quotes, 3:30pm ET). [DATA] Still the cheapest name in the comp set at 12.52x trailing earnings vs COP 20.49x, CVX 18.87x, FANG 228.83x, P/B 1.82, 2.30% yield (Robinhood fundamentals, 8/3). [DATA] Reports tomorrow 8/4 pm — the nearest of the three E&P prints. [ASSUMED] Even with Brent giving back roughly 9% of its war premium intraday, the valuation gap vs peers isn't purely a war-premium artifact — worth meaningful size into the print, just not the full 15% resting from Friday. New limit 44.84 (~1% over the live price) if a fresh buy is still needed after today's pending fill settles.",
-    "COP": "Cut from 12% to 8%. [DATA] Filled near today's open of 117.99 (well under the 121.68 limit), live 118.67, off -1.5% from Friday's settled 120.48 close. [DATA] Trailing P/E 20.49, P/B 2.27, 2.74% yield; the most internationally diversified of the three E&Ps (Alaska, Lower 48, Canada, Europe/Middle East/Africa, Asia Pacific) — least exposed to a single-basin miss. Reports 8/6, the last and furthest-out of the three prints. [ASSUMED] Keep as the 'right if only half right' position, sized down with the rest of the sleeve rather than singled out, since the diversification is exactly the reason to hold this one through a volatile macro week. New limit 119.85.",
-    "FANG": "Cut from a resting 10% to 4% — the smallest position in the sleeve, deliberately. [DATA] Reports TODAY 8/3 after close (StockTitan; consensus $6.08 EPS / $4.82B revenue, +31.1% YoY) — the print lands hours after this tick, zero chance to react first. [DATA] Trailing P/E 228.83 reflects impaired trailing earnings, not growth — leaning on P/B 1.565, the cheapest book multiple in the sleeve (Robinhood fundamentals). [DATA] Live -2.3% vs Friday's close, the worst mover in the sleeve today, consistent with being the most crude-price-levered pure Permian name. [ASSUMED] Sizing this small isn't a view on the print — it's refusing to stack full-size earnings risk on a day the macro premium already cracked; if it beats, size can go back up tomorrow, if it misses, the loss is capped by size rather than by being right. Limit 200.18 for any incremental buy.",
-    "CVX": "Held at 5%, essentially unchanged. [DATA] Trailing P/E now 18.87 (down sharply from the 33.29x cited two ticks ago as Friday's beat rolled into trailing EPS), P/B 2.13, 3.55% dividend yield — the best-value integrated in the book now. [DATA] Only -1.9% intraday today vs FANG -2.3% / OXY -3.0%, with XOM (not held) off just -0.5% — the downstream/refining segment is cushioning the crude-repricing hit, exactly the diversification argument for keeping this as the sleeve's hedge leg. [ASSUMED] Catalyst is spent (beat already reported 7/31) — this stays a yield-paying ballast position, not a trade on a dated event, so no limit needed.",
-    "LLY": "Cut from 14% to 8% on new information, not on the print itself (still 2 sessions out, 8/5). [DATA] Trump 'threatened to impose massive tariffs on pharmaceutical imports, floating the possibility of slapping a 250% duty on foreign-made drugs' and sent letters to 17 pharma companies demanding price cuts by September 29 (Yahoo Finance, 8/3). [DATA] 'Prescriptions for Lilly's injectable weight-loss drug Zepbound decreased while its competitor's drug Wegovy saw an increase' (Finviz, 8/3) — a genuine competitive-share data point, not just multiple compression. [DATA] Now 10.3% off a 52-week high set just 2026-07-07 (Robinhood fundamentals) — the pullback is real and recent. Trailing P/E 41.35, P/B 34.74 — still priced for a lot to go right. [ASSUMED] The incretin franchise and pipeline (olomorasib got FDA Breakthrough Therapy designation for pancreatic cancer today, per Yahoo Finance) still support a smaller anchor through the print, but two new negative, dated inputs since Saturday earn a real cut, not a token one.",
-    "PYPL": "Cut from 10% to 5% — the deepest cut of the non-energy names. [DATA] RSI(14) = 80.8 off settled 7/31 closes (data/snapshot.json, computed this tick) — the most overbought name I hold, up from 72.0 two ticks ago. [DATA] Trailing P/E 10.81 — still the cheapest name in the book — +25.8% over 20 sessions, but with no dated forward catalyst (unchanged from two ticks ago). [ASSUMED] By my own standing discipline (no dated catalyst = first cut when capital is needed elsewhere), this funds part of the bigger cash buffer; the merger-arb-floor thesis hasn't broken, it's just no longer the best-supported use of capital at RSI 80.8.",
-    "VRTX": "Cut from 7% to 5%. [DATA] Reports TODAY 8/3 after close (Vertex IR release; consensus $4.74 EPS / $3.2285B revenue) — same-night event risk as FANG, though with no crude linkage. [DATA] Live -1.2% vs Friday's close, P/E 28.28, 11.6% off a 52-week high set 2026-07-07. [ASSUMED] No new information on the name itself; sized down only because two of eight positions now report within hours of each other and I'd rather hold both smaller than either at prior size.",
-    "BAC": "Held at 4%, unchanged — the macro lean, deliberately small. [DATA] Live 62.34, just -1.0% off a 52-week high set six sessions ago (2026-07-27) — the strongest chart in the book. [DATA] Trailing P/E 14.26, P/B 1.60, 1.81% yield. [ASSUMED] The steepener thesis (Fed held with 3 hike dissents 7/29, long end rising) is unchanged and un-newsed today; kept small since there's still no dated catalyst, same discipline as PYPL, just already at the floor size."
+  "targets": {
+    "VRTX": 0.2,
+    "NEM": 0.16,
+    "CRM": 0.12,
+    "BAC": 0.12
   },
-  "charts": [
-    {"type": "bars", "title": "Today's live move vs Friday's settled close (8/3, ~3:30pm ET — energy cracks, broad market rallies)", "unit": "%", "source": "Robinhood get_equity_quotes, 2026-08-03",
-     "items": [{"label": "OXY", "value": -3.0}, {"label": "FANG", "value": -2.3}, {"label": "LLY", "value": -2.5}, {"label": "CVX", "value": -1.9}, {"label": "DVN", "value": -1.6}, {"label": "COP", "value": -1.5}, {"label": "VRTX", "value": -1.2}, {"label": "XOM", "value": -0.5}, {"label": "PYPL", "value": 0.9}, {"label": "BAC", "value": 0.6}, {"label": "AMD", "value": 1.8}, {"label": "SPY", "value": 1.5}]},
-    {"type": "bars", "title": "Target weights this tick — sleeve cut from 42% to 21%, cash raised to 51%", "unit": "%", "source": "targets map",
-     "items": [{"label": "DVN", "value": 10}, {"label": "COP", "value": 8}, {"label": "LLY", "value": 8}, {"label": "PYPL", "value": 5}, {"label": "VRTX", "value": 5}, {"label": "CVX", "value": 5}, {"label": "FANG", "value": 4}, {"label": "BAC", "value": 4}, {"label": "cash", "value": 51}]}
-  ],
+  "limits": {
+    "VRTX": 547.11,
+    "NEM": 129.26,
+    "CRM": 258.56,
+    "BAC": 62.94
+  },
+  "rationale": {
+    "VRTX": "[DATA] Q2 revenue was $3.33B (+12%), full-year guidance rose to $13.1-$13.2B, the Crinetics acquisition is expected to close in Q3, and povetacicept has a November 30 PDUFA date (Vertex IR). [DATA] P/E is 31.514676 and the 8/28 close was $541.69 (Robinhood/snapshot). [ASSUMED] The two forward milestones and reasonable growth-adjusted valuation justify the 20% anchor; limit $547.11 is ~1% above the settled close.",
+    "NEM": "[DATA] Q2 free cash flow was $2.2B, AISC $1,621/oz, and 2026 production guidance remains 5.3M ounces; the August 10 NGM agreement resolves all outstanding JV disputes (Newmont IR). [DATA] The settled close was $127.98, RSI 64.5, and P/E 16.160519 (snapshot/Robinhood). [ASSUMED] Red Chris's second-half FID and the cleaned-up Nevada JV create a forward path not dependent on another earnings print; capped at 16% after a 36.6% 20-day run.",
+    "CRM": "[DATA] Q2 revenue was $11.3B (+11%), cRPO grew 14% in constant currency, and free cash flow rose 81%; the Product Adoption webinar is September 1 and Investor Day September 16 (Salesforce IR). [DATA] RSI is 80.8 after a 39.1% 20-day move; P/E is 23.332118 (snapshot/Robinhood). [ASSUMED] The events can convert the earnings reaction into a durable adoption thesis, but the stretched tape limits size to 12% and requires a $258.56 buy limit.",
+    "BAC": "[DATA] The September 15-16 FOMC includes new projections; BAC trades at P/E 14.342263 and P/B 1.584070 with a September 4 ex-dividend date (Fed/Robinhood). [DATA] RSI is neutral at 50.8 and the 8/28 close was $62.32. [ASSUMED] BAC is a modest 12% rate-sensitive sleeve rather than a directional all-in macro bet; limit $62.94 is ~1% above the settled close."
+  },
   "reflection": {
-    "as_of": "2026-08-01",
-    "looking_back": "The 8/1 weekend tick queued the full E&P rotation — buy DVN 15% / COP 12% / FANG 10%, add CVX to 5%, exit AMD and XOM — with limits ~1% over the settled 7/31 closes (DVN 45.58, COP 121.68, FANG 204.98, CVX 198.80). Those orders settled at today's 8/3 open, well under every limit (DVN 44.09, COP 117.99, FANG 198.73, CVX 194.71), because the whole complex gapped down at the open on breaking Iran de-escalation news rather than up. The book was carried into the session still showing the pre-rotation holdings (BAC, LLY, PYPL, XOM, CVX, VRTX, AMD) per analyst_memory since the fill happens when this tick's runner executes.",
+    "as_of": "2026-08-03",
+    "looking_back": "The prior tick reduced the energy sleeve after a geopolitical shock but still carried DVN, COP, FANG, and CVX. By 2026-08-28, COP was +10.4%, DVN +7.3%, CVX +5.4%, and FANG -0.6% versus entry; VRTX led the non-energy holdings at +11.0%. Despite those winners, the book remained -13.6% versus SPY +1.0% all-time, for -14.6 points of alpha and a -4.02 annualized Sharpe.",
     "worked": [
-      "The limit-order discipline worked in reverse of its usual failure mode: because the resting orders were limits, not market-on-open chases, the rotation happened to buy directly into the morning's panic low rather than paying up for a gap, and DVN/COP have partially recovered intraday since (DVN 44.09 open -> 44.40 live, COP 117.99 open -> 118.67 live).",
-      "OPEC+'s actual 8/2 decision was the routine, already-priced ~188k-190k bpd September step, exactly what the risk note anticipated as the base case — no surprise, no gap on that specific input."
+      "Reducing rather than abandoning the energy sleeve preserved upside in COP, DVN, and CVX while limiting FANG's lack of follow-through.",
+      "VRTX's thesis held: the position gained 11.0% versus entry and Q2 results raised full-year revenue guidance."
     ],
     "missed": [
-      "The concentration risk I named explicitly last tick — 'a single Hormuz de-escalation headline breaks all four positions at once' — is exactly what happened within 48 hours: Trump paused planned strikes on Iran and reopened talks, and Brent gave back roughly 9% of its recent run intraday. I had identified the risk correctly but sized the position (42% of the book on one factor) as if it wouldn't hit rather than as insurance against the scenario I'd already named as my biggest exposure.",
-      "LLY picked up two new negative, dated inputs I did not have on 8/1 — Trump's 250% pharma-tariff threat and Zepbound losing weekly-script share to Wegovy — landing two sessions before its own 8/5 print. Not a forecasting miss (the news is from today), but it means the 14% anchor going into today was sized on Saturday's information only."
+      "The portfolio stayed too fragmented across eight names and too cash-heavy to repair alpha even when several calls worked.",
+      "PYPL had no durable dated catalyst; keeping it after the original floor thesis faded left a weakly grounded position that fell 6.2% over the latest 20 sessions."
     ],
-    "adjustment": "Cut the energy sleeve from 42% to about 21% of equity (DVN 15%->10%, COP 12%->8%, FANG 10%->4%, CVX held at 5%) and trim LLY 14%->8% on the fresh competitive/tariff overhang into its print, plus PYPL 10%->5% on an RSI(14) of 80.8. Cash rises from 23% to roughly 51%. The process fix: a position sized on a war-risk premium needs an explicit size cap tied to how reversible that premium is, not just a valuation floor — next time I flag a geopolitical risk as 'the largest risk I am carrying,' the sizing has to reflect that language at entry, not just in the risk list."
+    "adjustment": "Harvest the expired energy-event sleeve, exit unsupported PYPL and post-event LLY, consolidate to four forward-catalyst names, and keep a deliberate—but smaller—40% cash reserve. New entries use ~1%-above-close limits to prevent gap chasing."
   }
 }
