@@ -1,57 +1,61 @@
 {
-  "date": "2026-10-01",
-  "as_of": "Latest settled daily session 2026-09-30; Robinhood fundamentals, financials, ratings, earnings calendar, and primary-source research checked 2026-10-01.",
-  "generated_by": "deep_research_analyst — weekday tick 2026-10-01",
+  "date": "2026-10-02",
+  "as_of": "Latest settled daily session 2026-10-01; Robinhood fundamentals, financials, ratings, earnings calendar, and primary-source research checked 2026-10-02.",
+  "generated_by": "deep_research_analyst — weekday tick 2026-10-02",
   "framework": "Codex for Financial Services — equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
   "pick": "VRTX",
-  "action": "rebalance",
+  "action": "hold",
   "sizing": "20% VRTX, 16% NEM; 64% cash",
-  "confidence": 0.35,
+  "confidence": 0.36,
   "regime": {
     "label": "Restrictive-rate, elevated-inflation regime",
-    "note": "On September 16 the FOMC raised the federal-funds target range by 25 basis points to 3.75%–4.00%, said economic activity was expanding at a solid pace, and said inflation remained elevated. Low confidence and 64% cash reflect that tighter backdrop plus the analyst book's persistent negative alpha.",
+    "note": "The September 16 FOMC raised the federal-funds target range by 25 basis points to 3.75%–4.00%, and the next policy decision is October 28. Low confidence and 64% cash reflect the tighter backdrop plus the analyst book's persistent negative alpha.",
     "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
   },
-  "thesis": "The September 29 rebalance exited CRM and BAC after their catalysts failed to validate the thesis. Through the September 30 settled close, VRTX and NEM remain explicit pre-event positions: Vertex's November 2 earnings precede the November 30 povetacicept PDUFA decision, while Newmont reports October 22. Keep the book unchanged after a single session rather than manufacture churn. Do not add the strongest screen leaders: MRNA rose 141.4% over 60 sessions with RSI 79.2, and TSM is only 0.2% below its prior 20-day high after a 10.2% 20-session rise. The September Fed hike and -17.0 points of all-time alpha justify 64% cash. This is the project's paper-portfolio bridge, not an official plugin investment recommendation.",
+  "thesis": "Hold the September 29 reset for another settled session. VRTX and NEM remain explicit pre-event positions rather than tape-following trades: Vertex's November 30 povetacicept PDUFA decision is 39 trading-session days away, while Newmont's confirmed October 22 results are 14 sessions away. The whole-universe screen again favored already-extended semiconductors and software: SOXL gained 44.5% over 20 sessions, AMD 34.7%, and DDOG 32.1%, while MRVL, MU, ASML, and TSM sat at or near prior 20-day highs. The analyst book still trails SPY by 17.1 points with a -3.64 Sharpe, so no new momentum exposure is justified. This is the project's paper-portfolio bridge, not an official plugin investment recommendation.",
   "evidence": [
     {
-      "point": "The Federal Reserve said it raised the target range by 1/4 percentage point to 3-3/4 to 4 percent on September 16, 2026, while inflation remained elevated.",
-      "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+      "point": "The Federal Reserve's 2026 calendar lists its next two-day FOMC meeting for October 27–28, with the policy event on October 28.",
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     },
     {
       "point": "Vertex says FDA assigned a November 30, 2026 PDUFA target date; the RAINIER interim analysis showed a 52.0% UPCR reduction from baseline and a 49.8% reduction versus placebo (P<0.0001).",
       "source": "https://investors.vrtx.com/news-releases/news-release-details/vertex-announces-us-fda-acceptance-biologics-license-application"
     },
     {
+      "point": "Vertex reported Q2 2026 revenue of $3.33 billion, up 12% year over year, and raised full-year revenue guidance to $13.1–$13.2 billion.",
+      "source": "https://investors.vrtx.com/news-releases/news-release-details/vertex-reports-second-quarter-2026-financial-results"
+    },
+    {
       "point": "Newmont says it will release Q3 2026 results after market close on October 22, followed by a 5:30 p.m. EDT conference call.",
       "source": "https://www.newmont.com/investors/news-release/news-details/2026/Newmont-Announces-Third-Quarter-2026-Results-Conference-Call/default.aspx"
     },
     {
-      "point": "VRTX closed $522.81 on September 30; Robinhood reported P/E 30.416267 and P/B 6.541550 versus REGN P/E 18.739790, and Vertex's Q2 2026 revenue was $3.3339 billion with a 32.99% net margin.",
-      "source": "Robinhood get_equity_fundamentals and get_financials, 2026-10-01; data/snapshot.json through 2026-09-30"
+      "point": "Newmont reported Q2 2026 production of about 1.3 million attributable gold ounces, record Q2 free cash flow of $2.2 billion, $1,621/oz AISC, and $9.0 billion of cash.",
+      "source": "https://www.newmont.com/investors/news-release/news-details/2026/Newmont-Reports-Robust-Second-Quarter-2026-Results-Remains-on-Track-to-Achieve-Full-Year-Guidance/default.aspx"
     },
     {
-      "point": "NEM closed $115.34 on September 30; Robinhood reported P/E 14.564419 and P/B 3.465800 versus FCX P/E 34.564487, and Newmont's Q2 2026 revenue was $6.118 billion with a 35.99% net margin.",
-      "source": "Robinhood get_equity_fundamentals and get_financials, 2026-10-01; data/snapshot.json through 2026-09-30"
+      "point": "At the October 1 settled close, VRTX was $506.74 and NEM $114.67. Robinhood reported VRTX P/E 29.481339 and Q2 net margin 32.99%; NEM P/E 14.479815 and Q2 net margin 35.99%.",
+      "source": "Robinhood get_equity_fundamentals and get_financials, 2026-10-02; data/snapshot.json through 2026-10-01"
     }
   ],
   "risks": [
-    "VRTX trades at a valuation premium to REGN and faces a binary November 30 FDA decision; a delay, rejection, or weak label breaks the thesis.",
-    "NEM is down 5.94% over 20 sessions; gold-price reversal, cost inflation, or weak Q3 execution can overwhelm the valuation case.",
+    "VRTX trades above REGN's prior peer multiple and faces a binary November 30 FDA decision; a delay, rejection, or weak label breaks the thesis.",
+    "NEM is down 8.38% over 20 sessions and 10.1% from the paper entry; gold-price reversal, cost inflation, or weak Q3 execution can overwhelm the valuation case.",
     "A 64% cash balance creates substantial opportunity cost if risk assets rally.",
-    "The portfolio has produced -17.0 points of all-time alpha with a -3.61 annualized Sharpe; confidence stays low until realized results improve."
+    "The portfolio has produced -17.1 points of all-time alpha with a -3.64 annualized Sharpe; confidence stays low until realized results improve."
   ],
   "data_examined": [
     {
       "label": "100-name randomized screen covering 20/60-session returns, RSI, distance from 20-day highs, and relative volume; SPY retained as benchmark only",
-      "source": "data/snapshot.json through 2026-09-30"
+      "source": "data/snapshot.json through 2026-10-01"
     },
     {
-      "label": "Finalists and sector peers: TTM P/E, P/B, market cap, 52-week range, sector, and confirmed/tentative earnings dates",
-      "source": "Robinhood get_equity_fundamentals, get_financials, get_equity_analyst_ratings, and get_earnings_calendar, 2026-10-01"
+      "label": "20 finalists and sector peers: TTM P/E, P/B, market cap, quarterly revenue growth/net margin, analyst ratings, and confirmed/tentative earnings dates",
+      "source": "Robinhood get_equity_fundamentals, get_financials, get_equity_analyst_ratings, and get_earnings_calendar, 2026-10-02"
     },
     {
-      "label": "Prior all-time alpha -17.0 points, annualized 34-session Sharpe -3.61, current marked equity $84.54",
+      "label": "Prior all-time alpha -17.1 points, annualized 35-session Sharpe -3.64, current marked equity $83.94",
       "source": "python3 tools/analyst_memory.py"
     },
     {
@@ -64,106 +68,106 @@
     "NEM": 0.16
   },
   "limits": {
-    "VRTX": 528.04,
-    "NEM": 116.49
+    "VRTX": 511.81,
+    "NEM": 115.82
   },
   "rationale": {
-    "VRTX": "[DATA] FDA assigned a November 30, 2026 PDUFA target date; Vertex reported a 52.0% UPCR reduction from baseline and 49.8% versus placebo (P<0.0001). The September 30 close was $522.81; P/E/PB were 30.416267/6.541550 versus REGN P/E 18.739790, and Vertex Q2 revenue/net margin were $3.3339 billion/32.99% (Robinhood). [ASSUMED] Approval can establish Vertex's nephrology franchise faster than the market credits, but the valuation premium and binary outcome cap the anchor at 20%. [DATA] Buy limit $528.04, about 1% above the settled close.",
-    "NEM": "[DATA] Newmont confirmed Q3 results after the October 22 close with a 5:30 p.m. EDT call. The September 30 close was $115.34, down 5.94% over 20 sessions; P/E/PB were 14.564419/3.465800 versus FCX P/E 34.564487, and Newmont Q2 revenue/net margin were $6.118 billion/35.99% (Robinhood). [ASSUMED] The selloff leaves room for a positive production/cost surprise, but the weak tape and commodity risk cap the position at 16%. [DATA] Buy limit $116.49, about 1% above the settled close."
+    "VRTX": "[DATA] FDA assigned a November 30, 2026 PDUFA target date; Vertex reported a 52.0% UPCR reduction from baseline and 49.8% versus placebo (P<0.0001). The October 1 close was $506.74; Robinhood reported P/E/PB of 29.481339/6.340480, Q2 revenue of $3.3339 billion, and a 32.99% net margin. [ASSUMED] Approval can establish Vertex's nephrology franchise faster than the market credits, but the valuation premium and binary outcome cap the anchor at 20%. [DATA] Buy limit $511.81, about 1% above the settled close.",
+    "NEM": "[DATA] Newmont confirmed Q3 results after the October 22 close. Q2 included about 1.3 million attributable gold ounces, $2.2 billion of free cash flow, and $1,621/oz AISC. The October 1 close was $114.67, down 8.38% over 20 sessions; Robinhood reported P/E/PB of 14.479815/3.445660, Q2 revenue of $6.118 billion, and a 35.99% net margin. [ASSUMED] The selloff leaves room for a positive production/cost surprise, but the weak tape and commodity risk cap the position at 16%. [DATA] Buy limit $115.82, about 1% above the settled close."
   },
   "reflection": {
-    "as_of": "2026-09-29",
-    "looking_back": "The marked book is down 15.1% versus SPY up 1.8%, or -17.0 points of all-time alpha, with a -3.61 annualized 34-session Sharpe. The September 29 rebalance realized losses of $1.08 in BAC and $1.22 in CRM; through September 30, the remaining VRTX and NEM positions did not recover enough to improve the trend.",
+    "as_of": "2026-10-01",
+    "looking_back": "The marked book is down 15.4% versus SPY up 1.6%, or -17.1 points of all-time alpha, with a -3.64 annualized 35-session Sharpe. Over the latest settled session the book lost 0.4% while SPY lost 0.2%, another 0.2-point alpha miss; VRTX is 3.0% below entry and NEM 10.1% below entry.",
     "worked": [
-      "The September 29 rebalance removed BAC and CRM after their dated catalysts passed without validating the thesis.",
-      "VRTX still retains a company-confirmed November 30 FDA decision, so the thesis has a falsifiable future checkpoint rather than a momentum-only rationale."
+      "The September 29 reset prevented a chase into the strongest screen names before another extended semiconductor/software session.",
+      "VRTX and NEM still have company-confirmed future checkpoints, preserving falsifiability rather than relying on undated momentum."
     ],
     "missed": [
-      "Realized losses of $1.08 in BAC and $1.22 in CRM confirm that the prior event sleeves were held too long after their catalysts passed.",
-      "All-time alpha deteriorated to -17.0 points and Sharpe to -3.61; NEM remains down 5.94% over 20 sessions."
+      "The book lost another 0.2 point of alpha on October 1, so the existing event sleeves have not yet earned higher confidence.",
+      "NEM is now 10.1% below its paper entry and down 8.38% over 20 sessions despite strong Q2 cash generation."
     ],
-    "adjustment": "Hold the September 29 reset—VRTX 20%, NEM 16%, cash 64%—for one more session; do not add MRNA, DDOG, or near-high TSM until a new event-driven mispricing is evidenced."
+    "adjustment": "Keep VRTX at 20% and NEM at 16% through the next settled session, retain 64% cash, and require new primary-source evidence before adding any screen leader."
   },
   "screen": [
     {
-      "symbol": "MRNA",
-      "close": 192.57,
-      "r20": 24.8,
-      "r60": 141.4,
-      "rsi": 79.2,
-      "vol": 1.37
-    },
-    {
-      "symbol": "MSTR",
-      "close": 153.09,
-      "r20": 22.6,
-      "r60": 57.2,
-      "rsi": 66,
-      "vol": 0.74
-    },
-    {
-      "symbol": "SMCI",
-      "close": 41.07,
-      "r20": 11.9,
-      "r60": 56.5,
-      "rsi": 59.3,
-      "vol": 0.84
-    },
-    {
-      "symbol": "CRWD",
-      "close": 264.75,
-      "r20": 23.1,
-      "r60": 36,
-      "rsi": 78.2,
-      "vol": 0.77
+      "symbol": "SOXL",
+      "close": 153.69,
+      "r20": 44.5,
+      "r60": -12.1,
+      "rsi": 61.2,
+      "vol": 1.25
     },
     {
       "symbol": "AMD",
-      "close": 611.76,
-      "r20": 33.1,
-      "r60": 18.5,
-      "rsi": 74.8,
-      "vol": 0.76
-    },
-    {
-      "symbol": "NET",
-      "close": 347.28,
-      "r20": 21.6,
-      "r60": 29.2,
-      "rsi": 66.1,
-      "vol": 0.82
+      "close": 615.73,
+      "r20": 34.7,
+      "r60": 19,
+      "rsi": 67,
+      "vol": 0.77
     },
     {
       "symbol": "INTC",
-      "close": 120.23,
-      "r20": 35.1,
+      "close": 120,
+      "r20": 33.3,
       "r60": 8.9,
-      "rsi": 67.4,
-      "vol": 0.88
+      "rsi": 61.5,
+      "vol": 0.95
     },
     {
-      "symbol": "PLTR",
-      "close": 187.05,
-      "r20": 4,
+      "symbol": "DDOG",
+      "close": 276.46,
+      "r20": 32.1,
+      "r60": 5.9,
+      "rsi": 70.3,
+      "vol": 0.81
+    },
+    {
+      "symbol": "CRWD",
+      "close": 266.09,
+      "r20": 30.8,
       "r60": 39.2,
-      "rsi": 81.2,
-      "vol": 0.7
+      "rsi": 67.2,
+      "vol": 0.62
     },
     {
-      "symbol": "META",
-      "close": 725.18,
-      "r20": 25.3,
-      "r60": 17.8,
-      "rsi": 64.7,
-      "vol": 0.8
+      "symbol": "MSTR",
+      "close": 160.5,
+      "r20": 30.3,
+      "r60": 71,
+      "rsi": 63.1,
+      "vol": 0.83
     },
     {
       "symbol": "MRVL",
-      "close": 264.21,
-      "r20": 25.6,
-      "r60": 14.5,
-      "rsi": 68.9,
-      "vol": 0.66
+      "close": 268.08,
+      "r20": 29.8,
+      "r60": 15.7,
+      "rsi": 63.4,
+      "vol": 1.08
+    },
+    {
+      "symbol": "NET",
+      "close": 351,
+      "r20": 28.7,
+      "r60": 28.4,
+      "rsi": 61.4,
+      "vol": 0.88
+    },
+    {
+      "symbol": "MRNA",
+      "close": 188.94,
+      "r20": 25.3,
+      "r60": 156,
+      "rsi": 65.8,
+      "vol": 1.05
+    },
+    {
+      "symbol": "META",
+      "close": 725.93,
+      "r20": 22.4,
+      "r60": 20.4,
+      "rsi": 61.1,
+      "vol": 0.51
     }
   ]
 }

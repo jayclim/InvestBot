@@ -1,6 +1,6 @@
 {
-"date": "2026-09-30",
-"asof": "2026-10-01T10:45:23",
+"date": "2026-10-01",
+"asof": "2026-10-02T10:13:54",
 "source": "kadoa-org/congress-trading-monitor (public-domain STOCK Act filings)",
 "followed": 127,
 "leaders": [
@@ -3815,110 +3815,6 @@
 "amount_label": "$50,001 - $100,000"
 },
 {
-"filer_id": "house_rubn_hinojosa",
-"filer": "Rub\u00e9n Hinojosa",
-"ticker": "GOOGL",
-"filing_date": "2017-01-29",
-"transaction_date": "2016-12-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rubn_hinojosa",
-"filer": "Rub\u00e9n Hinojosa",
-"ticker": "CVX",
-"filing_date": "2017-01-29",
-"transaction_date": "2016-12-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rubn_hinojosa",
-"filer": "Rub\u00e9n Hinojosa",
-"ticker": "CVX",
-"filing_date": "2017-01-29",
-"transaction_date": "2016-12-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rubn_hinojosa",
-"filer": "Rub\u00e9n Hinojosa",
-"ticker": "LLY",
-"filing_date": "2017-01-29",
-"transaction_date": "2016-12-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rubn_hinojosa",
-"filer": "Rub\u00e9n Hinojosa",
-"ticker": "JPM",
-"filing_date": "2017-01-29",
-"transaction_date": "2016-12-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rubn_hinojosa",
-"filer": "Rub\u00e9n Hinojosa",
-"ticker": "GOOGL",
-"filing_date": "2015-08-31",
-"transaction_date": "2015-08-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rubn_hinojosa",
-"filer": "Rub\u00e9n Hinojosa",
-"ticker": "GOOGL",
-"filing_date": "2015-08-31",
-"transaction_date": "2015-08-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rubn_hinojosa",
-"filer": "Rub\u00e9n Hinojosa",
-"ticker": "GOOGL",
-"filing_date": "2015-08-31",
-"transaction_date": "2015-08-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rubn_hinojosa",
-"filer": "Rub\u00e9n Hinojosa",
-"ticker": "GOOGL",
-"filing_date": "2015-08-31",
-"transaction_date": "2015-08-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rubn_hinojosa",
-"filer": "Rub\u00e9n Hinojosa",
-"ticker": "NFLX",
-"filing_date": "2015-08-31",
-"transaction_date": "2015-08-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rubn_hinojosa",
-"filer": "Rub\u00e9n Hinojosa",
-"ticker": "NFLX",
-"filing_date": "2015-08-31",
-"transaction_date": "2015-08-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rubn_hinojosa",
-"filer": "Rub\u00e9n Hinojosa",
-"ticker": "AMZN",
-"filing_date": "2014-02-04",
-"transaction_date": "2014-01-24",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rubn_hinojosa",
-"filer": "Rub\u00e9n Hinojosa",
-"ticker": "BAC",
-"filing_date": "2014-02-04",
-"transaction_date": "2014-01-16",
-"amount_label": "$1,001 - $15,000"
-},
-{
 "filer_id": "house_thomas_suozzi",
 "filer": "Thomas Suozzi",
 "ticker": "NVDA",
@@ -4764,6 +4660,110 @@
 "ticker": "TXN",
 "filing_date": "2021-09-23",
 "transaction_date": "2017-08-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "GOOGL",
+"filing_date": "2017-01-29",
+"transaction_date": "2016-12-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "CVX",
+"filing_date": "2017-01-29",
+"transaction_date": "2016-12-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "CVX",
+"filing_date": "2017-01-29",
+"transaction_date": "2016-12-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "LLY",
+"filing_date": "2017-01-29",
+"transaction_date": "2016-12-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "JPM",
+"filing_date": "2017-01-29",
+"transaction_date": "2016-12-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "GOOGL",
+"filing_date": "2015-08-31",
+"transaction_date": "2015-08-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "GOOGL",
+"filing_date": "2015-08-31",
+"transaction_date": "2015-08-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "GOOGL",
+"filing_date": "2015-08-31",
+"transaction_date": "2015-08-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "GOOGL",
+"filing_date": "2015-08-31",
+"transaction_date": "2015-08-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "NFLX",
+"filing_date": "2015-08-31",
+"transaction_date": "2015-08-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "NFLX",
+"filing_date": "2015-08-31",
+"transaction_date": "2015-08-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "AMZN",
+"filing_date": "2014-02-04",
+"transaction_date": "2014-01-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rubn_hinojosa",
+"filer": "Rub\u00e9n Hinojosa",
+"ticker": "BAC",
+"filing_date": "2014-02-04",
+"transaction_date": "2014-01-16",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -5951,14 +5951,6 @@
 "amount_label": "$100,001 - $250,000"
 },
 {
-"filer_id": "house_markdr_green",
-"filer": "Mark Green",
-"ticker": "GE",
-"filing_date": "2021-03-28",
-"transaction_date": "2021-03-16",
-"amount_label": "$1,001 - $15,000"
-},
-{
 "filer_id": "house_jamesr_langevin",
 "filer": "James R. Langevin",
 "ticker": "ABNB",
@@ -6532,6 +6524,14 @@
 "ticker": "BABA",
 "filing_date": "2016-05-11",
 "transaction_date": "2015-08-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_markdr_green",
+"filer": "Mark Green",
+"ticker": "GE",
+"filing_date": "2021-03-28",
+"transaction_date": "2021-03-16",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -8063,110 +8063,6 @@
 "amount_label": "$50,001 - $100,000"
 },
 {
-"filer_id": "house_daniel_crenshaw",
-"filer": "Daniel Crenshaw",
-"ticker": "META",
-"filing_date": "2026-07-16",
-"transaction_date": "2026-04-28",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_crenshaw",
-"filer": "Daniel Crenshaw",
-"ticker": "AMZN",
-"filing_date": "2022-12-01",
-"transaction_date": "2022-10-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_crenshaw",
-"filer": "Daniel Crenshaw",
-"ticker": "AAPL",
-"filing_date": "2022-12-01",
-"transaction_date": "2022-10-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_crenshaw",
-"filer": "Daniel Crenshaw",
-"ticker": "FAS",
-"filing_date": "2022-12-01",
-"transaction_date": "2022-10-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_crenshaw",
-"filer": "Daniel Crenshaw",
-"ticker": "META",
-"filing_date": "2022-12-01",
-"transaction_date": "2022-10-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_crenshaw",
-"filer": "Daniel Crenshaw",
-"ticker": "RIVN",
-"filing_date": "2022-01-10",
-"transaction_date": "2021-12-14",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_crenshaw",
-"filer": "Daniel Crenshaw",
-"ticker": "TSLA",
-"filing_date": "2021-12-07",
-"transaction_date": "2021-11-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_crenshaw",
-"filer": "Daniel Crenshaw",
-"ticker": "TSLA",
-"filing_date": "2021-12-07",
-"transaction_date": "2021-11-09",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_crenshaw",
-"filer": "Daniel Crenshaw",
-"ticker": "TSLA",
-"filing_date": "2021-12-07",
-"transaction_date": "2021-11-08",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_crenshaw",
-"filer": "Daniel Crenshaw",
-"ticker": "FAS",
-"filing_date": "2021-03-24",
-"transaction_date": "2020-06-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_crenshaw",
-"filer": "Daniel Crenshaw",
-"ticker": "BA",
-"filing_date": "2021-03-24",
-"transaction_date": "2020-03-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_crenshaw",
-"filer": "Daniel Crenshaw",
-"ticker": "FAS",
-"filing_date": "2021-03-24",
-"transaction_date": "2020-03-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_crenshaw",
-"filer": "Daniel Crenshaw",
-"ticker": "AMZN",
-"filing_date": "2021-03-24",
-"transaction_date": "2020-03-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
 "filer_id": "house_john_curtis",
 "filer": "John Curtis",
 "ticker": "LLY",
@@ -8548,6 +8444,110 @@
 "ticker": "AMZN",
 "filing_date": "2020-04-09",
 "transaction_date": "2019-04-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_crenshaw",
+"filer": "Daniel Crenshaw",
+"ticker": "META",
+"filing_date": "2026-07-16",
+"transaction_date": "2026-04-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_crenshaw",
+"filer": "Daniel Crenshaw",
+"ticker": "AMZN",
+"filing_date": "2022-12-01",
+"transaction_date": "2022-10-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_crenshaw",
+"filer": "Daniel Crenshaw",
+"ticker": "AAPL",
+"filing_date": "2022-12-01",
+"transaction_date": "2022-10-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_crenshaw",
+"filer": "Daniel Crenshaw",
+"ticker": "FAS",
+"filing_date": "2022-12-01",
+"transaction_date": "2022-10-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_crenshaw",
+"filer": "Daniel Crenshaw",
+"ticker": "META",
+"filing_date": "2022-12-01",
+"transaction_date": "2022-10-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_crenshaw",
+"filer": "Daniel Crenshaw",
+"ticker": "RIVN",
+"filing_date": "2022-01-10",
+"transaction_date": "2021-12-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_crenshaw",
+"filer": "Daniel Crenshaw",
+"ticker": "TSLA",
+"filing_date": "2021-12-07",
+"transaction_date": "2021-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_crenshaw",
+"filer": "Daniel Crenshaw",
+"ticker": "TSLA",
+"filing_date": "2021-12-07",
+"transaction_date": "2021-11-09",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_crenshaw",
+"filer": "Daniel Crenshaw",
+"ticker": "TSLA",
+"filing_date": "2021-12-07",
+"transaction_date": "2021-11-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_crenshaw",
+"filer": "Daniel Crenshaw",
+"ticker": "FAS",
+"filing_date": "2021-03-24",
+"transaction_date": "2020-06-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_crenshaw",
+"filer": "Daniel Crenshaw",
+"ticker": "BA",
+"filing_date": "2021-03-24",
+"transaction_date": "2020-03-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_crenshaw",
+"filer": "Daniel Crenshaw",
+"ticker": "FAS",
+"filing_date": "2021-03-24",
+"transaction_date": "2020-03-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_crenshaw",
+"filer": "Daniel Crenshaw",
+"ticker": "AMZN",
+"filing_date": "2021-03-24",
+"transaction_date": "2020-03-12",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -13943,534 +13943,6 @@
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "TSLA",
-"filing_date": "2021-02-13",
-"transaction_date": "2021-01-05",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "INTC",
-"filing_date": "2021-01-09",
-"transaction_date": "2020-12-18",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "TSLA",
-"filing_date": "2021-01-09",
-"transaction_date": "2020-12-18",
-"amount_label": "$50,001 - $100,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "VRTX",
-"filing_date": "2021-01-09",
-"transaction_date": "2020-12-18",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "JPM",
-"filing_date": "2021-01-09",
-"transaction_date": "2020-12-16",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "MU",
-"filing_date": "2020-12-11",
-"transaction_date": "2020-11-16",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "MU",
-"filing_date": "2020-11-11",
-"transaction_date": "2020-10-30",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "BAC",
-"filing_date": "2020-11-11",
-"transaction_date": "2020-10-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "MU",
-"filing_date": "2020-11-11",
-"transaction_date": "2020-10-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "MU",
-"filing_date": "2020-11-11",
-"transaction_date": "2020-10-01",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "AMD",
-"filing_date": "2020-10-09",
-"transaction_date": "2020-09-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "GOOGL",
-"filing_date": "2020-10-09",
-"transaction_date": "2020-09-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "GOOGL",
-"filing_date": "2020-10-09",
-"transaction_date": "2020-09-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "AMZN",
-"filing_date": "2020-10-09",
-"transaction_date": "2020-09-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "AAPL",
-"filing_date": "2020-10-09",
-"transaction_date": "2020-09-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "CAT",
-"filing_date": "2020-10-09",
-"transaction_date": "2020-09-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "GILD",
-"filing_date": "2020-10-09",
-"transaction_date": "2020-09-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "NFLX",
-"filing_date": "2020-10-09",
-"transaction_date": "2020-09-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "CRM",
-"filing_date": "2020-10-09",
-"transaction_date": "2020-09-23",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "AMD",
-"filing_date": "2020-05-07",
-"transaction_date": "2020-04-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "GOOGL",
-"filing_date": "2020-05-07",
-"transaction_date": "2020-04-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "AMZN",
-"filing_date": "2020-05-07",
-"transaction_date": "2020-04-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "AAPL",
-"filing_date": "2020-05-07",
-"transaction_date": "2020-04-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "BAC",
-"filing_date": "2020-05-07",
-"transaction_date": "2020-04-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "CAT",
-"filing_date": "2020-05-07",
-"transaction_date": "2020-04-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "COST",
-"filing_date": "2020-05-07",
-"transaction_date": "2020-04-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "META",
-"filing_date": "2020-05-07",
-"transaction_date": "2020-04-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "F",
-"filing_date": "2020-05-07",
-"transaction_date": "2020-04-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "GS",
-"filing_date": "2020-05-07",
-"transaction_date": "2020-04-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "MS",
-"filing_date": "2020-05-07",
-"transaction_date": "2020-04-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "NFLX",
-"filing_date": "2020-05-07",
-"transaction_date": "2020-04-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "UPS",
-"filing_date": "2020-05-07",
-"transaction_date": "2020-04-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "UNH",
-"filing_date": "2020-04-10",
-"transaction_date": "2020-03-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "GS",
-"filing_date": "2020-03-12",
-"transaction_date": "2020-02-28",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "GS",
-"filing_date": "2020-02-07",
-"transaction_date": "2020-01-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "UNH",
-"filing_date": "2019-12-11",
-"transaction_date": "2019-11-22",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "BAC",
-"filing_date": "2019-12-11",
-"transaction_date": "2019-11-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "UNH",
-"filing_date": "2019-10-11",
-"transaction_date": "2019-09-24",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "NEM",
-"filing_date": "2019-10-11",
-"transaction_date": "2019-09-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "REGN",
-"filing_date": "2019-10-11",
-"transaction_date": "2019-09-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "UNH",
-"filing_date": "2019-10-11",
-"transaction_date": "2019-09-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "CAT",
-"filing_date": "2019-09-16",
-"transaction_date": "2019-08-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "REGN",
-"filing_date": "2019-09-16",
-"transaction_date": "2019-08-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "SLB",
-"filing_date": "2019-09-16",
-"transaction_date": "2019-08-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "JPM",
-"filing_date": "2019-09-16",
-"transaction_date": "2019-08-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "NEM",
-"filing_date": "2019-07-11",
-"transaction_date": "2019-06-20",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "GS",
-"filing_date": "2019-07-11",
-"transaction_date": "2019-06-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "UNH",
-"filing_date": "2019-07-11",
-"transaction_date": "2019-06-07",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "GS",
-"filing_date": "2019-07-11",
-"transaction_date": "2019-06-03",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "META",
-"filing_date": "2019-06-13",
-"transaction_date": "2019-05-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "UNH",
-"filing_date": "2019-06-13",
-"transaction_date": "2019-05-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "ORCL",
-"filing_date": "2019-06-13",
-"transaction_date": "2019-05-03",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "ORCL",
-"filing_date": "2019-05-21",
-"transaction_date": "2019-04-23",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "UNH",
-"filing_date": "2019-05-21",
-"transaction_date": "2019-04-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "GS",
-"filing_date": "2019-04-16",
-"transaction_date": "2019-03-06",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "NVDA",
-"filing_date": "2019-04-16",
-"transaction_date": "2019-03-06",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "ORCL",
-"filing_date": "2019-03-21",
-"transaction_date": "2019-02-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "AAPL",
-"filing_date": "2019-03-21",
-"transaction_date": "2019-02-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "F",
-"filing_date": "2019-03-21",
-"transaction_date": "2019-02-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "NVDA",
-"filing_date": "2019-03-21",
-"transaction_date": "2019-02-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "BAC",
-"filing_date": "2019-02-18",
-"transaction_date": "2019-01-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "CAT",
-"filing_date": "2019-02-18",
-"transaction_date": "2019-01-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "GS",
-"filing_date": "2019-02-18",
-"transaction_date": "2019-01-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "HD",
-"filing_date": "2019-02-18",
-"transaction_date": "2019-01-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "INTC",
-"filing_date": "2019-02-18",
-"transaction_date": "2019-01-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_dean_phillips",
-"filer": "Dean Phillips",
-"ticker": "REGN",
-"filing_date": "2019-02-18",
-"transaction_date": "2019-01-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
 "filer_id": "senate_markwayne_mullin",
 "filer": "Markwayne Mullin",
 "ticker": "UNH",
@@ -15300,6 +14772,534 @@
 "ticker": "PYPL",
 "filing_date": "2025-08-13",
 "transaction_date": "2023-01-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "TSLA",
+"filing_date": "2021-02-13",
+"transaction_date": "2021-01-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "INTC",
+"filing_date": "2021-01-09",
+"transaction_date": "2020-12-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "TSLA",
+"filing_date": "2021-01-09",
+"transaction_date": "2020-12-18",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "VRTX",
+"filing_date": "2021-01-09",
+"transaction_date": "2020-12-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "JPM",
+"filing_date": "2021-01-09",
+"transaction_date": "2020-12-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "MU",
+"filing_date": "2020-12-11",
+"transaction_date": "2020-11-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "MU",
+"filing_date": "2020-11-11",
+"transaction_date": "2020-10-30",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "BAC",
+"filing_date": "2020-11-11",
+"transaction_date": "2020-10-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "MU",
+"filing_date": "2020-11-11",
+"transaction_date": "2020-10-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "MU",
+"filing_date": "2020-11-11",
+"transaction_date": "2020-10-01",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "AMD",
+"filing_date": "2020-10-09",
+"transaction_date": "2020-09-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "GOOGL",
+"filing_date": "2020-10-09",
+"transaction_date": "2020-09-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "GOOGL",
+"filing_date": "2020-10-09",
+"transaction_date": "2020-09-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "AMZN",
+"filing_date": "2020-10-09",
+"transaction_date": "2020-09-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "AAPL",
+"filing_date": "2020-10-09",
+"transaction_date": "2020-09-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "CAT",
+"filing_date": "2020-10-09",
+"transaction_date": "2020-09-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "GILD",
+"filing_date": "2020-10-09",
+"transaction_date": "2020-09-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "NFLX",
+"filing_date": "2020-10-09",
+"transaction_date": "2020-09-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "CRM",
+"filing_date": "2020-10-09",
+"transaction_date": "2020-09-23",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "AMD",
+"filing_date": "2020-05-07",
+"transaction_date": "2020-04-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "GOOGL",
+"filing_date": "2020-05-07",
+"transaction_date": "2020-04-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "AMZN",
+"filing_date": "2020-05-07",
+"transaction_date": "2020-04-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "AAPL",
+"filing_date": "2020-05-07",
+"transaction_date": "2020-04-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "BAC",
+"filing_date": "2020-05-07",
+"transaction_date": "2020-04-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "CAT",
+"filing_date": "2020-05-07",
+"transaction_date": "2020-04-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "COST",
+"filing_date": "2020-05-07",
+"transaction_date": "2020-04-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "META",
+"filing_date": "2020-05-07",
+"transaction_date": "2020-04-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "F",
+"filing_date": "2020-05-07",
+"transaction_date": "2020-04-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "GS",
+"filing_date": "2020-05-07",
+"transaction_date": "2020-04-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "MS",
+"filing_date": "2020-05-07",
+"transaction_date": "2020-04-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "NFLX",
+"filing_date": "2020-05-07",
+"transaction_date": "2020-04-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "UPS",
+"filing_date": "2020-05-07",
+"transaction_date": "2020-04-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "UNH",
+"filing_date": "2020-04-10",
+"transaction_date": "2020-03-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "GS",
+"filing_date": "2020-03-12",
+"transaction_date": "2020-02-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "GS",
+"filing_date": "2020-02-07",
+"transaction_date": "2020-01-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "UNH",
+"filing_date": "2019-12-11",
+"transaction_date": "2019-11-22",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "BAC",
+"filing_date": "2019-12-11",
+"transaction_date": "2019-11-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "UNH",
+"filing_date": "2019-10-11",
+"transaction_date": "2019-09-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "NEM",
+"filing_date": "2019-10-11",
+"transaction_date": "2019-09-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "REGN",
+"filing_date": "2019-10-11",
+"transaction_date": "2019-09-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "UNH",
+"filing_date": "2019-10-11",
+"transaction_date": "2019-09-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "CAT",
+"filing_date": "2019-09-16",
+"transaction_date": "2019-08-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "REGN",
+"filing_date": "2019-09-16",
+"transaction_date": "2019-08-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "SLB",
+"filing_date": "2019-09-16",
+"transaction_date": "2019-08-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "JPM",
+"filing_date": "2019-09-16",
+"transaction_date": "2019-08-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "NEM",
+"filing_date": "2019-07-11",
+"transaction_date": "2019-06-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "GS",
+"filing_date": "2019-07-11",
+"transaction_date": "2019-06-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "UNH",
+"filing_date": "2019-07-11",
+"transaction_date": "2019-06-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "GS",
+"filing_date": "2019-07-11",
+"transaction_date": "2019-06-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "META",
+"filing_date": "2019-06-13",
+"transaction_date": "2019-05-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "UNH",
+"filing_date": "2019-06-13",
+"transaction_date": "2019-05-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "ORCL",
+"filing_date": "2019-06-13",
+"transaction_date": "2019-05-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "ORCL",
+"filing_date": "2019-05-21",
+"transaction_date": "2019-04-23",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "UNH",
+"filing_date": "2019-05-21",
+"transaction_date": "2019-04-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "GS",
+"filing_date": "2019-04-16",
+"transaction_date": "2019-03-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "NVDA",
+"filing_date": "2019-04-16",
+"transaction_date": "2019-03-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "ORCL",
+"filing_date": "2019-03-21",
+"transaction_date": "2019-02-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "AAPL",
+"filing_date": "2019-03-21",
+"transaction_date": "2019-02-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "F",
+"filing_date": "2019-03-21",
+"transaction_date": "2019-02-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "NVDA",
+"filing_date": "2019-03-21",
+"transaction_date": "2019-02-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "BAC",
+"filing_date": "2019-02-18",
+"transaction_date": "2019-01-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "CAT",
+"filing_date": "2019-02-18",
+"transaction_date": "2019-01-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "GS",
+"filing_date": "2019-02-18",
+"transaction_date": "2019-01-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "HD",
+"filing_date": "2019-02-18",
+"transaction_date": "2019-01-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "INTC",
+"filing_date": "2019-02-18",
+"transaction_date": "2019-01-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_dean_phillips",
+"filer": "Dean Phillips",
+"ticker": "REGN",
+"filing_date": "2019-02-18",
+"transaction_date": "2019-01-04",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -16965,6 +16965,638 @@
 "filing_date": "2025-03-09",
 "transaction_date": "2025-02-24",
 "amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "COIN",
+"filing_date": "2025-07-08",
+"transaction_date": "2025-06-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "AVGO",
+"filing_date": "2025-07-08",
+"transaction_date": "2025-06-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "TSLA",
+"filing_date": "2025-07-08",
+"transaction_date": "2025-06-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "NVDA",
+"filing_date": "2025-06-23",
+"transaction_date": "2025-05-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "NVDA",
+"filing_date": "2025-06-23",
+"transaction_date": "2025-05-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "SNOW",
+"filing_date": "2025-06-23",
+"transaction_date": "2025-05-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "TSLA",
+"filing_date": "2025-06-23",
+"transaction_date": "2025-05-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "NVDA",
+"filing_date": "2025-06-09",
+"transaction_date": "2025-05-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "TSLA",
+"filing_date": "2025-06-09",
+"transaction_date": "2025-05-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "AMD",
+"filing_date": "2025-05-31",
+"transaction_date": "2025-05-15",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "CAT",
+"filing_date": "2025-05-31",
+"transaction_date": "2025-05-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "COP",
+"filing_date": "2025-05-31",
+"transaction_date": "2025-05-15",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "OXY",
+"filing_date": "2025-05-31",
+"transaction_date": "2025-05-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "PFE",
+"filing_date": "2025-05-31",
+"transaction_date": "2025-05-15",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "TXN",
+"filing_date": "2025-05-31",
+"transaction_date": "2025-05-15",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "JPM",
+"filing_date": "2025-06-09",
+"transaction_date": "2025-05-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "LMT",
+"filing_date": "2025-06-09",
+"transaction_date": "2025-05-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "REGN",
+"filing_date": "2025-06-09",
+"transaction_date": "2025-05-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "META",
+"filing_date": "2025-06-09",
+"transaction_date": "2025-05-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "NVDA",
+"filing_date": "2025-06-09",
+"transaction_date": "2025-05-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "HOOD",
+"filing_date": "2025-06-09",
+"transaction_date": "2025-05-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "NVDA",
+"filing_date": "2025-06-09",
+"transaction_date": "2025-05-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "TSLA",
+"filing_date": "2025-06-09",
+"transaction_date": "2025-05-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "TXN",
+"filing_date": "2025-06-09",
+"transaction_date": "2025-05-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "NVDA",
+"filing_date": "2025-05-31",
+"transaction_date": "2025-05-09",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "HOOD",
+"filing_date": "2025-05-31",
+"transaction_date": "2025-05-09",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "MSFT",
+"filing_date": "2025-06-09",
+"transaction_date": "2025-05-09",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "NVDA",
+"filing_date": "2025-05-11",
+"transaction_date": "2025-04-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "TXN",
+"filing_date": "2025-05-11",
+"transaction_date": "2025-04-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "ADBE",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "AMZN",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "DVN",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "XOM",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "F",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "MSFT",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "MSFT",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "NEM",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "NKE",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "PLTR",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "PYPL",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "TSLA",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "UPS",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "UNH",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "V",
+"filing_date": "2025-05-08",
+"transaction_date": "2025-04-08",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "MSFT",
+"filing_date": "2025-04-22",
+"transaction_date": "2025-04-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "TXN",
+"filing_date": "2025-04-22",
+"transaction_date": "2025-03-31",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "TXN",
+"filing_date": "2025-04-22",
+"transaction_date": "2025-03-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "INTC",
+"filing_date": "2025-04-09",
+"transaction_date": "2025-03-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "TXN",
+"filing_date": "2025-04-09",
+"transaction_date": "2025-03-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "UBER",
+"filing_date": "2025-04-09",
+"transaction_date": "2025-03-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "META",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-03-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "BABA",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-03-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "INTC",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-03-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "SNOW",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-03-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "INTC",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "NVDA",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "SNOW",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "ABNB",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "BABA",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "BA",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-25",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "DE",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-25",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "MRNA",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "OXY",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-25",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "PLTR",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "PFE",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-25",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "SLB",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "SMCI",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "V",
+"filing_date": "2025-03-27",
+"transaction_date": "2025-02-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "BABA",
+"filing_date": "2025-03-10",
+"transaction_date": "2025-02-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "INTC",
+"filing_date": "2025-03-10",
+"transaction_date": "2025-02-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "INTC",
+"filing_date": "2025-03-10",
+"transaction_date": "2025-02-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "SNOW",
+"filing_date": "2025-03-07",
+"transaction_date": "2025-02-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "SNOW",
+"filing_date": "2025-03-07",
+"transaction_date": "2025-02-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "BABA",
+"filing_date": "2025-03-07",
+"transaction_date": "2025-02-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "NET",
+"filing_date": "2025-03-07",
+"transaction_date": "2025-02-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "INTC",
+"filing_date": "2025-02-13",
+"transaction_date": "2025-02-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "BABA",
+"filing_date": "2025-02-13",
+"transaction_date": "2025-01-30",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "BABA",
+"filing_date": "2025-02-13",
+"transaction_date": "2025-01-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rob_bresnahan",
+"filer": "Rob Bresnahan",
+"ticker": "CRWD",
+"filing_date": "2025-02-13",
+"transaction_date": "2025-01-28",
+"amount_label": "$1,001 - $15,000"
 },
 {
 "filer_id": "house_gilbert_cisneros",
@@ -18967,635 +19599,115 @@
 "amount_label": "$50,001 - $100,000"
 },
 {
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "COIN",
-"filing_date": "2025-07-08",
-"transaction_date": "2025-06-24",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
 "ticker": "AVGO",
-"filing_date": "2025-07-08",
-"transaction_date": "2025-06-11",
+"filing_date": "2019-11-10",
+"transaction_date": "2019-10-02",
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "TSLA",
-"filing_date": "2025-07-08",
-"transaction_date": "2025-06-05",
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
+"ticker": "AMGN",
+"filing_date": "2019-10-07",
+"transaction_date": "2019-09-19",
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "NVDA",
-"filing_date": "2025-06-23",
-"transaction_date": "2025-05-29",
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
+"ticker": "GILD",
+"filing_date": "2019-10-07",
+"transaction_date": "2019-09-19",
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "NVDA",
-"filing_date": "2025-06-23",
-"transaction_date": "2025-05-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "SNOW",
-"filing_date": "2025-06-23",
-"transaction_date": "2025-05-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "TSLA",
-"filing_date": "2025-06-23",
-"transaction_date": "2025-05-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "NVDA",
-"filing_date": "2025-06-09",
-"transaction_date": "2025-05-16",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "TSLA",
-"filing_date": "2025-06-09",
-"transaction_date": "2025-05-16",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "AMD",
-"filing_date": "2025-05-31",
-"transaction_date": "2025-05-15",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "CAT",
-"filing_date": "2025-05-31",
-"transaction_date": "2025-05-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
 "ticker": "COP",
-"filing_date": "2025-05-31",
-"transaction_date": "2025-05-15",
+"filing_date": "2019-08-12",
+"transaction_date": "2019-07-15",
 "amount_label": "$15,001 - $50,000"
 },
 {
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "OXY",
-"filing_date": "2025-05-31",
-"transaction_date": "2025-05-15",
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
+"ticker": "AMGN",
+"filing_date": "2019-04-04",
+"transaction_date": "2019-03-25",
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "PFE",
-"filing_date": "2025-05-31",
-"transaction_date": "2025-05-15",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "TXN",
-"filing_date": "2025-05-31",
-"transaction_date": "2025-05-15",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "JPM",
-"filing_date": "2025-06-09",
-"transaction_date": "2025-05-15",
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
+"ticker": "AAPL",
+"filing_date": "2019-04-04",
+"transaction_date": "2019-03-25",
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "LMT",
-"filing_date": "2025-06-09",
-"transaction_date": "2025-05-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "REGN",
-"filing_date": "2025-06-09",
-"transaction_date": "2025-05-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "META",
-"filing_date": "2025-06-09",
-"transaction_date": "2025-05-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "NVDA",
-"filing_date": "2025-06-09",
-"transaction_date": "2025-05-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "HOOD",
-"filing_date": "2025-06-09",
-"transaction_date": "2025-05-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "NVDA",
-"filing_date": "2025-06-09",
-"transaction_date": "2025-05-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "TSLA",
-"filing_date": "2025-06-09",
-"transaction_date": "2025-05-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "TXN",
-"filing_date": "2025-06-09",
-"transaction_date": "2025-05-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "NVDA",
-"filing_date": "2025-05-31",
-"transaction_date": "2025-05-09",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "HOOD",
-"filing_date": "2025-05-31",
-"transaction_date": "2025-05-09",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "MSFT",
-"filing_date": "2025-06-09",
-"transaction_date": "2025-05-09",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "NVDA",
-"filing_date": "2025-05-11",
-"transaction_date": "2025-04-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "TXN",
-"filing_date": "2025-05-11",
-"transaction_date": "2025-04-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "ADBE",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "AMZN",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "DVN",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
 "ticker": "XOM",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
+"filing_date": "2019-04-04",
+"transaction_date": "2019-03-25",
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "F",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
+"ticker": "GILD",
+"filing_date": "2019-04-04",
+"transaction_date": "2019-03-25",
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
+"ticker": "HD",
+"filing_date": "2019-04-04",
+"transaction_date": "2019-03-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
+"ticker": "MA",
+"filing_date": "2019-04-04",
+"transaction_date": "2019-03-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
+"ticker": "MS",
+"filing_date": "2019-04-04",
+"transaction_date": "2019-03-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
+"ticker": "AAPL",
+"filing_date": "2018-01-19",
+"transaction_date": "2017-12-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
+"ticker": "AAPL",
+"filing_date": "2016-10-06",
+"transaction_date": "2016-09-26",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_bill_flores",
+"filer": "Bill Flores",
 "ticker": "MSFT",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "MSFT",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "NEM",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "NKE",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "PLTR",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "PYPL",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "TSLA",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "UPS",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "UNH",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "V",
-"filing_date": "2025-05-08",
-"transaction_date": "2025-04-08",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "MSFT",
-"filing_date": "2025-04-22",
-"transaction_date": "2025-04-03",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "TXN",
-"filing_date": "2025-04-22",
-"transaction_date": "2025-03-31",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "TXN",
-"filing_date": "2025-04-22",
-"transaction_date": "2025-03-26",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "INTC",
-"filing_date": "2025-04-09",
-"transaction_date": "2025-03-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "TXN",
-"filing_date": "2025-04-09",
-"transaction_date": "2025-03-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "UBER",
-"filing_date": "2025-04-09",
-"transaction_date": "2025-03-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "META",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-03-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "BABA",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-03-03",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "INTC",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-03-03",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "SNOW",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-03-03",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "INTC",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-26",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "NVDA",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-26",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "SNOW",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-26",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "ABNB",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "BABA",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "BA",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-25",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "DE",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-25",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "MRNA",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "OXY",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-25",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "PLTR",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "PFE",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-25",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "SLB",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "SMCI",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "V",
-"filing_date": "2025-03-27",
-"transaction_date": "2025-02-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "BABA",
-"filing_date": "2025-03-10",
-"transaction_date": "2025-02-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "INTC",
-"filing_date": "2025-03-10",
-"transaction_date": "2025-02-20",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "INTC",
-"filing_date": "2025-03-10",
-"transaction_date": "2025-02-14",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "SNOW",
-"filing_date": "2025-03-07",
-"transaction_date": "2025-02-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "SNOW",
-"filing_date": "2025-03-07",
-"transaction_date": "2025-02-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "BABA",
-"filing_date": "2025-03-07",
-"transaction_date": "2025-02-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "NET",
-"filing_date": "2025-03-07",
-"transaction_date": "2025-02-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "INTC",
-"filing_date": "2025-02-13",
-"transaction_date": "2025-02-03",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "BABA",
-"filing_date": "2025-02-13",
-"transaction_date": "2025-01-30",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "BABA",
-"filing_date": "2025-02-13",
-"transaction_date": "2025-01-29",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rob_bresnahan",
-"filer": "Rob Bresnahan",
-"ticker": "CRWD",
-"filing_date": "2025-02-13",
-"transaction_date": "2025-01-28",
+"filing_date": "2014-01-07",
+"transaction_date": "2013-12-30",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -19828,118 +19940,6 @@
 "ticker": "WMT",
 "filing_date": "2024-09-02",
 "transaction_date": "2023-11-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "AVGO",
-"filing_date": "2019-11-10",
-"transaction_date": "2019-10-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "AMGN",
-"filing_date": "2019-10-07",
-"transaction_date": "2019-09-19",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "GILD",
-"filing_date": "2019-10-07",
-"transaction_date": "2019-09-19",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "COP",
-"filing_date": "2019-08-12",
-"transaction_date": "2019-07-15",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "AMGN",
-"filing_date": "2019-04-04",
-"transaction_date": "2019-03-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "AAPL",
-"filing_date": "2019-04-04",
-"transaction_date": "2019-03-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "XOM",
-"filing_date": "2019-04-04",
-"transaction_date": "2019-03-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "GILD",
-"filing_date": "2019-04-04",
-"transaction_date": "2019-03-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "HD",
-"filing_date": "2019-04-04",
-"transaction_date": "2019-03-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "MA",
-"filing_date": "2019-04-04",
-"transaction_date": "2019-03-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "MS",
-"filing_date": "2019-04-04",
-"transaction_date": "2019-03-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "AAPL",
-"filing_date": "2018-01-19",
-"transaction_date": "2017-12-19",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "AAPL",
-"filing_date": "2016-10-06",
-"transaction_date": "2016-09-26",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_bill_flores",
-"filer": "Bill Flores",
-"ticker": "MSFT",
-"filing_date": "2014-01-07",
-"transaction_date": "2013-12-30",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -20829,390 +20829,6 @@
 "filing_date": "2023-05-12",
 "transaction_date": "2023-01-10",
 "amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "HD",
-"filing_date": "2021-08-15",
-"transaction_date": "2021-07-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "MSFT",
-"filing_date": "2021-08-15",
-"transaction_date": "2021-07-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "V",
-"filing_date": "2021-08-15",
-"transaction_date": "2021-07-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "INTC",
-"filing_date": "2020-12-28",
-"transaction_date": "2020-11-05",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "MA",
-"filing_date": "2020-12-28",
-"transaction_date": "2020-11-05",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "ORCL",
-"filing_date": "2020-12-28",
-"transaction_date": "2020-11-05",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "SBUX",
-"filing_date": "2020-12-28",
-"transaction_date": "2020-11-05",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "COST",
-"filing_date": "2020-12-03",
-"transaction_date": "2020-10-22",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "GOOGL",
-"filing_date": "2020-05-29",
-"transaction_date": "2020-04-03",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "AAPL",
-"filing_date": "2020-05-29",
-"transaction_date": "2020-04-03",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "TSM",
-"filing_date": "2019-06-26",
-"transaction_date": "2019-05-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "INTC",
-"filing_date": "2018-11-19",
-"transaction_date": "2018-10-01",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "SBUX",
-"filing_date": "2018-11-19",
-"transaction_date": "2018-10-01",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "AMGN",
-"filing_date": "2017-05-25",
-"transaction_date": "2016-10-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "AAPL",
-"filing_date": "2017-05-25",
-"transaction_date": "2016-10-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "GE",
-"filing_date": "2017-05-25",
-"transaction_date": "2016-10-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "HD",
-"filing_date": "2017-05-25",
-"transaction_date": "2016-10-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "JPM",
-"filing_date": "2017-05-25",
-"transaction_date": "2016-10-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "MSFT",
-"filing_date": "2017-05-25",
-"transaction_date": "2016-10-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "NKE",
-"filing_date": "2017-05-25",
-"transaction_date": "2016-10-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "ORCL",
-"filing_date": "2017-05-25",
-"transaction_date": "2016-10-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "SBUX",
-"filing_date": "2017-05-25",
-"transaction_date": "2016-10-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "UNH",
-"filing_date": "2017-05-25",
-"transaction_date": "2016-10-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "V",
-"filing_date": "2017-05-25",
-"transaction_date": "2016-10-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "F",
-"filing_date": "2016-02-18",
-"transaction_date": "2016-01-14",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "AAPL",
-"filing_date": "2015-05-11",
-"transaction_date": "2015-04-28",
-"amount_label": "$50,001 - $100,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "INTC",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-11-24",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "INTC",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-10-28",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "UPS",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-10-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "TXN",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-10-16",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "HD",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-09-26",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "JPM",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-09-18",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "LLY",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-09-17",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "LLY",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-08-26",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "HD",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-08-26",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "LLY",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-08-25",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "DIS",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-08-14",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "LMT",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-07-30",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "MSFT",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-07-22",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "AAPL",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-06-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "AAPL",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-05-29",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "BA",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-05-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "TXN",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-05-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "CVX",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-04-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "AMGN",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-03-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "QCOM",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-03-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "JPM",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-02-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_katherinem_clark",
-"filer": "Katherine M. Clark",
-"ticker": "AMGN",
-"filing_date": "2014-12-19",
-"transaction_date": "2014-02-20",
-"amount_label": "$1,001 - $15,000"
 },
 {
 "filer_id": "house_donaldsternoff_beyer_jr",
@@ -22508,6 +22124,542 @@
 "ticker": "AAPL",
 "filing_date": "2019-05-15",
 "transaction_date": "2018-12-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "MA",
+"filing_date": "2026-07-08",
+"transaction_date": "2026-06-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "MA",
+"filing_date": "2026-07-08",
+"transaction_date": "2026-06-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "MA",
+"filing_date": "2026-07-08",
+"transaction_date": "2026-06-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "MA",
+"filing_date": "2026-05-04",
+"transaction_date": "2026-04-28",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "V",
+"filing_date": "2026-05-04",
+"transaction_date": "2026-04-27",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "MA",
+"filing_date": "2026-05-04",
+"transaction_date": "2026-04-17",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "META",
+"filing_date": "2026-05-04",
+"transaction_date": "2026-04-17",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "MA",
+"filing_date": "2026-05-04",
+"transaction_date": "2026-04-01",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "ASML",
+"filing_date": "2026-04-08",
+"transaction_date": "2026-03-31",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "AMZN",
+"filing_date": "2026-04-08",
+"transaction_date": "2026-03-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "MA",
+"filing_date": "2026-04-08",
+"transaction_date": "2026-03-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "MA",
+"filing_date": "2026-04-08",
+"transaction_date": "2026-03-02",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "ORCL",
+"filing_date": "2026-03-10",
+"transaction_date": "2026-02-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "NFLX",
+"filing_date": "2026-03-10",
+"transaction_date": "2026-02-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "META",
+"filing_date": "2026-03-10",
+"transaction_date": "2026-02-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "NFLX",
+"filing_date": "2026-03-10",
+"transaction_date": "2026-02-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "META",
+"filing_date": "2026-03-10",
+"transaction_date": "2026-02-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "ORCL",
+"filing_date": "2026-03-10",
+"transaction_date": "2026-02-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelt_mccaul",
+"filer": "Michael T. McCaul",
+"ticker": "NFLX",
+"filing_date": "2026-03-10",
+"transaction_date": "2026-02-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "HD",
+"filing_date": "2021-08-15",
+"transaction_date": "2021-07-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "MSFT",
+"filing_date": "2021-08-15",
+"transaction_date": "2021-07-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "V",
+"filing_date": "2021-08-15",
+"transaction_date": "2021-07-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "INTC",
+"filing_date": "2020-12-28",
+"transaction_date": "2020-11-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "MA",
+"filing_date": "2020-12-28",
+"transaction_date": "2020-11-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "ORCL",
+"filing_date": "2020-12-28",
+"transaction_date": "2020-11-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "SBUX",
+"filing_date": "2020-12-28",
+"transaction_date": "2020-11-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "COST",
+"filing_date": "2020-12-03",
+"transaction_date": "2020-10-22",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "GOOGL",
+"filing_date": "2020-05-29",
+"transaction_date": "2020-04-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "AAPL",
+"filing_date": "2020-05-29",
+"transaction_date": "2020-04-03",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "TSM",
+"filing_date": "2019-06-26",
+"transaction_date": "2019-05-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "INTC",
+"filing_date": "2018-11-19",
+"transaction_date": "2018-10-01",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "SBUX",
+"filing_date": "2018-11-19",
+"transaction_date": "2018-10-01",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "AMGN",
+"filing_date": "2017-05-25",
+"transaction_date": "2016-10-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "AAPL",
+"filing_date": "2017-05-25",
+"transaction_date": "2016-10-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "GE",
+"filing_date": "2017-05-25",
+"transaction_date": "2016-10-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "HD",
+"filing_date": "2017-05-25",
+"transaction_date": "2016-10-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "JPM",
+"filing_date": "2017-05-25",
+"transaction_date": "2016-10-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "MSFT",
+"filing_date": "2017-05-25",
+"transaction_date": "2016-10-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "NKE",
+"filing_date": "2017-05-25",
+"transaction_date": "2016-10-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "ORCL",
+"filing_date": "2017-05-25",
+"transaction_date": "2016-10-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "SBUX",
+"filing_date": "2017-05-25",
+"transaction_date": "2016-10-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "UNH",
+"filing_date": "2017-05-25",
+"transaction_date": "2016-10-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "V",
+"filing_date": "2017-05-25",
+"transaction_date": "2016-10-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "F",
+"filing_date": "2016-02-18",
+"transaction_date": "2016-01-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "AAPL",
+"filing_date": "2015-05-11",
+"transaction_date": "2015-04-28",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "INTC",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-11-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "INTC",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-10-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "UPS",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-10-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "TXN",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-10-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "HD",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-09-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "JPM",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-09-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "LLY",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-09-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "LLY",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-08-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "HD",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-08-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "LLY",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-08-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "DIS",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-08-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "LMT",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-07-30",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "MSFT",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-07-22",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "AAPL",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-06-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "AAPL",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-05-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "BA",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-05-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "TXN",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-05-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "CVX",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-04-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "AMGN",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-03-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "QCOM",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-03-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "JPM",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-02-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_katherinem_clark",
+"filer": "Katherine M. Clark",
+"ticker": "AMGN",
+"filing_date": "2014-12-19",
+"transaction_date": "2014-02-20",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -23807,158 +23959,6 @@
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "MA",
-"filing_date": "2026-07-08",
-"transaction_date": "2026-06-29",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "MA",
-"filing_date": "2026-07-08",
-"transaction_date": "2026-06-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "MA",
-"filing_date": "2026-07-08",
-"transaction_date": "2026-06-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "MA",
-"filing_date": "2026-05-04",
-"transaction_date": "2026-04-28",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "V",
-"filing_date": "2026-05-04",
-"transaction_date": "2026-04-27",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "MA",
-"filing_date": "2026-05-04",
-"transaction_date": "2026-04-17",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "META",
-"filing_date": "2026-05-04",
-"transaction_date": "2026-04-17",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "MA",
-"filing_date": "2026-05-04",
-"transaction_date": "2026-04-01",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "ASML",
-"filing_date": "2026-04-08",
-"transaction_date": "2026-03-31",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "AMZN",
-"filing_date": "2026-04-08",
-"transaction_date": "2026-03-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "MA",
-"filing_date": "2026-04-08",
-"transaction_date": "2026-03-17",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "MA",
-"filing_date": "2026-04-08",
-"transaction_date": "2026-03-02",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "ORCL",
-"filing_date": "2026-03-10",
-"transaction_date": "2026-02-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "NFLX",
-"filing_date": "2026-03-10",
-"transaction_date": "2026-02-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "META",
-"filing_date": "2026-03-10",
-"transaction_date": "2026-02-20",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "NFLX",
-"filing_date": "2026-03-10",
-"transaction_date": "2026-02-17",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "META",
-"filing_date": "2026-03-10",
-"transaction_date": "2026-02-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "ORCL",
-"filing_date": "2026-03-10",
-"transaction_date": "2026-02-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelt_mccaul",
-"filer": "Michael T. McCaul",
-"ticker": "NFLX",
-"filing_date": "2026-03-10",
-"transaction_date": "2026-02-05",
-"amount_label": "$1,001 - $15,000"
-},
-{
 "filer_id": "house_greg_stanton",
 "filer": "Greg Stanton",
 "ticker": "ADBE",
@@ -24300,6 +24300,262 @@
 "ticker": "DIS",
 "filing_date": "2023-11-09",
 "transaction_date": "2023-09-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "MRVL",
+"filing_date": "2025-02-11",
+"transaction_date": "2025-01-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "PLTR",
+"filing_date": "2025-02-11",
+"transaction_date": "2025-01-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "AMZN",
+"filing_date": "2025-01-10",
+"transaction_date": "2025-01-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "AAPL",
+"filing_date": "2025-01-10",
+"transaction_date": "2025-01-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "AVGO",
+"filing_date": "2025-01-10",
+"transaction_date": "2025-01-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "COST",
+"filing_date": "2025-01-10",
+"transaction_date": "2025-01-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "HD",
+"filing_date": "2025-01-10",
+"transaction_date": "2025-01-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "MSFT",
+"filing_date": "2025-01-10",
+"transaction_date": "2025-01-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "NFLX",
+"filing_date": "2025-01-10",
+"transaction_date": "2025-01-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "NVDA",
+"filing_date": "2025-01-10",
+"transaction_date": "2025-01-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "PYPL",
+"filing_date": "2025-01-10",
+"transaction_date": "2025-01-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "CRM",
+"filing_date": "2025-01-10",
+"transaction_date": "2025-01-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "SOFI",
+"filing_date": "2025-01-10",
+"transaction_date": "2025-01-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_james_comer",
+"filer": "James Comer",
+"ticker": "UBER",
+"filing_date": "2025-01-10",
+"transaction_date": "2025-01-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "LLY",
+"filing_date": "2026-01-26",
+"transaction_date": "2025-12-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "UBER",
+"filing_date": "2025-08-18",
+"transaction_date": "2025-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "PYPL",
+"filing_date": "2025-08-18",
+"transaction_date": "2025-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "NVDA",
+"filing_date": "2025-08-18",
+"transaction_date": "2025-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "NFLX",
+"filing_date": "2025-08-18",
+"transaction_date": "2025-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "MSFT",
+"filing_date": "2025-08-18",
+"transaction_date": "2025-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "META",
+"filing_date": "2025-08-18",
+"transaction_date": "2025-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "MRVL",
+"filing_date": "2025-08-18",
+"transaction_date": "2025-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "JPM",
+"filing_date": "2025-08-18",
+"transaction_date": "2025-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "XOM",
+"filing_date": "2025-08-18",
+"transaction_date": "2025-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "BAC",
+"filing_date": "2025-08-18",
+"transaction_date": "2025-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "GOOGL",
+"filing_date": "2025-08-18",
+"transaction_date": "2025-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "AMD",
+"filing_date": "2025-08-18",
+"transaction_date": "2025-07-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "ADBE",
+"filing_date": "2021-07-28",
+"transaction_date": "2021-06-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "AMZN",
+"filing_date": "2019-02-26",
+"transaction_date": "2019-01-31",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "SLB",
+"filing_date": "2017-12-20",
+"transaction_date": "2017-11-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "COP",
+"filing_date": "2017-12-20",
+"transaction_date": "2017-11-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "senate_anguss_kingjr",
+"filer": "Angus S King",
+"ticker": "UNH",
+"filing_date": "2014-05-13",
+"transaction_date": "2014-04-28",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -24719,259 +24975,107 @@
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_james_comer",
-"filer": "James Comer",
-"ticker": "MRVL",
-"filing_date": "2025-02-11",
-"transaction_date": "2025-01-21",
-"amount_label": "$1,001 - $15,000"
+"filer_id": "house_michael_garcia",
+"filer": "Michael Garcia",
+"ticker": "TSLA",
+"filing_date": "2022-10-25",
+"transaction_date": "2022-09-29",
+"amount_label": "$50,001 - $100,000"
 },
 {
-"filer_id": "house_james_comer",
-"filer": "James Comer",
-"ticker": "PLTR",
-"filing_date": "2025-02-11",
-"transaction_date": "2025-01-21",
-"amount_label": "$1,001 - $15,000"
+"filer_id": "house_michael_garcia",
+"filer": "Michael Garcia",
+"ticker": "TSLA",
+"filing_date": "2022-02-23",
+"transaction_date": "2022-02-23",
+"amount_label": "$15,001 - $50,000"
 },
 {
-"filer_id": "house_james_comer",
-"filer": "James Comer",
-"ticker": "AMZN",
-"filing_date": "2025-01-10",
-"transaction_date": "2025-01-02",
-"amount_label": "$1,001 - $15,000"
+"filer_id": "house_michael_garcia",
+"filer": "Michael Garcia",
+"ticker": "TSLA",
+"filing_date": "2022-02-23",
+"transaction_date": "2022-01-25",
+"amount_label": "$15,001 - $50,000"
 },
 {
-"filer_id": "house_james_comer",
-"filer": "James Comer",
+"filer_id": "house_michael_garcia",
+"filer": "Michael Garcia",
+"ticker": "TSLA",
+"filing_date": "2021-05-03",
+"transaction_date": "2021-04-28",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michael_garcia",
+"filer": "Michael Garcia",
+"ticker": "GLD",
+"filing_date": "2021-05-03",
+"transaction_date": "2021-04-12",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michael_garcia",
+"filer": "Michael Garcia",
+"ticker": "TSLA",
+"filing_date": "2021-05-03",
+"transaction_date": "2021-04-12",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michael_garcia",
+"filer": "Michael Garcia",
 "ticker": "AAPL",
-"filing_date": "2025-01-10",
-"transaction_date": "2025-01-02",
+"filing_date": "2020-12-02",
+"transaction_date": "2020-11-24",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michael_garcia",
+"filer": "Michael Garcia",
+"ticker": "TSLA",
+"filing_date": "2020-11-23",
+"transaction_date": "2020-11-17",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michael_garcia",
+"filer": "Michael Garcia",
+"ticker": "TSLA",
+"filing_date": "2020-11-23",
+"transaction_date": "2020-11-13",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michael_garcia",
+"filer": "Michael Garcia",
+"ticker": "FAS",
+"filing_date": "2020-11-23",
+"transaction_date": "2020-10-26",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michael_garcia",
+"filer": "Michael Garcia",
+"ticker": "TSLA",
+"filing_date": "2020-11-23",
+"transaction_date": "2020-10-26",
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_james_comer",
-"filer": "James Comer",
-"ticker": "AVGO",
-"filing_date": "2025-01-10",
-"transaction_date": "2025-01-02",
-"amount_label": "$1,001 - $15,000"
+"filer_id": "house_michael_garcia",
+"filer": "Michael Garcia",
+"ticker": "TSLA",
+"filing_date": "2020-11-23",
+"transaction_date": "2020-09-04",
+"amount_label": "$15,001 - $50,000"
 },
 {
-"filer_id": "house_james_comer",
-"filer": "James Comer",
-"ticker": "COST",
-"filing_date": "2025-01-10",
-"transaction_date": "2025-01-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_james_comer",
-"filer": "James Comer",
-"ticker": "HD",
-"filing_date": "2025-01-10",
-"transaction_date": "2025-01-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_james_comer",
-"filer": "James Comer",
-"ticker": "MSFT",
-"filing_date": "2025-01-10",
-"transaction_date": "2025-01-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_james_comer",
-"filer": "James Comer",
-"ticker": "NFLX",
-"filing_date": "2025-01-10",
-"transaction_date": "2025-01-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_james_comer",
-"filer": "James Comer",
-"ticker": "NVDA",
-"filing_date": "2025-01-10",
-"transaction_date": "2025-01-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_james_comer",
-"filer": "James Comer",
-"ticker": "PYPL",
-"filing_date": "2025-01-10",
-"transaction_date": "2025-01-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_james_comer",
-"filer": "James Comer",
-"ticker": "CRM",
-"filing_date": "2025-01-10",
-"transaction_date": "2025-01-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_james_comer",
-"filer": "James Comer",
-"ticker": "SOFI",
-"filing_date": "2025-01-10",
-"transaction_date": "2025-01-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_james_comer",
-"filer": "James Comer",
-"ticker": "UBER",
-"filing_date": "2025-01-10",
-"transaction_date": "2025-01-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "LLY",
-"filing_date": "2026-01-26",
-"transaction_date": "2025-12-29",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "UBER",
-"filing_date": "2025-08-18",
-"transaction_date": "2025-07-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "PYPL",
-"filing_date": "2025-08-18",
-"transaction_date": "2025-07-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "NVDA",
-"filing_date": "2025-08-18",
-"transaction_date": "2025-07-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "NFLX",
-"filing_date": "2025-08-18",
-"transaction_date": "2025-07-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "MSFT",
-"filing_date": "2025-08-18",
-"transaction_date": "2025-07-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "META",
-"filing_date": "2025-08-18",
-"transaction_date": "2025-07-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "MRVL",
-"filing_date": "2025-08-18",
-"transaction_date": "2025-07-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "JPM",
-"filing_date": "2025-08-18",
-"transaction_date": "2025-07-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "XOM",
-"filing_date": "2025-08-18",
-"transaction_date": "2025-07-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "BAC",
-"filing_date": "2025-08-18",
-"transaction_date": "2025-07-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "GOOGL",
-"filing_date": "2025-08-18",
-"transaction_date": "2025-07-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "AMD",
-"filing_date": "2025-08-18",
-"transaction_date": "2025-07-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "ADBE",
-"filing_date": "2021-07-28",
-"transaction_date": "2021-06-24",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "AMZN",
-"filing_date": "2019-02-26",
-"transaction_date": "2019-01-31",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "SLB",
-"filing_date": "2017-12-20",
-"transaction_date": "2017-11-28",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "COP",
-"filing_date": "2017-12-20",
-"transaction_date": "2017-11-28",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "senate_anguss_kingjr",
-"filer": "Angus S King",
-"ticker": "UNH",
-"filing_date": "2014-05-13",
-"transaction_date": "2014-04-28",
+"filer_id": "house_michael_garcia",
+"filer": "Michael Garcia",
+"ticker": "FAS",
+"filing_date": "2020-11-23",
+"transaction_date": "2020-07-09",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -25532,110 +25636,6 @@
 "ticker": "JPM",
 "filing_date": "2023-09-18",
 "transaction_date": "2023-04-03",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michael_garcia",
-"filer": "Michael Garcia",
-"ticker": "TSLA",
-"filing_date": "2022-10-25",
-"transaction_date": "2022-09-29",
-"amount_label": "$50,001 - $100,000"
-},
-{
-"filer_id": "house_michael_garcia",
-"filer": "Michael Garcia",
-"ticker": "TSLA",
-"filing_date": "2022-02-23",
-"transaction_date": "2022-02-23",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michael_garcia",
-"filer": "Michael Garcia",
-"ticker": "TSLA",
-"filing_date": "2022-02-23",
-"transaction_date": "2022-01-25",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michael_garcia",
-"filer": "Michael Garcia",
-"ticker": "TSLA",
-"filing_date": "2021-05-03",
-"transaction_date": "2021-04-28",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michael_garcia",
-"filer": "Michael Garcia",
-"ticker": "GLD",
-"filing_date": "2021-05-03",
-"transaction_date": "2021-04-12",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michael_garcia",
-"filer": "Michael Garcia",
-"ticker": "TSLA",
-"filing_date": "2021-05-03",
-"transaction_date": "2021-04-12",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michael_garcia",
-"filer": "Michael Garcia",
-"ticker": "AAPL",
-"filing_date": "2020-12-02",
-"transaction_date": "2020-11-24",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michael_garcia",
-"filer": "Michael Garcia",
-"ticker": "TSLA",
-"filing_date": "2020-11-23",
-"transaction_date": "2020-11-17",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michael_garcia",
-"filer": "Michael Garcia",
-"ticker": "TSLA",
-"filing_date": "2020-11-23",
-"transaction_date": "2020-11-13",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michael_garcia",
-"filer": "Michael Garcia",
-"ticker": "FAS",
-"filing_date": "2020-11-23",
-"transaction_date": "2020-10-26",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michael_garcia",
-"filer": "Michael Garcia",
-"ticker": "TSLA",
-"filing_date": "2020-11-23",
-"transaction_date": "2020-10-26",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michael_garcia",
-"filer": "Michael Garcia",
-"ticker": "TSLA",
-"filing_date": "2020-11-23",
-"transaction_date": "2020-09-04",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michael_garcia",
-"filer": "Michael Garcia",
-"ticker": "FAS",
-"filing_date": "2020-11-23",
-"transaction_date": "2020-07-09",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -29303,6 +29303,134 @@
 "amount_label": "$1,001 - $15,000"
 },
 {
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "MRNA",
+"filing_date": "2026-09-09",
+"transaction_date": "2026-08-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "CRM",
+"filing_date": "2026-07-07",
+"transaction_date": "2026-06-02",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "DDOG",
+"filing_date": "2026-06-08",
+"transaction_date": "2026-05-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "DDOG",
+"filing_date": "2026-06-08",
+"transaction_date": "2026-05-19",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "QCOM",
+"filing_date": "2026-06-08",
+"transaction_date": "2026-05-13",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "QCOM",
+"filing_date": "2026-06-08",
+"transaction_date": "2026-05-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "UNH",
+"filing_date": "2026-05-08",
+"transaction_date": "2026-04-22",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "MSFT",
+"filing_date": "2026-05-08",
+"transaction_date": "2026-04-17",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "MRVL",
+"filing_date": "2026-05-08",
+"transaction_date": "2026-04-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "CRM",
+"filing_date": "2026-05-08",
+"transaction_date": "2026-04-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "AMGN",
+"filing_date": "2026-04-21",
+"transaction_date": "2026-03-24",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "GE",
+"filing_date": "2026-04-21",
+"transaction_date": "2026-03-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "BA",
+"filing_date": "2026-04-21",
+"transaction_date": "2026-03-19",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "BA",
+"filing_date": "2026-04-21",
+"transaction_date": "2026-03-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "GS",
+"filing_date": "2026-04-21",
+"transaction_date": "2026-03-19",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_mariaelvira_salazar",
+"filer": "Maria Elvira Salazar",
+"ticker": "OXY",
+"filing_date": "2024-11-11",
+"transaction_date": "2024-10-25",
+"amount_label": "$15,001 - $50,000"
+},
+{
 "filer_id": "house_julie_johnson",
 "filer": "Julie Johnson",
 "ticker": "BA",
@@ -29437,134 +29565,6 @@
 "filing_date": "2025-02-12",
 "transaction_date": "2025-01-15",
 "amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "MRNA",
-"filing_date": "2026-09-09",
-"transaction_date": "2026-08-19",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "CRM",
-"filing_date": "2026-07-07",
-"transaction_date": "2026-06-02",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "DDOG",
-"filing_date": "2026-06-08",
-"transaction_date": "2026-05-19",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "DDOG",
-"filing_date": "2026-06-08",
-"transaction_date": "2026-05-19",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "QCOM",
-"filing_date": "2026-06-08",
-"transaction_date": "2026-05-13",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "QCOM",
-"filing_date": "2026-06-08",
-"transaction_date": "2026-05-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "UNH",
-"filing_date": "2026-05-08",
-"transaction_date": "2026-04-22",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "MSFT",
-"filing_date": "2026-05-08",
-"transaction_date": "2026-04-17",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "MRVL",
-"filing_date": "2026-05-08",
-"transaction_date": "2026-04-06",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "CRM",
-"filing_date": "2026-05-08",
-"transaction_date": "2026-04-06",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "AMGN",
-"filing_date": "2026-04-21",
-"transaction_date": "2026-03-24",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "GE",
-"filing_date": "2026-04-21",
-"transaction_date": "2026-03-24",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "BA",
-"filing_date": "2026-04-21",
-"transaction_date": "2026-03-19",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "BA",
-"filing_date": "2026-04-21",
-"transaction_date": "2026-03-19",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "GS",
-"filing_date": "2026-04-21",
-"transaction_date": "2026-03-19",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_mariaelvira_salazar",
-"filer": "Maria Elvira Salazar",
-"ticker": "OXY",
-"filing_date": "2024-11-11",
-"transaction_date": "2024-10-25",
-"amount_label": "$15,001 - $50,000"
 },
 {
 "filer_id": "house_byron_donalds",
@@ -32663,6 +32663,22 @@
 "amount_label": "$1,001 - $15,000"
 },
 {
+"filer_id": "house_susana_davis",
+"filer": "Susan A. Davis",
+"ticker": "F",
+"filing_date": "2020-11-30",
+"transaction_date": "2020-10-28",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_susana_davis",
+"filer": "Susan A. Davis",
+"ticker": "QCOM",
+"filing_date": "2016-02-22",
+"transaction_date": "2016-01-25",
+"amount_label": "$1,001 - $15,000"
+},
+{
 "filer_id": "house_earl_blumenauer",
 "filer": "Earl Blumenauer",
 "ticker": "BAC",
@@ -33167,19 +33183,51 @@
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_susana_davis",
-"filer": "Susan A. Davis",
-"ticker": "F",
-"filing_date": "2020-11-30",
-"transaction_date": "2020-10-28",
-"amount_label": "$15,001 - $50,000"
+"filer_id": "house_susie_lee",
+"filer": "Susie Lee",
+"ticker": "MRVL",
+"filing_date": "2021-05-10",
+"transaction_date": "2021-04-26",
+"amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_susana_davis",
-"filer": "Susan A. Davis",
-"ticker": "QCOM",
-"filing_date": "2016-02-22",
-"transaction_date": "2016-01-25",
+"filer_id": "house_susie_lee",
+"filer": "Susie Lee",
+"ticker": "CRWD",
+"filing_date": "2021-02-10",
+"transaction_date": "2021-01-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_susie_lee",
+"filer": "Susie Lee",
+"ticker": "SBUX",
+"filing_date": "2020-06-15",
+"transaction_date": "2020-05-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_susie_lee",
+"filer": "Susie Lee",
+"ticker": "MRVL",
+"filing_date": "2020-01-16",
+"transaction_date": "2019-11-08",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_susie_lee",
+"filer": "Susie Lee",
+"ticker": "MRVL",
+"filing_date": "2019-12-05",
+"transaction_date": "2019-10-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_susie_lee",
+"filer": "Susie Lee",
+"ticker": "FANG",
+"filing_date": "2019-10-21",
+"transaction_date": "2019-09-16",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -33308,54 +33356,6 @@
 "ticker": "UNH",
 "filing_date": "2025-08-20",
 "transaction_date": "2024-09-26",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_susie_lee",
-"filer": "Susie Lee",
-"ticker": "MRVL",
-"filing_date": "2021-05-10",
-"transaction_date": "2021-04-26",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_susie_lee",
-"filer": "Susie Lee",
-"ticker": "CRWD",
-"filing_date": "2021-02-10",
-"transaction_date": "2021-01-28",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_susie_lee",
-"filer": "Susie Lee",
-"ticker": "SBUX",
-"filing_date": "2020-06-15",
-"transaction_date": "2020-05-08",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_susie_lee",
-"filer": "Susie Lee",
-"ticker": "MRVL",
-"filing_date": "2020-01-16",
-"transaction_date": "2019-11-08",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_susie_lee",
-"filer": "Susie Lee",
-"ticker": "MRVL",
-"filing_date": "2019-12-05",
-"transaction_date": "2019-10-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_susie_lee",
-"filer": "Susie Lee",
-"ticker": "FANG",
-"filing_date": "2019-10-21",
-"transaction_date": "2019-09-16",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -34020,54 +34020,6 @@
 "ticker": "GE",
 "filing_date": "2014-09-29",
 "transaction_date": "2014-09-26",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_lamar_smith",
-"filer": "Lamar Smith",
-"ticker": "COST",
-"filing_date": "2019-01-10",
-"transaction_date": "2018-12-19",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_lamar_smith",
-"filer": "Lamar Smith",
-"ticker": "AMZN",
-"filing_date": "2018-11-08",
-"transaction_date": "2018-10-17",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_lamar_smith",
-"filer": "Lamar Smith",
-"ticker": "GOOGL",
-"filing_date": "2018-09-07",
-"transaction_date": "2018-08-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_lamar_smith",
-"filer": "Lamar Smith",
-"ticker": "GOOGL",
-"filing_date": "2018-06-11",
-"transaction_date": "2018-05-08",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_lamar_smith",
-"filer": "Lamar Smith",
-"ticker": "GOOGL",
-"filing_date": "2017-07-12",
-"transaction_date": "2017-06-30",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_lamar_smith",
-"filer": "Lamar Smith",
-"ticker": "META",
-"filing_date": "2015-08-11",
-"transaction_date": "2015-07-31",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -35175,547 +35127,51 @@
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "XOM",
-"filing_date": "2024-01-22",
-"transaction_date": "2024-01-02",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "UPS",
-"filing_date": "2024-01-08",
-"transaction_date": "2023-12-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "UPS",
-"filing_date": "2024-01-08",
-"transaction_date": "2023-12-14",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "AMD",
-"filing_date": "2023-09-06",
-"transaction_date": "2023-08-09",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "UPS",
-"filing_date": "2023-09-06",
-"transaction_date": "2023-08-09",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "UPS",
-"filing_date": "2023-09-05",
-"transaction_date": "2023-08-09",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "GOOGL",
-"filing_date": "2023-07-18",
-"transaction_date": "2023-07-06",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "AMZN",
-"filing_date": "2023-07-18",
-"transaction_date": "2023-07-06",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "AMGN",
-"filing_date": "2023-04-14",
-"transaction_date": "2023-04-05",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "MSFT",
-"filing_date": "2023-03-03",
-"transaction_date": "2023-02-24",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "DIS",
-"filing_date": "2022-12-08",
-"transaction_date": "2022-11-16",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "MS",
-"filing_date": "2022-11-02",
-"transaction_date": "2022-10-07",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "AMZN",
-"filing_date": "2022-06-27",
-"transaction_date": "2022-06-14",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "F",
-"filing_date": "2022-03-03",
-"transaction_date": "2022-02-09",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "MSFT",
-"filing_date": "2021-12-31",
-"transaction_date": "2021-12-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_michaelc_burgess",
-"filer": "Michael C. Burgess",
-"ticker": "DIS",
-"filing_date": "2021-12-31",
-"transaction_date": "2021-12-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mikie_sherrill",
-"filer": "Mikie Sherrill",
-"ticker": "XOM",
-"filing_date": "2020-02-19",
-"transaction_date": "2020-01-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mikie_sherrill",
-"filer": "Mikie Sherrill",
-"ticker": "GILD",
-"filing_date": "2020-02-19",
-"transaction_date": "2020-01-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mikie_sherrill",
-"filer": "Mikie Sherrill",
-"ticker": "PFE",
-"filing_date": "2020-02-19",
-"transaction_date": "2020-01-21",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mikie_sherrill",
-"filer": "Mikie Sherrill",
-"ticker": "AMZN",
-"filing_date": "2020-02-19",
-"transaction_date": "2020-01-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mikie_sherrill",
-"filer": "Mikie Sherrill",
-"ticker": "REGN",
-"filing_date": "2020-02-19",
-"transaction_date": "2020-01-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mikie_sherrill",
-"filer": "Mikie Sherrill",
-"ticker": "SLB",
-"filing_date": "2020-02-19",
-"transaction_date": "2020-01-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mikie_sherrill",
-"filer": "Mikie Sherrill",
-"ticker": "XOM",
-"filing_date": "2019-07-08",
-"transaction_date": "2019-06-17",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_mikie_sherrill",
-"filer": "Mikie Sherrill",
-"ticker": "CVX",
-"filing_date": "2019-05-15",
-"transaction_date": "2019-04-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "JPM",
-"filing_date": "2023-06-09",
-"transaction_date": "2023-05-30",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "XOM",
-"filing_date": "2023-05-07",
-"transaction_date": "2023-04-20",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "MA",
-"filing_date": "2023-08-13",
-"transaction_date": "2022-12-07",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "MA",
-"filing_date": "2023-01-05",
-"transaction_date": "2022-12-07",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "AMZN",
-"filing_date": "2022-12-08",
-"transaction_date": "2022-11-18",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "AAPL",
-"filing_date": "2022-12-08",
-"transaction_date": "2022-11-17",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "AMZN",
-"filing_date": "2022-09-10",
-"transaction_date": "2022-08-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "MSFT",
-"filing_date": "2022-09-10",
-"transaction_date": "2022-08-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "WMT",
-"filing_date": "2022-08-10",
-"transaction_date": "2022-07-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "AMZN",
-"filing_date": "2022-07-08",
-"transaction_date": "2022-06-16",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "WMT",
-"filing_date": "2022-07-08",
-"transaction_date": "2022-06-16",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "JPM",
-"filing_date": "2022-06-04",
-"transaction_date": "2022-05-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "JPM",
-"filing_date": "2022-06-04",
-"transaction_date": "2022-05-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "CAT",
-"filing_date": "2022-04-09",
-"transaction_date": "2022-03-29",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "GE",
-"filing_date": "2022-04-09",
-"transaction_date": "2022-03-29",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "MA",
-"filing_date": "2022-03-09",
-"transaction_date": "2022-02-28",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "AAPL",
-"filing_date": "2022-02-13",
-"transaction_date": "2022-01-28",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "META",
-"filing_date": "2022-02-13",
-"transaction_date": "2022-01-28",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "SBUX",
-"filing_date": "2022-01-09",
-"transaction_date": "2021-12-16",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "WMT",
-"filing_date": "2022-01-09",
-"transaction_date": "2021-12-14",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "AVGO",
-"filing_date": "2021-05-12",
-"transaction_date": "2021-04-22",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "GE",
-"filing_date": "2021-04-12",
-"transaction_date": "2021-03-31",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "CAT",
-"filing_date": "2021-02-22",
-"transaction_date": "2021-01-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "AXP",
-"filing_date": "2020-11-19",
-"transaction_date": "2020-10-16",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "MSFT",
-"filing_date": "2020-11-19",
-"transaction_date": "2020-10-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
+"filer_id": "house_lamar_smith",
+"filer": "Lamar Smith",
 "ticker": "COST",
-"filing_date": "2021-01-26",
-"transaction_date": "2020-07-02",
+"filing_date": "2019-01-10",
+"transaction_date": "2018-12-19",
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "HD",
-"filing_date": "2021-01-26",
-"transaction_date": "2020-07-02",
+"filer_id": "house_lamar_smith",
+"filer": "Lamar Smith",
+"ticker": "AMZN",
+"filing_date": "2018-11-08",
+"transaction_date": "2018-10-17",
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "V",
-"filing_date": "2021-01-26",
-"transaction_date": "2020-07-02",
+"filer_id": "house_lamar_smith",
+"filer": "Lamar Smith",
+"ticker": "GOOGL",
+"filing_date": "2018-09-07",
+"transaction_date": "2018-08-10",
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "XOM",
-"filing_date": "2020-06-08",
-"transaction_date": "2020-05-21",
+"filer_id": "house_lamar_smith",
+"filer": "Lamar Smith",
+"ticker": "GOOGL",
+"filing_date": "2018-06-11",
+"transaction_date": "2018-05-08",
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "MCD",
-"filing_date": "2020-05-14",
-"transaction_date": "2020-04-06",
+"filer_id": "house_lamar_smith",
+"filer": "Lamar Smith",
+"ticker": "GOOGL",
+"filing_date": "2017-07-12",
+"transaction_date": "2017-06-30",
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "TGT",
-"filing_date": "2020-04-13",
-"transaction_date": "2020-03-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "SBUX",
-"filing_date": "2019-10-16",
-"transaction_date": "2019-09-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "UPS",
-"filing_date": "2019-10-16",
-"transaction_date": "2019-09-04",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "AXP",
-"filing_date": "2019-09-18",
-"transaction_date": "2019-08-14",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "SLB",
-"filing_date": "2019-02-07",
-"transaction_date": "2019-01-22",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "AAPL",
-"filing_date": "2019-01-11",
-"transaction_date": "2018-12-31",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "BA",
-"filing_date": "2016-07-06",
-"transaction_date": "2016-04-20",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "AAPL",
-"filing_date": "2015-10-15",
-"transaction_date": "2015-09-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "BA",
-"filing_date": "2015-10-15",
-"transaction_date": "2015-09-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "CVX",
-"filing_date": "2015-10-15",
-"transaction_date": "2015-09-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "JPM",
-"filing_date": "2015-10-15",
-"transaction_date": "2015-09-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "MSFT",
-"filing_date": "2015-10-15",
-"transaction_date": "2015-09-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "PFE",
-"filing_date": "2015-10-15",
-"transaction_date": "2015-09-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_robertj_wittman",
-"filer": "Robert J. Wittman",
-"ticker": "UNH",
-"filing_date": "2015-10-15",
-"transaction_date": "2015-09-15",
+"filer_id": "house_lamar_smith",
+"filer": "Lamar Smith",
+"ticker": "META",
+"filing_date": "2015-08-11",
+"transaction_date": "2015-07-31",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -37167,6 +36623,550 @@
 "amount_label": "$50,001 - $100,000"
 },
 {
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "XOM",
+"filing_date": "2024-01-22",
+"transaction_date": "2024-01-02",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "UPS",
+"filing_date": "2024-01-08",
+"transaction_date": "2023-12-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "UPS",
+"filing_date": "2024-01-08",
+"transaction_date": "2023-12-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "AMD",
+"filing_date": "2023-09-06",
+"transaction_date": "2023-08-09",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "UPS",
+"filing_date": "2023-09-06",
+"transaction_date": "2023-08-09",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "UPS",
+"filing_date": "2023-09-05",
+"transaction_date": "2023-08-09",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "GOOGL",
+"filing_date": "2023-07-18",
+"transaction_date": "2023-07-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "AMZN",
+"filing_date": "2023-07-18",
+"transaction_date": "2023-07-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "AMGN",
+"filing_date": "2023-04-14",
+"transaction_date": "2023-04-05",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "MSFT",
+"filing_date": "2023-03-03",
+"transaction_date": "2023-02-24",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "DIS",
+"filing_date": "2022-12-08",
+"transaction_date": "2022-11-16",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "MS",
+"filing_date": "2022-11-02",
+"transaction_date": "2022-10-07",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "AMZN",
+"filing_date": "2022-06-27",
+"transaction_date": "2022-06-14",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "F",
+"filing_date": "2022-03-03",
+"transaction_date": "2022-02-09",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "MSFT",
+"filing_date": "2021-12-31",
+"transaction_date": "2021-12-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_michaelc_burgess",
+"filer": "Michael C. Burgess",
+"ticker": "DIS",
+"filing_date": "2021-12-31",
+"transaction_date": "2021-12-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mikie_sherrill",
+"filer": "Mikie Sherrill",
+"ticker": "XOM",
+"filing_date": "2020-02-19",
+"transaction_date": "2020-01-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mikie_sherrill",
+"filer": "Mikie Sherrill",
+"ticker": "GILD",
+"filing_date": "2020-02-19",
+"transaction_date": "2020-01-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mikie_sherrill",
+"filer": "Mikie Sherrill",
+"ticker": "PFE",
+"filing_date": "2020-02-19",
+"transaction_date": "2020-01-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mikie_sherrill",
+"filer": "Mikie Sherrill",
+"ticker": "AMZN",
+"filing_date": "2020-02-19",
+"transaction_date": "2020-01-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mikie_sherrill",
+"filer": "Mikie Sherrill",
+"ticker": "REGN",
+"filing_date": "2020-02-19",
+"transaction_date": "2020-01-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mikie_sherrill",
+"filer": "Mikie Sherrill",
+"ticker": "SLB",
+"filing_date": "2020-02-19",
+"transaction_date": "2020-01-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mikie_sherrill",
+"filer": "Mikie Sherrill",
+"ticker": "XOM",
+"filing_date": "2019-07-08",
+"transaction_date": "2019-06-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_mikie_sherrill",
+"filer": "Mikie Sherrill",
+"ticker": "CVX",
+"filing_date": "2019-05-15",
+"transaction_date": "2019-04-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "JPM",
+"filing_date": "2023-06-09",
+"transaction_date": "2023-05-30",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "XOM",
+"filing_date": "2023-05-07",
+"transaction_date": "2023-04-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "MA",
+"filing_date": "2023-08-13",
+"transaction_date": "2022-12-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "MA",
+"filing_date": "2023-01-05",
+"transaction_date": "2022-12-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "AMZN",
+"filing_date": "2022-12-08",
+"transaction_date": "2022-11-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "AAPL",
+"filing_date": "2022-12-08",
+"transaction_date": "2022-11-17",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "AMZN",
+"filing_date": "2022-09-10",
+"transaction_date": "2022-08-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "MSFT",
+"filing_date": "2022-09-10",
+"transaction_date": "2022-08-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "WMT",
+"filing_date": "2022-08-10",
+"transaction_date": "2022-07-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "AMZN",
+"filing_date": "2022-07-08",
+"transaction_date": "2022-06-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "WMT",
+"filing_date": "2022-07-08",
+"transaction_date": "2022-06-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "JPM",
+"filing_date": "2022-06-04",
+"transaction_date": "2022-05-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "JPM",
+"filing_date": "2022-06-04",
+"transaction_date": "2022-05-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "CAT",
+"filing_date": "2022-04-09",
+"transaction_date": "2022-03-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "GE",
+"filing_date": "2022-04-09",
+"transaction_date": "2022-03-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "MA",
+"filing_date": "2022-03-09",
+"transaction_date": "2022-02-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "AAPL",
+"filing_date": "2022-02-13",
+"transaction_date": "2022-01-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "META",
+"filing_date": "2022-02-13",
+"transaction_date": "2022-01-28",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "SBUX",
+"filing_date": "2022-01-09",
+"transaction_date": "2021-12-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "WMT",
+"filing_date": "2022-01-09",
+"transaction_date": "2021-12-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "AVGO",
+"filing_date": "2021-05-12",
+"transaction_date": "2021-04-22",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "GE",
+"filing_date": "2021-04-12",
+"transaction_date": "2021-03-31",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "CAT",
+"filing_date": "2021-02-22",
+"transaction_date": "2021-01-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "AXP",
+"filing_date": "2020-11-19",
+"transaction_date": "2020-10-16",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "MSFT",
+"filing_date": "2020-11-19",
+"transaction_date": "2020-10-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "COST",
+"filing_date": "2021-01-26",
+"transaction_date": "2020-07-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "HD",
+"filing_date": "2021-01-26",
+"transaction_date": "2020-07-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "V",
+"filing_date": "2021-01-26",
+"transaction_date": "2020-07-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "XOM",
+"filing_date": "2020-06-08",
+"transaction_date": "2020-05-21",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "MCD",
+"filing_date": "2020-05-14",
+"transaction_date": "2020-04-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "TGT",
+"filing_date": "2020-04-13",
+"transaction_date": "2020-03-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "SBUX",
+"filing_date": "2019-10-16",
+"transaction_date": "2019-09-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "UPS",
+"filing_date": "2019-10-16",
+"transaction_date": "2019-09-04",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "AXP",
+"filing_date": "2019-09-18",
+"transaction_date": "2019-08-14",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "SLB",
+"filing_date": "2019-02-07",
+"transaction_date": "2019-01-22",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "AAPL",
+"filing_date": "2019-01-11",
+"transaction_date": "2018-12-31",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "BA",
+"filing_date": "2016-07-06",
+"transaction_date": "2016-04-20",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "AAPL",
+"filing_date": "2015-10-15",
+"transaction_date": "2015-09-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "BA",
+"filing_date": "2015-10-15",
+"transaction_date": "2015-09-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "CVX",
+"filing_date": "2015-10-15",
+"transaction_date": "2015-09-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "JPM",
+"filing_date": "2015-10-15",
+"transaction_date": "2015-09-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "MSFT",
+"filing_date": "2015-10-15",
+"transaction_date": "2015-09-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "PFE",
+"filing_date": "2015-10-15",
+"transaction_date": "2015-09-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_robertj_wittman",
+"filer": "Robert J. Wittman",
+"ticker": "UNH",
+"filing_date": "2015-10-15",
+"transaction_date": "2015-09-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
 "filer_id": "senate_davidh_mccormick",
 "filer": "David H McCormick",
 "ticker": "MCD",
@@ -38047,6 +38047,78 @@
 "amount_label": "$100,001 - $250,000"
 },
 {
+"filer_id": "house_rick_larsen",
+"filer": "Rick Larsen",
+"ticker": "META",
+"filing_date": "2026-01-14",
+"transaction_date": "2026-01-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rick_larsen",
+"filer": "Rick Larsen",
+"ticker": "WMT",
+"filing_date": "2025-10-16",
+"transaction_date": "2025-10-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rick_larsen",
+"filer": "Rick Larsen",
+"ticker": "AXP",
+"filing_date": "2025-04-15",
+"transaction_date": "2025-04-09",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rick_larsen",
+"filer": "Rick Larsen",
+"ticker": "GOOGL",
+"filing_date": "2025-01-14",
+"transaction_date": "2025-01-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rick_larsen",
+"filer": "Rick Larsen",
+"ticker": "GS",
+"filing_date": "2024-07-17",
+"transaction_date": "2024-07-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rick_larsen",
+"filer": "Rick Larsen",
+"ticker": "MA",
+"filing_date": "2023-07-17",
+"transaction_date": "2023-07-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rick_larsen",
+"filer": "Rick Larsen",
+"ticker": "TGT",
+"filing_date": "2023-05-26",
+"transaction_date": "2022-10-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rick_larsen",
+"filer": "Rick Larsen",
+"ticker": "UNH",
+"filing_date": "2023-05-26",
+"transaction_date": "2022-01-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_rick_larsen",
+"filer": "Rick Larsen",
+"ticker": "COST",
+"filing_date": "2023-05-26",
+"transaction_date": "2021-03-31",
+"amount_label": "$1,001 - $15,000"
+},
+{
 "filer_id": "house_davide_price",
 "filer": "David E. Price",
 "ticker": "TXN",
@@ -38188,78 +38260,6 @@
 "ticker": "COST",
 "filing_date": "2014-10-10",
 "transaction_date": "2014-06-18",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rick_larsen",
-"filer": "Rick Larsen",
-"ticker": "META",
-"filing_date": "2026-01-14",
-"transaction_date": "2026-01-07",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rick_larsen",
-"filer": "Rick Larsen",
-"ticker": "WMT",
-"filing_date": "2025-10-16",
-"transaction_date": "2025-10-06",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rick_larsen",
-"filer": "Rick Larsen",
-"ticker": "AXP",
-"filing_date": "2025-04-15",
-"transaction_date": "2025-04-09",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rick_larsen",
-"filer": "Rick Larsen",
-"ticker": "GOOGL",
-"filing_date": "2025-01-14",
-"transaction_date": "2025-01-07",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rick_larsen",
-"filer": "Rick Larsen",
-"ticker": "GS",
-"filing_date": "2024-07-17",
-"transaction_date": "2024-07-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rick_larsen",
-"filer": "Rick Larsen",
-"ticker": "MA",
-"filing_date": "2023-07-17",
-"transaction_date": "2023-07-05",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rick_larsen",
-"filer": "Rick Larsen",
-"ticker": "TGT",
-"filing_date": "2023-05-26",
-"transaction_date": "2022-10-05",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rick_larsen",
-"filer": "Rick Larsen",
-"ticker": "UNH",
-"filing_date": "2023-05-26",
-"transaction_date": "2022-01-06",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_rick_larsen",
-"filer": "Rick Larsen",
-"ticker": "COST",
-"filing_date": "2023-05-26",
-"transaction_date": "2021-03-31",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -38780,6 +38780,14 @@
 "ticker": "AMD",
 "filing_date": "2022-03-18",
 "transaction_date": "2022-02-04",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_lou_barletta",
+"filer": "Lou Barletta",
+"ticker": "AMZN",
+"filing_date": "2016-10-28",
+"transaction_date": "2016-10-28",
 "amount_label": "$15,001 - $50,000"
 },
 {
@@ -39333,270 +39341,6 @@
 "filing_date": "2020-08-12",
 "transaction_date": "2019-08-14",
 "amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_lou_barletta",
-"filer": "Lou Barletta",
-"ticker": "AMZN",
-"filing_date": "2016-10-28",
-"transaction_date": "2016-10-28",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "AMZN",
-"filing_date": "2023-05-19",
-"transaction_date": "2023-04-10",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "AAPL",
-"filing_date": "2023-05-19",
-"transaction_date": "2023-04-10",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "MSFT",
-"filing_date": "2023-05-19",
-"transaction_date": "2023-04-10",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "MRNA",
-"filing_date": "2023-05-19",
-"transaction_date": "2023-04-10",
-"amount_label": "$50,001 - $100,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "NVDA",
-"filing_date": "2023-05-19",
-"transaction_date": "2023-04-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "TSLA",
-"filing_date": "2023-05-19",
-"transaction_date": "2023-04-10",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "TSLA",
-"filing_date": "2023-05-19",
-"transaction_date": "2023-04-10",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "LLY",
-"filing_date": "2023-04-17",
-"transaction_date": "2023-03-07",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "GOOGL",
-"filing_date": "2023-04-17",
-"transaction_date": "2023-03-06",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "AAPL",
-"filing_date": "2023-04-17",
-"transaction_date": "2023-03-06",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "GILD",
-"filing_date": "2023-04-17",
-"transaction_date": "2023-03-06",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "ISRG",
-"filing_date": "2023-04-17",
-"transaction_date": "2023-03-06",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "MSFT",
-"filing_date": "2023-04-17",
-"transaction_date": "2023-03-06",
-"amount_label": "$50,001 - $100,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "PFE",
-"filing_date": "2023-04-17",
-"transaction_date": "2023-03-06",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "CRM",
-"filing_date": "2023-04-17",
-"transaction_date": "2023-03-06",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "TSLA",
-"filing_date": "2023-04-17",
-"transaction_date": "2023-03-06",
-"amount_label": "$100,001 - $250,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "UPS",
-"filing_date": "2023-04-17",
-"transaction_date": "2023-03-06",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "NVDA",
-"filing_date": "2023-04-17",
-"transaction_date": "2023-03-01",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "TSLA",
-"filing_date": "2023-04-17",
-"transaction_date": "2023-03-01",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "TSLA",
-"filing_date": "2023-03-20",
-"transaction_date": "2023-02-03",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "ABNB",
-"filing_date": "2023-02-24",
-"transaction_date": "2023-01-31",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "GOOGL",
-"filing_date": "2023-02-24",
-"transaction_date": "2023-01-31",
-"amount_label": "$50,001 - $100,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "AVGO",
-"filing_date": "2023-02-24",
-"transaction_date": "2023-01-31",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "LLY",
-"filing_date": "2023-02-24",
-"transaction_date": "2023-01-31",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "F",
-"filing_date": "2023-02-24",
-"transaction_date": "2023-01-31",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "INTC",
-"filing_date": "2023-02-24",
-"transaction_date": "2023-01-31",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "ISRG",
-"filing_date": "2023-02-24",
-"transaction_date": "2023-01-31",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "LMT",
-"filing_date": "2023-02-24",
-"transaction_date": "2023-01-31",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "LCID",
-"filing_date": "2023-02-24",
-"transaction_date": "2023-01-31",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "RIVN",
-"filing_date": "2023-02-24",
-"transaction_date": "2023-01-31",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "RBLX",
-"filing_date": "2023-02-24",
-"transaction_date": "2023-01-31",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_daniel_goldman",
-"filer": "Daniel Goldman",
-"ticker": "CRM",
-"filing_date": "2023-02-24",
-"transaction_date": "2023-01-31",
-"amount_label": "$100,001 - $250,000"
 },
 {
 "filer_id": "house_lois_frankel",
@@ -40239,6 +39983,262 @@
 "amount_label": "$1,001 - $15,000"
 },
 {
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "AMZN",
+"filing_date": "2023-05-19",
+"transaction_date": "2023-04-10",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "AAPL",
+"filing_date": "2023-05-19",
+"transaction_date": "2023-04-10",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "MSFT",
+"filing_date": "2023-05-19",
+"transaction_date": "2023-04-10",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "MRNA",
+"filing_date": "2023-05-19",
+"transaction_date": "2023-04-10",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "NVDA",
+"filing_date": "2023-05-19",
+"transaction_date": "2023-04-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "TSLA",
+"filing_date": "2023-05-19",
+"transaction_date": "2023-04-10",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "TSLA",
+"filing_date": "2023-05-19",
+"transaction_date": "2023-04-10",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "LLY",
+"filing_date": "2023-04-17",
+"transaction_date": "2023-03-07",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "GOOGL",
+"filing_date": "2023-04-17",
+"transaction_date": "2023-03-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "AAPL",
+"filing_date": "2023-04-17",
+"transaction_date": "2023-03-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "GILD",
+"filing_date": "2023-04-17",
+"transaction_date": "2023-03-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "ISRG",
+"filing_date": "2023-04-17",
+"transaction_date": "2023-03-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "MSFT",
+"filing_date": "2023-04-17",
+"transaction_date": "2023-03-06",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "PFE",
+"filing_date": "2023-04-17",
+"transaction_date": "2023-03-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "CRM",
+"filing_date": "2023-04-17",
+"transaction_date": "2023-03-06",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "TSLA",
+"filing_date": "2023-04-17",
+"transaction_date": "2023-03-06",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "UPS",
+"filing_date": "2023-04-17",
+"transaction_date": "2023-03-06",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "NVDA",
+"filing_date": "2023-04-17",
+"transaction_date": "2023-03-01",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "TSLA",
+"filing_date": "2023-04-17",
+"transaction_date": "2023-03-01",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "TSLA",
+"filing_date": "2023-03-20",
+"transaction_date": "2023-02-03",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "ABNB",
+"filing_date": "2023-02-24",
+"transaction_date": "2023-01-31",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "GOOGL",
+"filing_date": "2023-02-24",
+"transaction_date": "2023-01-31",
+"amount_label": "$50,001 - $100,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "AVGO",
+"filing_date": "2023-02-24",
+"transaction_date": "2023-01-31",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "LLY",
+"filing_date": "2023-02-24",
+"transaction_date": "2023-01-31",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "F",
+"filing_date": "2023-02-24",
+"transaction_date": "2023-01-31",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "INTC",
+"filing_date": "2023-02-24",
+"transaction_date": "2023-01-31",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "ISRG",
+"filing_date": "2023-02-24",
+"transaction_date": "2023-01-31",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "LMT",
+"filing_date": "2023-02-24",
+"transaction_date": "2023-01-31",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "LCID",
+"filing_date": "2023-02-24",
+"transaction_date": "2023-01-31",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "RIVN",
+"filing_date": "2023-02-24",
+"transaction_date": "2023-01-31",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "RBLX",
+"filing_date": "2023-02-24",
+"transaction_date": "2023-01-31",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_daniel_goldman",
+"filer": "Daniel Goldman",
+"ticker": "CRM",
+"filing_date": "2023-02-24",
+"transaction_date": "2023-01-31",
+"amount_label": "$100,001 - $250,000"
+},
+{
 "filer_id": "house_jamesfrench_hill",
 "filer": "James French Hill",
 "ticker": "INTC",
@@ -40269,206 +40269,6 @@
 "filing_date": "2016-07-12",
 "transaction_date": "2016-06-13",
 "amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "AVGO",
-"filing_date": "2021-04-21",
-"transaction_date": "2021-03-05",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "AXP",
-"filing_date": "2021-02-19",
-"transaction_date": "2021-01-13",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "GS",
-"filing_date": "2020-10-12",
-"transaction_date": "2020-07-01",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "NFLX",
-"filing_date": "2020-10-12",
-"transaction_date": "2020-07-01",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "GOOGL",
-"filing_date": "2020-10-12",
-"transaction_date": "2020-06-24",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "AAPL",
-"filing_date": "2020-10-12",
-"transaction_date": "2020-06-24",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "TGT",
-"filing_date": "2020-10-12",
-"transaction_date": "2020-06-18",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "AMGN",
-"filing_date": "2021-08-11",
-"transaction_date": "2020-05-29",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "BAC",
-"filing_date": "2020-05-02",
-"transaction_date": "2020-03-31",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "XOM",
-"filing_date": "2020-05-02",
-"transaction_date": "2020-03-31",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "COST",
-"filing_date": "2020-05-02",
-"transaction_date": "2020-03-19",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "CAT",
-"filing_date": "2019-09-27",
-"transaction_date": "2019-08-02",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "GOOGL",
-"filing_date": "2018-12-27",
-"transaction_date": "2018-11-26",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "XOM",
-"filing_date": "2018-12-27",
-"transaction_date": "2018-11-26",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "COST",
-"filing_date": "2018-11-12",
-"transaction_date": "2018-10-18",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "BA",
-"filing_date": "2018-11-12",
-"transaction_date": "2018-10-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "BA",
-"filing_date": "2018-05-02",
-"transaction_date": "2018-03-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "ORCL",
-"filing_date": "2017-10-22",
-"transaction_date": "2017-09-19",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "BA",
-"filing_date": "2017-10-22",
-"transaction_date": "2017-09-11",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "NKE",
-"filing_date": "2017-08-09",
-"transaction_date": "2017-06-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "PFE",
-"filing_date": "2017-08-09",
-"transaction_date": "2017-06-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "SBUX",
-"filing_date": "2017-08-09",
-"transaction_date": "2017-06-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "WMT",
-"filing_date": "2017-08-09",
-"transaction_date": "2017-06-12",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "MCD",
-"filing_date": "2018-07-31",
-"transaction_date": "2017-03-23",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_johna_yarmuth",
-"filer": "John A. Yarmuth",
-"ticker": "MSFT",
-"filing_date": "2016-07-15",
-"transaction_date": "2015-03-10",
-"amount_label": "$1,001 - $15,000"
 },
 {
 "filer_id": "house_richardw_allen",
@@ -40861,6 +40661,206 @@
 "filing_date": "2023-08-10",
 "transaction_date": "2017-04-27",
 "amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "AVGO",
+"filing_date": "2021-04-21",
+"transaction_date": "2021-03-05",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "AXP",
+"filing_date": "2021-02-19",
+"transaction_date": "2021-01-13",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "GS",
+"filing_date": "2020-10-12",
+"transaction_date": "2020-07-01",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "NFLX",
+"filing_date": "2020-10-12",
+"transaction_date": "2020-07-01",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "GOOGL",
+"filing_date": "2020-10-12",
+"transaction_date": "2020-06-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "AAPL",
+"filing_date": "2020-10-12",
+"transaction_date": "2020-06-24",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "TGT",
+"filing_date": "2020-10-12",
+"transaction_date": "2020-06-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "AMGN",
+"filing_date": "2021-08-11",
+"transaction_date": "2020-05-29",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "BAC",
+"filing_date": "2020-05-02",
+"transaction_date": "2020-03-31",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "XOM",
+"filing_date": "2020-05-02",
+"transaction_date": "2020-03-31",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "COST",
+"filing_date": "2020-05-02",
+"transaction_date": "2020-03-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "CAT",
+"filing_date": "2019-09-27",
+"transaction_date": "2019-08-02",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "GOOGL",
+"filing_date": "2018-12-27",
+"transaction_date": "2018-11-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "XOM",
+"filing_date": "2018-12-27",
+"transaction_date": "2018-11-26",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "COST",
+"filing_date": "2018-11-12",
+"transaction_date": "2018-10-18",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "BA",
+"filing_date": "2018-11-12",
+"transaction_date": "2018-10-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "BA",
+"filing_date": "2018-05-02",
+"transaction_date": "2018-03-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "ORCL",
+"filing_date": "2017-10-22",
+"transaction_date": "2017-09-19",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "BA",
+"filing_date": "2017-10-22",
+"transaction_date": "2017-09-11",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "NKE",
+"filing_date": "2017-08-09",
+"transaction_date": "2017-06-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "PFE",
+"filing_date": "2017-08-09",
+"transaction_date": "2017-06-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "SBUX",
+"filing_date": "2017-08-09",
+"transaction_date": "2017-06-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "WMT",
+"filing_date": "2017-08-09",
+"transaction_date": "2017-06-12",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "MCD",
+"filing_date": "2018-07-31",
+"transaction_date": "2017-03-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_johna_yarmuth",
+"filer": "John A. Yarmuth",
+"ticker": "MSFT",
+"filing_date": "2016-07-15",
+"transaction_date": "2015-03-10",
+"amount_label": "$1,001 - $15,000"
 },
 {
 "filer_id": "senate_johnw_hickenlooper",
@@ -41839,78 +41839,6 @@
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_escott_rigell",
-"filer": "E. Scott Rigell",
-"ticker": "BA",
-"filing_date": "2016-12-23",
-"transaction_date": "2016-11-30",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_escott_rigell",
-"filer": "E. Scott Rigell",
-"ticker": "JPM",
-"filing_date": "2016-12-23",
-"transaction_date": "2016-11-22",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_escott_rigell",
-"filer": "E. Scott Rigell",
-"ticker": "F",
-"filing_date": "2016-04-28",
-"transaction_date": "2016-03-23",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_escott_rigell",
-"filer": "E. Scott Rigell",
-"ticker": "XOM",
-"filing_date": "2016-04-28",
-"transaction_date": "2016-03-16",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_escott_rigell",
-"filer": "E. Scott Rigell",
-"ticker": "XOM",
-"filing_date": "2016-04-28",
-"transaction_date": "2016-03-10",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_escott_rigell",
-"filer": "E. Scott Rigell",
-"ticker": "GS",
-"filing_date": "2015-11-25",
-"transaction_date": "2015-10-19",
-"amount_label": "$100,001 - $250,000"
-},
-{
-"filer_id": "house_escott_rigell",
-"filer": "E. Scott Rigell",
-"ticker": "AAPL",
-"filing_date": "2016-05-09",
-"transaction_date": "2015-07-22",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_escott_rigell",
-"filer": "E. Scott Rigell",
-"ticker": "AAPL",
-"filing_date": "2015-08-18",
-"transaction_date": "2015-07-22",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_escott_rigell",
-"filer": "E. Scott Rigell",
-"ticker": "GILD",
-"filing_date": "2015-08-18",
-"transaction_date": "2015-07-22",
-"amount_label": "$1,001 - $15,000"
-},
-{
 "filer_id": "house_donna_shalala",
 "filer": "Donna Shalala",
 "ticker": "AVGO",
@@ -41996,6 +41924,78 @@
 "ticker": "AMD",
 "filing_date": "2020-04-27",
 "transaction_date": "2019-01-23",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_escott_rigell",
+"filer": "E. Scott Rigell",
+"ticker": "BA",
+"filing_date": "2016-12-23",
+"transaction_date": "2016-11-30",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_escott_rigell",
+"filer": "E. Scott Rigell",
+"ticker": "JPM",
+"filing_date": "2016-12-23",
+"transaction_date": "2016-11-22",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_escott_rigell",
+"filer": "E. Scott Rigell",
+"ticker": "F",
+"filing_date": "2016-04-28",
+"transaction_date": "2016-03-23",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_escott_rigell",
+"filer": "E. Scott Rigell",
+"ticker": "XOM",
+"filing_date": "2016-04-28",
+"transaction_date": "2016-03-16",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_escott_rigell",
+"filer": "E. Scott Rigell",
+"ticker": "XOM",
+"filing_date": "2016-04-28",
+"transaction_date": "2016-03-10",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_escott_rigell",
+"filer": "E. Scott Rigell",
+"ticker": "GS",
+"filing_date": "2015-11-25",
+"transaction_date": "2015-10-19",
+"amount_label": "$100,001 - $250,000"
+},
+{
+"filer_id": "house_escott_rigell",
+"filer": "E. Scott Rigell",
+"ticker": "AAPL",
+"filing_date": "2016-05-09",
+"transaction_date": "2015-07-22",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_escott_rigell",
+"filer": "E. Scott Rigell",
+"ticker": "AAPL",
+"filing_date": "2015-08-18",
+"transaction_date": "2015-07-22",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_escott_rigell",
+"filer": "E. Scott Rigell",
+"ticker": "GILD",
+"filing_date": "2015-08-18",
+"transaction_date": "2015-07-22",
 "amount_label": "$1,001 - $15,000"
 },
 {
@@ -45175,54 +45175,6 @@
 "amount_label": "$1,001 - $15,000"
 },
 {
-"filer_id": "house_brian_mast",
-"filer": "Brian Mast",
-"ticker": "UBER",
-"filing_date": "2019-10-02",
-"transaction_date": "2019-09-23",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_brian_mast",
-"filer": "Brian Mast",
-"ticker": "UBER",
-"filing_date": "2019-10-02",
-"transaction_date": "2019-09-16",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_brian_mast",
-"filer": "Brian Mast",
-"ticker": "NIO",
-"filing_date": "2019-04-15",
-"transaction_date": "2019-03-15",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_brian_mast",
-"filer": "Brian Mast",
-"ticker": "NIO",
-"filing_date": "2019-03-12",
-"transaction_date": "2019-02-28",
-"amount_label": "$15,001 - $50,000"
-},
-{
-"filer_id": "house_brian_mast",
-"filer": "Brian Mast",
-"ticker": "NIO",
-"filing_date": "2019-03-12",
-"transaction_date": "2019-02-27",
-"amount_label": "$1,001 - $15,000"
-},
-{
-"filer_id": "house_brian_mast",
-"filer": "Brian Mast",
-"ticker": "DIS",
-"filing_date": "2018-09-20",
-"transaction_date": "2018-06-26",
-"amount_label": "$50,001 - $100,000"
-},
-{
 "filer_id": "house_davidp_joyce",
 "filer": "David P. Joyce",
 "ticker": "NKE",
@@ -45285,6 +45237,54 @@
 "filing_date": "2017-07-26",
 "transaction_date": "2017-06-28",
 "amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_brian_mast",
+"filer": "Brian Mast",
+"ticker": "UBER",
+"filing_date": "2019-10-02",
+"transaction_date": "2019-09-23",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_brian_mast",
+"filer": "Brian Mast",
+"ticker": "UBER",
+"filing_date": "2019-10-02",
+"transaction_date": "2019-09-16",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_brian_mast",
+"filer": "Brian Mast",
+"ticker": "NIO",
+"filing_date": "2019-04-15",
+"transaction_date": "2019-03-15",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_brian_mast",
+"filer": "Brian Mast",
+"ticker": "NIO",
+"filing_date": "2019-03-12",
+"transaction_date": "2019-02-28",
+"amount_label": "$15,001 - $50,000"
+},
+{
+"filer_id": "house_brian_mast",
+"filer": "Brian Mast",
+"ticker": "NIO",
+"filing_date": "2019-03-12",
+"transaction_date": "2019-02-27",
+"amount_label": "$1,001 - $15,000"
+},
+{
+"filer_id": "house_brian_mast",
+"filer": "Brian Mast",
+"ticker": "DIS",
+"filing_date": "2018-09-20",
+"transaction_date": "2018-06-26",
+"amount_label": "$50,001 - $100,000"
 },
 {
 "filer_id": "house_mo_brooks",
