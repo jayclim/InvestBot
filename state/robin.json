@@ -67,10 +67,14 @@
     [
       "2026-09-04",
       99.25
+    ],
+    [
+      "2026-10-08",
+      97.66
     ]
   ],
-  "cash": 17.48,
-  "trades": 14,
+  "cash": 37.25,
+  "trades": 15,
   "holdings": [
     {
       "symbol": "MA",
@@ -81,14 +85,8 @@
     {
       "symbol": "V",
       "qty": 0.05571,
-      "avg_price": 359,
+      "avg_price": 359.0,
       "filled_at": "2026-07-02T16:58:57.63Z"
-    },
-    {
-      "symbol": "ABNB",
-      "qty": 0.123362,
-      "avg_price": 154.83,
-      "filled_at": "2026-07-29T18:28:53.262Z"
     },
     {
       "symbol": "MSFT",
@@ -97,7 +95,7 @@
       "filled_at": "2026-07-31T19:20:19.312Z"
     }
   ],
-  "updated": "2026-09-04",
+  "updated": "2026-10-08",
   "alloc": {
     "momentum_breakout": 1.0
   }
