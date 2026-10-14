@@ -1,16 +1,10 @@
 {
-"last_date": "2026-10-09",
+"last_date": "2026-10-12",
 "portfolios": {
 "momentum_breakout": {
-"cash": 16.20047347753794,
+"cash": 0.8097688744576317,
 "halted": false,
 "positions": [
-{
-"symbol": "META",
-"qty": 0.026140144244996256,
-"avg_price": 654.0318525,
-"entry_date": "2026-09-10"
-},
 {
 "symbol": "AMD",
 "qty": 0.03346790824018683,
@@ -28,6 +22,18 @@
 "qty": 0.05451241383234824,
 "avg_price": 281.44065,
 "entry_date": "2026-10-07"
+},
+{
+"symbol": "PLTR",
+"qty": 0.08235284176168775,
+"avg_price": 209.00445,
+"entry_date": "2026-10-12"
+},
+{
+"symbol": "SNOW",
+"qty": 0.04662430317799365,
+"avg_price": 369.16449,
+"entry_date": "2026-10-12"
 }
 ],
 "trades": [
@@ -620,6 +626,36 @@
 "value": 16.20047347753794,
 "pnl": -1.106153845757405,
 "reason": "close < SMA trend break"
+},
+{
+"date": "2026-10-12",
+"symbol": "META",
+"side": "sell",
+"qty": 0.026140144244996256,
+"price": 728.1307525000001,
+"value": 19.03344289956767,
+"pnl": 1.936955934395555,
+"reason": "close < SMA trend break"
+},
+{
+"date": "2026-10-12",
+"symbol": "PLTR",
+"side": "buy",
+"qty": 0.08235284176168775,
+"price": 209.00445,
+"value": 17.212110398338577,
+"pnl": 0.0,
+"reason": "breakout > 20d high on volume"
+},
+{
+"date": "2026-10-12",
+"symbol": "SNOW",
+"side": "buy",
+"qty": 0.04662430317799365,
+"price": 369.16449,
+"value": 17.212037104309406,
+"pnl": 0.0,
+"reason": "breakout > 20d high on volume"
 }
 ],
 "equity_curve": [
@@ -942,11 +978,15 @@
 [
 "2026-10-09",
 87.0734510370161
+],
+[
+"2026-10-12",
+85.65014855349119
 ]
 ]
 },
 "mean_reversion": {
-"cash": 9.542818966018814,
+"cash": 7.622878491262831,
 "halted": false,
 "positions": [
 {
@@ -974,10 +1014,10 @@
 "entry_date": "2026-09-03"
 },
 {
-"symbol": "LCID",
-"qty": 6.45392960979499,
-"avg_price": 4.16208,
-"entry_date": "2026-09-16"
+"symbol": "SBUX",
+"qty": 0.27124302252493077,
+"avg_price": 91.25560499999999,
+"entry_date": "2026-10-12"
 }
 ],
 "trades": [
@@ -1160,6 +1200,26 @@
 "value": 26.86177135033553,
 "pnl": 0.0,
 "reason": "RSI 30 < 30 oversold"
+},
+{
+"date": "2026-10-12",
+"symbol": "LCID",
+"side": "sell",
+"qty": 6.45392960979499,
+"price": 3.5377679999999994,
+"value": 22.832505647785197,
+"pnl": -4.029265702550331,
+"reason": "stop-loss"
+},
+{
+"date": "2026-10-12",
+"symbol": "SBUX",
+"side": "buy",
+"qty": 0.27124302252493077,
+"price": 91.25560499999999,
+"value": 24.75244612254118,
+"pnl": 0.0,
+"reason": "RSI 29 < 30 oversold"
 }
 ],
 "equity_curve": [
@@ -1482,6 +1542,10 @@
 [
 "2026-10-09",
 127.65441049590136
+],
+[
+"2026-10-12",
+124.04144682387795
 ]
 ]
 },
@@ -1496,12 +1560,6 @@
 "entry_date": "2026-09-15"
 },
 {
-"symbol": "MU",
-"qty": 0.016676993978074872,
-"avg_price": 1033.366425,
-"entry_date": "2026-09-22"
-},
-{
 "symbol": "ASML",
 "qty": 0.010215031388067066,
 "avg_price": 1829.5142999999998,
@@ -1514,10 +1572,16 @@
 "entry_date": "2026-10-02"
 },
 {
-"symbol": "PLTR",
-"qty": 0.08297940000341356,
-"avg_price": 201.57573749999997,
-"entry_date": "2026-10-09"
+"symbol": "SNOW",
+"qty": 0.049186045854944606,
+"avg_price": 369.16449,
+"entry_date": "2026-10-12"
+},
+{
+"symbol": "PDD",
+"qty": 0.19493260706537277,
+"avg_price": 81.45070499999999,
+"entry_date": "2026-10-12"
 }
 ],
 "trades": [
@@ -2160,6 +2224,46 @@
 "value": 16.72663375299559,
 "pnl": 0.0,
 "reason": "breakout, RSI 70 not overbought"
+},
+{
+"date": "2026-10-12",
+"symbol": "MU",
+"side": "sell",
+"qty": 0.016676993978074872,
+"price": 1001.9437775000001,
+"value": 16.70941034373709,
+"pnl": -0.5240353031326663,
+"reason": "trend break / overbought"
+},
+{
+"date": "2026-10-12",
+"symbol": "PLTR",
+"side": "sell",
+"qty": 0.08297940000341356,
+"price": 208.79555000000002,
+"value": 17.325729462382736,
+"pnl": 0.5990957093871491,
+"reason": "trend break / overbought"
+},
+{
+"date": "2026-10-12",
+"symbol": "SNOW",
+"side": "buy",
+"qty": 0.049186045854944606,
+"price": 369.16449,
+"value": 18.15774153315724,
+"pnl": 0.0,
+"reason": "breakout, RSI 69 not overbought"
+},
+{
+"date": "2026-10-12",
+"symbol": "PDD",
+"side": "buy",
+"qty": 0.19493260706537277,
+"price": 81.45070499999999,
+"value": 15.87739827296259,
+"pnl": 0.0,
+"reason": "breakout, RSI 56 not overbought"
 }
 ],
 "equity_curve": [
@@ -2482,6 +2586,10 @@
 [
 "2026-10-09",
 93.15998022662045
+],
+[
+"2026-10-12",
+90.25268976814272
 ]
 ]
 }

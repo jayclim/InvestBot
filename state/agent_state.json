@@ -1,5 +1,5 @@
 {
-"last_date": "2026-10-09",
+"last_date": "2026-10-12",
 "portfolios": {
 "deep_research_analyst": {
 "cash": 54.54861877374554,
@@ -1464,6 +1464,10 @@
 [
 "2026-10-09",
 84.4
+],
+[
+"2026-10-12",
+84.22
 ]
 ]
 },
@@ -3320,6 +3324,10 @@
 [
 "2026-10-09",
 85.45
+],
+[
+"2026-10-12",
+85.52
 ]
 ]
 },
@@ -5782,6 +5790,10 @@
 [
 "2026-10-09",
 86.17
+],
+[
+"2026-10-12",
+86.9
 ]
 ]
 },
@@ -6498,13 +6510,109 @@
 [
 "2026-10-09",
 103.91
+],
+[
+"2026-10-12",
+103.92
 ]
 ]
 }
 },
 "pending": {
-"llm_voters": [],
-"mirofish_real": [],
+"llm_voters": [
+{
+"symbol": "BOIL",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.20837406533595437,
+"reason": "swarm: exit",
+"placed_session": "2026-10-12"
+},
+{
+"symbol": "SHOP",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.019061083973464957,
+"reason": "swarm: trim",
+"placed_session": "2026-10-12"
+},
+{
+"symbol": "ERX",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 6.841574953037975,
+"qty": null,
+"reason": "swarm: buy 8%",
+"placed_session": "2026-10-12"
+}
+],
+"mirofish_real": [
+{
+"symbol": "SOXS",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.17893227739636092,
+"reason": "mirofish: exit",
+"placed_session": "2026-10-12"
+},
+{
+"symbol": "INTC",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.05877250257555733,
+"reason": "mirofish: exit",
+"placed_session": "2026-10-12"
+},
+{
+"symbol": "CVX",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 2.352168642063397,
+"qty": null,
+"reason": "mirofish: buy 15%",
+"placed_session": "2026-10-12"
+},
+{
+"symbol": "XOM",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 15.51802812666424,
+"qty": null,
+"reason": "mirofish: buy 18%",
+"placed_session": "2026-10-12"
+},
+{
+"symbol": "MU",
+"side": "buy",
+"kind": "moo",
+"limit": null,
+"dollars": 19.65616896044137,
+"qty": null,
+"reason": "mirofish: buy 23%",
+"placed_session": "2026-10-12"
+},
+{
+"symbol": "PYPL",
+"side": "sell",
+"kind": "moo",
+"limit": null,
+"dollars": null,
+"qty": 0.14824158633877274,
+"reason": "mirofish: trim",
+"placed_session": "2026-10-12"
+}
+],
 "deep_research_analyst": [],
 "congress_mirror": []
 }
