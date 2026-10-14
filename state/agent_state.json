@@ -1,19 +1,19 @@
 {
-"last_date": "2026-10-12",
+"last_date": "2026-10-13",
 "portfolios": {
 "deep_research_analyst": {
-"cash": 54.54861877374554,
+"cash": 58.332398874002436,
 "halted": false,
 "positions": [
 {
 "symbol": "VRTX",
-"qty": 0.03290250239267681,
+"qty": 0.027479395719394815,
 "avg_price": 522.3764805063807,
 "entry_date": "2026-07-29"
 },
 {
 "symbol": "NEM",
-"qty": 0.11091903675758742,
+"qty": 0.10093311135992872,
 "avg_price": 127.513725,
 "entry_date": "2026-08-31"
 }
@@ -1298,6 +1298,26 @@
 "value": 9.385781146991201,
 "pnl": -1.221993515787717,
 "reason": "analyst: exit"
+},
+{
+"date": "2026-10-13",
+"symbol": "NEM",
+"side": "sell",
+"qty": 0.009985925397658704,
+"price": 115.532205,
+"value": 1.153695980157012,
+"pnl": -0.11964656487055561,
+"reason": "analyst: trim"
+},
+{
+"date": "2026-10-13",
+"symbol": "VRTX",
+"side": "sell",
+"qty": 0.005423106673281994,
+"price": 484.97739000000007,
+"value": 2.6300841200998843,
+"pnl": -0.2028192572998303,
+"reason": "analyst: trim"
 }
 ],
 "equity_curve": [
@@ -1468,19 +1488,17 @@
 [
 "2026-10-12",
 84.22
+],
+[
+"2026-10-13",
+83.33
 ]
 ]
 },
 "llm_voters": {
-"cash": 65.24772471125084,
+"cash": 64.96094569785201,
 "halted": false,
 "positions": [
-{
-"symbol": "BOIL",
-"qty": 0.20837406533595437,
-"avg_price": 22.17108,
-"entry_date": "2026-10-09"
-},
 {
 "symbol": "MRNA",
 "qty": 0.028218478981273463,
@@ -1488,10 +1506,16 @@
 "entry_date": "2026-10-09"
 },
 {
-"symbol": "SHOP",
-"qty": 0.0540540741919198,
-"avg_price": 170.93542499999998,
-"entry_date": "2026-10-09"
+"symbol": "PLTR",
+"qty": 0.029095243109940272,
+"avg_price": 208.77433499999998,
+"entry_date": "2026-10-13"
+},
+{
+"symbol": "SOXS",
+"qty": 0.22714660961121672,
+"avg_price": 37.43871,
+"entry_date": "2026-10-13"
 }
 ],
 "trades": [
@@ -3154,6 +3178,76 @@
 "value": 9.239756144977342,
 "pnl": 0.0,
 "reason": "swarm: buy 11%"
+},
+{
+"date": "2026-10-13",
+"symbol": "BOIL",
+"side": "sell",
+"qty": 0.20837406533595437,
+"price": 22.158915000000004,
+"value": 4.61734320198386,
+"pnl": -0.0025348705048110483,
+"reason": "swarm: exit"
+},
+{
+"date": "2026-10-13",
+"symbol": "SHOP",
+"side": "sell",
+"qty": 0.019061083973464957,
+"price": 175.71210000000002,
+"value": 3.3492630932538723,
+"pnl": 0.0910486032889515,
+"reason": "swarm: trim"
+},
+{
+"date": "2026-10-13",
+"symbol": "ERX",
+"side": "buy",
+"qty": 0.05854585509503789,
+"price": 116.85839999999999,
+"value": 6.841574953037975,
+"pnl": 0.0,
+"reason": "swarm: buy 8%"
+},
+{
+"date": "2026-10-13",
+"symbol": "SHOP",
+"side": "sell",
+"qty": 0.03499299021845484,
+"price": 176.43174000000002,
+"value": 6.173874152044968,
+"pnl": 0.19233249703254796,
+"reason": "swarm: exit"
+},
+{
+"date": "2026-10-13",
+"symbol": "ERX",
+"side": "sell",
+"qty": 0.05854585509503789,
+"price": 119.44025,
+"value": 6.992731569015099,
+"pnl": 0.15115661597712457,
+"reason": "swarm: exit"
+},
+{
+"date": "2026-10-13",
+"symbol": "PLTR",
+"side": "buy",
+"qty": 0.029095243109940272,
+"price": 208.77433499999998,
+"value": 6.074340031941111,
+"pnl": 0.0,
+"reason": "swarm: buy 7%"
+},
+{
+"date": "2026-10-13",
+"symbol": "SOXS",
+"side": "buy",
+"qty": 0.22714660961121672,
+"price": 37.43871,
+"value": 8.504076044717555,
+"pnl": 0.0,
+"reason": "swarm: buy 10%"
 }
 ],
 "equity_curve": [
@@ -3328,36 +3422,46 @@
 [
 "2026-10-12",
 85.52
+],
+[
+"2026-10-13",
+85.63
 ]
 ]
 },
 "mirofish_real": {
-"cash": 34.19343882603021,
+"cash": 7.69053168240209,
 "halted": false,
 "positions": [
 {
 "symbol": "PYPL",
-"qty": 0.5173888507256711,
-"avg_price": 55.23849258915775,
+"qty": 0.47169108179394675,
+"avg_price": 55.44710426904866,
 "entry_date": "2026-07-20"
 },
 {
 "symbol": "CVX",
-"qty": 0.05161297240796408,
-"avg_price": 206.47707946452704,
+"qty": 0.062447042202851875,
+"avg_price": 208.321547161267,
 "entry_date": "2026-10-06"
 },
 {
-"symbol": "SOXS",
-"qty": 0.17893227739636092,
-"avg_price": 34.407195,
-"entry_date": "2026-10-09"
+"symbol": "XOM",
+"qty": 0.07915234009586677,
+"avg_price": 173.53172249999997,
+"entry_date": "2026-10-13"
 },
 {
-"symbol": "INTC",
-"qty": 0.05877250257555733,
-"avg_price": 104.75234999999999,
-"entry_date": "2026-10-09"
+"symbol": "MU",
+"qty": 0.021033055111016944,
+"avg_price": 934.537035,
+"entry_date": "2026-10-13"
+},
+{
+"symbol": "SOXS",
+"qty": 0.16986333989057548,
+"avg_price": 37.43871,
+"entry_date": "2026-10-13"
 }
 ],
 "trades": [
@@ -5640,6 +5744,96 @@
 "value": 3.373285858504764,
 "pnl": 0.016029598533863227,
 "reason": "mirofish: trim"
+},
+{
+"date": "2026-10-13",
+"symbol": "SOXS",
+"side": "sell",
+"qty": 0.17893227739636092,
+"price": 40.124927500000005,
+"value": 7.179644657938872,
+"pnl": 1.0230868977681888,
+"reason": "mirofish: exit"
+},
+{
+"date": "2026-10-13",
+"symbol": "INTC",
+"side": "sell",
+"qty": 0.05877250257555733,
+"price": 99.54020500000001,
+"value": 5.850226954734005,
+"pnl": -0.30633080543667696,
+"reason": "mirofish: exit"
+},
+{
+"date": "2026-10-13",
+"symbol": "CVX",
+"side": "buy",
+"qty": 0.010834069794887796,
+"price": 217.1085,
+"value": 2.352168642063397,
+"pnl": 0.0,
+"reason": "mirofish: buy 15%"
+},
+{
+"date": "2026-10-13",
+"symbol": "XOM",
+"side": "buy",
+"qty": 0.08942473400887403,
+"price": 173.53172249999997,
+"value": 15.51802812666424,
+"pnl": 0.0,
+"reason": "mirofish: buy 18%"
+},
+{
+"date": "2026-10-13",
+"symbol": "MU",
+"side": "buy",
+"qty": 0.021033055111016944,
+"price": 934.537035,
+"value": 19.65616896044137,
+"pnl": 0.0,
+"reason": "mirofish: buy 23%"
+},
+{
+"date": "2026-10-13",
+"symbol": "PYPL",
+"side": "sell",
+"qty": 0.14824158633877274,
+"price": 56.181895000000004,
+"value": 8.328493238318366,
+"pnl": 0.13985146993907827,
+"reason": "mirofish: trim"
+},
+{
+"date": "2026-10-13",
+"symbol": "SOXS",
+"side": "buy",
+"qty": 0.16986333989057548,
+"price": 37.43871,
+"value": 6.359464321794687,
+"pnl": 0.0,
+"reason": "mirofish: buy 7%"
+},
+{
+"date": "2026-10-13",
+"symbol": "XOM",
+"side": "sell",
+"qty": 0.010272393913007254,
+"price": 173.99296,
+"value": 1.7873242232101147,
+"pnl": 0.004738013287451078,
+"reason": "mirofish: trim"
+},
+{
+"date": "2026-10-13",
+"symbol": "PYPL",
+"side": "buy",
+"qty": 0.10254381740704838,
+"price": 56.198085,
+"value": 5.762766166865784,
+"pnl": 0.0,
+"reason": "mirofish: buy 30%"
 }
 ],
 "equity_curve": [
@@ -5794,6 +5988,10 @@
 [
 "2026-10-12",
 86.9
+],
+[
+"2026-10-13",
+87.97
 ]
 ]
 },
@@ -6514,105 +6712,17 @@
 [
 "2026-10-12",
 103.92
+],
+[
+"2026-10-13",
+104.18
 ]
 ]
 }
 },
 "pending": {
-"llm_voters": [
-{
-"symbol": "BOIL",
-"side": "sell",
-"kind": "moo",
-"limit": null,
-"dollars": null,
-"qty": 0.20837406533595437,
-"reason": "swarm: exit",
-"placed_session": "2026-10-12"
-},
-{
-"symbol": "SHOP",
-"side": "sell",
-"kind": "moo",
-"limit": null,
-"dollars": null,
-"qty": 0.019061083973464957,
-"reason": "swarm: trim",
-"placed_session": "2026-10-12"
-},
-{
-"symbol": "ERX",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 6.841574953037975,
-"qty": null,
-"reason": "swarm: buy 8%",
-"placed_session": "2026-10-12"
-}
-],
-"mirofish_real": [
-{
-"symbol": "SOXS",
-"side": "sell",
-"kind": "moo",
-"limit": null,
-"dollars": null,
-"qty": 0.17893227739636092,
-"reason": "mirofish: exit",
-"placed_session": "2026-10-12"
-},
-{
-"symbol": "INTC",
-"side": "sell",
-"kind": "moo",
-"limit": null,
-"dollars": null,
-"qty": 0.05877250257555733,
-"reason": "mirofish: exit",
-"placed_session": "2026-10-12"
-},
-{
-"symbol": "CVX",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 2.352168642063397,
-"qty": null,
-"reason": "mirofish: buy 15%",
-"placed_session": "2026-10-12"
-},
-{
-"symbol": "XOM",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 15.51802812666424,
-"qty": null,
-"reason": "mirofish: buy 18%",
-"placed_session": "2026-10-12"
-},
-{
-"symbol": "MU",
-"side": "buy",
-"kind": "moo",
-"limit": null,
-"dollars": 19.65616896044137,
-"qty": null,
-"reason": "mirofish: buy 23%",
-"placed_session": "2026-10-12"
-},
-{
-"symbol": "PYPL",
-"side": "sell",
-"kind": "moo",
-"limit": null,
-"dollars": null,
-"qty": 0.14824158633877274,
-"reason": "mirofish: trim",
-"placed_session": "2026-10-12"
-}
-],
+"llm_voters": [],
+"mirofish_real": [],
 "deep_research_analyst": [],
 "congress_mirror": []
 }
