@@ -1,67 +1,67 @@
 {
-  "date": "2026-10-14",
-  "as_of": "Latest settled daily session 2026-10-13; Robinhood fundamentals, financials, ratings, and earnings calendar checked 2026-10-14; primary-source research checked 2026-10-14.",
-  "generated_by": "deep_research_analyst - weekday tick 2026-10-14",
+  "date": "2026-10-15",
+  "as_of": "Latest settled daily session 2026-10-14; Robinhood fundamentals, financials, ratings, and earnings calendar checked 2026-10-15; primary-source research checked 2026-10-15.",
+  "generated_by": "deep_research_analyst - weekday tick 2026-10-15",
   "framework": "Codex for Financial Services - equity-research methodology (/screen, /sector, /comps, /catalysts, /thesis). Data: Robinhood fundamentals + web_search (no paid-vendor MCP connectors).",
   "pick": "VRTX",
-  "action": "trim",
+  "action": "hold",
   "sizing": "16% VRTX, 14% NEM; 70% cash",
   "confidence": 0.29,
   "regime": {
     "label": "Policy and earnings event risk",
-    "note": "The Federal Reserve lists an October 27-28 FOMC meeting. Low confidence and 70% cash reflect policy risk, near-term binary company events, expensive screen leaders, and the analyst book's persistent negative alpha.",
+    "note": "The Federal Reserve lists an October 27-28 FOMC meeting. Low confidence and 70% cash reflect policy risk, two near-term company events, rich screen leaders, and the analyst book's persistent negative all-time alpha.",
     "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
   },
-  "thesis": "Trim, but do not abandon, the September 29 event-driven reset through the October 13 settled session. VRTX and NEM still have falsifiable company-confirmed catalysts: Newmont reports Q3 after the October 22 close, Vertex reports Q3 after the November 2 close, and Vertex has a November 30 povetacicept PDUFA date. However, VRTX fell 4.30% on October 13 and NEM fell 1.33% while SPY fell only 0.01%. The persisted analyst book is down 15.8% versus SPY up 3.7%, or -19.5 points of alpha, with a -3.37 annualized Sharpe. The full-universe screen is also crowded: MRNA gained 50.41% over 20 sessions and 263.51% over 60; SHOP, PLTR, and several software leaders trade at premium or negative earnings multiples. Robinhood data shows VRTX at 28.229339x trailing earnings and NEM at 14.595987x. Reduce VRTX to 16%, NEM to 14%, and hold 70% cash. This is the project's paper-portfolio bridge, not an official plugin investment recommendation.",
+  "thesis": "Hold the October 14 target weights rather than churn after one mixed session. The latest settled session validated the cash buffer: the marked book fell 0.05% while SPY fell 1.08%, producing about 1.03 points of daily alpha, even though NEM fell 3.49%, because VRTX rose 2.74% and 70% remained in cash. The longer record is still poor: marked equity is $83.29, all-time alpha is about -20.3 points, and the prior 43-session annualized Sharpe was -3.54. The edge remains event-driven rather than trend-following. Newmont reports Q3 after the October 22 close, Vertex reports Q3 after the November 2 close, and FDA assigned November 30 as the povetacicept PDUFA target date. Robinhood data shows VRTX at 29.001949x trailing earnings and NEM at 14.087104x; the earnings calendar carries EPS estimates of $0.87 for VRTX and $1.93 for NEM. Keep VRTX at 16%, NEM at 14%, and 70% cash. This is the project's paper-portfolio bridge, not an official plugin investment recommendation.",
   "evidence": [
     {
       "point": "The Federal Reserve lists a two-day FOMC meeting for October 27-28, 2026, with a press conference on October 28.",
       "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     },
     {
-      "point": "Vertex says FDA assigned a November 30, 2026 PDUFA target date for povetacicept in IgAN.",
-      "source": "https://investors.vrtx.com/news-releases/news-release-details/vertex-reports-second-quarter-2026-financial-results"
+      "point": "Vertex says FDA assigned a November 30, 2026 PDUFA target date for povetacicept in IgAN; the supporting Phase 3 interim analysis showed a 49.8% UPCR reduction versus placebo with P<0.0001.",
+      "source": "https://investors.vrtx.com/news-releases/news-release-details/vertex-announces-us-fda-acceptance-biologics-license-application"
     },
     {
       "point": "Vertex says it will report Q3 2026 results on November 2 after market close and host its call at 4:30 p.m. ET.",
-      "source": "https://investors.vrtx.com/node/35036/pdf"
+      "source": "https://investors.vrtx.com/news-events/press-releases"
     },
     {
       "point": "Newmont says it will release Q3 2026 results after market close on October 22 and hold its call at 5:30 p.m. EDT.",
       "source": "https://investors.newmont.com/investors/news-release/news-details/2026/Newmont-Announces-Third-Quarter-2026-Results-Conference-Call/default.aspx"
     },
     {
-      "point": "Robinhood's October 14 data shows VRTX at 28.229339x P/E, $125.2512 billion market cap, Q2 revenue $3.3339 billion, Q2 net income $1.0998 billion, and a $575.9259 mean analyst target.",
-      "source": "Robinhood get_equity_fundamentals, get_financials, and get_equity_analyst_ratings, 2026-10-14"
+      "point": "Robinhood's October 15 data shows VRTX at 29.001949x P/E, $130.8556 billion market cap, Q2 revenue $3.3339 billion, Q2 net income $1.0998 billion, and a $575.9630 mean analyst target.",
+      "source": "Robinhood get_equity_fundamentals, get_financials, and get_equity_analyst_ratings, 2026-10-15"
     },
     {
-      "point": "Robinhood's October 14 data shows NEM at 14.595987x P/E, $118.6874 billion market cap, Q2 revenue $6.118 billion, Q2 net income $2.202 billion, and a $139.8879 mean analyst target.",
-      "source": "Robinhood get_equity_fundamentals, get_financials, and get_equity_analyst_ratings, 2026-10-14"
+      "point": "Robinhood's October 15 data shows NEM at 14.087104x P/E, $118.5404 billion market cap, Q2 revenue $6.118 billion, Q2 net income $2.202 billion, and a $139.8879 mean analyst target.",
+      "source": "Robinhood get_equity_fundamentals, get_financials, and get_equity_analyst_ratings, 2026-10-15"
     },
     {
-      "point": "At the October 13 settled close, VRTX was $485.22, NEM was $115.59, and SPY was $778.01; VRTX fell 4.30%, NEM fell 1.33%, and SPY fell 0.01% from October 12.",
-      "source": "data/snapshot.json through 2026-10-13"
+      "point": "At the October 14 settled close, VRTX was $498.50, NEM was $111.56, and SPY was $769.60; VRTX rose 2.74%, NEM fell 3.49%, and SPY fell 1.08% from October 13.",
+      "source": "data/snapshot.json through 2026-10-14"
     }
   ],
   "risks": [
     "VRTX faces a binary November 30 FDA decision; a delay, rejection, restrictive label, or adverse safety interpretation breaks the thesis.",
-    "Vertex's sharp October 13 decline may reflect information not captured by the scheduled-catalyst framework.",
-    "NEM is below the paper entry; gold-price reversal, cost inflation, or weak Q3 production can overwhelm the valuation case.",
-    "A 70% cash balance creates substantial opportunity cost if risk assets continue higher.",
-    "The persisted portfolio alpha is -19.5 points with a -3.37 annualized Sharpe; confidence stays low until realized results improve."
+    "NEM fell 3.49% in the latest session and remains below the paper entry; weak October 22 production or cost results can invalidate the valuation case.",
+    "The Robinhood analyst consensus is not an independent edge; both stocks can fall even if results meet consensus.",
+    "A 70% cash balance creates material opportunity cost if risk assets rally.",
+    "The persisted portfolio has about -20.3 points of all-time alpha and a -3.54 prior Sharpe; confidence stays low until realized results improve."
   ],
   "data_examined": [
     {
-      "label": "100-name randomized screen covering 20/60-session returns, 52-week position, and relative volume; SPY retained as benchmark only",
-      "source": "data/snapshot.json through 2026-10-13"
+      "label": "100-name randomized screen covering 20/60-session returns, SPY-relative strength, 20-day trend, relative volume, and RSI; SPY retained as benchmark only",
+      "source": "data/snapshot.json through 2026-10-14"
     },
     {
       "label": "20 finalists and sector peers: TTM P/E, P/B, market cap, quarterly revenue/net margin, analyst ratings, and upcoming earnings dates",
-      "source": "Robinhood get_equity_fundamentals, get_financials, get_equity_analyst_ratings, and get_earnings_calendar, 2026-10-14"
+      "source": "Robinhood get_equity_fundamentals, get_financials, get_equity_analyst_ratings, and get_earnings_calendar, 2026-10-15"
     },
     {
-      "label": "Persisted alpha -19.5 points and annualized 42-session Sharpe -3.37; current marked equity $84.22",
-      "source": "python3 tools/analyst_memory.py"
+      "label": "Marked analyst equity $83.29; all-time alpha about -20.3 points and prior annualized 43-session Sharpe -3.54",
+      "source": "python3 tools/analyst_memory.py plus direct October 14 mark from state/agent_state.json and data/snapshot.json"
     },
     {
       "label": "Primary-source macro and company catalysts",
@@ -72,37 +72,113 @@
     "VRTX": 0.16,
     "NEM": 0.14
   },
-  "limits": {
-    "VRTX": 490.07,
-    "NEM": 116.75
-  },
   "rationale": {
-    "VRTX": "[DATA] FDA assigned a November 30, 2026 PDUFA target date for povetacicept, and Vertex confirmed Q3 results for November 2. The October 13 close was $485.22; Robinhood reported P/E/PB of 28.229339/6.071210, Q2 revenue of $3.3339 billion, Q2 net income of $1.0998 billion, and a $575.9259 mean analyst target. [ASSUMED] Approval can establish a nephrology franchise faster than the market credits, but the 4.30% one-day decline, binary outcome, and negative portfolio alpha require trimming the anchor from 20% to 16%. [DATA] Buy limit $490.07, about 1% above the settled close.",
-    "NEM": "[DATA] Newmont confirmed Q3 results after the October 22 close; Robinhood's earnings calendar shows a $1.93 EPS estimate. The October 13 close was $115.59; Robinhood reported P/E/PB of 14.595987/3.473310, Q2 revenue of $6.118 billion, Q2 net income of $2.202 billion, and a $139.8879 mean analyst target. [ASSUMED] Stable production and costs could produce a favorable result versus the $1.93 consensus, but the decline below paper entry and commodity risk require trimming from 16% to 14%. [DATA] Buy limit $116.75, about 1% above the settled close."
+    "VRTX": "[DATA] FDA assigned a November 30, 2026 PDUFA target date for povetacicept, and Vertex confirmed Q3 results for November 2. The October 14 close was $498.50, up 2.74%; Robinhood reported P/E/PB of 29.001949/6.237380, Q2 revenue of $3.3339 billion, Q2 net income of $1.0998 billion, a $575.9630 mean analyst target, and a Q3 EPS estimate of $0.87. [ASSUMED] Approval can establish a nephrology franchise faster than the market credits, but the binary outcome and negative long-run portfolio alpha cap the anchor at 16%.",
+    "NEM": "[DATA] Newmont confirmed Q3 results after the October 22 close; Robinhood's earnings calendar shows a $1.93 EPS estimate. The October 14 close was $111.56, down 3.49%; Robinhood reported P/E/PB of 14.087104/3.352210, Q2 revenue of $6.118 billion, Q2 net income of $2.202 billion, and a $139.8879 mean analyst target. [ASSUMED] Stable production and costs could beat the $1.93 consensus, but the price decline, below-entry position, and commodity risk cap the weight at 14%."
   },
   "reflection": {
-    "as_of": "2026-10-13",
-    "looking_back": "Before the October 13 tick, the persisted book was down 15.8% versus SPY up 3.7%, or -19.5 points of all-time alpha, with a -3.37 annualized 42-session Sharpe. On October 13, VRTX fell 4.30%, NEM fell 1.33%, and SPY fell 0.01%; at prior target weights the two positions reduced marked equity by about 1.07%, underperforming SPY by about 1.06 points.",
+    "as_of": "2026-10-14",
+    "looking_back": "The carried book ended October 13 at $83.33 with VRTX and NEM at 16% and 14% targets and 70% cash. Marked to October 14, the book slipped 0.05% while SPY fell 1.08%, producing about 1.03 points of daily alpha; VRTX rose 2.74% while NEM fell 3.49%.",
     "worked": [
-      "The 64% cash buffer materially reduced the October 13 damage relative to a fully invested two-name book.",
-      "VRTX and NEM retain company-confirmed, dated catalysts, so both theses remain falsifiable rather than momentum extrapolations."
+      "The 70% cash buffer and VRTX rebound limited the book's decline to 0.05% and beat SPY by about 1.03 points for the session.",
+      "Both positions retain company-confirmed, dated catalysts, so the theses remain falsifiable rather than momentum extrapolations."
     ],
     "missed": [
-      "Both holdings materially underperformed SPY on October 13, led by VRTX's 4.30% decline.",
-      "The prior allocation was still too large for a book with -19.5 points of all-time alpha and a -3.37 Sharpe."
+      "NEM fell 3.49% and remains below the paper entry, so the October 22 result now carries more downside risk.",
+      "One positive-alpha session does not repair about -20.3 points of all-time alpha or the prior -3.54 Sharpe."
     ],
-    "adjustment": "Cut VRTX from 20% to 16%, cut NEM from 16% to 14%, lower confidence from 0.31 to 0.29, and raise cash from 64% to 70% until the October and November catalysts validate the positions."
+    "adjustment": "Hold VRTX at 16%, NEM at 14%, and cash at 70%; do not add a momentum-screen winner before the scheduled company events."
   },
   "screen": [
-    {"symbol": "MRNA", "close": 216.25, "r20": 50.41, "r60": 263.51, "range_position": 0.94, "relative_volume": 0.75},
-    {"symbol": "SHOP", "close": 176.52, "r20": 35.93, "r60": 41.81, "range_position": 0.95, "relative_volume": 0.72},
-    {"symbol": "PLTR", "close": 208.67, "r20": 20.93, "r60": 54.74, "range_position": 0.96, "relative_volume": 0.78},
-    {"symbol": "U", "close": 46.63, "r20": 8.42, "r60": 56.42, "range_position": 0.93, "relative_volume": 0.44},
-    {"symbol": "MSTR", "close": 152.18, "r20": 17.42, "r60": 55.57, "range_position": 0.61, "relative_volume": 0.55},
-    {"symbol": "SMCI", "close": 39.07, "r20": 9.62, "r60": 63.95, "range_position": 0.58, "relative_volume": 0.71},
-    {"symbol": "MRVL", "close": 268.73, "r20": 21.21, "r60": 37.85, "range_position": 0.73, "relative_volume": 0.95},
-    {"symbol": "MSFT", "close": 543.45, "r20": 9.32, "r60": 35.09, "range_position": 0.96, "relative_volume": 1.08},
-    {"symbol": "AMD", "close": 605.53, "r20": 20.10, "r60": 20.25, "range_position": 0.88, "relative_volume": 0.83},
-    {"symbol": "SNOW", "close": 357.76, "r20": 10.77, "r60": 30.41, "range_position": 0.90, "relative_volume": 0.99}
+    {
+      "symbol": "MRNA",
+      "close": 226.3,
+      "r20": 55.4,
+      "r60": 279.3,
+      "relative_to_spy_20": 53.3,
+      "relative_volume": 0.92,
+      "rsi14": 63.4
+    },
+    {
+      "symbol": "SHOP",
+      "close": 172.5,
+      "r20": 32.7,
+      "r60": 40.2,
+      "relative_to_spy_20": 30.7,
+      "relative_volume": 0.85,
+      "rsi14": 77.6
+    },
+    {
+      "symbol": "PLTR",
+      "close": 200.97,
+      "r20": 15.3,
+      "r60": 51.5,
+      "relative_to_spy_20": 13.2,
+      "relative_volume": 1.05,
+      "rsi14": 60.9
+    },
+    {
+      "symbol": "MSTR",
+      "close": 143.24,
+      "r20": 13.5,
+      "r60": 40.5,
+      "relative_to_spy_20": 11.5,
+      "relative_volume": 0.95,
+      "rsi14": 30.9
+    },
+    {
+      "symbol": "ERX",
+      "close": 120.71,
+      "r20": 11.4,
+      "r60": 31.4,
+      "relative_to_spy_20": 9.3,
+      "relative_volume": 1,
+      "rsi14": 80.9
+    },
+    {
+      "symbol": "MSFT",
+      "close": 533.69,
+      "r20": 8.8,
+      "r60": 34.2,
+      "relative_to_spy_20": 6.8,
+      "relative_volume": 0.99,
+      "rsi14": 71.2
+    },
+    {
+      "symbol": "AMGN",
+      "close": 426.11,
+      "r20": 13.2,
+      "r60": 16.3,
+      "relative_to_spy_20": 11.2,
+      "relative_volume": 1.02,
+      "rsi14": 62.1
+    },
+    {
+      "symbol": "ISRG",
+      "close": 420.24,
+      "r20": 9.9,
+      "r60": 20,
+      "relative_to_spy_20": 7.9,
+      "relative_volume": 0.9,
+      "rsi14": 62.2
+    },
+    {
+      "symbol": "COP",
+      "close": 142.34,
+      "r20": 7.4,
+      "r60": 21.1,
+      "relative_to_spy_20": 5.3,
+      "relative_volume": 0.84,
+      "rsi14": 79.3
+    },
+    {
+      "symbol": "DDOG",
+      "close": 269.33,
+      "r20": 16.7,
+      "r60": 5.7,
+      "relative_to_spy_20": 14.6,
+      "relative_volume": 1,
+      "rsi14": 58.2
+    }
   ]
 }
