@@ -1,26 +1,14 @@
 {
-"last_date": "2026-10-14",
+"last_date": "2026-10-15",
 "portfolios": {
 "momentum_breakout": {
-"cash": 2.277955059776623,
+"cash": -1.7763568394002505e-15,
 "halted": false,
 "positions": [
-{
-"symbol": "MRVL",
-"qty": 0.05451241383234824,
-"avg_price": 281.44065,
-"entry_date": "2026-10-07"
-},
 {
 "symbol": "PLTR",
 "qty": 0.08235284176168775,
 "avg_price": 209.00445,
-"entry_date": "2026-10-12"
-},
-{
-"symbol": "SNOW",
-"qty": 0.04662430317799365,
-"avg_price": 369.16449,
 "entry_date": "2026-10-12"
 },
 {
@@ -34,6 +22,18 @@
 "qty": 0.028245127442522392,
 "avg_price": 599.9898450000001,
 "entry_date": "2026-10-13"
+},
+{
+"symbol": "XOM",
+"qty": 0.09106526618009385,
+"avg_price": 178.719315,
+"entry_date": "2026-10-15"
+},
+{
+"symbol": "CVX",
+"qty": 0.06293081159730692,
+"avg_price": 222.93140999999997,
+"entry_date": "2026-10-15"
 }
 ],
 "trades": [
@@ -696,6 +696,46 @@
 "value": 16.946789636244258,
 "pnl": 0.0,
 "reason": "breakout > 20d high on volume"
+},
+{
+"date": "2026-10-15",
+"symbol": "MRVL",
+"side": "sell",
+"qty": 0.05451241383234824,
+"price": 239.2245525,
+"value": 13.040707804738318,
+"pnl": -2.301301377306763,
+"reason": "stop-loss"
+},
+{
+"date": "2026-10-15",
+"symbol": "SNOW",
+"side": "sell",
+"qty": 0.04662430317799365,
+"price": 321.4142125,
+"value": 14.985713689316079,
+"pnl": -2.226323414993328,
+"reason": "close < SMA trend break"
+},
+{
+"date": "2026-10-15",
+"symbol": "XOM",
+"side": "buy",
+"qty": 0.09106526618009385,
+"price": 178.719315,
+"value": 16.27512199199904,
+"pnl": 0.0,
+"reason": "breakout > 20d high on volume"
+},
+{
+"date": "2026-10-15",
+"symbol": "CVX",
+"side": "buy",
+"qty": 0.06293081159730692,
+"price": 222.93140999999997,
+"value": 14.029254561831982,
+"pnl": 0.0,
+"reason": "breakout > 20d high on volume"
 }
 ],
 "equity_curve": [
@@ -1030,6 +1070,10 @@
 [
 "2026-10-14",
 81.46910101367945
+],
+[
+"2026-10-15",
+80.78049970202431
 ]
 ]
 },
@@ -1602,31 +1646,17 @@
 [
 "2026-10-14",
 124.07161037999535
+],
+[
+"2026-10-15",
+127.11730261292249
 ]
 ]
 },
 "blended_momo_rsi": {
-"cash": 0.0,
+"cash": 17.08766212836904,
 "halted": false,
 "positions": [
-{
-"symbol": "CRWD",
-"qty": 0.0789566904060397,
-"avg_price": 233.11649999999997,
-"entry_date": "2026-09-15"
-},
-{
-"symbol": "MRVL",
-"qty": 0.06811258624585632,
-"avg_price": 278.139,
-"entry_date": "2026-10-02"
-},
-{
-"symbol": "SNOW",
-"qty": 0.049186045854944606,
-"avg_price": 369.16449,
-"entry_date": "2026-10-12"
-},
 {
 "symbol": "PDD",
 "qty": 0.19493260706537277,
@@ -1638,6 +1668,18 @@
 "qty": 0.029047725049647744,
 "avg_price": 599.9898450000001,
 "entry_date": "2026-10-13"
+},
+{
+"symbol": "PFE",
+"qty": 0.5750709266770309,
+"avg_price": 29.584785,
+"entry_date": "2026-10-15"
+},
+{
+"symbol": "WMT",
+"qty": 0.14156836079182858,
+"avg_price": 120.05999999999999,
+"entry_date": "2026-10-15"
 }
 ],
 "trades": [
@@ -2340,6 +2382,56 @@
 "value": 17.42834005014077,
 "pnl": 0.0,
 "reason": "breakout, RSI 68 not overbought"
+},
+{
+"date": "2026-10-15",
+"symbol": "MRVL",
+"side": "sell",
+"qty": 0.06811258624585632,
+"price": 236.41815,
+"value": 16.103051631960795,
+"pnl": -2.841714993875436,
+"reason": "stop-loss"
+},
+{
+"date": "2026-10-15",
+"symbol": "SNOW",
+"side": "sell",
+"qty": 0.049186045854944606,
+"price": 321.4142125,
+"value": 15.809094194455911,
+"pnl": -2.348647338701329,
+"reason": "trend break / overbought"
+},
+{
+"date": "2026-10-15",
+"symbol": "CRWD",
+"side": "sell",
+"qty": 0.0789566904060397,
+"price": 242.988445,
+"value": 19.185563424110004,
+"pnl": 0.7794561050704547,
+"reason": "trend break / overbought"
+},
+{
+"date": "2026-10-15",
+"symbol": "PFE",
+"side": "buy",
+"qty": 0.5750709266770309,
+"price": 29.584785,
+"value": 17.013349725490723,
+"pnl": 0.0,
+"reason": "breakout, RSI 66 not overbought"
+},
+{
+"date": "2026-10-15",
+"symbol": "WMT",
+"side": "buy",
+"qty": 0.14156836079182858,
+"price": 120.05999999999999,
+"value": 16.99669739666694,
+"pnl": 0.0,
+"reason": "breakout, RSI 69 not overbought"
 }
 ],
 "equity_curve": [
@@ -2674,6 +2766,10 @@
 [
 "2026-10-14",
 86.27103925520423
+],
+[
+"2026-10-15",
+84.67345227320058
 ]
 ]
 }
